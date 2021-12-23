@@ -1,0 +1,10 @@
+--- ./discord_94011/src/main/java/com/discord/widgets/stage/sheet/WidgetStageModeratorJoinBottomSheet$channelId$2.java	2021-12-24 01:10:15.326027300 +0400
++++ ./bluecord/src/main/java/com/discord/widgets/stage/sheet/WidgetStageModeratorJoinBottomSheet$channelId$2.java	2021-12-24 01:08:35.800261800 +0400
+@@ -18,6 +18,6 @@ public final class WidgetStageModeratorJ
+     /* Return type fixed from 'long' to match base method */
+     @Override // kotlin.jvm.functions.Function0
+     public final Long invoke() {
+-        return this.this$0.getArgumentsOrDefault().getLong("com.discord.intent.extra.EXTRA_CHANNEL_ID");
++        return WidgetStageModeratorJoinBottomSheet.access$getArgumentsOrDefault$p(this.this$0).getLong("com.discord.intent.extra.EXTRA_CHANNEL_ID");
+     }
+ }

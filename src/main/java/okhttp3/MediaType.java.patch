@@ -1,0 +1,11 @@
+--- ./discord_94011/src/main/java/okhttp3/MediaType.java	2021-12-24 01:10:16.616025600 +0400
++++ ./bluecord/src/main/java/okhttp3/MediaType.java	2021-12-24 01:08:37.023262500 +0400
+@@ -21,7 +21,7 @@ public final class MediaType {
+     public static final Pattern b = Pattern.compile(";\\s*(?:([a-zA-Z0-9-!#$%&'*+.^_`{|}~]+)=(?:([a-zA-Z0-9-!#$%&'*+.^_`{|}~]+)|\"([^\"]*)\"))?");
+ 
+     /* renamed from: c  reason: collision with root package name */
+-    public static final a f2950c = null;
++    public static final a f2952c = null;
+     public final String d;
+     public final String e;
+     public final String f;

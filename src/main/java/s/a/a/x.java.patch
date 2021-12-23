@@ -1,0 +1,15 @@
+--- ./discord_94011/src/main/java/s/a/a/x.java	2021-12-24 01:10:16.722024900 +0400
++++ ./bluecord/src/main/java/s/a/a/x.java	2021-12-24 01:08:37.106263600 +0400
+@@ -8,10 +8,10 @@ public final class x {
+     public int b;
+ 
+     /* renamed from: c  reason: collision with root package name */
+-    public final CoroutineContext f2969c;
++    public final CoroutineContext f2971c;
+ 
+     public x(CoroutineContext coroutineContext, int i) {
+-        this.f2969c = coroutineContext;
++        this.f2971c = coroutineContext;
+         this.a = new Object[i];
+     }
+ }

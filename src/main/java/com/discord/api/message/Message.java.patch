@@ -1,0 +1,10 @@
+--- ./discord_94011/src/main/java/com/discord/api/message/Message.java	2021-12-24 01:10:12.244025400 +0400
++++ ./bluecord/src/main/java/com/discord/api/message/Message.java	2021-12-24 01:08:32.789263000 +0400
+@@ -31,6 +31,7 @@ public final class Message {
+     private final long channelId;
+     private final List<Component> components;
+     private final String content;
++    public boolean deleted;
+     private final UtcDateTime editedTimestamp;
+     private final List<MessageEmbed> embeds;
+     private final Long flags;

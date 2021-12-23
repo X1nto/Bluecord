@@ -1,0 +1,41 @@
+--- ./discord_94011/src/main/java/com/discord/widgets/chat/list/WidgetChatList.java	2021-12-24 01:10:14.079023800 +0400
++++ ./bluecord/src/main/java/com/discord/widgets/chat/list/WidgetChatList.java	2021-12-24 01:08:34.483261300 +0400
+@@ -27,6 +27,7 @@ import kotlin.Lazy;
+ import kotlin.jvm.functions.Function0;
+ import kotlin.jvm.functions.Function1;
+ import kotlin.reflect.KProperty;
++import mods.utils.RefreshUtils;
+ import rx.functions.Action0;
+ 
+ public final class WidgetChatList extends AppFragment {
+@@ -38,6 +39,7 @@ public final class WidgetChatList extend
+ 
+     public WidgetChatList() {
+         super(2131558971);
++        RefreshUtils.WIDGET_CHAT_LIST = this;
+     }
+ 
+     private final void addThreadSpineItemDecoration(WidgetChatListAdapter widgetChatListAdapter) {
+@@ -133,6 +135,7 @@ public final class WidgetChatList extend
+         if (widgetChatListAdapter2 != null) {
+             widgetChatListAdapter2.disposeHandlers();
+         }
++        RefreshUtils.WIDGET_CHAT_LIST = this;
+     }
+ 
+     @Override // com.discord.app.AppFragment
+@@ -146,6 +149,7 @@ public final class WidgetChatList extend
+         } else {
+             createAdapter();
+         }
++        RefreshUtils.WIDGET_CHAT_LIST = this;
+     }
+ 
+     @Override // com.discord.app.AppFragment
+@@ -164,5 +168,6 @@ public final class WidgetChatList extend
+         RecyclerView recyclerView = getBinding().b;
+         m.checkNotNullExpressionValue(recyclerView, "binding.chatListRecycler");
+         this.defaultItemAnimator = recyclerView.getItemAnimator();
++        RefreshUtils.WIDGET_CHAT_LIST = this;
+     }
+ }

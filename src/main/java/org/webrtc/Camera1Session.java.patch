@@ -1,0 +1,29 @@
+--- ./discord_94011/src/main/java/org/webrtc/Camera1Session.java	2021-12-24 01:10:16.627025800 +0400
++++ ./bluecord/src/main/java/org/webrtc/Camera1Session.java	2021-12-24 01:08:37.035263900 +0400
+@@ -54,6 +54,14 @@ public class Camera1Session implements C
+         startCapturing();
+     }
+ 
++    public static /* synthetic */ Camera access$300(Camera1Session camera1Session) {
++        return camera1Session.camera;
++    }
++
++    public static /* synthetic */ SessionState access$400(Camera1Session camera1Session) {
++        return camera1Session.state;
++    }
++
+     private static void cameraReleaseSafe(Camera camera2) {
+         try {
+             camera2.release();
+@@ -159,9 +167,9 @@ public class Camera1Session implements C
+ 
+             public void onPreviewFrame(byte[] bArr, Camera camera) {
+                 Camera1Session.this.checkIsOnCameraThread();
+-                if (camera != Camera1Session.this.camera) {
++                if (camera != Camera1Session.access$300(Camera1Session.this)) {
+                     Logging.e("Camera1Session", "Callback from a different camera. This should never happen.");
+-                } else if (Camera1Session.this.state != SessionState.RUNNING) {
++                } else if (Camera1Session.access$400(Camera1Session.this) != SessionState.RUNNING) {
+                     Logging.d("Camera1Session", "Bytebuffer frame captured but camera is no longer running.");
+                 } else {
+                     long nanos = TimeUnit.MILLISECONDS.toNanos(SystemClock.elapsedRealtime());

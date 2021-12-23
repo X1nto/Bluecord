@@ -1,0 +1,10 @@
+--- ./discord_94011/src/main/res/drawable/ic_application_status_pending.xml	2021-12-24 01:10:01.024026200 +0400
++++ ./bluecord/src/main/res/drawable/ic_application_status_pending.xml	2021-12-24 01:08:16.824265000 +0400
+@@ -1,5 +1,5 @@
+ <?xml version="1.0" encoding="utf-8"?>
+ <vector xmlns:android="http://schemas.android.com/apk/res/android" android:height="16dp" android:width="16dp" android:autoMirrored="true" android:viewportWidth="16" android:viewportHeight="16">
+-    <path android:fillColor="#faa61a" android:pathData="M8,8m-8,0a8,8 0,1 1,16 0a8,8 0,1 1,-16 0"/>
+-    <path android:fillColor="#ffffff" android:pathData="M8,3C5.2382,3 3,5.2382 3,8C3,10.7618 5.2382,13 8,13C10.7618,13 13,10.7618 13,8C13,5.2382 10.7618,3 8,3ZM8,4.8C8.2211,4.8 8.4,4.9789 8.4,5.2V7.7688L10.2812,8.8563C10.4726,8.9665 10.5351,9.2086 10.425,9.4001C10.3148,9.5915 10.0727,9.654 9.8812,9.5438L7.8436,8.3688C7.828,8.3626 7.8139,8.3524 7.7999,8.3438C7.6803,8.2743 7.5999,8.1477 7.5999,8V5.2C7.5999,4.979 7.7789,4.8 8,4.8Z"/>
++    <path android:fillColor="#fffaa61a" android:pathData="M8,8m-8,0a8,8 0,1 1,16 0a8,8 0,1 1,-16 0"/>
++    <path android:fillColor="#ffffffff" android:pathData="M8,3C5.2382,3 3,5.2382 3,8C3,10.7618 5.2382,13 8,13C10.7618,13 13,10.7618 13,8C13,5.2382 10.7618,3 8,3ZM8,4.8C8.2211,4.8 8.4,4.9789 8.4,5.2V7.7688L10.2812,8.8563C10.4726,8.9665 10.5351,9.2086 10.425,9.4001C10.3148,9.5915 10.0727,9.654 9.8812,9.5438L7.8436,8.3688C7.828,8.3626 7.8139,8.3524 7.7999,8.3438C7.6803,8.2743 7.5999,8.1477 7.5999,8V5.2C7.5999,4.979 7.7789,4.8 8,4.8Z"/>
+ </vector>

@@ -1,0 +1,27 @@
+--- ./discord_94011/src/main/res/values-iw/plurals.xml	2021-12-24 01:10:10.843024000 +0400
++++ ./bluecord/src/main/res/values-iw/plurals.xml	2021-12-24 01:08:30.685262200 +0400
+@@ -1,21 +1,21 @@
+ <?xml version="1.0" encoding="utf-8"?>
+ <resources>
+     <plurals name="exo_controls_fastforward_by_amount_description">
++        <item quantity="other">הרצה %d שניות קדימה</item>
+         <item quantity="one">הרצה שנייה אחת (%d) קדימה</item>
+         <item quantity="two">הרצה %d שניות קדימה</item>
+         <item quantity="many">הרצה %d שניות קדימה</item>
+-        <item quantity="other">הרצה %d שניות קדימה</item>
+     </plurals>
+     <plurals name="exo_controls_rewind_by_amount_description">
++        <item quantity="other">הרצה %d שניות אחורה</item>
+         <item quantity="one">הרצה שנייה אחת (%d) אחורה</item>
+         <item quantity="two">הרצה %d שניות אחורה</item>
+         <item quantity="many">הרצה %d שניות אחורה</item>
+-        <item quantity="other">הרצה %d שניות אחורה</item>
+     </plurals>
+     <plurals name="mtrl_badge_content_description">
++        <item quantity="other">%d התראות חדשות</item>
+         <item quantity="one">התראה חדשה אחת (%d)</item>
+         <item quantity="two">%d התראות חדשות</item>
+         <item quantity="many">%d התראות חדשות</item>
+-        <item quantity="other">%d התראות חדשות</item>
+     </plurals>
+ </resources>

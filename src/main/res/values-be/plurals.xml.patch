@@ -1,0 +1,27 @@
+--- ./discord_94011/src/main/res/values-be/plurals.xml	2021-12-24 01:10:10.622026100 +0400
++++ ./bluecord/src/main/res/values-be/plurals.xml	2021-12-24 01:08:30.371263200 +0400
+@@ -1,21 +1,21 @@
+ <?xml version="1.0" encoding="utf-8"?>
+ <resources>
+     <plurals name="exo_controls_fastforward_by_amount_description">
++        <item quantity="other">Пераматаць уперад на %d секунды</item>
+         <item quantity="one">Пераматаць уперад на %d секунду</item>
+         <item quantity="few">Пераматаць уперад на %d секунды</item>
+         <item quantity="many">Пераматаць уперад на %d секунд</item>
+-        <item quantity="other">Пераматаць уперад на %d секунды</item>
+     </plurals>
+     <plurals name="exo_controls_rewind_by_amount_description">
++        <item quantity="other">Пераматаць назад на %d секунды</item>
+         <item quantity="one">Пераматаць назад на %d секунду</item>
+         <item quantity="few">Пераматаць назад на %d секунды</item>
+         <item quantity="many">Пераматаць назад на %d секунд</item>
+-        <item quantity="other">Пераматаць назад на %d секунды</item>
+     </plurals>
+     <plurals name="mtrl_badge_content_description">
++        <item quantity="other">%d новага апавяшчэння</item>
+         <item quantity="one">%d новае апавяшчэнне</item>
+         <item quantity="few">%d новыя апавяшчэнні</item>
+         <item quantity="many">%d новых апавяшчэнняў</item>
+-        <item quantity="other">%d новага апавяшчэння</item>
+     </plurals>
+ </resources>

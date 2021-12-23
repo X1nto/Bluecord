@@ -1,0 +1,96 @@
+--- ./discord_94011/src/main/res/values/arrays.xml	2021-12-24 01:10:11.208026600 +0400
++++ ./bluecord/src/main/res/values/arrays.xml	2021-12-24 01:08:31.077264600 +0400
+@@ -48,25 +48,25 @@
+         <item>send a dm to $userName</item>
+     </array>
+     <array name="color_picker_palette">
+-        <item>#17ac86</item>
+-        <item>#25c059</item>
+-        <item>#277ecd</item>
+-        <item>#843da4</item>
+-        <item>#da004e</item>
+-        <item>#e4b400</item>
+-        <item>#d6680e</item>
+-        <item>#d7342a</item>
+-        <item>#7e9091</item>
+-        <item>#4c6876</item>
+-        <item>#116d56</item>
+-        <item>#1a7939</item>
+-        <item>#195080</item>
+-        <item>#5b2076</item>
+-        <item>#970045</item>
+-        <item>#ae6800</item>
+-        <item>#923200</item>
+-        <item>#831f18</item>
+-        <item>#818689</item>
++        <item>#ff17ac86</item>
++        <item>#ff25c059</item>
++        <item>#ff277ecd</item>
++        <item>#ff843da4</item>
++        <item>#ffda004e</item>
++        <item>#ffe4b400</item>
++        <item>#ffd6680e</item>
++        <item>#ffd7342a</item>
++        <item>#ff7e9091</item>
++        <item>#ff4c6876</item>
++        <item>#ff116d56</item>
++        <item>#ff1a7939</item>
++        <item>#ff195080</item>
++        <item>#ff5b2076</item>
++        <item>#ff970045</item>
++        <item>#ffae6800</item>
++        <item>#ff923200</item>
++        <item>#ff831f18</item>
++        <item>#ff818689</item>
+     </array>
+     <array name="exo_playback_speeds">
+         <item>0.25x</item>
+@@ -86,4 +86,48 @@
+         <item>150</item>
+         <item>200</item>
+     </array>
++    <array name="delete_modes">
++        <item>Block Delete</item>
++        <item>Block Delete + Log</item>
++        <item>Off</item>
++    </array>
++    <array name="edit_modes">
++        <item>Show Edit</item>
++        <item>Show Edit + Log</item>
++        <item>Off</item>
++    </array>
++    <array name="emote_modes">
++        <item>Nitro Spoof</item>
++        <item>Nitro Spoof (Bigger Emotes)</item>
++        <item>Old Nitro Spoof</item>
++        <item>Hide Locked Emotes</item>
++        <item>Off</item>
++    </array>
++    <array name="text_color_modes">
++        <item>Custom Colors</item>
++        <item>Match Role Color</item>
++        <item>Default</item>
++    </array>
++    <array name="time_modes">
++        <item>mm/dd/yy hh:mm:ss AM/PM</item>
++        <item>dd/mm/yy hh:mm:ss AM/PM</item>
++        <item>mm/dd/yy hh:mm:ss (24h)</item>
++        <item>dd/mm/yy hh:mm:ss (24h)</item>
++    </array>
++    <array name="time_values">
++        <item>@null</item>
++        <item>1</item>
++        <item>2</item>
++        <item>3</item>
++    </array>
++    <array name="age_modes">
++        <item>Days + Hours</item>
++        <item>Exact Timestamp</item>
++        <item>Off</item>
++    </array>
++    <array name="age_values">
++        <item>Days since creation</item>
++        <item>Exact creation time</item>
++        <item>Off</item>
++    </array>
+ </resources>

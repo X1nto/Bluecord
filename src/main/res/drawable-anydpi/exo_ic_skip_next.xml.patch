@@ -1,0 +1,8 @@
+--- ./discord_94011/src/main/res/drawable-anydpi/exo_ic_skip_next.xml	2021-12-24 01:10:04.099025600 +0400
++++ ./bluecord/src/main/res/drawable-anydpi/exo_ic_skip_next.xml	2021-12-24 01:08:17.844263100 +0400
+@@ -1,4 +1,4 @@
+ <?xml version="1.0" encoding="utf-8"?>
+ <vector xmlns:android="http://schemas.android.com/apk/res/android" android:height="40dp" android:width="40dp" android:viewportWidth="24" android:viewportHeight="24">
+-    <path android:fillColor="#ffffff" android:pathData="M6,18l8.5,-6L6,6v12zM16,6v12h2V6h-2z"/>
++    <path android:fillColor="#ffffffff" android:pathData="M6,18l8.5,-6L6,6v12zM16,6v12h2V6h-2z"/>
+ </vector>

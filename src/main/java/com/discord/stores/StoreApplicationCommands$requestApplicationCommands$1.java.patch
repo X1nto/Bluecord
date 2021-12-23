@@ -1,0 +1,63 @@
+--- ./discord_94011/src/main/java/com/discord/stores/StoreApplicationCommands$requestApplicationCommands$1.java	2021-12-24 01:10:12.714028600 +0400
++++ ./bluecord/src/main/java/com/discord/stores/StoreApplicationCommands$requestApplicationCommands$1.java	2021-12-24 01:08:33.209262300 +0400
+@@ -30,43 +30,43 @@ public final class StoreApplicationComma
+     @Override // kotlin.jvm.functions.Function0
+     public final void invoke() {
+         LoadState loadState;
+-        if (!StoreApplicationCommands.access$isLoadingDiscoveryCommands$p(this.this$0)) {
+-            String access$generateNonce = StoreApplicationCommands.access$generateNonce(this.this$0);
+-            StoreApplicationCommands.access$setDiscoverCommandsNonce$p(this.this$0, access$generateNonce);
+-            if (StoreApplicationCommands.access$getLoadDirectionDown$p(this.this$0) || StoreApplicationCommands.access$getLoadDirectionUp$p(this.this$0)) {
+-                loadState = StoreApplicationCommands.access$getDiscoverCommands$p(this.this$0).getLoadState();
++        if (!this.this$0.isLoadingDiscoveryCommands) {
++            String generateNonce = this.this$0.generateNonce();
++            this.this$0.discoverCommandsNonce = generateNonce;
++            if (this.this$0.loadDirectionDown || this.this$0.loadDirectionUp) {
++                loadState = this.this$0.discoverCommands.getLoadState();
+             } else {
+                 loadState = LoadState.Loading.INSTANCE;
+             }
+-            if (!m.areEqual(StoreApplicationCommands.access$getDiscoverGuildId$p(this.this$0), this.$guildId)) {
++            if (!m.areEqual(this.this$0.discoverGuildId, this.$guildId)) {
+                 StoreApplicationCommands storeApplicationCommands = this.this$0;
+-                StoreApplicationCommands.access$setDiscoverCommands$p(storeApplicationCommands, DiscoverCommands.copy$default(StoreApplicationCommands.access$getDiscoverCommands$p(storeApplicationCommands), n.emptyList(), 0, 0, false, false, 0, null, loadState, 126, null));
++                storeApplicationCommands.discoverCommands = DiscoverCommands.copy$default(storeApplicationCommands.discoverCommands, n.emptyList(), 0, 0, false, false, 0, null, loadState, 126, null);
+                 this.this$0.markChanged(StoreApplicationCommands.Companion.getDiscoverCommandsUpdate());
+             } else {
+                 StoreApplicationCommands storeApplicationCommands2 = this.this$0;
+-                StoreApplicationCommands.access$setDiscoverCommands$p(storeApplicationCommands2, DiscoverCommands.copy$default(StoreApplicationCommands.access$getDiscoverCommands$p(storeApplicationCommands2), null, 0, 0, false, false, 0, null, loadState, 127, null));
++                storeApplicationCommands2.discoverCommands = DiscoverCommands.copy$default(storeApplicationCommands2.discoverCommands, null, 0, 0, false, false, 0, null, loadState, 127, null);
+                 this.this$0.markChanged(StoreApplicationCommands.Companion.getDiscoverCommandsUpdate());
+             }
+-            StoreApplicationCommands.access$setDiscoverGuildId$p(this.this$0, this.$guildId);
++            this.this$0.discoverGuildId = this.$guildId;
+             Long l = this.$guildId;
+             if (l == null || l.longValue() <= 0) {
+                 Long l2 = this.$applicationId;
+                 if (l2 == null) {
+                     StoreApplicationCommands storeApplicationCommands3 = this.this$0;
+-                    StoreApplicationCommands.access$handleDiscoverCommandsUpdate(storeApplicationCommands3, StoreApplicationCommands.access$getBuiltInCommandsProvider$p(storeApplicationCommands3).getBuiltInCommands());
+-                } else if (!m.areEqual(l2, StoreApplicationCommands.access$getDiscoverApplicationId$p(this.this$0))) {
+-                    StoreApplicationCommands.access$setLoadingDiscoveryCommands$p(this.this$0, true);
+-                    StoreApplicationCommands.access$getApplicationCommandsViaRest(this.this$0, this.$applicationId.longValue());
++                    storeApplicationCommands3.handleDiscoverCommandsUpdate(storeApplicationCommands3.builtInCommandsProvider.getBuiltInCommands());
++                } else if (!m.areEqual(l2, this.this$0.discoverApplicationId)) {
++                    this.this$0.isLoadingDiscoveryCommands = true;
++                    this.this$0.getApplicationCommandsViaRest(this.$applicationId.longValue());
+                 }
+             } else {
+-                boolean requestApplicationCommands$default = StoreGatewayConnection.requestApplicationCommands$default(StoreApplicationCommands.access$getStoreGatewayConnection$p(this.this$0), this.$guildId.longValue(), access$generateNonce, false, null, Integer.valueOf(this.$offset), this.$limit, 8, null);
+-                StoreApplicationCommands.access$setLoadingDiscoveryCommands$p(this.this$0, requestApplicationCommands$default);
++                boolean requestApplicationCommands$default = StoreGatewayConnection.requestApplicationCommands$default(this.this$0.storeGatewayConnection, this.$guildId.longValue(), generateNonce, false, null, Integer.valueOf(this.$offset), this.$limit, 8, null);
++                this.this$0.isLoadingDiscoveryCommands = requestApplicationCommands$default;
+                 if (!requestApplicationCommands$default) {
+                     StoreApplicationCommands storeApplicationCommands4 = this.this$0;
+-                    StoreApplicationCommands.access$handleDiscoverCommandsUpdate(storeApplicationCommands4, StoreApplicationCommands.access$getBuiltInCommandsProvider$p(storeApplicationCommands4).getBuiltInCommands());
++                    storeApplicationCommands4.handleDiscoverCommandsUpdate(storeApplicationCommands4.builtInCommandsProvider.getBuiltInCommands());
+                 }
+             }
+-            StoreApplicationCommands.access$setDiscoverApplicationId$p(this.this$0, this.$applicationId);
++            this.this$0.discoverApplicationId = this.$applicationId;
+         }
+     }
+ }

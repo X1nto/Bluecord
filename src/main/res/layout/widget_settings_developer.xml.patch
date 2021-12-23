@@ -1,0 +1,17 @@
+--- ./discord_94011/src/main/res/layout/widget_settings_developer.xml	2021-12-24 01:10:01.417025600 +0400
++++ ./bluecord/src/main/res/layout/widget_settings_developer.xml	2021-12-24 01:08:23.153264200 +0400
+@@ -13,10 +13,10 @@
+             <com.google.android.material.card.MaterialCardView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="8dp" app:cardBackgroundColor="?attr/colorBackgroundSecondary" app:cardElevation="@dimen/app_elevation" style="@style/Widget.MaterialComponents.CardView">
+                 <androidx.recyclerview.widget.RecyclerView android:id="@+id/developer_settings_notices" app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" style="@style/UiKit.ViewGroup.RecyclerView"/>
+             </com.google.android.material.card.MaterialCardView>
+-            <TextView android:text="Crashes" style="@style/UiKit.Settings.Item.Header"/>
+-            <com.google.android.material.button.MaterialButton android:id="@+id/developer_settings_crash_kotlin" android:layout_marginLeft="8dp" android:layout_marginRight="8dp" android:text="Unhandled UI Thread Exception" style="@style/UiKit.Material.Button"/>
+-            <com.google.android.material.button.MaterialButton android:id="@+id/developer_settings_crash_discord_nonfatal" android:layout_marginLeft="8dp" android:layout_marginRight="8dp" android:text="Non-fatal Exception" style="@style/UiKit.Material.Button"/>
+-            <com.google.android.material.button.MaterialButton android:id="@+id/developer_settings_crash_discord_jnibridge" android:layout_marginLeft="8dp" android:layout_marginRight="8dp" android:text="libdiscord Crash" style="@style/UiKit.Material.Button"/>
++            <TextView android:visibility="gone" android:text="Crashes" style="@style/UiKit.Settings.Item.Header"/>
++            <com.google.android.material.button.MaterialButton android:id="@+id/developer_settings_crash_kotlin" android:visibility="gone" android:layout_marginLeft="8dp" android:layout_marginRight="8dp" android:text="Unhandled UI Thread Exception" style="@style/UiKit.Material.Button"/>
++            <com.google.android.material.button.MaterialButton android:id="@+id/developer_settings_crash_discord_nonfatal" android:visibility="gone" android:layout_marginLeft="8dp" android:layout_marginRight="8dp" android:text="Non-fatal Exception" style="@style/UiKit.Material.Button"/>
++            <com.google.android.material.button.MaterialButton android:id="@+id/developer_settings_crash_discord_jnibridge" android:visibility="gone" android:layout_marginLeft="8dp" android:layout_marginRight="8dp" android:text="libdiscord Crash" style="@style/UiKit.Material.Button"/>
+             <TextView android:id="@+id/textView" android:text="Actions" style="@style/UiKit.Settings.Item.Header"/>
+             <com.google.android.material.button.MaterialButton android:id="@+id/developer_settings_simulate_gateway_reconnect" android:layout_marginLeft="8dp" android:layout_marginRight="8dp" android:text="Simulate Gateway Reconnect" style="@style/UiKit.Material.Button"/>
+         </LinearLayout>

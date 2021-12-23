@@ -1,0 +1,20 @@
+--- ./discord_94011/src/main/java/f0/e0/i/b.java	2021-12-24 01:10:16.434025600 +0400
++++ ./bluecord/src/main/java/f0/e0/i/b.java	2021-12-24 01:08:36.805261400 +0400
+@@ -385,7 +385,7 @@ public final class b implements f0.e0.h.
+         m.checkParameterIsNotNull(request, "request");
+         m.checkParameterIsNotNull(type, "proxyType");
+         StringBuilder sb = new StringBuilder();
+-        sb.append(request.f2953c);
++        sb.append(request.f2955c);
+         sb.append(' ');
+         w wVar = request.b;
+         if (!wVar.f2858c && type == Proxy.Type.HTTP) {
+@@ -462,7 +462,7 @@ public final class b implements f0.e0.h.
+                 f0.e0.h.j a2 = f0.e0.h.j.a(this.b.b());
+                 Response.a aVar = new Response.a();
+                 aVar.f(a2.a);
+-                aVar.f2957c = a2.b;
++                aVar.f2959c = a2.b;
+                 aVar.e(a2.f2816c);
+                 aVar.d(this.b.a());
+                 if (z2 && a2.b == 100) {

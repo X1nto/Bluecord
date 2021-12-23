@@ -1,0 +1,11 @@
+--- ./discord_94011/src/main/java/com/discord/models/experiments/dto/GuildExperimentBucketDto$Parser$parse$2.java	2021-12-24 01:10:12.643024700 +0400
++++ ./bluecord/src/main/java/com/discord/models/experiments/dto/GuildExperimentBucketDto$Parser$parse$2.java	2021-12-24 01:08:33.138261400 +0400
+@@ -30,7 +30,7 @@ public final class GuildExperimentBucket
+ 
+             @Override // com.discord.models.domain.Model.JsonReader.ItemFactory
+             public final IntRange get() {
+-                return GuildExperimentBucketDto.Parser.access$parsePosition(GuildExperimentBucketDto.Parser.INSTANCE, this.this$0.$reader);
++                return GuildExperimentBucketDto.Parser.INSTANCE.parsePosition(this.this$0.$reader);
+             }
+         });
+         m.checkNotNullExpressionValue(t, "reader.nextList { parsePosition(reader) }");

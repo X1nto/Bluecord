@@ -1,0 +1,20 @@
+--- ./discord_94011/src/main/java/f0/e0/n/d.java	2021-12-24 01:10:16.450026200 +0400
++++ ./bluecord/src/main/java/f0/e0/n/d.java	2021-12-24 01:08:36.821263300 +0400
+@@ -206,7 +206,7 @@ public final class d implements WebSocke
+         this.j = new ArrayDeque<>();
+         this.k = new ArrayDeque<>();
+         this.n = -1;
+-        if (d0.z.d.m.areEqual("GET", request.f2953c)) {
++        if (d0.z.d.m.areEqual("GET", request.f2955c)) {
+             ByteString.a aVar = ByteString.j;
+             byte[] bArr = new byte[16];
+             random.nextBytes(bArr);
+@@ -214,7 +214,7 @@ public final class d implements WebSocke
+             return;
+         }
+         StringBuilder P = c.d.b.a.a.P("Request must be GET: ");
+-        P.append(request.f2953c);
++        P.append(request.f2955c);
+         throw new IllegalArgumentException(P.toString().toString());
+     }
+ 

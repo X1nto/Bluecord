@@ -1,0 +1,1782 @@
+--- ./discord_94011/src/main/res/values-zh-rCN/plurals.xml	2021-12-24 01:10:11.183024900 +0400
++++ ./bluecord/src/main/res/values-zh-rCN/plurals.xml	2021-12-24 01:08:31.048262900 +0400
+@@ -1,1382 +1,1382 @@
+ <?xml version="1.0" encoding="utf-8"?>
+ <resources>
+     <plurals name="activity_feed_now_playing_header_two_known_extras">
+-        <item quantity="one">{extras}位其他用户</item>
+         <item quantity="other">{extras}位其他用户</item>
++        <item quantity="one">{extras}位其他用户</item>
+     </plurals>
+     <plurals name="activity_feed_single_member_list_header_memberCount">
+-        <item quantity="one">{memberCount} 人</item>
+         <item quantity="other">{memberCount}人</item>
++        <item quantity="one">{memberCount} 人</item>
+     </plurals>
+     <plurals name="activity_feed_user_played_days_ago_time">
+-        <item quantity="one">天</item>
+         <item quantity="other">天</item>
++        <item quantity="one">天</item>
+     </plurals>
+     <plurals name="activity_feed_user_played_hours_ago_time">
+-        <item quantity="one">小时</item>
+         <item quantity="other">小时</item>
++        <item quantity="one">小时</item>
+     </plurals>
+     <plurals name="activity_feed_user_played_minutes_ago_time">
+-        <item quantity="one">分钟</item>
+         <item quantity="other">分钟</item>
++        <item quantity="one">分钟</item>
+     </plurals>
+     <plurals name="activity_feed_user_played_seconds_ago_time">
+-        <item quantity="one">秒</item>
+         <item quantity="other">秒</item>
++        <item quantity="one">秒</item>
+     </plurals>
+     <plurals name="age_gate_confirm_header_age">
+-        <item quantity="one">1 岁</item>
+         <item quantity="other">{age}岁</item>
++        <item quantity="one">1 岁</item>
+     </plurals>
+     <plurals name="age_gate_underage_existing_body_deletion_with_days_days">
+-        <item quantity="one">1天</item>
+         <item quantity="other">{days}天</item>
++        <item quantity="one">1天</item>
+     </plurals>
+     <plurals name="announcement_edit_rate_limit_retryAfterMinutes">
+-        <item quantity="one">1分钟</item>
+         <item quantity="other">{retryAfterMinutes}分钟</item>
++        <item quantity="one">1分钟</item>
+     </plurals>
+     <plurals name="application_progress_indicator_installing_hours_timeRemaining">
+-        <item quantity="one">{#} 小时</item>
+         <item quantity="other">{#} 小时</item>
++        <item quantity="one">{#} 小时</item>
+     </plurals>
+     <plurals name="application_progress_indicator_installing_minutes_timeRemaining">
+-        <item quantity="one">{#} 分钟</item>
+         <item quantity="other">{#} 分钟</item>
++        <item quantity="one">{#} 分钟</item>
+     </plurals>
+     <plurals name="application_progress_indicator_installing_seconds_timeRemaining">
+-        <item quantity="one">封装</item>
+         <item quantity="other">{#} 秒剩余</item>
++        <item quantity="one">封装</item>
+     </plurals>
+     <plurals name="application_progress_indicator_updating_hours_timeRemaining">
+-        <item quantity="one">{#} 小时</item>
+         <item quantity="other">{#} 小时</item>
++        <item quantity="one">{#} 小时</item>
+     </plurals>
+     <plurals name="application_progress_indicator_updating_minutes_timeRemaining">
+-        <item quantity="one">{#} 分钟</item>
+         <item quantity="other">{#} 分钟</item>
++        <item quantity="one">{#} 分钟</item>
+     </plurals>
+     <plurals name="application_progress_indicator_updating_seconds_timeRemaining">
+-        <item quantity="one">封装</item>
+         <item quantity="other">{#} 秒剩余</item>
++        <item quantity="one">封装</item>
+     </plurals>
+     <plurals name="application_store_gift_purchase_confirm_monthly_mobile_intervalCount">
+-        <item quantity="one">{#} 个月</item>
+         <item quantity="other">{#} 个月</item>
++        <item quantity="one">{#} 个月</item>
+     </plurals>
+     <plurals name="application_store_gift_purchase_confirm_subscription_monthly_intervalCount">
+-        <item quantity="one">{#} 个月</item>
+         <item quantity="other">{#} 个月</item>
++        <item quantity="one">{#} 个月</item>
+     </plurals>
+     <plurals name="application_store_gift_purchase_confirm_subscription_yearly_intervalCount">
+-        <item quantity="one">{#} 年</item>
+         <item quantity="other">{#} 年</item>
++        <item quantity="one">{#} 年</item>
+     </plurals>
+     <plurals name="application_store_gift_purchase_confirm_yearly_mobile_intervalCount">
+-        <item quantity="one">{#} 年</item>
+         <item quantity="other">{#} 年</item>
++        <item quantity="one">{#} 年</item>
+     </plurals>
+     <plurals name="application_store_recommendation_ever_played_other_count">
+-        <item quantity="one">1 个</item>
+         <item quantity="other">{count} 个</item>
++        <item quantity="one">1 个</item>
+     </plurals>
+     <plurals name="application_store_recommendation_now_playing_other_count">
+-        <item quantity="one">1 个</item>
+         <item quantity="other">{count} 个</item>
++        <item quantity="one">1 个</item>
+     </plurals>
+     <plurals name="application_store_recommendation_recently_played_other_count">
+-        <item quantity="one">1 个</item>
+         <item quantity="other">{count} 个</item>
++        <item quantity="one">1 个</item>
+     </plurals>
+     <plurals name="attach_payment_source_optional_with_entitlements_warning_months">
+-        <item quantity="one">{#}个月</item>
+         <item quantity="other">{#}个月</item>
++        <item quantity="one">{#}个月</item>
+     </plurals>
+     <plurals name="autocomplete_emoji_upsell_count">
+-        <item quantity="one">{#} 个更多匹配表情符号</item>
+         <item quantity="other">{#} 个更多匹配表情符号</item>
++        <item quantity="one">{#} 个更多匹配表情符号</item>
+     </plurals>
+     <plurals name="bans_header_bans">
+-        <item quantity="one">1 个封锁</item>
+         <item quantity="other">{bans} 个封锁</item>
++        <item quantity="one">1 个封锁</item>
+     </plurals>
+     <plurals name="billing_plan_select_description_premium_tier_1_premium_guild_bundle_num">
+-        <item quantity="one">{#} 个助力</item>
+         <item quantity="other">{#} 个助力</item>
++        <item quantity="one">{#} 个助力</item>
+     </plurals>
+     <plurals name="billing_plan_select_description_premium_tier_2_premium_guild_bundle_num">
+-        <item quantity="one">{#} 个助力</item>
+         <item quantity="other">{#} 个助力</item>
++        <item quantity="one">{#} 个助力</item>
+     </plurals>
+     <plurals name="billing_plan_select_includes_boosts_num">
+-        <item quantity="one">{#} 个助力</item>
+         <item quantity="other">{#} 个助力</item>
++        <item quantity="one">{#} 个助力</item>
+     </plurals>
+     <plurals name="billing_price_per_year_months_free_numFreeMonths">
+-        <item quantity="one">{#} 个月</item>
+         <item quantity="other">{#} 个月</item>
++        <item quantity="one">{#} 个月</item>
+     </plurals>
+     <plurals name="billing_refund_purchase_date_daysSincePurchase">
+-        <item quantity="one">{daysSincePurchase} 天前</item>
+         <item quantity="other">{daysSincePurchase} 天前</item>
++        <item quantity="one">{daysSincePurchase} 天前</item>
+     </plurals>
+     <plurals name="billing_switch_plan_confirm_upgrade_tier_2_year_numFreeGuildSubscriptions">
+-        <item quantity="one">{#} 个服务器助力</item>
+         <item quantity="other">{#} 个服务器助力</item>
++        <item quantity="one">{#} 个服务器助力</item>
+     </plurals>
+     <plurals name="billing_switch_plan_tier_2_description_numFreeGuildSubscriptions">
+-        <item quantity="one">{#} 个服务器助力</item>
+         <item quantity="other">{#} 个服务器助力</item>
++        <item quantity="one">{#} 个服务器助力</item>
+     </plurals>
+     <plurals name="billing_switch_plan_upgrade_body_tier_2_year_numFreeGuildSubscriptions">
+-        <item quantity="one">{#} 个服务器助力</item>
+         <item quantity="other">{#} 个服务器助力</item>
++        <item quantity="one">{#} 个服务器助力</item>
+     </plurals>
+     <plurals name="blocked_message_count_count">
+-        <item quantity="one">{count} 条被屏蔽信息</item>
+         <item quantity="other">{count} 条被屏蔽信息</item>
++        <item quantity="one">{count} 条被屏蔽信息</item>
+     </plurals>
+     <plurals name="blocked_messages_count">
+-        <item quantity="one">1 条被阻信息</item>
+         <item quantity="other">{count} 条被阻信息</item>
++        <item quantity="one">1 条被阻信息</item>
+     </plurals>
+     <plurals name="blocked_messages_hide_count">
+-        <item quantity="one">折叠信息</item>
+         <item quantity="other">折叠信息</item>
++        <item quantity="one">折叠信息</item>
+     </plurals>
+     <plurals name="blocked_messages_show_count">
+-        <item quantity="one">显示信息</item>
+         <item quantity="other">显示信息</item>
++        <item quantity="one">显示信息</item>
+     </plurals>
+     <plurals name="camera_disabled_limit_reached_limit">
+-        <item quantity="one">{#} 用户</item>
+         <item quantity="other">{#} 用户</item>
++        <item quantity="one">{#} 用户</item>
+     </plurals>
+     <plurals name="camera_preview_video_background_upload_max_tooltip_maxCustomBackgrounds">
+-        <item quantity="one">{#} 背景</item>
+         <item quantity="other">{#} 背景</item>
++        <item quantity="one">{#} 背景</item>
+     </plurals>
+     <plurals name="change_identity_nickname_too_short_minLength">
+-        <item quantity="one">{#} character</item>
+         <item quantity="other">{#} characters</item>
++        <item quantity="one">{#} character</item>
+     </plurals>
+     <plurals name="channel_members_a11y_label_count">
+-        <item quantity="one">{#} 位成员</item>
+         <item quantity="other">{#} 位成员</item>
++        <item quantity="one">{#} 位成员</item>
+     </plurals>
+     <plurals name="channel_mention_badge_a11y_label_mentionCount">
+-        <item quantity="one">{#} 提及</item>
+         <item quantity="other">{#} 提及</item>
++        <item quantity="one">{#} 提及</item>
+     </plurals>
+     <plurals name="channel_slowmode_cooldown_seconds">
+-        <item quantity="one">1 秒</item>
+         <item quantity="other">{seconds} 秒</item>
++        <item quantity="one">1 秒</item>
+     </plurals>
+     <plurals name="channel_slowmode_desc_hours_hours">
+-        <item quantity="one">1 小时</item>
+         <item quantity="other">{hours} 小时</item>
++        <item quantity="one">1 小时</item>
+     </plurals>
+     <plurals name="channel_slowmode_desc_hours_minutes">
+-        <item quantity="one">1 分钟</item>
+         <item quantity="other">{minutes} 分钟</item>
++        <item quantity="one">1 分钟</item>
+     </plurals>
+     <plurals name="channel_slowmode_desc_hours_seconds">
+-        <item quantity="one">1 秒</item>
+         <item quantity="other">{seconds} 秒</item>
++        <item quantity="one">1 秒</item>
+     </plurals>
+     <plurals name="channel_slowmode_desc_minutes_minutes">
+-        <item quantity="one">1 分钟</item>
+         <item quantity="other">{minutes} 分钟</item>
++        <item quantity="one">1 分钟</item>
+     </plurals>
+     <plurals name="channel_slowmode_desc_minutes_seconds">
+-        <item quantity="one">1 秒</item>
+         <item quantity="other">{seconds} 秒</item>
++        <item quantity="one">1 秒</item>
+     </plurals>
+     <plurals name="channel_slowmode_desc_seconds">
+-        <item quantity="one">1 秒</item>
+         <item quantity="other">{seconds} 秒</item>
++        <item quantity="one">1 秒</item>
+     </plurals>
+     <plurals name="create_stage_instance_speakers_label_speakerCount">
+-        <item quantity="one">1 位发言者</item>
+         <item quantity="other">{speakerCount} 位发言者</item>
++        <item quantity="one">1 位发言者</item>
+     </plurals>
+     <plurals name="custom_status_clear_in_hours_hours">
+-        <item quantity="one">{#} 小时</item>
+         <item quantity="other">{#} 小时</item>
++        <item quantity="one">{#} 小时</item>
+     </plurals>
+     <plurals name="custom_status_clear_in_minutes_minutes">
+-        <item quantity="one">{#} 分钟</item>
+         <item quantity="other">{#} 分钟</item>
++        <item quantity="one">{#} 分钟</item>
+     </plurals>
+     <plurals name="custom_status_hours_hours">
+-        <item quantity="one">{#} 小时</item>
+         <item quantity="other">{#} 小时</item>
++        <item quantity="one">{#} 小时</item>
+     </plurals>
+     <plurals name="custom_status_minutes_minutes">
+-        <item quantity="one">{#} 分钟</item>
+         <item quantity="other">{#} 分钟</item>
++        <item quantity="one">{#} 分钟</item>
+     </plurals>
+     <plurals name="directory_search_results_header_numResults">
+-        <item quantity="one">**1** 个社区</item>
+         <item quantity="other">**{numResults}** 个社区</item>
++        <item quantity="one">**1** 个社区</item>
+     </plurals>
+     <plurals name="discovery_speaker_count_speakersCount">
+-        <item quantity="one">+{count} 位发言者</item>
+         <item quantity="other">+{count} 位发言者</item>
++        <item quantity="one">+{count} 位发言者</item>
+     </plurals>
+     <plurals name="dm_tooltip_a11y_label_mentions">
+-        <item quantity="one">, {#} 未读消息</item>
+         <item quantity="other">, {#} 未读消息</item>
++        <item quantity="one">, {#} 未读消息</item>
+     </plurals>
+     <plurals name="duration_days_days">
+-        <item quantity="one">1 天</item>
+         <item quantity="other">{days} 天</item>
++        <item quantity="one">1 天</item>
+     </plurals>
+     <plurals name="duration_days_short_days">
+-        <item quantity="one">1 天</item>
+         <item quantity="other">{days} 天</item>
++        <item quantity="one">1 天</item>
+     </plurals>
+     <plurals name="duration_hours_hours">
+-        <item quantity="one">1 小时</item>
+         <item quantity="other">{hours} 小时</item>
++        <item quantity="one">1 小时</item>
+     </plurals>
+     <plurals name="duration_hours_short_hours">
+-        <item quantity="one">1小时</item>
+         <item quantity="other">{hours}小时</item>
++        <item quantity="one">1小时</item>
+     </plurals>
+     <plurals name="duration_mins_mins">
+-        <item quantity="one">1 分</item>
+         <item quantity="other">{mins} 分</item>
++        <item quantity="one">1 分</item>
+     </plurals>
+     <plurals name="duration_minutes_minutes">
+-        <item quantity="one">1 分钟</item>
+         <item quantity="other">{minutes} 分钟</item>
++        <item quantity="one">1 分钟</item>
+     </plurals>
+     <plurals name="duration_minutes_short_minutes">
+-        <item quantity="one">1分钟</item>
+         <item quantity="other">{minutes}分钟</item>
++        <item quantity="one">1分钟</item>
+     </plurals>
+     <plurals name="duration_seconds_seconds">
+-        <item quantity="one">1 秒</item>
+         <item quantity="other">{seconds} 秒</item>
++        <item quantity="one">1 秒</item>
+     </plurals>
+     <plurals name="duration_seconds_short_seconds">
+-        <item quantity="one">1秒</item>
+         <item quantity="other">{seconds}秒</item>
++        <item quantity="one">1秒</item>
+     </plurals>
+     <plurals name="embedded_activities_are_participating_count">
+-        <item quantity="one">{#} 位其他用户</item>
+         <item quantity="other">{#} 位其他用户</item>
++        <item quantity="one">{#} 位其他用户</item>
+     </plurals>
+     <plurals name="embedded_activities_are_playing_count">
+-        <item quantity="one">{#} 位其他用户</item>
+         <item quantity="other">{#} 位其他用户</item>
++        <item quantity="one">{#} 位其他用户</item>
+     </plurals>
+     <plurals name="embedded_activities_are_watching_count">
+-        <item quantity="one">{#} 位其他用户</item>
+         <item quantity="other">{#} 位其他用户</item>
++        <item quantity="one">{#} 位其他用户</item>
+     </plurals>
+     <plurals name="emoji_slots_available_count">
+-        <item quantity="one">{count} 格</item>
+         <item quantity="other">{count} 格</item>
++        <item quantity="one">{count} 格</item>
+     </plurals>
+     <plurals name="emojis_title_count">
+-        <item quantity="one">{count}表情符号</item>
+         <item quantity="other">{count}表情符号</item>
++        <item quantity="one">{count}表情符号</item>
+     </plurals>
+     <plurals name="exo_controls_fastforward_by_amount_description">
+-        <item quantity="one">快进 %d 秒</item>
+         <item quantity="other">快进 %d 秒</item>
++        <item quantity="one">快进 %d 秒</item>
+     </plurals>
+     <plurals name="exo_controls_rewind_by_amount_description">
+-        <item quantity="one">快退 %d 秒</item>
+         <item quantity="other">快退 %d 秒</item>
++        <item quantity="one">快退 %d 秒</item>
+     </plurals>
+     <plurals name="form_help_last_seen_days">
+-        <item quantity="one">1天</item>
+         <item quantity="other">{days} 天</item>
++        <item quantity="one">1天</item>
+     </plurals>
+     <plurals name="form_help_last_seen_members">
+-        <item quantity="one">1 位</item>
+         <item quantity="other">{members} 位</item>
++        <item quantity="one">1 位</item>
+     </plurals>
+     <plurals name="form_help_last_seen_with_roles_days">
+-        <item quantity="one">1天</item>
+         <item quantity="other">{days} 天</item>
++        <item quantity="one">1天</item>
+     </plurals>
+     <plurals name="form_help_last_seen_with_roles_members">
+-        <item quantity="one">1 位</item>
+         <item quantity="other">{members} 位</item>
++        <item quantity="one">1 位</item>
+     </plurals>
+     <plurals name="game_feed_unknown_players_count">
+-        <item quantity="one">{#} 名未知玩家</item>
+         <item quantity="other">{#} 名未知玩家</item>
++        <item quantity="one">{#} 名未知玩家</item>
+     </plurals>
+     <plurals name="game_feed_user_played_days_ago_time">
+-        <item quantity="one">天</item>
+         <item quantity="other">天</item>
++        <item quantity="one">天</item>
+     </plurals>
+     <plurals name="game_feed_user_played_hours_ago_time">
+-        <item quantity="one">小时了</item>
+         <item quantity="other">小时了</item>
++        <item quantity="one">小时了</item>
+     </plurals>
+     <plurals name="game_feed_user_played_minutes_ago_time">
+-        <item quantity="one">分钟了</item>
+         <item quantity="other">分钟了</item>
++        <item quantity="one">分钟了</item>
+     </plurals>
+     <plurals name="game_feed_user_played_months_ago_time">
+-        <item quantity="one">月</item>
+         <item quantity="other">月</item>
++        <item quantity="one">月</item>
+     </plurals>
+     <plurals name="game_feed_user_played_weeks_ago_time">
+-        <item quantity="one">周</item>
+         <item quantity="other">周</item>
++        <item quantity="one">周</item>
+     </plurals>
+     <plurals name="game_feed_user_played_years_ago_time">
+-        <item quantity="one">年</item>
+         <item quantity="other">年</item>
++        <item quantity="one">年</item>
+     </plurals>
+     <plurals name="game_feed_user_playing_for_days_time">
+-        <item quantity="one">天</item>
+         <item quantity="other">天</item>
++        <item quantity="one">天</item>
+     </plurals>
+     <plurals name="game_feed_user_playing_for_hours_time">
+-        <item quantity="one">小时</item>
+         <item quantity="other">小时</item>
++        <item quantity="one">小时</item>
+     </plurals>
+     <plurals name="game_feed_user_playing_for_minutes_time">
+-        <item quantity="one">分钟</item>
+         <item quantity="other">分钟</item>
++        <item quantity="one">分钟</item>
+     </plurals>
+     <plurals name="game_library_last_played_days_time">
+-        <item quantity="one">昨天</item>
+         <item quantity="other">{#} 日以前</item>
++        <item quantity="one">昨天</item>
+     </plurals>
+     <plurals name="game_library_last_played_hours_time">
+-        <item quantity="one">{#} 小时</item>
+         <item quantity="other">{#} 小时</item>
++        <item quantity="one">{#} 小时</item>
+     </plurals>
+     <plurals name="game_library_last_played_minutes_time">
+-        <item quantity="one">{#} 分</item>
+         <item quantity="other">{#} 分</item>
++        <item quantity="one">{#} 分</item>
+     </plurals>
+     <plurals name="game_library_last_played_months_time">
+-        <item quantity="one">上个月</item>
+         <item quantity="other">{#} 月以前</item>
++        <item quantity="one">上个月</item>
+     </plurals>
+     <plurals name="game_library_last_played_weeks_time">
+-        <item quantity="one">上周</item>
+         <item quantity="other">{#} 周以前</item>
++        <item quantity="one">上周</item>
+     </plurals>
+     <plurals name="game_library_last_played_years_time">
+-        <item quantity="one">去年</item>
+         <item quantity="other">{#} 年以前</item>
++        <item quantity="one">去年</item>
+     </plurals>
+     <plurals name="game_library_time_played_hours_time">
+-        <item quantity="one">小时</item>
+         <item quantity="other">小时</item>
++        <item quantity="one">小时</item>
+     </plurals>
+     <plurals name="game_library_time_played_minutes_time">
+-        <item quantity="one">分</item>
+         <item quantity="other">分</item>
++        <item quantity="one">分</item>
+     </plurals>
+     <plurals name="game_library_time_played_seconds_time">
+-        <item quantity="one">秒</item>
+         <item quantity="other">秒</item>
++        <item quantity="one">秒</item>
+     </plurals>
+     <plurals name="game_library_updates_installing_hours_timeRemaining">
+-        <item quantity="one">1 小时</item>
+         <item quantity="other">{#} 小时</item>
++        <item quantity="one">1 小时</item>
+     </plurals>
+     <plurals name="game_library_updates_installing_minutes_timeRemaining">
+-        <item quantity="one">1 分钟</item>
+         <item quantity="other">{#} 分钟</item>
++        <item quantity="one">1 分钟</item>
+     </plurals>
+     <plurals name="game_library_updates_installing_seconds_timeRemaining">
+-        <item quantity="one">封装</item>
+         <item quantity="other">{#} 秒剩余</item>
++        <item quantity="one">封装</item>
+     </plurals>
+     <plurals name="game_library_updates_updating_updating_hours_timeRemaining">
+-        <item quantity="one">1 小时</item>
+         <item quantity="other">{#} 小时</item>
++        <item quantity="one">1 小时</item>
+     </plurals>
+     <plurals name="game_library_updates_updating_updating_minutes_timeRemaining">
+-        <item quantity="one">1 分钟</item>
+         <item quantity="other">{#} 分钟</item>
++        <item quantity="one">1 分钟</item>
+     </plurals>
+     <plurals name="game_library_updates_updating_updating_seconds_timeRemaining">
+-        <item quantity="one">封装</item>
+         <item quantity="other">{#} 秒剩余</item>
++        <item quantity="one">封装</item>
+     </plurals>
+     <plurals name="gift_code_auth_gifted_subscription_monthly_intervalCount">
+-        <item quantity="one">{#} 个月</item>
+         <item quantity="other">{#} 个月</item>
++        <item quantity="one">{#} 个月</item>
+     </plurals>
+     <plurals name="gift_code_auth_gifted_subscription_yearly_intervalCount">
+-        <item quantity="one">{#} 年</item>
+         <item quantity="other">{#} 年</item>
++        <item quantity="one">{#} 年</item>
+     </plurals>
+     <plurals name="gift_confirmation_body_subscription_monthly_confirm_intervalCount">
+-        <item quantity="one">{#} 个月</item>
+         <item quantity="other">{#} 个月</item>
++        <item quantity="one">{#} 个月</item>
+     </plurals>
+     <plurals name="gift_confirmation_body_subscription_yearly_confirm_intervalCount">
+-        <item quantity="one">{#} 年</item>
+         <item quantity="other">{#} 年</item>
++        <item quantity="one">{#} 年</item>
+     </plurals>
+     <plurals name="gift_confirmation_body_success_generic_subscription_monthly_intervalCount">
+-        <item quantity="one">{#} 个月</item>
+         <item quantity="other">{#} 个月</item>
++        <item quantity="one">{#} 个月</item>
+     </plurals>
+     <plurals name="gift_confirmation_body_success_generic_subscription_yearly_intervalCount">
+-        <item quantity="one">{#} 年</item>
+         <item quantity="other">{#} 年</item>
++        <item quantity="one">{#} 年</item>
+     </plurals>
+     <plurals name="gift_confirmation_body_success_premium_tier_1_monthly_intervalCount">
+-        <item quantity="one">{#} 个月</item>
+         <item quantity="other">{#} 个月</item>
++        <item quantity="one">{#} 个月</item>
+     </plurals>
+     <plurals name="gift_confirmation_body_success_premium_tier_1_yearly_intervalCount">
+-        <item quantity="one">{#} 年</item>
+         <item quantity="other">{#} 年</item>
++        <item quantity="one">{#} 年</item>
+     </plurals>
+     <plurals name="gift_confirmation_body_success_premium_tier_2_monthly_intervalCount">
+-        <item quantity="one">{#}个月</item>
+         <item quantity="other">{#}个月</item>
++        <item quantity="one">{#}个月</item>
+     </plurals>
+     <plurals name="gift_confirmation_body_success_premium_tier_2_yearly_intervalCount">
+-        <item quantity="one">{#}年</item>
+         <item quantity="other">{#}年</item>
++        <item quantity="one">{#}年</item>
+     </plurals>
+     <plurals name="gift_confirmation_nitro_time_frame_months_time">
+-        <item quantity="one">{#} 个月</item>
+         <item quantity="other">{#} 个月</item>
++        <item quantity="one">{#} 个月</item>
+     </plurals>
+     <plurals name="gift_confirmation_nitro_time_frame_years_time">
+-        <item quantity="one">{#} 年</item>
+         <item quantity="other">{#} 年</item>
++        <item quantity="one">{#} 年</item>
+     </plurals>
+     <plurals name="gift_embed_body_subscription_default_months_intervalCount">
+-        <item quantity="one">{#} 个月</item>
+         <item quantity="other">{#} 个月</item>
++        <item quantity="one">{#} 个月</item>
+     </plurals>
+     <plurals name="gift_embed_body_subscription_default_years_intervalCount">
+-        <item quantity="one">{#} 年</item>
+         <item quantity="other">{#} 年</item>
++        <item quantity="one">{#} 年</item>
+     </plurals>
+     <plurals name="gift_embed_body_subscription_no_user_default_months_intervalCount">
+-        <item quantity="one">{#} 个月</item>
+         <item quantity="other">{#} 个月</item>
++        <item quantity="one">{#} 个月</item>
+     </plurals>
+     <plurals name="gift_embed_body_subscription_no_user_default_years_intervalCount">
+-        <item quantity="one">{#} 年</item>
+         <item quantity="other">{#} 年</item>
++        <item quantity="one">{#} 年</item>
+     </plurals>
+     <plurals name="gift_embed_expiration_hours">
+-        <item quantity="one">{#}小时</item>
+         <item quantity="other">{#}小时</item>
++        <item quantity="one">{#}小时</item>
+     </plurals>
+     <plurals name="gift_inventory_copies_copies">
+-        <item quantity="one">{#} 份</item>
+         <item quantity="other">{#} 份</item>
++        <item quantity="one">{#} 份</item>
+     </plurals>
+     <plurals name="gift_inventory_expires_in_hours">
+-        <item quantity="one">{#}小时</item>
+         <item quantity="other">{#}小时</item>
++        <item quantity="one">{#}小时</item>
+     </plurals>
+     <plurals name="gift_inventory_expires_in_mobile_hours">
+-        <item quantity="one">{#} 小时</item>
+         <item quantity="other">{#} 小时</item>
++        <item quantity="one">{#} 小时</item>
+     </plurals>
+     <plurals name="gift_inventory_subscription_months_intervalCount">
+-        <item quantity="one">{#} 个月</item>
+         <item quantity="other">{#} 个月</item>
++        <item quantity="one">{#} 个月</item>
+     </plurals>
+     <plurals name="gift_inventory_subscription_years_intervalCount">
+-        <item quantity="one">{#} 年</item>
+         <item quantity="other">{#} 年</item>
++        <item quantity="one">{#} 年</item>
+     </plurals>
+     <plurals name="group_dm_invite_remaining_number">
+-        <item quantity="one">您还可以添加1位朋友。</item>
+         <item quantity="other">您还可以添加{number}位朋友。</item>
++        <item quantity="one">您还可以添加1位朋友。</item>
+     </plurals>
+     <plurals name="group_dm_invite_unselect_users_number">
+-        <item quantity="one">您必须取消选择1位朋友。</item>
+         <item quantity="other">您必须取消选择{number}位朋友。</item>
++        <item quantity="one">您必须取消选择1位朋友。</item>
+     </plurals>
+     <plurals name="guild_discovery_header_search_results_count">
+-        <item quantity="one">1个结果</item>
+         <item quantity="other">{count} 个结果</item>
++        <item quantity="one">1个结果</item>
+     </plurals>
+     <plurals name="guild_discovery_search_results_category_header_count">
+-        <item quantity="one">1个**{category}**社区</item>
+         <item quantity="other">{count}个**{category}**社区</item>
++        <item quantity="one">1个**{category}**社区</item>
+     </plurals>
+     <plurals name="guild_discovery_search_results_header_count">
+-        <item quantity="one">1个社区</item>
+         <item quantity="other">{count}个社区</item>
++        <item quantity="one">1个社区</item>
+     </plurals>
+     <plurals name="guild_event_interested_count_count">
+-        <item quantity="one">{#} 人</item>
+         <item quantity="other">{#} 人</item>
++        <item quantity="one">{#} 人</item>
+     </plurals>
+     <plurals name="guild_events_list_action_sheet_header_count">
+-        <item quantity="one">{#}1 个活动</item>
+         <item quantity="other">{count}{#} 个活动</item>
++        <item quantity="one">{#}1 个活动</item>
+     </plurals>
+     <plurals name="guild_events_plural_number">
+-        <item quantity="one">{#} 活动</item>
+         <item quantity="other">{#} 活动</item>
++        <item quantity="one">{#} 活动</item>
+     </plurals>
+     <plurals name="guild_folder_tooltip_a11y_label_mentions">
+-        <item quantity="one">，{#} 个未读提及</item>
+         <item quantity="other">，{#} 个未读提及</item>
++        <item quantity="one">，{#} 个未读提及</item>
+     </plurals>
+     <plurals name="guild_folder_tooltip_a11y_label_with_expanded_state_mentions">
+-        <item quantity="one">，{#} 个未读提及</item>
+         <item quantity="other">，{#} 个未读提及</item>
++        <item quantity="one">，{#} 个未读提及</item>
+     </plurals>
+     <plurals name="guild_settings_audit_log_channel_default_auto_archive_duration_change_newValue">
+-        <item quantity="one">已更改默认归档时间为 **{#} 分钟**</item>
+         <item quantity="other">已更改默认归档时间为 **{#} 分钟**</item>
++        <item quantity="one">已更改默认归档时间为 **{#} 分钟**</item>
+     </plurals>
+     <plurals name="guild_settings_audit_log_channel_default_auto_archive_duration_create_newValue">
+-        <item quantity="one">已设置默认归档时间为 **{#} 分钟**</item>
+         <item quantity="other">已设置默认归档时间为 **{#} 分钟**</item>
++        <item quantity="one">已设置默认归档时间为 **{#} 分钟**</item>
+     </plurals>
+     <plurals name="guild_settings_audit_log_channel_permission_overrides_denied_count">
+-        <item quantity="one">个权限</item>
+         <item quantity="other">个权限</item>
++        <item quantity="one">个权限</item>
+     </plurals>
+     <plurals name="guild_settings_audit_log_channel_permission_overrides_granted_count">
+-        <item quantity="one">个权限</item>
+         <item quantity="other">个权限</item>
++        <item quantity="one">个权限</item>
+     </plurals>
+     <plurals name="guild_settings_audit_log_channel_permission_overrides_reset_count">
+-        <item quantity="one">权限</item>
+         <item quantity="other">权限</item>
++        <item quantity="one">权限</item>
+     </plurals>
+     <plurals name="guild_settings_audit_log_channel_rate_limit_per_user_change_newValue">
+-        <item quantity="one">将慢速模式设置为 **{#} 秒**</item>
+         <item quantity="other">将慢速模式设置为 **{#} 秒**</item>
++        <item quantity="one">将慢速模式设置为 **{#} 秒**</item>
+     </plurals>
+     <plurals name="guild_settings_audit_log_channel_rate_limit_per_user_create_newValue">
+-        <item quantity="one">将慢速模式设置为 **{#} 秒**</item>
+         <item quantity="other">将慢速模式设置为 **{#} 秒**</item>
++        <item quantity="one">将慢速模式设置为 **{#} 秒**</item>
+     </plurals>
+     <plurals name="guild_settings_audit_log_integration_expire_grace_period_newValue">
+-        <item quantity="one">1天</item>
+         <item quantity="other">{#} 天</item>
++        <item quantity="one">1天</item>
+     </plurals>
+     <plurals name="guild_settings_audit_log_member_disconnect_count">
+-        <item quantity="one">**1位用户**</item>
+         <item quantity="other">**!!{count}!!位用户**</item>
++        <item quantity="one">**1位用户**</item>
+     </plurals>
+     <plurals name="guild_settings_audit_log_member_move_count">
+-        <item quantity="one">**1位用户**</item>
+         <item quantity="other">**!!{count}!!位用户**</item>
++        <item quantity="one">**1位用户**</item>
+     </plurals>
+     <plurals name="guild_settings_audit_log_member_prune_count">
+-        <item quantity="one">**位成员**</item>
+         <item quantity="other">**!!{count}!! 位成员**</item>
++        <item quantity="one">**位成员**</item>
+     </plurals>
+     <plurals name="guild_settings_audit_log_member_prune_delete_days_newValue">
+-        <item quantity="one">一天</item>
+         <item quantity="other">{newValue} 天</item>
++        <item quantity="one">一天</item>
+     </plurals>
+     <plurals name="guild_settings_audit_log_member_roles_add_count">
+-        <item quantity="one">一个身份组</item>
+         <item quantity="other">几个身份组</item>
++        <item quantity="one">一个身份组</item>
+     </plurals>
+     <plurals name="guild_settings_audit_log_member_roles_remove_count">
+-        <item quantity="one">一个身份组</item>
+         <item quantity="other">几个身份组</item>
++        <item quantity="one">一个身份组</item>
+     </plurals>
+     <plurals name="guild_settings_audit_log_message_bulk_delete_count">
+-        <item quantity="one">**1则消息**</item>
+         <item quantity="other">**!!{count}!! 则消息**</item>
++        <item quantity="one">**1则消息**</item>
+     </plurals>
+     <plurals name="guild_settings_audit_log_message_delete_count">
+-        <item quantity="one">**则讯息**</item>
+         <item quantity="other">**!!{count}!! 则讯息**</item>
++        <item quantity="one">**则讯息**</item>
+     </plurals>
+     <plurals name="guild_settings_audit_log_role_permissions_denied_count">
+-        <item quantity="one">个权限</item>
+         <item quantity="other">个权限</item>
++        <item quantity="one">个权限</item>
+     </plurals>
+     <plurals name="guild_settings_audit_log_role_permissions_granted_count">
+-        <item quantity="one">个权限</item>
+         <item quantity="other">个权限</item>
++        <item quantity="one">个权限</item>
+     </plurals>
+     <plurals name="guild_settings_audit_log_thread_auto_archive_duration_change_newValue">
+-        <item quantity="one">已更改自动归档时间为 **{#} 分钟**</item>
+         <item quantity="other">已更改自动归档时间为 **{#} 分钟**</item>
++        <item quantity="one">已更改自动归档时间为 **{#} 分钟**</item>
+     </plurals>
+     <plurals name="guild_settings_audit_log_thread_auto_archive_duration_create_newValue">
+-        <item quantity="one">已设置自动归档时间为 **{#} 分钟**</item>
+         <item quantity="other">已设置自动归档时间为 **{#} 分钟**</item>
++        <item quantity="one">已设置自动归档时间为 **{#} 分钟**</item>
+     </plurals>
+     <plurals name="guild_settings_discovery_checklist_age_description_failing_minimumGuildAge">
+-        <item quantity="one">1周</item>
+         <item quantity="other">{minimumGuildAge}周</item>
++        <item quantity="one">1周</item>
+     </plurals>
+     <plurals name="guild_settings_discovery_checklist_age_description_minimumGuildAge">
+-        <item quantity="one">1周</item>
+         <item quantity="other">{minimumGuildAge}周</item>
++        <item quantity="one">1周</item>
+     </plurals>
+     <plurals name="guild_settings_member_verification_review_pending_applications_count">
+-        <item quantity="one">申请处理中</item>
+         <item quantity="other">{count}申请处理中</item>
++        <item quantity="one">申请处理中</item>
+     </plurals>
+     <plurals name="guild_settings_overview_boost_unlock_boosts">
+-        <item quantity="one">{#} 个助力</item>
+         <item quantity="other">{#} 个助力</item>
++        <item quantity="one">{#} 个助力</item>
+     </plurals>
+     <plurals name="guild_settings_partner_checklist_age_description_failing_minimumGuildAge">
+-        <item quantity="one">1周</item>
+         <item quantity="other">{minimumGuildAge}周</item>
++        <item quantity="one">1周</item>
+     </plurals>
+     <plurals name="guild_settings_partner_checklist_age_description_minimumGuildAge">
+-        <item quantity="one">1周</item>
+         <item quantity="other">{minimumGuildAge}周</item>
++        <item quantity="one">1周</item>
+     </plurals>
+     <plurals name="guild_settings_premium_guild_close_hint_numLeft">
+-        <item quantity="one">{#} 个助力</item>
+         <item quantity="other">{#} 个助力</item>
++        <item quantity="one">{#} 个助力</item>
+     </plurals>
+     <plurals name="guild_settings_premium_guild_count_subscribers_count">
+-        <item quantity="one">{#} 位超酷的人</item>
+         <item quantity="other">{#} 位超酷的人</item>
++        <item quantity="one">{#} 位超酷的人</item>
+     </plurals>
+     <plurals name="guild_settings_premium_guild_tier_requirement_required">
+-        <item quantity="one">{#} 个助力</item>
+         <item quantity="other">{#} 个助力</item>
++        <item quantity="one">{#} 个助力</item>
+     </plurals>
+     <plurals name="guild_settings_premium_upsell_body_perk_no_free_guild_subscriptions_numFreeGuildSubscriptions">
+-        <item quantity="one">{#} 个助力</item>
+         <item quantity="other">{#} 个助力</item>
++        <item quantity="one">{#} 个助力</item>
+     </plurals>
+     <plurals name="guild_settings_premium_upsell_body_perk_num_guild_subscriptions_numFreeGuildSubscriptions">
+-        <item quantity="one">{#} 个助力</item>
+         <item quantity="other">{#} 个助力</item>
++        <item quantity="one">{#} 个助力</item>
+     </plurals>
+     <plurals name="guild_settings_premium_upsell_heading_tertiary_premium_user_numFreeGuildSubscriptions">
+-        <item quantity="one">{#} 个服务器助力</item>
+         <item quantity="other">{#} 个服务器助力</item>
++        <item quantity="one">{#} 个服务器助力</item>
+     </plurals>
+     <plurals name="guild_sidebar_announcement_channel_a11y_label_with_mentions_mentionCount">
+-        <item quantity="one">{#} 提及</item>
+         <item quantity="other">{#} 提及</item>
++        <item quantity="one">{#} 提及</item>
+     </plurals>
+     <plurals name="guild_sidebar_default_channel_a11y_label_with_mentions_mentionCount">
+-        <item quantity="one">{#} 提及</item>
+         <item quantity="other">{#} 提及</item>
++        <item quantity="one">{#} 提及</item>
+     </plurals>
+     <plurals name="guild_sidebar_stage_channel_a11y_label_with_users_userCount">
+-        <item quantity="one">1 位用户</item>
+         <item quantity="other">{#} 位用户</item>
++        <item quantity="one">1 位用户</item>
+     </plurals>
+     <plurals name="guild_sidebar_thread_a11y_label_with_mentions_mentionCount">
+-        <item quantity="one">{#} 提及</item>
+         <item quantity="other">{#} 提及</item>
++        <item quantity="one">{#} 提及</item>
+     </plurals>
+     <plurals name="guild_sidebar_voice_channel_a11y_label_with_users_userCount">
+-        <item quantity="one">1 位用户</item>
+         <item quantity="other">{#} 位用户</item>
++        <item quantity="one">1 位用户</item>
+     </plurals>
+     <plurals name="guild_sticker_settings_additional_slots_numAdditional">
+-        <item quantity="one">{numAdditional} 个贴纸槽位</item>
+         <item quantity="other">{numAdditional} 贴纸槽位</item>
++        <item quantity="one">{numAdditional} 个贴纸槽位</item>
+     </plurals>
+     <plurals name="guild_sticker_settings_additional_slots_without_total_numAdditional">
+-        <item quantity="one">{numAdditional} 个贴纸槽位</item>
+         <item quantity="other">{numAdditional} 个贴纸槽位</item>
++        <item quantity="one">{numAdditional} 个贴纸槽位</item>
+     </plurals>
+     <plurals name="guild_sticker_settings_remaining_slots_available_numTotal">
+-        <item quantity="one">{numTotal} 槽位</item>
+         <item quantity="other">{numTotal} 槽位</item>
++        <item quantity="one">{numTotal} 槽位</item>
+     </plurals>
+     <plurals name="guild_subscription_purchase_modal_activated_description_generic_guild_guildSubscriptionQuantity">
+-        <item quantity="one">{#}次</item>
+         <item quantity="other">{#}次</item>
++        <item quantity="one">{#}次</item>
+     </plurals>
+     <plurals name="guild_subscription_purchase_modal_activated_description_guildSubscriptionQuantity">
+-        <item quantity="one">{#}次</item>
+         <item quantity="other">{#}次</item>
++        <item quantity="one">{#}次</item>
+     </plurals>
+     <plurals name="guild_subscription_purchase_modal_activated_description_mobile2_guildSubscriptionQuantity">
+-        <item quantity="one">{#}次</item>
+         <item quantity="other">{#}次</item>
++        <item quantity="one">{#}次</item>
+     </plurals>
+     <plurals name="guild_subscription_purchase_modal_activated_description_no_application_guildSubscriptionQuantity">
+-        <item quantity="one">{#} 个服务器助力</item>
+         <item quantity="other">{#} 个服务器助力</item>
++        <item quantity="one">{#} 个服务器助力</item>
+     </plurals>
+     <plurals name="guild_subscription_purchase_modal_transferred_description_mobile2_guildSubscriptionQuantity">
+-        <item quantity="one">{#}次</item>
+         <item quantity="other">{#}次</item>
++        <item quantity="one">{#}次</item>
+     </plurals>
+     <plurals name="guild_subscription_purchase_modal_unused_slot_notice_slotCount">
+-        <item quantity="one">{#} 未使用的助力</item>
+         <item quantity="other">{#} 未使用的助力</item>
++        <item quantity="one">{#} 未使用的助力</item>
+     </plurals>
+     <plurals name="guild_template_usages_by_creator2_usageCount">
+-        <item quantity="one">**1**人已使用过$[**!!{creator}!!**](creatorHook)创作的此模板</item>
+         <item quantity="other">**{usageCount}**人已使用过$[**!!{creator}!!**](creatorHook)创作的此模板</item>
++        <item quantity="one">**1**人已使用过$[**!!{creator}!!**](creatorHook)创作的此模板</item>
+     </plurals>
+     <plurals name="guild_template_usages_no_bold_usageCount">
+-        <item quantity="one">1人已经使用过此模板</item>
+         <item quantity="other">{usageCount}人已经使用过此模板</item>
++        <item quantity="one">1人已经使用过此模板</item>
+     </plurals>
+     <plurals name="guild_template_usages_usageCount">
+-        <item quantity="one">**1**人已经使用过此模板</item>
+         <item quantity="other">**{usageCount}**人已经使用过此模板</item>
++        <item quantity="one">**1**人已经使用过此模板</item>
+     </plurals>
+     <plurals name="guild_tooltip_a11y_label_mentions">
+-        <item quantity="one">{#} 提及，</item>
+         <item quantity="other">{#} 提及，</item>
++        <item quantity="one">{#} 提及，</item>
+     </plurals>
+     <plurals name="hub_email_connection_invite_header_count">
+-        <item quantity="one">{count}其他好友</item>
+         <item quantity="other">{count}其他好友</item>
++        <item quantity="one">{count}其他好友</item>
+     </plurals>
+     <plurals name="humanize_duration_days_time">
+-        <item quantity="one">1 天</item>
+         <item quantity="other">{#} 天</item>
++        <item quantity="one">1 天</item>
+     </plurals>
+     <plurals name="humanize_duration_hours_time">
+-        <item quantity="one">1 小时</item>
+         <item quantity="other">{#} 小时</item>
++        <item quantity="one">1 小时</item>
+     </plurals>
+     <plurals name="humanize_duration_minutes_time">
+-        <item quantity="one">1 分</item>
+         <item quantity="other">{#} 分</item>
++        <item quantity="one">1 分</item>
+     </plurals>
+     <plurals name="humanize_duration_seconds_time">
+-        <item quantity="one">1 秒</item>
+         <item quantity="other">{#} 秒</item>
++        <item quantity="one">1 秒</item>
+     </plurals>
+     <plurals name="instant_invite_guild_members_total_count">
+-        <item quantity="one">1 位成员</item>
+         <item quantity="other">{count} 位成员</item>
++        <item quantity="one">1 位成员</item>
+     </plurals>
+     <plurals name="integrations_channel_following_summary_count">
+-        <item quantity="one">1个频道</item>
+         <item quantity="other">{count}个频道</item>
++        <item quantity="one">1个频道</item>
+     </plurals>
+     <plurals name="integrations_twitch_summary_count">
+-        <item quantity="one">1个已连接帐户</item>
+         <item quantity="other">{count}已连接帐户</item>
++        <item quantity="one">1个已连接帐户</item>
+     </plurals>
+     <plurals name="integrations_webhooks_count_count">
+-        <item quantity="one">1个 Webhook</item>
+         <item quantity="other">{count}Webhook</item>
++        <item quantity="one">1个 Webhook</item>
+     </plurals>
+     <plurals name="integrations_webhooks_summary_count">
+-        <item quantity="one">1个 Webhook</item>
+         <item quantity="other">{count}Webhook</item>
++        <item quantity="one">1个 Webhook</item>
+     </plurals>
+     <plurals name="integrations_youtube_summary_count">
+-        <item quantity="one">1个已连接帐户</item>
+         <item quantity="other">{count}已连接帐户</item>
++        <item quantity="one">1个已连接帐户</item>
+     </plurals>
+     <plurals name="invite_embed_num_open_slots_number">
+-        <item quantity="one">个</item>
+         <item quantity="other">个</item>
++        <item quantity="one">个</item>
+     </plurals>
+     <plurals name="invite_expires_days_or_uses_plural_numDays">
+-        <item quantity="one">{numDays} 天</item>
+         <item quantity="other">{numDays} 天</item>
++        <item quantity="one">{numDays} 天</item>
+     </plurals>
+     <plurals name="invite_expires_days_or_uses_plural_numUses">
+-        <item quantity="one">{numUses} 次</item>
+         <item quantity="other">{numUses} 次</item>
++        <item quantity="one">{numUses} 次</item>
+     </plurals>
+     <plurals name="invite_expires_days_plural_numDays">
+-        <item quantity="one">{numDays} 天</item>
+         <item quantity="other">{numDays} 天</item>
++        <item quantity="one">{numDays} 天</item>
+     </plurals>
+     <plurals name="invite_expires_hours_numHours">
+-        <item quantity="one">{numHours} 小时</item>
+         <item quantity="other">{numHours} 小时</item>
++        <item quantity="one">{numHours} 小时</item>
+     </plurals>
+     <plurals name="invite_expires_hours_or_uses_numHours">
+-        <item quantity="one">{numHours} 小时</item>
+         <item quantity="other">{numHours} 小时</item>
++        <item quantity="one">{numHours} 小时</item>
+     </plurals>
+     <plurals name="invite_expires_hours_or_uses_numUses">
+-        <item quantity="one">{numUses} 次使用</item>
+         <item quantity="other">{numUses} 次使用</item>
++        <item quantity="one">{numUses} 次使用</item>
+     </plurals>
+     <plurals name="invite_expires_minutes_or_uses_numUses">
+-        <item quantity="one">{numUses} 次使用</item>
+         <item quantity="other">{numUses} 次使用</item>
++        <item quantity="one">{numUses} 次使用</item>
+     </plurals>
+     <plurals name="invite_expires_uses_numUses">
+-        <item quantity="one">{numUses} 次使用</item>
+         <item quantity="other">{numUses} 次使用</item>
++        <item quantity="one">{numUses} 次使用</item>
+     </plurals>
+     <plurals name="last_seen_days">
+-        <item quantity="one">1天</item>
+         <item quantity="other">{days} 天</item>
++        <item quantity="one">1天</item>
+     </plurals>
+     <plurals name="live_viewers_viewers">
+-        <item quantity="one">位观众</item>
+         <item quantity="other">位观众</item>
++        <item quantity="one">位观众</item>
+     </plurals>
+     <plurals name="marketing_refresh_premium_features_included_guild_subscriptions_subheading_numFreeGuildSubscriptions">
+-        <item quantity="one">{#} 个服务器助力</item>
+         <item quantity="other">{#} 个服务器助力</item>
++        <item quantity="one">{#} 个服务器助力</item>
+     </plurals>
+     <plurals name="marketing_refresh_premium_tier_1_cta_description_perks_info_label_numFreeGuildSubscriptions">
+-        <item quantity="one">{#} 个服务器助力</item>
+         <item quantity="other">{#} 个服务器助力</item>
++        <item quantity="one">{#} 个服务器助力</item>
+     </plurals>
+     <plurals name="marketing_refresh_premium_tier_1_cta_description_perks_info_no_premium_guild_subscriptions_numFreeGuildSubscriptions">
+-        <item quantity="one">{#} 个服务器助力</item>
+         <item quantity="other">{#} 个服务器助力</item>
++        <item quantity="one">{#} 个服务器助力</item>
+     </plurals>
+     <plurals name="max_uses_description_mobile_maxUses">
+-        <item quantity="one">1 次</item>
+         <item quantity="other">{maxUses} 次</item>
++        <item quantity="one">1 次</item>
+     </plurals>
+     <plurals name="max_uses_maxUses">
+-        <item quantity="one">1 次使用</item>
+         <item quantity="other">{maxUses} 次使用</item>
++        <item quantity="one">1 次使用</item>
+     </plurals>
+     <plurals name="member_verification_num_emojis_emojis">
+-        <item quantity="one">{emojis}个服务器表情符号</item>
+         <item quantity="other">{emojis}个服务器表情符号</item>
++        <item quantity="one">{emojis}个服务器表情符号</item>
+     </plurals>
+     <plurals name="members_header_members">
+-        <item quantity="one">1 成员</item>
+         <item quantity="other">{members} 成员</item>
++        <item quantity="one">1 成员</item>
+     </plurals>
+     <plurals name="mtrl_badge_content_description">
+-        <item quantity="one">%d 条新通知</item>
+         <item quantity="other">%d 条新通知</item>
++        <item quantity="one">%d 条新通知</item>
+     </plurals>
+     <plurals name="n_days_days">
+-        <item quantity="one">1 天</item>
+         <item quantity="other">{days} 天</item>
++        <item quantity="one">1 天</item>
+     </plurals>
+     <plurals name="new_messages_count">
+-        <item quantity="one">1 条新消息</item>
+         <item quantity="other">{count} 条新消息</item>
++        <item quantity="one">1 条新消息</item>
+     </plurals>
+     <plurals name="new_messages_with_date_count">
+-        <item quantity="one">1 条新消息</item>
+         <item quantity="other">{count} 条新消息</item>
++        <item quantity="one">1 条新消息</item>
+     </plurals>
+     <plurals name="notice_premium_grandfathered_ending_numDays">
+-        <item quantity="one">一天</item>
+         <item quantity="other">{numDays}天</item>
++        <item quantity="one">一天</item>
+     </plurals>
+     <plurals name="notice_premium_tier_2_trial_ending_days_days">
+-        <item quantity="one">{#}天</item>
+         <item quantity="other">{#}天</item>
++        <item quantity="one">{#}天</item>
+     </plurals>
+     <plurals name="notice_premium_tier_2_trial_ending_hours_hours">
+-        <item quantity="one">{#}小时</item>
+         <item quantity="other">{#}小时</item>
++        <item quantity="one">{#}小时</item>
+     </plurals>
+     <plurals name="notice_premium_tier_2_trial_ending_minutes_minutes">
+-        <item quantity="one">{#}分钟</item>
+         <item quantity="other">{#}分钟</item>
++        <item quantity="one">{#}分钟</item>
+     </plurals>
+     <plurals name="num_channels_num">
+-        <item quantity="one">{num} 个频道</item>
+         <item quantity="other">{num} 个频道</item>
++        <item quantity="one">{num} 个频道</item>
+     </plurals>
+     <plurals name="num_members_subscribers">
+-        <item quantity="one">**1** 位成员</item>
+         <item quantity="other">**{subscribers}** 位成员</item>
++        <item quantity="one">**1** 位成员</item>
+     </plurals>
+     <plurals name="num_subscribers_subscribers">
+-        <item quantity="one">**1** 位订阅用户</item>
+         <item quantity="other">**{subscribers}** 位订阅用户</item>
++        <item quantity="one">**1** 位订阅用户</item>
+     </plurals>
+     <plurals name="num_users_num">
+-        <item quantity="one">一个用户</item>
+         <item quantity="other">{num} 用户</item>
++        <item quantity="one">一个用户</item>
+     </plurals>
+     <plurals name="only_you_can_see_and_delete_these_count">
+-        <item quantity="one">此</item>
+         <item quantity="other">这些</item>
++        <item quantity="one">此</item>
+     </plurals>
+     <plurals name="only_you_can_see_and_delete_these_countMessages">
+-        <item quantity="one">这则消息</item>
+         <item quantity="other">这些消息</item>
++        <item quantity="one">这则消息</item>
+     </plurals>
+     <plurals name="partial_outage_a11y_count">
+-        <item quantity="one">由于临时故障，1 台服务器不可用。</item>
+         <item quantity="other">由于临时故障，{count} 台服务器不可用。</item>
++        <item quantity="one">由于临时故障，1 台服务器不可用。</item>
+     </plurals>
+     <plurals name="partial_outage_count">
+-        <item quantity="one">**1** 台服务器不可用。</item>
+         <item quantity="other">由于临时故障，其他 **{count}** 台服务器不可用。</item>
++        <item quantity="one">**1** 台服务器不可用。</item>
+     </plurals>
+     <plurals name="premium_cancel_what_you_lose_boosts_applied_boostCount">
+-        <item quantity="one">{#} 个应用助力</item>
+         <item quantity="other">{#} 个应用助力</item>
++        <item quantity="one">{#} 个应用助力</item>
+     </plurals>
+     <plurals name="premium_chat_perks_description_premium_guild_included_numFreeGuildSubscriptions">
+-        <item quantity="one">{#}个助力</item>
+         <item quantity="other">{#}个助力</item>
++        <item quantity="one">{#}个助力</item>
+     </plurals>
+     <plurals name="premium_guild_features_upsell_banner_subscribe_numFreeGuildSubscriptions">
+-        <item quantity="one">{#}个助力</item>
+         <item quantity="other">{#}个助力</item>
++        <item quantity="one">{#}个助力</item>
+     </plurals>
+     <plurals name="premium_guild_grace_period_cooldown_numPremiumSubscriptions">
+-        <item quantity="one">{#} 个助力</item>
+         <item quantity="other">{#} 个助力</item>
++        <item quantity="one">{#} 个助力</item>
+     </plurals>
+     <plurals name="premium_guild_grace_period_cooldown_soon_numPremiumSubscriptions">
+-        <item quantity="one">{#} 个助力</item>
+         <item quantity="other">{#} 个助力</item>
++        <item quantity="one">{#} 个助力</item>
+     </plurals>
+     <plurals name="premium_guild_num_month_guild_subscriptions_num">
+-        <item quantity="one">个服务器助力</item>
+         <item quantity="other">个服务器助力</item>
++        <item quantity="one">个服务器助力</item>
+     </plurals>
+     <plurals name="premium_guild_num_month_guild_subscriptions_unformatted_num">
+-        <item quantity="one">个服务器助力</item>
+         <item quantity="other">个服务器助力</item>
++        <item quantity="one">个服务器助力</item>
+     </plurals>
+     <plurals name="premium_guild_num_year_guild_subscriptions_num">
+-        <item quantity="one">个服务器助力</item>
+         <item quantity="other">个服务器助力</item>
++        <item quantity="one">个服务器助力</item>
+     </plurals>
+     <plurals name="premium_guild_num_year_guild_subscriptions_unformatted_num">
+-        <item quantity="one">个服务器助力</item>
+         <item quantity="other">个服务器助力</item>
++        <item quantity="one">个服务器助力</item>
+     </plurals>
+     <plurals name="premium_guild_perks_modal_header_subscription_count_subscriptions">
+-        <item quantity="one">{#}个助力</item>
+         <item quantity="other">{#}个助力</item>
++        <item quantity="one">{#}个助力</item>
+     </plurals>
+     <plurals name="premium_guild_perks_modal_header_user_subscription_count_numSubscriptions">
+-        <item quantity="one">{#}次</item>
+         <item quantity="other">{#}次！</item>
++        <item quantity="one">{#}次</item>
+     </plurals>
+     <plurals name="premium_guild_perks_modal_protip_mobile_numFreeGuildSubscriptions">
+-        <item quantity="one">{#} 个助力</item>
+         <item quantity="other">{#} 个助力！</item>
++        <item quantity="one">{#} 个助力</item>
+     </plurals>
+     <plurals name="premium_guild_perks_modal_protip_numFreeGuildSubscriptions">
+-        <item quantity="one">{#} 个助力</item>
+         <item quantity="other">{#} 个助力</item>
++        <item quantity="one">{#} 个助力</item>
+     </plurals>
+     <plurals name="premium_guild_settings_members_subscribed_needed_number">
+-        <item quantity="one">{#} 个助力</item>
+         <item quantity="other">{#} 个助力</item>
++        <item quantity="one">{#} 个助力</item>
+     </plurals>
+     <plurals name="premium_guild_settings_x_of_y_subscriptions_numRequired">
+-        <item quantity="one">{#} 个助力</item>
+         <item quantity="other">{#} 个助力</item>
++        <item quantity="one">{#} 个助力</item>
+     </plurals>
+     <plurals name="premium_guild_subscribe_confirm_cancel_warning_canceledCount">
+-        <item quantity="one">该助力</item>
+         <item quantity="other">{#}助力</item>
++        <item quantity="one">该助力</item>
+     </plurals>
+     <plurals name="premium_guild_subscribe_confirm_confirmation_label_slotCount">
+-        <item quantity="one">助力</item>
+         <item quantity="other">助力</item>
++        <item quantity="one">助力</item>
+     </plurals>
+     <plurals name="premium_guild_subscribe_confirm_confirmation_slotCount">
+-        <item quantity="one">助力</item>
+         <item quantity="other">助力{#} 次</item>
++        <item quantity="one">助力</item>
+     </plurals>
+     <plurals name="premium_guild_subscribe_confirm_cooldown_warning_days">
+-        <item quantity="one">{#}天</item>
+         <item quantity="other">{#}天</item>
++        <item quantity="one">{#}天</item>
+     </plurals>
+     <plurals name="premium_guild_subscribe_confirm_cooldown_warning_slotCount">
+-        <item quantity="one">该助力</item>
+         <item quantity="other">该助力</item>
++        <item quantity="one">该助力</item>
+     </plurals>
+     <plurals name="premium_guild_subscribe_confirm_transfer_blurb_guildCount">
+-        <item quantity="one">当前服务器</item>
+         <item quantity="other">当前服务器</item>
++        <item quantity="one">当前服务器</item>
+     </plurals>
+     <plurals name="premium_guild_subscribe_confirm_transfer_blurb_slotCount">
+-        <item quantity="one">服务器助力</item>
+         <item quantity="other">服务器助力</item>
++        <item quantity="one">服务器助力</item>
+     </plurals>
+     <plurals name="premium_guild_subscribe_confirm_transfer_from_guild_guildCount">
+-        <item quantity="one">服务器</item>
+         <item quantity="other">服务器</item>
++        <item quantity="one">服务器</item>
+     </plurals>
+     <plurals name="premium_guild_subscribe_confirm_transfer_to_guild_slotCount">
+-        <item quantity="one">助力</item>
+         <item quantity="other">助力</item>
++        <item quantity="one">助力</item>
+     </plurals>
+     <plurals name="premium_guild_subscribe_transfer_confirm_confirmation_label_slotCount">
+-        <item quantity="one">助力</item>
+         <item quantity="other">助力</item>
++        <item quantity="one">助力</item>
+     </plurals>
+     <plurals name="premium_guild_subscribe_transfer_confirm_confirmation_slotCount">
+-        <item quantity="one">助力</item>
+         <item quantity="other">助力</item>
++        <item quantity="one">助力</item>
+     </plurals>
+     <plurals name="premium_guild_subscription_available_numSubscriptions">
+-        <item quantity="one">{#}个助力</item>
+         <item quantity="other">{#}个助力</item>
++        <item quantity="one">{#}个助力</item>
+     </plurals>
+     <plurals name="premium_guild_subscription_cancel_invoice_subscription_cancelled_subscriptionCount">
+-        <item quantity="one">个服务器助力</item>
+         <item quantity="other">个服务器助力</item>
++        <item quantity="one">个服务器助力</item>
+     </plurals>
+     <plurals name="premium_guild_subscription_duration_months">
+-        <item quantity="one">{#} 个月</item>
+         <item quantity="other">{#} 个月</item>
++        <item quantity="one">{#} 个月</item>
+     </plurals>
+     <plurals name="premium_guild_subscription_error_rate_limit_days_days">
+-        <item quantity="one">{#} 天</item>
+         <item quantity="other">{#} 天</item>
++        <item quantity="one">{#} 天</item>
+     </plurals>
+     <plurals name="premium_guild_subscription_error_rate_limit_days_hours">
+-        <item quantity="one">{#} 小时</item>
+         <item quantity="other">{#} 小时</item>
++        <item quantity="one">{#} 小时</item>
+     </plurals>
+     <plurals name="premium_guild_subscription_error_rate_limit_hours_hours">
+-        <item quantity="one">{#} 小时</item>
+         <item quantity="other">{#} 小时</item>
++        <item quantity="one">{#} 小时</item>
+     </plurals>
+     <plurals name="premium_guild_subscription_error_rate_limit_hours_minutes">
+-        <item quantity="one">{#} 分钟</item>
+         <item quantity="other">{#} 分钟</item>
++        <item quantity="one">{#} 分钟</item>
+     </plurals>
+     <plurals name="premium_guild_subscription_error_rate_limit_minutes_minutes">
+-        <item quantity="one">{#} 分钟</item>
+         <item quantity="other">{#} 分钟</item>
++        <item quantity="one">{#} 分钟</item>
+     </plurals>
+     <plurals name="premium_guild_subscription_guild_subsription_subtitle_numSubscriptions">
+-        <item quantity="one">{#}次</item>
+         <item quantity="other">{#}次</item>
++        <item quantity="one">{#}次</item>
+     </plurals>
+     <plurals name="premium_guild_subscription_num_subscriptions_numSubscriptions">
+-        <item quantity="one">{#} 个助力</item>
+         <item quantity="other">{#} 个助力</item>
++        <item quantity="one">{#} 个助力</item>
+     </plurals>
+     <plurals name="premium_guild_subscription_subscriber_count_tooltip_subscriberCount">
+-        <item quantity="one">{#} 个助力</item>
+         <item quantity="other">{#} 个助力</item>
++        <item quantity="one">{#} 个助力</item>
+     </plurals>
+     <plurals name="premium_guild_subscriptions_renewal_info_account_hold_no_price_quantity">
+-        <item quantity="one">个服务器助力</item>
+         <item quantity="other">个服务器助力</item>
++        <item quantity="one">个服务器助力</item>
+     </plurals>
+     <plurals name="premium_guild_subscriptions_renewal_info_account_hold_quantity">
+-        <item quantity="one">个服务器助力</item>
+         <item quantity="other">个服务器助力</item>
++        <item quantity="one">个服务器助力</item>
+     </plurals>
+     <plurals name="premium_guild_subscriptions_renewal_info_android_quantity">
+-        <item quantity="one">个服务器助力</item>
+         <item quantity="other">个服务器助力</item>
++        <item quantity="one">个服务器助力</item>
+     </plurals>
+     <plurals name="premium_guild_subscriptions_renewal_info_no_price_quantity">
+-        <item quantity="one">个服务器助力</item>
+         <item quantity="other">个服务器助力</item>
++        <item quantity="one">个服务器助力</item>
+     </plurals>
+     <plurals name="premium_guild_subscriptions_renewal_info_pending_cancelation_android_quantity">
+-        <item quantity="one">个服务器助力</item>
+         <item quantity="other">个服务器助力</item>
++        <item quantity="one">个服务器助力</item>
+     </plurals>
+     <plurals name="premium_guild_subscriptions_renewal_info_pending_cancelation_no_price_quantity">
+-        <item quantity="one">个服务器助力</item>
+         <item quantity="other">个服务器助力</item>
++        <item quantity="one">个服务器助力</item>
+     </plurals>
+     <plurals name="premium_guild_subscriptions_renewal_info_pending_cancelation_quantity">
+-        <item quantity="one">个服务器助力</item>
+         <item quantity="other">个服务器助力</item>
++        <item quantity="one">个服务器助力</item>
+     </plurals>
+     <plurals name="premium_guild_subscriptions_renewal_info_quantity">
+-        <item quantity="one">个服务器助力</item>
+         <item quantity="other">个服务器助力</item>
++        <item quantity="one">个服务器助力</item>
+     </plurals>
+     <plurals name="premium_guild_unsubscribe_confirm_cooldown_warning_days_days">
+-        <item quantity="one">{#} 天</item>
+         <item quantity="other">{#} 天</item>
++        <item quantity="one">{#} 天</item>
+     </plurals>
+     <plurals name="premium_guild_unsubscribe_confirm_cooldown_warning_days_hours">
+-        <item quantity="one">{#} 小时</item>
+         <item quantity="other">{#} 小时</item>
++        <item quantity="one">{#} 小时</item>
+     </plurals>
+     <plurals name="premium_guild_unsubscribe_confirm_cooldown_warning_hours_hours">
+-        <item quantity="one">{#} 小时</item>
+         <item quantity="other">{#} 小时</item>
++        <item quantity="one">{#} 小时</item>
+     </plurals>
+     <plurals name="premium_guild_unsubscribe_confirm_cooldown_warning_hours_minutes">
+-        <item quantity="one">{#} 分钟</item>
+         <item quantity="other">{#} 分钟</item>
++        <item quantity="one">{#} 分钟</item>
+     </plurals>
+     <plurals name="premium_guild_unsubscribe_confirm_cooldown_warning_minutes_minutes">
+-        <item quantity="one">{#} 分钟</item>
+         <item quantity="other">{#} 分钟</item>
++        <item quantity="one">{#} 分钟</item>
+     </plurals>
+     <plurals name="premium_marketing_feature_premium_guild_description_numFreeGuildSubscriptions">
+-        <item quantity="one">{#} 个服务器助力</item>
+         <item quantity="other">{#} 个服务器助力</item>
++        <item quantity="one">{#} 个服务器助力</item>
+     </plurals>
+     <plurals name="premium_plan_month_tier_2_trial_months">
+-        <item quantity="one">个月</item>
+         <item quantity="other">个月</item>
++        <item quantity="one">个月</item>
+     </plurals>
+     <plurals name="premium_plan_year_tier_2_trial_months">
+-        <item quantity="one">个月</item>
+         <item quantity="other">个月</item>
++        <item quantity="one">个月</item>
+     </plurals>
+     <plurals name="premium_subscription_credit_count_months_count">
+-        <item quantity="one">{#} 个月</item>
+         <item quantity="other">{#} 个月</item>
++        <item quantity="one">{#} 个月</item>
+     </plurals>
+     <plurals name="premium_subscription_ending_missing_payment_notice_text_daysLeft">
+-        <item quantity="one">{#} 天后</item>
+         <item quantity="other">{#} 天后</item>
++        <item quantity="one">{#} 天后</item>
+     </plurals>
+     <plurals name="premium_subscription_ending_notice_text_daysLeft">
+-        <item quantity="one">{#} 天</item>
+         <item quantity="other">{#} 天</item>
++        <item quantity="one">{#} 天</item>
+     </plurals>
+     <plurals name="premium_subscription_ending_what_you_lose_title_daysLeft">
+-        <item quantity="one">{#} 天</item>
+         <item quantity="other">{#} 天</item>
++        <item quantity="one">{#} 天</item>
+     </plurals>
+     <plurals name="premium_subscription_renewal_footer_trial_days">
+-        <item quantity="one">1 天</item>
+         <item quantity="other">{days} 天</item>
++        <item quantity="one">1 天</item>
+     </plurals>
+     <plurals name="premium_trial_cta_description_expiring_days_days">
+-        <item quantity="one">{#}天</item>
+         <item quantity="other">{#}天</item>
++        <item quantity="one">{#}天</item>
+     </plurals>
+     <plurals name="premium_trial_cta_description_expiring_hours_hours">
+-        <item quantity="one">{#}小时</item>
+         <item quantity="other">{#}小时</item>
++        <item quantity="one">{#}小时</item>
+     </plurals>
+     <plurals name="premium_trial_cta_description_expiring_minutes_minutes">
+-        <item quantity="one">{#}分钟</item>
+         <item quantity="other">{#}分钟</item>
++        <item quantity="one">{#}分钟</item>
+     </plurals>
+     <plurals name="premium_upsell_feature_free_guild_subscription_numFreeGuildSubscriptions">
+-        <item quantity="one">{#} 个服务器助力</item>
+         <item quantity="other">{#} 个服务器助力</item>
++        <item quantity="one">{#} 个服务器助力</item>
+     </plurals>
+     <plurals name="preview_lines_left_lines">
+-        <item quantity="one">{#} 行</item>
+         <item quantity="other">{#} 行</item>
++        <item quantity="one">{#} 行</item>
+     </plurals>
+     <plurals name="preview_num_lines_at_least_lines">
+-        <item quantity="one">{#}行</item>
+         <item quantity="other">{#}行</item>
++        <item quantity="one">{#}行</item>
+     </plurals>
+     <plurals name="preview_num_lines_lines">
+-        <item quantity="one">{#}行</item>
+         <item quantity="other">{#}行</item>
++        <item quantity="one">{#}行</item>
+     </plurals>
+     <plurals name="private_channel_access_info_members_count">
+-        <item quantity="one">{count} 位成员</item>
+         <item quantity="other">{count} 位成员</item>
++        <item quantity="one">{count} 位成员</item>
+     </plurals>
+     <plurals name="private_channel_access_info_roles_count">
+-        <item quantity="one">{count} 身份组</item>
+         <item quantity="other">{count} 身份组</item>
++        <item quantity="one">{count} 身份组</item>
+     </plurals>
+     <plurals name="private_channel_members_added_toast_msg_count">
+-        <item quantity="one">{count} 位成员</item>
+         <item quantity="other">{count} 位成员</item>
++        <item quantity="one">{count} 位成员</item>
+     </plurals>
+     <plurals name="private_channel_roles_added_toast_msg_count">
+-        <item quantity="one">{count} 身份组</item>
+         <item quantity="other">{count} 身份组</item>
++        <item quantity="one">{count} 身份组</item>
+     </plurals>
+     <plurals name="promotion_confirm_upgrade_line_item_quantity">
+-        <item quantity="one" />
+         <item quantity="other">{#}x</item>
++        <item quantity="one" />
+     </plurals>
+     <plurals name="promotion_confirm_upgrade_terms_trialMonths">
+-        <item quantity="one">{#} 个月</item>
+         <item quantity="other">{#} 个月</item>
++        <item quantity="one">{#} 个月</item>
+     </plurals>
+     <plurals name="promotion_existing_subscriber_body_months">
+-        <item quantity="one">{#} 个月</item>
+         <item quantity="other">{#} 个月</item>
++        <item quantity="one">{#} 个月</item>
+     </plurals>
+     <plurals name="promotion_previous_subscriber_body_months">
+-        <item quantity="one">{#} 个月</item>
+         <item quantity="other">{#} 个月</item>
++        <item quantity="one">{#} 个月</item>
+     </plurals>
+     <plurals name="promotion_redeem_body_months">
+-        <item quantity="one">{#} 个月</item>
+         <item quantity="other">{#} 个月</item>
++        <item quantity="one">{#} 个月</item>
+     </plurals>
+     <plurals name="publish_followed_news_body_reach_numGuildsFollowing">
+-        <item quantity="one">{#}个服务器</item>
+         <item quantity="other">{#}个服务器</item>
++        <item quantity="one">{#}个服务器</item>
+     </plurals>
+     <plurals name="publish_followed_news_fail_body_retryAfter">
+-        <item quantity="one">1分钟</item>
+         <item quantity="other">{retryAfter}分钟</item>
++        <item quantity="one">1分钟</item>
+     </plurals>
+     <plurals name="quick_switcher_results_group_dm_unread_label_mentions">
+-        <item quantity="one">, {#} 条未读消息</item>
+         <item quantity="other">, {#} 条未读消息</item>
++        <item quantity="one">, {#} 条未读消息</item>
+     </plurals>
+     <plurals name="quick_switcher_results_user_unread_label_mentions">
+-        <item quantity="one">, {#} 条未读消息</item>
+         <item quantity="other">, {#} 条未读消息</item>
++        <item quantity="one">, {#} 条未读消息</item>
+     </plurals>
+     <plurals name="quick_switcher_unread_badge_label_mentions">
+-        <item quantity="one">, {#} 条未读消息</item>
+         <item quantity="other">, {#} 条未读消息</item>
++        <item quantity="one">, {#} 条未读消息</item>
+     </plurals>
+     <plurals name="reaction_tooltip_1_n_n">
+-        <item quantity="one">1 人</item>
+         <item quantity="other">{n} 人</item>
++        <item quantity="one">1 人</item>
+     </plurals>
+     <plurals name="reaction_tooltip_2_n_n">
+-        <item quantity="one">1 人</item>
+         <item quantity="other">{n} 人</item>
++        <item quantity="one">1 人</item>
+     </plurals>
+     <plurals name="reaction_tooltip_3_n_n">
+-        <item quantity="one">1 人</item>
+         <item quantity="other">{n} 人</item>
++        <item quantity="one">1 人</item>
+     </plurals>
+     <plurals name="reaction_tooltip_n_n">
+-        <item quantity="one">1人</item>
+         <item quantity="other">其他{n} 人</item>
++        <item quantity="one">1人</item>
+     </plurals>
+     <plurals name="role_member_count_count">
+-        <item quantity="one">{count} 位成员</item>
+         <item quantity="other">{count} 位成员</item>
++        <item quantity="one">{count} 位成员</item>
+     </plurals>
+     <plurals name="role_row_description_count">
+-        <item quantity="one">{count} 位成员</item>
+         <item quantity="other">{count} 位成员</item>
++        <item quantity="one">{count} 位成员</item>
+     </plurals>
+     <plurals name="role_row_view_members_count">
+-        <item quantity="one">{count} 位成员</item>
+         <item quantity="other">{count} 位成员</item>
++        <item quantity="one">{count} 位成员</item>
+     </plurals>
+     <plurals name="roles_list_numRoles">
+-        <item quantity="one">身份组</item>
+         <item quantity="other">身份组</item>
++        <item quantity="one">身份组</item>
+     </plurals>
+     <plurals name="search_hide_blocked_messages_count">
+-        <item quantity="one">{count} 条信息</item>
+         <item quantity="other">{count} 信息</item>
++        <item quantity="one">{count} 条信息</item>
+     </plurals>
+     <plurals name="search_num_results_blocked_not_shown_count">
+-        <item quantity="one">{count} 结果</item>
+         <item quantity="other">{count} 结果</item>
++        <item quantity="one">{count} 结果</item>
+     </plurals>
+     <plurals name="search_still_indexing_hint_count">
+-        <item quantity="one">{count} 结果</item>
+         <item quantity="other">{count} 结果</item>
++        <item quantity="one">{count} 结果</item>
+     </plurals>
+     <plurals name="speaking_count_count">
+         <item quantity="other">{count} 人发言</item>
+     </plurals>
+     <plurals name="spotify_listen_along_title_host_count">
+-        <item quantity="one">位听众</item>
+         <item quantity="other">位听众</item>
++        <item quantity="one">位听众</item>
+     </plurals>
+     <plurals name="stage_audience_waiting_many_numOthers">
+-        <item quantity="one">{#} 位其他用户</item>
+         <item quantity="other">{#} 位其他用户</item>
++        <item quantity="one">{#} 位其他用户</item>
+     </plurals>
+     <plurals name="stage_blocked_users_body_number">
+-        <item quantity="one">{#}个</item>
+         <item quantity="other">{#}个</item>
++        <item quantity="one">{#}个</item>
+     </plurals>
+     <plurals name="stage_blocked_users_description_count_number">
+-        <item quantity="one">{#}个</item>
+         <item quantity="other">{#}个</item>
++        <item quantity="one">{#}个</item>
+     </plurals>
+     <plurals name="stage_blocked_users_title_plural_number">
+-        <item quantity="one">个账号</item>
+         <item quantity="other">个账号</item>
++        <item quantity="one">个账号</item>
+     </plurals>
+     <plurals name="stage_channel_people_count_count">
+-        <item quantity="one">1 人</item>
+         <item quantity="other">{count} 人</item>
++        <item quantity="one">1 人</item>
+     </plurals>
+     <plurals name="stage_channel_people_count_speakerCount">
+-        <item quantity="one">1 人发言</item>
+         <item quantity="other">{speakerCount} 人发言</item>
++        <item quantity="one">1 人发言</item>
+     </plurals>
+     <plurals name="stage_channel_users_are_speaking_count">
+-        <item quantity="one">人</item>
+         <item quantity="other">人</item>
++        <item quantity="one">人</item>
+     </plurals>
+     <plurals name="stage_discovery_card_speaker_text_number">
+-        <item quantity="one">{#} 与{userNick}一同发言</item>
+         <item quantity="other">{userNick}正在发言</item>
++        <item quantity="one">{#} 与{userNick}一同发言</item>
+     </plurals>
+     <plurals name="stage_discovery_card_speaker_text_overflow_count">
+         <item quantity="other">+{count} 位正在发言</item>
+     </plurals>
+     <plurals name="stage_discovery_live_stage_tile_friends_guilds_context_audience_3_n_n">
+-        <item quantity="one">其他 1 人</item>
+         <item quantity="other">{n}其他人</item>
++        <item quantity="one">其他 1 人</item>
+     </plurals>
+     <plurals name="stage_discovery_live_stage_tile_speaker_summary_overflow_count">
+-        <item quantity="one">+{count} 位发言者</item>
+         <item quantity="other">+{count} 位发言者</item>
++        <item quantity="one">+{count} 位发言者</item>
+     </plurals>
+     <plurals name="stage_invite_speaker_count_count">
+-        <item quantity="one">1 位发言者</item>
+         <item quantity="other">{count} 位发言者</item>
++        <item quantity="one">1 位发言者</item>
+     </plurals>
+     <plurals name="stage_is_speaking_hook_count">
+-        <item quantity="one">和另一人](usernameHook) 正在发言……</item>
+         <item quantity="other">和另 {count} 人](usernameHook) 正在发言……</item>
++        <item quantity="one">和另一人](usernameHook) 正在发言……</item>
+     </plurals>
+     <plurals name="stage_speak_invite_blocked_users_number">
+-        <item quantity="one">{#} 位屏蔽用户</item>
+         <item quantity="other">{#} 位屏蔽用户</item>
++        <item quantity="one">{#} 位屏蔽用户</item>
+     </plurals>
+     <plurals name="stage_speak_invite_header_blocked_users_number">
+-        <item quantity="one">{#}位</item>
+         <item quantity="other">{#}位</item>
++        <item quantity="one">{#}位</item>
+     </plurals>
+     <plurals name="sticker_pack_sticker_count_numStickers">
+-        <item quantity="one">{#} 贴纸</item>
+         <item quantity="other">{#} 贴纸</item>
++        <item quantity="one">{#} 贴纸</item>
+     </plurals>
+     <plurals name="sticker_premium_tier_2_upsell_alert_perks_guild_subscriptions_numFreeGuildSubscriptions">
+-        <item quantity="one">{#} 个服务器助力</item>
+         <item quantity="other">{#} 个服务器助力</item>
++        <item quantity="one">{#} 个服务器助力</item>
+     </plurals>
+     <plurals name="stickers_gift_inventory_title_month_intervalCount">
+-        <item quantity="one">{#} 个月</item>
+         <item quantity="other">{#} 个月</item>
++        <item quantity="one">{#} 个月</item>
+     </plurals>
+     <plurals name="stickers_gift_inventory_title_year_intervalCount">
+-        <item quantity="one">{#} 年</item>
+         <item quantity="other">{#} 年</item>
++        <item quantity="one">{#} 年</item>
+     </plurals>
+     <plurals name="thread_message_count_count">
+-        <item quantity="one">1 条消息 ›</item>
+         <item quantity="other">{count} 条消息 ›</item>
++        <item quantity="one">1 条消息 ›</item>
+     </plurals>
+     <plurals name="thread_reply_suggestion_count">
+-        <item quantity="one">{#} 条回复</item>
+         <item quantity="other">{#} 条回复</item>
++        <item quantity="one">{#} 条回复</item>
+     </plurals>
+     <plurals name="total_results_count">
+-        <item quantity="one">{count}个结果</item>
+         <item quantity="other">{count}个结果</item>
++        <item quantity="one">{count}个结果</item>
+     </plurals>
+     <plurals name="uploading_files_count">
+-        <item quantity="one">正在上传1个文件</item>
+         <item quantity="other">正在上传 {count}个文件</item>
++        <item quantity="one">正在上传1个文件</item>
+     </plurals>
+     <plurals name="uploading_files_failed_count">
+-        <item quantity="one">1 个文件上传失败</item>
+         <item quantity="other">{count}文件上传失败</item>
++        <item quantity="one">1 个文件上传失败</item>
+     </plurals>
+     <plurals name="user_activity_timestamp_end_hours">
+         <item quantity="other">{hours}:</item>
+@@ -1397,43 +1397,43 @@
+         <item quantity="other">{seconds}</item>
+     </plurals>
+     <plurals name="user_activity_user_playing_for_days_time">
+-        <item quantity="one">天</item>
+         <item quantity="other">天</item>
++        <item quantity="one">天</item>
+     </plurals>
+     <plurals name="user_activity_user_playing_for_hours_time">
+-        <item quantity="one">个小时</item>
+         <item quantity="other">个小时</item>
++        <item quantity="one">个小时</item>
+     </plurals>
+     <plurals name="user_activity_user_playing_for_minutes_time">
+-        <item quantity="one">分钟</item>
+         <item quantity="other">分钟</item>
++        <item quantity="one">分钟</item>
+     </plurals>
+     <plurals name="user_profile_mutual_friends_count">
+-        <item quantity="one">1 位共同好友</item>
+         <item quantity="other">{count} 位共同好友</item>
++        <item quantity="one">1 位共同好友</item>
+     </plurals>
+     <plurals name="user_profile_mutual_guilds_count">
+-        <item quantity="one">1 个共同服务器</item>
+         <item quantity="other">{count} 个共同服务器</item>
++        <item quantity="one">1 个共同服务器</item>
+     </plurals>
+     <plurals name="user_summary_with_others_count">
+-        <item quantity="one">1 位其他用户</item>
+         <item quantity="other">{count} 位其他用户</item>
++        <item quantity="one">1 位其他用户</item>
+     </plurals>
+     <plurals name="vanity_url_header_uses_uses">
+-        <item quantity="one">1 次使用</item>
+         <item quantity="other">{uses} 次使用</item>
++        <item quantity="one">1 次使用</item>
+     </plurals>
+     <plurals name="vanity_url_uses_uses">
+-        <item quantity="one">1次使用</item>
+         <item quantity="other">{uses}次使用</item>
++        <item quantity="one">1次使用</item>
+     </plurals>
+     <plurals name="viewing_as_roles_numRoles">
+-        <item quantity="one">1 身份组</item>
+         <item quantity="other">{numRoles} 身份组</item>
++        <item quantity="one">1 身份组</item>
+     </plurals>
+     <plurals name="voice_call_member_list_title_count">
+-        <item quantity="one">{#} 个人</item>
+         <item quantity="other">{#} 个人</item>
++        <item quantity="one">{#} 个人</item>
+     </plurals>
+ </resources>

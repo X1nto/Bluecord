@@ -1,0 +1,9 @@
+--- ./discord_94011/src/main/res/drawable/drawable_chip_background_deprecated.xml	2021-12-24 01:10:00.592025700 +0400
++++ ./bluecord/src/main/res/drawable/drawable_chip_background_deprecated.xml	2021-12-24 01:08:16.574263500 +0400
+@@ -1,5 +1,5 @@
+ <?xml version="1.0" encoding="utf-8"?>
+ <shape xmlns:android="http://schemas.android.com/apk/res/android" android:shape="rectangle">
+-    <solid android:color="#ffffff"/>
++    <solid android:color="#ffffffff"/>
+     <corners android:radius="16dp"/>
+ </shape>

@@ -1,0 +1,11 @@
+--- ./discord_94011/src/main/java/com/discord/widgets/settings/profile/WidgetEditProfileBannerSheet$configureUi$2.java	2021-12-24 01:10:15.258027900 +0400
++++ ./bluecord/src/main/java/com/discord/widgets/settings/profile/WidgetEditProfileBannerSheet$configureUi$2.java	2021-12-24 01:08:35.738260100 +0400
+@@ -17,7 +17,7 @@ public final class WidgetEditProfileBann
+ 
+     public final void onClick(View view) {
+         if (this.$viewState.getShowPremiumUpsell()) {
+-            this.this$0.navigateToUpsellModal();
++            WidgetEditProfileBannerSheet.access$navigateToUpsellModal(this.this$0);
+             return;
+         }
+         this.this$0.getOnChangeProfileBannerImage().invoke();

@@ -1,0 +1,11 @@
+--- ./discord_94011/src/main/java/com/facebook/drawee/view/DraweeView.java	2021-12-24 01:10:15.752026100 +0400
++++ ./bluecord/src/main/java/com/facebook/drawee/view/DraweeView.java	2021-12-24 01:08:36.186265500 +0400
+@@ -20,7 +20,7 @@ import com.facebook.drawee.interfaces.Dr
+ import java.util.Objects;
+ 
+ public class DraweeView<DH extends DraweeHierarchy> extends ImageView {
+-    private static boolean sGlobalLegacyVisibilityHandlingEnabled = false;
++    private static boolean sGlobalLegacyVisibilityHandlingEnabled;
+     private float mAspectRatio = 0.0f;
+     private DraweeHolder<DH> mDraweeHolder;
+     private boolean mInitialised = false;

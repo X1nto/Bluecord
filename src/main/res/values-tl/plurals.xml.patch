@@ -1,0 +1,21 @@
+--- ./discord_94011/src/main/res/values-tl/plurals.xml	2021-12-24 01:10:11.094025500 +0400
++++ ./bluecord/src/main/res/values-tl/plurals.xml	2021-12-24 01:08:30.965263400 +0400
+@@ -1,15 +1,15 @@
+ <?xml version="1.0" encoding="utf-8"?>
+ <resources>
+     <plurals name="exo_controls_fastforward_by_amount_description">
+-        <item quantity="one">I-fast forward nang %d segundo</item>
+         <item quantity="other">I-fast forward nang %d na segundo</item>
++        <item quantity="one">I-fast forward nang %d segundo</item>
+     </plurals>
+     <plurals name="exo_controls_rewind_by_amount_description">
+-        <item quantity="one">I-rewind nang %d segundo</item>
+         <item quantity="other">I-rewind nang %d na segundo</item>
++        <item quantity="one">I-rewind nang %d segundo</item>
+     </plurals>
+     <plurals name="mtrl_badge_content_description">
+-        <item quantity="one">%d bagong notification</item>
+         <item quantity="other">%d na bagong notification</item>
++        <item quantity="one">%d bagong notification</item>
+     </plurals>
+ </resources>

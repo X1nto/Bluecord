@@ -1,0 +1,29 @@
+--- ./discord_94011/src/main/java/f0/e0/h/b.java	2021-12-24 01:10:16.430026600 +0400
++++ ./bluecord/src/main/java/f0/e0/h/b.java	2021-12-24 01:08:36.802263600 +0400
+@@ -60,7 +60,7 @@ public final class b implements Intercep
+             m.checkParameterIsNotNull(eVar2, "call");
+             m.checkParameterIsNotNull(request, "request");
+             Response.a aVar2 = null;
+-            if (!f.a(request.f2953c) || requestBody == null) {
++            if (!f.a(request.f2955c) || requestBody == null) {
+                 cVar.f2805c.k(cVar, true, false, null);
+                 z2 = true;
+             } else {
+@@ -153,7 +153,7 @@ public final class b implements Intercep
+                 Response response2 = a.p;
+                 Response response3 = a.q;
+                 Response response4 = a.r;
+-                long j = a.f2956s;
++                long j = a.f2958s;
+                 long j2 = a.t;
+                 c cVar2 = a.u;
+                 m.checkParameterIsNotNull(a, "response");
+@@ -195,7 +195,7 @@ public final class b implements Intercep
+                 Response response5 = a.p;
+                 Response response6 = a.q;
+                 Response response7 = a.r;
+-                long j3 = a.f2956s;
++                long j3 = a.f2958s;
+                 long j4 = a.t;
+                 c cVar3 = a.u;
+                 ResponseBody responseBody = f0.e0.c.f2800c;

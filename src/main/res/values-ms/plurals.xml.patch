@@ -1,0 +1,21 @@
+--- ./discord_94011/src/main/res/values-ms/plurals.xml	2021-12-24 01:10:10.936025400 +0400
++++ ./bluecord/src/main/res/values-ms/plurals.xml	2021-12-24 01:08:30.777264700 +0400
+@@ -1,15 +1,15 @@
+ <?xml version="1.0" encoding="utf-8"?>
+ <resources>
+     <plurals name="exo_controls_fastforward_by_amount_description">
+-        <item quantity="one">Mundar laju %d saat</item>
+         <item quantity="other">Mundar laju %d saat</item>
++        <item quantity="one">Mundar laju %d saat</item>
+     </plurals>
+     <plurals name="exo_controls_rewind_by_amount_description">
+-        <item quantity="one">Mandir %d saat</item>
+         <item quantity="other">Mandir %d saat</item>
++        <item quantity="one">Mandir %d saat</item>
+     </plurals>
+     <plurals name="mtrl_badge_content_description">
+-        <item quantity="one">%d pemberitahuan baharu</item>
+         <item quantity="other">%d pemberitahuan baharu</item>
++        <item quantity="one">%d pemberitahuan baharu</item>
+     </plurals>
+ </resources>

@@ -1,0 +1,9 @@
+--- ./discord_94011/src/main/res/drawable/drawable_circle_dashed.xml	2021-12-24 01:10:08.346026800 +0400
++++ ./bluecord/src/main/res/drawable/drawable_circle_dashed.xml	2021-12-24 01:08:16.582261400 +0400
+@@ -1,5 +1,5 @@
+ <?xml version="1.0" encoding="utf-8"?>
+ <shape xmlns:android="http://schemas.android.com/apk/res/android" android:shape="oval">
+-    <stroke android:width="2dp" android:color="#ffffff" android:dashWidth="8dp" android:dashGap="8dp"/>
++    <stroke android:width="2dp" android:color="#ffffffff" android:dashWidth="8dp" android:dashGap="8dp"/>
+     <solid android:color="@color/transparent"/>
+ </shape>

@@ -1,0 +1,20 @@
+--- ./discord_94011/src/main/java/s/a/b2/m.java	2021-12-24 01:10:16.730027400 +0400
++++ ./bluecord/src/main/java/s/a/b2/m.java	2021-12-24 01:08:37.114260900 +0400
+@@ -10,7 +10,7 @@ public final class m {
+     public static final AtomicIntegerFieldUpdater b = AtomicIntegerFieldUpdater.newUpdater(m.class, "producerIndex");
+ 
+     /* renamed from: c  reason: collision with root package name */
+-    public static final AtomicIntegerFieldUpdater f2972c = AtomicIntegerFieldUpdater.newUpdater(m.class, "consumerIndex");
++    public static final AtomicIntegerFieldUpdater f2974c = AtomicIntegerFieldUpdater.newUpdater(m.class, "consumerIndex");
+     public static final AtomicIntegerFieldUpdater d = AtomicIntegerFieldUpdater.newUpdater(m.class, "blockingTasksInBuffer");
+     public volatile int blockingTasksInBuffer = 0;
+     public volatile int consumerIndex = 0;
+@@ -70,7 +70,7 @@ public final class m {
+                 return null;
+             }
+             int i2 = i & 127;
+-            if (f2972c.compareAndSet(this, i, i + 1) && (andSet = this.e.getAndSet(i2, null)) != null) {
++            if (f2974c.compareAndSet(this, i, i + 1) && (andSet = this.e.getAndSet(i2, null)) != null) {
+                 boolean z2 = true;
+                 if (andSet.j.s() != 1) {
+                     z2 = false;

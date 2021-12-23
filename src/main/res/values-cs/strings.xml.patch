@@ -1,0 +1,20 @@
+--- ./discord_94011/src/main/res/values-cs/strings.xml	2021-12-24 01:10:10.659025900 +0400
++++ ./bluecord/src/main/res/values-cs/strings.xml	2021-12-24 01:08:30.417263300 +0400
+@@ -5660,7 +5660,7 @@
+     <string name="notification_reply_failed">Nepodařilo se odpovědět {recipient}</string>
+     <string name="notification_reply_success">Odpověděl jsi {recipient}</string>
+     <string name="notification_settings">Nastavení upozornění</string>
+-    <string name="notification_title_discord">Discord</string>
++    <string name="notification_title_discord">Bluecord</string>
+     <string name="notification_title_start_game">Někdo hraje</string>
+     <string name="notifications">Oznámení</string>
+     <string name="notifications_muted">Oznámení, ztlumeno</string>
+@@ -8280,7 +8280,7 @@
+     <string name="tip_voice_conversations_title3">Buď slyšet</string>
+     <string name="tip_whos_online_body3">Tady vidíš všechny členy tohoto kanálu. Podívej se, kdo je online a co má za lubem, jestli třeba něco hraje nebo poslouchá hudbu.</string>
+     <string name="tip_whos_online_title3">Co asi všichni dělají?</string>
+-    <string name="tip_writing_messages_body3">Připojil/a ses na server {serverName}. Dej o sobě vědět a pošli **pozdrav**! ��</string>
++    <string name="tip_writing_messages_body3" />
+     <string name="tip_writing_messages_title3">Založ konverzaci</string>
+     <string name="title">Název</string>
+     <string name="title_bar_close_window">Zavřít‏</string>

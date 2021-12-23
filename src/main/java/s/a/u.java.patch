@@ -1,0 +1,65 @@
+--- ./discord_94011/src/main/java/s/a/u.java	2021-12-24 01:10:16.746023300 +0400
++++ ./bluecord/src/main/java/s/a/u.java	2021-12-24 01:08:37.131262800 +0400
+@@ -12,7 +12,7 @@ public final class u {
+     public final i b;
+ 
+     /* renamed from: c  reason: collision with root package name */
+-    public final Function1<Throwable, Unit> f2975c;
++    public final Function1<Throwable, Unit> f2977c;
+     public final Object d;
+     public final Throwable e;
+ 
+@@ -21,7 +21,7 @@ public final class u {
+     public u(Object obj, i iVar, Function1<? super Throwable, Unit> function1, Object obj2, Throwable th) {
+         this.a = obj;
+         this.b = iVar;
+-        this.f2975c = function1;
++        this.f2977c = function1;
+         this.d = obj2;
+         this.e = th;
+     }
+@@ -32,7 +32,7 @@ public final class u {
+         if ((i & 2) != 0) {
+             iVar = uVar.b;
+         }
+-        Function1<Throwable, Unit> function12 = (i & 4) != 0 ? uVar.f2975c : null;
++        Function1<Throwable, Unit> function12 = (i & 4) != 0 ? uVar.f2977c : null;
+         if ((i & 8) != 0) {
+             obj3 = uVar.d;
+         }
+@@ -51,7 +51,7 @@ public final class u {
+             return false;
+         }
+         u uVar = (u) obj;
+-        return m.areEqual(this.a, uVar.a) && m.areEqual(this.b, uVar.b) && m.areEqual(this.f2975c, uVar.f2975c) && m.areEqual(this.d, uVar.d) && m.areEqual(this.e, uVar.e);
++        return m.areEqual(this.a, uVar.a) && m.areEqual(this.b, uVar.b) && m.areEqual(this.f2977c, uVar.f2977c) && m.areEqual(this.d, uVar.d) && m.areEqual(this.e, uVar.e);
+     }
+ 
+     public int hashCode() {
+@@ -60,7 +60,7 @@ public final class u {
+         int hashCode = (obj != null ? obj.hashCode() : 0) * 31;
+         i iVar = this.b;
+         int hashCode2 = (hashCode + (iVar != null ? iVar.hashCode() : 0)) * 31;
+-        Function1<Throwable, Unit> function1 = this.f2975c;
++        Function1<Throwable, Unit> function1 = this.f2977c;
+         int hashCode3 = (hashCode2 + (function1 != null ? function1.hashCode() : 0)) * 31;
+         Object obj2 = this.d;
+         int hashCode4 = (hashCode3 + (obj2 != null ? obj2.hashCode() : 0)) * 31;
+@@ -77,7 +77,7 @@ public final class u {
+         P.append(", cancelHandler=");
+         P.append(this.b);
+         P.append(", onCancellation=");
+-        P.append(this.f2975c);
++        P.append(this.f2977c);
+         P.append(", idempotentResume=");
+         P.append(this.d);
+         P.append(", cancelCause=");
+@@ -93,7 +93,7 @@ public final class u {
+         th = (i & 16) != 0 ? null : th;
+         this.a = obj;
+         this.b = iVar;
+-        this.f2975c = function1;
++        this.f2977c = function1;
+         this.d = obj2;
+         this.e = th;
+     }

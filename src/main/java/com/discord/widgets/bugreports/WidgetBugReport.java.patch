@@ -1,0 +1,11 @@
+--- ./discord_94011/src/main/java/com/discord/widgets/bugreports/WidgetBugReport.java	2021-12-24 01:10:13.695025100 +0400
++++ ./bluecord/src/main/java/com/discord/widgets/bugreports/WidgetBugReport.java	2021-12-24 01:08:34.079262400 +0400
+@@ -142,7 +142,7 @@ public final class WidgetBugReport exten
+                 RequestBody.Companion companion = RequestBody.Companion;
+                 String type = requireContext().getContentResolver().getType(screenshotUri);
+                 if (type != null) {
+-                    MediaType.a aVar = MediaType.f2950c;
++                    MediaType.a aVar = MediaType.f2952c;
+                     mediaType = MediaType.a.a(type);
+                 }
+                 requestBody = RequestBody.Companion.d(companion, readBytes, mediaType, 0, 0, 6);

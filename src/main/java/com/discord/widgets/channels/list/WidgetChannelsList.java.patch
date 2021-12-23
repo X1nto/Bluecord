@@ -1,0 +1,94 @@
+--- ./discord_94011/src/main/java/com/discord/widgets/channels/list/WidgetChannelsList.java	2021-12-24 01:10:13.766024800 +0400
++++ ./bluecord/src/main/java/com/discord/widgets/channels/list/WidgetChannelsList.java	2021-12-24 01:08:34.149262800 +0400
+@@ -42,21 +42,18 @@ import com.google.android.material.appba
+ import com.google.android.material.appbar.CollapsingToolbarLayout;
+ import d0.z.d.m;
+ import java.util.Objects;
+-import kotlin.Metadata;
+ import kotlin.jvm.functions.Function0;
+ import kotlin.jvm.functions.Function1;
+ import kotlin.jvm.internal.DefaultConstructorMarker;
+ import kotlin.reflect.KProperty;
+ import rx.Observable;
+ 
+-@Metadata(bv = {1, 0, 3}, d1 = {"\u0000\u0001\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0002\n\u0002\b\u0005\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u000b\n\u0002\b\u0006\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\b\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\b\u0005\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0005\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\t\n\u0002\u0018\u0002\n\u0002\b\u0005\u0018\u0000 B2\u00020\u0001:\u0001BB\u0007¢\u0006\u0004\bA\u0010\bJ\u0017\u0010\u0005\u001a\u00020\u00042\u0006\u0010\u0003\u001a\u00020\u0002H\u0002¢\u0006\u0004\b\u0005\u0010\u0006J\u000f\u0010\u0007\u001a\u00020\u0004H\u0002¢\u0006\u0004\b\u0007\u0010\bJ\u000f\u0010\t\u001a\u00020\u0004H\u0002¢\u0006\u0004\b\t\u0010\bJ\u0017\u0010\f\u001a\u00020\u00042\u0006\u0010\u000b\u001a\u00020\nH\u0002¢\u0006\u0004\b\f\u0010\rJ!\u0010\u0012\u001a\u00020\u00042\b\u0010\u000f\u001a\u0004\u0018\u00010\u000e2\u0006\u0010\u0011\u001a\u00020\u0010H\u0002¢\u0006\u0004\b\u0012\u0010\u0013J!\u0010\u0015\u001a\u00020\u00042\b\u0010\u000f\u001a\u0004\u0018\u00010\u000e2\u0006\u0010\u0014\u001a\u00020\u0010H\u0002¢\u0006\u0004\b\u0015\u0010\u0013J\u000f\u0010\u0016\u001a\u00020\u0004H\u0002¢\u0006\u0004\b\u0016\u0010\bJ)\u0010\u001a\u001a\u00020\u00192\u0006\u0010\u0018\u001a\u00020\u00172\b\u0010\u000f\u001a\u0004\u0018\u00010\u000e2\u0006\u0010\u0014\u001a\u00020\u0010H\u0002¢\u0006\u0004\b\u001a\u0010\u001bJ\u000f\u0010\u001c\u001a\u00020\u0004H\u0002¢\u0006\u0004\b\u001c\u0010\bJ\u0017\u0010\u001f\u001a\u00020\u00042\u0006\u0010\u001e\u001a\u00020\u001dH\u0016¢\u0006\u0004\b\u001f\u0010 J\u000f\u0010!\u001a\u00020\u0004H\u0016¢\u0006\u0004\b!\u0010\bR\u0016\u0010\u0014\u001a\u00020\u00108\u0002@\u0002X\u000e¢\u0006\u0006\n\u0004\b\u0014\u0010\"R\u0016\u0010$\u001a\u00020#8\u0002@\u0002X.¢\u0006\u0006\n\u0004\b$\u0010%R\u001d\u0010+\u001a\u00020&8B@\u0002X\u0002¢\u0006\f\n\u0004\b'\u0010(\u001a\u0004\b)\u0010*R$\u0010/\u001a\u0010\u0012\f\u0012\n .*\u0004\u0018\u00010-0-0,8\u0002@\u0002X\u0004¢\u0006\u0006\n\u0004\b/\u00100R\u0016\u00102\u001a\u0002018\u0002@\u0002X\u0004¢\u0006\u0006\n\u0004\b2\u00103R\u0018\u00105\u001a\u0004\u0018\u0001048\u0002@\u0002X\u000e¢\u0006\u0006\n\u0004\b5\u00106R\u0016\u00108\u001a\u0002078\u0002@\u0002X\u0004¢\u0006\u0006\n\u0004\b8\u00109R\u0016\u0010;\u001a\u00020:8\u0002@\u0002X\u0004¢\u0006\u0006\n\u0004\b;\u0010<R\u001e\u0010?\u001a\n\u0018\u00010=j\u0004\u0018\u0001`>8\u0002@\u0002X\u000e¢\u0006\u0006\n\u0004\b?\u0010@¨\u0006C"}, d2 = {"Lcom/discord/widgets/channels/list/WidgetChannelsList;", "Lcom/discord/app/AppFragment;", "Lcom/discord/widgets/status/WidgetGlobalStatusIndicatorState$State;", "state", "", "handleGlobalStatusIndicatorState", "(Lcom/discord/widgets/status/WidgetGlobalStatusIndicatorState$State;)V", "roundPanelCorners", "()V", "unroundPanelCorners", "Lcom/discord/widgets/channels/list/WidgetChannelListModel;", "list", "configureUI", "(Lcom/discord/widgets/channels/list/WidgetChannelListModel;)V", "Lcom/discord/models/guild/Guild;", "guild", "", "hasBanner", "configureHeaderColors", "(Lcom/discord/models/guild/Guild;Z)V", "isCollapsed", "configureHeaderIcons", "ackPremiumGuildHint", "Landroid/content/Context;", "context", "", "getTintColor", "(Landroid/content/Context;Lcom/discord/models/guild/Guild;Z)I", "configureBottomNavSpace", "Landroid/view/View;", "view", "onViewBound", "(Landroid/view/View;)V", "onViewBoundOrOnResume", "Z", "Lcom/discord/widgets/channels/list/WidgetChannelsListAdapter;", "adapter", "Lcom/discord/widgets/channels/list/WidgetChannelsListAdapter;", "Lcom/discord/databinding/WidgetChannelsListBinding;", "binding$delegate", "Lcom/discord/utilities/viewbinding/FragmentViewBindingDelegate;", "getBinding", "()Lcom/discord/databinding/WidgetChannelsListBinding;", "binding", "Landroidx/activity/result/ActivityResultLauncher;", "Landroid/content/Intent;", "kotlin.jvm.PlatformType", "activityResult", "Landroidx/activity/result/ActivityResultLauncher;", "Lcom/discord/widgets/tabs/BottomNavViewObserver;", "bottomNavViewObserver", "Lcom/discord/widgets/tabs/BottomNavViewObserver;", "Lcom/discord/widgets/channels/list/WidgetChannelListUnreads;", "channelListUnreads", "Lcom/discord/widgets/channels/list/WidgetChannelListUnreads;", "Lcom/discord/widgets/status/WidgetGlobalStatusIndicatorState;", "globalStatusIndicatorStateObserver", "Lcom/discord/widgets/status/WidgetGlobalStatusIndicatorState;", "Lcom/discord/stores/StoreNavigation;", "storeNavigation", "Lcom/discord/stores/StoreNavigation;", "", "Lcom/discord/primitives/GuildId;", "selectedGuildId", "Ljava/lang/Long;", "<init>", "Companion", "app_productionGoogleRelease"}, k = 1, mv = {1, 4, 2})
+-/* compiled from: WidgetChannelsList.kt */
+ public final class WidgetChannelsList extends AppFragment {
+     public static final /* synthetic */ KProperty[] $$delegatedProperties = {a.a0(WidgetChannelsList.class, "binding", "getBinding()Lcom/discord/databinding/WidgetChannelsListBinding;", 0)};
+-    public static final String ANALYTICS_SOURCE = "Channels List";
+-    public static final float BANNER_TEXT_SHADOW_DX = 0.0f;
+-    public static final float BANNER_TEXT_SHADOW_DY = 4.0f;
+-    public static final float BANNER_TEXT_SHADOW_RADIUS = 1.0f;
++    public static final String ANALYTICS_SOURCE;
++    public static final float BANNER_TEXT_SHADOW_DX;
++    public static final float BANNER_TEXT_SHADOW_DY;
++    public static final float BANNER_TEXT_SHADOW_RADIUS;
+     public static final Companion Companion = new Companion(null);
+     private final ActivityResultLauncher<Intent> activityResult = HubUtilsKt.getAddServerActivityResultHandler(this);
+     private WidgetChannelsListAdapter adapter;
+@@ -68,8 +65,6 @@ public final class WidgetChannelsList ex
+     private Long selectedGuildId;
+     private final StoreNavigation storeNavigation = StoreStream.Companion.getNavigation();
+ 
+-    @Metadata(bv = {1, 0, 3}, d1 = {"\u0000\u0018\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\u0010\u000e\n\u0002\b\u0002\n\u0002\u0010\u0007\n\u0002\b\u0007\b\u0003\u0018\u00002\u00020\u0001B\t\b\u0002¢\u0006\u0004\b\n\u0010\u000bR\u0016\u0010\u0003\u001a\u00020\u00028\u0006@\u0006XT¢\u0006\u0006\n\u0004\b\u0003\u0010\u0004R\u0016\u0010\u0006\u001a\u00020\u00058\u0006@\u0006XT¢\u0006\u0006\n\u0004\b\u0006\u0010\u0007R\u0016\u0010\b\u001a\u00020\u00058\u0006@\u0006XT¢\u0006\u0006\n\u0004\b\b\u0010\u0007R\u0016\u0010\t\u001a\u00020\u00058\u0006@\u0006XT¢\u0006\u0006\n\u0004\b\t\u0010\u0007¨\u0006\f"}, d2 = {"Lcom/discord/widgets/channels/list/WidgetChannelsList$Companion;", "", "", "ANALYTICS_SOURCE", "Ljava/lang/String;", "", "BANNER_TEXT_SHADOW_DX", "F", "BANNER_TEXT_SHADOW_DY", "BANNER_TEXT_SHADOW_RADIUS", "<init>", "()V", "app_productionGoogleRelease"}, k = 1, mv = {1, 4, 2})
+-    /* compiled from: WidgetChannelsList.kt */
+     public static final class Companion {
+         private Companion() {
+         }
+@@ -91,7 +86,6 @@ public final class WidgetChannelsList ex
+         return widgetChannelsListAdapter;
+     }
+ 
+-    /* access modifiers changed from: private */
+     public final void ackPremiumGuildHint() {
+         StoreStream.Companion.getNux().setPremiumGuildHintGuildId(null);
+     }
+@@ -100,7 +94,6 @@ public final class WidgetChannelsList ex
+         ObservableExtensionsKt.appSubscribe$default(ObservableExtensionsKt.ui$default(this.bottomNavViewObserver.observeHeight(), this, null, 2, null), WidgetChannelsList.class, (Context) null, (Function1) null, (Function1) null, (Function0) null, (Function0) null, new WidgetChannelsList$configureBottomNavSpace$1(this), 62, (Object) null);
+     }
+ 
+-    /* access modifiers changed from: private */
+     public final void configureHeaderColors(Guild guild, boolean z2) {
+         int i;
+         getBinding().g.setTextColor(getTintColor(requireContext(), guild, this.isCollapsed));
+@@ -120,7 +113,6 @@ public final class WidgetChannelsList ex
+         frameLayout.setVisibility(i2);
+     }
+ 
+-    /* access modifiers changed from: private */
+     /* JADX WARNING: Removed duplicated region for block: B:43:0x00c3  */
+     /* JADX WARNING: Removed duplicated region for block: B:44:0x00c5  */
+     /* JADX WARNING: Removed duplicated region for block: B:47:0x00e2  */
+@@ -167,7 +159,6 @@ public final class WidgetChannelsList ex
+         textView2.setCompoundDrawablesWithIntrinsicBounds(drawable, (Drawable) null, drawable2, (Drawable) null);
+     }
+ 
+-    /* access modifiers changed from: private */
+     public final void configureUI(WidgetChannelListModel widgetChannelListModel) {
+         Guild selectedGuild = widgetChannelListModel.getSelectedGuild();
+         String str = null;
+@@ -259,7 +250,6 @@ public final class WidgetChannelsList ex
+         constraintLayout.setVisibility(i);
+     }
+ 
+-    /* access modifiers changed from: private */
+     public final WidgetChannelsListBinding getBinding() {
+         return (WidgetChannelsListBinding) this.binding$delegate.getValue((Fragment) this, $$delegatedProperties[0]);
+     }
+@@ -271,7 +261,6 @@ public final class WidgetChannelsList ex
+         return ColorCompat.getColor(context, 2131100433);
+     }
+ 
+-    /* access modifiers changed from: private */
+     public final void handleGlobalStatusIndicatorState(WidgetGlobalStatusIndicatorState.State state) {
+         if (state.isCustomBackground()) {
+             unroundPanelCorners();
+@@ -385,4 +374,8 @@ public final class WidgetChannelsList ex
+         configureBottomNavSpace();
+         ObservableExtensionsKt.appSubscribe$default(ObservableExtensionsKt.bindToComponentLifecycle$default(this.globalStatusIndicatorStateObserver.observeState(), this, null, 2, null), WidgetChannelsList.class, (Context) null, (Function1) null, (Function1) null, (Function0) null, (Function0) null, new WidgetChannelsList$onViewBoundOrOnResume$2(this), 62, (Object) null);
+     }
++
++    public void scrollToTop() {
++        getBinding().f1753c.scrollToPosition(0);
++    }
+ }

@@ -1,0 +1,20 @@
+--- ./discord_94011/src/main/res/values-tr/strings.xml	2021-12-24 01:10:11.107026500 +0400
++++ ./bluecord/src/main/res/values-tr/strings.xml	2021-12-24 01:08:30.979262400 +0400
+@@ -5670,7 +5670,7 @@
+     <string name="notification_reply_failed">{recipient} kişisine yanıt verilemedi</string>
+     <string name="notification_reply_success">{recipient} kişisine yanıt verildi</string>
+     <string name="notification_settings">Bildirim Ayarları</string>
+-    <string name="notification_title_discord">Discord</string>
++    <string name="notification_title_discord">Bluecord</string>
+     <string name="notification_title_start_game">Birileri Oynuyor</string>
+     <string name="notifications">Bildirimler</string>
+     <string name="notifications_muted">Bildirimler susturuldu</string>
+@@ -8292,7 +8292,7 @@
+     <string name="tip_voice_conversations_title3">Sesini Duyur</string>
+     <string name="tip_whos_online_body3">Burada bu kanalın tüm üyelerini görebilirsin. Kimlerin çevrimiçi olduğuna ve oyun oynamak veya müzik dinlemek gibi neler yaptıklarına bakabilirsin.</string>
+     <string name="tip_whos_online_title3">Herkes ne yapıyor?</string>
+-    <string name="tip_writing_messages_body3">Artık {serverName} sunucusuna katıldığına göre varlığını belli et ve **selam ver**! ��</string>
++    <string name="tip_writing_messages_body3" />
+     <string name="tip_writing_messages_title3">Bir görüşme yap</string>
+     <string name="title">Başlık</string>
+     <string name="title_bar_close_window">Kapat</string>

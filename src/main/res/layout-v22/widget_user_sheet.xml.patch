@@ -1,0 +1,12 @@
+--- ./discord_94011/src/main/res/layout-v22/widget_user_sheet.xml	2021-12-24 01:10:06.070026000 +0400
++++ ./bluecord/src/main/res/layout-v22/widget_user_sheet.xml	2021-12-24 01:08:23.468261000 +0400
+@@ -53,6 +53,9 @@
+                 </com.google.android.material.textfield.TextInputLayout>
+             </androidx.cardview.widget.CardView>
+             <TextView android:id="@+id/user_sheet_developer_header" android:text="@string/developer_mode" style="@style/UserProfile.Section.Header"/>
++            <TextView android:id="@android:id/hint" android:visibility="gone" android:text="Copy Name" android:drawableStart="?attr/ic_copy" style="@style/UiKit.ListItem.Icon"/>
++            <TextView android:id="@android:id/copy" android:visibility="gone" android:text="Copy Picture URL" android:drawableStart="?attr/ic_copy" style="@style/UiKit.ListItem.Icon"/>
++            <TextView android:id="@android:id/copyUrl" android:visibility="gone" android:text="Copy Banner URL" android:drawableStart="?attr/ic_copy" style="@style/UiKit.ListItem.Icon"/>
+             <TextView android:id="@+id/user_sheet_copy_id" android:visibility="gone" android:text="@string/copy_id" app:drawableStartCompat="?attr/ic_copy" style="@style/UiKit.ListItem.Icon"/>
+         </LinearLayout>
+         <FrameLayout android:id="@+id/user_sheet_loading_container" android:background="?attr/colorBackgroundSecondary" android:layout_width="match_parent" android:layout_height="match_parent">

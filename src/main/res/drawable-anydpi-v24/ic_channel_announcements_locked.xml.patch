@@ -1,0 +1,12 @@
+--- ./discord_94011/src/main/res/drawable-anydpi-v24/ic_channel_announcements_locked.xml	2021-12-24 01:10:03.685024600 +0400
++++ ./bluecord/src/main/res/drawable-anydpi-v24/ic_channel_announcements_locked.xml	2021-12-24 01:08:18.068262800 +0400
+@@ -1,6 +1,6 @@
+ <?xml version="1.0" encoding="utf-8"?>
+ <vector xmlns:android="http://schemas.android.com/apk/res/android" android:height="24dp" android:width="24dp" android:viewportWidth="24" android:viewportHeight="24">
+-    <path android:fillColor="#b9bbbe" android:pathData="M22.025,3V4C22.5635,4 23,4.4365 23,4.975V8C23,8.5523 22.5523,9 22,9H18C17.4477,9 17,8.5523 17,8V5C17,4.4477 17.4477,4 18,4V3C18,1.88 18.95,1 20,1C21.05,1 22.025,1.88 22.025,3ZM19,4H21V3C21,2.4286 20.5333,2 20,2C19.4667,2 19,2.4286 19,3V4Z" android:fillType="1"/>
+-    <path android:fillColor="#b9bbbe" android:pathData="M4.85,8.2645L13.1477,6.4373C13.8106,9.6139 16.6266,12 20,12C20.3395,12 20.6734,11.9759 21,11.9292V19.0588H19.1V17.9304L12.7065,16.5243L10.36,19.6235C10.1776,19.8635 9.8954,20 9.6,20C9.524,20 9.4461,19.9906 9.3701,19.9727L5.5701,19.0315C5.1464,18.9252 4.85,18.5497 4.85,18.1177V8.2645ZM9.2181,17.9944L6.75,17.3826V15.2113L10.6706,16.0753L9.2181,17.9944Z" android:fillType="1"/>
+-    <path android:fillColor="#b9bbbe" android:pathData="M3.9,8.26H2V15.2941H3.9V8.26Z"/>
++    <path android:fillColor="#ffb9bbbe" android:pathData="M22.025,3V4C22.5635,4 23,4.4365 23,4.975V8C23,8.5523 22.5523,9 22,9H18C17.4477,9 17,8.5523 17,8V5C17,4.4477 17.4477,4 18,4V3C18,1.88 18.95,1 20,1C21.05,1 22.025,1.88 22.025,3ZM19,4H21V3C21,2.4286 20.5333,2 20,2C19.4667,2 19,2.4286 19,3V4Z" android:fillType="1"/>
++    <path android:fillColor="#ffb9bbbe" android:pathData="M4.85,8.2645L13.1477,6.4373C13.8106,9.6139 16.6266,12 20,12C20.3395,12 20.6734,11.9759 21,11.9292V19.0588H19.1V17.9304L12.7065,16.5243L10.36,19.6235C10.1776,19.8635 9.8954,20 9.6,20C9.524,20 9.4461,19.9906 9.3701,19.9727L5.5701,19.0315C5.1464,18.9252 4.85,18.5497 4.85,18.1177V8.2645ZM9.2181,17.9944L6.75,17.3826V15.2113L10.6706,16.0753L9.2181,17.9944Z" android:fillType="1"/>
++    <path android:fillColor="#ffb9bbbe" android:pathData="M3.9,8.26H2V15.2941H3.9V8.26Z"/>
+ </vector>

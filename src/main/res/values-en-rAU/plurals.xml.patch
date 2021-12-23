@@ -1,0 +1,16 @@
+--- ./discord_94011/src/main/res/values-en-rAU/plurals.xml	2021-12-24 01:10:10.696025000 +0400
++++ ./bluecord/src/main/res/values-en-rAU/plurals.xml	2021-12-24 01:08:30.476264200 +0400
+@@ -1,11 +1,11 @@
+ <?xml version="1.0" encoding="utf-8"?>
+ <resources>
+     <plurals name="exo_controls_fastforward_by_amount_description">
+-        <item quantity="one">Fast-forward %d second</item>
+         <item quantity="other">Fast-forward %d seconds</item>
++        <item quantity="one">Fast-forward %d second</item>
+     </plurals>
+     <plurals name="exo_controls_rewind_by_amount_description">
+-        <item quantity="one">Rewind %d second</item>
+         <item quantity="other">Rewind %d seconds</item>
++        <item quantity="one">Rewind %d second</item>
+     </plurals>
+ </resources>

@@ -1,0 +1,11 @@
+--- ./discord_94011/src/main/java/com/discord/widgets/guilds/create/WidgetCreationIntent$onViewBound$1.java	2021-12-24 01:10:14.418025600 +0400
++++ ./bluecord/src/main/java/com/discord/widgets/guilds/create/WidgetCreationIntent$onViewBound$1.java	2021-12-24 01:08:35.023261800 +0400
+@@ -47,7 +47,7 @@ public final class WidgetCreationIntent$
+ 
+             public final void invoke(View view) {
+                 m.checkNotNullParameter(view, "it");
+-                this.this$0.this$0.onSelectionPressed(null);
++                WidgetCreationIntent.access$onSelectionPressed(this.this$0.this$0, null);
+             }
+         });
+     }

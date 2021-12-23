@@ -1,0 +1,10 @@
+--- ./discord_94011/src/main/java/com/discord/widgets/settings/profile/WidgetEditProfileBannerSheet$configureUi$1.java	2021-12-24 01:10:15.258027900 +0400
++++ ./bluecord/src/main/java/com/discord/widgets/settings/profile/WidgetEditProfileBannerSheet$configureUi$1.java	2021-12-24 01:08:35.738260100 +0400
+@@ -18,6 +18,6 @@ public final class WidgetEditProfileBann
+     public final void onClick(View view) {
+         WidgetEditProfileBannerSheet widgetEditProfileBannerSheet = this.this$0;
+         T t = this.$bannerColor.element;
+-        widgetEditProfileBannerSheet.launchColorPicker(t != null ? t.intValue() : widgetEditProfileBannerSheet.defaultBannerColor);
++        WidgetEditProfileBannerSheet.access$launchColorPicker(widgetEditProfileBannerSheet, t != null ? t.intValue() : WidgetEditProfileBannerSheet.access$getDefaultBannerColor$p(widgetEditProfileBannerSheet));
+     }
+ }

@@ -1,0 +1,22 @@
+--- ./discord_94011/src/main/res/drawable/ic_profile_badge_premium_guild_subscription_lvl4_32dp.xml	2021-12-24 01:10:08.565025200 +0400
++++ ./bluecord/src/main/res/drawable/ic_profile_badge_premium_guild_subscription_lvl4_32dp.xml	2021-12-24 01:08:17.331264500 +0400
+@@ -1,11 +1,11 @@
+ <?xml version="1.0" encoding="utf-8"?>
+ <vector xmlns:android="http://schemas.android.com/apk/res/android" android:height="32dp" android:width="32dp" android:viewportWidth="24" android:viewportHeight="24">
+-    <path android:fillColor="#ff6bfa" android:pathData="M12,3.3L4.46,7.65V16.35L12,20.71L19.54,16.35V7.65L12,3.3ZM16.93,14.85L12,17.69L7.08,14.85V9.16L12,6.31L16.93,9.16V14.85Z"/>
+-    <path android:fillColor="#ffdef9" android:pathData="M15.6901,8.44L7.0701,13.42V9.15L11.9901,6.31L15.6901,8.44Z"/>
+-    <path android:fillColor="#ffdef9" android:pathData="M16.9301,9.15V10.67L8.4001,15.61L7.0801,14.84L16.9301,9.15Z"/>
+-    <path android:fillColor="#ffdef9" android:pathData="M9.6201,16.31L16.9301,12.09V14.84L11.9901,17.7L9.6201,16.31Z"/>
+-    <path android:fillColor="#ffb0ff" android:pathData="M12,3.29V6.31L16.93,9.15L19.54,7.65L12,3.29Z"/>
+-    <path android:fillColor="#e34bd1" android:pathData="M7.07,14.85L4.46,16.35L12,20.71V17.69L7.07,14.85Z"/>
+-    <path android:fillColor="#ffffff" android:pathData="M16.9301,9.15L15.6901,8.44L7.0701,13.42V14.85L16.9301,9.15Z"/>
+-    <path android:fillColor="#ffffff" android:pathData="M16.9299,10.67V12.09L9.6199,16.31L8.3999,15.61L16.9299,10.67Z"/>
++    <path android:fillColor="#ffff6bfa" android:pathData="M12,3.3L4.46,7.65V16.35L12,20.71L19.54,16.35V7.65L12,3.3ZM16.93,14.85L12,17.69L7.08,14.85V9.16L12,6.31L16.93,9.16V14.85Z"/>
++    <path android:fillColor="#ffffdef9" android:pathData="M15.6901,8.44L7.0701,13.42V9.15L11.9901,6.31L15.6901,8.44Z"/>
++    <path android:fillColor="#ffffdef9" android:pathData="M16.9301,9.15V10.67L8.4001,15.61L7.0801,14.84L16.9301,9.15Z"/>
++    <path android:fillColor="#ffffdef9" android:pathData="M9.6201,16.31L16.9301,12.09V14.84L11.9901,17.7L9.6201,16.31Z"/>
++    <path android:fillColor="#ffffb0ff" android:pathData="M12,3.29V6.31L16.93,9.15L19.54,7.65L12,3.29Z"/>
++    <path android:fillColor="#ffe34bd1" android:pathData="M7.07,14.85L4.46,16.35L12,20.71V17.69L7.07,14.85Z"/>
++    <path android:fillColor="#ffffffff" android:pathData="M16.9301,9.15L15.6901,8.44L7.0701,13.42V14.85L16.9301,9.15Z"/>
++    <path android:fillColor="#ffffffff" android:pathData="M16.9299,10.67V12.09L9.6199,16.31L8.3999,15.61L16.9299,10.67Z"/>
+ </vector>

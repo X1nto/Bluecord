@@ -1,0 +1,10 @@
+--- ./discord_94011/src/main/res/drawable-anydpi-v24/ic_add_friend_plus.xml	2021-12-24 01:10:05.011028700 +0400
++++ ./bluecord/src/main/res/drawable-anydpi-v24/ic_add_friend_plus.xml	2021-12-24 01:08:18.006264800 +0400
+@@ -2,6 +2,6 @@
+ <vector xmlns:android="http://schemas.android.com/apk/res/android" android:height="24dp" android:width="25dp" android:viewportWidth="25" android:viewportHeight="24">
+     <group>
+         <clip-path android:pathData="M0.76,0h24v24h-24z M 0,0"/>
+-        <path android:fillColor="#3ba55c" android:pathData="M21.76,3H24.76V5H21.76V8H19.76V5H16.76V3H19.76V0H21.76V3ZM10.76,12C12.965,12 14.76,10.205 14.76,8C14.76,5.795 12.965,4 10.76,4C8.555,4 6.76,5.795 6.76,8C6.76,10.205 8.555,12 10.76,12ZM10.76,13C6.049,13 2.76,15.467 2.76,19V20H18.76V19C18.76,15.467 15.471,13 10.76,13Z" android:fillType="1"/>
++        <path android:fillColor="#ff3ba55c" android:pathData="M21.76,3H24.76V5H21.76V8H19.76V5H16.76V3H19.76V0H21.76V3ZM10.76,12C12.965,12 14.76,10.205 14.76,8C14.76,5.795 12.965,4 10.76,4C8.555,4 6.76,5.795 6.76,8C6.76,10.205 8.555,12 10.76,12ZM10.76,13C6.049,13 2.76,15.467 2.76,19V20H18.76V19C18.76,15.467 15.471,13 10.76,13Z" android:fillType="1"/>
+     </group>
+ </vector>

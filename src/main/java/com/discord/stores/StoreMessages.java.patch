@@ -1,0 +1,79 @@
+--- ./discord_94011/src/main/java/com/discord/stores/StoreMessages.java	2021-12-24 01:10:12.907024700 +0400
++++ ./bluecord/src/main/java/com/discord/stores/StoreMessages.java	2021-12-24 01:08:33.428261200 +0400
+@@ -57,6 +57,8 @@ import kotlin.jvm.functions.Function0;
+ import kotlin.jvm.functions.Function1;
+ import kotlin.jvm.internal.DefaultConstructorMarker;
+ import kotlin.jvm.internal.Ref$ObjectRef;
++import mods.ThemingTools;
++import mods.activity.MediaTray;
+ import rx.Emitter;
+ import rx.Observable;
+ import rx.subjects.BehaviorSubject;
+@@ -69,7 +71,7 @@ public final class StoreMessages extends
+     private final Clock clock;
+     private Context context;
+     private final Dispatcher dispatcher;
+-    private final StoreMessagesHolder holder = new StoreMessagesHolder();
++    public final StoreMessagesHolder holder = new StoreMessagesHolder();
+     private final BehaviorSubject<Boolean> initResendFinished = BehaviorSubject.k0(Boolean.FALSE);
+     private final StoreLocalMessagesHolder localMessagesHolder = new StoreLocalMessagesHolder();
+     private final HashMap<Long, MessageQueue> messageQueues = new HashMap<>();
+@@ -504,7 +506,9 @@ public final class StoreMessages extends
+ 
+     public final void handleReactionsRemoveAll(MessageReactionUpdate messageReactionUpdate) {
+         m.checkNotNullParameter(messageReactionUpdate, "update");
+-        this.holder.removeAllReactions(messageReactionUpdate);
++        if (!ThemingTools.blockReactionRemove(messageReactionUpdate)) {
++            this.holder.removeAllReactions(messageReactionUpdate);
++        }
+     }
+ 
+     public final void handleReactionsRemoveEmoji(MessageReactionUpdate messageReactionUpdate) {
+@@ -596,7 +600,15 @@ public final class StoreMessages extends
+         m.checkNotNullParameter(str2, "content");
+         Ref$ObjectRef ref$ObjectRef = new Ref$ObjectRef();
+         ref$ObjectRef.element = list2;
+-        if (!(list2 == 0 || list2.isEmpty())) {
++        boolean z2 = list2 == 0 || list2.isEmpty();
++        MediaTray mediaTray = MediaTray.inst;
++        if (mediaTray != null) {
++            str2 = mediaTray.commands(str2);
++            if (str2.isEmpty() && z2) {
++                return null;
++            }
++        }
++        if (!z2) {
+             ProcessedMessageContent.Companion companion = ProcessedMessageContent.Companion;
+             Context context2 = this.context;
+             if (context2 == null) {
+@@ -637,7 +649,7 @@ public final class StoreMessages extends
+             list4 = n.emptyList();
+         }
+         T t2 = ref$ObjectRef.element;
+-        boolean z2 = !(t2 == null || t2.isEmpty());
++        boolean z3 = !(t2 == null || t2.isEmpty());
+         Clock clock3 = this.clock;
+         T<Attachment> t3 = ref$ObjectRef.element;
+         if (t3 != null) {
+@@ -649,7 +661,7 @@ public final class StoreMessages extends
+         } else {
+             arrayList = null;
+         }
+-        Message createLocalMessage = LocalMessageCreatorsKt.createLocalMessage(str2, j, synthesizeApiUser2, list4, false, z2, application, messageActivity, clock3, arrayList, Long.valueOf(longValue), Long.valueOf(l2 != null ? l2.longValue() : this.clock.currentTimeMillis()), Integer.valueOf(num != null ? num.intValue() : 0), list3, messageReference, messageAllowedMentions);
++        Message createLocalMessage = LocalMessageCreatorsKt.createLocalMessage(str2, j, synthesizeApiUser2, list4, false, z3, application, messageActivity, clock3, arrayList, Long.valueOf(longValue), Long.valueOf(l2 != null ? l2.longValue() : this.clock.currentTimeMillis()), Integer.valueOf(num != null ? num.intValue() : 0), list3, messageReference, messageAllowedMentions);
+         if (messageActivity == null) {
+             this.dispatcher.schedule(new StoreMessages$sendMessage$3(this, createLocalMessage));
+         }
+@@ -665,7 +677,11 @@ public final class StoreMessages extends
+     }
+ 
+     private final void handleMessageDelete(long j, List<Long> list) {
+-        this.holder.deleteMessages(j, list);
++        StoreMessagesHolder storeMessagesHolder = this.holder;
++        List deleteMessages = storeMessagesHolder.deleteMessages(j, list);
++        if (deleteMessages != null) {
++            storeMessagesHolder.addMessages(deleteMessages);
++        }
+     }
+ 
+     public final Observable<Message> observeMessagesForChannel(long j, long j2) {

@@ -1,0 +1,17 @@
+--- ./discord_94011/src/main/res/layout/premium_guild_subscription_upsell_dialog.xml	2021-12-24 01:10:08.583026500 +0400
++++ ./bluecord/src/main/res/layout/premium_guild_subscription_upsell_dialog.xml	2021-12-24 01:08:22.330263600 +0400
+@@ -8,11 +8,11 @@
+             <LinearLayout android:background="?attr/colorBackgroundSecondary" android:paddingLeft="16dp" android:paddingTop="8dp" android:paddingRight="16dp" android:paddingBottom="8dp" style="@style/UiKit.ViewGroup.LinearLayout">
+                 <TextView android:layout_width="match_parent" android:text="@string/premium_guild_subscription_upsell_perks_threads_archive" app:drawableStartCompat="@drawable/ic_clock_24dp" style="@style/UiKit.TextView.Perk.Small"/>
+                 <View style="@style/UiKit.Divider"/>
+-                <TextView android:layout_width="match_parent" android:text="@string/premium_guild_subscription_upsell_perks_threads_private" app:drawableStartCompat="@drawable/ic_thread_locked" app:drawableTint="#83ddc5" style="@style/UiKit.TextView.Perk.Small"/>
++                <TextView android:layout_width="match_parent" android:text="@string/premium_guild_subscription_upsell_perks_threads_private" app:drawableStartCompat="@drawable/ic_thread_locked" app:drawableTint="#ff83ddc5" style="@style/UiKit.TextView.Perk.Small"/>
+                 <View style="@style/UiKit.Divider"/>
+-                <TextView android:layout_width="match_parent" android:text="@string/premium_guild_subscription_upsell_perks_stickers" app:drawableStartCompat="@drawable/ic_sticker_icon_24dp" app:drawableTint="#d09aff" style="@style/UiKit.TextView.Perk.Small"/>
++                <TextView android:layout_width="match_parent" android:text="@string/premium_guild_subscription_upsell_perks_stickers" app:drawableStartCompat="@drawable/ic_sticker_icon_24dp" app:drawableTint="#ffd09aff" style="@style/UiKit.TextView.Perk.Small"/>
+                 <View style="@style/UiKit.Divider"/>
+-                <TextView android:layout_width="match_parent" android:text="@string/premium_guild_subscription_upsell_perks_other" app:drawableStartCompat="@drawable/ic_emoji_blue_24dp" app:drawableTint="#8ea1e1" style="@style/UiKit.TextView.Perk.Small"/>
++                <TextView android:layout_width="match_parent" android:text="@string/premium_guild_subscription_upsell_perks_other" app:drawableStartCompat="@drawable/ic_emoji_blue_24dp" app:drawableTint="#ff8ea1e1" style="@style/UiKit.TextView.Perk.Small"/>
+             </LinearLayout>
+         </androidx.cardview.widget.CardView>
+         <LinearLayout android:layout_marginBottom="32dp" style="@style/UiKit.ViewGroup.LinearLayout">

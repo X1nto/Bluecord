@@ -1,0 +1,11 @@
+--- ./discord_94011/src/main/java/s/a/m.java	2021-12-24 01:10:16.739027600 +0400
++++ ./bluecord/src/main/java/s/a/m.java	2021-12-24 01:08:37.124262000 +0400
+@@ -8,7 +8,7 @@ import kotlin.coroutines.Continuation;
+ public final class m extends v {
+ 
+     /* renamed from: c  reason: collision with root package name */
+-    public static final AtomicIntegerFieldUpdater f2974c = AtomicIntegerFieldUpdater.newUpdater(m.class, "_resumed");
++    public static final AtomicIntegerFieldUpdater f2976c = AtomicIntegerFieldUpdater.newUpdater(m.class, "_resumed");
+     public volatile int _resumed;
+ 
+     /* JADX WARNING: Illegal instructions before constructor call */

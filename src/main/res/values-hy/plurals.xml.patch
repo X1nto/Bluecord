@@ -1,0 +1,21 @@
+--- ./discord_94011/src/main/res/values-hy/plurals.xml	2021-12-24 01:10:10.822027500 +0400
++++ ./bluecord/src/main/res/values-hy/plurals.xml	2021-12-24 01:08:30.664262200 +0400
+@@ -1,15 +1,15 @@
+ <?xml version="1.0" encoding="utf-8"?>
+ <resources>
+     <plurals name="exo_controls_fastforward_by_amount_description">
+-        <item quantity="one">%d վայրկյան առաջ տալ</item>
+         <item quantity="other">%d վայրկյան առաջ տալ</item>
++        <item quantity="one">%d վայրկյան առաջ տալ</item>
+     </plurals>
+     <plurals name="exo_controls_rewind_by_amount_description">
+-        <item quantity="one">%d վայրկյան հետ տալ</item>
+         <item quantity="other">%d վայրկյան հետ տալ</item>
++        <item quantity="one">%d վայրկյան հետ տալ</item>
+     </plurals>
+     <plurals name="mtrl_badge_content_description">
+-        <item quantity="one">%d նոր ծանուցում</item>
+         <item quantity="other">%d նոր ծանուցում</item>
++        <item quantity="one">%d նոր ծանուցում</item>
+     </plurals>
+ </resources>

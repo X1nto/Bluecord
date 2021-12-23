@@ -1,0 +1,16 @@
+--- ./discord_94011/src/main/java/com/discord/widgets/settings/profile/SettingsUserProfileViewModel$saveUserChanges$2.java	2021-12-24 01:10:15.254026400 +0400
++++ ./bluecord/src/main/java/com/discord/widgets/settings/profile/SettingsUserProfileViewModel$saveUserChanges$2.java	2021-12-24 01:08:35.735261300 +0400
+@@ -35,9 +35,9 @@ public final class SettingsUserProfileVi
+ 
+     public final void invoke(User user) {
+         m.checkNotNullParameter(user, "apiUser");
+-        SettingsUserProfileViewModel.access$getStoreUserProfile$p(this.this$0).updateUser(user);
+-        SettingsUserProfileViewModel.access$updateViewState(this.this$0, SettingsUserProfileViewModel.ViewState.Loaded.copy$default(this.$viewState, MeUser.Companion.merge(this.$meUser, user), null, null, null, null, null, null, false, 226, null));
+-        PublishSubject access$getEventSubject$p = SettingsUserProfileViewModel.access$getEventSubject$p(this.this$0);
+-        access$getEventSubject$p.j.onNext(SettingsUserProfileViewModel.Event.UserUpdateRequestCompleted.INSTANCE);
++        this.this$0.storeUserProfile.updateUser(user);
++        this.this$0.updateViewState(SettingsUserProfileViewModel.ViewState.Loaded.copy$default(this.$viewState, MeUser.Companion.merge(this.$meUser, user), null, null, null, null, null, null, false, 226, null));
++        PublishSubject publishSubject = this.this$0.eventSubject;
++        publishSubject.j.onNext(SettingsUserProfileViewModel.Event.UserUpdateRequestCompleted.INSTANCE);
+     }
+ }

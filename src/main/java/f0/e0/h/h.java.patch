@@ -1,0 +1,11 @@
+--- ./discord_94011/src/main/java/f0/e0/h/h.java	2021-12-24 01:10:16.432028400 +0400
++++ ./bluecord/src/main/java/f0/e0/h/h.java	2021-12-24 01:08:36.804260600 +0400
+@@ -29,7 +29,7 @@ public final class h extends ResponseBod
+         if (str == null) {
+             return null;
+         }
+-        MediaType.a aVar = MediaType.f2950c;
++        MediaType.a aVar = MediaType.f2952c;
+         return MediaType.a.b(str);
+     }
+ 

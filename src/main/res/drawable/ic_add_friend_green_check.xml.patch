@@ -1,0 +1,10 @@
+--- ./discord_94011/src/main/res/drawable/ic_add_friend_green_check.xml	2021-12-24 01:10:03.635025900 +0400
++++ ./bluecord/src/main/res/drawable/ic_add_friend_green_check.xml	2021-12-24 01:08:16.816262200 +0400
+@@ -1,5 +1,5 @@
+ <?xml version="1.0" encoding="utf-8"?>
+ <vector xmlns:android="http://schemas.android.com/apk/res/android" android:height="32dp" android:width="32dp" android:viewportWidth="32" android:viewportHeight="32">
+-    <path android:fillColor="#3ba55c" android:pathData="M16,0L16,0A16,16 0,0 1,32 16L32,16A16,16 0,0 1,16 32L16,32A16,16 0,0 1,0 16L0,16A16,16 0,0 1,16 0z"/>
+-    <path android:fillColor="#ffffff" android:pathData="M14.0001,18.7799L11.2201,15.9999L10.2734,16.9399L14.0001,20.6666L22.0001,12.6666L21.0601,11.7266L14.0001,18.7799Z"/>
++    <path android:fillColor="#ff3ba55c" android:pathData="M16,0L16,0A16,16 0,0 1,32 16L32,16A16,16 0,0 1,16 32L16,32A16,16 0,0 1,0 16L0,16A16,16 0,0 1,16 0z"/>
++    <path android:fillColor="#ffffffff" android:pathData="M14.0001,18.7799L11.2201,15.9999L10.2734,16.9399L14.0001,20.6666L22.0001,12.6666L21.0601,11.7266L14.0001,18.7799Z"/>
+ </vector>

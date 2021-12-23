@@ -1,0 +1,49 @@
+--- ./discord_94011/src/main/java/com/discord/stores/StoreGuildVoiceRegions.java	2021-12-24 01:10:12.845027000 +0400
++++ ./bluecord/src/main/java/com/discord/stores/StoreGuildVoiceRegions.java	2021-12-24 01:08:33.344261100 +0400
+@@ -117,23 +117,40 @@ public final class StoreGuildVoiceRegion
+         this(dispatcher2, (i & 2) != 0 ? ObservationDeckProvider.get() : observationDeck2);
+     }
+ 
+-    /* access modifiers changed from: private */
++    public static final /* synthetic */ Dispatcher access$getDispatcher$p(StoreGuildVoiceRegions storeGuildVoiceRegions) {
++        return storeGuildVoiceRegions.dispatcher;
++    }
++
++    public static final /* synthetic */ HashMap access$getGuildVoiceRegionsState$p(StoreGuildVoiceRegions storeGuildVoiceRegions) {
++        return storeGuildVoiceRegions.guildVoiceRegionsState;
++    }
++
++    public static final /* synthetic */ void access$handleGuildVoiceRegions(StoreGuildVoiceRegions storeGuildVoiceRegions, long j, List list) {
++        storeGuildVoiceRegions.handleGuildVoiceRegions(j, list);
++    }
++
++    public static final /* synthetic */ void access$handleGuildVoiceRegionsFetchFailed(StoreGuildVoiceRegions storeGuildVoiceRegions, long j) {
++        storeGuildVoiceRegions.handleGuildVoiceRegionsFetchFailed(j);
++    }
++
++    public static final /* synthetic */ void access$handleGuildVoiceRegionsFetchStart(StoreGuildVoiceRegions storeGuildVoiceRegions, long j) {
++        storeGuildVoiceRegions.handleGuildVoiceRegionsFetchStart(j);
++    }
++
+     @StoreThread
+-    public final void handleGuildVoiceRegions(long j, List<? extends ModelVoiceRegion> list) {
++    private final void handleGuildVoiceRegions(long j, List<? extends ModelVoiceRegion> list) {
+         this.guildVoiceRegionsState.put(Long.valueOf(j), new State.Loaded(list));
+         markChanged();
+     }
+ 
+-    /* access modifiers changed from: private */
+     @StoreThread
+-    public final void handleGuildVoiceRegionsFetchFailed(long j) {
++    private final void handleGuildVoiceRegionsFetchFailed(long j) {
+         this.guildVoiceRegionsState.put(Long.valueOf(j), State.Failure.INSTANCE);
+         markChanged();
+     }
+ 
+-    /* access modifiers changed from: private */
+     @StoreThread
+-    public final void handleGuildVoiceRegionsFetchStart(long j) {
++    private final void handleGuildVoiceRegionsFetchStart(long j) {
+         this.guildVoiceRegionsState.put(Long.valueOf(j), State.Fetching.INSTANCE);
+         markChanged();
+     }

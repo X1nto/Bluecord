@@ -1,0 +1,33 @@
+--- ./discord_94011/src/main/res/values-ar/plurals.xml	2021-12-24 01:10:10.609029900 +0400
++++ ./bluecord/src/main/res/values-ar/plurals.xml	2021-12-24 01:08:30.343265300 +0400
+@@ -1,27 +1,27 @@
+ <?xml version="1.0" encoding="utf-8"?>
+ <resources>
+     <plurals name="exo_controls_fastforward_by_amount_description">
++        <item quantity="other">تقديم سريع للفيديو بمقدار %d ثانية</item>
+         <item quantity="zero">تقديم سريع للفيديو بمقدار %d ثانية</item>
+         <item quantity="one">تقديم سريع للفيديو بمقدار ثانية واحدة (%d)</item>
+         <item quantity="two">تقديم سريع للفيديو بمقدار ثانيتَين (%d)</item>
+         <item quantity="few">تقديم سريع للفيديو بمقدار %d ثوانٍ</item>
+         <item quantity="many">تقديم سريع للفيديو بمقدار %d ثانية</item>
+-        <item quantity="other">تقديم سريع للفيديو بمقدار %d ثانية</item>
+     </plurals>
+     <plurals name="exo_controls_rewind_by_amount_description">
++        <item quantity="other">ترجيع الفيديو بمقدار %d ثانية</item>
+         <item quantity="zero">ترجيع الفيديو بمقدار %d ثانية</item>
+         <item quantity="one">ترجيع الفيديو بمقدار ثانية واحدة (%d)</item>
+         <item quantity="two">ترجيع الفيديو بمقدار ثانيتَين (%d)</item>
+         <item quantity="few">ترجيع الفيديو بمقدار %d ثوانٍ</item>
+         <item quantity="many">ترجيع الفيديو بمقدار %d ثانية</item>
+-        <item quantity="other">ترجيع الفيديو بمقدار %d ثانية</item>
+     </plurals>
+     <plurals name="mtrl_badge_content_description">
++        <item quantity="other">%d إشعار جديد</item>
+         <item quantity="zero">%d إشعار جديد</item>
+         <item quantity="one">إشعار جديد واحد (%d)</item>
+         <item quantity="two">إشعاران جديدان (%d)</item>
+         <item quantity="few">%d إشعارات جديدة</item>
+         <item quantity="many">%d إشعارًا جديدًا</item>
+-        <item quantity="other">%d إشعار جديد</item>
+     </plurals>
+ </resources>

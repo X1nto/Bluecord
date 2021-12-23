@@ -1,0 +1,13 @@
+--- ./discord_94011/src/main/java/c/f/d/m/c.java	2021-12-24 01:10:09.841026500 +0400
++++ ./bluecord/src/main/java/c/f/d/m/c.java	2021-12-24 01:08:30.895262800 +0400
+@@ -4,8 +4,8 @@ import java.io.UnsupportedEncodingExcept
+ 
+ /* compiled from: WebpSupportStatus */
+ public class c {
+-    public static b a = null;
+-    public static boolean b = false;
++    public static b a;
++    public static boolean b;
+ 
+     /* renamed from: c  reason: collision with root package name */
+     public static final byte[] f370c = a("RIFF");

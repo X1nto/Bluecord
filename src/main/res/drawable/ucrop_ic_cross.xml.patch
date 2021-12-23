@@ -1,0 +1,8 @@
+--- ./discord_94011/src/main/res/drawable/ucrop_ic_cross.xml	2021-12-24 01:09:58.867024800 +0400
++++ ./bluecord/src/main/res/drawable/ucrop_ic_cross.xml	2021-12-24 01:08:17.776262100 +0400
+@@ -1,4 +1,4 @@
+ <?xml version="1.0" encoding="utf-8"?>
+ <vector xmlns:android="http://schemas.android.com/apk/res/android" android:height="24dp" android:width="24dp" android:viewportWidth="24" android:viewportHeight="24">
+-    <path android:fillColor="#000" android:pathData="M4.405,5.723l1.43,-1.398L19.503,18.3l-1.43,1.398L4.405,5.723zM5.707,19.707l-1.414,-1.414 14,-14 1.414,1.414 -14,14z" android:fillType="0"/>
++    <path android:fillColor="#ff000000" android:pathData="M4.405,5.723l1.43,-1.398L19.503,18.3l-1.43,1.398L4.405,5.723zM5.707,19.707l-1.414,-1.414 14,-14 1.414,1.414 -14,14z" android:fillType="0"/>
+ </vector>

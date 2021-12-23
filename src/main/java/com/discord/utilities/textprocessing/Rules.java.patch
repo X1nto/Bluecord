@@ -1,0 +1,11 @@
+--- ./discord_94011/src/main/java/com/discord/utilities/textprocessing/Rules.java	2021-12-24 01:10:13.497024900 +0400
++++ ./bluecord/src/main/java/com/discord/utilities/textprocessing/Rules.java	2021-12-24 01:08:33.891265900 +0400
+@@ -55,7 +55,7 @@ public final class Rules {
+     private static final Set<Character> PATHOLOGICAL_MASKED_LINK_ATTACK_SUSPICIOUS_CHARS = n0.setOf((Object[]) new Character[]{'[', ']'});
+     private static final Pattern PATTERN_BLOCK_QUOTE = Pattern.compile("^(?: *>>> +(.*)| *>(?!>>) +([^\\n]*\\n?))", 32);
+     private static final Pattern PATTERN_CHANNEL_MENTION = Pattern.compile("^<#(\\d+)>");
+-    private static final Pattern PATTERN_CUSTOM_EMOJI = Pattern.compile("^<(a)?:([a-zA-Z_0-9]+):(\\d+)>");
++    private static final Pattern PATTERN_CUSTOM_EMOJI = Pattern.compile("^<&?​?(a)?[:|\\.]([a-zA-Z_0-9]+)[:|\\.](\\d+)>");
+     private static final Pattern PATTERN_HOOKED_LINK = Pattern.compile("^\\$\\[((?:\\[[^]]*]|[^]]|](?=[^\\[]*]))*)?]\\(\\s*<?((?:[^\\s\\\\]|\\\\.)*?)>?(?:\\s+['\"]([\\s\\S]*?)['\"])?\\s*\\)");
+     private static final Pattern PATTERN_MASKED_LINK = Pattern.compile("^\\[((?:\\[[^]]*]|[^]]|](?=[^\\[]*]))*)]\\(\\s*<?((?:[^\\s\\\\]|\\\\.)*?)>?(?:\\s+['\"]([\\s\\S]*?)['\"])?\\s*\\)");
+     private static final Pattern PATTERN_MENTION = Pattern.compile("^<@!?(\\d+)>|^@(everyone|here)");

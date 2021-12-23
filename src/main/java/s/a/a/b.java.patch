@@ -1,0 +1,9 @@
+--- ./discord_94011/src/main/java/s/a/a/b.java	2021-12-24 01:10:16.716024000 +0400
++++ ./bluecord/src/main/java/s/a/a/b.java	2021-12-24 01:08:37.099262200 +0400
+@@ -6,5 +6,5 @@ public class b<T> {
+     public int b;
+ 
+     /* renamed from: c  reason: collision with root package name */
+-    public int f2966c;
++    public int f2968c;
+ }

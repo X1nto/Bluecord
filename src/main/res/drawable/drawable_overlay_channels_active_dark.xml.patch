@@ -1,0 +1,11 @@
+--- ./discord_94011/src/main/res/drawable/drawable_overlay_channels_active_dark.xml	2021-12-24 01:10:01.147027200 +0400
++++ ./bluecord/src/main/res/drawable/drawable_overlay_channels_active_dark.xml	2021-12-24 01:08:16.674261800 +0400
+@@ -2,7 +2,7 @@
+ <layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+     <item android:left="8dp" android:right="8dp">
+         <shape android:shape="rectangle">
+-            <solid android:color="#42464d"/>
++            <solid android:color="#ff42464d"/>
+             <corners android:radius="4dp"/>
+         </shape>
+     </item>

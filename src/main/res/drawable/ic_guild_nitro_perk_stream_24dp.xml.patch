@@ -1,0 +1,8 @@
+--- ./discord_94011/src/main/res/drawable/ic_guild_nitro_perk_stream_24dp.xml	2021-12-24 01:10:08.227026600 +0400
++++ ./bluecord/src/main/res/drawable/ic_guild_nitro_perk_stream_24dp.xml	2021-12-24 01:08:17.092263800 +0400
+@@ -1,4 +1,4 @@
+ <?xml version="1.0" encoding="utf-8"?>
+ <vector xmlns:android="http://schemas.android.com/apk/res/android" android:height="24dp" android:width="24dp" android:viewportWidth="24" android:viewportHeight="24">
+-    <path android:fillColor="#80a5fe" android:pathData="M20,3V4L23,3V7L20,6V7C20,7.553 19.552,8 19,8H15C14.448,8 14,7.553 14,7V3C14,2.447 14.448,2 15,2H19C19.552,2 20,2.447 20,3ZM18,15V10H19H20V17C20,18.104 19.103,19 18,19H11V21H15V23H5V21H9V19H2C0.897,19 0,18.104 0,17V6C0,4.897 0.897,4 2,4H12V6H2V15H7H10H13H18Z"/>
++    <path android:fillColor="#ff80a5fe" android:pathData="M20,3V4L23,3V7L20,6V7C20,7.553 19.552,8 19,8H15C14.448,8 14,7.553 14,7V3C14,2.447 14.448,2 15,2H19C19.552,2 20,2.447 20,3ZM18,15V10H19H20V17C20,18.104 19.103,19 18,19H11V21H15V23H5V21H9V19H2C0.897,19 0,18.104 0,17V6C0,4.897 0.897,4 2,4H12V6H2V15H7H10H13H18Z"/>
+ </vector>

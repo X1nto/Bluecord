@@ -1,0 +1,19 @@
+--- ./discord_94011/src/main/java/com/discord/widgets/user/search/WidgetGlobalSearchGuildsAdapter.java	2021-12-24 01:10:15.558025600 +0400
++++ ./bluecord/src/main/java/com/discord/widgets/user/search/WidgetGlobalSearchGuildsAdapter.java	2021-12-24 01:08:35.969263400 +0400
+@@ -27,6 +27,7 @@ import d0.z.d.m;
+ import kotlin.Metadata;
+ import kotlin.Unit;
+ import kotlin.jvm.functions.Function3;
++import mods.ThemingTools;
+ 
+ @Metadata(bv = {1, 0, 3}, d1 = {"\u00004\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\b\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\u0010\u0002\n\u0002\b\u000b\n\u0002\u0018\u0002\n\u0002\b\b\u0018\u00002\b\u0012\u0004\u0012\u00020\u00020\u0001:\u0004\u001b\u001c\u001d\u001eB\u0019\u0012\u0006\u0010\u0018\u001a\u00020\u0017\u0012\b\b\u0001\u0010\u0012\u001a\u00020\u0005¢\u0006\u0004\b\u0019\u0010\u001aJ)\u0010\b\u001a\f\u0012\u0002\b\u0003\u0012\u0004\u0012\u00020\u00020\u00072\u0006\u0010\u0004\u001a\u00020\u00032\u0006\u0010\u0006\u001a\u00020\u0005H\u0016¢\u0006\u0004\b\b\u0010\tR:\u0010\f\u001a\u001a\u0012\u0004\u0012\u00020\u0005\u0012\u0004\u0012\u00020\u0005\u0012\u0004\u0012\u00020\u0002\u0012\u0004\u0012\u00020\u000b0\n8\u0006@\u0006X\u000e¢\u0006\u0012\n\u0004\b\f\u0010\r\u001a\u0004\b\u000e\u0010\u000f\"\u0004\b\u0010\u0010\u0011R\u0016\u0010\u0012\u001a\u00020\u00058\u0002@\u0002X\u0004¢\u0006\u0006\n\u0004\b\u0012\u0010\u0013R:\u0010\u0014\u001a\u001a\u0012\u0004\u0012\u00020\u0005\u0012\u0004\u0012\u00020\u0005\u0012\u0004\u0012\u00020\u0002\u0012\u0004\u0012\u00020\u000b0\n8\u0006@\u0006X\u000e¢\u0006\u0012\n\u0004\b\u0014\u0010\r\u001a\u0004\b\u0015\u0010\u000f\"\u0004\b\u0016\u0010\u0011¨\u0006\u001f"}, d2 = {"Lcom/discord/widgets/user/search/WidgetGlobalSearchGuildsAdapter;", "Lcom/discord/utilities/mg_recycler/MGRecyclerAdapterSimple;", "Lcom/discord/widgets/user/search/WidgetGlobalSearchGuildsModel$Item;", "Landroid/view/ViewGroup;", "parent", "", "viewType", "Lcom/discord/utilities/mg_recycler/MGRecyclerViewHolder;", "onCreateViewHolder", "(Landroid/view/ViewGroup;I)Lcom/discord/utilities/mg_recycler/MGRecyclerViewHolder;", "Lkotlin/Function3;", "", "onClickListener", "Lkotlin/jvm/functions/Function3;", "getOnClickListener", "()Lkotlin/jvm/functions/Function3;", "setOnClickListener", "(Lkotlin/jvm/functions/Function3;)V", "overlayColor", "I", "onLongClickListener", "getOnLongClickListener", "setOnLongClickListener", "Landroidx/recyclerview/widget/RecyclerView;", "recycler", "<init>", "(Landroidx/recyclerview/widget/RecyclerView;I)V", "Item", "ItemDirectMessage", "ItemDivider", "ItemGuild", "app_productionGoogleRelease"}, k = 1, mv = {1, 4, 2})
+ /* compiled from: WidgetGlobalSearchGuildsAdapter.kt */
+@@ -159,7 +160,7 @@ public final class WidgetGlobalSearchGui
+             Integer valueOf = Integer.valueOf(this.overlayColor);
+             SimpleDraweeView simpleDraweeView2 = this.bindingGuild.d;
+             m.checkNotNullExpressionValue(simpleDraweeView2, "bindingGuild.guildsItemAvatar");
+-            SimpleDraweeViewExtensionsKt.setGuildIcon$default(simpleDraweeView, isSelected, guild3, (float) simpleDraweeView2.getResources().getDimensionPixelSize(2131165448), null, valueOf, null, null, false, null, 488, null);
++            SimpleDraweeViewExtensionsKt.setGuildIcon$default(simpleDraweeView, isSelected, guild3, (float) ThemingTools.fixIconRadius(simpleDraweeView2.getResources().getDimensionPixelSize(2131165448)), null, valueOf, null, null, false, null, 488, null);
+             TextView textView = this.bindingGuild.e;
+             m.checkNotNullExpressionValue(textView, "bindingGuild.guildsItemAvatarText");
+             String str = null;

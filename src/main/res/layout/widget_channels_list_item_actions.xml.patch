@@ -1,0 +1,10 @@
+--- ./discord_94011/src/main/res/layout/widget_channels_list_item_actions.xml	2021-12-24 01:10:04.395027400 +0400
++++ ./bluecord/src/main/res/layout/widget_channels_list_item_actions.xml	2021-12-24 01:08:22.610262900 +0400
+@@ -17,6 +17,7 @@
+         <TextView android:id="@+id/action_channel_notifications" android:text="@string/notification_settings" app:drawableStartCompat="?attr/ic_notifications_a60" style="@style/UiKit.Settings.Item.Icon"/>
+         <TextView android:id="@+id/action_invite" android:text="@string/instant_invite" app:drawableStartCompat="?attr/ic_person_add" style="@style/UiKit.Settings.Item.Icon"/>
+         <View android:id="@+id/developer_divider" style="@style/UiKit.Settings.Divider"/>
++        <TextView android:id="@android:id/button1" android:visibility="gone" android:text="" app:drawableStartCompat="?attr/ic_copy" style="@style/UiKit.Settings.Item.Icon"/>
+         <TextView android:id="@+id/action_copy_id" android:text="@string/copy_id" app:drawableStartCompat="?attr/ic_copy" style="@style/UiKit.Settings.Item.Icon"/>
+     </LinearLayout>
+ </androidx.core.widget.NestedScrollView>

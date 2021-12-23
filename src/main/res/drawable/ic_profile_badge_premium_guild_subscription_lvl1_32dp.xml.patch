@@ -1,0 +1,12 @@
+--- ./discord_94011/src/main/res/drawable/ic_profile_badge_premium_guild_subscription_lvl1_32dp.xml	2021-12-24 01:10:08.357025500 +0400
++++ ./bluecord/src/main/res/drawable/ic_profile_badge_premium_guild_subscription_lvl1_32dp.xml	2021-12-24 01:08:17.328260900 +0400
+@@ -1,6 +1,6 @@
+ <?xml version="1.0" encoding="utf-8"?>
+ <vector xmlns:android="http://schemas.android.com/apk/res/android" android:height="32dp" android:width="32dp" android:viewportWidth="24" android:viewportHeight="24">
+-    <path android:fillColor="#ff6bfa" android:pathData="M12,4L2,20H22L12,4ZM12,9.66L16.59,17H7.41L12,9.66Z"/>
+-    <path android:fillColor="#ffdef9" android:pathData="M7.4099,17L11.9999,9.66L16.5899,17H7.4099Z"/>
+-    <path android:fillColor="#ffb0ff" android:pathData="M12,4V9.66L16.59,17L22,20L12,4Z"/>
++    <path android:fillColor="#ffff6bfa" android:pathData="M12,4L2,20H22L12,4ZM12,9.66L16.59,17H7.41L12,9.66Z"/>
++    <path android:fillColor="#ffffdef9" android:pathData="M7.4099,17L11.9999,9.66L16.5899,17H7.4099Z"/>
++    <path android:fillColor="#ffffb0ff" android:pathData="M12,4V9.66L16.59,17L22,20L12,4Z"/>
+ </vector>

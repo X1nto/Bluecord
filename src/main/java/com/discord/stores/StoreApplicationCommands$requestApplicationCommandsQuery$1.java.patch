@@ -1,0 +1,30 @@
+--- ./discord_94011/src/main/java/com/discord/stores/StoreApplicationCommands$requestApplicationCommandsQuery$1.java	2021-12-24 01:10:12.715027600 +0400
++++ ./bluecord/src/main/java/com/discord/stores/StoreApplicationCommands$requestApplicationCommandsQuery$1.java	2021-12-24 01:08:33.209262300 +0400
+@@ -24,19 +24,19 @@ public final class StoreApplicationComma
+ 
+     @Override // kotlin.jvm.functions.Function0
+     public final void invoke() {
+-        String access$generateNonce = StoreApplicationCommands.access$generateNonce(this.this$0);
+-        StoreApplicationCommands.access$setQueryNonce$p(this.this$0, access$generateNonce);
+-        if (!m.areEqual(StoreApplicationCommands.access$getQueryGuildId$p(this.this$0), this.$guildId)) {
+-            StoreApplicationCommands.access$getQueryCommands$p(this.this$0).clear();
++        String generateNonce = this.this$0.generateNonce();
++        this.this$0.queryNonce = generateNonce;
++        if (!m.areEqual(this.this$0.queryGuildId, this.$guildId)) {
++            this.this$0.queryCommands.clear();
+             this.this$0.markChanged(StoreApplicationCommands.Companion.getQueryCommandsUpdate());
+         }
+-        StoreApplicationCommands.access$setQueryGuildId$p(this.this$0, this.$guildId);
+-        StoreApplicationCommands.access$setQuery$p(this.this$0, this.$query);
++        this.this$0.queryGuildId = this.$guildId;
++        this.this$0.query = this.$query;
+         Long l = this.$guildId;
+         if (l == null || l.longValue() <= 0) {
+-            StoreApplicationCommands.access$handleQueryCommandsUpdate(this.this$0, n.emptyList());
++            this.this$0.handleQueryCommandsUpdate(n.emptyList());
+         } else {
+-            StoreGatewayConnection.requestApplicationCommands$default(StoreApplicationCommands.access$getStoreGatewayConnection$p(this.this$0), this.$guildId.longValue(), access$generateNonce, false, this.$query, null, 20, 16, null);
++            StoreGatewayConnection.requestApplicationCommands$default(this.this$0.storeGatewayConnection, this.$guildId.longValue(), generateNonce, false, this.$query, null, 20, 16, null);
+         }
+     }
+ }

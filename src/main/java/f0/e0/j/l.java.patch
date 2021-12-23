@@ -1,0 +1,26 @@
+--- ./discord_94011/src/main/java/f0/e0/j/l.java	2021-12-24 01:10:16.437025100 +0400
++++ ./bluecord/src/main/java/f0/e0/j/l.java	2021-12-24 01:08:36.809262800 +0400
+@@ -72,7 +72,7 @@ public final class l implements d {
+             m.checkParameterIsNotNull(request, "request");
+             Headers headers = request.d;
+             ArrayList arrayList = new ArrayList(headers.size() + 4);
+-            arrayList.add(new b(b.f2818c, request.f2953c));
++            arrayList.add(new b(b.f2818c, request.f2955c));
+             ByteString byteString = b.d;
+             w wVar = request.b;
+             m.checkParameterIsNotNull(wVar, "url");
+@@ -228,12 +228,12 @@ public final class l implements d {
+         if (jVar != null) {
+             Response.a aVar2 = new Response.a();
+             aVar2.f(yVar);
+-            aVar2.f2957c = jVar.b;
++            aVar2.f2959c = jVar.b;
+             aVar2.e(jVar.f2816c);
+             Object[] array = arrayList.toArray(new String[0]);
+             if (array != null) {
+                 aVar2.d(new Headers((String[]) array, null));
+-                if (!z2 || aVar2.f2957c != 100) {
++                if (!z2 || aVar2.f2959c != 100) {
+                     return aVar2;
+                 }
+                 return null;

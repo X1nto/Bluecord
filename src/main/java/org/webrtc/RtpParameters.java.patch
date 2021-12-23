@@ -1,0 +1,27 @@
+--- ./discord_94011/src/main/java/org/webrtc/RtpParameters.java	2021-12-24 01:10:16.682022700 +0400
++++ ./bluecord/src/main/java/org/webrtc/RtpParameters.java	2021-12-24 01:08:37.063261800 +0400
+@@ -79,13 +79,13 @@ public class RtpParameters {
+         private final boolean encrypted;
+ 
+         /* renamed from: id  reason: collision with root package name */
+-        private final int f2961id;
++        private final int f2963id;
+         private final String uri;
+ 
+         @CalledByNative("HeaderExtension")
+         public HeaderExtension(String str, int i, boolean z2) {
+             this.uri = str;
+-            this.f2961id = i;
++            this.f2963id = i;
+             this.encrypted = z2;
+         }
+ 
+@@ -96,7 +96,7 @@ public class RtpParameters {
+ 
+         @CalledByNative("HeaderExtension")
+         public int getId() {
+-            return this.f2961id;
++            return this.f2963id;
+         }
+ 
+         @CalledByNative("HeaderExtension")

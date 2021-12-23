@@ -1,0 +1,11 @@
+--- ./discord_94011/src/main/java/com/discord/stores/StoreCalls$stopRinging$1.java	2021-12-24 01:10:12.744025200 +0400
++++ ./bluecord/src/main/java/com/discord/stores/StoreCalls$stopRinging$1.java	2021-12-24 01:08:33.240263700 +0400
+@@ -36,7 +36,7 @@ public final class StoreCalls$stopRingin
+ 
+     public final void invoke(ModelCall modelCall) {
+         if (modelCall == null) {
+-            this.this$0.stream.getCallsIncoming$app_productionGoogleRelease().removeIncomingCall(this.$channelId);
++            StoreCalls.access$getStream$p(this.this$0).getCallsIncoming$app_productionGoogleRelease().removeIncomingCall(this.$channelId);
+         } else {
+             ObservableExtensionsKt.appSubscribe$default(RestAPI.Companion.getApi().stopRinging(modelCall.getChannelId(), modelCall.getMessageId(), this.$recipients), this.this$0.getClass(), (Context) null, (Function1) null, (Function1) null, (Function0) null, (Function0) null, AnonymousClass1.INSTANCE, 62, (Object) null);
+         }

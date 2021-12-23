@@ -1,0 +1,27 @@
+--- ./discord_94011/src/main/res/values-sk/plurals.xml	2021-12-24 01:10:11.037027500 +0400
++++ ./bluecord/src/main/res/values-sk/plurals.xml	2021-12-24 01:08:30.891263900 +0400
+@@ -1,21 +1,21 @@
+ <?xml version="1.0" encoding="utf-8"?>
+ <resources>
+     <plurals name="exo_controls_fastforward_by_amount_description">
++        <item quantity="other">Pretočiť dopredu o %d sekúnd</item>
+         <item quantity="one">Pretočiť dopredu o %d sekundu</item>
+         <item quantity="few">Pretočiť dopredu o %d sekundy</item>
+         <item quantity="many">Pretočiť dopredu o %d sekundy</item>
+-        <item quantity="other">Pretočiť dopredu o %d sekúnd</item>
+     </plurals>
+     <plurals name="exo_controls_rewind_by_amount_description">
++        <item quantity="other">Pretočiť späť o %d sekúnd</item>
+         <item quantity="one">Pretočiť späť o %d sekundu</item>
+         <item quantity="few">Pretočiť späť o %d sekundy</item>
+         <item quantity="many">Pretočiť späť o %d sekundy</item>
+-        <item quantity="other">Pretočiť späť o %d sekúnd</item>
+     </plurals>
+     <plurals name="mtrl_badge_content_description">
++        <item quantity="other">%d nových upozornení</item>
+         <item quantity="one">%d nové upozornenie</item>
+         <item quantity="few">%d nové upozornenia</item>
+         <item quantity="many">%d new notifications</item>
+-        <item quantity="other">%d nových upozornení</item>
+     </plurals>
+ </resources>

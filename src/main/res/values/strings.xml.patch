@@ -1,0 +1,62 @@
+--- ./discord_94011/src/main/res/values/strings.xml	2021-12-24 01:10:11.228027200 +0400
++++ ./bluecord/src/main/res/values/strings.xml	2021-12-24 01:08:31.097260900 +0400
+@@ -1239,6 +1239,7 @@
+     <string name="change_identity_upsell">Unlock with Nitro</string>
+     <string name="change_log">Change Log</string>
+     <string name="change_log_md_body">New Features {added marginTop}\10======================\10\10* **Student Hubs are rolling out internationally.** Connect with student-run servers for clubs, study groups, and more for your school or university. To access your Student Hub, grab your school email and [get started](https://discord.com/invite/hzA3MtAURu). Or, if you\'d like to go for a walk, open Discord, make a right and head to Server Discovery, and then take two lefts past the convenience store and click on the new Student Hubs tab.\10* **Added new User Profile page to settings.** You can now edit your profile avatar, about me, and, if you have Nitro, profile banner all in one place.\10* **Boosts needed for Boosting Levels 2 and 3 lowered.** Servers can now reach Level 2 with 7 Boosts and Level 3 with 14 Boosts! Unlock things for your server like more custom emoji, higher upload limits for everyone, a server banner, arguments about what the server banner should be, and role icons.\10* **And oh yea added custom role icons to Boosting Level 2.** If you have a server at this level, upload an image or choose a default or custom emoji to set as an icon for each role. Role icons will display next to role names in the member\'s list and next to usernames while text chatting.  Head to Server Settings &gt; Roles and edit a role to get started.\10* **New threads permissions added.** Added a *Send Messages in Threads* permission to improve your community\'s experience and updated *Create Public Threads*, *Create Private Threads*, and *Manage Threads* permissions to be easier to understand. Learn more in our [Threads Moderation FAQ](https://support.discord.com/hc/en-us/articles/4404809613847).\10\10\10</string>
++    <string name="APKTOOL_DUMMY_4d7">false</string>
+     <string name="change_log_md_date">2021-10-04</string>
+     <string name="change_log_md_locale">en-US</string>
+     <string name="change_log_md_revision">1</string>
+@@ -2182,11 +2183,11 @@
+     <string name="disconnect_other">Disconnect</string>
+     <string name="disconnect_self">Disconnect</string>
+     <string name="disconnect_user_success">User has been disconnected from voice.</string>
+-    <string name="discord">Discord</string>
++    <string name="discord">Bluecord</string>
+     <string name="discord_desc_long">Join over 100 million people who use Discord to talk and hang out with communities and friends.</string>
+     <string name="discord_desc_short">Imagine a place</string>
+     <string name="discord_gg">discord.gg/</string>
+-    <string name="discord_name">Discord</string>
++    <string name="discord_name">Bluecord</string>
+     <string name="discord_rich_presence">Discord Rich Presence</string>
+     <string name="discord_u_coming_soon_to_mobile">Coming soon to mobile! For now, head over to desktop to access Student Hubs</string>
+     <string name="discover">Discover</string>
+@@ -6156,7 +6157,7 @@
+     <string name="notice_register_to_vote">Are you registered to vote? Check your status and register in two minutes.</string>
+     <string name="notice_register_to_vote_cta">Vote.org</string>
+     <string name="notice_scheduled_maintenance">Discord will be undergoing scheduled maintenance on **{start}** at **{start}**.</string>
+-    <string name="notice_snowsgiving">Join the Snowsgiving 2020 server and feel the Discord holiday cheer! Daily giveaways, musical performances, and more! ��</string>
++    <string name="notice_snowsgiving" />
+     <string name="notice_snowsgiving_cta">Join!</string>
+     <string name="notice_spotify_auto_paused">Spotify playback paused while transmitting audio.</string>
+     <string name="notice_streamer_mode_text">Streamer Mode is enabled. Stay safe, friend.</string>
+@@ -6185,7 +6186,7 @@
+     <string name="notification_reply_failed">Failed to reply to {recipient}</string>
+     <string name="notification_reply_success">Replied to {recipient}</string>
+     <string name="notification_settings">Notification Settings</string>
+-    <string name="notification_title_discord">Discord</string>
++    <string name="notification_title_discord">Bluecord</string>
+     <string name="notification_title_start_game">Somebody Playin\'</string>
+     <string name="notifications">Notifications</string>
+     <string name="notifications_muted">Notifications, muted</string>
+@@ -6332,8 +6333,8 @@
+     <string name="oauth2_title">Authorize access to your account</string>
+     <string name="oauth2_unknown_error">Oops, something went wrong…</string>
+     <string name="okay">Okay</string>
+-    <string name="onboarding_video_bot_message">�� Hello! Welcome to your new server. Learn all about server setup here:</string>
+-    <string name="onboarding_video_bot_message_new_user">�� Hello! Welcome to Discord. Get started by learning how to use Discord here:</string>
++    <string name="onboarding_video_bot_message" />
++    <string name="onboarding_video_bot_message_new_user" />
+     <string name="one_user_typing">**!!{a}!!** is typing…</string>
+     <string name="ongoing_call">Ongoing Call</string>
+     <string name="ongoing_call_connected_users">Ongoing Call — {numUsers} Connected</string>
+@@ -9031,7 +9032,7 @@
+     <string name="tip_voice_conversations_title3">Make Yourself Heard</string>
+     <string name="tip_whos_online_body3">Here you can view all the members of this channel. See who\'s online and what they\'re up to, like playing a game or listening to music.</string>
+     <string name="tip_whos_online_title3">What\'s everyone doing?</string>
+-    <string name="tip_writing_messages_body3">Now that you\'ve joined {serverName}, make your presence known and **say hello**! ��</string>
++    <string name="tip_writing_messages_body3" />
+     <string name="tip_writing_messages_title3">Have a Conversation</string>
+     <string name="title">Title</string>
+     <string name="title_bar_close_window">Close</string>

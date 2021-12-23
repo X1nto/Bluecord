@@ -1,0 +1,21 @@
+--- ./discord_94011/src/main/res/values-mr/plurals.xml	2021-12-24 01:10:10.933027000 +0400
++++ ./bluecord/src/main/res/values-mr/plurals.xml	2021-12-24 01:08:30.774262300 +0400
+@@ -1,15 +1,15 @@
+ <?xml version="1.0" encoding="utf-8"?>
+ <resources>
+     <plurals name="exo_controls_fastforward_by_amount_description">
+-        <item quantity="one">%d सेकंद फास्ट फॉरवर्ड करा</item>
+         <item quantity="other">%d सेकंद फास्ट फॉरवर्ड करा</item>
++        <item quantity="one">%d सेकंद फास्ट फॉरवर्ड करा</item>
+     </plurals>
+     <plurals name="exo_controls_rewind_by_amount_description">
+-        <item quantity="one">%d सेकंद रिवाइंड करा</item>
+         <item quantity="other">%d सेकंद रिवाइंड करा</item>
++        <item quantity="one">%d सेकंद रिवाइंड करा</item>
+     </plurals>
+     <plurals name="mtrl_badge_content_description">
+-        <item quantity="one">%d नवीन सूचना</item>
+         <item quantity="other">%d नवीन सूचना</item>
++        <item quantity="one">%d नवीन सूचना</item>
+     </plurals>
+ </resources>

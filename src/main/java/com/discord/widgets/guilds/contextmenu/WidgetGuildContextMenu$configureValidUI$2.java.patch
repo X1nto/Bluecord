@@ -1,0 +1,11 @@
+--- ./discord_94011/src/main/java/com/discord/widgets/guilds/contextmenu/WidgetGuildContextMenu$configureValidUI$2.java	2021-12-24 01:10:14.411028000 +0400
++++ ./bluecord/src/main/java/com/discord/widgets/guilds/contextmenu/WidgetGuildContextMenu$configureValidUI$2.java	2021-12-24 01:08:35.017262600 +0400
+@@ -19,7 +19,7 @@ public final class WidgetGuildContextMen
+     }
+ 
+     public final void onClick(View view) {
+-        WidgetGuildContextMenu.access$doCircularRemove(this.this$0);
++        this.this$0.doCircularRemove();
+         WidgetServerNotifications.Companion companion = WidgetServerNotifications.Companion;
+         long id2 = this.$viewState.getGuild().getId();
+         FragmentActivity requireActivity = this.this$0.requireActivity();

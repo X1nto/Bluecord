@@ -1,0 +1,11 @@
+--- ./discord_94011/src/main/java/com/discord/stores/StoreExpressionSuggestions$setExpressionSuggestionsEnabled$1.java	2021-12-24 01:10:12.795024900 +0400
++++ ./bluecord/src/main/java/com/discord/stores/StoreExpressionSuggestions$setExpressionSuggestionsEnabled$1.java	2021-12-24 01:08:33.292261400 +0400
+@@ -20,7 +20,7 @@ public final class StoreExpressionSugges
+ 
+     @Override // kotlin.jvm.functions.Function0
+     public final void invoke() {
+-        StoreExpressionSuggestions.access$setSuggestionsEnabled$p(this.this$0, this.$enable);
++        this.this$0.suggestionsEnabled = this.$enable;
+         this.this$0.markChanged();
+     }
+ }

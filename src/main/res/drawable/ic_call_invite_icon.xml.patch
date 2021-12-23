@@ -1,0 +1,14 @@
+--- ./discord_94011/src/main/res/drawable/ic_call_invite_icon.xml	2021-12-24 01:10:07.805035000 +0400
++++ ./bluecord/src/main/res/drawable/ic_call_invite_icon.xml	2021-12-24 01:08:16.860263800 +0400
+@@ -1,7 +1,7 @@
+ <?xml version="1.0" encoding="utf-8"?>
+ <vector xmlns:android="http://schemas.android.com/apk/res/android" android:height="32dp" android:width="32dp" android:viewportWidth="32" android:viewportHeight="32">
+-    <path android:fillColor="#202225" android:pathData="M16,16m-16,0a16,16 0,1 1,32 0a16,16 0,1 1,-32 0" android:strokeAlpha="0.5" android:fillAlpha="0.5"/>
+-    <path android:fillColor="#ffffff" android:pathData="M13.6667 16C15.5042 16 17 14.5041 17 12.6666C17 10.8291 15.5042 9.33331 13.6667 9.33331C11.8292 9.33331 10.3334 10.8291 10.3334 12.6666C10.3334 14.5041 11.8292 16 13.6667 16Z"/>
+-    <path android:fillColor="#ffffff" android:pathData="M13.6667 16.8333C9.74083 16.8333 7 18.8891 7 21.8333V22.6666H20.3333V21.8333C20.3333 18.8891 17.5925 16.8333 13.6667 16.8333Z"/>
+-    <path android:fillColor="#ffffff" android:pathData="M25.3333 8.5H22.8333V6H21.1666V8.5H18.6666V10.1667H21.1666V12.6667H22.8333V10.1667H25.3333V8.5Z"/>
++    <path android:fillColor="#ff202225" android:pathData="M16,16m-16,0a16,16 0,1 1,32 0a16,16 0,1 1,-32 0" android:strokeAlpha="0.5" android:fillAlpha="0.5"/>
++    <path android:fillColor="#ffffffff" android:pathData="M13.6667 16C15.5042 16 17 14.5041 17 12.6666C17 10.8291 15.5042 9.33331 13.6667 9.33331C11.8292 9.33331 10.3334 10.8291 10.3334 12.6666C10.3334 14.5041 11.8292 16 13.6667 16Z"/>
++    <path android:fillColor="#ffffffff" android:pathData="M13.6667 16.8333C9.74083 16.8333 7 18.8891 7 21.8333V22.6666H20.3333V21.8333C20.3333 18.8891 17.5925 16.8333 13.6667 16.8333Z"/>
++    <path android:fillColor="#ffffffff" android:pathData="M25.3333 8.5H22.8333V6H21.1666V8.5H18.6666V10.1667H21.1666V12.6667H22.8333V10.1667H25.3333V8.5Z"/>
+ </vector>

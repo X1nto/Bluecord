@@ -1,0 +1,8 @@
+--- ./discord_94011/src/main/res/drawable/ic_emoji_picker_category_favorites_star.xml	2021-12-24 01:10:08.240027000 +0400
++++ ./bluecord/src/main/res/drawable/ic_emoji_picker_category_favorites_star.xml	2021-12-24 01:08:16.992264100 +0400
+@@ -1,4 +1,4 @@
+ <?xml version="1.0" encoding="utf-8"?>
+ <vector xmlns:android="http://schemas.android.com/apk/res/android" android:height="24dp" android:width="24dp" android:viewportWidth="18" android:viewportHeight="18">
+-    <path android:fillColor="#ffffff" android:pathData="M9.512,14.823l3.6,2.2a1,1 0,0 0,1.5 -1.1l-1,-4.1a1,1 0,0 1,0.3 -1l3.2,-2.8A1,1 0,0 0,16.512 6.223l-4.2,-0.4a0.87,0.87 0,0 1,-0.8 -0.6L9.912,1.323a1.05,1.05 0,0 0,-1.9 0l-1.6,4a1,1 0,0 1,-0.8 0.6L1.412,6.223a1.06,1.06 0,0 0,-0.6 1.8L4.012,10.823a0.91,0.91 0,0 1,0.3 1l-1,4.1a1,1 0,0 0,1.5 1.1l3.6,-2.2A1.08,1.08 0,0 1,9.512 14.823Z"/>
++    <path android:fillColor="#ffffffff" android:pathData="M9.512,14.823l3.6,2.2a1,1 0,0 0,1.5 -1.1l-1,-4.1a1,1 0,0 1,0.3 -1l3.2,-2.8A1,1 0,0 0,16.512 6.223l-4.2,-0.4a0.87,0.87 0,0 1,-0.8 -0.6L9.912,1.323a1.05,1.05 0,0 0,-1.9 0l-1.6,4a1,1 0,0 1,-0.8 0.6L1.412,6.223a1.06,1.06 0,0 0,-0.6 1.8L4.012,10.823a0.91,0.91 0,0 1,0.3 1l-1,4.1a1,1 0,0 0,1.5 1.1l3.6,-2.2A1.08,1.08 0,0 1,9.512 14.823Z"/>
+ </vector>

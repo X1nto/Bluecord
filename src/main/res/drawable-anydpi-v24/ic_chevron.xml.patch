@@ -1,0 +1,8 @@
+--- ./discord_94011/src/main/res/drawable-anydpi-v24/ic_chevron.xml	2021-12-24 01:10:02.891027100 +0400
++++ ./bluecord/src/main/res/drawable-anydpi-v24/ic_chevron.xml	2021-12-24 01:08:18.086262600 +0400
+@@ -1,4 +1,4 @@
+ <?xml version="1.0" encoding="utf-8"?>
+ <vector xmlns:android="http://schemas.android.com/apk/res/android" android:height="9dp" android:width="6dp" android:viewportWidth="6" android:viewportHeight="9">
+-    <path android:fillColor="#00b0f4" android:pathData="M0.52978,1.13678L3.58312,4.19678L0.52978,7.25678L1.46979,8.19678L5.46979,4.19678L1.46979,0.19678L0.52978,1.13678Z" android:fillType="1"/>
++    <path android:fillColor="#ff00b0f4" android:pathData="M0.52978,1.13678L3.58312,4.19678L0.52978,7.25678L1.46979,8.19678L5.46979,4.19678L1.46979,0.19678L0.52978,1.13678Z" android:fillType="1"/>
+ </vector>

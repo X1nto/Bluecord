@@ -1,0 +1,8 @@
+--- ./discord_94011/src/main/res/drawable/ic_headset_deafened_white_a60_24dp.xml	2021-12-24 01:10:01.004025500 +0400
++++ ./bluecord/src/main/res/drawable/ic_headset_deafened_white_a60_24dp.xml	2021-12-24 01:08:17.113262700 +0400
+@@ -1,4 +1,4 @@
+ <?xml version="1.0" encoding="utf-8"?>
+ <vector xmlns:android="http://schemas.android.com/apk/res/android" android:height="24dp" android:width="24dp" android:alpha="0.6" android:viewportWidth="24" android:viewportHeight="24">
+-    <path android:fillColor="#ffffff" android:pathData="M3.57,7.84C3.2,8.82 3,9.89 3,11L3,19C3,20.657 5,21 5,21L9,21L9,13.27L15,19.27L15,21L16.73,21L19.23,23.5L20.5,22.22L2.78,4.5L1.5,5.77L3.57,7.84ZM12,2C9.47,2 7.18,3.04 5.55,4.72L6.96,6.14C8.23,4.82 10,4 12,4C15.866,4 19,7.134 19,11L19,13L15,13L15,14.18L20.5,19.67C20.81,19.19 21,18.62 21,18L21,11C21,6.029 16.971,2 12,2L12,2ZM5,13L5,11C5,10.46 5.06,9.94 5.17,9.44L8.73,13L5,13Z"/>
++    <path android:fillColor="#ffffffff" android:pathData="M3.57,7.84C3.2,8.82 3,9.89 3,11L3,19C3,20.657 5,21 5,21L9,21L9,13.27L15,19.27L15,21L16.73,21L19.23,23.5L20.5,22.22L2.78,4.5L1.5,5.77L3.57,7.84ZM12,2C9.47,2 7.18,3.04 5.55,4.72L6.96,6.14C8.23,4.82 10,4 12,4C15.866,4 19,7.134 19,11L19,13L15,13L15,14.18L20.5,19.67C20.81,19.19 21,18.62 21,18L21,11C21,6.029 16.971,2 12,2L12,2ZM5,13L5,11C5,10.46 5.06,9.94 5.17,9.44L8.73,13L5,13Z"/>
+ </vector>

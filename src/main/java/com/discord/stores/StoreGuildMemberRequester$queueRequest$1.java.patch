@@ -1,0 +1,10 @@
+--- ./discord_94011/src/main/java/com/discord/stores/StoreGuildMemberRequester$queueRequest$1.java	2021-12-24 01:10:12.828027200 +0400
++++ ./bluecord/src/main/java/com/discord/stores/StoreGuildMemberRequester$queueRequest$1.java	2021-12-24 01:08:33.327263200 +0400
+@@ -22,6 +22,6 @@ public final class StoreGuildMemberReque
+ 
+     @Override // kotlin.jvm.functions.Function0
+     public final void invoke() {
+-        this.this$0.requestManager.queueRequest(this.$guildId, this.$userId);
++        StoreGuildMemberRequester.access$getRequestManager$p(this.this$0).queueRequest(this.$guildId, this.$userId);
+     }
+ }

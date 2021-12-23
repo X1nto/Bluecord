@@ -1,0 +1,23 @@
+--- ./discord_94011/src/main/java/com/discord/widgets/servers/premiumguild/WidgetPremiumGuildSubscriptionTransfer.java	2021-12-24 01:10:15.026026100 +0400
++++ ./bluecord/src/main/java/com/discord/widgets/servers/premiumguild/WidgetPremiumGuildSubscriptionTransfer.java	2021-12-24 01:08:35.490261100 +0400
+@@ -85,10 +85,6 @@ public final class WidgetPremiumGuildSub
+         this.viewModel$delegate = FragmentViewModelLazyKt.createViewModelLazy(this, a0.getOrCreateKotlinClass(PremiumGuildTransferInProgressViewModel.class), new WidgetPremiumGuildSubscriptionTransfer$appViewModels$$inlined$viewModels$1(f0Var), new h0(widgetPremiumGuildSubscriptionTransfer$viewModel$2));
+     }
+ 
+-    public static final /* synthetic */ PremiumGuildTransferInProgressViewModel access$getViewModel$p(WidgetPremiumGuildSubscriptionTransfer widgetPremiumGuildSubscriptionTransfer) {
+-        return widgetPremiumGuildSubscriptionTransfer.getViewModel();
+-    }
+-
+     /* access modifiers changed from: private */
+     public final void configureUI(PremiumGuildTransferInProgressViewModel.ViewState viewState) {
+         if (viewState instanceof PremiumGuildTransferInProgressViewModel.ViewState.ErrorLoading) {
+@@ -131,7 +127,8 @@ public final class WidgetPremiumGuildSub
+         return (WidgetPremiumGuildTransferBinding) this.binding$delegate.getValue((Fragment) this, $$delegatedProperties[0]);
+     }
+ 
+-    private final PremiumGuildTransferInProgressViewModel getViewModel() {
++    /* access modifiers changed from: private */
++    public final PremiumGuildTransferInProgressViewModel getViewModel() {
+         return (PremiumGuildTransferInProgressViewModel) this.viewModel$delegate.getValue();
+     }
+ 

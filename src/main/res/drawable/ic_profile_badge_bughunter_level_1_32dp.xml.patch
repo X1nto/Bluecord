@@ -1,0 +1,12 @@
+--- ./discord_94011/src/main/res/drawable/ic_profile_badge_bughunter_level_1_32dp.xml	2021-12-24 01:10:02.552028200 +0400
++++ ./bluecord/src/main/res/drawable/ic_profile_badge_bughunter_level_1_32dp.xml	2021-12-24 01:08:17.321264000 +0400
+@@ -1,7 +1,7 @@
+ <?xml version="1.0" encoding="utf-8"?>
+ <vector xmlns:android="http://schemas.android.com/apk/res/android" android:height="29.53dp" android:width="31.27dp" android:viewportWidth="31.27" android:viewportHeight="29.53">
+     <group android:pivotX="12" android:pivotY="12" android:scaleX="0.75" android:scaleY="0.75">
+-        <path android:fillColor="#3ba55c" android:pathData="M22.8,1 S34.8,9.19,30.24,20.69 S16.61,29,20,25.64 S16,20,11.27,15.64 L22.79,1"/>
+-        <path android:fillColor="#3ba55c" android:pathData="M22.07,12.26 C19.54,15.48,15.97,17.09,13.21,16.51 L3.58,28.78 A2,2,0,0,1,0.77,29.12 A2,2,0,0,1,0.42,26.3 L10,14.05 C8.73,11.51,9.43,7.62,12,4.37 C15.19,0.33,20,-1.18,22.79,1 S25.24,8.22,22.07,12.26 Z"/>
++        <path android:fillColor="#ff3ba55c" android:pathData="M22.8,1 S34.8,9.19,30.24,20.69 S16.61,29,20,25.64 S16,20,11.27,15.64 L22.79,1"/>
++        <path android:fillColor="#ff3ba55c" android:pathData="M22.07,12.26 C19.54,15.48,15.97,17.09,13.21,16.51 L3.58,28.78 A2,2,0,0,1,0.77,29.12 A2,2,0,0,1,0.42,26.3 L10,14.05 C8.73,11.51,9.43,7.62,12,4.37 C15.19,0.33,20,-1.18,22.79,1 S25.24,8.22,22.07,12.26 Z"/>
+     </group>
+ </vector>

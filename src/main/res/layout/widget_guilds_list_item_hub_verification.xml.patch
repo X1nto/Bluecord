@@ -1,0 +1,10 @@
+--- ./discord_94011/src/main/res/layout/widget_guilds_list_item_hub_verification.xml	2021-12-24 01:09:59.998025700 +0400
++++ ./bluecord/src/main/res/layout/widget_guilds_list_item_hub_verification.xml	2021-12-24 01:08:22.880262000 +0400
+@@ -1,6 +1,6 @@
+ <?xml version="1.0" encoding="utf-8"?>
+ <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_gravity="center" android:layout_width="match_parent" android:layout_marginBottom="@dimen/guild_item_spacing" style="@style/UiKit.GuildsListIcon">
+-    <com.facebook.drawee.view.SimpleDraweeView android:background="?attr/selectableItemBackgroundBorderless" android:layout_width="match_parent" android:layout_height="match_parent" app:placeholderImage="?attr/colorBackgroundSecondary" app:roundAsCircle="true"/>
++    <com.facebook.drawee.view.SimpleDraweeView android:background="?attr/selectableItemBackgroundBorderless" android:layout_width="match_parent" android:layout_height="match_parent" android:key="true" app:placeholderImage="?attr/colorBackgroundSecondary" app:roundAsCircle="true"/>
+     <ImageView android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_hub_24dp" android:contentDescription="@string/hub_email_connection_sidebar_header" app:tint="@color/status_green_600"/>
+     <com.discord.tooltips.SparkleView android:layout_gravity="center" android:id="@+id/guild_item_sparkle" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+ </FrameLayout>

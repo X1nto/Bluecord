@@ -1,0 +1,11 @@
+--- ./discord_94011/src/main/res/layout/widget_channels_list_item_channel_private.xml	2021-12-24 01:09:59.250029200 +0400
++++ ./bluecord/src/main/res/layout/widget_channels_list_item_channel_private.xml	2021-12-24 01:08:22.618262800 +0400
+@@ -3,7 +3,7 @@
+     <com.facebook.drawee.view.SimpleDraweeView android:id="@+id/channels_list_item_private_avatar" android:layout_centerVertical="true" android:importantForAccessibility="no" android:layout_marginStart="8dp" android:layout_marginEnd="16dp" app:placeholderImage="?attr/colorPrimaryCircle" style="@style/Avatar.Standard"/>
+     <com.discord.views.StatusView android:id="@+id/channel_list_item_private_status" android:layout_width="12dp" android:layout_height="wrap_content" android:layout_alignBottom="@+id/channels_list_item_private_avatar" android:translationX="2dp" android:translationY="2dp" android:layout_alignEnd="@+id/channels_list_item_private_avatar" app:sv_background_color="?attr/colorBackgroundSecondary" app:sv_border_width="2dp" app:sv_corner_radius="2dp"/>
+     <LinearLayout android:layout_centerVertical="true" android:layout_alignWithParentIfMissing="true" android:layout_marginEnd="16dp" android:layout_toStartOf="@+id/channels_list_item_private_mentions" android:layout_toEndOf="@+id/channels_list_item_private_avatar" style="@style/UiKit.ViewGroup.LinearLayout">
+-        <LinearLayout android:orientation="horizontal" style="@style/UiKit.ViewGroup.LinearLayout">
++        <LinearLayout android:orientation="horizontal" android:id="@android:id/text1" style="@style/UiKit.ViewGroup.LinearLayout">
+             <TextView android:textSize="@dimen/uikit_textsize_large" android:textColor="?attr/colorChannelDefault" android:id="@+id/channels_list_item_private_name" android:singleLine="true" style="@style/UiKit.TextView.Semibold"/>
+             <TextView android:textSize="9.5sp" android:textColor="@color/white" android:layout_gravity="center" android:id="@+id/channels_list_item_private_tag" android:background="@drawable/drawable_tag_brand" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/system_dm_tag_system" android:singleLine="true" android:paddingStart="3dp" android:paddingEnd="3dp" android:layout_marginStart="6dp" app:drawableStartCompat="@drawable/ic_verified_10dp" style="@style/UiKit.TextView"/>
+         </LinearLayout>

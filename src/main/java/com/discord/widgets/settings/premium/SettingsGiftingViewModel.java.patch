@@ -1,0 +1,371 @@
+--- ./discord_94011/src/main/java/com/discord/widgets/settings/premium/SettingsGiftingViewModel.java	2021-12-24 01:10:15.191025800 +0400
++++ ./bluecord/src/main/java/com/discord/widgets/settings/premium/SettingsGiftingViewModel.java	2021-12-24 01:08:35.687262200 +0400
+@@ -2,8 +2,6 @@ package com.discord.widgets.settings.pre
+ 
+ import a0.a.a.b;
+ import android.content.Context;
+-import androidx.annotation.MainThread;
+-import androidx.annotation.StringRes;
+ import c.d.b.a.a;
+ import com.discord.api.premium.ClaimedOutboundPromotion;
+ import com.discord.api.premium.OutboundPromotion;
+@@ -33,7 +31,6 @@ import java.util.List;
+ import java.util.Map;
+ import java.util.Set;
+ import java.util.concurrent.atomic.AtomicBoolean;
+-import kotlin.Metadata;
+ import kotlin.NoWhenBranchMatchedException;
+ import kotlin.Unit;
+ import kotlin.jvm.functions.Function0;
+@@ -47,8 +44,6 @@ import rx.subjects.BehaviorSubject;
+ import rx.subjects.PublishSubject;
+ import rx.subscriptions.CompositeSubscription;
+ 
+-@Metadata(bv = {1, 0, 3}, d1 = {"\u0000\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010$\n\u0002\u0010\t\n\u0002\u0018\u0002\n\u0002\u0010 \n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0010\u000b\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0005\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u000e\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\t\n\u0002\u0018\u0002\n\u0002\b\b\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u000e\u0018\u0000 {2\b\u0012\u0004\u0012\u00020\u00020\u0001:\r{|}~\u0001\u0001\u0001\u0001BS\u0012\b\b\u0002\u0010h\u001a\u00020g\u0012\b\b\u0002\u0010]\u001a\u00020\\\u0012\b\b\u0002\u0010a\u001a\u00020`\u0012\b\b\u0002\u0010d\u001a\u00020c\u0012\b\b\u0002\u0010u\u001a\u00020t\u0012\b\b\u0002\u0010w\u001a\u00020v\u0012\u000e\b\u0002\u0010x\u001a\b\u0012\u0004\u0012\u00020\"0>¢\u0006\u0004\by\u0010zJ\u0017\u0010\u0006\u001a\u00020\u00052\u0006\u0010\u0004\u001a\u00020\u0003H\u0003¢\u0006\u0004\b\u0006\u0010\u0007J\u0017\u0010\n\u001a\u00020\u00052\u0006\u0010\t\u001a\u00020\bH\u0002¢\u0006\u0004\b\n\u0010\u000bJ\u0017\u0010\u000e\u001a\u00020\u00052\u0006\u0010\r\u001a\u00020\fH\u0002¢\u0006\u0004\b\u000e\u0010\u000fJE\u0010\u001c\u001a\u00020\u00022\u0006\u0010\u0011\u001a\u00020\u00102\u0006\u0010\u0013\u001a\u00020\u00122\u001c\u0010\u0019\u001a\u0018\u0012\b\u0012\u00060\u0015j\u0002`\u0016\u0012\n\u0012\b\u0012\u0004\u0012\u00020\u00180\u00170\u00142\u0006\u0010\u001b\u001a\u00020\u001aH\u0003¢\u0006\u0004\b\u001c\u0010\u001dJ\u0017\u0010 \u001a\u00020\u00052\u0006\u0010\u001f\u001a\u00020\u001eH\u0002¢\u0006\u0004\b \u0010!J%\u0010'\u001a\u00020&2\u0006\u0010#\u001a\u00020\"2\f\u0010%\u001a\b\u0012\u0004\u0012\u00020$0\u0017H\u0002¢\u0006\u0004\b'\u0010(J\u0017\u0010*\u001a\u00020\u00052\u0006\u0010)\u001a\u00020&H\u0003¢\u0006\u0004\b*\u0010+J1\u0010/\u001a\b\u0012\u0004\u0012\u00020.0\u00172\f\u0010-\u001a\b\u0012\u0004\u0012\u00020,0\u00172\f\u0010%\u001a\b\u0012\u0004\u0012\u00020$0\u0017H\u0002¢\u0006\u0004\b/\u00100J\u001b\u00104\u001a\u0002032\n\u00102\u001a\u00060\u0015j\u0002`1H\u0002¢\u0006\u0004\b4\u00105J!\u00108\u001a\u00020\u00052\u0012\u00107\u001a\u000e\u0012\u0004\u0012\u000203\u0012\u0004\u0012\u00020\u000506¢\u0006\u0004\b8\u00109J\u0013\u0010<\u001a\b\u0012\u0004\u0012\u00020;0:¢\u0006\u0004\b<\u0010=J\u0013\u0010@\u001a\b\u0012\u0004\u0012\u00020?0>¢\u0006\u0004\b@\u0010AJ\u001f\u0010E\u001a\u00020\u00052\u0006\u0010B\u001a\u0002032\u0006\u0010D\u001a\u00020CH\u0007¢\u0006\u0004\bE\u0010FJ+\u0010K\u001a\u00020\u00052\n\u0010H\u001a\u00060\u0015j\u0002`G2\u000e\u0010J\u001a\n\u0018\u00010\u0015j\u0004\u0018\u0001`IH\u0007¢\u0006\u0004\bK\u0010LJ\u0017\u0010M\u001a\u00020\u00052\u0006\u0010B\u001a\u000203H\u0007¢\u0006\u0004\bM\u0010NJ\u0015\u0010P\u001a\u00020\u00052\u0006\u0010O\u001a\u00020.¢\u0006\u0004\bP\u0010QJ\u0015\u0010R\u001a\u00020\u00052\u0006\u0010O\u001a\u00020.¢\u0006\u0004\bR\u0010QJ\u0017\u0010U\u001a\u00020\u00052\u0006\u0010T\u001a\u00020SH\u0007¢\u0006\u0004\bU\u0010VJ\u000f\u0010W\u001a\u00020\u0005H\u0014¢\u0006\u0004\bW\u0010XR:\u0010Z\u001a&\u0012\f\u0012\n Y*\u0004\u0018\u00010;0; Y*\u0012\u0012\f\u0012\n Y*\u0004\u0018\u00010;0;\u0018\u00010:0:8\u0002@\u0002X\u0004¢\u0006\u0006\n\u0004\bZ\u0010[R\u0016\u0010]\u001a\u00020\\8\u0002@\u0002X\u0004¢\u0006\u0006\n\u0004\b]\u0010^R\"\u00107\u001a\u000e\u0012\u0004\u0012\u000203\u0012\u0004\u0012\u00020\u0005068\u0002@\u0002X\u000e¢\u0006\u0006\n\u0004\b7\u0010_R\u0016\u0010a\u001a\u00020`8\u0002@\u0002X\u0004¢\u0006\u0006\n\u0004\ba\u0010bR\u0016\u0010d\u001a\u00020c8\u0002@\u0002X\u0004¢\u0006\u0006\n\u0004\bd\u0010eR:\u0010f\u001a&\u0012\f\u0012\n Y*\u0004\u0018\u00010?0? Y*\u0012\u0012\f\u0012\n Y*\u0004\u0018\u00010?0?\u0018\u00010:0:8\u0002@\u0002X\u0004¢\u0006\u0006\n\u0004\bf\u0010[R\u0016\u0010h\u001a\u00020g8\u0002@\u0002X\u0004¢\u0006\u0006\n\u0004\bh\u0010iR\u0016\u0010k\u001a\u00020j8\u0002@\u0002X\u000e¢\u0006\u0006\n\u0004\bk\u0010lR:\u0010n\u001a&\u0012\f\u0012\n Y*\u0004\u0018\u00010\"0\" Y*\u0012\u0012\f\u0012\n Y*\u0004\u0018\u00010\"0\"\u0018\u00010m0m8\u0002@\u0002X\u0004¢\u0006\u0006\n\u0004\bn\u0010oRR\u0010p\u001a>\u0012\u0018\u0012\u0016\u0012\u0004\u0012\u00020$ Y*\n\u0012\u0004\u0012\u00020$\u0018\u00010\u00170\u0017 Y*\u001e\u0012\u0018\u0012\u0016\u0012\u0004\u0012\u00020$ Y*\n\u0012\u0004\u0012\u00020$\u0018\u00010\u00170\u0017\u0018\u00010m0m8\u0002@\u0002X\u0004¢\u0006\u0006\n\u0004\bp\u0010oR\u0016\u0010r\u001a\u00020q8\u0002@\u0002X\u0004¢\u0006\u0006\n\u0004\br\u0010s¨\u0006\u0001"}, d2 = {"Lcom/discord/widgets/settings/premium/SettingsGiftingViewModel;", "Lcom/discord/app/AppViewModel;", "Lcom/discord/widgets/settings/premium/SettingsGiftingViewModel$ViewState;", "Lcom/discord/stores/StoreGifting$GiftState;", "giftState", "", "onHandleGiftCode", "(Lcom/discord/stores/StoreGifting$GiftState;)V", "Lcom/discord/stores/StoreGooglePlayPurchases$Event;", "event", "handleGooglePlayPurchaseEvent", "(Lcom/discord/stores/StoreGooglePlayPurchases$Event;)V", "Lcom/discord/stores/StoreGooglePlayPurchases$QueryState;", "queryState", "handleGooglePlayQueryStateUpdate", "(Lcom/discord/stores/StoreGooglePlayPurchases$QueryState;)V", "Lcom/discord/stores/StoreEntitlements$State;", "entitlementState", "Lcom/discord/widgets/settings/premium/SettingsGiftingViewModel$ResolvingGiftState;", "resolvingGiftState", "", "", "Lcom/discord/primitives/Snowflake;", "", "Lcom/discord/models/domain/ModelGift;", "myPurchasedGifts", "Lcom/discord/widgets/settings/premium/SettingsGiftingViewModel$OutboundPromoData;", "outboundPromoData", "buildViewState", "(Lcom/discord/stores/StoreEntitlements$State;Lcom/discord/widgets/settings/premium/SettingsGiftingViewModel$ResolvingGiftState;Ljava/util/Map;Lcom/discord/widgets/settings/premium/SettingsGiftingViewModel$OutboundPromoData;)Lcom/discord/widgets/settings/premium/SettingsGiftingViewModel$ViewState;", "", "isUserPremium", "maybeCheckClaimedPromos", "(Z)V", "Lcom/discord/widgets/settings/premium/SettingsGiftingViewModel$StoreState;", "storeState", "Lcom/discord/api/premium/ClaimedOutboundPromotion;", "claimedPromos", "Lcom/discord/widgets/settings/premium/SettingsGiftingViewModel$GiftAndPromoData;", "combineData", "(Lcom/discord/widgets/settings/premium/SettingsGiftingViewModel$StoreState;Ljava/util/List;)Lcom/discord/widgets/settings/premium/SettingsGiftingViewModel$GiftAndPromoData;", "data", "handleAsyncData", "(Lcom/discord/widgets/settings/premium/SettingsGiftingViewModel$GiftAndPromoData;)V", "Lcom/discord/api/premium/OutboundPromotion;", "validActivePromos", "Lcom/discord/widgets/settings/premium/SettingsGiftingViewModel$OutboundPromoItem;", "getPromos", "(Ljava/util/List;Ljava/util/List;)Ljava/util/List;", "Lcom/discord/primitives/PromoId;", "promoId", "", "getPromoImageUrl", "(J)Ljava/lang/String;", "Lkotlin/Function1;", "onGiftCodeResolved", "setOnGiftCodeResolved", "(Lkotlin/jvm/functions/Function1;)V", "Lrx/subjects/PublishSubject;", "Lcom/discord/widgets/settings/premium/SettingsGiftingViewModel$GiftPurchaseEvent;", "observeGiftPurchaseEvents", "()Lrx/subjects/PublishSubject;", "Lrx/Observable;", "Lcom/discord/widgets/settings/premium/SettingsGiftingViewModel$Event;", "observeEvents", "()Lrx/Observable;", "giftCode", "Lcom/discord/app/AppComponent;", "appComponent", "redeemGiftCode", "(Ljava/lang/String;Lcom/discord/app/AppComponent;)V", "Lcom/discord/primitives/SkuId;", "skuId", "Lcom/discord/primitives/PlanId;", "planId", "handleSkuClicked", "(JLjava/lang/Long;)V", "handleCopyClicked", "(Ljava/lang/String;)V", "promoItem", "handlePromoMoreDetailsClicked", "(Lcom/discord/widgets/settings/premium/SettingsGiftingViewModel$OutboundPromoItem;)V", "handlePromoButtonClicked", "Lcom/discord/widgets/settings/premium/ClaimStatus$Claimed;", "claimedStatus", "handleClaimedPromo", "(Lcom/discord/widgets/settings/premium/ClaimStatus$Claimed;)V", "onCleared", "()V", "kotlin.jvm.PlatformType", "giftPurchaseEventSubject", "Lrx/subjects/PublishSubject;", "Lcom/discord/stores/StoreGifting;", "storeGifting", "Lcom/discord/stores/StoreGifting;", "Lkotlin/jvm/functions/Function1;", "Lcom/discord/stores/StoreUserSettingsSystem;", "storeUserSettingsSystem", "Lcom/discord/stores/StoreUserSettingsSystem;", "Lcom/discord/stores/StoreOutboundPromotions;", "storeOutboundPromotions", "Lcom/discord/stores/StoreOutboundPromotions;", "eventSubject", "Lcom/discord/stores/StoreEntitlements;", "storeEntitlements", "Lcom/discord/stores/StoreEntitlements;", "Ljava/util/concurrent/atomic/AtomicBoolean;", "shouldCheckClaimedPromos", "Ljava/util/concurrent/atomic/AtomicBoolean;", "Lrx/subjects/BehaviorSubject;", "storeStateSubject", "Lrx/subjects/BehaviorSubject;", "claimedPromotionsSubject", "Lrx/subscriptions/CompositeSubscription;", "subscriptions", "Lrx/subscriptions/CompositeSubscription;", "Lcom/discord/stores/StoreGooglePlayPurchases;", "storeGooglePlayPurchases", "Lcom/discord/utilities/billing/GooglePlayBillingManager;", "gPlayBillingManager", "storeObservable", "<init>", "(Lcom/discord/stores/StoreEntitlements;Lcom/discord/stores/StoreGifting;Lcom/discord/stores/StoreUserSettingsSystem;Lcom/discord/stores/StoreOutboundPromotions;Lcom/discord/stores/StoreGooglePlayPurchases;Lcom/discord/utilities/billing/GooglePlayBillingManager;Lrx/Observable;)V", "Companion", "Event", "GiftAndPromoData", "GiftPurchaseEvent", "OutboundPromoData", "OutboundPromoItem", "ResolvingGiftState", "StoreState", "ViewState", "app_productionGoogleRelease"}, k = 1, mv = {1, 4, 2})
+-/* compiled from: SettingsGiftingViewModel.kt */
+ public final class SettingsGiftingViewModel extends AppViewModel<ViewState> {
+     public static final Companion Companion = new Companion(null);
+     private final BehaviorSubject<List<ClaimedOutboundPromotion>> claimedPromotionsSubject;
+@@ -63,15 +58,12 @@ public final class SettingsGiftingViewMo
+     private final StoreUserSettingsSystem storeUserSettingsSystem;
+     private final CompositeSubscription subscriptions;
+ 
+-    @Metadata(bv = {1, 0, 3}, d1 = {"\u0000\u0014\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0005\b\u0003\u0018\u00002\u00020\u0001B\t\b\u0002¢\u0006\u0004\b\u0006\u0010\u0007J\u0015\u0010\u0004\u001a\b\u0012\u0004\u0012\u00020\u00030\u0002H\u0002¢\u0006\u0004\b\u0004\u0010\u0005¨\u0006\b"}, d2 = {"Lcom/discord/widgets/settings/premium/SettingsGiftingViewModel$Companion;", "", "Lrx/Observable;", "Lcom/discord/widgets/settings/premium/SettingsGiftingViewModel$StoreState;", "observeStores", "()Lrx/Observable;", "<init>", "()V", "app_productionGoogleRelease"}, k = 1, mv = {1, 4, 2})
+-    /* compiled from: SettingsGiftingViewModel.kt */
+     public static final class Companion {
+         private Companion() {
+         }
+ 
+         /* JADX WARN: Multi-variable type inference failed */
+         /* JADX WARN: Type inference failed for: r5v1, types: [com.discord.widgets.settings.premium.SettingsGiftingViewModel$sam$rx_functions_Func4$0] */
+-        /* access modifiers changed from: private */
+         /* JADX WARNING: Unknown variable types count: 1 */
+         public final Observable<StoreState> observeStores() {
+             StoreStream.Companion companion = StoreStream.Companion;
+@@ -93,12 +85,8 @@ public final class SettingsGiftingViewMo
+         }
+     }
+ 
+-    @Metadata(bv = {1, 0, 3}, d1 = {"\u0000\u0016\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\b\u0004\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\b6\u0018\u00002\u00020\u0001:\u0002\u0004\u0005B\t\b\u0002¢\u0006\u0004\b\u0002\u0010\u0003\u0001\u0002\u0006\u0007¨\u0006\b"}, d2 = {"Lcom/discord/widgets/settings/premium/SettingsGiftingViewModel$Event;", "", "<init>", "()V", "ShowPromoBottomSheet", "ShowPromoDialog", "Lcom/discord/widgets/settings/premium/SettingsGiftingViewModel$Event$ShowPromoBottomSheet;", "Lcom/discord/widgets/settings/premium/SettingsGiftingViewModel$Event$ShowPromoDialog;", "app_productionGoogleRelease"}, k = 1, mv = {1, 4, 2})
+-    /* compiled from: SettingsGiftingViewModel.kt */
+     public static abstract class Event {
+ 
+-        @Metadata(bv = {1, 0, 3}, d1 = {"\u0000&\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0010\u000e\n\u0002\b\u0006\n\u0002\u0010\b\n\u0002\b\u0002\n\u0002\u0010\u0000\n\u0000\n\u0002\u0010\u000b\n\u0002\b\u0007\b\b\u0018\u00002\u00020\u0001B\u000f\u0012\u0006\u0010\u0005\u001a\u00020\u0002¢\u0006\u0004\b\u0013\u0010\u0014J\u0010\u0010\u0003\u001a\u00020\u0002HÆ\u0003¢\u0006\u0004\b\u0003\u0010\u0004J\u001a\u0010\u0006\u001a\u00020\u00002\b\b\u0002\u0010\u0005\u001a\u00020\u0002HÆ\u0001¢\u0006\u0004\b\u0006\u0010\u0007J\u0010\u0010\b\u001a\u00020\u0002HÖ\u0001¢\u0006\u0004\b\b\u0010\u0004J\u0010\u0010\n\u001a\u00020\tHÖ\u0001¢\u0006\u0004\b\n\u0010\u000bJ\u001a\u0010\u000f\u001a\u00020\u000e2\b\u0010\r\u001a\u0004\u0018\u00010\fHÖ\u0003¢\u0006\u0004\b\u000f\u0010\u0010R\u0019\u0010\u0005\u001a\u00020\u00028\u0006@\u0006¢\u0006\f\n\u0004\b\u0005\u0010\u0011\u001a\u0004\b\u0012\u0010\u0004¨\u0006\u0015"}, d2 = {"Lcom/discord/widgets/settings/premium/SettingsGiftingViewModel$Event$ShowPromoBottomSheet;", "Lcom/discord/widgets/settings/premium/SettingsGiftingViewModel$Event;", "", "component1", "()Ljava/lang/String;", "content", "copy", "(Ljava/lang/String;)Lcom/discord/widgets/settings/premium/SettingsGiftingViewModel$Event$ShowPromoBottomSheet;", "toString", "", "hashCode", "()I", "", "other", "", "equals", "(Ljava/lang/Object;)Z", "Ljava/lang/String;", "getContent", "<init>", "(Ljava/lang/String;)V", "app_productionGoogleRelease"}, k = 1, mv = {1, 4, 2})
+-        /* compiled from: SettingsGiftingViewModel.kt */
+         public static final class ShowPromoBottomSheet extends Event {
+             private final String content;
+ 
+@@ -149,8 +137,6 @@ public final class SettingsGiftingViewMo
+             }
+         }
+ 
+-        @Metadata(bv = {1, 0, 3}, d1 = {"\u0000.\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0005\n\u0002\u0010\u000e\n\u0002\b\u0002\n\u0002\u0010\b\n\u0002\b\u0002\n\u0002\u0010\u0000\n\u0000\n\u0002\u0010\u000b\n\u0002\b\u0007\b\b\u0018\u00002\u00020\u0001B\u000f\u0012\u0006\u0010\u0005\u001a\u00020\u0002¢\u0006\u0004\b\u0015\u0010\u0016J\u0010\u0010\u0003\u001a\u00020\u0002HÆ\u0003¢\u0006\u0004\b\u0003\u0010\u0004J\u001a\u0010\u0006\u001a\u00020\u00002\b\b\u0002\u0010\u0005\u001a\u00020\u0002HÆ\u0001¢\u0006\u0004\b\u0006\u0010\u0007J\u0010\u0010\t\u001a\u00020\bHÖ\u0001¢\u0006\u0004\b\t\u0010\nJ\u0010\u0010\f\u001a\u00020\u000bHÖ\u0001¢\u0006\u0004\b\f\u0010\rJ\u001a\u0010\u0011\u001a\u00020\u00102\b\u0010\u000f\u001a\u0004\u0018\u00010\u000eHÖ\u0003¢\u0006\u0004\b\u0011\u0010\u0012R\u0019\u0010\u0005\u001a\u00020\u00028\u0006@\u0006¢\u0006\f\n\u0004\b\u0005\u0010\u0013\u001a\u0004\b\u0014\u0010\u0004¨\u0006\u0017"}, d2 = {"Lcom/discord/widgets/settings/premium/SettingsGiftingViewModel$Event$ShowPromoDialog;", "Lcom/discord/widgets/settings/premium/SettingsGiftingViewModel$Event;", "Lcom/discord/widgets/settings/premium/ClaimStatus;", "component1", "()Lcom/discord/widgets/settings/premium/ClaimStatus;", "claimStatus", "copy", "(Lcom/discord/widgets/settings/premium/ClaimStatus;)Lcom/discord/widgets/settings/premium/SettingsGiftingViewModel$Event$ShowPromoDialog;", "", "toString", "()Ljava/lang/String;", "", "hashCode", "()I", "", "other", "", "equals", "(Ljava/lang/Object;)Z", "Lcom/discord/widgets/settings/premium/ClaimStatus;", "getClaimStatus", "<init>", "(Lcom/discord/widgets/settings/premium/ClaimStatus;)V", "app_productionGoogleRelease"}, k = 1, mv = {1, 4, 2})
+-        /* compiled from: SettingsGiftingViewModel.kt */
+         public static final class ShowPromoDialog extends Event {
+             private final ClaimStatus claimStatus;
+ 
+@@ -212,8 +198,6 @@ public final class SettingsGiftingViewMo
+         }
+     }
+ 
+-    @Metadata(bv = {1, 0, 3}, d1 = {"\u0000X\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010$\n\u0002\u0010\t\n\u0002\u0018\u0002\n\u0002\u0010 \n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\t\n\u0002\u0010\u000e\n\u0002\b\u0002\n\u0002\u0010\b\n\u0002\b\u0003\n\u0002\u0010\u000b\n\u0002\b\u000f\b\b\u0018\u00002\u00020\u0001BK\u0012\u0006\u0010\u0015\u001a\u00020\u0002\u0012\u0006\u0010\u0016\u001a\u00020\u0005\u0012\u001c\u0010\u0017\u001a\u0018\u0012\b\u0012\u00060\tj\u0002`\n\u0012\n\u0012\b\u0012\u0004\u0012\u00020\f0\u000b0\b\u0012\u0006\u0010\u0018\u001a\u00020\u000f\u0012\f\u0010\u0019\u001a\b\u0012\u0004\u0012\u00020\u00120\u000b¢\u0006\u0004\b0\u00101J\u0010\u0010\u0003\u001a\u00020\u0002HÆ\u0003¢\u0006\u0004\b\u0003\u0010\u0004J\u0010\u0010\u0006\u001a\u00020\u0005HÆ\u0003¢\u0006\u0004\b\u0006\u0010\u0007J&\u0010\r\u001a\u0018\u0012\b\u0012\u00060\tj\u0002`\n\u0012\n\u0012\b\u0012\u0004\u0012\u00020\f0\u000b0\bHÆ\u0003¢\u0006\u0004\b\r\u0010\u000eJ\u0010\u0010\u0010\u001a\u00020\u000fHÆ\u0003¢\u0006\u0004\b\u0010\u0010\u0011J\u0016\u0010\u0013\u001a\b\u0012\u0004\u0012\u00020\u00120\u000bHÆ\u0003¢\u0006\u0004\b\u0013\u0010\u0014J^\u0010\u001a\u001a\u00020\u00002\b\b\u0002\u0010\u0015\u001a\u00020\u00022\b\b\u0002\u0010\u0016\u001a\u00020\u00052\u001e\b\u0002\u0010\u0017\u001a\u0018\u0012\b\u0012\u00060\tj\u0002`\n\u0012\n\u0012\b\u0012\u0004\u0012\u00020\f0\u000b0\b2\b\b\u0002\u0010\u0018\u001a\u00020\u000f2\u000e\b\u0002\u0010\u0019\u001a\b\u0012\u0004\u0012\u00020\u00120\u000bHÆ\u0001¢\u0006\u0004\b\u001a\u0010\u001bJ\u0010\u0010\u001d\u001a\u00020\u001cHÖ\u0001¢\u0006\u0004\b\u001d\u0010\u001eJ\u0010\u0010 \u001a\u00020\u001fHÖ\u0001¢\u0006\u0004\b \u0010!J\u001a\u0010$\u001a\u00020#2\b\u0010\"\u001a\u0004\u0018\u00010\u0001HÖ\u0003¢\u0006\u0004\b$\u0010%R\u0019\u0010\u0015\u001a\u00020\u00028\u0006@\u0006¢\u0006\f\n\u0004\b\u0015\u0010&\u001a\u0004\b'\u0010\u0004R\u001f\u0010\u0019\u001a\b\u0012\u0004\u0012\u00020\u00120\u000b8\u0006@\u0006¢\u0006\f\n\u0004\b\u0019\u0010(\u001a\u0004\b)\u0010\u0014R\u0019\u0010\u0018\u001a\u00020\u000f8\u0006@\u0006¢\u0006\f\n\u0004\b\u0018\u0010*\u001a\u0004\b+\u0010\u0011R/\u0010\u0017\u001a\u0018\u0012\b\u0012\u00060\tj\u0002`\n\u0012\n\u0012\b\u0012\u0004\u0012\u00020\f0\u000b0\b8\u0006@\u0006¢\u0006\f\n\u0004\b\u0017\u0010,\u001a\u0004\b-\u0010\u000eR\u0019\u0010\u0016\u001a\u00020\u00058\u0006@\u0006¢\u0006\f\n\u0004\b\u0016\u0010.\u001a\u0004\b/\u0010\u0007¨\u00062"}, d2 = {"Lcom/discord/widgets/settings/premium/SettingsGiftingViewModel$GiftAndPromoData;", "", "Lcom/discord/stores/StoreEntitlements$State;", "component1", "()Lcom/discord/stores/StoreEntitlements$State;", "Lcom/discord/widgets/settings/premium/SettingsGiftingViewModel$ResolvingGiftState;", "component2", "()Lcom/discord/widgets/settings/premium/SettingsGiftingViewModel$ResolvingGiftState;", "", "", "Lcom/discord/primitives/Snowflake;", "", "Lcom/discord/models/domain/ModelGift;", "component3", "()Ljava/util/Map;", "Lcom/discord/stores/StoreOutboundPromotions$State;", "component4", "()Lcom/discord/stores/StoreOutboundPromotions$State;", "Lcom/discord/api/premium/ClaimedOutboundPromotion;", "component5", "()Ljava/util/List;", "entitlementState", "resolvingGiftState", "myPurchasedGifts", "outboundPromoState", "claimedOutboundPromotions", "copy", "(Lcom/discord/stores/StoreEntitlements$State;Lcom/discord/widgets/settings/premium/SettingsGiftingViewModel$ResolvingGiftState;Ljava/util/Map;Lcom/discord/stores/StoreOutboundPromotions$State;Ljava/util/List;)Lcom/discord/widgets/settings/premium/SettingsGiftingViewModel$GiftAndPromoData;", "", "toString", "()Ljava/lang/String;", "", "hashCode", "()I", "other", "", "equals", "(Ljava/lang/Object;)Z", "Lcom/discord/stores/StoreEntitlements$State;", "getEntitlementState", "Ljava/util/List;", "getClaimedOutboundPromotions", "Lcom/discord/stores/StoreOutboundPromotions$State;", "getOutboundPromoState", "Ljava/util/Map;", "getMyPurchasedGifts", "Lcom/discord/widgets/settings/premium/SettingsGiftingViewModel$ResolvingGiftState;", "getResolvingGiftState", "<init>", "(Lcom/discord/stores/StoreEntitlements$State;Lcom/discord/widgets/settings/premium/SettingsGiftingViewModel$ResolvingGiftState;Ljava/util/Map;Lcom/discord/stores/StoreOutboundPromotions$State;Ljava/util/List;)V", "app_productionGoogleRelease"}, k = 1, mv = {1, 4, 2})
+-    /* compiled from: SettingsGiftingViewModel.kt */
+     public static final class GiftAndPromoData {
+         private final List<ClaimedOutboundPromotion> claimedOutboundPromotions;
+         private final StoreEntitlements.State entitlementState;
+@@ -348,12 +332,8 @@ public final class SettingsGiftingViewMo
+         }
+     }
+ 
+-    @Metadata(bv = {1, 0, 3}, d1 = {"\u0000\u001e\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\b\u0006\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\b6\u0018\u00002\u00020\u0001:\u0004\u0004\u0005\u0006\u0007B\t\b\u0002¢\u0006\u0004\b\u0002\u0010\u0003\u0001\u0004\b\t\n\u000b¨\u0006\f"}, d2 = {"Lcom/discord/widgets/settings/premium/SettingsGiftingViewModel$GiftPurchaseEvent;", "", "<init>", "()V", "CompleteGiftPurchase", "ErrorGiftPurchase", "NotInProgress", "StartGiftPurchase", "Lcom/discord/widgets/settings/premium/SettingsGiftingViewModel$GiftPurchaseEvent$StartGiftPurchase;", "Lcom/discord/widgets/settings/premium/SettingsGiftingViewModel$GiftPurchaseEvent$NotInProgress;", "Lcom/discord/widgets/settings/premium/SettingsGiftingViewModel$GiftPurchaseEvent$ErrorGiftPurchase;", "Lcom/discord/widgets/settings/premium/SettingsGiftingViewModel$GiftPurchaseEvent$CompleteGiftPurchase;", "app_productionGoogleRelease"}, k = 1, mv = {1, 4, 2})
+-    /* compiled from: SettingsGiftingViewModel.kt */
+     public static abstract class GiftPurchaseEvent {
+ 
+-        @Metadata(bv = {1, 0, 3}, d1 = {"\u0000&\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0010\u000e\n\u0002\b\b\n\u0002\u0010\b\n\u0002\b\u0002\n\u0002\u0010\u0000\n\u0000\n\u0002\u0010\u000b\n\u0002\b\b\b\b\u0018\u00002\u00020\u0001B\u0017\u0012\u0006\u0010\u0006\u001a\u00020\u0002\u0012\u0006\u0010\u0007\u001a\u00020\u0002¢\u0006\u0004\b\u0016\u0010\u0017J\u0010\u0010\u0003\u001a\u00020\u0002HÆ\u0003¢\u0006\u0004\b\u0003\u0010\u0004J\u0010\u0010\u0005\u001a\u00020\u0002HÆ\u0003¢\u0006\u0004\b\u0005\u0010\u0004J$\u0010\b\u001a\u00020\u00002\b\b\u0002\u0010\u0006\u001a\u00020\u00022\b\b\u0002\u0010\u0007\u001a\u00020\u0002HÆ\u0001¢\u0006\u0004\b\b\u0010\tJ\u0010\u0010\n\u001a\u00020\u0002HÖ\u0001¢\u0006\u0004\b\n\u0010\u0004J\u0010\u0010\f\u001a\u00020\u000bHÖ\u0001¢\u0006\u0004\b\f\u0010\rJ\u001a\u0010\u0011\u001a\u00020\u00102\b\u0010\u000f\u001a\u0004\u0018\u00010\u000eHÖ\u0003¢\u0006\u0004\b\u0011\u0010\u0012R\u0019\u0010\u0006\u001a\u00020\u00028\u0006@\u0006¢\u0006\f\n\u0004\b\u0006\u0010\u0013\u001a\u0004\b\u0014\u0010\u0004R\u0019\u0010\u0007\u001a\u00020\u00028\u0006@\u0006¢\u0006\f\n\u0004\b\u0007\u0010\u0013\u001a\u0004\b\u0015\u0010\u0004¨\u0006\u0018"}, d2 = {"Lcom/discord/widgets/settings/premium/SettingsGiftingViewModel$GiftPurchaseEvent$CompleteGiftPurchase;", "Lcom/discord/widgets/settings/premium/SettingsGiftingViewModel$GiftPurchaseEvent;", "", "component1", "()Ljava/lang/String;", "component2", "skuName", "newGiftCode", "copy", "(Ljava/lang/String;Ljava/lang/String;)Lcom/discord/widgets/settings/premium/SettingsGiftingViewModel$GiftPurchaseEvent$CompleteGiftPurchase;", "toString", "", "hashCode", "()I", "", "other", "", "equals", "(Ljava/lang/Object;)Z", "Ljava/lang/String;", "getSkuName", "getNewGiftCode", "<init>", "(Ljava/lang/String;Ljava/lang/String;)V", "app_productionGoogleRelease"}, k = 1, mv = {1, 4, 2})
+-        /* compiled from: SettingsGiftingViewModel.kt */
+         public static final class CompleteGiftPurchase extends GiftPurchaseEvent {
+             private final String newGiftCode;
+             private final String skuName;
+@@ -429,12 +409,10 @@ public final class SettingsGiftingViewMo
+             }
+         }
+ 
+-        @Metadata(bv = {1, 0, 3}, d1 = {"\u0000&\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0010\b\n\u0002\b\u0005\n\u0002\u0010\u000e\n\u0002\b\u0003\n\u0002\u0010\u0000\n\u0000\n\u0002\u0010\u000b\n\u0002\b\u0007\b\b\u0018\u00002\u00020\u0001B\u0011\u0012\b\b\u0001\u0010\u0005\u001a\u00020\u0002¢\u0006\u0004\b\u0013\u0010\u0014J\u0010\u0010\u0003\u001a\u00020\u0002HÆ\u0003¢\u0006\u0004\b\u0003\u0010\u0004J\u001a\u0010\u0006\u001a\u00020\u00002\b\b\u0003\u0010\u0005\u001a\u00020\u0002HÆ\u0001¢\u0006\u0004\b\u0006\u0010\u0007J\u0010\u0010\t\u001a\u00020\bHÖ\u0001¢\u0006\u0004\b\t\u0010\nJ\u0010\u0010\u000b\u001a\u00020\u0002HÖ\u0001¢\u0006\u0004\b\u000b\u0010\u0004J\u001a\u0010\u000f\u001a\u00020\u000e2\b\u0010\r\u001a\u0004\u0018\u00010\fHÖ\u0003¢\u0006\u0004\b\u000f\u0010\u0010R\u0019\u0010\u0005\u001a\u00020\u00028\u0006@\u0006¢\u0006\f\n\u0004\b\u0005\u0010\u0011\u001a\u0004\b\u0012\u0010\u0004¨\u0006\u0015"}, d2 = {"Lcom/discord/widgets/settings/premium/SettingsGiftingViewModel$GiftPurchaseEvent$ErrorGiftPurchase;", "Lcom/discord/widgets/settings/premium/SettingsGiftingViewModel$GiftPurchaseEvent;", "", "component1", "()I", "message", "copy", "(I)Lcom/discord/widgets/settings/premium/SettingsGiftingViewModel$GiftPurchaseEvent$ErrorGiftPurchase;", "", "toString", "()Ljava/lang/String;", "hashCode", "", "other", "", "equals", "(Ljava/lang/Object;)Z", "I", "getMessage", "<init>", "(I)V", "app_productionGoogleRelease"}, k = 1, mv = {1, 4, 2})
+-        /* compiled from: SettingsGiftingViewModel.kt */
+         public static final class ErrorGiftPurchase extends GiftPurchaseEvent {
+             private final int message;
+ 
+-            public ErrorGiftPurchase(@StringRes int i) {
++            public ErrorGiftPurchase(int i) {
+                 super(null);
+                 this.message = i;
+             }
+@@ -450,7 +428,7 @@ public final class SettingsGiftingViewMo
+                 return this.message;
+             }
+ 
+-            public final ErrorGiftPurchase copy(@StringRes int i) {
++            public final ErrorGiftPurchase copy(int i) {
+                 return new ErrorGiftPurchase(i);
+             }
+ 
+@@ -474,8 +452,6 @@ public final class SettingsGiftingViewMo
+             }
+         }
+ 
+-        @Metadata(bv = {1, 0, 3}, d1 = {"\u0000\f\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0003\bÆ\u0002\u0018\u00002\u00020\u0001B\t\b\u0002¢\u0006\u0004\b\u0002\u0010\u0003¨\u0006\u0004"}, d2 = {"Lcom/discord/widgets/settings/premium/SettingsGiftingViewModel$GiftPurchaseEvent$NotInProgress;", "Lcom/discord/widgets/settings/premium/SettingsGiftingViewModel$GiftPurchaseEvent;", "<init>", "()V", "app_productionGoogleRelease"}, k = 1, mv = {1, 4, 2})
+-        /* compiled from: SettingsGiftingViewModel.kt */
+         public static final class NotInProgress extends GiftPurchaseEvent {
+             public static final NotInProgress INSTANCE = new NotInProgress();
+ 
+@@ -484,8 +460,6 @@ public final class SettingsGiftingViewMo
+             }
+         }
+ 
+-        @Metadata(bv = {1, 0, 3}, d1 = {"\u0000\f\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0003\bÆ\u0002\u0018\u00002\u00020\u0001B\t\b\u0002¢\u0006\u0004\b\u0002\u0010\u0003¨\u0006\u0004"}, d2 = {"Lcom/discord/widgets/settings/premium/SettingsGiftingViewModel$GiftPurchaseEvent$StartGiftPurchase;", "Lcom/discord/widgets/settings/premium/SettingsGiftingViewModel$GiftPurchaseEvent;", "<init>", "()V", "app_productionGoogleRelease"}, k = 1, mv = {1, 4, 2})
+-        /* compiled from: SettingsGiftingViewModel.kt */
+         public static final class StartGiftPurchase extends GiftPurchaseEvent {
+             public static final StartGiftPurchase INSTANCE = new StartGiftPurchase();
+ 
+@@ -502,12 +476,8 @@ public final class SettingsGiftingViewMo
+         }
+     }
+ 
+-    @Metadata(bv = {1, 0, 3}, d1 = {"\u0000\u0016\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\b\u0004\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\b2\u0018\u00002\u00020\u0001:\u0002\u0004\u0005B\t\b\u0002¢\u0006\u0004\b\u0002\u0010\u0003\u0001\u0002\u0006\u0007¨\u0006\b"}, d2 = {"Lcom/discord/widgets/settings/premium/SettingsGiftingViewModel$OutboundPromoData;", "", "<init>", "()V", "Loaded", "Loading", "Lcom/discord/widgets/settings/premium/SettingsGiftingViewModel$OutboundPromoData$Loading;", "Lcom/discord/widgets/settings/premium/SettingsGiftingViewModel$OutboundPromoData$Loaded;", "app_productionGoogleRelease"}, k = 1, mv = {1, 4, 2})
+-    /* compiled from: SettingsGiftingViewModel.kt */
+     public static abstract class OutboundPromoData {
+ 
+-        @Metadata(bv = {1, 0, 3}, d1 = {"\u00002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0010 \n\u0002\u0018\u0002\n\u0002\b\u0005\n\u0002\u0010\u000e\n\u0002\b\u0002\n\u0002\u0010\b\n\u0002\b\u0002\n\u0002\u0010\u0000\n\u0000\n\u0002\u0010\u000b\n\u0002\b\u0007\b\b\u0018\u00002\u00020\u0001B\u0015\u0012\f\u0010\u0006\u001a\b\u0012\u0004\u0012\u00020\u00030\u0002¢\u0006\u0004\b\u0016\u0010\u0017J\u0016\u0010\u0004\u001a\b\u0012\u0004\u0012\u00020\u00030\u0002HÆ\u0003¢\u0006\u0004\b\u0004\u0010\u0005J \u0010\u0007\u001a\u00020\u00002\u000e\b\u0002\u0010\u0006\u001a\b\u0012\u0004\u0012\u00020\u00030\u0002HÆ\u0001¢\u0006\u0004\b\u0007\u0010\bJ\u0010\u0010\n\u001a\u00020\tHÖ\u0001¢\u0006\u0004\b\n\u0010\u000bJ\u0010\u0010\r\u001a\u00020\fHÖ\u0001¢\u0006\u0004\b\r\u0010\u000eJ\u001a\u0010\u0012\u001a\u00020\u00112\b\u0010\u0010\u001a\u0004\u0018\u00010\u000fHÖ\u0003¢\u0006\u0004\b\u0012\u0010\u0013R\u001f\u0010\u0006\u001a\b\u0012\u0004\u0012\u00020\u00030\u00028\u0006@\u0006¢\u0006\f\n\u0004\b\u0006\u0010\u0014\u001a\u0004\b\u0015\u0010\u0005¨\u0006\u0018"}, d2 = {"Lcom/discord/widgets/settings/premium/SettingsGiftingViewModel$OutboundPromoData$Loaded;", "Lcom/discord/widgets/settings/premium/SettingsGiftingViewModel$OutboundPromoData;", "", "Lcom/discord/widgets/settings/premium/SettingsGiftingViewModel$OutboundPromoItem;", "component1", "()Ljava/util/List;", "outboundPromos", "copy", "(Ljava/util/List;)Lcom/discord/widgets/settings/premium/SettingsGiftingViewModel$OutboundPromoData$Loaded;", "", "toString", "()Ljava/lang/String;", "", "hashCode", "()I", "", "other", "", "equals", "(Ljava/lang/Object;)Z", "Ljava/util/List;", "getOutboundPromos", "<init>", "(Ljava/util/List;)V", "app_productionGoogleRelease"}, k = 1, mv = {1, 4, 2})
+-        /* compiled from: SettingsGiftingViewModel.kt */
+         public static final class Loaded extends OutboundPromoData {
+             private final List<OutboundPromoItem> outboundPromos;
+ 
+@@ -560,8 +530,6 @@ public final class SettingsGiftingViewMo
+             }
+         }
+ 
+-        @Metadata(bv = {1, 0, 3}, d1 = {"\u0000\f\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0003\bÆ\u0002\u0018\u00002\u00020\u0001B\t\b\u0002¢\u0006\u0004\b\u0002\u0010\u0003¨\u0006\u0004"}, d2 = {"Lcom/discord/widgets/settings/premium/SettingsGiftingViewModel$OutboundPromoData$Loading;", "Lcom/discord/widgets/settings/premium/SettingsGiftingViewModel$OutboundPromoData;", "<init>", "()V", "app_productionGoogleRelease"}, k = 1, mv = {1, 4, 2})
+-        /* compiled from: SettingsGiftingViewModel.kt */
+         public static final class Loading extends OutboundPromoData {
+             public static final Loading INSTANCE = new Loading();
+ 
+@@ -578,12 +546,10 @@ public final class SettingsGiftingViewMo
+         }
+     }
+ 
+-    @Metadata(bv = {1, 0, 3}, d1 = {"\u00004\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\t\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\u000e\n\u0002\b\f\n\u0002\u0010\b\n\u0002\b\u0003\n\u0002\u0010\u000b\n\u0002\b\r\b\b\u0018\u00002\u00020\u0001B3\u0012\u0006\u0010\u000e\u001a\u00020\u0002\u0012\n\u0010\u000f\u001a\u00060\u0005j\u0002`\u0006\u0012\u0006\u0010\u0010\u001a\u00020\t\u0012\u0006\u0010\u0011\u001a\u00020\t\u0012\u0006\u0010\u0012\u001a\u00020\t¢\u0006\u0004\b%\u0010&J\u0010\u0010\u0003\u001a\u00020\u0002HÆ\u0003¢\u0006\u0004\b\u0003\u0010\u0004J\u0014\u0010\u0007\u001a\u00060\u0005j\u0002`\u0006HÆ\u0003¢\u0006\u0004\b\u0007\u0010\bJ\u0010\u0010\n\u001a\u00020\tHÆ\u0003¢\u0006\u0004\b\n\u0010\u000bJ\u0010\u0010\f\u001a\u00020\tHÆ\u0003¢\u0006\u0004\b\f\u0010\u000bJ\u0010\u0010\r\u001a\u00020\tHÆ\u0003¢\u0006\u0004\b\r\u0010\u000bJF\u0010\u0013\u001a\u00020\u00002\b\b\u0002\u0010\u000e\u001a\u00020\u00022\f\b\u0002\u0010\u000f\u001a\u00060\u0005j\u0002`\u00062\b\b\u0002\u0010\u0010\u001a\u00020\t2\b\b\u0002\u0010\u0011\u001a\u00020\t2\b\b\u0002\u0010\u0012\u001a\u00020\tHÆ\u0001¢\u0006\u0004\b\u0013\u0010\u0014J\u0010\u0010\u0015\u001a\u00020\tHÖ\u0001¢\u0006\u0004\b\u0015\u0010\u000bJ\u0010\u0010\u0017\u001a\u00020\u0016HÖ\u0001¢\u0006\u0004\b\u0017\u0010\u0018J\u001a\u0010\u001b\u001a\u00020\u001a2\b\u0010\u0019\u001a\u0004\u0018\u00010\u0001HÖ\u0003¢\u0006\u0004\b\u001b\u0010\u001cR\u001d\u0010\u000f\u001a\u00060\u0005j\u0002`\u00068\u0006@\u0006¢\u0006\f\n\u0004\b\u000f\u0010\u001d\u001a\u0004\b\u001e\u0010\bR\u0019\u0010\u0012\u001a\u00020\t8\u0006@\u0006¢\u0006\f\n\u0004\b\u0012\u0010\u001f\u001a\u0004\b \u0010\u000bR\u0019\u0010\u0011\u001a\u00020\t8\u0006@\u0006¢\u0006\f\n\u0004\b\u0011\u0010\u001f\u001a\u0004\b!\u0010\u000bR\u0019\u0010\u000e\u001a\u00020\u00028\u0006@\u0006¢\u0006\f\n\u0004\b\u000e\u0010\"\u001a\u0004\b#\u0010\u0004R\u0019\u0010\u0010\u001a\u00020\t8\u0006@\u0006¢\u0006\f\n\u0004\b\u0010\u0010\u001f\u001a\u0004\b$\u0010\u000b¨\u0006'"}, d2 = {"Lcom/discord/widgets/settings/premium/SettingsGiftingViewModel$OutboundPromoItem;", "", "Lcom/discord/widgets/settings/premium/ClaimStatus;", "component1", "()Lcom/discord/widgets/settings/premium/ClaimStatus;", "", "Lcom/discord/primitives/PromoId;", "component2", "()J", "", "component3", "()Ljava/lang/String;", "component4", "component5", "claimStatus", "id", "title", "terms", "imageUrl", "copy", "(Lcom/discord/widgets/settings/premium/ClaimStatus;JLjava/lang/String;Ljava/lang/String;Ljava/lang/String;)Lcom/discord/widgets/settings/premium/SettingsGiftingViewModel$OutboundPromoItem;", "toString", "", "hashCode", "()I", "other", "", "equals", "(Ljava/lang/Object;)Z", "J", "getId", "Ljava/lang/String;", "getImageUrl", "getTerms", "Lcom/discord/widgets/settings/premium/ClaimStatus;", "getClaimStatus", "getTitle", "<init>", "(Lcom/discord/widgets/settings/premium/ClaimStatus;JLjava/lang/String;Ljava/lang/String;Ljava/lang/String;)V", "app_productionGoogleRelease"}, k = 1, mv = {1, 4, 2})
+-    /* compiled from: SettingsGiftingViewModel.kt */
+     public static final class OutboundPromoItem {
+         private final ClaimStatus claimStatus;
+ 
+-        /* renamed from: id  reason: collision with root package name */
++        /* renamed from: id */
+         private final long f2241id;
+         private final String imageUrl;
+         private final String terms;
+@@ -708,12 +674,8 @@ public final class SettingsGiftingViewMo
+         }
+     }
+ 
+-    @Metadata(bv = {1, 0, 3}, d1 = {"\u0000\u001a\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\b\u0005\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\b6\u0018\u00002\u00020\u0001:\u0003\u0004\u0005\u0006B\t\b\u0002¢\u0006\u0004\b\u0002\u0010\u0003\u0001\u0003\u0007\b\t¨\u0006\n"}, d2 = {"Lcom/discord/widgets/settings/premium/SettingsGiftingViewModel$ResolvingGiftState;", "", "<init>", "()V", "Error", "NotResolving", "Resolving", "Lcom/discord/widgets/settings/premium/SettingsGiftingViewModel$ResolvingGiftState$NotResolving;", "Lcom/discord/widgets/settings/premium/SettingsGiftingViewModel$ResolvingGiftState$Error;", "Lcom/discord/widgets/settings/premium/SettingsGiftingViewModel$ResolvingGiftState$Resolving;", "app_productionGoogleRelease"}, k = 1, mv = {1, 4, 2})
+-    /* compiled from: SettingsGiftingViewModel.kt */
+     public static abstract class ResolvingGiftState {
+ 
+-        @Metadata(bv = {1, 0, 3}, d1 = {"\u0000\f\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0003\bÆ\u0002\u0018\u00002\u00020\u0001B\t\b\u0002¢\u0006\u0004\b\u0002\u0010\u0003¨\u0006\u0004"}, d2 = {"Lcom/discord/widgets/settings/premium/SettingsGiftingViewModel$ResolvingGiftState$Error;", "Lcom/discord/widgets/settings/premium/SettingsGiftingViewModel$ResolvingGiftState;", "<init>", "()V", "app_productionGoogleRelease"}, k = 1, mv = {1, 4, 2})
+-        /* compiled from: SettingsGiftingViewModel.kt */
+         public static final class Error extends ResolvingGiftState {
+             public static final Error INSTANCE = new Error();
+ 
+@@ -722,8 +684,6 @@ public final class SettingsGiftingViewMo
+             }
+         }
+ 
+-        @Metadata(bv = {1, 0, 3}, d1 = {"\u0000\f\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0003\bÆ\u0002\u0018\u00002\u00020\u0001B\t\b\u0002¢\u0006\u0004\b\u0002\u0010\u0003¨\u0006\u0004"}, d2 = {"Lcom/discord/widgets/settings/premium/SettingsGiftingViewModel$ResolvingGiftState$NotResolving;", "Lcom/discord/widgets/settings/premium/SettingsGiftingViewModel$ResolvingGiftState;", "<init>", "()V", "app_productionGoogleRelease"}, k = 1, mv = {1, 4, 2})
+-        /* compiled from: SettingsGiftingViewModel.kt */
+         public static final class NotResolving extends ResolvingGiftState {
+             public static final NotResolving INSTANCE = new NotResolving();
+ 
+@@ -732,8 +692,6 @@ public final class SettingsGiftingViewMo
+             }
+         }
+ 
+-        @Metadata(bv = {1, 0, 3}, d1 = {"\u0000\f\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0003\bÆ\u0002\u0018\u00002\u00020\u0001B\t\b\u0002¢\u0006\u0004\b\u0002\u0010\u0003¨\u0006\u0004"}, d2 = {"Lcom/discord/widgets/settings/premium/SettingsGiftingViewModel$ResolvingGiftState$Resolving;", "Lcom/discord/widgets/settings/premium/SettingsGiftingViewModel$ResolvingGiftState;", "<init>", "()V", "app_productionGoogleRelease"}, k = 1, mv = {1, 4, 2})
+-        /* compiled from: SettingsGiftingViewModel.kt */
+         public static final class Resolving extends ResolvingGiftState {
+             public static final Resolving INSTANCE = new Resolving();
+ 
+@@ -750,8 +708,6 @@ public final class SettingsGiftingViewMo
+         }
+     }
+ 
+-    @Metadata(bv = {1, 0, 3}, d1 = {"\u0000<\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010 \n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\u000b\n\u0002\b\b\n\u0002\u0010\u000e\n\u0002\b\u0002\n\u0002\u0010\b\n\u0002\b\u000f\b\b\u0018\u00002\u00020\u0001B-\u0012\u0006\u0010\u000f\u001a\u00020\u0002\u0012\f\u0010\u0010\u001a\b\u0012\u0004\u0012\u00020\u00060\u0005\u0012\u0006\u0010\u0011\u001a\u00020\t\u0012\u0006\u0010\u0012\u001a\u00020\f¢\u0006\u0004\b%\u0010&J\u0010\u0010\u0003\u001a\u00020\u0002HÆ\u0003¢\u0006\u0004\b\u0003\u0010\u0004J\u0016\u0010\u0007\u001a\b\u0012\u0004\u0012\u00020\u00060\u0005HÆ\u0003¢\u0006\u0004\b\u0007\u0010\bJ\u0010\u0010\n\u001a\u00020\tHÆ\u0003¢\u0006\u0004\b\n\u0010\u000bJ\u0010\u0010\r\u001a\u00020\fHÆ\u0003¢\u0006\u0004\b\r\u0010\u000eJ>\u0010\u0013\u001a\u00020\u00002\b\b\u0002\u0010\u000f\u001a\u00020\u00022\u000e\b\u0002\u0010\u0010\u001a\b\u0012\u0004\u0012\u00020\u00060\u00052\b\b\u0002\u0010\u0011\u001a\u00020\t2\b\b\u0002\u0010\u0012\u001a\u00020\fHÆ\u0001¢\u0006\u0004\b\u0013\u0010\u0014J\u0010\u0010\u0016\u001a\u00020\u0015HÖ\u0001¢\u0006\u0004\b\u0016\u0010\u0017J\u0010\u0010\u0019\u001a\u00020\u0018HÖ\u0001¢\u0006\u0004\b\u0019\u0010\u001aJ\u001a\u0010\u001c\u001a\u00020\f2\b\u0010\u001b\u001a\u0004\u0018\u00010\u0001HÖ\u0003¢\u0006\u0004\b\u001c\u0010\u001dR\u0019\u0010\u000f\u001a\u00020\u00028\u0006@\u0006¢\u0006\f\n\u0004\b\u000f\u0010\u001e\u001a\u0004\b\u001f\u0010\u0004R\u0019\u0010\u0012\u001a\u00020\f8\u0006@\u0006¢\u0006\f\n\u0004\b\u0012\u0010 \u001a\u0004\b\u0012\u0010\u000eR\u001f\u0010\u0010\u001a\b\u0012\u0004\u0012\u00020\u00060\u00058\u0006@\u0006¢\u0006\f\n\u0004\b\u0010\u0010!\u001a\u0004\b\"\u0010\bR\u0019\u0010\u0011\u001a\u00020\t8\u0006@\u0006¢\u0006\f\n\u0004\b\u0011\u0010#\u001a\u0004\b$\u0010\u000b¨\u0006'"}, d2 = {"Lcom/discord/widgets/settings/premium/SettingsGiftingViewModel$StoreState;", "", "Lcom/discord/stores/StoreEntitlements$State;", "component1", "()Lcom/discord/stores/StoreEntitlements$State;", "", "Lcom/discord/models/domain/ModelGift;", "component2", "()Ljava/util/List;", "Lcom/discord/stores/StoreOutboundPromotions$State;", "component3", "()Lcom/discord/stores/StoreOutboundPromotions$State;", "", "component4", "()Z", "entitlementState", "myResolvedGifts", "outboundPromoState", "isUserPremium", "copy", "(Lcom/discord/stores/StoreEntitlements$State;Ljava/util/List;Lcom/discord/stores/StoreOutboundPromotions$State;Z)Lcom/discord/widgets/settings/premium/SettingsGiftingViewModel$StoreState;", "", "toString", "()Ljava/lang/String;", "", "hashCode", "()I", "other", "equals", "(Ljava/lang/Object;)Z", "Lcom/discord/stores/StoreEntitlements$State;", "getEntitlementState", "Z", "Ljava/util/List;", "getMyResolvedGifts", "Lcom/discord/stores/StoreOutboundPromotions$State;", "getOutboundPromoState", "<init>", "(Lcom/discord/stores/StoreEntitlements$State;Ljava/util/List;Lcom/discord/stores/StoreOutboundPromotions$State;Z)V", "app_productionGoogleRelease"}, k = 1, mv = {1, 4, 2})
+-    /* compiled from: SettingsGiftingViewModel.kt */
+     public static final class StoreState {
+         private final StoreEntitlements.State entitlementState;
+         private final boolean isUserPremium;
+@@ -869,12 +825,8 @@ public final class SettingsGiftingViewMo
+         }
+     }
+ 
+-    @Metadata(bv = {1, 0, 3}, d1 = {"\u0000\u001a\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\b\u0005\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\b6\u0018\u00002\u00020\u0001:\u0003\u0004\u0005\u0006B\t\b\u0002¢\u0006\u0004\b\u0002\u0010\u0003\u0001\u0003\u0007\b\t¨\u0006\n"}, d2 = {"Lcom/discord/widgets/settings/premium/SettingsGiftingViewModel$ViewState;", "", "<init>", "()V", "Failure", "Loaded", "Loading", "Lcom/discord/widgets/settings/premium/SettingsGiftingViewModel$ViewState$Loading;", "Lcom/discord/widgets/settings/premium/SettingsGiftingViewModel$ViewState$Failure;", "Lcom/discord/widgets/settings/premium/SettingsGiftingViewModel$ViewState$Loaded;", "app_productionGoogleRelease"}, k = 1, mv = {1, 4, 2})
+-    /* compiled from: SettingsGiftingViewModel.kt */
+     public static abstract class ViewState {
+ 
+-        @Metadata(bv = {1, 0, 3}, d1 = {"\u0000\f\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0003\bÆ\u0002\u0018\u00002\u00020\u0001B\t\b\u0002¢\u0006\u0004\b\u0002\u0010\u0003¨\u0006\u0004"}, d2 = {"Lcom/discord/widgets/settings/premium/SettingsGiftingViewModel$ViewState$Failure;", "Lcom/discord/widgets/settings/premium/SettingsGiftingViewModel$ViewState;", "<init>", "()V", "app_productionGoogleRelease"}, k = 1, mv = {1, 4, 2})
+-        /* compiled from: SettingsGiftingViewModel.kt */
+         public static final class Failure extends ViewState {
+             public static final Failure INSTANCE = new Failure();
+ 
+@@ -883,8 +835,6 @@ public final class SettingsGiftingViewMo
+             }
+         }
+ 
+-        @Metadata(bv = {1, 0, 3}, d1 = {"\u0000`\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0010$\n\u0002\u0010\t\n\u0002\u0018\u0002\n\u0002\u0010 \n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\"\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u000e\n\u0002\b\u000b\n\u0002\u0010\b\n\u0002\b\u0002\n\u0002\u0010\u0000\n\u0000\n\u0002\u0010\u000b\n\u0002\b\u0010\b\b\u0018\u00002\u00020\u0001Bu\u0012\u001c\u0010\u0018\u001a\u0018\u0012\b\u0012\u00060\u0003j\u0002`\u0004\u0012\n\u0012\b\u0012\u0004\u0012\u00020\u00060\u00050\u0002\u0012\u0006\u0010\u0019\u001a\u00020\t\u0012\u0010\u0010\u001a\u001a\f\u0012\b\u0012\u00060\u0003j\u0002`\r0\f\u0012\f\u0010\u001b\u001a\b\u0012\u0004\u0012\u00020\u00100\u0005\u0012\u001c\u0010\u001c\u001a\u0018\u0012\b\u0012\u00060\u0003j\u0002`\r\u0012\n\u0012\b\u0012\u0004\u0012\u00020\u00130\u00050\u0002\u0012\b\u0010\u001d\u001a\u0004\u0018\u00010\u0015¢\u0006\u0004\b4\u00105J&\u0010\u0007\u001a\u0018\u0012\b\u0012\u00060\u0003j\u0002`\u0004\u0012\n\u0012\b\u0012\u0004\u0012\u00020\u00060\u00050\u0002HÆ\u0003¢\u0006\u0004\b\u0007\u0010\bJ\u0010\u0010\n\u001a\u00020\tHÆ\u0003¢\u0006\u0004\b\n\u0010\u000bJ\u001a\u0010\u000e\u001a\f\u0012\b\u0012\u00060\u0003j\u0002`\r0\fHÆ\u0003¢\u0006\u0004\b\u000e\u0010\u000fJ\u0016\u0010\u0011\u001a\b\u0012\u0004\u0012\u00020\u00100\u0005HÆ\u0003¢\u0006\u0004\b\u0011\u0010\u0012J&\u0010\u0014\u001a\u0018\u0012\b\u0012\u00060\u0003j\u0002`\r\u0012\n\u0012\b\u0012\u0004\u0012\u00020\u00130\u00050\u0002HÆ\u0003¢\u0006\u0004\b\u0014\u0010\bJ\u0012\u0010\u0016\u001a\u0004\u0018\u00010\u0015HÆ\u0003¢\u0006\u0004\b\u0016\u0010\u0017J\u0001\u0010\u001e\u001a\u00020\u00002\u001e\b\u0002\u0010\u0018\u001a\u0018\u0012\b\u0012\u00060\u0003j\u0002`\u0004\u0012\n\u0012\b\u0012\u0004\u0012\u00020\u00060\u00050\u00022\b\b\u0002\u0010\u0019\u001a\u00020\t2\u0012\b\u0002\u0010\u001a\u001a\f\u0012\b\u0012\u00060\u0003j\u0002`\r0\f2\u000e\b\u0002\u0010\u001b\u001a\b\u0012\u0004\u0012\u00020\u00100\u00052\u001e\b\u0002\u0010\u001c\u001a\u0018\u0012\b\u0012\u00060\u0003j\u0002`\r\u0012\n\u0012\b\u0012\u0004\u0012\u00020\u00130\u00050\u00022\n\b\u0002\u0010\u001d\u001a\u0004\u0018\u00010\u0015HÆ\u0001¢\u0006\u0004\b\u001e\u0010\u001fJ\u0010\u0010 \u001a\u00020\u0015HÖ\u0001¢\u0006\u0004\b \u0010\u0017J\u0010\u0010\"\u001a\u00020!HÖ\u0001¢\u0006\u0004\b\"\u0010#J\u001a\u0010'\u001a\u00020&2\b\u0010%\u001a\u0004\u0018\u00010$HÖ\u0003¢\u0006\u0004\b'\u0010(R/\u0010\u001c\u001a\u0018\u0012\b\u0012\u00060\u0003j\u0002`\r\u0012\n\u0012\b\u0012\u0004\u0012\u00020\u00130\u00050\u00028\u0006@\u0006¢\u0006\f\n\u0004\b\u001c\u0010)\u001a\u0004\b*\u0010\bR#\u0010\u001a\u001a\f\u0012\b\u0012\u00060\u0003j\u0002`\r0\f8\u0006@\u0006¢\u0006\f\n\u0004\b\u001a\u0010+\u001a\u0004\b,\u0010\u000fR\u001f\u0010\u001b\u001a\b\u0012\u0004\u0012\u00020\u00100\u00058\u0006@\u0006¢\u0006\f\n\u0004\b\u001b\u0010-\u001a\u0004\b.\u0010\u0012R\u001b\u0010\u001d\u001a\u0004\u0018\u00010\u00158\u0006@\u0006¢\u0006\f\n\u0004\b\u001d\u0010/\u001a\u0004\b0\u0010\u0017R\u0019\u0010\u0019\u001a\u00020\t8\u0006@\u0006¢\u0006\f\n\u0004\b\u0019\u00101\u001a\u0004\b2\u0010\u000bR/\u0010\u0018\u001a\u0018\u0012\b\u0012\u00060\u0003j\u0002`\u0004\u0012\n\u0012\b\u0012\u0004\u0012\u00020\u00060\u00050\u00028\u0006@\u0006¢\u0006\f\n\u0004\b\u0018\u0010)\u001a\u0004\b3\u0010\b¨\u00066"}, d2 = {"Lcom/discord/widgets/settings/premium/SettingsGiftingViewModel$ViewState$Loaded;", "Lcom/discord/widgets/settings/premium/SettingsGiftingViewModel$ViewState;", "", "", "Lcom/discord/primitives/SkuId;", "", "Lcom/discord/models/domain/ModelEntitlement;", "component1", "()Ljava/util/Map;", "Lcom/discord/widgets/settings/premium/SettingsGiftingViewModel$ResolvingGiftState;", "component2", "()Lcom/discord/widgets/settings/premium/SettingsGiftingViewModel$ResolvingGiftState;", "", "Lcom/discord/primitives/Snowflake;", "component3", "()Ljava/util/Set;", "Lcom/discord/widgets/settings/premium/SettingsGiftingViewModel$OutboundPromoItem;", "component4", "()Ljava/util/List;", "Lcom/discord/models/domain/ModelGift;", "component5", "", "component6", "()Ljava/lang/String;", "myEntitlements", "resolvingGiftState", "expandedSkuOrPlanIds", "outboundPromos", "myPurchasedGifts", "lastCopiedCode", "copy", "(Ljava/util/Map;Lcom/discord/widgets/settings/premium/SettingsGiftingViewModel$ResolvingGiftState;Ljava/util/Set;Ljava/util/List;Ljava/util/Map;Ljava/lang/String;)Lcom/discord/widgets/settings/premium/SettingsGiftingViewModel$ViewState$Loaded;", "toString", "", "hashCode", "()I", "", "other", "", "equals", "(Ljava/lang/Object;)Z", "Ljava/util/Map;", "getMyPurchasedGifts", "Ljava/util/Set;", "getExpandedSkuOrPlanIds", "Ljava/util/List;", "getOutboundPromos", "Ljava/lang/String;", "getLastCopiedCode", "Lcom/discord/widgets/settings/premium/SettingsGiftingViewModel$ResolvingGiftState;", "getResolvingGiftState", "getMyEntitlements", "<init>", "(Ljava/util/Map;Lcom/discord/widgets/settings/premium/SettingsGiftingViewModel$ResolvingGiftState;Ljava/util/Set;Ljava/util/List;Ljava/util/Map;Ljava/lang/String;)V", "app_productionGoogleRelease"}, k = 1, mv = {1, 4, 2})
+-        /* compiled from: SettingsGiftingViewModel.kt */
+         public static final class Loaded extends ViewState {
+             private final Set<Long> expandedSkuOrPlanIds;
+             private final String lastCopiedCode;
+@@ -1039,8 +989,6 @@ public final class SettingsGiftingViewMo
+             }
+         }
+ 
+-        @Metadata(bv = {1, 0, 3}, d1 = {"\u0000\f\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0003\bÆ\u0002\u0018\u00002\u00020\u0001B\t\b\u0002¢\u0006\u0004\b\u0002\u0010\u0003¨\u0006\u0004"}, d2 = {"Lcom/discord/widgets/settings/premium/SettingsGiftingViewModel$ViewState$Loading;", "Lcom/discord/widgets/settings/premium/SettingsGiftingViewModel$ViewState;", "<init>", "()V", "app_productionGoogleRelease"}, k = 1, mv = {1, 4, 2})
+-        /* compiled from: SettingsGiftingViewModel.kt */
+         public static final class Loading extends ViewState {
+             public static final Loading INSTANCE = new Loading();
+ 
+@@ -1066,7 +1014,6 @@ public final class SettingsGiftingViewMo
+         this((i & 1) != 0 ? StoreStream.Companion.getEntitlements() : storeEntitlements2, (i & 2) != 0 ? StoreStream.Companion.getGifting() : storeGifting2, (i & 4) != 0 ? StoreStream.Companion.getUserSettingsSystem() : storeUserSettingsSystem2, (i & 8) != 0 ? StoreStream.Companion.getOutboundPromotions() : storeOutboundPromotions2, (i & 16) != 0 ? StoreStream.Companion.getGooglePlayPurchases() : storeGooglePlayPurchases, (i & 32) != 0 ? GooglePlayBillingManager.INSTANCE : googlePlayBillingManager, (i & 64) != 0 ? Companion.observeStores() : observable);
+     }
+ 
+-    @MainThread
+     private final ViewState buildViewState(StoreEntitlements.State state, ResolvingGiftState resolvingGiftState, Map<Long, ? extends List<ModelGift>> map, OutboundPromoData outboundPromoData) {
+         Set<Long> set;
+         if ((state instanceof StoreEntitlements.State.Loaded) && (outboundPromoData instanceof OutboundPromoData.Loaded)) {
+@@ -1095,7 +1042,6 @@ public final class SettingsGiftingViewMo
+         }
+     }
+ 
+-    /* access modifiers changed from: private */
+     public final GiftAndPromoData combineData(StoreState storeState, List<ClaimedOutboundPromotion> list) {
+         ResolvingGiftState resolvingGiftState;
+         Object viewState = getViewState();
+@@ -1155,8 +1101,6 @@ public final class SettingsGiftingViewMo
+         return u.toList(linkedHashMap.values());
+     }
+ 
+-    /* access modifiers changed from: private */
+-    @MainThread
+     public final void handleAsyncData(GiftAndPromoData giftAndPromoData) {
+         OutboundPromoData outboundPromoData;
+         StoreOutboundPromotions.State outboundPromoState = giftAndPromoData.getOutboundPromoState();
+@@ -1176,7 +1120,6 @@ public final class SettingsGiftingViewMo
+         updateViewState(buildViewState);
+     }
+ 
+-    /* access modifiers changed from: private */
+     public final void handleGooglePlayPurchaseEvent(StoreGooglePlayPurchases.Event event) {
+         if (event instanceof StoreGooglePlayPurchases.Event.PurchaseQuerySuccess) {
+             StoreGooglePlayPurchases.Event.PurchaseQuerySuccess purchaseQuerySuccess = (StoreGooglePlayPurchases.Event.PurchaseQuerySuccess) event;
+@@ -1196,7 +1139,6 @@ public final class SettingsGiftingViewMo
+         }
+     }
+ 
+-    /* access modifiers changed from: private */
+     public final void handleGooglePlayQueryStateUpdate(StoreGooglePlayPurchases.QueryState queryState) {
+         if (m.areEqual(queryState, StoreGooglePlayPurchases.QueryState.InProgress.INSTANCE)) {
+             PublishSubject<GiftPurchaseEvent> publishSubject = this.giftPurchaseEventSubject;
+@@ -1207,7 +1149,6 @@ public final class SettingsGiftingViewMo
+         }
+     }
+ 
+-    /* access modifiers changed from: private */
+     public final void maybeCheckClaimedPromos(boolean z2) {
+         if (!this.shouldCheckClaimedPromos.compareAndSet(true, false)) {
+             return;
+@@ -1221,8 +1162,6 @@ public final class SettingsGiftingViewMo
+         this.claimedPromotionsSubject.onNext(n.emptyList());
+     }
+ 
+-    /* access modifiers changed from: private */
+-    @MainThread
+     public final void onHandleGiftCode(StoreGifting.GiftState giftState) {
+         ViewState viewState;
+         ModelGift gift;
+@@ -1269,7 +1208,6 @@ public final class SettingsGiftingViewMo
+         }
+     }
+ 
+-    @MainThread
+     public final void handleClaimedPromo(ClaimStatus.Claimed claimed) {
+         m.checkNotNullParameter(claimed, "claimedStatus");
+         Object viewState = getViewState();
+@@ -1290,7 +1228,6 @@ public final class SettingsGiftingViewMo
+         }
+     }
+ 
+-    @MainThread
+     public final void handleCopyClicked(String str) {
+         m.checkNotNullParameter(str, "giftCode");
+         Object viewState = getViewState();
+@@ -1315,7 +1252,6 @@ public final class SettingsGiftingViewMo
+         publishSubject.j.onNext(new Event.ShowPromoBottomSheet(outboundPromoItem.getTerms()));
+     }
+ 
+-    @MainThread
+     public final void handleSkuClicked(long j, Long l) {
+         Object viewState = getViewState();
+         if (!(viewState instanceof ViewState.Loaded)) {
+@@ -1353,7 +1289,6 @@ public final class SettingsGiftingViewMo
+         this.subscriptions.b();
+     }
+ 
+-    @MainThread
+     public final void redeemGiftCode(String str, AppComponent appComponent) {
+         m.checkNotNullParameter(str, "giftCode");
+         m.checkNotNullParameter(appComponent, "appComponent");
+@@ -1395,8 +1330,6 @@ public final class SettingsGiftingViewMo
+         ObservableExtensionsKt.appSubscribe$default(ObservableExtensionsKt.ui$default(storeGooglePlayPurchases.observeEvents(), this, null, 2, null), SettingsGiftingViewModel.class, (Context) null, (Function1) null, (Function1) null, (Function0) null, (Function0) null, new Function1<StoreGooglePlayPurchases.Event, Unit>(this) {
+             /* class com.discord.widgets.settings.premium.SettingsGiftingViewModel.AnonymousClass1 */
+ 
+-            /* Return type fixed from 'java.lang.Object' to match base method */
+-            /* JADX DEBUG: Method arguments types fixed to match base method, original types: [java.lang.Object] */
+             @Override // kotlin.jvm.functions.Function1
+             public /* bridge */ /* synthetic */ Unit invoke(StoreGooglePlayPurchases.Event event) {
+                 invoke(event);
+@@ -1411,8 +1344,6 @@ public final class SettingsGiftingViewMo
+         ObservableExtensionsKt.appSubscribe$default(ObservableExtensionsKt.ui$default(storeGooglePlayPurchases.observeQueryState(), this, null, 2, null), SettingsGiftingViewModel.class, (Context) null, (Function1) null, (Function1) null, (Function0) null, (Function0) null, new Function1<StoreGooglePlayPurchases.QueryState, Unit>(this) {
+             /* class com.discord.widgets.settings.premium.SettingsGiftingViewModel.AnonymousClass2 */
+ 
+-            /* Return type fixed from 'java.lang.Object' to match base method */
+-            /* JADX DEBUG: Method arguments types fixed to match base method, original types: [java.lang.Object] */
+             @Override // kotlin.jvm.functions.Function1
+             public /* bridge */ /* synthetic */ Unit invoke(StoreGooglePlayPurchases.QueryState queryState) {
+                 invoke(queryState);
+@@ -1440,8 +1371,6 @@ public final class SettingsGiftingViewMo
+         ObservableExtensionsKt.appSubscribe$default(t, SettingsGiftingViewModel.class, (Context) null, (Function1) null, (Function1) null, (Function0) null, (Function0) null, new Function1<StoreState, Unit>(j02) {
+             /* class com.discord.widgets.settings.premium.SettingsGiftingViewModel.AnonymousClass4 */
+ 
+-            /* Return type fixed from 'java.lang.Object' to match base method */
+-            /* JADX DEBUG: Method arguments types fixed to match base method, original types: [java.lang.Object] */
+             @Override // kotlin.jvm.functions.Function1
+             public /* bridge */ /* synthetic */ Unit invoke(StoreState storeState) {
+                 invoke(storeState);
+@@ -1458,8 +1387,6 @@ public final class SettingsGiftingViewMo
+         Observable r = Observable.j(computationLatest, ObservableExtensionsKt.computationLatest(j03), new SettingsGiftingViewModel$sam$rx_functions_Func2$0(new Function2<StoreState, List<? extends ClaimedOutboundPromotion>, GiftAndPromoData>(this) {
+             /* class com.discord.widgets.settings.premium.SettingsGiftingViewModel.AnonymousClass5 */
+ 
+-            /* Return type fixed from 'java.lang.Object' to match base method */
+-            /* JADX DEBUG: Method arguments types fixed to match base method, original types: [java.lang.Object, java.lang.Object] */
+             @Override // kotlin.jvm.functions.Function2
+             public /* bridge */ /* synthetic */ GiftAndPromoData invoke(StoreState storeState, List<? extends ClaimedOutboundPromotion> list) {
+                 return invoke(storeState, (List<ClaimedOutboundPromotion>) list);
+@@ -1475,8 +1402,6 @@ public final class SettingsGiftingViewMo
+         ObservableExtensionsKt.appSubscribe$default(ObservableExtensionsKt.ui$default(r, this, null, 2, null), SettingsGiftingViewModel.class, (Context) null, (Function1) null, (Function1) null, (Function0) null, (Function0) null, new Function1<GiftAndPromoData, Unit>(this) {
+             /* class com.discord.widgets.settings.premium.SettingsGiftingViewModel.AnonymousClass6 */
+ 
+-            /* Return type fixed from 'java.lang.Object' to match base method */
+-            /* JADX DEBUG: Method arguments types fixed to match base method, original types: [java.lang.Object] */
+             @Override // kotlin.jvm.functions.Function1
+             public /* bridge */ /* synthetic */ Unit invoke(GiftAndPromoData giftAndPromoData) {
+                 invoke(giftAndPromoData);

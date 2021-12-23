@@ -1,0 +1,20 @@
+--- ./discord_94011/src/main/res/values-bg/strings.xml	2021-12-24 01:10:10.638026600 +0400
++++ ./bluecord/src/main/res/values-bg/strings.xml	2021-12-24 01:08:30.391265800 +0400
+@@ -5657,7 +5657,7 @@
+     <string name="notification_reply_failed">Неуспешен отговор на {recipient}</string>
+     <string name="notification_reply_success">Отговори на {recipient}</string>
+     <string name="notification_settings">Настройки за известията</string>
+-    <string name="notification_title_discord">Discord</string>
++    <string name="notification_title_discord">Bluecord</string>
+     <string name="notification_title_start_game">Някой играе</string>
+     <string name="notifications">Известия</string>
+     <string name="notifications_muted">Известия, заглушени</string>
+@@ -8277,7 +8277,7 @@
+     <string name="tip_voice_conversations_title3">Нека другите те чуват</string>
+     <string name="tip_whos_online_body3">Тук може да видиш всички членове в този канал. Виж кой е онлайн и какво прави – дали играе на някаква игра или слуша музика.</string>
+     <string name="tip_whos_online_title3">Какво правят всички?</string>
+-    <string name="tip_writing_messages_body3">След като се присъедини {serverName}, покажи присъствието си и **поздрави останалите**! ��</string>
++    <string name="tip_writing_messages_body3" />
+     <string name="tip_writing_messages_title3">Проведи разговор</string>
+     <string name="title">Заглавие</string>
+     <string name="title_bar_close_window">Затвори</string>

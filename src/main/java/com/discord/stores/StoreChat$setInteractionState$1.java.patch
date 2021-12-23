@@ -1,0 +1,11 @@
+--- ./discord_94011/src/main/java/com/discord/stores/StoreChat$setInteractionState$1.java	2021-12-24 01:10:12.760024500 +0400
++++ ./bluecord/src/main/java/com/discord/stores/StoreChat$setInteractionState$1.java	2021-12-24 01:08:33.257262800 +0400
+@@ -21,7 +21,7 @@ public final class StoreChat$setInteract
+ 
+     @Override // kotlin.jvm.functions.Function0
+     public final void invoke() {
+-        this.this$0.interactionState = this.$interactionState;
++        StoreChat.access$setInteractionState$p(this.this$0, this.$interactionState);
+         this.this$0.markChanged();
+     }
+ }

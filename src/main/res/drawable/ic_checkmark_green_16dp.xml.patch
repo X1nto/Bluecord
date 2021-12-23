@@ -1,0 +1,8 @@
+--- ./discord_94011/src/main/res/drawable/ic_checkmark_green_16dp.xml	2021-12-24 01:10:05.082029800 +0400
++++ ./bluecord/src/main/res/drawable/ic_checkmark_green_16dp.xml	2021-12-24 01:08:16.909264800 +0400
+@@ -1,4 +1,4 @@
+ <?xml version="1.0" encoding="utf-8"?>
+ <vector xmlns:android="http://schemas.android.com/apk/res/android" android:height="16dp" android:width="16dp" android:viewportWidth="16" android:viewportHeight="16">
+-    <path android:fillColor="#3ba55c" android:pathData="M6.0001,10.78L3.2201,8L2.2734,8.94L6.0001,12.6667L14.0001,4.6667L13.0601,3.7267L6.0001,10.78Z"/>
++    <path android:fillColor="#ff3ba55c" android:pathData="M6.0001,10.78L3.2201,8L2.2734,8.94L6.0001,12.6667L14.0001,4.6667L13.0601,3.7267L6.0001,10.78Z"/>
+ </vector>

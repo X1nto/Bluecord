@@ -1,0 +1,100 @@
+--- ./discord_94011/src/main/java/com/discord/widgets/settings/billing/PaymentSourceAdapter.java	2021-12-24 01:10:15.161027200 +0400
++++ ./bluecord/src/main/java/com/discord/widgets/settings/billing/PaymentSourceAdapter.java	2021-12-24 01:08:35.659264700 +0400
+@@ -14,20 +14,25 @@ import com.discord.utilities.mg_recycler
+ import com.google.android.material.button.MaterialButton;
+ import d0.z.d.m;
+ import java.util.Objects;
++import kotlin.Metadata;
+ import kotlin.NoWhenBranchMatchedException;
+ import kotlin.Unit;
+ import kotlin.jvm.functions.Function0;
+ import kotlin.jvm.functions.Function1;
+ import kotlin.jvm.internal.DefaultConstructorMarker;
+ 
++@Metadata(bv = {1, 0, 3}, d1 = {"\u0000@\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\b\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\u0010\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\f\u0018\u0000 \u00162\b\u0012\u0004\u0012\u00020\u00020\u0001:\b\u0016\u0017\u0018\u0019\u001a\u001b\u001c\u001dB1\u0012\u0006\u0010\u0013\u001a\u00020\u0012\u0012\f\u0010\f\u001a\b\u0012\u0004\u0012\u00020\u000b0\n\u0012\u0012\u0010\u0010\u001a\u000e\u0012\u0004\u0012\u00020\u000f\u0012\u0004\u0012\u00020\u000b0\u000e¢\u0006\u0004\b\u0014\u0010\u0015J)\u0010\b\u001a\f\u0012\u0002\b\u0003\u0012\u0004\u0012\u00020\u00020\u00072\u0006\u0010\u0004\u001a\u00020\u00032\u0006\u0010\u0006\u001a\u00020\u0005H\u0016¢\u0006\u0004\b\b\u0010\tR\u001c\u0010\f\u001a\b\u0012\u0004\u0012\u00020\u000b0\n8\u0002@\u0002X\u0004¢\u0006\u0006\n\u0004\b\f\u0010\rR\"\u0010\u0010\u001a\u000e\u0012\u0004\u0012\u00020\u000f\u0012\u0004\u0012\u00020\u000b0\u000e8\u0002@\u0002X\u0004¢\u0006\u0006\n\u0004\b\u0010\u0010\u0011¨\u0006\u001e"}, d2 = {"Lcom/discord/widgets/settings/billing/PaymentSourceAdapter;", "Lcom/discord/utilities/mg_recycler/MGRecyclerAdapterSimple;", "Lcom/discord/widgets/settings/billing/PaymentSourceAdapter$Item;", "Landroid/view/ViewGroup;", "parent", "", "viewType", "Lcom/discord/utilities/mg_recycler/MGRecyclerViewHolder;", "onCreateViewHolder", "(Landroid/view/ViewGroup;I)Lcom/discord/utilities/mg_recycler/MGRecyclerViewHolder;", "Lkotlin/Function0;", "", "onAddClick", "Lkotlin/jvm/functions/Function0;", "Lkotlin/Function1;", "Lcom/discord/models/domain/ModelPaymentSource;", "onEditPaymentSource", "Lkotlin/jvm/functions/Function1;", "Landroidx/recyclerview/widget/RecyclerView;", "recycler", "<init>", "(Landroidx/recyclerview/widget/RecyclerView;Lkotlin/jvm/functions/Function0;Lkotlin/jvm/functions/Function1;)V", "Companion", "Item", "PaymentSourceAddItem", "PaymentSourceAddViewHolder", "PaymentSourceHeader", "PaymentSourceHeaderViewHolder", "PaymentSourceItem", "PaymentSourceItemViewHolder", "app_productionGoogleRelease"}, k = 1, mv = {1, 4, 2})
++/* compiled from: PaymentSourceAdapter.kt */
+ public final class PaymentSourceAdapter extends MGRecyclerAdapterSimple<Item> {
+     public static final Companion Companion = new Companion(null);
+-    private static final int VIEW_TYPE_HEADER;
+-    private static final int VIEW_TYPE_PAYMENT_ADD;
+-    private static final int VIEW_TYPE_PAYMENT_SOURCE;
++    private static final int VIEW_TYPE_HEADER = 2;
++    private static final int VIEW_TYPE_PAYMENT_ADD = 1;
++    private static final int VIEW_TYPE_PAYMENT_SOURCE = 0;
+     private final Function0<Unit> onAddClick;
+     private final Function1<ModelPaymentSource, Unit> onEditPaymentSource;
+ 
++    @Metadata(bv = {1, 0, 3}, d1 = {"\u0000\u0010\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\u0010\b\n\u0002\b\u0007\b\u0003\u0018\u00002\u00020\u0001B\t\b\u0002¢\u0006\u0004\b\u0007\u0010\bR\u0016\u0010\u0003\u001a\u00020\u00028\u0002@\u0002XT¢\u0006\u0006\n\u0004\b\u0003\u0010\u0004R\u0016\u0010\u0005\u001a\u00020\u00028\u0002@\u0002XT¢\u0006\u0006\n\u0004\b\u0005\u0010\u0004R\u0016\u0010\u0006\u001a\u00020\u00028\u0002@\u0002XT¢\u0006\u0006\n\u0004\b\u0006\u0010\u0004¨\u0006\t"}, d2 = {"Lcom/discord/widgets/settings/billing/PaymentSourceAdapter$Companion;", "", "", "VIEW_TYPE_HEADER", "I", "VIEW_TYPE_PAYMENT_ADD", "VIEW_TYPE_PAYMENT_SOURCE", "<init>", "()V", "app_productionGoogleRelease"}, k = 1, mv = {1, 4, 2})
++    /* compiled from: PaymentSourceAdapter.kt */
+     public static final class Companion {
+         private Companion() {
+         }
+@@ -37,9 +42,13 @@ public final class PaymentSourceAdapter
+         }
+     }
+ 
++    @Metadata(bv = {1, 0, 3}, d1 = {"\u0000\n\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\bf\u0018\u00002\u00020\u0001¨\u0006\u0002"}, d2 = {"Lcom/discord/widgets/settings/billing/PaymentSourceAdapter$Item;", "Lcom/discord/utilities/mg_recycler/MGRecyclerDataPayload;", "app_productionGoogleRelease"}, k = 1, mv = {1, 4, 2})
++    /* compiled from: PaymentSourceAdapter.kt */
+     public interface Item extends MGRecyclerDataPayload {
+     }
+ 
++    @Metadata(bv = {1, 0, 3}, d1 = {"\u0000\u0018\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0010\u000e\n\u0002\b\u0004\n\u0002\u0010\b\n\u0002\b\u0007\u0018\u00002\u00020\u0001B\u0007¢\u0006\u0004\b\f\u0010\rR\u001c\u0010\u0003\u001a\u00020\u00028\u0016@\u0016XD¢\u0006\f\n\u0004\b\u0003\u0010\u0004\u001a\u0004\b\u0005\u0010\u0006R\u001c\u0010\b\u001a\u00020\u00078\u0016@\u0016XD¢\u0006\f\n\u0004\b\b\u0010\t\u001a\u0004\b\n\u0010\u000b¨\u0006\u000e"}, d2 = {"Lcom/discord/widgets/settings/billing/PaymentSourceAdapter$PaymentSourceAddItem;", "Lcom/discord/widgets/settings/billing/PaymentSourceAdapter$Item;", "", "key", "Ljava/lang/String;", "getKey", "()Ljava/lang/String;", "", "type", "I", "getType", "()I", "<init>", "()V", "app_productionGoogleRelease"}, k = 1, mv = {1, 4, 2})
++    /* compiled from: PaymentSourceAdapter.kt */
+     public static final class PaymentSourceAddItem implements Item {
+         private final String key = "AddPaymentSource";
+         private final int type = 1;
+@@ -55,6 +64,8 @@ public final class PaymentSourceAdapter
+         }
+     }
+ 
++    @Metadata(bv = {1, 0, 3}, d1 = {"\u0000 \n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0010\b\n\u0002\b\u0002\n\u0002\u0010\u0002\n\u0002\b\u0006\u0018\u00002\u000e\u0012\u0004\u0012\u00020\u0002\u0012\u0004\u0012\u00020\u00030\u0001B\u000f\u0012\u0006\u0010\n\u001a\u00020\u0002¢\u0006\u0004\b\u000b\u0010\fJ\u001f\u0010\b\u001a\u00020\u00072\u0006\u0010\u0005\u001a\u00020\u00042\u0006\u0010\u0006\u001a\u00020\u0003H\u0014¢\u0006\u0004\b\b\u0010\t¨\u0006\r"}, d2 = {"Lcom/discord/widgets/settings/billing/PaymentSourceAdapter$PaymentSourceAddViewHolder;", "Lcom/discord/utilities/mg_recycler/MGRecyclerViewHolder;", "Lcom/discord/widgets/settings/billing/PaymentSourceAdapter;", "Lcom/discord/widgets/settings/billing/PaymentSourceAdapter$Item;", "", "position", "data", "", "onConfigure", "(ILcom/discord/widgets/settings/billing/PaymentSourceAdapter$Item;)V", "adapter", "<init>", "(Lcom/discord/widgets/settings/billing/PaymentSourceAdapter;)V", "app_productionGoogleRelease"}, k = 1, mv = {1, 4, 2})
++    /* compiled from: PaymentSourceAdapter.kt */
+     public static final class PaymentSourceAddViewHolder extends MGRecyclerViewHolder<PaymentSourceAdapter, Item> {
+         /* JADX INFO: super call moved to the top of the method (can break code semantics) */
+         public PaymentSourceAddViewHolder(PaymentSourceAdapter paymentSourceAdapter) {
+@@ -72,11 +83,15 @@ public final class PaymentSourceAdapter
+         }
+     }
+ 
++    @Metadata(bv = {1, 0, 3}, d1 = {"\u0000.\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0005\n\u0002\u0010\u000e\n\u0002\b\u0002\n\u0002\u0010\b\n\u0002\b\u0002\n\u0002\u0010\u0000\n\u0000\n\u0002\u0010\u000b\n\u0002\b\u000e\b\b\u0018\u00002\u00020\u0001:\u0001\u001dB\u000f\u0012\u0006\u0010\u0005\u001a\u00020\u0002¢\u0006\u0004\b\u001b\u0010\u001cJ\u0010\u0010\u0003\u001a\u00020\u0002HÆ\u0003¢\u0006\u0004\b\u0003\u0010\u0004J\u001a\u0010\u0006\u001a\u00020\u00002\b\b\u0002\u0010\u0005\u001a\u00020\u0002HÆ\u0001¢\u0006\u0004\b\u0006\u0010\u0007J\u0010\u0010\t\u001a\u00020\bHÖ\u0001¢\u0006\u0004\b\t\u0010\nJ\u0010\u0010\f\u001a\u00020\u000bHÖ\u0001¢\u0006\u0004\b\f\u0010\rJ\u001a\u0010\u0011\u001a\u00020\u00102\b\u0010\u000f\u001a\u0004\u0018\u00010\u000eHÖ\u0003¢\u0006\u0004\b\u0011\u0010\u0012R\u001c\u0010\u0013\u001a\u00020\u000b8\u0016@\u0016XD¢\u0006\f\n\u0004\b\u0013\u0010\u0014\u001a\u0004\b\u0015\u0010\rR\u0019\u0010\u0005\u001a\u00020\u00028\u0006@\u0006¢\u0006\f\n\u0004\b\u0005\u0010\u0016\u001a\u0004\b\u0017\u0010\u0004R\u001c\u0010\u0018\u001a\u00020\b8\u0016@\u0016X\u0004¢\u0006\f\n\u0004\b\u0018\u0010\u0019\u001a\u0004\b\u001a\u0010\n¨\u0006\u001e"}, d2 = {"Lcom/discord/widgets/settings/billing/PaymentSourceAdapter$PaymentSourceHeader;", "Lcom/discord/widgets/settings/billing/PaymentSourceAdapter$Item;", "Lcom/discord/widgets/settings/billing/PaymentSourceAdapter$PaymentSourceHeader$Type;", "component1", "()Lcom/discord/widgets/settings/billing/PaymentSourceAdapter$PaymentSourceHeader$Type;", "headerType", "copy", "(Lcom/discord/widgets/settings/billing/PaymentSourceAdapter$PaymentSourceHeader$Type;)Lcom/discord/widgets/settings/billing/PaymentSourceAdapter$PaymentSourceHeader;", "", "toString", "()Ljava/lang/String;", "", "hashCode", "()I", "", "other", "", "equals", "(Ljava/lang/Object;)Z", "type", "I", "getType", "Lcom/discord/widgets/settings/billing/PaymentSourceAdapter$PaymentSourceHeader$Type;", "getHeaderType", "key", "Ljava/lang/String;", "getKey", "<init>", "(Lcom/discord/widgets/settings/billing/PaymentSourceAdapter$PaymentSourceHeader$Type;)V", "Type", "app_productionGoogleRelease"}, k = 1, mv = {1, 4, 2})
++    /* compiled from: PaymentSourceAdapter.kt */
+     public static final class PaymentSourceHeader implements Item {
+         private final Type headerType;
+         private final String key;
+         private final int type = 2;
+ 
++        @Metadata(bv = {1, 0, 3}, d1 = {"\u0000\f\n\u0002\u0018\u0002\n\u0002\u0010\u0010\n\u0002\b\u0005\b\u0001\u0018\u00002\b\u0012\u0004\u0012\u00020\u00000\u0001B\t\b\u0002¢\u0006\u0004\b\u0002\u0010\u0003j\u0002\b\u0004j\u0002\b\u0005¨\u0006\u0006"}, d2 = {"Lcom/discord/widgets/settings/billing/PaymentSourceAdapter$PaymentSourceHeader$Type;", "", "<init>", "(Ljava/lang/String;I)V", "DEFAULT", "OTHER", "app_productionGoogleRelease"}, k = 1, mv = {1, 4, 2})
++        /* compiled from: PaymentSourceAdapter.kt */
+         public enum Type {
+             DEFAULT,
+             OTHER
+@@ -141,8 +156,11 @@ public final class PaymentSourceAdapter
+         }
+     }
+ 
++    @Metadata(bv = {1, 0, 3}, d1 = {"\u0000 \n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0010\b\n\u0002\b\u0002\n\u0002\u0010\u0002\n\u0002\b\u0006\u0018\u00002\u000e\u0012\u0004\u0012\u00020\u0002\u0012\u0004\u0012\u00020\u00030\u0001B\u000f\u0012\u0006\u0010\n\u001a\u00020\u0002¢\u0006\u0004\b\u000b\u0010\fJ\u001f\u0010\b\u001a\u00020\u00072\u0006\u0010\u0005\u001a\u00020\u00042\u0006\u0010\u0006\u001a\u00020\u0003H\u0014¢\u0006\u0004\b\b\u0010\t¨\u0006\r"}, d2 = {"Lcom/discord/widgets/settings/billing/PaymentSourceAdapter$PaymentSourceHeaderViewHolder;", "Lcom/discord/utilities/mg_recycler/MGRecyclerViewHolder;", "Lcom/discord/widgets/settings/billing/PaymentSourceAdapter;", "Lcom/discord/widgets/settings/billing/PaymentSourceAdapter$Item;", "", "position", "data", "", "onConfigure", "(ILcom/discord/widgets/settings/billing/PaymentSourceAdapter$Item;)V", "adapter", "<init>", "(Lcom/discord/widgets/settings/billing/PaymentSourceAdapter;)V", "app_productionGoogleRelease"}, k = 1, mv = {1, 4, 2})
++    /* compiled from: PaymentSourceAdapter.kt */
+     public static final class PaymentSourceHeaderViewHolder extends MGRecyclerViewHolder<PaymentSourceAdapter, Item> {
+ 
++        @Metadata(bv = {1, 0, 3}, d1 = {}, d2 = {}, k = 3, mv = {1, 4, 2})
+         public final /* synthetic */ class WhenMappings {
+             public static final /* synthetic */ int[] $EnumSwitchMapping$0;
+ 
+@@ -179,6 +197,8 @@ public final class PaymentSourceAdapter
+         }
+     }
+ 
++    @Metadata(bv = {1, 0, 3}, d1 = {"\u00000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\u000b\n\u0002\b\u0006\n\u0002\u0010\u000e\n\u0002\b\u0002\n\u0002\u0010\b\n\u0002\b\u0002\n\u0002\u0010\u0000\n\u0002\b\u000f\b\b\u0018\u00002\u00020\u0001B\u0017\u0012\u0006\u0010\b\u001a\u00020\u0002\u0012\u0006\u0010\t\u001a\u00020\u0005¢\u0006\u0004\b\u001f\u0010 J\u0010\u0010\u0003\u001a\u00020\u0002HÆ\u0003¢\u0006\u0004\b\u0003\u0010\u0004J\u0010\u0010\u0006\u001a\u00020\u0005HÆ\u0003¢\u0006\u0004\b\u0006\u0010\u0007J$\u0010\n\u001a\u00020\u00002\b\b\u0002\u0010\b\u001a\u00020\u00022\b\b\u0002\u0010\t\u001a\u00020\u0005HÆ\u0001¢\u0006\u0004\b\n\u0010\u000bJ\u0010\u0010\r\u001a\u00020\fHÖ\u0001¢\u0006\u0004\b\r\u0010\u000eJ\u0010\u0010\u0010\u001a\u00020\u000fHÖ\u0001¢\u0006\u0004\b\u0010\u0010\u0011J\u001a\u0010\u0014\u001a\u00020\u00052\b\u0010\u0013\u001a\u0004\u0018\u00010\u0012HÖ\u0003¢\u0006\u0004\b\u0014\u0010\u0015R\u0019\u0010\t\u001a\u00020\u00058\u0006@\u0006¢\u0006\f\n\u0004\b\t\u0010\u0016\u001a\u0004\b\t\u0010\u0007R\u001c\u0010\u0017\u001a\u00020\u000f8\u0016@\u0016XD¢\u0006\f\n\u0004\b\u0017\u0010\u0018\u001a\u0004\b\u0019\u0010\u0011R\u001c\u0010\u001a\u001a\u00020\f8\u0016@\u0016X\u0004¢\u0006\f\n\u0004\b\u001a\u0010\u001b\u001a\u0004\b\u001c\u0010\u000eR\u0019\u0010\b\u001a\u00020\u00028\u0006@\u0006¢\u0006\f\n\u0004\b\b\u0010\u001d\u001a\u0004\b\u001e\u0010\u0004¨\u0006!"}, d2 = {"Lcom/discord/widgets/settings/billing/PaymentSourceAdapter$PaymentSourceItem;", "Lcom/discord/widgets/settings/billing/PaymentSourceAdapter$Item;", "Lcom/discord/models/domain/ModelPaymentSource;", "component1", "()Lcom/discord/models/domain/ModelPaymentSource;", "", "component2", "()Z", "paymentSource", "isPremium", "copy", "(Lcom/discord/models/domain/ModelPaymentSource;Z)Lcom/discord/widgets/settings/billing/PaymentSourceAdapter$PaymentSourceItem;", "", "toString", "()Ljava/lang/String;", "", "hashCode", "()I", "", "other", "equals", "(Ljava/lang/Object;)Z", "Z", "type", "I", "getType", "key", "Ljava/lang/String;", "getKey", "Lcom/discord/models/domain/ModelPaymentSource;", "getPaymentSource", "<init>", "(Lcom/discord/models/domain/ModelPaymentSource;Z)V", "app_productionGoogleRelease"}, k = 1, mv = {1, 4, 2})
++    /* compiled from: PaymentSourceAdapter.kt */
+     public static final class PaymentSourceItem implements Item {
+         private final boolean isPremium;
+         private final String key;
+@@ -265,6 +285,8 @@ public final class PaymentSourceAdapter
+         }
+     }
+ 
++    @Metadata(bv = {1, 0, 3}, d1 = {"\u0000(\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0010\b\n\u0002\b\u0002\n\u0002\u0010\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0006\u0018\u00002\u000e\u0012\u0004\u0012\u00020\u0002\u0012\u0004\u0012\u00020\u00030\u0001B\u000f\u0012\u0006\u0010\r\u001a\u00020\u0002¢\u0006\u0004\b\u000e\u0010\u000fJ\u001f\u0010\b\u001a\u00020\u00072\u0006\u0010\u0005\u001a\u00020\u00042\u0006\u0010\u0006\u001a\u00020\u0003H\u0014¢\u0006\u0004\b\b\u0010\tR\u0016\u0010\u000b\u001a\u00020\n8\u0002@\u0002X\u0004¢\u0006\u0006\n\u0004\b\u000b\u0010\f¨\u0006\u0010"}, d2 = {"Lcom/discord/widgets/settings/billing/PaymentSourceAdapter$PaymentSourceItemViewHolder;", "Lcom/discord/utilities/mg_recycler/MGRecyclerViewHolder;", "Lcom/discord/widgets/settings/billing/PaymentSourceAdapter;", "Lcom/discord/widgets/settings/billing/PaymentSourceAdapter$Item;", "", "position", "data", "", "onConfigure", "(ILcom/discord/widgets/settings/billing/PaymentSourceAdapter$Item;)V", "Lcom/discord/databinding/PaymentMethodListItemBinding;", "binding", "Lcom/discord/databinding/PaymentMethodListItemBinding;", "adapter", "<init>", "(Lcom/discord/widgets/settings/billing/PaymentSourceAdapter;)V", "app_productionGoogleRelease"}, k = 1, mv = {1, 4, 2})
++    /* compiled from: PaymentSourceAdapter.kt */
+     public static final class PaymentSourceItemViewHolder extends MGRecyclerViewHolder<PaymentSourceAdapter, Item> {
+         private final PaymentMethodListItemBinding binding;
+ 

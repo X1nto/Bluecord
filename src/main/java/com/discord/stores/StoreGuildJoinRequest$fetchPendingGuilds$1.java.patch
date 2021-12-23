@@ -1,0 +1,40 @@
+--- ./discord_94011/src/main/java/com/discord/stores/StoreGuildJoinRequest$fetchPendingGuilds$1.java	2021-12-24 01:10:12.826025500 +0400
++++ ./bluecord/src/main/java/com/discord/stores/StoreGuildJoinRequest$fetchPendingGuilds$1.java	2021-12-24 01:08:33.324262000 +0400
+@@ -29,8 +29,8 @@ public final class StoreGuildJoinRequest
+ 
+     @Override // kotlin.jvm.functions.Function0
+     public final void invoke() {
+-        Map<Long, Guild> guilds = this.this$0.guildsStore.getGuilds();
+-        Set keySet = this.this$0.guildJoinRequests.keySet();
++        Map<Long, Guild> guilds = StoreGuildJoinRequest.access$getGuildsStore$p(this.this$0).getGuilds();
++        Set keySet = StoreGuildJoinRequest.access$getGuildJoinRequests$p(this.this$0).keySet();
+         m.checkNotNullExpressionValue(keySet, "guildJoinRequests.keys");
+         ArrayList arrayList = new ArrayList();
+         Iterator it = keySet.iterator();
+@@ -42,7 +42,7 @@ public final class StoreGuildJoinRequest
+             Object next = it.next();
+             Long l = (Long) next;
+             m.checkNotNullExpressionValue(l, "it");
+-            if (!guilds.containsKey(l) && !this.this$0.pendingGuilds.containsKey(l)) {
++            if (!guilds.containsKey(l) && !StoreGuildJoinRequest.access$getPendingGuilds$p(this.this$0).containsKey(l)) {
+                 z2 = true;
+             }
+             if (z2) {
+@@ -68,7 +68,7 @@ public final class StoreGuildJoinRequest
+ 
+                 public final void invoke(final List<com.discord.api.guild.Guild> list) {
+                     m.checkNotNullParameter(list, "results");
+-                    this.this$0.this$0.dispatcher.schedule(new Function0<Unit>(this) {
++                    StoreGuildJoinRequest.access$getDispatcher$p(this.this$0.this$0).schedule(new Function0<Unit>(this) {
+                         /* class com.discord.stores.StoreGuildJoinRequest$fetchPendingGuilds$1.AnonymousClass1.AnonymousClass1 */
+                         public final /* synthetic */ AnonymousClass1 this$0;
+ 
+@@ -79,7 +79,7 @@ public final class StoreGuildJoinRequest
+                         @Override // kotlin.jvm.functions.Function0
+                         public final void invoke() {
+                             for (com.discord.api.guild.Guild guild : list) {
+-                                this.this$0.this$0.this$0.pendingGuilds.put(Long.valueOf(guild.p()), new Guild(guild));
++                                StoreGuildJoinRequest.access$getPendingGuilds$p(this.this$0.this$0.this$0).put(Long.valueOf(guild.p()), new Guild(guild));
+                             }
+                             this.this$0.this$0.this$0.markChanged();
+                         }

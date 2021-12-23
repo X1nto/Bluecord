@@ -1,0 +1,10 @@
+--- ./discord_94011/src/main/java/com/discord/widgets/settings/profile/WidgetEditProfileBannerSheet$onResume$1.java	2021-12-24 01:10:15.260028700 +0400
++++ ./bluecord/src/main/java/com/discord/widgets/settings/profile/WidgetEditProfileBannerSheet$onResume$1.java	2021-12-24 01:08:35.740262400 +0400
+@@ -28,6 +28,6 @@ public final class WidgetEditProfileBann
+ 
+     public final void invoke(EditProfileBannerSheetViewModel.ViewState viewState) {
+         m.checkNotNullParameter(viewState, "viewState");
+-        this.this$0.configureUi(viewState);
++        WidgetEditProfileBannerSheet.access$configureUi(this.this$0, viewState);
+     }
+ }

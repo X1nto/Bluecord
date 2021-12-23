@@ -1,0 +1,13 @@
+--- ./discord_94011/src/main/java/h0/c/a.java	2021-12-24 01:10:16.480026600 +0400
++++ ./bluecord/src/main/java/h0/c/a.java	2021-12-24 01:08:36.853262300 +0400
+@@ -15,8 +15,8 @@ public final /* synthetic */ class a imp
+     public final void run() {
+         Camera1Session.AnonymousClass2 r0 = this.i;
+         byte[] bArr = this.j;
+-        if (Camera1Session.this.state == Camera1Session.SessionState.RUNNING) {
+-            Camera1Session.this.camera.addCallbackBuffer(bArr);
++        if (Camera1Session.access$400(Camera1Session.this) == Camera1Session.SessionState.RUNNING) {
++            Camera1Session.access$300(Camera1Session.this).addCallbackBuffer(bArr);
+         }
+     }
+ }

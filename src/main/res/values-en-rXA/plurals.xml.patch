@@ -1,0 +1,1842 @@
+--- ./discord_94011/src/main/res/values-en-rXA/plurals.xml	2021-12-24 01:10:10.705025000 +0400
++++ ./bluecord/src/main/res/values-en-rXA/plurals.xml	2021-12-24 01:08:30.486262800 +0400
+@@ -1,1426 +1,1426 @@
+ <?xml version="1.0" encoding="utf-8"?>
+ <resources>
+     <plurals name="activity_feed_now_playing_header_two_known_extras">
+-        <item quantity="one">[»{extras}« öţĥéŕ one two]</item>
+         <item quantity="other">[»{extras}« öţĥéŕš one two]</item>
++        <item quantity="one">[»{extras}« öţĥéŕ one two]</item>
+     </plurals>
+     <plurals name="activity_feed_single_member_list_header_memberCount">
+-        <item quantity="one">[»{memberCount}« Þéŕšöñ one two]</item>
+         <item quantity="other">[»{memberCount}« Þéöþļé one two]</item>
++        <item quantity="one">[»{memberCount}« Þéŕšöñ one two]</item>
+     </plurals>
+     <plurals name="activity_feed_user_played_days_ago_time">
+-        <item quantity="one">[ðåý one]</item>
+         <item quantity="other">[ðåýš one]</item>
++        <item quantity="one">[ðåý one]</item>
+     </plurals>
+     <plurals name="activity_feed_user_played_hours_ago_time">
+-        <item quantity="one">[ĥöûŕ one]</item>
+         <item quantity="other">[ĥöûŕš one]</item>
++        <item quantity="one">[ĥöûŕ one]</item>
+     </plurals>
+     <plurals name="activity_feed_user_played_minutes_ago_time">
+-        <item quantity="one">[ḿîñûţé one two]</item>
+         <item quantity="other">[ḿîñûţéš one two]</item>
++        <item quantity="one">[ḿîñûţé one two]</item>
+     </plurals>
+     <plurals name="activity_feed_user_played_seconds_ago_time">
+-        <item quantity="one">[šéçöñð one two]</item>
+         <item quantity="other">[šéçöñðš one two]</item>
++        <item quantity="one">[šéçöñð one two]</item>
+     </plurals>
+     <plurals name="age_gate_confirm_header_age">
+-        <item quantity="one">[1 ýéåŕ öļð one two]</item>
+         <item quantity="other">[»{age}« ýéåŕš öļð one two]</item>
++        <item quantity="one">[1 ýéåŕ öļð one two]</item>
+     </plurals>
+     <plurals name="age_gate_underage_existing_body_deletion_with_days_days">
+-        <item quantity="one">[1 ðåý one]</item>
+         <item quantity="other">[»{days}« ðåýš one]</item>
++        <item quantity="one">[1 ðåý one]</item>
+     </plurals>
+     <plurals name="announcement_edit_rate_limit_retryAfterMinutes">
+-        <item quantity="one">[1 ḿîñûţé one two]</item>
+         <item quantity="other">[»{retryAfterMinutes}« ḿîñûţéš one two]</item>
++        <item quantity="one">[1 ḿîñûţé one two]</item>
+     </plurals>
+     <plurals name="application_progress_indicator_installing_hours_timeRemaining">
+-        <item quantity="one">[»{#}« ĥöûŕ one]</item>
+         <item quantity="other">[»{#}« ĥöûŕš one two]</item>
++        <item quantity="one">[»{#}« ĥöûŕ one]</item>
+     </plurals>
+     <plurals name="application_progress_indicator_installing_minutes_timeRemaining">
+-        <item quantity="one">[»{#}« ḿîñûţé one two]</item>
+         <item quantity="other">[»{#}« ḿîñûţéš one two]</item>
++        <item quantity="one">[»{#}« ḿîñûţé one two]</item>
+     </plurals>
+     <plurals name="application_progress_indicator_installing_seconds_timeRemaining">
+-        <item quantity="one">[ŵŕåþþîñĝ ûþ one two]</item>
+         <item quantity="other">[»{#}« šéçöñðš ŕéḿåîñîñĝ one two three]</item>
++        <item quantity="one">[ŵŕåþþîñĝ ûþ one two]</item>
+     </plurals>
+     <plurals name="application_progress_indicator_updating_hours_timeRemaining">
+-        <item quantity="one">[»{#}« ĥöûŕ one]</item>
+         <item quantity="other">[»{#}« ĥöûŕš one two]</item>
++        <item quantity="one">[»{#}« ĥöûŕ one]</item>
+     </plurals>
+     <plurals name="application_progress_indicator_updating_minutes_timeRemaining">
+-        <item quantity="one">[»{#}« ḿîñûţé one two]</item>
+         <item quantity="other">[»{#}« ḿîñûţéš one two]</item>
++        <item quantity="one">[»{#}« ḿîñûţé one two]</item>
+     </plurals>
+     <plurals name="application_progress_indicator_updating_seconds_timeRemaining">
+-        <item quantity="one">[ŵŕåþþîñĝ ûþ one two]</item>
+         <item quantity="other">[»{#}« šéçöñðš ŕéḿåîñîñĝ one two three]</item>
++        <item quantity="one">[ŵŕåþþîñĝ ûþ one two]</item>
+     </plurals>
+     <plurals name="application_store_gift_purchase_confirm_monthly_mobile_intervalCount">
+-        <item quantity="one">[»{#}« ḿöñţĥ one two]</item>
+         <item quantity="other">[»{#}« ḿöñţĥš one two]</item>
++        <item quantity="one">[»{#}« ḿöñţĥ one two]</item>
+     </plurals>
+     <plurals name="application_store_gift_purchase_confirm_subscription_monthly_intervalCount">
+-        <item quantity="one">[»{#}« ḿöñţĥ one two]</item>
+         <item quantity="other">[»{#}« ḿöñţĥš one two]</item>
++        <item quantity="one">[»{#}« ḿöñţĥ one two]</item>
+     </plurals>
+     <plurals name="application_store_gift_purchase_confirm_subscription_yearly_intervalCount">
+-        <item quantity="one">[»{#}« ýéåŕ one]</item>
+         <item quantity="other">[»{#}« ýéåŕš one two]</item>
++        <item quantity="one">[»{#}« ýéåŕ one]</item>
+     </plurals>
+     <plurals name="application_store_gift_purchase_confirm_yearly_mobile_intervalCount">
+-        <item quantity="one">[»{#}« ýéåŕ one]</item>
+         <item quantity="other">[»{#}« ýéåŕš one two]</item>
++        <item quantity="one">[»{#}« ýéåŕ one]</item>
+     </plurals>
+     <plurals name="application_store_recommendation_ever_played_other_count">
+-        <item quantity="one">[1 þéŕšöñ one two]</item>
+         <item quantity="other">[»{count}« þéöþļé one two]</item>
++        <item quantity="one">[1 þéŕšöñ one two]</item>
+     </plurals>
+     <plurals name="application_store_recommendation_now_playing_other_count">
+-        <item quantity="one">[1 þéŕšöñ one two]</item>
+         <item quantity="other">[»{count}« þéöþļé one two]</item>
++        <item quantity="one">[1 þéŕšöñ one two]</item>
+     </plurals>
+     <plurals name="application_store_recommendation_recently_played_other_count">
+-        <item quantity="one">[1 þéŕšöñ one two]</item>
+         <item quantity="other">[»{count}« þéöþļé one two]</item>
++        <item quantity="one">[1 þéŕšöñ one two]</item>
+     </plurals>
+     <plurals name="attach_payment_source_optional_with_entitlements_warning_months">
+-        <item quantity="one">[»{#}« ḿöñţĥ one two]</item>
+         <item quantity="other">[»{#}« ḿöñţĥš one two]</item>
++        <item quantity="one">[»{#}« ḿöñţĥ one two]</item>
+     </plurals>
+     <plurals name="autocomplete_emoji_upsell_count">
+-        <item quantity="one">[»{#}« ḿöŕé ḿåţçĥîñĝ éḿöĵî one two three]</item>
+         <item quantity="other">[»{#}« ḿöŕé ḿåţçĥîñĝ éḿöĵîš one two three]</item>
++        <item quantity="one">[»{#}« ḿöŕé ḿåţçĥîñĝ éḿöĵî one two three]</item>
+     </plurals>
+     <plurals name="bans_header_bans">
+-        <item quantity="one">[1 βåñ one]</item>
+         <item quantity="other">[»{bans}« βåñš one]</item>
++        <item quantity="one">[1 βåñ one]</item>
+     </plurals>
+     <plurals name="billing_plan_select_description_premium_tier_1_premium_guild_bundle_num">
+-        <item quantity="one">[»{#}« βööšţ one two]</item>
+         <item quantity="other">[»{#}« βööšţš one two]</item>
++        <item quantity="one">[»{#}« βööšţ one two]</item>
+     </plurals>
+     <plurals name="billing_plan_select_description_premium_tier_2_premium_guild_bundle_num">
+-        <item quantity="one">[»{#}« βööšţ one two]</item>
+         <item quantity="other">[»{#}« βööšţš one two]</item>
++        <item quantity="one">[»{#}« βööšţ one two]</item>
+     </plurals>
+     <plurals name="billing_plan_select_includes_boosts_num">
+-        <item quantity="one">[»{#}« βööšţ one two]</item>
+         <item quantity="other">[»{#}« βööšţš one two]</item>
++        <item quantity="one">[»{#}« βööšţ one two]</item>
+     </plurals>
+     <plurals name="billing_price_per_year_months_free_numFreeMonths">
+-        <item quantity="one">[»{#}« Ḿöñţĥ one two]</item>
+         <item quantity="other">[»{#}« Ḿöñţĥš one two]</item>
++        <item quantity="one">[»{#}« Ḿöñţĥ one two]</item>
+     </plurals>
+     <plurals name="billing_refund_purchase_date_daysSincePurchase">
+-        <item quantity="one">[»{daysSincePurchase}« ðåý åĝö one two]</item>
+         <item quantity="other">[»{daysSincePurchase}« ðåýš åĝö one two]</item>
++        <item quantity="one">[»{daysSincePurchase}« ðåý åĝö one two]</item>
+     </plurals>
+     <plurals name="billing_switch_plan_confirm_upgrade_tier_2_year_numFreeGuildSubscriptions">
+-        <item quantity="one">[»{#}« ŠéŕVéŕ βööšţ one two]</item>
+         <item quantity="other">[»{#}« ŠéŕVéŕ βööšţš one two three]</item>
++        <item quantity="one">[»{#}« ŠéŕVéŕ βööšţ one two]</item>
+     </plurals>
+     <plurals name="billing_switch_plan_tier_2_description_numFreeGuildSubscriptions">
+-        <item quantity="one">[»{#}« ŠéŕVéŕ βööšţ one two]</item>
+         <item quantity="other">[»{#}« ŠéŕVéŕ βööšţš one two three]</item>
++        <item quantity="one">[»{#}« ŠéŕVéŕ βööšţ one two]</item>
+     </plurals>
+     <plurals name="billing_switch_plan_upgrade_body_tier_2_year_numFreeGuildSubscriptions">
+-        <item quantity="one">[»{#}« ŠéŕVéŕ βööšţ one two]</item>
+         <item quantity="other">[»{#}« ŠéŕVéŕ βööšţš one two three]</item>
++        <item quantity="one">[»{#}« ŠéŕVéŕ βööšţ one two]</item>
+     </plurals>
+     <plurals name="blocked_message_count_count">
+-        <item quantity="one">[»{count}« ɓļöçķéð ḿéššåĝé one two three]</item>
+         <item quantity="other">[»{count}« ɓļöçķéð ḿéššåĝéš one two three]</item>
++        <item quantity="one">[»{count}« ɓļöçķéð ḿéššåĝé one two three]</item>
+     </plurals>
+     <plurals name="blocked_messages_count">
+-        <item quantity="one">[1 βļöçķéð Ḿéššåĝé one two three]</item>
+         <item quantity="other">[»{count}« βļöçķéð Ḿéššåĝéš one two three]</item>
++        <item quantity="one">[1 βļöçķéð Ḿéššåĝé one two three]</item>
+     </plurals>
+     <plurals name="blocked_messages_hide_count">
+-        <item quantity="one">[Çöļļåþšé ḿéššåĝé one two three]</item>
+         <item quantity="other">[Çöļļåþšé ḿéššåĝéš one two three]</item>
++        <item quantity="one">[Çöļļåþšé ḿéššåĝé one two three]</item>
+     </plurals>
+     <plurals name="blocked_messages_show_count">
+-        <item quantity="one">[Šĥöŵ ḿéššåĝé one two]</item>
+         <item quantity="other">[Šĥöŵ ḿéššåĝéš one two]</item>
++        <item quantity="one">[Šĥöŵ ḿéššåĝé one two]</item>
+     </plurals>
+     <plurals name="camera_disabled_limit_reached_limit">
+-        <item quantity="one">[»{#}« ûšéŕ one]</item>
+         <item quantity="other">[»{#}« ûšéŕš one two]</item>
++        <item quantity="one">[»{#}« ûšéŕ one]</item>
+     </plurals>
+     <plurals name="camera_preview_video_background_upload_max_tooltip_maxCustomBackgrounds">
+-        <item quantity="one">[»{#}« ɓåçķĝŕöûñð one two]</item>
+         <item quantity="other">[»{#}« ɓåçķĝŕöûñðš one two]</item>
++        <item quantity="one">[»{#}« ɓåçķĝŕöûñð one two]</item>
+     </plurals>
+     <plurals name="change_identity_nickname_too_short_minLength">
+-        <item quantity="one">[»{#}« çĥåŕåçţéŕ one two]</item>
+         <item quantity="other">[»{#}« çĥåŕåçţéŕš one two]</item>
++        <item quantity="one">[»{#}« çĥåŕåçţéŕ one two]</item>
+     </plurals>
+     <plurals name="channel_members_a11y_label_count">
+-        <item quantity="one">[»{#}« ḿéḿɓéŕ one two]</item>
+         <item quantity="other">[»{#}« ḿéḿɓéŕš one two]</item>
++        <item quantity="one">[»{#}« ḿéḿɓéŕ one two]</item>
+     </plurals>
+     <plurals name="channel_mention_badge_a11y_label_mentionCount">
+-        <item quantity="one">[»{#}« ḿéñţîöñ one two]</item>
+         <item quantity="other">[»{#}« ḿéñţîöñš one two]</item>
++        <item quantity="one">[»{#}« ḿéñţîöñ one two]</item>
+     </plurals>
+     <plurals name="channel_slowmode_cooldown_seconds">
+-        <item quantity="one">[1 šéçöñð one two]</item>
+         <item quantity="other">[»{seconds}« šéçöñðš one two]</item>
++        <item quantity="one">[1 šéçöñð one two]</item>
+     </plurals>
+     <plurals name="channel_slowmode_desc_hours_hours">
+-        <item quantity="one">[1 ĥöûŕ one two]</item>
+         <item quantity="other">[»{hours}« ĥöûŕš one two]</item>
++        <item quantity="one">[1 ĥöûŕ one two]</item>
+     </plurals>
+     <plurals name="channel_slowmode_desc_hours_minutes">
+-        <item quantity="one">[1 ḿîñûţé one two]</item>
+         <item quantity="other">[»{minutes}« ḿîñûţéš one two]</item>
++        <item quantity="one">[1 ḿîñûţé one two]</item>
+     </plurals>
+     <plurals name="channel_slowmode_desc_hours_seconds">
+-        <item quantity="one">[1 šéçöñð one two]</item>
+         <item quantity="other">[»{seconds}« šéçöñðš one two]</item>
++        <item quantity="one">[1 šéçöñð one two]</item>
+     </plurals>
+     <plurals name="channel_slowmode_desc_minutes_minutes">
+-        <item quantity="one">[1 ḿîñûţé one two]</item>
+         <item quantity="other">[»{minutes}« ḿîñûţéš one two]</item>
++        <item quantity="one">[1 ḿîñûţé one two]</item>
+     </plurals>
+     <plurals name="channel_slowmode_desc_minutes_seconds">
+-        <item quantity="one">[1 šéçöñð one two]</item>
+         <item quantity="other">[»{seconds}« šéçöñðš one two]</item>
++        <item quantity="one">[1 šéçöñð one two]</item>
+     </plurals>
+     <plurals name="channel_slowmode_desc_seconds">
+-        <item quantity="one">[1 šéçöñð one two]</item>
+         <item quantity="other">[»{seconds}« šéçöñðš one two]</item>
++        <item quantity="one">[1 šéçöñð one two]</item>
+     </plurals>
+     <plurals name="create_stage_instance_speakers_label_speakerCount">
+-        <item quantity="one">[1 Šþéåķéŕ one two]</item>
+         <item quantity="other">[»{speakerCount}« Šþéåķéŕš one two]</item>
++        <item quantity="one">[1 Šþéåķéŕ one two]</item>
+     </plurals>
+     <plurals name="custom_status_clear_in_hours_hours">
+-        <item quantity="one">[»{#}« ĥöûŕ one]</item>
+         <item quantity="other">[»{#}« ĥöûŕš one two]</item>
++        <item quantity="one">[»{#}« ĥöûŕ one]</item>
+     </plurals>
+     <plurals name="custom_status_clear_in_minutes_minutes">
+-        <item quantity="one">[»{#}« ḿîñûţé one two]</item>
+         <item quantity="other">[»{#}« ḿîñûţéš one two]</item>
++        <item quantity="one">[»{#}« ḿîñûţé one two]</item>
+     </plurals>
+     <plurals name="custom_status_hours_hours">
+-        <item quantity="one">[»{#}« ĥöûŕ one]</item>
+         <item quantity="other">[»{#}« ĥöûŕš one two]</item>
++        <item quantity="one">[»{#}« ĥöûŕ one]</item>
+     </plurals>
+     <plurals name="custom_status_minutes_minutes">
+-        <item quantity="one">[»{#}« ḿîñûţé one two]</item>
+         <item quantity="other">[»{#}« ḿîñûţéš one two]</item>
++        <item quantity="one">[»{#}« ḿîñûţé one two]</item>
+     </plurals>
+     <plurals name="day_count">
+-        <item quantity="one">[ðåý one]</item>
+         <item quantity="other">[»{count}« ðåýš one]</item>
++        <item quantity="one">[ðåý one]</item>
+     </plurals>
+     <plurals name="directory_search_results_header_numResults">
+-        <item quantity="one">[**1** çöḿḿûñîţý one two three]</item>
+         <item quantity="other">[**»{numResults}«** çöḿḿûñîţîéš one two three]</item>
++        <item quantity="one">[**1** çöḿḿûñîţý one two three]</item>
+     </plurals>
+     <plurals name="discovery_speaker_count_speakersCount">
+-        <item quantity="one">[+»{count}« Šþéåķéŕ one two]</item>
+         <item quantity="other">[+»{count}« Šþéåķéŕš one two]</item>
++        <item quantity="one">[+»{count}« Šþéåķéŕ one two]</item>
+     </plurals>
+     <plurals name="dm_tooltip_a11y_label_mentions">
+-        <item quantity="one">[, »{#}« ûñŕéåð ḿéššåĝé one two three]</item>
+         <item quantity="other">[, »{#}« ûñŕéåð ḿéššåĝéš one two three]</item>
++        <item quantity="one">[, »{#}« ûñŕéåð ḿéššåĝé one two three]</item>
+     </plurals>
+     <plurals name="duration_days_days">
+-        <item quantity="one">[1 ðåý one]</item>
+         <item quantity="other">[»{days}« ðåýš one]</item>
++        <item quantity="one">[1 ðåý one]</item>
+     </plurals>
+     <plurals name="duration_days_short_days">
+-        <item quantity="one">[1ð one]</item>
+         <item quantity="other">[»{days}«ð one]</item>
++        <item quantity="one">[1ð one]</item>
+     </plurals>
+     <plurals name="duration_hours_hours">
+-        <item quantity="one">[1 ĥöûŕ one two]</item>
+         <item quantity="other">[»{hours}« ĥöûŕš one two]</item>
++        <item quantity="one">[1 ĥöûŕ one two]</item>
+     </plurals>
+     <plurals name="duration_hours_short_hours">
+-        <item quantity="one">[1ĥ one]</item>
+         <item quantity="other">[»{hours}«ĥ one]</item>
++        <item quantity="one">[1ĥ one]</item>
+     </plurals>
+     <plurals name="duration_mins_mins">
+-        <item quantity="one">[1 ḿîñ one]</item>
+         <item quantity="other">[»{mins}« ḿîñš one]</item>
++        <item quantity="one">[1 ḿîñ one]</item>
+     </plurals>
+     <plurals name="duration_minutes_minutes">
+-        <item quantity="one">[1 ḿîñûţé one two]</item>
+         <item quantity="other">[»{minutes}« ḿîñûţéš one two]</item>
++        <item quantity="one">[1 ḿîñûţé one two]</item>
+     </plurals>
+     <plurals name="duration_minutes_short_minutes">
+-        <item quantity="one">[1ḿ one]</item>
+         <item quantity="other">[»{minutes}«ḿ one]</item>
++        <item quantity="one">[1ḿ one]</item>
+     </plurals>
+     <plurals name="duration_seconds_seconds">
+-        <item quantity="one">[1 šéçöñð one two]</item>
+         <item quantity="other">[»{seconds}« šéçöñðš one two]</item>
++        <item quantity="one">[1 šéçöñð one two]</item>
+     </plurals>
+     <plurals name="duration_seconds_short_seconds">
+-        <item quantity="one">[1š one]</item>
+         <item quantity="other">[»{seconds}«š one]</item>
++        <item quantity="one">[1š one]</item>
+     </plurals>
+     <plurals name="embedded_activities_are_participating_count">
+-        <item quantity="one">[»{#}« öţĥéŕ one two]</item>
+         <item quantity="other">[»{#}« öţĥéŕš one two]</item>
++        <item quantity="one">[»{#}« öţĥéŕ one two]</item>
+     </plurals>
+     <plurals name="embedded_activities_are_playing_count">
+-        <item quantity="one">[»{#}« öţĥéŕ one two]</item>
+         <item quantity="other">[»{#}« öţĥéŕš one two]</item>
++        <item quantity="one">[»{#}« öţĥéŕ one two]</item>
+     </plurals>
+     <plurals name="embedded_activities_are_watching_count">
+-        <item quantity="one">[»{#}« öţĥéŕ one two]</item>
+         <item quantity="other">[»{#}« öţĥéŕš one two]</item>
++        <item quantity="one">[»{#}« öţĥéŕ one two]</item>
+     </plurals>
+     <plurals name="emoji_slots_available_count">
+-        <item quantity="one">[»{count}« šļöţ one]</item>
+         <item quantity="other">[»{count}« šļöţš one two]</item>
++        <item quantity="one">[»{count}« šļöţ one]</item>
+     </plurals>
+     <plurals name="emojis_title_count">
+-        <item quantity="one">[»{count}« éḿöĵî one two]</item>
+         <item quantity="other">[»{count}« éḿöĵîš one two]</item>
++        <item quantity="one">[»{count}« éḿöĵî one two]</item>
+     </plurals>
+     <plurals name="exo_controls_fastforward_by_amount_description">
+-        <item quantity="one">[Fåšţ ƒöŕŵåŕð %d šéçöñð one two three]</item>
+         <item quantity="other">[Fåšţ ƒöŕŵåŕð %d šéçöñðš one two three]</item>
++        <item quantity="one">[Fåšţ ƒöŕŵåŕð %d šéçöñð one two three]</item>
+     </plurals>
+     <plurals name="exo_controls_rewind_by_amount_description">
+-        <item quantity="one">[Ŕéŵîñð %d šéçöñð one two three]</item>
+         <item quantity="other">[Ŕéŵîñð %d šéçöñðš one two three]</item>
++        <item quantity="one">[Ŕéŵîñð %d šéçöñð one two three]</item>
+     </plurals>
+     <plurals name="form_help_last_seen_days">
+-        <item quantity="one">[1 ðåý one]</item>
+         <item quantity="other">[»{days}« ðåýš one]</item>
++        <item quantity="one">[1 ðåý one]</item>
+     </plurals>
+     <plurals name="form_help_last_seen_members">
+-        <item quantity="one">[1 ḿéḿɓéŕ one two]</item>
+         <item quantity="other">[»{members}« ḿéḿɓéŕš one two]</item>
++        <item quantity="one">[1 ḿéḿɓéŕ one two]</item>
+     </plurals>
+     <plurals name="form_help_last_seen_with_roles_days">
+-        <item quantity="one">[1 ðåý one]</item>
+         <item quantity="other">[»{days}« ðåýš one]</item>
++        <item quantity="one">[1 ðåý one]</item>
+     </plurals>
+     <plurals name="form_help_last_seen_with_roles_members">
+-        <item quantity="one">[1 ḿéḿɓéŕ one two]</item>
+         <item quantity="other">[»{members}« ḿéḿɓéŕš one two]</item>
++        <item quantity="one">[1 ḿéḿɓéŕ one two]</item>
+     </plurals>
+     <plurals name="game_feed_unknown_players_count">
+-        <item quantity="one">[»{#}« Ûñķñöŵñ Þļåýéŕ one two three]</item>
+         <item quantity="other">[»{#}« Ûñķñöŵñ Þļåýéŕš one two three]</item>
++        <item quantity="one">[»{#}« Ûñķñöŵñ Þļåýéŕ one two three]</item>
+     </plurals>
+     <plurals name="game_feed_user_played_days_ago_time">
+-        <item quantity="one">[ðåý one]</item>
+         <item quantity="other">[ðåýš one]</item>
++        <item quantity="one">[ðåý one]</item>
+     </plurals>
+     <plurals name="game_feed_user_played_hours_ago_time">
+-        <item quantity="one">[ĥöûŕ one]</item>
+         <item quantity="other">[ĥöûŕš one]</item>
++        <item quantity="one">[ĥöûŕ one]</item>
+     </plurals>
+     <plurals name="game_feed_user_played_minutes_ago_time">
+-        <item quantity="one">[ḿîñûţé one two]</item>
+         <item quantity="other">[ḿîñûţéš one two]</item>
++        <item quantity="one">[ḿîñûţé one two]</item>
+     </plurals>
+     <plurals name="game_feed_user_played_months_ago_time">
+-        <item quantity="one">[ḿöñţĥ one]</item>
+         <item quantity="other">[ḿöñţĥš one two]</item>
++        <item quantity="one">[ḿöñţĥ one]</item>
+     </plurals>
+     <plurals name="game_feed_user_played_weeks_ago_time">
+-        <item quantity="one">[ŵééķ one]</item>
+         <item quantity="other">[ŵééķš one]</item>
++        <item quantity="one">[ŵééķ one]</item>
+     </plurals>
+     <plurals name="game_feed_user_played_years_ago_time">
+-        <item quantity="one">[ýéåŕ one]</item>
+         <item quantity="other">[ýéåŕš one]</item>
++        <item quantity="one">[ýéåŕ one]</item>
+     </plurals>
+     <plurals name="game_feed_user_playing_for_days_time">
+-        <item quantity="one">[ðåý one]</item>
+         <item quantity="other">[ðåýš one]</item>
++        <item quantity="one">[ðåý one]</item>
+     </plurals>
+     <plurals name="game_feed_user_playing_for_hours_time">
+-        <item quantity="one">[ĥöûŕ one]</item>
+         <item quantity="other">[ĥöûŕš one]</item>
++        <item quantity="one">[ĥöûŕ one]</item>
+     </plurals>
+     <plurals name="game_feed_user_playing_for_minutes_time">
+-        <item quantity="one">[ḿîñûţé one two]</item>
+         <item quantity="other">[ḿîñûţéš one two]</item>
++        <item quantity="one">[ḿîñûţé one two]</item>
+     </plurals>
+     <plurals name="game_library_last_played_days_time">
+-        <item quantity="one">[ýéšţéŕðåý one two]</item>
+         <item quantity="other">[»{#}« ðåýš åĝö one two]</item>
++        <item quantity="one">[ýéšţéŕðåý one two]</item>
+     </plurals>
+     <plurals name="game_library_last_played_hours_time">
+-        <item quantity="one">[»{#}« ĥöûŕ one]</item>
+         <item quantity="other">[»{#}« ĥöûŕš one two]</item>
++        <item quantity="one">[»{#}« ĥöûŕ one]</item>
+     </plurals>
+     <plurals name="game_library_last_played_minutes_time">
+-        <item quantity="one">[»{#}« ḿîñûţé one two]</item>
+         <item quantity="other">[»{#}« ḿîñûţéš one two]</item>
++        <item quantity="one">[»{#}« ḿîñûţé one two]</item>
+     </plurals>
+     <plurals name="game_library_last_played_months_time">
+-        <item quantity="one">[ļåšţ ḿöñţĥ one two]</item>
+         <item quantity="other">[»{#}« ḿöñţĥš åĝö one two]</item>
++        <item quantity="one">[ļåšţ ḿöñţĥ one two]</item>
+     </plurals>
+     <plurals name="game_library_last_played_weeks_time">
+-        <item quantity="one">[ļåšţ ŵééķ one two]</item>
+         <item quantity="other">[»{#}« ŵééķš åĝö one two]</item>
++        <item quantity="one">[ļåšţ ŵééķ one two]</item>
+     </plurals>
+     <plurals name="game_library_last_played_years_time">
+-        <item quantity="one">[ļåšţ ýéåŕ one two]</item>
+         <item quantity="other">[»{#}« ýéåŕš åĝö one two]</item>
++        <item quantity="one">[ļåšţ ýéåŕ one two]</item>
+     </plurals>
+     <plurals name="game_library_time_played_hours_time">
+-        <item quantity="one">[ĥöûŕ one]</item>
+         <item quantity="other">[ĥöûŕš one]</item>
++        <item quantity="one">[ĥöûŕ one]</item>
+     </plurals>
+     <plurals name="game_library_time_played_minutes_time">
+-        <item quantity="one">[ḿîñûţé one two]</item>
+         <item quantity="other">[ḿîñûţéš one two]</item>
++        <item quantity="one">[ḿîñûţé one two]</item>
+     </plurals>
+     <plurals name="game_library_time_played_seconds_time">
+-        <item quantity="one">[šéçöñð one two]</item>
+         <item quantity="other">[šéçöñðš one two]</item>
++        <item quantity="one">[šéçöñð one two]</item>
+     </plurals>
+     <plurals name="game_library_updates_installing_hours_timeRemaining">
+-        <item quantity="one">[1 ĥöûŕ one two]</item>
+         <item quantity="other">[»{#}« ĥöûŕš one two]</item>
++        <item quantity="one">[1 ĥöûŕ one two]</item>
+     </plurals>
+     <plurals name="game_library_updates_installing_minutes_timeRemaining">
+-        <item quantity="one">[1 ḿîñûţé one two]</item>
+         <item quantity="other">[»{#}« ḿîñûţéš one two]</item>
++        <item quantity="one">[1 ḿîñûţé one two]</item>
+     </plurals>
+     <plurals name="game_library_updates_installing_seconds_timeRemaining">
+-        <item quantity="one">[ŵŕåþþîñĝ ûþ one two]</item>
+         <item quantity="other">[»{#}« šéçöñðš ŕéḿåîñîñĝ one two three]</item>
++        <item quantity="one">[ŵŕåþþîñĝ ûþ one two]</item>
+     </plurals>
+     <plurals name="game_library_updates_updating_updating_hours_timeRemaining">
+-        <item quantity="one">[1 ĥöûŕ one two]</item>
+         <item quantity="other">[»{#}« ĥöûŕš one two]</item>
++        <item quantity="one">[1 ĥöûŕ one two]</item>
+     </plurals>
+     <plurals name="game_library_updates_updating_updating_minutes_timeRemaining">
+-        <item quantity="one">[1 ḿîñûţé one two]</item>
+         <item quantity="other">[»{#}« ḿîñûţéš one two]</item>
++        <item quantity="one">[1 ḿîñûţé one two]</item>
+     </plurals>
+     <plurals name="game_library_updates_updating_updating_seconds_timeRemaining">
+-        <item quantity="one">[ŵŕåþþîñĝ ûþ one two]</item>
+         <item quantity="other">[»{#}« šéçöñðš ŕéḿåîñîñĝ one two three]</item>
++        <item quantity="one">[ŵŕåþþîñĝ ûþ one two]</item>
+     </plurals>
+     <plurals name="gift_code_auth_gifted_subscription_monthly_intervalCount">
+-        <item quantity="one">[»{#}« ḿöñţĥ one two]</item>
+         <item quantity="other">[»{#}« ḿöñţĥš one two]</item>
++        <item quantity="one">[»{#}« ḿöñţĥ one two]</item>
+     </plurals>
+     <plurals name="gift_code_auth_gifted_subscription_yearly_intervalCount">
+-        <item quantity="one">[»{#}« ýéåŕ one]</item>
+         <item quantity="other">[»{#}« ýéåŕš one two]</item>
++        <item quantity="one">[»{#}« ýéåŕ one]</item>
+     </plurals>
+     <plurals name="gift_confirmation_body_subscription_monthly_confirm_intervalCount">
+-        <item quantity="one">[»{#}« ḿöñţĥ one two]</item>
+         <item quantity="other">[»{#}« ḿöñţĥš one two]</item>
++        <item quantity="one">[»{#}« ḿöñţĥ one two]</item>
+     </plurals>
+     <plurals name="gift_confirmation_body_subscription_yearly_confirm_intervalCount">
+-        <item quantity="one">[»{#}« ýéåŕ one]</item>
+         <item quantity="other">[»{#}« ýéåŕš one two]</item>
++        <item quantity="one">[»{#}« ýéåŕ one]</item>
+     </plurals>
+     <plurals name="gift_confirmation_body_success_generic_subscription_monthly_intervalCount">
+-        <item quantity="one">[»{#}« ḿöñţĥ one two]</item>
+         <item quantity="other">[»{#}« ḿöñţĥš one two]</item>
++        <item quantity="one">[»{#}« ḿöñţĥ one two]</item>
+     </plurals>
+     <plurals name="gift_confirmation_body_success_generic_subscription_yearly_intervalCount">
+-        <item quantity="one">[»{#}« ýéåŕ one]</item>
+         <item quantity="other">[»{#}« ýéåŕš one two]</item>
++        <item quantity="one">[»{#}« ýéåŕ one]</item>
+     </plurals>
+     <plurals name="gift_confirmation_body_success_premium_tier_1_monthly_intervalCount">
+-        <item quantity="one">[»{#}« ḿöñţĥ one two]</item>
+         <item quantity="other">[»{#}« ḿöñţĥš one two]</item>
++        <item quantity="one">[»{#}« ḿöñţĥ one two]</item>
+     </plurals>
+     <plurals name="gift_confirmation_body_success_premium_tier_1_yearly_intervalCount">
+-        <item quantity="one">[»{#}« ýéåŕ one]</item>
+         <item quantity="other">[»{#}« ýéåŕš one two]</item>
++        <item quantity="one">[»{#}« ýéåŕ one]</item>
+     </plurals>
+     <plurals name="gift_confirmation_body_success_premium_tier_2_monthly_intervalCount">
+-        <item quantity="one">[»{#}« ḿöñţĥ one two]</item>
+         <item quantity="other">[»{#}« ḿöñţĥš one two]</item>
++        <item quantity="one">[»{#}« ḿöñţĥ one two]</item>
+     </plurals>
+     <plurals name="gift_confirmation_body_success_premium_tier_2_yearly_intervalCount">
+-        <item quantity="one">[»{#}« ýéåŕ one]</item>
+         <item quantity="other">[»{#}« ýéåŕš one two]</item>
++        <item quantity="one">[»{#}« ýéåŕ one]</item>
+     </plurals>
+     <plurals name="gift_confirmation_nitro_time_frame_months_time">
+-        <item quantity="one">[»{#}« ḿöñţĥ one two]</item>
+         <item quantity="other">[»{#}« ḿöñţĥš one two]</item>
++        <item quantity="one">[»{#}« ḿöñţĥ one two]</item>
+     </plurals>
+     <plurals name="gift_confirmation_nitro_time_frame_years_time">
+-        <item quantity="one">[»{#}« ýéåŕ one]</item>
+         <item quantity="other">[»{#}« ýéåŕš one two]</item>
++        <item quantity="one">[»{#}« ýéåŕ one]</item>
+     </plurals>
+     <plurals name="gift_embed_body_subscription_default_months_intervalCount">
+-        <item quantity="one">[»{#}« ḿöñţĥ one two]</item>
+         <item quantity="other">[»{#}« ḿöñţĥš one two]</item>
++        <item quantity="one">[»{#}« ḿöñţĥ one two]</item>
+     </plurals>
+     <plurals name="gift_embed_body_subscription_default_years_intervalCount">
+-        <item quantity="one">[»{#}« ýéåŕ one]</item>
+         <item quantity="other">[»{#}« ýéåŕš one two]</item>
++        <item quantity="one">[»{#}« ýéåŕ one]</item>
+     </plurals>
+     <plurals name="gift_embed_body_subscription_no_user_default_months_intervalCount">
+-        <item quantity="one">[»{#}« ḿöñţĥ one two]</item>
+         <item quantity="other">[»{#}« ḿöñţĥš one two]</item>
++        <item quantity="one">[»{#}« ḿöñţĥ one two]</item>
+     </plurals>
+     <plurals name="gift_embed_body_subscription_no_user_default_years_intervalCount">
+-        <item quantity="one">[»{#}« ýéåŕ one]</item>
+         <item quantity="other">[»{#}« ýéåŕš one two]</item>
++        <item quantity="one">[»{#}« ýéåŕ one]</item>
+     </plurals>
+     <plurals name="gift_embed_expiration_hours">
+-        <item quantity="one">[»{#}« ĥöûŕ one]</item>
+         <item quantity="other">[»{#}« ĥöûŕš one two]</item>
++        <item quantity="one">[»{#}« ĥöûŕ one]</item>
+     </plurals>
+     <plurals name="gift_inventory_copies_copies">
+-        <item quantity="one">[»{#}« çöþý one]</item>
+         <item quantity="other">[»{#}« çöþîéš one two]</item>
++        <item quantity="one">[»{#}« çöþý one]</item>
+     </plurals>
+     <plurals name="gift_inventory_expires_in_hours">
+-        <item quantity="one">[»{#}« ĥöûŕ one]</item>
+         <item quantity="other">[»{#}« ĥöûŕš one two]</item>
++        <item quantity="one">[»{#}« ĥöûŕ one]</item>
+     </plurals>
+     <plurals name="gift_inventory_expires_in_mobile_hours">
+-        <item quantity="one">[»{#}« ĥöûŕ one]</item>
+         <item quantity="other">[»{#}« ĥöûŕš one two]</item>
++        <item quantity="one">[»{#}« ĥöûŕ one]</item>
+     </plurals>
+     <plurals name="gift_inventory_subscription_months_intervalCount">
+-        <item quantity="one">[»{#}« ḿöñţĥ one two]</item>
+         <item quantity="other">[»{#}« ḿöñţĥš one two]</item>
++        <item quantity="one">[»{#}« ḿöñţĥ one two]</item>
+     </plurals>
+     <plurals name="gift_inventory_subscription_years_intervalCount">
+-        <item quantity="one">[»{#}« ýéåŕ one]</item>
+         <item quantity="other">[»{#}« ýéåŕš one two]</item>
++        <item quantity="one">[»{#}« ýéåŕ one]</item>
+     </plurals>
+     <plurals name="group_dm_invite_remaining_number">
+-        <item quantity="one">[Ýöû çåñ åðð 1 ḿöŕé ƒŕîéñð. one two three four]</item>
+         <item quantity="other">[Ýöû çåñ åðð »{number}« ḿöŕé ƒŕîéñðš. one two three four]</item>
++        <item quantity="one">[Ýöû çåñ åðð 1 ḿöŕé ƒŕîéñð. one two three four]</item>
+     </plurals>
+     <plurals name="group_dm_invite_unselect_users_number">
+-        <item quantity="one">[Ýöû ḿûšţ ûñšéļéçţ 1 ƒŕîéñð. one two three four]</item>
+         <item quantity="other">[Ýöû ḿûšţ ûñšéļéçţ »{number}« ƒŕîéñðš. one two three four]</item>
++        <item quantity="one">[Ýöû ḿûšţ ûñšéļéçţ 1 ƒŕîéñð. one two three four]</item>
+     </plurals>
+     <plurals name="guild_discovery_header_search_results_count">
+-        <item quantity="one">[1 ŕéšûļţ one two]</item>
+         <item quantity="other">[»{count}« ŕéšûļţš one two]</item>
++        <item quantity="one">[1 ŕéšûļţ one two]</item>
+     </plurals>
+     <plurals name="guild_discovery_search_results_category_header_count">
+-        <item quantity="one">[1 **»{category}«** çöḿḿûñîţý one two three]</item>
+         <item quantity="other">[»{count}« **»{category}«** çöḿḿûñîţîéš one two three]</item>
++        <item quantity="one">[1 **»{category}«** çöḿḿûñîţý one two three]</item>
+     </plurals>
+     <plurals name="guild_discovery_search_results_header_count">
+-        <item quantity="one">[1 çöḿḿûñîţý one two]</item>
+         <item quantity="other">[»{count}« çöḿḿûñîţîéš one two]</item>
++        <item quantity="one">[1 çöḿḿûñîţý one two]</item>
+     </plurals>
+     <plurals name="guild_event_interested_count_count">
+-        <item quantity="one">[»{#}« þéŕšöñ îš one two]</item>
+         <item quantity="other">[»{#}« þéöþļé åŕé one two]</item>
++        <item quantity="one">[»{#}« þéŕšöñ îš one two]</item>
+     </plurals>
+     <plurals name="guild_events_list_action_sheet_header_count">
+-        <item quantity="one">[1 ÉVéñţ one two]</item>
+         <item quantity="other">[»{count}« ÉVéñţš one two]</item>
++        <item quantity="one">[1 ÉVéñţ one two]</item>
+     </plurals>
+     <plurals name="guild_events_plural_number">
+-        <item quantity="one">[»{#}« ÉVéñţ one two]</item>
+         <item quantity="other">[»{#}« ÉVéñţš one two]</item>
++        <item quantity="one">[»{#}« ÉVéñţ one two]</item>
+     </plurals>
+     <plurals name="guild_folder_tooltip_a11y_label_mentions">
+-        <item quantity="one">[, »{#}« ûñŕéåð ḿéñţîöñ one two three]</item>
+         <item quantity="other">[, »{#}« ûñŕéåð ḿéñţîöñš one two three]</item>
++        <item quantity="one">[, »{#}« ûñŕéåð ḿéñţîöñ one two three]</item>
+     </plurals>
+     <plurals name="guild_folder_tooltip_a11y_label_with_expanded_state_mentions">
+-        <item quantity="one">[, »{#}« ûñŕéåð ḿéñţîöñ one two three]</item>
+         <item quantity="other">[, »{#}« ûñŕéåð ḿéñţîöñš one two three]</item>
++        <item quantity="one">[, »{#}« ûñŕéåð ḿéñţîöñ one two three]</item>
+     </plurals>
+     <plurals name="guild_role_subscription_tier_members_count_label_members">
+-        <item quantity="one">[1 ḿéḿɓéŕ one two]</item>
+         <item quantity="other">[»{members}« ḿéḿɓéŕš one two]</item>
++        <item quantity="one">[1 ḿéḿɓéŕ one two]</item>
+     </plurals>
+     <plurals name="guild_role_subscription_tier_review_exclusive_channel_header_count">
+-        <item quantity="one">[ÉхçļûšîVé Çĥåññéļ one two three]</item>
+         <item quantity="other">[»{count}« ÉхçļûšîVé Çĥåññéļš one two three]</item>
++        <item quantity="one">[ÉхçļûšîVé Çĥåññéļ one two three]</item>
+     </plurals>
+     <plurals name="guild_role_subscription_tier_review_intangible_benefits_header_count">
+-        <item quantity="one">[Åððîţîöñåļ βéñéƒîţ one two three]</item>
+         <item quantity="other">[Åððîţîöñåļ βéñéƒîţš one two three]</item>
++        <item quantity="one">[Åððîţîöñåļ βéñéƒîţ one two three]</item>
+     </plurals>
+     <plurals name="guild_role_subscriptions_active_user_subscriptions_description_numSubscriptions">
+-        <item quantity="one">[šûɓšçŕîþţîöñ one two]</item>
+         <item quantity="other">[šûɓšçŕîþţîöñš one two]</item>
++        <item quantity="one">[šûɓšçŕîþţîöñ one two]</item>
+     </plurals>
+     <plurals name="guild_settings_audit_log_channel_default_auto_archive_duration_change_newValue">
+-        <item quantity="one">[Çĥåñĝéð ðéƒåûļţ åŕçĥîVé ðûŕåţîöñ ţö **»{#}« ḿîñûţé** one two three four five six]</item>
+         <item quantity="other">[Çĥåñĝéð ðéƒåûļţ åŕçĥîVé ðûŕåţîöñ ţö **»{#}« ḿîñûţéš** one two three four five six]</item>
++        <item quantity="one">[Çĥåñĝéð ðéƒåûļţ åŕçĥîVé ðûŕåţîöñ ţö **»{#}« ḿîñûţé** one two three four five six]</item>
+     </plurals>
+     <plurals name="guild_settings_audit_log_channel_default_auto_archive_duration_create_newValue">
+-        <item quantity="one">[Šéţ ðéƒåûļţ åŕçĥîVé ðûŕåţîöñ ţö **»{#}« ḿîñûţé** one two three four five]</item>
+         <item quantity="other">[Šéţ ðéƒåûļţ åŕçĥîVé ðûŕåţîöñ ţö **»{#}« ḿîñûţéš** one two three four five]</item>
++        <item quantity="one">[Šéţ ðéƒåûļţ åŕçĥîVé ðûŕåţîöñ ţö **»{#}« ḿîñûţé** one two three four five]</item>
+     </plurals>
+     <plurals name="guild_settings_audit_log_channel_permission_overrides_denied_count">
+-        <item quantity="one">[å þéŕḿîššîöñ one two]</item>
+         <item quantity="other">[þéŕḿîššîöñš one two]</item>
++        <item quantity="one">[å þéŕḿîššîöñ one two]</item>
+     </plurals>
+     <plurals name="guild_settings_audit_log_channel_permission_overrides_granted_count">
+-        <item quantity="one">[å þéŕḿîššîöñ one two]</item>
+         <item quantity="other">[þéŕḿîššîöñš one two]</item>
++        <item quantity="one">[å þéŕḿîššîöñ one two]</item>
+     </plurals>
+     <plurals name="guild_settings_audit_log_channel_permission_overrides_reset_count">
+-        <item quantity="one">[å þéŕḿîššîöñ one two]</item>
+         <item quantity="other">[þéŕḿîššîöñš one two]</item>
++        <item quantity="one">[å þéŕḿîššîöñ one two]</item>
+     </plurals>
+     <plurals name="guild_settings_audit_log_channel_rate_limit_per_user_change_newValue">
+-        <item quantity="one">[Šéţ šļöŵḿöðé ţö **»{#}« šéçöñð** one two three four]</item>
+         <item quantity="other">[Šéţ šļöŵḿöðé ţö **»{#}« šéçöñðš** one two three four]</item>
++        <item quantity="one">[Šéţ šļöŵḿöðé ţö **»{#}« šéçöñð** one two three four]</item>
+     </plurals>
+     <plurals name="guild_settings_audit_log_channel_rate_limit_per_user_create_newValue">
+-        <item quantity="one">[Šéţ šļöŵḿöðé ţö **»{#}« šéçöñð** one two three four]</item>
+         <item quantity="other">[Šéţ šļöŵḿöðé ţö **»{#}« šéçöñðš** one two three four]</item>
++        <item quantity="one">[Šéţ šļöŵḿöðé ţö **»{#}« šéçöñð** one two three four]</item>
+     </plurals>
+     <plurals name="guild_settings_audit_log_integration_expire_grace_period_newValue">
+-        <item quantity="one">[å ðåý one]</item>
+         <item quantity="other">[»{#}« ðåýš one]</item>
++        <item quantity="one">[å ðåý one]</item>
+     </plurals>
+     <plurals name="guild_settings_audit_log_member_disconnect_count">
+-        <item quantity="one">[**å ûšéŕ** one two]</item>
+         <item quantity="other">[**¡¡»{count}«¡¡ ûšéŕš** one two three]</item>
++        <item quantity="one">[**å ûšéŕ** one two]</item>
+     </plurals>
+     <plurals name="guild_settings_audit_log_member_move_count">
+-        <item quantity="one">[**å ûšéŕ** one two]</item>
+         <item quantity="other">[**¡¡»{count}«¡¡ ûšéŕš** one two three]</item>
++        <item quantity="one">[**å ûšéŕ** one two]</item>
+     </plurals>
+     <plurals name="guild_settings_audit_log_member_prune_count">
+-        <item quantity="one">[**å ḿéḿɓéŕ** one two]</item>
+         <item quantity="other">[**¡¡»{count}«¡¡ ḿéḿɓéŕš** one two three]</item>
++        <item quantity="one">[**å ḿéḿɓéŕ** one two]</item>
+     </plurals>
+     <plurals name="guild_settings_audit_log_member_prune_delete_days_newValue">
+-        <item quantity="one">[å ðåý one]</item>
+         <item quantity="other">[»{newValue}« ðåýš one]</item>
++        <item quantity="one">[å ðåý one]</item>
+     </plurals>
+     <plurals name="guild_settings_audit_log_member_roles_add_count">
+-        <item quantity="one">[å ŕöļé one two]</item>
+         <item quantity="other">[šöḿé ŕöļéš one two]</item>
++        <item quantity="one">[å ŕöļé one two]</item>
+     </plurals>
+     <plurals name="guild_settings_audit_log_member_roles_remove_count">
+-        <item quantity="one">[å ŕöļé one two]</item>
+         <item quantity="other">[šöḿé ŕöļéš one two]</item>
++        <item quantity="one">[å ŕöļé one two]</item>
+     </plurals>
+     <plurals name="guild_settings_audit_log_message_bulk_delete_count">
+-        <item quantity="one">[**å ḿéššåĝé** one two]</item>
+         <item quantity="other">[**¡¡»{count}«¡¡ ḿéššåĝéš** one two three]</item>
++        <item quantity="one">[**å ḿéššåĝé** one two]</item>
+     </plurals>
+     <plurals name="guild_settings_audit_log_message_delete_count">
+-        <item quantity="one">[**å ḿéššåĝé** one two]</item>
+         <item quantity="other">[**¡¡»{count}«¡¡ ḿéššåĝéš** one two three]</item>
++        <item quantity="one">[**å ḿéššåĝé** one two]</item>
+     </plurals>
+     <plurals name="guild_settings_audit_log_role_permissions_denied_count">
+-        <item quantity="one">[þéŕḿîššîöñ one two]</item>
+         <item quantity="other">[þéŕḿîššîöñš one two]</item>
++        <item quantity="one">[þéŕḿîššîöñ one two]</item>
+     </plurals>
+     <plurals name="guild_settings_audit_log_role_permissions_granted_count">
+-        <item quantity="one">[þéŕḿîššîöñ one two]</item>
+         <item quantity="other">[þéŕḿîššîöñš one two]</item>
++        <item quantity="one">[þéŕḿîššîöñ one two]</item>
+     </plurals>
+     <plurals name="guild_settings_audit_log_thread_auto_archive_duration_change_newValue">
+-        <item quantity="one">[Çĥåñĝéð åûţö åŕçĥîVé ðûŕåţîöñ ţö **»{#}« ḿîñûţé** one two three four five]</item>
+         <item quantity="other">[Çĥåñĝéð åûţö åŕçĥîVé ðûŕåţîöñ ţö **»{#}« ḿîñûţéš** one two three four five]</item>
++        <item quantity="one">[Çĥåñĝéð åûţö åŕçĥîVé ðûŕåţîöñ ţö **»{#}« ḿîñûţé** one two three four five]</item>
+     </plurals>
+     <plurals name="guild_settings_audit_log_thread_auto_archive_duration_create_newValue">
+-        <item quantity="one">[Šéţ åûţö åŕçĥîVé ðûŕåţîöñ ţö **»{#}« ḿîñûţé** one two three four five]</item>
+         <item quantity="other">[Šéţ åûţö åŕçĥîVé ðûŕåţîöñ ţö **»{#}« ḿîñûţéš** one two three four five]</item>
++        <item quantity="one">[Šéţ åûţö åŕçĥîVé ðûŕåţîöñ ţö **»{#}« ḿîñûţé** one two three four five]</item>
+     </plurals>
+     <plurals name="guild_settings_discovery_checklist_age_description_failing_minimumGuildAge">
+-        <item quantity="one">[1 ŵééķ one two]</item>
+         <item quantity="other">[»{minimumGuildAge}« ŵééķš one two]</item>
++        <item quantity="one">[1 ŵééķ one two]</item>
+     </plurals>
+     <plurals name="guild_settings_discovery_checklist_age_description_minimumGuildAge">
+-        <item quantity="one">[1 ŵééķ one two]</item>
+         <item quantity="other">[»{minimumGuildAge}« ŵééķš one two]</item>
++        <item quantity="one">[1 ŵééķ one two]</item>
+     </plurals>
+     <plurals name="guild_settings_member_verification_review_pending_applications_count">
+-        <item quantity="one">[Þéñðîñĝ Åþþļîçåţîöñ one two three]</item>
+         <item quantity="other">[»{count}« Þéñðîñĝ Åþþļîçåţîöñš one two three]</item>
++        <item quantity="one">[Þéñðîñĝ Åþþļîçåţîöñ one two three]</item>
+     </plurals>
+     <plurals name="guild_settings_overview_boost_unlock_boosts">
+-        <item quantity="one">[»{#}« ɓööšţ one two]</item>
+         <item quantity="other">[»{#}« ɓööšţš one two]</item>
++        <item quantity="one">[»{#}« ɓööšţ one two]</item>
+     </plurals>
+     <plurals name="guild_settings_partner_checklist_age_description_failing_minimumGuildAge">
+-        <item quantity="one">[1 ŵééķ one two]</item>
+         <item quantity="other">[»{minimumGuildAge}« ŵééķš one two]</item>
++        <item quantity="one">[1 ŵééķ one two]</item>
+     </plurals>
+     <plurals name="guild_settings_partner_checklist_age_description_minimumGuildAge">
+-        <item quantity="one">[1 ŵééķ one two]</item>
+         <item quantity="other">[»{minimumGuildAge}« ŵééķš one two]</item>
++        <item quantity="one">[1 ŵééķ one two]</item>
+     </plurals>
+     <plurals name="guild_settings_premium_guild_close_hint_numLeft">
+-        <item quantity="one">[»{#}« ḿöŕé ɓööšţ one two]</item>
+         <item quantity="other">[»{#}« ḿöŕé ɓööšţš one two]</item>
++        <item quantity="one">[»{#}« ḿöŕé ɓööšţ one two]</item>
+     </plurals>
+     <plurals name="guild_settings_premium_guild_count_subscribers_count">
+-        <item quantity="one">[»{#}« éхţŕéḿéļý çööļ þéŕšöñ ĥåš one two three four]</item>
+         <item quantity="other">[»{#}« éхţŕéḿéļý çööļ þéöþļé ĥåVé one two three four]</item>
++        <item quantity="one">[»{#}« éхţŕéḿéļý çööļ þéŕšöñ ĥåš one two three four]</item>
+     </plurals>
+     <plurals name="guild_settings_premium_guild_tier_requirement_required">
+-        <item quantity="one">[»{#}« βööšţ one two]</item>
+         <item quantity="other">[»{#}« βööšţš one two]</item>
++        <item quantity="one">[»{#}« βööšţ one two]</item>
+     </plurals>
+     <plurals name="guild_settings_premium_upsell_body_perk_no_free_guild_subscriptions_numFreeGuildSubscriptions">
+-        <item quantity="one">[»{#}« βööšţ one two]</item>
+         <item quantity="other">[»{#}« βööšţš one two]</item>
++        <item quantity="one">[»{#}« βööšţ one two]</item>
+     </plurals>
+     <plurals name="guild_settings_premium_upsell_body_perk_num_guild_subscriptions_numFreeGuildSubscriptions">
+-        <item quantity="one">[»{#}« βööšţ one two]</item>
+         <item quantity="other">[»{#}« βööšţš one two]</item>
++        <item quantity="one">[»{#}« βööšţ one two]</item>
+     </plurals>
+     <plurals name="guild_settings_premium_upsell_heading_tertiary_premium_user_numFreeGuildSubscriptions">
+-        <item quantity="one">[»{#}« ŠéŕVéŕ βööšţ one two]</item>
+         <item quantity="other">[»{#}« ŠéŕVéŕ βööšţš one two three]</item>
++        <item quantity="one">[»{#}« ŠéŕVéŕ βööšţ one two]</item>
+     </plurals>
+     <plurals name="guild_sidebar_announcement_channel_a11y_label_with_mentions_mentionCount">
+-        <item quantity="one">[»{#}« ḿéñţîöñ one two]</item>
+         <item quantity="other">[»{#}« ḿéñţîöñš one two]</item>
++        <item quantity="one">[»{#}« ḿéñţîöñ one two]</item>
+     </plurals>
+     <plurals name="guild_sidebar_default_channel_a11y_label_with_mentions_mentionCount">
+-        <item quantity="one">[»{#}« ḿéñţîöñ one two]</item>
+         <item quantity="other">[»{#}« ḿéñţîöñš one two]</item>
++        <item quantity="one">[»{#}« ḿéñţîöñ one two]</item>
+     </plurals>
+     <plurals name="guild_sidebar_stage_channel_a11y_label_with_users_userCount">
+-        <item quantity="one">[1 ûšéŕ one two]</item>
+         <item quantity="other">[»{#}« ûšéŕš one two]</item>
++        <item quantity="one">[1 ûšéŕ one two]</item>
+     </plurals>
+     <plurals name="guild_sidebar_thread_a11y_label_with_mentions_mentionCount">
+-        <item quantity="one">[»{#}« ḿéñţîöñ one two]</item>
+         <item quantity="other">[»{#}« ḿéñţîöñš one two]</item>
++        <item quantity="one">[»{#}« ḿéñţîöñ one two]</item>
+     </plurals>
+     <plurals name="guild_sidebar_voice_channel_a11y_label_with_users_userCount">
+-        <item quantity="one">[1 ûšéŕ one two]</item>
+         <item quantity="other">[»{#}« ûšéŕš one two]</item>
++        <item quantity="one">[1 ûšéŕ one two]</item>
+     </plurals>
+     <plurals name="guild_sticker_settings_additional_slots_numAdditional">
+-        <item quantity="one">[»{numAdditional}« Šţîçķéŕ Šļöţ one two]</item>
+         <item quantity="other">[»{numAdditional}« Šţîçķéŕ Šļöţš one two three]</item>
++        <item quantity="one">[»{numAdditional}« Šţîçķéŕ Šļöţ one two]</item>
+     </plurals>
+     <plurals name="guild_sticker_settings_additional_slots_without_total_numAdditional">
+-        <item quantity="one">[»{numAdditional}« Šţîçķéŕ Šļöţ one two]</item>
+         <item quantity="other">[»{numAdditional}« Šţîçķéŕ Šļöţš one two three]</item>
++        <item quantity="one">[»{numAdditional}« Šţîçķéŕ Šļöţ one two]</item>
+     </plurals>
+     <plurals name="guild_sticker_settings_remaining_slots_available_numTotal">
+-        <item quantity="one">[»{numTotal}« šļöţ one]</item>
+         <item quantity="other">[»{numTotal}« šļöţš one two]</item>
++        <item quantity="one">[»{numTotal}« šļöţ one]</item>
+     </plurals>
+     <plurals name="guild_subscription_purchase_modal_activated_description_generic_guild_guildSubscriptionQuantity">
+-        <item quantity="one">[»{#}« ţîḿé one]</item>
+         <item quantity="other">[»{#}« ţîḿéš one two]</item>
++        <item quantity="one">[»{#}« ţîḿé one]</item>
+     </plurals>
+     <plurals name="guild_subscription_purchase_modal_activated_description_guildSubscriptionQuantity">
+-        <item quantity="one">[»{#}« ţîḿé one]</item>
+         <item quantity="other">[»{#}« ţîḿéš one two]</item>
++        <item quantity="one">[»{#}« ţîḿé one]</item>
+     </plurals>
+     <plurals name="guild_subscription_purchase_modal_activated_description_mobile2_guildSubscriptionQuantity">
+-        <item quantity="one">[»{#}« ţîḿé one]</item>
+         <item quantity="other">[»{#}« ţîḿéš one two]</item>
++        <item quantity="one">[»{#}« ţîḿé one]</item>
+     </plurals>
+     <plurals name="guild_subscription_purchase_modal_activated_description_no_application_guildSubscriptionQuantity">
+-        <item quantity="one">[»{#}« ŠéŕVéŕ βööšţ one two]</item>
+         <item quantity="other">[»{#}« ŠéŕVéŕ βööšţš one two three]</item>
++        <item quantity="one">[»{#}« ŠéŕVéŕ βööšţ one two]</item>
+     </plurals>
+     <plurals name="guild_subscription_purchase_modal_transferred_description_mobile2_guildSubscriptionQuantity">
+-        <item quantity="one">[»{#}« ţîḿé one]</item>
+         <item quantity="other">[»{#}« ţîḿéš one two]</item>
++        <item quantity="one">[»{#}« ţîḿé one]</item>
+     </plurals>
+     <plurals name="guild_subscription_purchase_modal_unused_slot_notice_slotCount">
+-        <item quantity="one">[»{#}« ûñûšéð βööšţ one two]</item>
+         <item quantity="other">[»{#}« ûñûšéð βööšţš one two three]</item>
++        <item quantity="one">[»{#}« ûñûšéð βööšţ one two]</item>
+     </plurals>
+     <plurals name="guild_template_usages_by_creator2_usageCount">
+-        <item quantity="one">[**1** þéŕšöñ ûšéð ţĥîš ţéḿþļåţé ɓý €[**¡¡»{creator}«¡¡**](çŕéåţöŕĤööķ) one two three four five six seven]</item>
+         <item quantity="other">[**»{usageCount}«** þéöþļé ûšéð ţĥîš ţéḿþļåţé ɓý €[**¡¡»{creator}«¡¡**](çŕéåţöŕĤööķ) one two three four five six seven eight nine ten eleven twelve]</item>
++        <item quantity="one">[**1** þéŕšöñ ûšéð ţĥîš ţéḿþļåţé ɓý €[**¡¡»{creator}«¡¡**](çŕéåţöŕĤööķ) one two three four five six seven]</item>
+     </plurals>
+     <plurals name="guild_template_usages_no_bold_usageCount">
+-        <item quantity="one">[1 þéŕšöñ ûšéð ţĥîš ţéḿþļåţé one two three four]</item>
+         <item quantity="other">[»{usageCount}« þéöþļé ûšéð ţĥîš ţéḿþļåţé one two three four]</item>
++        <item quantity="one">[1 þéŕšöñ ûšéð ţĥîš ţéḿþļåţé one two three four]</item>
+     </plurals>
+     <plurals name="guild_template_usages_usageCount">
+-        <item quantity="one">[**1** þéŕšöñ ûšéð ţĥîš ţéḿþļåţé one two three four]</item>
+         <item quantity="other">[**»{usageCount}«** þéöþļé ûšéð ţĥîš ţéḿþļåţé one two three four]</item>
++        <item quantity="one">[**1** þéŕšöñ ûšéð ţĥîš ţéḿþļåţé one two three four]</item>
+     </plurals>
+     <plurals name="guild_tooltip_a11y_label_mentions">
+-        <item quantity="one">[»{#}« ḿéñţîöñ, one two]</item>
+         <item quantity="other">[»{#}« ḿéñţîöñš, one two]</item>
++        <item quantity="one">[»{#}« ḿéñţîöñ, one two]</item>
+     </plurals>
+     <plurals name="hub_email_connection_invite_header_count">
+-        <item quantity="one">[»{count}« öţĥéŕ ƒŕîéñð one two]</item>
+         <item quantity="other">[»{count}« öţĥéŕ ƒŕîéñðš one two three]</item>
++        <item quantity="one">[»{count}« öţĥéŕ ƒŕîéñð one two]</item>
+     </plurals>
+     <plurals name="humanize_duration_days_time">
+-        <item quantity="one">[1 ðåý one]</item>
+         <item quantity="other">[»{#}« ðåýš one]</item>
++        <item quantity="one">[1 ðåý one]</item>
+     </plurals>
+     <plurals name="humanize_duration_hours_time">
+-        <item quantity="one">[1 ĥöûŕ one two]</item>
+         <item quantity="other">[»{#}« ĥöûŕš one two]</item>
++        <item quantity="one">[1 ĥöûŕ one two]</item>
+     </plurals>
+     <plurals name="humanize_duration_minutes_time">
+-        <item quantity="one">[1 ḿîñûţé one two]</item>
+         <item quantity="other">[»{#}« ḿîñûţéš one two]</item>
++        <item quantity="one">[1 ḿîñûţé one two]</item>
+     </plurals>
+     <plurals name="humanize_duration_seconds_time">
+-        <item quantity="one">[1 šéçöñð one two]</item>
+         <item quantity="other">[»{#}« šéçöñðš one two]</item>
++        <item quantity="one">[1 šéçöñð one two]</item>
+     </plurals>
+     <plurals name="instant_invite_guild_members_total_count">
+-        <item quantity="one">[1 Ḿéḿɓéŕ one two]</item>
+         <item quantity="other">[»{count}« Ḿéḿɓéŕš one two]</item>
++        <item quantity="one">[1 Ḿéḿɓéŕ one two]</item>
+     </plurals>
+     <plurals name="integrations_channel_following_summary_count">
+-        <item quantity="one">[1 çĥåññéļ one two]</item>
+         <item quantity="other">[»{count}« çĥåññéļš one two]</item>
++        <item quantity="one">[1 çĥåññéļ one two]</item>
+     </plurals>
+     <plurals name="integrations_twitch_summary_count">
+-        <item quantity="one">[1 çöññéçţéð åççöûñţ one two three]</item>
+         <item quantity="other">[»{count}« çöññéçţéð åççöûñţš one two three]</item>
++        <item quantity="one">[1 çöññéçţéð åççöûñţ one two three]</item>
+     </plurals>
+     <plurals name="integrations_webhooks_count_count">
+-        <item quantity="one">[1 Ŵéɓĥööķ one two]</item>
+         <item quantity="other">[»{count}« Ŵéɓĥööķš one two]</item>
++        <item quantity="one">[1 Ŵéɓĥööķ one two]</item>
+     </plurals>
+     <plurals name="integrations_webhooks_summary_count">
+-        <item quantity="one">[1 ŵéɓĥööķ one two]</item>
+         <item quantity="other">[»{count}« ŵéɓĥööķš one two]</item>
++        <item quantity="one">[1 ŵéɓĥööķ one two]</item>
+     </plurals>
+     <plurals name="integrations_youtube_summary_count">
+-        <item quantity="one">[1 çöññéçţéð åççöûñţ one two three]</item>
+         <item quantity="other">[»{count}« çöññéçţéð åççöûñţš one two three]</item>
++        <item quantity="one">[1 çöññéçţéð åççöûñţ one two three]</item>
+     </plurals>
+     <plurals name="invite_embed_num_open_slots_number">
+-        <item quantity="one">[šļöţ one]</item>
+         <item quantity="other">[šļöţš one]</item>
++        <item quantity="one">[šļöţ one]</item>
+     </plurals>
+     <plurals name="invite_expires_days_or_uses_plural_numDays">
+-        <item quantity="one">[»{numDays}« ðåý one]</item>
+         <item quantity="other">[»{numDays}« ðåýš one]</item>
++        <item quantity="one">[»{numDays}« ðåý one]</item>
+     </plurals>
+     <plurals name="invite_expires_days_or_uses_plural_numUses">
+-        <item quantity="one">[»{numUses}« ûšé one]</item>
+         <item quantity="other">[»{numUses}« ûšéš one]</item>
++        <item quantity="one">[»{numUses}« ûšé one]</item>
+     </plurals>
+     <plurals name="invite_expires_days_plural_numDays">
+-        <item quantity="one">[»{numDays}« ðåý one]</item>
+         <item quantity="other">[»{numDays}« ðåýš one]</item>
++        <item quantity="one">[»{numDays}« ðåý one]</item>
+     </plurals>
+     <plurals name="invite_expires_hours_numHours">
+-        <item quantity="one">[»{numHours}« ĥöûŕ one]</item>
+         <item quantity="other">[»{numHours}« ĥöûŕš one two]</item>
++        <item quantity="one">[»{numHours}« ĥöûŕ one]</item>
+     </plurals>
+     <plurals name="invite_expires_hours_or_uses_numHours">
+-        <item quantity="one">[»{numHours}« ĥöûŕ one]</item>
+         <item quantity="other">[»{numHours}« ĥöûŕš one two]</item>
++        <item quantity="one">[»{numHours}« ĥöûŕ one]</item>
+     </plurals>
+     <plurals name="invite_expires_hours_or_uses_numUses">
+-        <item quantity="one">[»{numUses}« ûšé one]</item>
+         <item quantity="other">[»{numUses}« ûšéš one]</item>
++        <item quantity="one">[»{numUses}« ûšé one]</item>
+     </plurals>
+     <plurals name="invite_expires_minutes_or_uses_numUses">
+-        <item quantity="one">[»{numUses}« ûšé one]</item>
+         <item quantity="other">[»{numUses}« ûšéš one]</item>
++        <item quantity="one">[»{numUses}« ûšé one]</item>
+     </plurals>
+     <plurals name="invite_expires_uses_numUses">
+-        <item quantity="one">[»{numUses}« ûšé one]</item>
+         <item quantity="other">[»{numUses}« ûšéš one]</item>
++        <item quantity="one">[»{numUses}« ûšé one]</item>
+     </plurals>
+     <plurals name="invite_urgent_days_message_placeholder_numDays">
+-        <item quantity="one">[1 ðåý one]</item>
+         <item quantity="other">[»{numDays}« ðåýš one]</item>
++        <item quantity="one">[1 ðåý one]</item>
+     </plurals>
+     <plurals name="invite_urgent_hours_message_placeholder_numHours">
+-        <item quantity="one">[1 ĥöûŕ one two]</item>
+         <item quantity="other">[»{numHours}« ĥöûŕš one two]</item>
++        <item quantity="one">[1 ĥöûŕ one two]</item>
+     </plurals>
+     <plurals name="invite_urgent_minutes_placeholder_numMinutes">
+-        <item quantity="one">[1 ḿîñûţé one two]</item>
+         <item quantity="other">[»{numMinutes}« ḿîñûţéš one two]</item>
++        <item quantity="one">[1 ḿîñûţé one two]</item>
+     </plurals>
+     <plurals name="last_seen_days">
+-        <item quantity="one">[1 ðåý one]</item>
+         <item quantity="other">[»{days}« ðåýš one]</item>
++        <item quantity="one">[1 ðåý one]</item>
+     </plurals>
+     <plurals name="live_viewers_viewers">
+-        <item quantity="one">[Vîéŵéŕ one two]</item>
+         <item quantity="other">[Vîéŵéŕš one two]</item>
++        <item quantity="one">[Vîéŵéŕ one two]</item>
+     </plurals>
+     <plurals name="marketing_refresh_premium_features_included_guild_subscriptions_subheading_numFreeGuildSubscriptions">
+-        <item quantity="one">[»{#}« ŠéŕVéŕ βööšţ one two]</item>
+         <item quantity="other">[»{#}« ŠéŕVéŕ βööšţš one two three]</item>
++        <item quantity="one">[»{#}« ŠéŕVéŕ βööšţ one two]</item>
+     </plurals>
+     <plurals name="marketing_refresh_premium_tier_1_cta_description_perks_info_label_numFreeGuildSubscriptions">
+-        <item quantity="one">[»{#}« ŠéŕVéŕ βööšţ one two]</item>
+         <item quantity="other">[»{#}« ŠéŕVéŕ βööšţš one two three]</item>
++        <item quantity="one">[»{#}« ŠéŕVéŕ βööšţ one two]</item>
+     </plurals>
+     <plurals name="marketing_refresh_premium_tier_1_cta_description_perks_info_no_premium_guild_subscriptions_numFreeGuildSubscriptions">
+-        <item quantity="one">[»{#}« ŠéŕVéŕ βööšţ one two]</item>
+         <item quantity="other">[»{#}« ŠéŕVéŕ βööšţš one two three]</item>
++        <item quantity="one">[»{#}« ŠéŕVéŕ βööšţ one two]</item>
+     </plurals>
+     <plurals name="max_uses_description_mobile_maxUses">
+-        <item quantity="one">[1 ûšé one]</item>
+         <item quantity="other">[»{maxUses}« ûšéš one]</item>
++        <item quantity="one">[1 ûšé one]</item>
+     </plurals>
+     <plurals name="max_uses_maxUses">
+-        <item quantity="one">[1 ûšé one]</item>
+         <item quantity="other">[»{maxUses}« ûšéš one]</item>
++        <item quantity="one">[1 ûšé one]</item>
+     </plurals>
+     <plurals name="member_verification_num_emojis_emojis">
+-        <item quantity="one">[»{emojis}« šéŕVéŕ éḿöĵî one two]</item>
+         <item quantity="other">[»{emojis}« šéŕVéŕ éḿöĵîš one two three]</item>
++        <item quantity="one">[»{emojis}« šéŕVéŕ éḿöĵî one two]</item>
+     </plurals>
+     <plurals name="members_header_members">
+-        <item quantity="one">[1 Ḿéḿɓéŕ one two]</item>
+         <item quantity="other">[»{members}« Ḿéḿɓéŕš one two]</item>
++        <item quantity="one">[1 Ḿéḿɓéŕ one two]</item>
+     </plurals>
+     <plurals name="month_count">
+-        <item quantity="one">[ḿöñţĥ one]</item>
+         <item quantity="other">[»{count}« ḿöñţĥš one two]</item>
++        <item quantity="one">[ḿöñţĥ one]</item>
+     </plurals>
+     <plurals name="mtrl_badge_content_description">
+-        <item quantity="one">[%d ñéŵ ñöţîƒîçåţîöñ one two three]</item>
+         <item quantity="other">[%d ñéŵ ñöţîƒîçåţîöñš one two three]</item>
++        <item quantity="one">[%d ñéŵ ñöţîƒîçåţîöñ one two three]</item>
+     </plurals>
+     <plurals name="n_days_days">
+-        <item quantity="one">[1 ðåý one]</item>
+         <item quantity="other">[»{days}« ðåýš one]</item>
++        <item quantity="one">[1 ðåý one]</item>
+     </plurals>
+     <plurals name="new_messages_count">
+-        <item quantity="one">[1 ñéŵ ḿéššåĝé one two]</item>
+         <item quantity="other">[»{count}« ñéŵ ḿéššåĝéš one two]</item>
++        <item quantity="one">[1 ñéŵ ḿéššåĝé one two]</item>
+     </plurals>
+     <plurals name="new_messages_with_date_count">
+-        <item quantity="one">[1 ñéŵ ḿéššåĝé one two]</item>
+         <item quantity="other">[»{count}« ñéŵ ḿéššåĝéš one two]</item>
++        <item quantity="one">[1 ñéŵ ḿéššåĝé one two]</item>
+     </plurals>
+     <plurals name="notice_premium_grandfathered_ending_numDays">
+-        <item quantity="one">[öñé ðåý one two]</item>
+         <item quantity="other">[»{numDays}« ðåýš one]</item>
++        <item quantity="one">[öñé ðåý one two]</item>
+     </plurals>
+     <plurals name="notice_premium_tier_2_trial_ending_days_days">
+-        <item quantity="one">[»{#}« ðåý one]</item>
+         <item quantity="other">[»{#}« ðåýš one]</item>
++        <item quantity="one">[»{#}« ðåý one]</item>
+     </plurals>
+     <plurals name="notice_premium_tier_2_trial_ending_hours_hours">
+-        <item quantity="one">[»{#}« ĥöûŕ one]</item>
+         <item quantity="other">[»{#}« ĥöûŕš one two]</item>
++        <item quantity="one">[»{#}« ĥöûŕ one]</item>
+     </plurals>
+     <plurals name="notice_premium_tier_2_trial_ending_minutes_minutes">
+-        <item quantity="one">[»{#}« ḿîñûţé one two]</item>
+         <item quantity="other">[»{#}« ḿîñûţéš one two]</item>
++        <item quantity="one">[»{#}« ḿîñûţé one two]</item>
+     </plurals>
+     <plurals name="num_channels_num">
+-        <item quantity="one">[»{num}« çĥåññéļ one two]</item>
+         <item quantity="other">[»{num}« çĥåññéļš one two]</item>
++        <item quantity="one">[»{num}« çĥåññéļ one two]</item>
+     </plurals>
+     <plurals name="num_members_subscribers">
+-        <item quantity="one">[**1** ḿéḿɓéŕ one two]</item>
+         <item quantity="other">[**»{subscribers}«** ḿéḿɓéŕš one two]</item>
++        <item quantity="one">[**1** ḿéḿɓéŕ one two]</item>
+     </plurals>
+     <plurals name="num_subscribers_subscribers">
+-        <item quantity="one">[**1** šûɓšçŕîɓéŕ one two three]</item>
+         <item quantity="other">[**»{subscribers}«** šûɓšçŕîɓéŕš one two three]</item>
++        <item quantity="one">[**1** šûɓšçŕîɓéŕ one two three]</item>
+     </plurals>
+     <plurals name="num_users_num">
+-        <item quantity="one">[1 ûšéŕ one two]</item>
+         <item quantity="other">[»{num}« ûšéŕš one two]</item>
++        <item quantity="one">[1 ûšéŕ one two]</item>
+     </plurals>
+     <plurals name="only_you_can_see_and_delete_these_count">
+-        <item quantity="one">[ţĥîš one]</item>
+         <item quantity="other">[ţĥéšé one]</item>
++        <item quantity="one">[ţĥîš one]</item>
+     </plurals>
+     <plurals name="only_you_can_see_and_delete_these_countMessages">
+-        <item quantity="one">[ḿéššåĝé one two]</item>
+         <item quantity="other">[ḿéššåĝéš one two]</item>
++        <item quantity="one">[ḿéššåĝé one two]</item>
+     </plurals>
+     <plurals name="partial_outage_a11y_count">
+-        <item quantity="one">[1 šéŕVéŕ îš ûñåVåîļåɓļé ðûé ţö å ţéḿþöŕåŕý öûţåĝé. one two three four five six]</item>
+         <item quantity="other">[»{count}« šéŕVéŕš åŕé ûñåVåîļåɓļé ðûé ţö å ţéḿþöŕåŕý öûţåĝé. one two three four five six]</item>
++        <item quantity="one">[1 šéŕVéŕ îš ûñåVåîļåɓļé ðûé ţö å ţéḿþöŕåŕý öûţåĝé. one two three four five six]</item>
+     </plurals>
+     <plurals name="partial_outage_count">
+-        <item quantity="one">[**1** öţĥéŕ šéŕVéŕ îš ûñåVåîļåɓļé ðûé ţö å ţéḿþöŕåŕý öûţåĝé. one two three four five six seven]</item>
+         <item quantity="other">[**»{count}«** öţĥéŕ šéŕVéŕš åŕé ûñåVåîļåɓļé ðûé ţö å ţéḿþöŕåŕý öûţåĝé. one two three four five six seven]</item>
++        <item quantity="one">[**1** öţĥéŕ šéŕVéŕ îš ûñåVåîļåɓļé ðûé ţö å ţéḿþöŕåŕý öûţåĝé. one two three four five six seven]</item>
+     </plurals>
+     <plurals name="premium_cancel_what_you_lose_boosts_applied_boostCount">
+-        <item quantity="one">[»{#}« βööšţ Åþþļîéð one two three]</item>
+         <item quantity="other">[»{#}« βööšţš Åþþļîéð one two three]</item>
++        <item quantity="one">[»{#}« βööšţ Åþþļîéð one two three]</item>
+     </plurals>
+     <plurals name="premium_chat_perks_description_premium_guild_included_numFreeGuildSubscriptions">
+-        <item quantity="one">[»{#}« βööšţ one two]</item>
+         <item quantity="other">[»{#}« βööšţš one two]</item>
++        <item quantity="one">[»{#}« βööšţ one two]</item>
+     </plurals>
+     <plurals name="premium_guild_features_upsell_banner_subscribe_numFreeGuildSubscriptions">
+-        <item quantity="one">[»{#}« βööšţ one two]</item>
+         <item quantity="other">[»{#}« βööšţš one two]</item>
++        <item quantity="one">[»{#}« βööšţ one two]</item>
+     </plurals>
+     <plurals name="premium_guild_grace_period_cooldown_numPremiumSubscriptions">
+-        <item quantity="one">[»{#}« βööšţ one two]</item>
+         <item quantity="other">[»{#}« βööšţš one two]</item>
++        <item quantity="one">[»{#}« βööšţ one two]</item>
+     </plurals>
+     <plurals name="premium_guild_grace_period_cooldown_soon_numPremiumSubscriptions">
+-        <item quantity="one">[»{#}« βööšţ one two]</item>
+         <item quantity="other">[»{#}« βööšţš one two]</item>
++        <item quantity="one">[»{#}« βööšţ one two]</item>
+     </plurals>
+     <plurals name="premium_guild_num_month_guild_subscriptions_num">
+-        <item quantity="one">[ŠéŕVéŕ βööšţ one two]</item>
+         <item quantity="other">[ŠéŕVéŕ βööšţš one two]</item>
++        <item quantity="one">[ŠéŕVéŕ βööšţ one two]</item>
+     </plurals>
+     <plurals name="premium_guild_num_month_guild_subscriptions_unformatted_num">
+-        <item quantity="one">[ŠéŕVéŕ βööšţ one two]</item>
+         <item quantity="other">[ŠéŕVéŕ βööšţš one two]</item>
++        <item quantity="one">[ŠéŕVéŕ βööšţ one two]</item>
+     </plurals>
+     <plurals name="premium_guild_num_year_guild_subscriptions_num">
+-        <item quantity="one">[ŠéŕVéŕ βööšţ one two]</item>
+         <item quantity="other">[ŠéŕVéŕ βööšţš one two]</item>
++        <item quantity="one">[ŠéŕVéŕ βööšţ one two]</item>
+     </plurals>
+     <plurals name="premium_guild_num_year_guild_subscriptions_unformatted_num">
+-        <item quantity="one">[ŠéŕVéŕ βööšţ one two]</item>
+         <item quantity="other">[ŠéŕVéŕ βööšţš one two]</item>
++        <item quantity="one">[ŠéŕVéŕ βööšţ one two]</item>
+     </plurals>
+     <plurals name="premium_guild_perks_modal_header_subscription_count_subscriptions">
+-        <item quantity="one">[»{#}« βööšţ one two]</item>
+         <item quantity="other">[»{#}« βööšţš one two]</item>
++        <item quantity="one">[»{#}« βööšţ one two]</item>
+     </plurals>
+     <plurals name="premium_guild_perks_modal_header_user_subscription_count_numSubscriptions">
+-        <item quantity="one">[»{#}« ţîḿé one]</item>
+         <item quantity="other">[»{#}« ţîḿéš¡ one two]</item>
++        <item quantity="one">[»{#}« ţîḿé one]</item>
+     </plurals>
+     <plurals name="premium_guild_perks_modal_protip_mobile_numFreeGuildSubscriptions">
+-        <item quantity="one">[»{#}« βööšţ one two]</item>
+         <item quantity="other">[»{#}« βööšţš one two]</item>
++        <item quantity="one">[»{#}« βööšţ one two]</item>
+     </plurals>
+     <plurals name="premium_guild_perks_modal_protip_numFreeGuildSubscriptions">
+-        <item quantity="one">[»{#}« βööšţ one two]</item>
+         <item quantity="other">[»{#}« βööšţš one two]</item>
++        <item quantity="one">[»{#}« βööšţ one two]</item>
+     </plurals>
+     <plurals name="premium_guild_settings_members_subscribed_needed_number">
+-        <item quantity="one">[»{#}« ḿöŕé βööšţ one two]</item>
+         <item quantity="other">[»{#}« ḿöŕé βööšţš one two]</item>
++        <item quantity="one">[»{#}« ḿöŕé βööšţ one two]</item>
+     </plurals>
+     <plurals name="premium_guild_settings_x_of_y_subscriptions_numRequired">
+-        <item quantity="one">[»{#}« βööšţ one two]</item>
+         <item quantity="other">[»{#}« βööšţš one two]</item>
++        <item quantity="one">[»{#}« βööšţ one two]</item>
+     </plurals>
+     <plurals name="premium_guild_subscribe_confirm_cancel_warning_canceledCount">
+-        <item quantity="one">[Ţĥîš βööšţ îš one two]</item>
+         <item quantity="other">[»{#}« βööšţš åŕé one two]</item>
++        <item quantity="one">[Ţĥîš βööšţ îš one two]</item>
+     </plurals>
+     <plurals name="premium_guild_subscribe_confirm_confirmation_label_slotCount">
+-        <item quantity="one">[βööšţ one]</item>
+         <item quantity="other">[βööšţš one two]</item>
++        <item quantity="one">[βööšţ one]</item>
+     </plurals>
+     <plurals name="premium_guild_subscribe_confirm_confirmation_slotCount">
+-        <item quantity="one">[βööšţ one]</item>
+         <item quantity="other">[βööšţ »{#}« ţîḿéš one two]</item>
++        <item quantity="one">[βööšţ one]</item>
+     </plurals>
+     <plurals name="premium_guild_subscribe_confirm_cooldown_warning_days">
+-        <item quantity="one">[»{#}« ðåý one]</item>
+         <item quantity="other">[»{#}« ðåýš one]</item>
++        <item quantity="one">[»{#}« ðåý one]</item>
+     </plurals>
+     <plurals name="premium_guild_subscribe_confirm_cooldown_warning_slotCount">
+-        <item quantity="one">[ţĥîš βööšţ one two]</item>
+         <item quantity="other">[ţĥéšé βööšţš one two]</item>
++        <item quantity="one">[ţĥîš βööšţ one two]</item>
+     </plurals>
+     <plurals name="premium_guild_subscribe_confirm_transfer_blurb_guildCount">
+-        <item quantity="one">[Ţĥé çûŕŕéñţ šéŕVéŕ one two three]</item>
+         <item quantity="other">[Ţĥé çûŕŕéñţ šéŕVéŕš one two three]</item>
++        <item quantity="one">[Ţĥé çûŕŕéñţ šéŕVéŕ one two three]</item>
+     </plurals>
+     <plurals name="premium_guild_subscribe_confirm_transfer_blurb_slotCount">
+-        <item quantity="one">[ţĥîš ŠéŕVéŕ βööšţ one two three]</item>
+         <item quantity="other">[ţĥéšé ŠéŕVéŕ βööšţš one two three]</item>
++        <item quantity="one">[ţĥîš ŠéŕVéŕ βööšţ one two three]</item>
+     </plurals>
+     <plurals name="premium_guild_subscribe_confirm_transfer_from_guild_guildCount">
+-        <item quantity="one">[šéŕVéŕ one two]</item>
+         <item quantity="other">[šéŕVéŕš one two]</item>
++        <item quantity="one">[šéŕVéŕ one two]</item>
+     </plurals>
+     <plurals name="premium_guild_subscribe_confirm_transfer_to_guild_slotCount">
+-        <item quantity="one">[ɓööšţ one]</item>
+         <item quantity="other">[ɓööšţš one two]</item>
++        <item quantity="one">[ɓööšţ one]</item>
+     </plurals>
+     <plurals name="premium_guild_subscribe_transfer_confirm_confirmation_label_slotCount">
+-        <item quantity="one">[βööšţ one]</item>
+         <item quantity="other">[βööšţš one two]</item>
++        <item quantity="one">[βööšţ one]</item>
+     </plurals>
+     <plurals name="premium_guild_subscribe_transfer_confirm_confirmation_slotCount">
+-        <item quantity="one">[βööšţ one]</item>
+         <item quantity="other">[βööšţš one two]</item>
++        <item quantity="one">[βööšţ one]</item>
+     </plurals>
+     <plurals name="premium_guild_subscription_available_numSubscriptions">
+-        <item quantity="one">[»{#}« βööšţ one two]</item>
+         <item quantity="other">[»{#}« βööšţš one two]</item>
++        <item quantity="one">[»{#}« βööšţ one two]</item>
+     </plurals>
+     <plurals name="premium_guild_subscription_cancel_invoice_subscription_cancelled_subscriptionCount">
+-        <item quantity="one">[ŠéŕVéŕ βööšţ one two]</item>
+         <item quantity="other">[ŠéŕVéŕ βööšţš one two]</item>
++        <item quantity="one">[ŠéŕVéŕ βööšţ one two]</item>
+     </plurals>
+     <plurals name="premium_guild_subscription_duration_months">
+-        <item quantity="one">[»{#}« Ḿöñţĥ one two]</item>
+         <item quantity="other">[»{#}« Ḿöñţĥš one two]</item>
++        <item quantity="one">[»{#}« Ḿöñţĥ one two]</item>
+     </plurals>
+     <plurals name="premium_guild_subscription_error_rate_limit_days_days">
+-        <item quantity="one">[»{#}« ðåý one]</item>
+         <item quantity="other">[»{#}« ðåýš one]</item>
++        <item quantity="one">[»{#}« ðåý one]</item>
+     </plurals>
+     <plurals name="premium_guild_subscription_error_rate_limit_days_hours">
+-        <item quantity="one">[»{#}« ĥöûŕ one]</item>
+         <item quantity="other">[»{#}« ĥöûŕš one two]</item>
++        <item quantity="one">[»{#}« ĥöûŕ one]</item>
+     </plurals>
+     <plurals name="premium_guild_subscription_error_rate_limit_hours_hours">
+-        <item quantity="one">[»{#}« ĥöûŕ one]</item>
+         <item quantity="other">[»{#}« ĥöûŕš one two]</item>
++        <item quantity="one">[»{#}« ĥöûŕ one]</item>
+     </plurals>
+     <plurals name="premium_guild_subscription_error_rate_limit_hours_minutes">
+-        <item quantity="one">[»{#}« ḿîñûţé one two]</item>
+         <item quantity="other">[»{#}« ḿîñûţéš one two]</item>
++        <item quantity="one">[»{#}« ḿîñûţé one two]</item>
+     </plurals>
+     <plurals name="premium_guild_subscription_error_rate_limit_minutes_minutes">
+-        <item quantity="one">[»{#}« ḿîñûţé one two]</item>
+         <item quantity="other">[»{#}« ḿîñûţéš one two]</item>
++        <item quantity="one">[»{#}« ḿîñûţé one two]</item>
+     </plurals>
+     <plurals name="premium_guild_subscription_guild_subsription_subtitle_numSubscriptions">
+-        <item quantity="one">[»{#}« ţîḿé one]</item>
+         <item quantity="other">[»{#}« ţîḿéš one two]</item>
++        <item quantity="one">[»{#}« ţîḿé one]</item>
+     </plurals>
+     <plurals name="premium_guild_subscription_num_subscriptions_numSubscriptions">
+-        <item quantity="one">[»{#}« βööšţ one two]</item>
+         <item quantity="other">[»{#}« βööšţš one two]</item>
++        <item quantity="one">[»{#}« βööšţ one two]</item>
+     </plurals>
+     <plurals name="premium_guild_subscription_subscriber_count_tooltip_subscriberCount">
+-        <item quantity="one">[»{#}« βööšţ one two]</item>
+         <item quantity="other">[»{#}« βööšţš one two]</item>
++        <item quantity="one">[»{#}« βööšţ one two]</item>
+     </plurals>
+     <plurals name="premium_guild_subscriptions_renewal_info_account_hold_no_price_quantity">
+-        <item quantity="one">[ŠéŕVéŕ βööšţ one two]</item>
+         <item quantity="other">[ŠéŕVéŕ βööšţš one two]</item>
++        <item quantity="one">[ŠéŕVéŕ βööšţ one two]</item>
+     </plurals>
+     <plurals name="premium_guild_subscriptions_renewal_info_account_hold_quantity">
+-        <item quantity="one">[ŠéŕVéŕ βööšţ one two]</item>
+         <item quantity="other">[ŠéŕVéŕ βööšţš one two]</item>
++        <item quantity="one">[ŠéŕVéŕ βööšţ one two]</item>
+     </plurals>
+     <plurals name="premium_guild_subscriptions_renewal_info_android_quantity">
+-        <item quantity="one">[ŠéŕVéŕ βööšţ one two]</item>
+         <item quantity="other">[ŠéŕVéŕ βööšţš one two]</item>
++        <item quantity="one">[ŠéŕVéŕ βööšţ one two]</item>
+     </plurals>
+     <plurals name="premium_guild_subscriptions_renewal_info_no_price_quantity">
+-        <item quantity="one">[ŠéŕVéŕ βööšţ one two]</item>
+         <item quantity="other">[ŠéŕVéŕ βööšţš one two]</item>
++        <item quantity="one">[ŠéŕVéŕ βööšţ one two]</item>
+     </plurals>
+     <plurals name="premium_guild_subscriptions_renewal_info_pending_cancelation_android_quantity">
+-        <item quantity="one">[ŠéŕVéŕ βööšţ one two]</item>
+         <item quantity="other">[ŠéŕVéŕ βööšţš one two]</item>
++        <item quantity="one">[ŠéŕVéŕ βööšţ one two]</item>
+     </plurals>
+     <plurals name="premium_guild_subscriptions_renewal_info_pending_cancelation_no_price_quantity">
+-        <item quantity="one">[ŠéŕVéŕ βööšţ one two]</item>
+         <item quantity="other">[ŠéŕVéŕ βööšţš one two]</item>
++        <item quantity="one">[ŠéŕVéŕ βööšţ one two]</item>
+     </plurals>
+     <plurals name="premium_guild_subscriptions_renewal_info_pending_cancelation_quantity">
+-        <item quantity="one">[ŠéŕVéŕ βööšţ one two]</item>
+         <item quantity="other">[ŠéŕVéŕ βööšţš one two]</item>
++        <item quantity="one">[ŠéŕVéŕ βööšţ one two]</item>
+     </plurals>
+     <plurals name="premium_guild_subscriptions_renewal_info_quantity">
+-        <item quantity="one">[ŠéŕVéŕ βööšţ one two]</item>
+         <item quantity="other">[ŠéŕVéŕ βööšţš one two]</item>
++        <item quantity="one">[ŠéŕVéŕ βööšţ one two]</item>
+     </plurals>
+     <plurals name="premium_guild_unsubscribe_confirm_cooldown_warning_days_days">
+-        <item quantity="one">[»{#}« ðåý one]</item>
+         <item quantity="other">[»{#}« ðåýš one]</item>
++        <item quantity="one">[»{#}« ðåý one]</item>
+     </plurals>
+     <plurals name="premium_guild_unsubscribe_confirm_cooldown_warning_days_hours">
+-        <item quantity="one">[»{#}« ĥöûŕ one]</item>
+         <item quantity="other">[»{#}« ĥöûŕš one two]</item>
++        <item quantity="one">[»{#}« ĥöûŕ one]</item>
+     </plurals>
+     <plurals name="premium_guild_unsubscribe_confirm_cooldown_warning_hours_hours">
+-        <item quantity="one">[»{#}« ĥöûŕ one]</item>
+         <item quantity="other">[»{#}« ĥöûŕš one two]</item>
++        <item quantity="one">[»{#}« ĥöûŕ one]</item>
+     </plurals>
+     <plurals name="premium_guild_unsubscribe_confirm_cooldown_warning_hours_minutes">
+-        <item quantity="one">[»{#}« ḿîñûţé one two]</item>
+         <item quantity="other">[»{#}« ḿîñûţéš one two]</item>
++        <item quantity="one">[»{#}« ḿîñûţé one two]</item>
+     </plurals>
+     <plurals name="premium_guild_unsubscribe_confirm_cooldown_warning_minutes_minutes">
+-        <item quantity="one">[»{#}« ḿîñûţé one two]</item>
+         <item quantity="other">[»{#}« ḿîñûţéš one two]</item>
++        <item quantity="one">[»{#}« ḿîñûţé one two]</item>
+     </plurals>
+     <plurals name="premium_marketing_feature_premium_guild_description_numFreeGuildSubscriptions">
+-        <item quantity="one">[»{#}« ŠéŕVéŕ βööšţ one two]</item>
+         <item quantity="other">[»{#}« ŠéŕVéŕ βööšţš one two three]</item>
++        <item quantity="one">[»{#}« ŠéŕVéŕ βööšţ one two]</item>
+     </plurals>
+     <plurals name="premium_plan_month_tier_2_trial_months">
+-        <item quantity="one">[ḿöñţĥ one]</item>
+         <item quantity="other">[ḿöñţĥš one two]</item>
++        <item quantity="one">[ḿöñţĥ one]</item>
+     </plurals>
+     <plurals name="premium_plan_year_tier_2_trial_months">
+-        <item quantity="one">[ḿöñţĥ one]</item>
+         <item quantity="other">[ḿöñţĥš one two]</item>
++        <item quantity="one">[ḿöñţĥ one]</item>
+     </plurals>
+     <plurals name="premium_subscription_credit_count_months_count">
+-        <item quantity="one">[»{#}« Ḿöñţĥ one two]</item>
+         <item quantity="other">[»{#}« Ḿöñţĥš one two]</item>
++        <item quantity="one">[»{#}« Ḿöñţĥ one two]</item>
+     </plurals>
+     <plurals name="premium_subscription_ending_missing_payment_notice_text_daysLeft">
+-        <item quantity="one">[îñ »{#}« ðåý one two]</item>
+         <item quantity="other">[îñ »{#}« ðåýš one two]</item>
++        <item quantity="one">[îñ »{#}« ðåý one two]</item>
+     </plurals>
+     <plurals name="premium_subscription_ending_notice_text_daysLeft">
+-        <item quantity="one">[»{#}« ðåý one]</item>
+         <item quantity="other">[»{#}« ðåýš one]</item>
++        <item quantity="one">[»{#}« ðåý one]</item>
+     </plurals>
+     <plurals name="premium_subscription_ending_what_you_lose_title_daysLeft">
+-        <item quantity="one">[»{#}« ðåý one]</item>
+         <item quantity="other">[»{#}« ðåýš one]</item>
++        <item quantity="one">[»{#}« ðåý one]</item>
+     </plurals>
+     <plurals name="premium_subscription_renewal_footer_trial_days">
+-        <item quantity="one">[1 ðåý one]</item>
+         <item quantity="other">[»{days}« ðåýš one]</item>
++        <item quantity="one">[1 ðåý one]</item>
+     </plurals>
+     <plurals name="premium_trial_cta_description_expiring_days_days">
+-        <item quantity="one">[»{#}« ðåý one]</item>
+         <item quantity="other">[»{#}« ðåýš one]</item>
++        <item quantity="one">[»{#}« ðåý one]</item>
+     </plurals>
+     <plurals name="premium_trial_cta_description_expiring_hours_hours">
+-        <item quantity="one">[»{#}« ĥöûŕ one]</item>
+         <item quantity="other">[»{#}« ĥöûŕš one two]</item>
++        <item quantity="one">[»{#}« ĥöûŕ one]</item>
+     </plurals>
+     <plurals name="premium_trial_cta_description_expiring_minutes_minutes">
+-        <item quantity="one">[»{#}« ḿîñûţé one two]</item>
+         <item quantity="other">[»{#}« ḿîñûţéš one two]</item>
++        <item quantity="one">[»{#}« ḿîñûţé one two]</item>
+     </plurals>
+     <plurals name="premium_upsell_feature_free_guild_subscription_numFreeGuildSubscriptions">
+-        <item quantity="one">[»{#}« ŠéŕVéŕ βööšţ one two]</item>
+         <item quantity="other">[»{#}« ŠéŕVéŕ βööšţš one two three]</item>
++        <item quantity="one">[»{#}« ŠéŕVéŕ βööšţ one two]</item>
+     </plurals>
+     <plurals name="preview_lines_left_lines">
+-        <item quantity="one">[»{#}« ļîñé one]</item>
+         <item quantity="other">[»{#}« ļîñéš one two]</item>
++        <item quantity="one">[»{#}« ļîñé one]</item>
+     </plurals>
+     <plurals name="preview_num_lines_at_least_lines">
+-        <item quantity="one">[»{#}« ļîñé one]</item>
+         <item quantity="other">[»{#}« ļîñéš one two]</item>
++        <item quantity="one">[»{#}« ļîñé one]</item>
+     </plurals>
+     <plurals name="preview_num_lines_lines">
+-        <item quantity="one">[»{#}« ļîñé one]</item>
+         <item quantity="other">[»{#}« ļîñéš one two]</item>
++        <item quantity="one">[»{#}« ļîñé one]</item>
+     </plurals>
+     <plurals name="private_channel_access_info_members_count">
+-        <item quantity="one">[»{count}« Ḿéḿɓéŕ one two]</item>
+         <item quantity="other">[»{count}« Ḿéḿɓéŕš one two]</item>
++        <item quantity="one">[»{count}« Ḿéḿɓéŕ one two]</item>
+     </plurals>
+     <plurals name="private_channel_access_info_roles_count">
+-        <item quantity="one">[»{count}« Ŕöļé one]</item>
+         <item quantity="other">[»{count}« Ŕöļéš one two]</item>
++        <item quantity="one">[»{count}« Ŕöļé one]</item>
+     </plurals>
+     <plurals name="private_channel_members_added_toast_msg_count">
+-        <item quantity="one">[»{count}« ḿéḿɓéŕ one two]</item>
+         <item quantity="other">[»{count}« ḿéḿɓéŕš one two]</item>
++        <item quantity="one">[»{count}« ḿéḿɓéŕ one two]</item>
+     </plurals>
+     <plurals name="private_channel_roles_added_toast_msg_count">
+-        <item quantity="one">[»{count}« ŕöļé one]</item>
+         <item quantity="other">[»{count}« ŕöļéš one two]</item>
++        <item quantity="one">[»{count}« ŕöļé one]</item>
+     </plurals>
+     <plurals name="promotion_confirm_upgrade_line_item_quantity">
+-        <item quantity="one">[]</item>
+         <item quantity="other">[»{#}«х one]</item>
++        <item quantity="one">[]</item>
+     </plurals>
+     <plurals name="promotion_confirm_upgrade_terms_trialMonths">
+-        <item quantity="one">[»{#}« ḿöñţĥ one two]</item>
+         <item quantity="other">[»{#}« ḿöñţĥš one two]</item>
++        <item quantity="one">[»{#}« ḿöñţĥ one two]</item>
+     </plurals>
+     <plurals name="promotion_existing_subscriber_body_months">
+-        <item quantity="one">[»{#}« ḿöñţĥ one two]</item>
+         <item quantity="other">[»{#}« ḿöñţĥš one two]</item>
++        <item quantity="one">[»{#}« ḿöñţĥ one two]</item>
+     </plurals>
+     <plurals name="promotion_previous_subscriber_body_months">
+-        <item quantity="one">[»{#}« ḿöñţĥ one two]</item>
+         <item quantity="other">[»{#}« ḿöñţĥš one two]</item>
++        <item quantity="one">[»{#}« ḿöñţĥ one two]</item>
+     </plurals>
+     <plurals name="promotion_redeem_body_months">
+-        <item quantity="one">[»{#}« ḿöñţĥ one two]</item>
+         <item quantity="other">[»{#}« ḿöñţĥš one two]</item>
++        <item quantity="one">[»{#}« ḿöñţĥ one two]</item>
+     </plurals>
+     <plurals name="publish_followed_news_body_reach_numGuildsFollowing">
+-        <item quantity="one">[»{#}« šéŕVéŕ one two]</item>
+         <item quantity="other">[»{#}« šéŕVéŕš one two]</item>
++        <item quantity="one">[»{#}« šéŕVéŕ one two]</item>
+     </plurals>
+     <plurals name="publish_followed_news_fail_body_retryAfter">
+-        <item quantity="one">[1 ḿîñûţé one two]</item>
+         <item quantity="other">[»{retryAfter}« ḿîñûţéš one two]</item>
++        <item quantity="one">[1 ḿîñûţé one two]</item>
+     </plurals>
+     <plurals name="quick_switcher_results_group_dm_unread_label_mentions">
+-        <item quantity="one">[, »{#}« ûñŕéåð ḿéššåĝé one two three]</item>
+         <item quantity="other">[, »{#}« ûñŕéåð ḿéššåĝéš one two three]</item>
++        <item quantity="one">[, »{#}« ûñŕéåð ḿéššåĝé one two three]</item>
+     </plurals>
+     <plurals name="quick_switcher_results_user_unread_label_mentions">
+-        <item quantity="one">[, »{#}« ûñŕéåð ḿéššåĝé one two three]</item>
+         <item quantity="other">[, »{#}« ûñŕéåð ḿéššåĝéš one two three]</item>
++        <item quantity="one">[, »{#}« ûñŕéåð ḿéššåĝé one two three]</item>
+     </plurals>
+     <plurals name="quick_switcher_unread_badge_label_mentions">
+-        <item quantity="one">[, »{#}« ûñŕéåð ḿéššåĝé one two three]</item>
+         <item quantity="other">[, »{#}« ûñŕéåð ḿéššåĝéš one two three]</item>
++        <item quantity="one">[, »{#}« ûñŕéåð ḿéššåĝé one two three]</item>
+     </plurals>
+     <plurals name="react_with_count_a11y_label_reactions">
+-        <item quantity="one">[, »{#}« ŕéåçţîöñ one two]</item>
+         <item quantity="other">[, »{#}« ŕéåçţîöñš one two]</item>
++        <item quantity="one">[, »{#}« ŕéåçţîöñ one two]</item>
+     </plurals>
+     <plurals name="reaction_tooltip_1_n_n">
+-        <item quantity="one">[1 öţĥéŕ one two]</item>
+         <item quantity="other">[»{n}« öţĥéŕš one two]</item>
++        <item quantity="one">[1 öţĥéŕ one two]</item>
+     </plurals>
+     <plurals name="reaction_tooltip_2_n_n">
+-        <item quantity="one">[1 öţĥéŕ one two]</item>
+         <item quantity="other">[»{n}« öţĥéŕš one two]</item>
++        <item quantity="one">[1 öţĥéŕ one two]</item>
+     </plurals>
+     <plurals name="reaction_tooltip_3_n_n">
+-        <item quantity="one">[1 öţĥéŕ one two]</item>
+         <item quantity="other">[»{n}« öţĥéŕš one two]</item>
++        <item quantity="one">[1 öţĥéŕ one two]</item>
+     </plurals>
+     <plurals name="reaction_tooltip_n_n">
+-        <item quantity="one">[1 þéŕšöñ one two]</item>
+         <item quantity="other">[»{n}« þéöþļé one two]</item>
++        <item quantity="one">[1 þéŕšöñ one two]</item>
+     </plurals>
+     <plurals name="role_member_count_count">
+-        <item quantity="one">[»{count}« Ḿéḿɓéŕ one two]</item>
+         <item quantity="other">[»{count}« Ḿéḿɓéŕš one two]</item>
++        <item quantity="one">[»{count}« Ḿéḿɓéŕ one two]</item>
+     </plurals>
+     <plurals name="role_row_description_count">
+-        <item quantity="one">[»{count}« ḿéḿɓéŕ one two]</item>
+         <item quantity="other">[»{count}« ḿéḿɓéŕš one two]</item>
++        <item quantity="one">[»{count}« ḿéḿɓéŕ one two]</item>
+     </plurals>
+     <plurals name="role_row_view_members_count">
+-        <item quantity="one">[»{count}« Ḿéḿɓéŕ one two]</item>
+         <item quantity="other">[»{count}« Ḿéḿɓéŕš one two]</item>
++        <item quantity="one">[»{count}« Ḿéḿɓéŕ one two]</item>
+     </plurals>
+     <plurals name="roles_list_numRoles">
+-        <item quantity="one">[Ŕöļé one]</item>
+         <item quantity="other">[Ŕöļéš one]</item>
++        <item quantity="one">[Ŕöļé one]</item>
+     </plurals>
+     <plurals name="search_hide_blocked_messages_count">
+-        <item quantity="one">[»{count}« ḿéššåĝé one two]</item>
+         <item quantity="other">[»{count}« ḿéššåĝéš one two]</item>
++        <item quantity="one">[»{count}« ḿéššåĝé one two]</item>
+     </plurals>
+     <plurals name="search_num_results_blocked_not_shown_count">
+-        <item quantity="one">[»{count}« ŕéšûļţ one two]</item>
+         <item quantity="other">[»{count}« ŕéšûļţš one two]</item>
++        <item quantity="one">[»{count}« ŕéšûļţ one two]</item>
+     </plurals>
+     <plurals name="search_still_indexing_hint_count">
+-        <item quantity="one">[»{count}« ŕéšûļţ one two]</item>
+         <item quantity="other">[»{count}« ŕéšûļţš one two]</item>
++        <item quantity="one">[»{count}« ŕéšûļţ one two]</item>
+     </plurals>
+     <plurals name="speaking_count_count">
+         <item quantity="other">[»{count}« šþéåķîñĝ one two]</item>
+     </plurals>
+     <plurals name="spotify_listen_along_title_host_count">
+-        <item quantity="one">[Ļîšţéñéŕ one two]</item>
+         <item quantity="other">[Ļîšţéñéŕš one two]</item>
++        <item quantity="one">[Ļîšţéñéŕ one two]</item>
+     </plurals>
+     <plurals name="stage_audience_waiting_many_numOthers">
+-        <item quantity="one">[»{#}« öţĥéŕ one two]</item>
+         <item quantity="other">[»{#}« öţĥéŕš one two]</item>
++        <item quantity="one">[»{#}« öţĥéŕ one two]</item>
+     </plurals>
+     <plurals name="stage_blocked_users_body_number">
+-        <item quantity="one">[»{#}« åççöûñţ ýöû ɓļöçķéð îš one two three]</item>
+         <item quantity="other">[»{#}« åççöûñţš ýöû ɓļöçķéð åŕé one two three]</item>
++        <item quantity="one">[»{#}« åççöûñţ ýöû ɓļöçķéð îš one two three]</item>
+     </plurals>
+     <plurals name="stage_blocked_users_description_count_number">
+-        <item quantity="one">[»{#}« åççöûñţ ýöû ɓļöçķéð îš one two three]</item>
+         <item quantity="other">[»{#}« åççöûñţš ýöû ɓļöçķéð åŕé one two three]</item>
++        <item quantity="one">[»{#}« åççöûñţ ýöû ɓļöçķéð îš one two three]</item>
+     </plurals>
+     <plurals name="stage_blocked_users_title_plural_number">
+-        <item quantity="one">[Åççöûñţ one two]</item>
+         <item quantity="other">[Åççöûñţš one two]</item>
++        <item quantity="one">[Åççöûñţ one two]</item>
+     </plurals>
+     <plurals name="stage_channel_people_count_count">
+-        <item quantity="one">[1 þéŕšöñ one two]</item>
+         <item quantity="other">[»{count}« þéöþļé one two]</item>
++        <item quantity="one">[1 þéŕšöñ one two]</item>
+     </plurals>
+     <plurals name="stage_channel_people_count_speakerCount">
+-        <item quantity="one">[1 šþéåķîñĝ one two]</item>
+         <item quantity="other">[»{speakerCount}« šþéåķîñĝ one two]</item>
++        <item quantity="one">[1 šþéåķîñĝ one two]</item>
+     </plurals>
+     <plurals name="stage_channel_users_are_speaking_count">
+-        <item quantity="one">[îš one]</item>
+         <item quantity="other">[åŕé one]</item>
++        <item quantity="one">[îš one]</item>
+     </plurals>
+     <plurals name="stage_discovery_card_speaker_text_number">
+-        <item quantity="one">[»{#}« šþéåķîñĝ ŵîţĥ »{userNick}« one two three]</item>
+         <item quantity="other">[»{userNick}« îš šþéåķîñĝ one two]</item>
++        <item quantity="one">[»{#}« šþéåķîñĝ ŵîţĥ »{userNick}« one two three]</item>
+     </plurals>
+     <plurals name="stage_discovery_card_speaker_text_overflow_count">
+         <item quantity="other">[+»{count}« šþéåķîñĝ one two]</item>
+     </plurals>
+     <plurals name="stage_discovery_live_stage_tile_friends_guilds_context_audience_3_n_n">
+-        <item quantity="one">[1 öţĥéŕ one two]</item>
+         <item quantity="other">[»{n}« öţĥéŕš one two]</item>
++        <item quantity="one">[1 öţĥéŕ one two]</item>
+     </plurals>
+     <plurals name="stage_discovery_live_stage_tile_speaker_summary_overflow_count">
+-        <item quantity="one">[+»{count}« Šþéåķéŕ one two]</item>
+         <item quantity="other">[+»{count}« Šþéåķéŕš one two]</item>
++        <item quantity="one">[+»{count}« Šþéåķéŕ one two]</item>
+     </plurals>
+     <plurals name="stage_instance_speakers_speakerCount">
+-        <item quantity="one">[åñð »{speakerCount}« öţĥéŕ one two]</item>
+         <item quantity="other">[åñð »{speakerCount}« öţĥéŕš one two]</item>
++        <item quantity="one">[åñð »{speakerCount}« öţĥéŕ one two]</item>
+     </plurals>
+     <plurals name="stage_invite_speaker_count_count">
+-        <item quantity="one">[1 Šþéåķéŕ one two]</item>
+         <item quantity="other">[»{count}« Šþéåķéŕš one two]</item>
++        <item quantity="one">[1 Šþéåķéŕ one two]</item>
+     </plurals>
+     <plurals name="stage_is_speaking_hook_count">
+-        <item quantity="one">[åñð öñé öţĥéŕ](ûšéŕñåḿéĤööķ) åŕé šþéåķîñĝ… one two three four five]</item>
+         <item quantity="other">[åñð »{count}« öţĥéŕš](ûšéŕñåḿéĤööķ) åŕé šþéåķîñĝ… one two three four five]</item>
++        <item quantity="one">[åñð öñé öţĥéŕ](ûšéŕñåḿéĤööķ) åŕé šþéåķîñĝ… one two three four five]</item>
+     </plurals>
+     <plurals name="stage_speak_invite_blocked_users_number">
+-        <item quantity="one">[»{#}« ɓļöçķéð ûšéŕ one two]</item>
+         <item quantity="other">[»{#}« ɓļöçķéð ûšéŕš one two three]</item>
++        <item quantity="one">[»{#}« ɓļöçķéð ûšéŕ one two]</item>
+     </plurals>
+     <plurals name="stage_speak_invite_header_blocked_users_number">
+-        <item quantity="one">[»{#}« ɓļöçķéð ûšéŕ one two]</item>
+         <item quantity="other">[»{#}« ɓļöçķéð ûšéŕš one two three]</item>
++        <item quantity="one">[»{#}« ɓļöçķéð ûšéŕ one two]</item>
+     </plurals>
+     <plurals name="sticker_pack_sticker_count_numStickers">
+-        <item quantity="one">[»{#}« šţîçķéŕ one two]</item>
+         <item quantity="other">[»{#}« šţîçķéŕš one two]</item>
++        <item quantity="one">[»{#}« šţîçķéŕ one two]</item>
+     </plurals>
+     <plurals name="sticker_premium_tier_2_upsell_alert_perks_guild_subscriptions_numFreeGuildSubscriptions">
+-        <item quantity="one">[»{#}« ŠéŕVéŕ βööšţ one two]</item>
+         <item quantity="other">[»{#}« ŠéŕVéŕ βööšţš one two three]</item>
++        <item quantity="one">[»{#}« ŠéŕVéŕ βööšţ one two]</item>
+     </plurals>
+     <plurals name="stickers_gift_inventory_title_month_intervalCount">
+-        <item quantity="one">[»{#}« ḿöñţĥ one two]</item>
+         <item quantity="other">[»{#}« ḿöñţĥš one two]</item>
++        <item quantity="one">[»{#}« ḿöñţĥ one two]</item>
+     </plurals>
+     <plurals name="stickers_gift_inventory_title_year_intervalCount">
+-        <item quantity="one">[»{#}« ýéåŕ one]</item>
+         <item quantity="other">[»{#}« ýéåŕš one two]</item>
++        <item quantity="one">[»{#}« ýéåŕ one]</item>
+     </plurals>
+     <plurals name="thread_message_count_count">
+-        <item quantity="one">[1 Ḿéššåĝé › one two]</item>
+         <item quantity="other">[»{count}« Ḿéššåĝéš › one two]</item>
++        <item quantity="one">[1 Ḿéššåĝé › one two]</item>
+     </plurals>
+     <plurals name="thread_reply_suggestion_count">
+-        <item quantity="one">[»{#}« ŕéþļý one two]</item>
+         <item quantity="other">[»{#}« ŕéþļîéš one two]</item>
++        <item quantity="one">[»{#}« ŕéþļý one two]</item>
+     </plurals>
+     <plurals name="total_results_count">
+-        <item quantity="one">[»{count}« Ŕéšûļţ one two]</item>
+         <item quantity="other">[»{count}« Ŕéšûļţš one two]</item>
++        <item quantity="one">[»{count}« Ŕéšûļţ one two]</item>
+     </plurals>
+     <plurals name="uploading_files_count">
+-        <item quantity="one">[Ûþļöåðîñĝ 1 Fîļé one two three]</item>
+         <item quantity="other">[Ûþļöåðîñĝ »{count}« Fîļéš one two three]</item>
++        <item quantity="one">[Ûþļöåðîñĝ 1 Fîļé one two three]</item>
+     </plurals>
+     <plurals name="uploading_files_failed_count">
+-        <item quantity="one">[1 Fîļé Ûþļöåðîñĝ Fåîļéð one two three]</item>
+         <item quantity="other">[»{count}« Fîļéš Ûþļöåðîñĝ Fåîļéð one two three]</item>
++        <item quantity="one">[1 Fîļé Ûþļöåðîñĝ Fåîļéð one two three]</item>
+     </plurals>
+     <plurals name="user_activity_timestamp_end_hours">
+         <item quantity="other">[»{hours}«: one]</item>
+@@ -1441,47 +1441,47 @@
+         <item quantity="other">[»{seconds}«]</item>
+     </plurals>
+     <plurals name="user_activity_user_playing_for_days_time">
+-        <item quantity="one">[ðåý one]</item>
+         <item quantity="other">[ðåýš one]</item>
++        <item quantity="one">[ðåý one]</item>
+     </plurals>
+     <plurals name="user_activity_user_playing_for_hours_time">
+-        <item quantity="one">[ĥöûŕ one]</item>
+         <item quantity="other">[ĥöûŕš one]</item>
++        <item quantity="one">[ĥöûŕ one]</item>
+     </plurals>
+     <plurals name="user_activity_user_playing_for_minutes_time">
+-        <item quantity="one">[ḿîñûţé one two]</item>
+         <item quantity="other">[ḿîñûţéš one two]</item>
++        <item quantity="one">[ḿîñûţé one two]</item>
+     </plurals>
+     <plurals name="user_profile_mutual_friends_count">
+-        <item quantity="one">[1 Ḿûţûåļ Fŕîéñð one two three]</item>
+         <item quantity="other">[»{count}« Ḿûţûåļ Fŕîéñðš one two three]</item>
++        <item quantity="one">[1 Ḿûţûåļ Fŕîéñð one two three]</item>
+     </plurals>
+     <plurals name="user_profile_mutual_guilds_count">
+-        <item quantity="one">[1 Ḿûţûåļ ŠéŕVéŕ one two three]</item>
+         <item quantity="other">[»{count}« Ḿûţûåļ ŠéŕVéŕš one two three]</item>
++        <item quantity="one">[1 Ḿûţûåļ ŠéŕVéŕ one two three]</item>
+     </plurals>
+     <plurals name="user_summary_with_others_count">
+-        <item quantity="one">[1 öţĥéŕ one two]</item>
+         <item quantity="other">[»{count}« öţĥéŕš one two]</item>
++        <item quantity="one">[1 öţĥéŕ one two]</item>
+     </plurals>
+     <plurals name="vanity_url_header_uses_uses">
+-        <item quantity="one">[1 ûšé one]</item>
+         <item quantity="other">[»{uses}« ûšéš one]</item>
++        <item quantity="one">[1 ûšé one]</item>
+     </plurals>
+     <plurals name="vanity_url_uses_uses">
+-        <item quantity="one">[1 ûšé one]</item>
+         <item quantity="other">[»{uses}« ûšéš one]</item>
++        <item quantity="one">[1 ûšé one]</item>
+     </plurals>
+     <plurals name="viewing_as_roles_numRoles">
+-        <item quantity="one">[1 ŕöļé one two]</item>
+         <item quantity="other">[»{numRoles}« ŕöļéš one two]</item>
++        <item quantity="one">[1 ŕöļé one two]</item>
+     </plurals>
+     <plurals name="voice_call_member_list_title_count">
+-        <item quantity="one">[»{#}« Þéŕšöñ one two]</item>
+         <item quantity="other">[»{#}« Þéöþļé one two]</item>
++        <item quantity="one">[»{#}« Þéŕšöñ one two]</item>
+     </plurals>
+     <plurals name="year_count">
+-        <item quantity="one">[ýéåŕ one]</item>
+         <item quantity="other">[»{count}« ýéåŕš one two]</item>
++        <item quantity="one">[ýéåŕ one]</item>
+     </plurals>
+ </resources>

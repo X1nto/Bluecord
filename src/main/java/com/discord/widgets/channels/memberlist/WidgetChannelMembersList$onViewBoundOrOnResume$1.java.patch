@@ -1,0 +1,10 @@
+--- ./discord_94011/src/main/java/com/discord/widgets/channels/memberlist/WidgetChannelMembersList$onViewBoundOrOnResume$1.java	2021-12-24 01:10:13.809026900 +0400
++++ ./bluecord/src/main/java/com/discord/widgets/channels/memberlist/WidgetChannelMembersList$onViewBoundOrOnResume$1.java	2021-12-24 01:08:34.194264000 +0400
+@@ -28,6 +28,6 @@ public final class WidgetChannelMembersL
+ 
+     public final void invoke(WidgetChannelMembersListViewModel.ViewState viewState) {
+         m.checkNotNullParameter(viewState, "viewState");
+-        WidgetChannelMembersList.access$configureUI(this.this$0, viewState);
++        this.this$0.configureUI(viewState);
+     }
+ }

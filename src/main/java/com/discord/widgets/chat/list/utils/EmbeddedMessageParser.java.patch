@@ -1,0 +1,20 @@
+--- ./discord_94011/src/main/java/com/discord/widgets/chat/list/utils/EmbeddedMessageParser.java	2021-12-24 01:10:14.197027400 +0400
++++ ./bluecord/src/main/java/com/discord/widgets/chat/list/utils/EmbeddedMessageParser.java	2021-12-24 01:08:34.780261300 +0400
+@@ -205,7 +205,8 @@ public final class EmbeddedMessageParser
+     public final DraweeSpanStringBuilder parse(ParserData parserData) {
+         m.checkNotNullParameter(parserData, "parserData");
+         MessageRenderContext messageRenderContext = getMessageRenderContext(parserData);
+-        User author = parserData.getMessage().getAuthor();
++        Message message = parserData.getMessage();
++        User author = message.getAuthor();
+         MessagePreprocessor messagePreprocessor = getMessagePreprocessor(author != null ? author.i() : 0, parserData.getMessage(), parserData.getMessageState(), parserData.getMaxNodes());
+         String content = parserData.getMessage().getContent();
+         if (content == null) {
+@@ -215,6 +216,6 @@ public final class EmbeddedMessageParser
+         String property = System.getProperty("line.separator");
+         Objects.requireNonNull(property);
+         m.checkNotNullExpressionValue(property, "Objects.requireNonNull(S…operty(\"line.separator\"))");
+-        return DiscordParser.parseChannelMessage(context, new Regex(property).replace(content, " "), messageRenderContext, messagePreprocessor, DiscordParser.ParserOptions.REPLY, false);
++        return DiscordParser.parseChannelMessage(context, new Regex(property).replace(content, " "), messageRenderContext, messagePreprocessor, DiscordParser.ParserOptions.REPLY, false, message);
+     }
+ }

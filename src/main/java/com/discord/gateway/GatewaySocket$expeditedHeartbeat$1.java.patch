@@ -1,0 +1,11 @@
+--- ./discord_94011/src/main/java/com/discord/gateway/GatewaySocket$expeditedHeartbeat$1.java	2021-12-24 01:10:12.581026800 +0400
++++ ./bluecord/src/main/java/com/discord/gateway/GatewaySocket$expeditedHeartbeat$1.java	2021-12-24 01:08:33.076261400 +0400
+@@ -53,7 +53,7 @@ public final class GatewaySocket$expedit
+                 GatewaySocket.Companion.log$default(companion, logger, "Connection backoff reset " + str + '.', false, 2, null);
+                 this.this$0.this$0.gatewayBackoff.succeed();
+                 this.this$0.this$0.nextReconnectIsImmediate = true;
+-                if (GatewaySocket.access$getConnectionState$p(this.this$0.this$0) == 1) {
++                if (this.this$0.this$0.connectionState == 1) {
+                     this.this$0.this$0.discover();
+                 }
+             }

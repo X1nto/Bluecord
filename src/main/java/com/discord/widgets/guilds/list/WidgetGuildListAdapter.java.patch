@@ -1,0 +1,13 @@
+--- ./discord_94011/src/main/java/com/discord/widgets/guilds/list/WidgetGuildListAdapter.java	2021-12-24 01:10:14.497027300 +0400
++++ ./bluecord/src/main/java/com/discord/widgets/guilds/list/WidgetGuildListAdapter.java	2021-12-24 01:08:35.094262700 +0400
+@@ -275,6 +275,10 @@ public final class WidgetGuildListAdapte
+         this.interactionListener = interactionListener2;
+     }
+ 
++    public static final /* synthetic */ InteractionListener access$getInteractionListener$p(WidgetGuildListAdapter widgetGuildListAdapter) {
++        return widgetGuildListAdapter.interactionListener;
++    }
++
+     private final WidgetGuildListAdapter$createDiffUtilCallback$1 createDiffUtilCallback(List<? extends GuildListItem> list, List<? extends GuildListItem> list2) {
+         return new WidgetGuildListAdapter$createDiffUtilCallback$1(list, list2);
+     }

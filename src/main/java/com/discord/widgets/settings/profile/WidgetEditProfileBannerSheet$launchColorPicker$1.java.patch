@@ -1,0 +1,21 @@
+--- ./discord_94011/src/main/java/com/discord/widgets/settings/profile/WidgetEditProfileBannerSheet$launchColorPicker$1.java	2021-12-24 01:10:15.258027900 +0400
++++ ./bluecord/src/main/java/com/discord/widgets/settings/profile/WidgetEditProfileBannerSheet$launchColorPicker$1.java	2021-12-24 01:08:35.738260100 +0400
+@@ -15,15 +15,15 @@ public final class WidgetEditProfileBann
+ 
+     @Override // c.k.a.a.f
+     public void onColorReset(int i) {
+-        this.this$0.getViewModel().updateColorPreview(null);
++        WidgetEditProfileBannerSheet.access$getViewModel$p(this.this$0).updateColorPreview(null);
+         this.this$0.getOnColorSelected().invoke(null);
+     }
+ 
+     @Override // c.k.a.a.f
+     public void onColorSelected(int i, int i2) {
+-        EditProfileBannerSheetViewModel viewModel = this.this$0.getViewModel();
++        EditProfileBannerSheetViewModel access$getViewModel$p = WidgetEditProfileBannerSheet.access$getViewModel$p(this.this$0);
+         ColorCompat colorCompat = ColorCompat.INSTANCE;
+-        viewModel.updateColorPreview(colorCompat.getColorHexFromColorInt(i2));
++        access$getViewModel$p.updateColorPreview(colorCompat.getColorHexFromColorInt(i2));
+         this.this$0.getOnColorSelected().invoke(Integer.valueOf(colorCompat.removeAlphaComponent(i2)));
+     }
+ 

@@ -1,0 +1,15 @@
+--- ./discord_94011/src/main/java/com/discord/widgets/channels/WidgetChannelTopic$showContextMenu$4.java	2021-12-24 01:10:13.734025500 +0400
++++ ./bluecord/src/main/java/com/discord/widgets/channels/WidgetChannelTopic$showContextMenu$4.java	2021-12-24 01:08:34.118263100 +0400
+@@ -46,10 +46,10 @@ public final class WidgetChannelTopic$sh
+ 
+             public final void invoke(View view) {
+                 m.checkNotNullParameter(view, "v");
+-                WidgetChannelTopicViewModel viewModel = this.this$0.this$0.getViewModel();
++                WidgetChannelTopicViewModel widgetChannelTopicViewModel = this.this$0.this$0.getViewModel();
+                 Context context = view.getContext();
+                 m.checkNotNullExpressionValue(context, "v.context");
+-                viewModel.handleClosePrivateChannel(context);
++                widgetChannelTopicViewModel.handleClosePrivateChannel(context);
+             }
+         })), null, null, null, 2130969804, null, null, 0, null, 15808, null);
+         return true;

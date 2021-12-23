@@ -1,0 +1,17 @@
+--- ./discord_94011/src/main/java/retrofit2/Response.java	2021-12-24 01:10:16.702025000 +0400
++++ ./bluecord/src/main/java/retrofit2/Response.java	2021-12-24 01:08:37.083263200 +0400
+@@ -7,12 +7,12 @@ public final class Response<T> {
+     public final T b;
+ 
+     /* renamed from: c  reason: collision with root package name */
+-    public final ResponseBody f2964c;
++    public final ResponseBody f2966c;
+ 
+     public Response(okhttp3.Response response, T t, ResponseBody responseBody) {
+         this.a = response;
+         this.b = t;
+-        this.f2964c = responseBody;
++        this.f2966c = responseBody;
+     }
+ 
+     public static <T> Response<T> b(T t, okhttp3.Response response) {

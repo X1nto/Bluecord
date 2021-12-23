@@ -1,0 +1,20 @@
+--- ./discord_94011/src/main/res/values-es-rES/strings.xml	2021-12-24 01:10:10.728027400 +0400
++++ ./bluecord/src/main/res/values-es-rES/strings.xml	2021-12-24 01:08:30.528264500 +0400
+@@ -5510,7 +5510,7 @@
+     <string name="notification_reply_failed">No se ha podido responder a {recipient}</string>
+     <string name="notification_reply_success">Has respondido a {recipient}</string>
+     <string name="notification_settings">Ajustes de notificaciones</string>
+-    <string name="notification_title_discord">Discord</string>
++    <string name="notification_title_discord">Bluecord</string>
+     <string name="notification_title_start_game">Alguien está jugando</string>
+     <string name="notifications">Notificaciones</string>
+     <string name="notifications_muted">Notificaciones silenciadas</string>
+@@ -8126,7 +8126,7 @@
+     <string name="tip_voice_conversations_title3">Hazte oír</string>
+     <string name="tip_whos_online_body3">Aquí puedes ver a todos los miembros de este canal. Mira quién está en línea y qué hacen, como jugar o escuchar música.</string>
+     <string name="tip_whos_online_title3">¿Qué está haciendo todo el mundo?</string>
+-    <string name="tip_writing_messages_body3">¡Ahora que te has unido a {serverName}, haz que se note tu presencia y **saluda**! ��</string>
++    <string name="tip_writing_messages_body3" />
+     <string name="tip_writing_messages_title3">Ten una conversación</string>
+     <string name="title">Título</string>
+     <string name="title_bar_close_window">Cerrar</string>

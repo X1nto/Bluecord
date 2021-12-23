@@ -1,0 +1,11 @@
+--- ./discord_94011/src/main/java/s/a/a/l.java	2021-12-24 01:10:16.718024300 +0400
++++ ./bluecord/src/main/java/s/a/a/l.java	2021-12-24 01:08:37.101261500 +0400
+@@ -46,7 +46,7 @@ public class l<E> {
+         while (true) {
+             m mVar = (m) this._cur;
+             E e = (E) mVar.e();
+-            if (e != m.f2968c) {
++            if (e != m.f2970c) {
+                 return e;
+             }
+             a.compareAndSet(this, mVar, mVar.d());

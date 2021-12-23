@@ -1,0 +1,21 @@
+--- ./discord_94011/src/main/res/values-af/plurals.xml	2021-12-24 01:10:10.583025400 +0400
++++ ./bluecord/src/main/res/values-af/plurals.xml	2021-12-24 01:08:30.310265100 +0400
+@@ -1,15 +1,15 @@
+ <?xml version="1.0" encoding="utf-8"?>
+ <resources>
+     <plurals name="exo_controls_fastforward_by_amount_description">
+-        <item quantity="one">Spoel %d sekonde vinnig vorentoe</item>
+         <item quantity="other">Spoel %d sekondes vinnig vorentoe</item>
++        <item quantity="one">Spoel %d sekonde vinnig vorentoe</item>
+     </plurals>
+     <plurals name="exo_controls_rewind_by_amount_description">
+-        <item quantity="one">Spoel %d sekonde terug</item>
+         <item quantity="other">Spoel %d sekondes terug</item>
++        <item quantity="one">Spoel %d sekonde terug</item>
+     </plurals>
+     <plurals name="mtrl_badge_content_description">
+-        <item quantity="one">%d nuwe kennisgewing</item>
+         <item quantity="other">%d nuwe kennisgewings</item>
++        <item quantity="one">%d nuwe kennisgewing</item>
+     </plurals>
+ </resources>

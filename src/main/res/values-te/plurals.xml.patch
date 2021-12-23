@@ -1,0 +1,21 @@
+--- ./discord_94011/src/main/res/values-te/plurals.xml	2021-12-24 01:10:11.077024500 +0400
++++ ./bluecord/src/main/res/values-te/plurals.xml	2021-12-24 01:08:30.941264600 +0400
+@@ -1,15 +1,15 @@
+ <?xml version="1.0" encoding="utf-8"?>
+ <resources>
+     <plurals name="exo_controls_fastforward_by_amount_description">
+-        <item quantity="one">%d సెకండ్ వేగంగా ఫార్వర్డ్ చేయండి</item>
+         <item quantity="other">%d సెకన్లు వేగంగా ఫార్వర్డ్ చేయండి</item>
++        <item quantity="one">%d సెకండ్ వేగంగా ఫార్వర్డ్ చేయండి</item>
+     </plurals>
+     <plurals name="exo_controls_rewind_by_amount_description">
+-        <item quantity="one">%d సెకండ్ రివైండ్ చేయండి</item>
+         <item quantity="other">%d సెకన్లు రివైండ్ చేయండి</item>
++        <item quantity="one">%d సెకండ్ రివైండ్ చేయండి</item>
+     </plurals>
+     <plurals name="mtrl_badge_content_description">
+-        <item quantity="one">%d కొత్త నోటిఫికేషన్</item>
+         <item quantity="other">%d కొత్త నోటిఫికేషన్‌లు</item>
++        <item quantity="one">%d కొత్త నోటిఫికేషన్</item>
+     </plurals>
+ </resources>

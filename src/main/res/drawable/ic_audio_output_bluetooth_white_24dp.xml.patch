@@ -1,0 +1,10 @@
+--- ./discord_94011/src/main/res/drawable/ic_audio_output_bluetooth_white_24dp.xml	2021-12-24 01:10:08.549023600 +0400
++++ ./bluecord/src/main/res/drawable/ic_audio_output_bluetooth_white_24dp.xml	2021-12-24 01:08:16.842263700 +0400
+@@ -1,5 +1,5 @@
+ <?xml version="1.0" encoding="utf-8"?>
+ <vector xmlns:android="http://schemas.android.com/apk/res/android" android:height="24dp" android:width="24dp" android:viewportWidth="24" android:viewportHeight="24">
+-    <path android:fillColor="#ffffff" android:pathData="M11.383,3.079C11.009,2.925 10.579,3.01 10.293,3.296L6,8.002H3C2.45,8.002 2,8.453 2,9.002V15.002C2,15.552 2.45,16.002 3,16.002H6L10.293,20.71C10.579,20.996 11.009,21.082 11.383,20.927C11.757,20.772 12,20.407 12,20.002V4.002C12,3.599 11.757,3.232 11.383,3.079Z"/>
+-    <path android:fillColor="#ffffff" android:pathData="M22,9.426L18.406,6H17.7766V10.554L14.8875,7.8L14,8.646L17.5185,12L14,15.354L14.8875,16.2L17.7766,13.446V18H18.406L22,14.574L19.2935,12L22,9.426ZM19.0354,8.298L20.2187,9.426L19.0354,10.554V8.298ZM20.2187,14.574L19.0354,15.702V13.446L20.2187,14.574Z"/>
++    <path android:fillColor="#ffffffff" android:pathData="M11.383,3.079C11.009,2.925 10.579,3.01 10.293,3.296L6,8.002H3C2.45,8.002 2,8.453 2,9.002V15.002C2,15.552 2.45,16.002 3,16.002H6L10.293,20.71C10.579,20.996 11.009,21.082 11.383,20.927C11.757,20.772 12,20.407 12,20.002V4.002C12,3.599 11.757,3.232 11.383,3.079Z"/>
++    <path android:fillColor="#ffffffff" android:pathData="M22,9.426L18.406,6H17.7766V10.554L14.8875,7.8L14,8.646L17.5185,12L14,15.354L14.8875,16.2L17.7766,13.446V18H18.406L22,14.574L19.2935,12L22,9.426ZM19.0354,8.298L20.2187,9.426L19.0354,10.554V8.298ZM20.2187,14.574L19.0354,15.702V13.446L20.2187,14.574Z"/>
+ </vector>

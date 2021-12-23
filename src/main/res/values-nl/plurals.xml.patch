@@ -1,0 +1,1782 @@
+--- ./discord_94011/src/main/res/values-nl/plurals.xml	2021-12-24 01:10:10.952025800 +0400
++++ ./bluecord/src/main/res/values-nl/plurals.xml	2021-12-24 01:08:30.793265700 +0400
+@@ -1,1382 +1,1382 @@
+ <?xml version="1.0" encoding="utf-8"?>
+ <resources>
+     <plurals name="activity_feed_now_playing_header_two_known_extras">
+-        <item quantity="one">{extras} andere</item>
+         <item quantity="other">{extras} anderen</item>
++        <item quantity="one">{extras} andere</item>
+     </plurals>
+     <plurals name="activity_feed_single_member_list_header_memberCount">
+-        <item quantity="one">{memberCount} Persoon</item>
+         <item quantity="other">{memberCount} Personen</item>
++        <item quantity="one">{memberCount} Persoon</item>
+     </plurals>
+     <plurals name="activity_feed_user_played_days_ago_time">
+-        <item quantity="one">dag</item>
+         <item quantity="other">dagen</item>
++        <item quantity="one">dag</item>
+     </plurals>
+     <plurals name="activity_feed_user_played_hours_ago_time">
+-        <item quantity="one">{#} uur</item>
+         <item quantity="other">{#} uur</item>
++        <item quantity="one">{#} uur</item>
+     </plurals>
+     <plurals name="activity_feed_user_played_minutes_ago_time">
+-        <item quantity="one">{#} minuut</item>
+         <item quantity="other">{#} minuten</item>
++        <item quantity="one">{#} minuut</item>
+     </plurals>
+     <plurals name="activity_feed_user_played_seconds_ago_time">
+-        <item quantity="one">seconde</item>
+         <item quantity="other">seconden</item>
++        <item quantity="one">seconde</item>
+     </plurals>
+     <plurals name="age_gate_confirm_header_age">
+-        <item quantity="one">1 jaar</item>
+         <item quantity="other">{age} jaar</item>
++        <item quantity="one">1 jaar</item>
+     </plurals>
+     <plurals name="age_gate_underage_existing_body_deletion_with_days_days">
+-        <item quantity="one">1 dag</item>
+         <item quantity="other">{days} dagen</item>
++        <item quantity="one">1 dag</item>
+     </plurals>
+     <plurals name="announcement_edit_rate_limit_retryAfterMinutes">
+-        <item quantity="one">1 minuut</item>
+         <item quantity="other">{retryAfterMinutes} minuten</item>
++        <item quantity="one">1 minuut</item>
+     </plurals>
+     <plurals name="application_progress_indicator_installing_hours_timeRemaining">
+-        <item quantity="one">nog {#} uur</item>
+         <item quantity="other">nog {#} uren</item>
++        <item quantity="one">nog {#} uur</item>
+     </plurals>
+     <plurals name="application_progress_indicator_installing_minutes_timeRemaining">
+-        <item quantity="one">nog {#} minuut</item>
+         <item quantity="other">nog {#} minuten</item>
++        <item quantity="one">nog {#} minuut</item>
+     </plurals>
+     <plurals name="application_progress_indicator_installing_seconds_timeRemaining">
+-        <item quantity="one">afsluiten van</item>
+         <item quantity="other">nog {#} seconden over</item>
++        <item quantity="one">afsluiten van</item>
+     </plurals>
+     <plurals name="application_progress_indicator_updating_hours_timeRemaining">
+-        <item quantity="one">nog {#} uur</item>
+         <item quantity="other">nog {#} uren</item>
++        <item quantity="one">nog {#} uur</item>
+     </plurals>
+     <plurals name="application_progress_indicator_updating_minutes_timeRemaining">
+-        <item quantity="one">nog {#} minuut</item>
+         <item quantity="other">nog {#} minuten</item>
++        <item quantity="one">nog {#} minuut</item>
+     </plurals>
+     <plurals name="application_progress_indicator_updating_seconds_timeRemaining">
+-        <item quantity="one">afsluiten van</item>
+         <item quantity="other">nog {#} seconden over</item>
++        <item quantity="one">afsluiten van</item>
+     </plurals>
+     <plurals name="application_store_gift_purchase_confirm_monthly_mobile_intervalCount">
+-        <item quantity="one">{#} maand</item>
+         <item quantity="other">{#} maanden</item>
++        <item quantity="one">{#} maand</item>
+     </plurals>
+     <plurals name="application_store_gift_purchase_confirm_subscription_monthly_intervalCount">
+-        <item quantity="one">{#} maand</item>
+         <item quantity="other">{#} maanden</item>
++        <item quantity="one">{#} maand</item>
+     </plurals>
+     <plurals name="application_store_gift_purchase_confirm_subscription_yearly_intervalCount">
+-        <item quantity="one">{#} jaar</item>
+         <item quantity="other">{#} jaar</item>
++        <item quantity="one">{#} jaar</item>
+     </plurals>
+     <plurals name="application_store_gift_purchase_confirm_yearly_mobile_intervalCount">
+-        <item quantity="one">{#} jaar</item>
+         <item quantity="other">{#} jaar</item>
++        <item quantity="one">{#} jaar</item>
+     </plurals>
+     <plurals name="application_store_recommendation_ever_played_other_count">
+-        <item quantity="one">1 persoon</item>
+         <item quantity="other">{count} personen</item>
++        <item quantity="one">1 persoon</item>
+     </plurals>
+     <plurals name="application_store_recommendation_now_playing_other_count">
+-        <item quantity="one">1 persoon</item>
+         <item quantity="other">{count} personen</item>
++        <item quantity="one">1 persoon</item>
+     </plurals>
+     <plurals name="application_store_recommendation_recently_played_other_count">
+-        <item quantity="one">1 persoon</item>
+         <item quantity="other">{count} personen</item>
++        <item quantity="one">1 persoon</item>
+     </plurals>
+     <plurals name="attach_payment_source_optional_with_entitlements_warning_months">
+-        <item quantity="one">{#} maand</item>
+         <item quantity="other">{#} maanden</item>
++        <item quantity="one">{#} maand</item>
+     </plurals>
+     <plurals name="autocomplete_emoji_upsell_count">
+-        <item quantity="one">{#} meer overeenkomende emoji</item>
+         <item quantity="other">{#} meer overeenkomende emoji&apos;s</item>
++        <item quantity="one">{#} meer overeenkomende emoji</item>
+     </plurals>
+     <plurals name="bans_header_bans">
+-        <item quantity="one">1 verbanning</item>
+         <item quantity="other">{bans} verbanningen</item>
++        <item quantity="one">1 verbanning</item>
+     </plurals>
+     <plurals name="billing_plan_select_description_premium_tier_1_premium_guild_bundle_num">
+-        <item quantity="one">{#} boost</item>
+         <item quantity="other">{#} boosts</item>
++        <item quantity="one">{#} boost</item>
+     </plurals>
+     <plurals name="billing_plan_select_description_premium_tier_2_premium_guild_bundle_num">
+-        <item quantity="one">{#} boost</item>
+         <item quantity="other">{#} boosts</item>
++        <item quantity="one">{#} boost</item>
+     </plurals>
+     <plurals name="billing_plan_select_includes_boosts_num">
+-        <item quantity="one">{#} boost</item>
+         <item quantity="other">{#} boosts</item>
++        <item quantity="one">{#} boost</item>
+     </plurals>
+     <plurals name="billing_price_per_year_months_free_numFreeMonths">
+-        <item quantity="one">{#} maand</item>
+         <item quantity="other">{#} maanden</item>
++        <item quantity="one">{#} maand</item>
+     </plurals>
+     <plurals name="billing_refund_purchase_date_daysSincePurchase">
+-        <item quantity="one">{daysSincePurchase} dag geleden</item>
+         <item quantity="other">{daysSincePurchase} dagen geleden</item>
++        <item quantity="one">{daysSincePurchase} dag geleden</item>
+     </plurals>
+     <plurals name="billing_switch_plan_confirm_upgrade_tier_2_year_numFreeGuildSubscriptions">
+-        <item quantity="one">{#} serverboost</item>
+         <item quantity="other">{#} serverboosts</item>
++        <item quantity="one">{#} serverboost</item>
+     </plurals>
+     <plurals name="billing_switch_plan_tier_2_description_numFreeGuildSubscriptions">
+-        <item quantity="one">{#} serverboost</item>
+         <item quantity="other">{#} serverboosts</item>
++        <item quantity="one">{#} serverboost</item>
+     </plurals>
+     <plurals name="billing_switch_plan_upgrade_body_tier_2_year_numFreeGuildSubscriptions">
+-        <item quantity="one">{#} serverboost</item>
+         <item quantity="other">{#} serverboosts</item>
++        <item quantity="one">{#} serverboost</item>
+     </plurals>
+     <plurals name="blocked_message_count_count">
+-        <item quantity="one">{count} geblokkeerd bericht</item>
+         <item quantity="other">{count} geblokkeerde berichten</item>
++        <item quantity="one">{count} geblokkeerd bericht</item>
+     </plurals>
+     <plurals name="blocked_messages_count">
+-        <item quantity="one">1 geblokkeerd bericht</item>
+         <item quantity="other">{count} geblokkeerde berichten</item>
++        <item quantity="one">1 geblokkeerd bericht</item>
+     </plurals>
+     <plurals name="blocked_messages_hide_count">
+-        <item quantity="one">Bericht invouwen</item>
+         <item quantity="other">Berichten invouwen</item>
++        <item quantity="one">Bericht invouwen</item>
+     </plurals>
+     <plurals name="blocked_messages_show_count">
+-        <item quantity="one">Toon bericht</item>
+         <item quantity="other">Toon berichten</item>
++        <item quantity="one">Toon bericht</item>
+     </plurals>
+     <plurals name="camera_disabled_limit_reached_limit">
+-        <item quantity="one">{#} gebruiker</item>
+         <item quantity="other">{#} gebruikers</item>
++        <item quantity="one">{#} gebruiker</item>
+     </plurals>
+     <plurals name="camera_preview_video_background_upload_max_tooltip_maxCustomBackgrounds">
+-        <item quantity="one">{#} achtergrond</item>
+         <item quantity="other">{#} achtergronden</item>
++        <item quantity="one">{#} achtergrond</item>
+     </plurals>
+     <plurals name="change_identity_nickname_too_short_minLength">
+-        <item quantity="one">{#} teken</item>
+         <item quantity="other">{#} tekens</item>
++        <item quantity="one">{#} teken</item>
+     </plurals>
+     <plurals name="channel_members_a11y_label_count">
+-        <item quantity="one">{#} lid</item>
+         <item quantity="other">{#} leden</item>
++        <item quantity="one">{#} lid</item>
+     </plurals>
+     <plurals name="channel_mention_badge_a11y_label_mentionCount">
+-        <item quantity="one">{#} vermelding</item>
+         <item quantity="other">{#} vermeldingen</item>
++        <item quantity="one">{#} vermelding</item>
+     </plurals>
+     <plurals name="channel_slowmode_cooldown_seconds">
+-        <item quantity="one">1 seconde</item>
+         <item quantity="other">{seconds} seconden</item>
++        <item quantity="one">1 seconde</item>
+     </plurals>
+     <plurals name="channel_slowmode_desc_hours_hours">
+-        <item quantity="one">1 uur</item>
+         <item quantity="other">{hours} uur</item>
++        <item quantity="one">1 uur</item>
+     </plurals>
+     <plurals name="channel_slowmode_desc_hours_minutes">
+-        <item quantity="one">1 minuut</item>
+         <item quantity="other">{minutes} minuten</item>
++        <item quantity="one">1 minuut</item>
+     </plurals>
+     <plurals name="channel_slowmode_desc_hours_seconds">
+-        <item quantity="one">1 seconde</item>
+         <item quantity="other">{seconds} seconden</item>
++        <item quantity="one">1 seconde</item>
+     </plurals>
+     <plurals name="channel_slowmode_desc_minutes_minutes">
+-        <item quantity="one">1 minuut</item>
+         <item quantity="other">{minutes} minuten</item>
++        <item quantity="one">1 minuut</item>
+     </plurals>
+     <plurals name="channel_slowmode_desc_minutes_seconds">
+-        <item quantity="one">1 seconde</item>
+         <item quantity="other">{seconds} seconden</item>
++        <item quantity="one">1 seconde</item>
+     </plurals>
+     <plurals name="channel_slowmode_desc_seconds">
+-        <item quantity="one">seconde</item>
+         <item quantity="other">{seconds} seconden</item>
++        <item quantity="one">seconde</item>
+     </plurals>
+     <plurals name="create_stage_instance_speakers_label_speakerCount">
+-        <item quantity="one">1 spreker</item>
+         <item quantity="other">{speakerCount} sprekers</item>
++        <item quantity="one">1 spreker</item>
+     </plurals>
+     <plurals name="custom_status_clear_in_hours_hours">
+-        <item quantity="one">{#} uur</item>
+         <item quantity="other">{#} uur</item>
++        <item quantity="one">{#} uur</item>
+     </plurals>
+     <plurals name="custom_status_clear_in_minutes_minutes">
+-        <item quantity="one">{#} minuut</item>
+         <item quantity="other">{#} minuten</item>
++        <item quantity="one">{#} minuut</item>
+     </plurals>
+     <plurals name="custom_status_hours_hours">
+-        <item quantity="one">{#} uur</item>
+         <item quantity="other">{#} uur</item>
++        <item quantity="one">{#} uur</item>
+     </plurals>
+     <plurals name="custom_status_minutes_minutes">
+-        <item quantity="one">{#} minuut</item>
+         <item quantity="other">{#} minuten</item>
++        <item quantity="one">{#} minuut</item>
+     </plurals>
+     <plurals name="directory_search_results_header_numResults">
+-        <item quantity="one">**1** community</item>
+         <item quantity="other">**{numResults}** community&apos;s</item>
++        <item quantity="one">**1** community</item>
+     </plurals>
+     <plurals name="discovery_speaker_count_speakersCount">
+-        <item quantity="one">+{count} spreker</item>
+         <item quantity="other">+{count} sprekers</item>
++        <item quantity="one">+{count} spreker</item>
+     </plurals>
+     <plurals name="dm_tooltip_a11y_label_mentions">
+-        <item quantity="one">, {#} ongelezen bericht</item>
+         <item quantity="other">, {#} ongelezen berichten</item>
++        <item quantity="one">, {#} ongelezen bericht</item>
+     </plurals>
+     <plurals name="duration_days_days">
+-        <item quantity="one">1 dag</item>
+         <item quantity="other">{days} dagen</item>
++        <item quantity="one">1 dag</item>
+     </plurals>
+     <plurals name="duration_days_short_days">
+-        <item quantity="one">1d</item>
+         <item quantity="other">{days}d</item>
++        <item quantity="one">1d</item>
+     </plurals>
+     <plurals name="duration_hours_hours">
+-        <item quantity="one">1 uur</item>
+         <item quantity="other">{hours} uren</item>
++        <item quantity="one">1 uur</item>
+     </plurals>
+     <plurals name="duration_hours_short_hours">
+-        <item quantity="one">1 u</item>
+         <item quantity="other">{hours} u</item>
++        <item quantity="one">1 u</item>
+     </plurals>
+     <plurals name="duration_mins_mins">
+-        <item quantity="one">1 min</item>
+         <item quantity="other">{mins} minuten</item>
++        <item quantity="one">1 min</item>
+     </plurals>
+     <plurals name="duration_minutes_minutes">
+-        <item quantity="one">1 minuut</item>
+         <item quantity="other">{minutes} minuten</item>
++        <item quantity="one">1 minuut</item>
+     </plurals>
+     <plurals name="duration_minutes_short_minutes">
+-        <item quantity="one">1 m</item>
+         <item quantity="other">{minutes} m</item>
++        <item quantity="one">1 m</item>
+     </plurals>
+     <plurals name="duration_seconds_seconds">
+-        <item quantity="one">1 seconde</item>
+         <item quantity="other">{seconds} seconden</item>
++        <item quantity="one">1 seconde</item>
+     </plurals>
+     <plurals name="duration_seconds_short_seconds">
+-        <item quantity="one">1 s</item>
+         <item quantity="other">{seconds} s</item>
++        <item quantity="one">1 s</item>
+     </plurals>
+     <plurals name="embedded_activities_are_participating_count">
+-        <item quantity="one">{#} ander persoon</item>
+         <item quantity="other">{#} anderen</item>
++        <item quantity="one">{#} ander persoon</item>
+     </plurals>
+     <plurals name="embedded_activities_are_playing_count">
+-        <item quantity="one">{#} ander persoon</item>
+         <item quantity="other">{#} anderen</item>
++        <item quantity="one">{#} ander persoon</item>
+     </plurals>
+     <plurals name="embedded_activities_are_watching_count">
+-        <item quantity="one">{#} ander persoon</item>
+         <item quantity="other">{#} anderen</item>
++        <item quantity="one">{#} ander persoon</item>
+     </plurals>
+     <plurals name="emoji_slots_available_count">
+-        <item quantity="one">{count} slot</item>
+         <item quantity="other">{count} slots</item>
++        <item quantity="one">{count} slot</item>
+     </plurals>
+     <plurals name="emojis_title_count">
+-        <item quantity="one">{count} emoji</item>
+         <item quantity="other">{count} emoji&apos;s</item>
++        <item quantity="one">{count} emoji</item>
+     </plurals>
+     <plurals name="exo_controls_fastforward_by_amount_description">
+-        <item quantity="one">%d seconde vooruitspoelen</item>
+         <item quantity="other">%d seconden vooruitspoelen</item>
++        <item quantity="one">%d seconde vooruitspoelen</item>
+     </plurals>
+     <plurals name="exo_controls_rewind_by_amount_description">
+-        <item quantity="one">%d seconde terugspoelen</item>
+         <item quantity="other">%d seconden terugspoelen</item>
++        <item quantity="one">%d seconde terugspoelen</item>
+     </plurals>
+     <plurals name="form_help_last_seen_days">
+-        <item quantity="one">1 dag</item>
+         <item quantity="other">{days} dagen</item>
++        <item quantity="one">1 dag</item>
+     </plurals>
+     <plurals name="form_help_last_seen_members">
+-        <item quantity="one">1 lid</item>
+         <item quantity="other">{members} leden</item>
++        <item quantity="one">1 lid</item>
+     </plurals>
+     <plurals name="form_help_last_seen_with_roles_days">
+-        <item quantity="one">1 dag</item>
+         <item quantity="other">{days} dagen</item>
++        <item quantity="one">1 dag</item>
+     </plurals>
+     <plurals name="form_help_last_seen_with_roles_members">
+-        <item quantity="one">1 lid</item>
+         <item quantity="other">{members} leden</item>
++        <item quantity="one">1 lid</item>
+     </plurals>
+     <plurals name="game_feed_unknown_players_count">
+-        <item quantity="one">{#} Onbekende speler</item>
+         <item quantity="other">{#} Onbekend spelers</item>
++        <item quantity="one">{#} Onbekende speler</item>
+     </plurals>
+     <plurals name="game_feed_user_played_days_ago_time">
+-        <item quantity="one">dag</item>
+         <item quantity="other">dagen</item>
++        <item quantity="one">dag</item>
+     </plurals>
+     <plurals name="game_feed_user_played_hours_ago_time">
+-        <item quantity="one">uur</item>
+         <item quantity="other">uren</item>
++        <item quantity="one">uur</item>
+     </plurals>
+     <plurals name="game_feed_user_played_minutes_ago_time">
+-        <item quantity="one">minuut</item>
+         <item quantity="other">minuten</item>
++        <item quantity="one">minuut</item>
+     </plurals>
+     <plurals name="game_feed_user_played_months_ago_time">
+-        <item quantity="one">maand</item>
+         <item quantity="other">maanden</item>
++        <item quantity="one">maand</item>
+     </plurals>
+     <plurals name="game_feed_user_played_weeks_ago_time">
+-        <item quantity="one">week</item>
+         <item quantity="other">weken</item>
++        <item quantity="one">week</item>
+     </plurals>
+     <plurals name="game_feed_user_played_years_ago_time">
+-        <item quantity="one">jaar</item>
+         <item quantity="other">jaren</item>
++        <item quantity="one">jaar</item>
+     </plurals>
+     <plurals name="game_feed_user_playing_for_days_time">
+-        <item quantity="one">dag</item>
+         <item quantity="other">dagen</item>
++        <item quantity="one">dag</item>
+     </plurals>
+     <plurals name="game_feed_user_playing_for_hours_time">
+-        <item quantity="one">uur</item>
+         <item quantity="other">uren</item>
++        <item quantity="one">uur</item>
+     </plurals>
+     <plurals name="game_feed_user_playing_for_minutes_time">
+-        <item quantity="one">minuut</item>
+         <item quantity="other">minuten</item>
++        <item quantity="one">minuut</item>
+     </plurals>
+     <plurals name="game_library_last_played_days_time">
+-        <item quantity="one">gisteren</item>
+         <item quantity="other">{#} dagen geleden</item>
++        <item quantity="one">gisteren</item>
+     </plurals>
+     <plurals name="game_library_last_played_hours_time">
+-        <item quantity="one">{#} uur</item>
+         <item quantity="other">{#} uren</item>
++        <item quantity="one">{#} uur</item>
+     </plurals>
+     <plurals name="game_library_last_played_minutes_time">
+-        <item quantity="one">{#} minuut</item>
+         <item quantity="other">{#} minuten</item>
++        <item quantity="one">{#} minuut</item>
+     </plurals>
+     <plurals name="game_library_last_played_months_time">
+-        <item quantity="one">vorige maand</item>
+         <item quantity="other">{#} maanden geleden</item>
++        <item quantity="one">vorige maand</item>
+     </plurals>
+     <plurals name="game_library_last_played_weeks_time">
+-        <item quantity="one">vorige week</item>
+         <item quantity="other">{#} weken geleden</item>
++        <item quantity="one">vorige week</item>
+     </plurals>
+     <plurals name="game_library_last_played_years_time">
+-        <item quantity="one">vorig jaar</item>
+         <item quantity="other">{#} jaren geleden</item>
++        <item quantity="one">vorig jaar</item>
+     </plurals>
+     <plurals name="game_library_time_played_hours_time">
+-        <item quantity="one">uur</item>
+         <item quantity="other">uren</item>
++        <item quantity="one">uur</item>
+     </plurals>
+     <plurals name="game_library_time_played_minutes_time">
+-        <item quantity="one">minuut</item>
+         <item quantity="other">minuten</item>
++        <item quantity="one">minuut</item>
+     </plurals>
+     <plurals name="game_library_time_played_seconds_time">
+-        <item quantity="one">seconde</item>
+         <item quantity="other">seconden</item>
++        <item quantity="one">seconde</item>
+     </plurals>
+     <plurals name="game_library_updates_installing_hours_timeRemaining">
+-        <item quantity="one">1 uur</item>
+         <item quantity="other">{#} uren</item>
++        <item quantity="one">1 uur</item>
+     </plurals>
+     <plurals name="game_library_updates_installing_minutes_timeRemaining">
+-        <item quantity="one">1 minuut</item>
+         <item quantity="other">{#} minuten</item>
++        <item quantity="one">1 minuut</item>
+     </plurals>
+     <plurals name="game_library_updates_installing_seconds_timeRemaining">
+-        <item quantity="one">afsluiten van</item>
+         <item quantity="other">nog {#} seconden over</item>
++        <item quantity="one">afsluiten van</item>
+     </plurals>
+     <plurals name="game_library_updates_updating_updating_hours_timeRemaining">
+-        <item quantity="one">1 uur</item>
+         <item quantity="other">nog {#} uren</item>
++        <item quantity="one">1 uur</item>
+     </plurals>
+     <plurals name="game_library_updates_updating_updating_minutes_timeRemaining">
+-        <item quantity="one">1 minuut</item>
+         <item quantity="other">nog {#} minuten</item>
++        <item quantity="one">1 minuut</item>
+     </plurals>
+     <plurals name="game_library_updates_updating_updating_seconds_timeRemaining">
+-        <item quantity="one">afsluiten</item>
+         <item quantity="other">nog {#} seconden over</item>
++        <item quantity="one">afsluiten</item>
+     </plurals>
+     <plurals name="gift_code_auth_gifted_subscription_monthly_intervalCount">
+-        <item quantity="one">{#} maand</item>
+         <item quantity="other">{#} maanden</item>
++        <item quantity="one">{#} maand</item>
+     </plurals>
+     <plurals name="gift_code_auth_gifted_subscription_yearly_intervalCount">
+-        <item quantity="one">{#} jaar</item>
+         <item quantity="other">{#} jaar</item>
++        <item quantity="one">{#} jaar</item>
+     </plurals>
+     <plurals name="gift_confirmation_body_subscription_monthly_confirm_intervalCount">
+-        <item quantity="one">{#} maand</item>
+         <item quantity="other">{#} maanden</item>
++        <item quantity="one">{#} maand</item>
+     </plurals>
+     <plurals name="gift_confirmation_body_subscription_yearly_confirm_intervalCount">
+-        <item quantity="one">{#} jaar</item>
+         <item quantity="other">{#} jaar</item>
++        <item quantity="one">{#} jaar</item>
+     </plurals>
+     <plurals name="gift_confirmation_body_success_generic_subscription_monthly_intervalCount">
+-        <item quantity="one">{#} maand</item>
+         <item quantity="other">{#}maanden</item>
++        <item quantity="one">{#} maand</item>
+     </plurals>
+     <plurals name="gift_confirmation_body_success_generic_subscription_yearly_intervalCount">
+-        <item quantity="one">{#} jaar</item>
+         <item quantity="other">{#}jaar</item>
++        <item quantity="one">{#} jaar</item>
+     </plurals>
+     <plurals name="gift_confirmation_body_success_premium_tier_1_monthly_intervalCount">
+-        <item quantity="one">{#} maand</item>
+         <item quantity="other">{#}maanden</item>
++        <item quantity="one">{#} maand</item>
+     </plurals>
+     <plurals name="gift_confirmation_body_success_premium_tier_1_yearly_intervalCount">
+-        <item quantity="one">{#} jaar</item>
+         <item quantity="other">{#}jaar</item>
++        <item quantity="one">{#} jaar</item>
+     </plurals>
+     <plurals name="gift_confirmation_body_success_premium_tier_2_monthly_intervalCount">
+-        <item quantity="one">{#} maand</item>
+         <item quantity="other">{#} maanden</item>
++        <item quantity="one">{#} maand</item>
+     </plurals>
+     <plurals name="gift_confirmation_body_success_premium_tier_2_yearly_intervalCount">
+-        <item quantity="one">{#} jaar</item>
+         <item quantity="other">{#} jaar</item>
++        <item quantity="one">{#} jaar</item>
+     </plurals>
+     <plurals name="gift_confirmation_nitro_time_frame_months_time">
+-        <item quantity="one">{#} maand</item>
+         <item quantity="other">{#} maanden</item>
++        <item quantity="one">{#} maand</item>
+     </plurals>
+     <plurals name="gift_confirmation_nitro_time_frame_years_time">
+-        <item quantity="one">{#} jaar</item>
+         <item quantity="other">{#} jaar</item>
++        <item quantity="one">{#} jaar</item>
+     </plurals>
+     <plurals name="gift_embed_body_subscription_default_months_intervalCount">
+-        <item quantity="one">{#} maand</item>
+         <item quantity="other">{#} maanden</item>
++        <item quantity="one">{#} maand</item>
+     </plurals>
+     <plurals name="gift_embed_body_subscription_default_years_intervalCount">
+-        <item quantity="one">{#} jaar</item>
+         <item quantity="other">{#} jaar</item>
++        <item quantity="one">{#} jaar</item>
+     </plurals>
+     <plurals name="gift_embed_body_subscription_no_user_default_months_intervalCount">
+-        <item quantity="one">{#} maand</item>
+         <item quantity="other">{#} maanden</item>
++        <item quantity="one">{#} maand</item>
+     </plurals>
+     <plurals name="gift_embed_body_subscription_no_user_default_years_intervalCount">
+-        <item quantity="one">{#} jaar</item>
+         <item quantity="other">{#} jaar</item>
++        <item quantity="one">{#} jaar</item>
+     </plurals>
+     <plurals name="gift_embed_expiration_hours">
+-        <item quantity="one">{#} uur</item>
+         <item quantity="other">{#} uur</item>
++        <item quantity="one">{#} uur</item>
+     </plurals>
+     <plurals name="gift_inventory_copies_copies">
+-        <item quantity="one">{#} exemplaar</item>
+         <item quantity="other">{#} exemplaren</item>
++        <item quantity="one">{#} exemplaar</item>
+     </plurals>
+     <plurals name="gift_inventory_expires_in_hours">
+-        <item quantity="one">{#} uur</item>
+         <item quantity="other">{#} uur</item>
++        <item quantity="one">{#} uur</item>
+     </plurals>
+     <plurals name="gift_inventory_expires_in_mobile_hours">
+-        <item quantity="one">{#} uur</item>
+         <item quantity="other">{#} uur</item>
++        <item quantity="one">{#} uur</item>
+     </plurals>
+     <plurals name="gift_inventory_subscription_months_intervalCount">
+-        <item quantity="one">{#} maand</item>
+         <item quantity="other">{#} maanden</item>
++        <item quantity="one">{#} maand</item>
+     </plurals>
+     <plurals name="gift_inventory_subscription_years_intervalCount">
+-        <item quantity="one">{#} jaar</item>
+         <item quantity="other">{#} jaar</item>
++        <item quantity="one">{#} jaar</item>
+     </plurals>
+     <plurals name="group_dm_invite_remaining_number">
+-        <item quantity="one">Je kunt nog 1 vriend toevoegen.</item>
+         <item quantity="other">Je kunt nog {number} vrienden toevoegen.</item>
++        <item quantity="one">Je kunt nog 1 vriend toevoegen.</item>
+     </plurals>
+     <plurals name="group_dm_invite_unselect_users_number">
+-        <item quantity="one">Je moet 1 vriend deselecteren.</item>
+         <item quantity="other">Je moet {number} vrienden deselecteren.</item>
++        <item quantity="one">Je moet 1 vriend deselecteren.</item>
+     </plurals>
+     <plurals name="guild_discovery_header_search_results_count">
+-        <item quantity="one">1 resultaat</item>
+         <item quantity="other">{count} resultaten</item>
++        <item quantity="one">1 resultaat</item>
+     </plurals>
+     <plurals name="guild_discovery_search_results_category_header_count">
+-        <item quantity="one">1 **{category}** community</item>
+         <item quantity="other">{count} **{category}** community&apos;s</item>
++        <item quantity="one">1 **{category}** community</item>
+     </plurals>
+     <plurals name="guild_discovery_search_results_header_count">
+-        <item quantity="one">1 community</item>
+         <item quantity="other">{count} community&apos;s</item>
++        <item quantity="one">1 community</item>
+     </plurals>
+     <plurals name="guild_event_interested_count_count">
+-        <item quantity="one">{#} persoon is</item>
+         <item quantity="other">{#} mensen zijn</item>
++        <item quantity="one">{#} persoon is</item>
+     </plurals>
+     <plurals name="guild_events_list_action_sheet_header_count">
+-        <item quantity="one">1 evenement</item>
+         <item quantity="other">{count} evenementen</item>
++        <item quantity="one">1 evenement</item>
+     </plurals>
+     <plurals name="guild_events_plural_number">
+-        <item quantity="one">{#} evenement</item>
+         <item quantity="other">{#} evenementen</item>
++        <item quantity="one">{#} evenement</item>
+     </plurals>
+     <plurals name="guild_folder_tooltip_a11y_label_mentions">
+-        <item quantity="one">, {#} ongelezen vermelding</item>
+         <item quantity="other">, {#} ongelezen vermeldingen</item>
++        <item quantity="one">, {#} ongelezen vermelding</item>
+     </plurals>
+     <plurals name="guild_folder_tooltip_a11y_label_with_expanded_state_mentions">
+-        <item quantity="one">, {#} ongelezen vermelding</item>
+         <item quantity="other">, {#} ongelezen vermeldingen</item>
++        <item quantity="one">, {#} ongelezen vermelding</item>
+     </plurals>
+     <plurals name="guild_settings_audit_log_channel_default_auto_archive_duration_change_newValue">
+-        <item quantity="one">Standaard tijd tot archiveren veranderd naar **{#} minuut**</item>
+         <item quantity="other">Standaard tijd tot archiveren veranderd naar **{#}minuten**</item>
++        <item quantity="one">Standaard tijd tot archiveren veranderd naar **{#} minuut**</item>
+     </plurals>
+     <plurals name="guild_settings_audit_log_channel_default_auto_archive_duration_create_newValue">
+-        <item quantity="one">Standaard archiefduur ingesteld op **{#} minuut**</item>
+         <item quantity="other">Standaard archiefduur ingesteld op **{#} minuten**</item>
++        <item quantity="one">Standaard archiefduur ingesteld op **{#} minuut**</item>
+     </plurals>
+     <plurals name="guild_settings_audit_log_channel_permission_overrides_denied_count">
+-        <item quantity="one">een toestemming</item>
+         <item quantity="other">toestemmingen</item>
++        <item quantity="one">een toestemming</item>
+     </plurals>
+     <plurals name="guild_settings_audit_log_channel_permission_overrides_granted_count">
+-        <item quantity="one">een toestemming</item>
+         <item quantity="other">toestemmingen</item>
++        <item quantity="one">een toestemming</item>
+     </plurals>
+     <plurals name="guild_settings_audit_log_channel_permission_overrides_reset_count">
+-        <item quantity="one">een toestemming</item>
+         <item quantity="other">toestemmingen</item>
++        <item quantity="one">een toestemming</item>
+     </plurals>
+     <plurals name="guild_settings_audit_log_channel_rate_limit_per_user_change_newValue">
+-        <item quantity="one">Slow-modus instellen op **{#} seconde**</item>
+         <item quantity="other">Slow-modus instellen op **{#} seconden**</item>
++        <item quantity="one">Slow-modus instellen op **{#} seconde**</item>
+     </plurals>
+     <plurals name="guild_settings_audit_log_channel_rate_limit_per_user_create_newValue">
+-        <item quantity="one">Slow-modus instellen op **{#} seconde**</item>
+         <item quantity="other">Slow-modus instellen op **{#} seconden**</item>
++        <item quantity="one">Slow-modus instellen op **{#} seconde**</item>
+     </plurals>
+     <plurals name="guild_settings_audit_log_integration_expire_grace_period_newValue">
+-        <item quantity="one">een dag</item>
+         <item quantity="other">{#} dagen</item>
++        <item quantity="one">een dag</item>
+     </plurals>
+     <plurals name="guild_settings_audit_log_member_disconnect_count">
+-        <item quantity="one">**een gebruiker**</item>
+         <item quantity="other">**!!{count}!! gebruikers**</item>
++        <item quantity="one">**een gebruiker**</item>
+     </plurals>
+     <plurals name="guild_settings_audit_log_member_move_count">
+-        <item quantity="one">**een gebruiker**</item>
+         <item quantity="other">**!!{count}!! gebruikers**</item>
++        <item quantity="one">**een gebruiker**</item>
+     </plurals>
+     <plurals name="guild_settings_audit_log_member_prune_count">
+-        <item quantity="one">**een lid**</item>
+         <item quantity="other">**!!{count}!! leden**</item>
++        <item quantity="one">**een lid**</item>
+     </plurals>
+     <plurals name="guild_settings_audit_log_member_prune_delete_days_newValue">
+-        <item quantity="one">een dag</item>
+         <item quantity="other">{newValue} dagen</item>
++        <item quantity="one">een dag</item>
+     </plurals>
+     <plurals name="guild_settings_audit_log_member_roles_add_count">
+-        <item quantity="one">een rol</item>
+         <item quantity="other">een paar rollen</item>
++        <item quantity="one">een rol</item>
+     </plurals>
+     <plurals name="guild_settings_audit_log_member_roles_remove_count">
+-        <item quantity="one">een rol</item>
+         <item quantity="other">enkele rollen</item>
++        <item quantity="one">een rol</item>
+     </plurals>
+     <plurals name="guild_settings_audit_log_message_bulk_delete_count">
+-        <item quantity="one">**een bericht**</item>
+         <item quantity="other">**!!{count}!! berichten**</item>
++        <item quantity="one">**een bericht**</item>
+     </plurals>
+     <plurals name="guild_settings_audit_log_message_delete_count">
+-        <item quantity="one">**een bericht**</item>
+         <item quantity="other">**!!{count}!! berichten**</item>
++        <item quantity="one">**een bericht**</item>
+     </plurals>
+     <plurals name="guild_settings_audit_log_role_permissions_denied_count">
+-        <item quantity="one">toestemming</item>
+         <item quantity="other">toestemmingen</item>
++        <item quantity="one">toestemming</item>
+     </plurals>
+     <plurals name="guild_settings_audit_log_role_permissions_granted_count">
+-        <item quantity="one">toestemming</item>
+         <item quantity="other">toestemmingen</item>
++        <item quantity="one">toestemming</item>
+     </plurals>
+     <plurals name="guild_settings_audit_log_thread_auto_archive_duration_change_newValue">
+-        <item quantity="one">Automatische archiefduur veranderd naar **{#} minuut**</item>
+         <item quantity="other">Automatisch archiefduur veranderd naar **{#} minuten**</item>
++        <item quantity="one">Automatische archiefduur veranderd naar **{#} minuut**</item>
+     </plurals>
+     <plurals name="guild_settings_audit_log_thread_auto_archive_duration_create_newValue">
+-        <item quantity="one">Tijd tot automatisch archiveren ingesteld op **{#} minuut**</item>
+         <item quantity="other">Tijd tot automatisch archiveren ingesteld op **{#} minuten**</item>
++        <item quantity="one">Tijd tot automatisch archiveren ingesteld op **{#} minuut**</item>
+     </plurals>
+     <plurals name="guild_settings_discovery_checklist_age_description_failing_minimumGuildAge">
+-        <item quantity="one">1 week</item>
+         <item quantity="other">{minimumGuildAge} weken</item>
++        <item quantity="one">1 week</item>
+     </plurals>
+     <plurals name="guild_settings_discovery_checklist_age_description_minimumGuildAge">
+-        <item quantity="one">1 week</item>
+         <item quantity="other">{minimumGuildAge} weken</item>
++        <item quantity="one">1 week</item>
+     </plurals>
+     <plurals name="guild_settings_member_verification_review_pending_applications_count">
+-        <item quantity="one">verzoek in behandeling</item>
+         <item quantity="other">{count} verzoeken in behandeling</item>
++        <item quantity="one">verzoek in behandeling</item>
+     </plurals>
+     <plurals name="guild_settings_overview_boost_unlock_boosts">
+-        <item quantity="one">{#} boost</item>
+         <item quantity="other">{#} boosts</item>
++        <item quantity="one">{#} boost</item>
+     </plurals>
+     <plurals name="guild_settings_partner_checklist_age_description_failing_minimumGuildAge">
+-        <item quantity="one">1 week</item>
+         <item quantity="other">{minimumGuildAge} weken</item>
++        <item quantity="one">1 week</item>
+     </plurals>
+     <plurals name="guild_settings_partner_checklist_age_description_minimumGuildAge">
+-        <item quantity="one">1 week</item>
+         <item quantity="other">{minimumGuildAge} weken</item>
++        <item quantity="one">1 week</item>
+     </plurals>
+     <plurals name="guild_settings_premium_guild_close_hint_numLeft">
+-        <item quantity="one">{#} boost</item>
+         <item quantity="other">{#} boosts</item>
++        <item quantity="one">{#} boost</item>
+     </plurals>
+     <plurals name="guild_settings_premium_guild_count_subscribers_count">
+-        <item quantity="one">{#} extreem coole persoon heeft</item>
+         <item quantity="other">{#} extreem coole personen hebben</item>
++        <item quantity="one">{#} extreem coole persoon heeft</item>
+     </plurals>
+     <plurals name="guild_settings_premium_guild_tier_requirement_required">
+-        <item quantity="one">{#} boost</item>
+         <item quantity="other">{#} boosts</item>
++        <item quantity="one">{#} boost</item>
+     </plurals>
+     <plurals name="guild_settings_premium_upsell_body_perk_no_free_guild_subscriptions_numFreeGuildSubscriptions">
+-        <item quantity="one">{#} boost</item>
+         <item quantity="other">{#} boosts</item>
++        <item quantity="one">{#} boost</item>
+     </plurals>
+     <plurals name="guild_settings_premium_upsell_body_perk_num_guild_subscriptions_numFreeGuildSubscriptions">
+-        <item quantity="one">{#} boost</item>
+         <item quantity="other">{#} boosts</item>
++        <item quantity="one">{#} boost</item>
+     </plurals>
+     <plurals name="guild_settings_premium_upsell_heading_tertiary_premium_user_numFreeGuildSubscriptions">
+-        <item quantity="one">{#} serverboost</item>
+         <item quantity="other">{#} serverboosts</item>
++        <item quantity="one">{#} serverboost</item>
+     </plurals>
+     <plurals name="guild_sidebar_announcement_channel_a11y_label_with_mentions_mentionCount">
+-        <item quantity="one">{#} vermelding,</item>
+         <item quantity="other">{#} vermeldingen</item>
++        <item quantity="one">{#} vermelding,</item>
+     </plurals>
+     <plurals name="guild_sidebar_default_channel_a11y_label_with_mentions_mentionCount">
+-        <item quantity="one">{#} vermelding,</item>
+         <item quantity="other">{#} vermeldingen</item>
++        <item quantity="one">{#} vermelding,</item>
+     </plurals>
+     <plurals name="guild_sidebar_stage_channel_a11y_label_with_users_userCount">
+-        <item quantity="one">1 gebruiker</item>
+         <item quantity="other">{#} gebruikers</item>
++        <item quantity="one">1 gebruiker</item>
+     </plurals>
+     <plurals name="guild_sidebar_thread_a11y_label_with_mentions_mentionCount">
+-        <item quantity="one">{#} vermelding,</item>
+         <item quantity="other">{#} vermeldingen</item>
++        <item quantity="one">{#} vermelding,</item>
+     </plurals>
+     <plurals name="guild_sidebar_voice_channel_a11y_label_with_users_userCount">
+-        <item quantity="one">1 gebruiker</item>
+         <item quantity="other">{#} gebruikers</item>
++        <item quantity="one">1 gebruiker</item>
+     </plurals>
+     <plurals name="guild_sticker_settings_additional_slots_numAdditional">
+-        <item quantity="one">{numAdditional} stickervakje</item>
+         <item quantity="other">{numAdditional} stickervakjes</item>
++        <item quantity="one">{numAdditional} stickervakje</item>
+     </plurals>
+     <plurals name="guild_sticker_settings_additional_slots_without_total_numAdditional">
+-        <item quantity="one">{numAdditional} stickervak</item>
+         <item quantity="other">{numAdditional} stickervakken</item>
++        <item quantity="one">{numAdditional} stickervak</item>
+     </plurals>
+     <plurals name="guild_sticker_settings_remaining_slots_available_numTotal">
+-        <item quantity="one">{numTotal} vakje</item>
+         <item quantity="other">{numTotal} vakjes</item>
++        <item quantity="one">{numTotal} vakje</item>
+     </plurals>
+     <plurals name="guild_subscription_purchase_modal_activated_description_generic_guild_guildSubscriptionQuantity">
+-        <item quantity="one">{#} keer</item>
+         <item quantity="other">{#} keer</item>
++        <item quantity="one">{#} keer</item>
+     </plurals>
+     <plurals name="guild_subscription_purchase_modal_activated_description_guildSubscriptionQuantity">
+-        <item quantity="one">{#} keer</item>
+         <item quantity="other">{#} keer</item>
++        <item quantity="one">{#} keer</item>
+     </plurals>
+     <plurals name="guild_subscription_purchase_modal_activated_description_mobile2_guildSubscriptionQuantity">
+-        <item quantity="one">{#} keer</item>
+         <item quantity="other">{#} keer</item>
++        <item quantity="one">{#} keer</item>
+     </plurals>
+     <plurals name="guild_subscription_purchase_modal_activated_description_no_application_guildSubscriptionQuantity">
+-        <item quantity="one">{#} serverboost</item>
+         <item quantity="other">{#} serverboosts</item>
++        <item quantity="one">{#} serverboost</item>
+     </plurals>
+     <plurals name="guild_subscription_purchase_modal_transferred_description_mobile2_guildSubscriptionQuantity">
+-        <item quantity="one">{#} keer</item>
+         <item quantity="other">{#} keer</item>
++        <item quantity="one">{#} keer</item>
+     </plurals>
+     <plurals name="guild_subscription_purchase_modal_unused_slot_notice_slotCount">
+-        <item quantity="one">{#} ongebruikte boost</item>
+         <item quantity="other">{#} ongebruikte boosts</item>
++        <item quantity="one">{#} ongebruikte boost</item>
+     </plurals>
+     <plurals name="guild_template_usages_by_creator2_usageCount">
+-        <item quantity="one">**1** persoon heeft de template gebruikt van $[**!!{creator}!!**](creatorHook)</item>
+         <item quantity="other">**{usageCount}** mensen hebben de template gebruikt van $[**!!{creator}!!**](creatorHook)</item>
++        <item quantity="one">**1** persoon heeft de template gebruikt van $[**!!{creator}!!**](creatorHook)</item>
+     </plurals>
+     <plurals name="guild_template_usages_no_bold_usageCount">
+-        <item quantity="one">1 persoon heeft deze template gebruikt</item>
+         <item quantity="other">{usageCount} mensen hebben deze template gebruikt</item>
++        <item quantity="one">1 persoon heeft deze template gebruikt</item>
+     </plurals>
+     <plurals name="guild_template_usages_usageCount">
+-        <item quantity="one">**1** persoon heeft deze template gebruikt</item>
+         <item quantity="other">**{usageCount}** mensen hebben deze template gebruikt</item>
++        <item quantity="one">**1** persoon heeft deze template gebruikt</item>
+     </plurals>
+     <plurals name="guild_tooltip_a11y_label_mentions">
+-        <item quantity="one">{#} vermelding,</item>
+         <item quantity="other">{#} vermeldingen,</item>
++        <item quantity="one">{#} vermelding,</item>
+     </plurals>
+     <plurals name="hub_email_connection_invite_header_count">
+-        <item quantity="one">{count} andere vriend(in)</item>
+         <item quantity="other">{count} andere vriend(inn)en</item>
++        <item quantity="one">{count} andere vriend(in)</item>
+     </plurals>
+     <plurals name="humanize_duration_days_time">
+-        <item quantity="one">1 dag</item>
+         <item quantity="other">{#} dagen</item>
++        <item quantity="one">1 dag</item>
+     </plurals>
+     <plurals name="humanize_duration_hours_time">
+-        <item quantity="one">1 uur</item>
+         <item quantity="other">{#} uur</item>
++        <item quantity="one">1 uur</item>
+     </plurals>
+     <plurals name="humanize_duration_minutes_time">
+-        <item quantity="one">1 minuut</item>
+         <item quantity="other">{#} minuten</item>
++        <item quantity="one">1 minuut</item>
+     </plurals>
+     <plurals name="humanize_duration_seconds_time">
+-        <item quantity="one">1 seconde</item>
+         <item quantity="other">{#} seconden</item>
++        <item quantity="one">1 seconde</item>
+     </plurals>
+     <plurals name="instant_invite_guild_members_total_count">
+-        <item quantity="one">1 lid</item>
+         <item quantity="other">{count} leden</item>
++        <item quantity="one">1 lid</item>
+     </plurals>
+     <plurals name="integrations_channel_following_summary_count">
+-        <item quantity="one">1 kanaal</item>
+         <item quantity="other">{count} kanalen</item>
++        <item quantity="one">1 kanaal</item>
+     </plurals>
+     <plurals name="integrations_twitch_summary_count">
+-        <item quantity="one">1 verbonden account</item>
+         <item quantity="other">{count} verbonden accounts</item>
++        <item quantity="one">1 verbonden account</item>
+     </plurals>
+     <plurals name="integrations_webhooks_count_count">
+-        <item quantity="one">1 webhook</item>
+         <item quantity="other">{count} webhooks</item>
++        <item quantity="one">1 webhook</item>
+     </plurals>
+     <plurals name="integrations_webhooks_summary_count">
+-        <item quantity="one">1 webhook</item>
+         <item quantity="other">{count} webhooks</item>
++        <item quantity="one">1 webhook</item>
+     </plurals>
+     <plurals name="integrations_youtube_summary_count">
+-        <item quantity="one">1 verbonden account</item>
+         <item quantity="other">{count} verbonden accounts</item>
++        <item quantity="one">1 verbonden account</item>
+     </plurals>
+     <plurals name="invite_embed_num_open_slots_number">
+-        <item quantity="one">vakje</item>
+         <item quantity="other">vakjes</item>
++        <item quantity="one">vakje</item>
+     </plurals>
+     <plurals name="invite_expires_days_or_uses_plural_numDays">
+-        <item quantity="one">{numDays} dag</item>
+         <item quantity="other">{numDays} dagen</item>
++        <item quantity="one">{numDays} dag</item>
+     </plurals>
+     <plurals name="invite_expires_days_or_uses_plural_numUses">
+-        <item quantity="one">{numUses} gebruik</item>
+         <item quantity="other">{numUses} gebruiken</item>
++        <item quantity="one">{numUses} gebruik</item>
+     </plurals>
+     <plurals name="invite_expires_days_plural_numDays">
+-        <item quantity="one">{numDays} dag</item>
+         <item quantity="other">{numDays} dagen</item>
++        <item quantity="one">{numDays} dag</item>
+     </plurals>
+     <plurals name="invite_expires_hours_numHours">
+-        <item quantity="one">{numHours} uur</item>
+         <item quantity="other">{numHours} uren</item>
++        <item quantity="one">{numHours} uur</item>
+     </plurals>
+     <plurals name="invite_expires_hours_or_uses_numHours">
+-        <item quantity="one">{numHours} uur</item>
+         <item quantity="other">{numHours} uren</item>
++        <item quantity="one">{numHours} uur</item>
+     </plurals>
+     <plurals name="invite_expires_hours_or_uses_numUses">
+-        <item quantity="one">{numUses} gebruik</item>
+         <item quantity="other">{numUses} gebruiken</item>
++        <item quantity="one">{numUses} gebruik</item>
+     </plurals>
+     <plurals name="invite_expires_minutes_or_uses_numUses">
+-        <item quantity="one">{numUses} gebruik</item>
+         <item quantity="other">{numUses} gebruiken</item>
++        <item quantity="one">{numUses} gebruik</item>
+     </plurals>
+     <plurals name="invite_expires_uses_numUses">
+-        <item quantity="one">{numUses} gebruik</item>
+         <item quantity="other">{numUses} gebruiken</item>
++        <item quantity="one">{numUses} gebruik</item>
+     </plurals>
+     <plurals name="last_seen_days">
+-        <item quantity="one">1 dag</item>
+         <item quantity="other">{days} dagen</item>
++        <item quantity="one">1 dag</item>
+     </plurals>
+     <plurals name="live_viewers_viewers">
+-        <item quantity="one">kijker</item>
+         <item quantity="other">kijkers</item>
++        <item quantity="one">kijker</item>
+     </plurals>
+     <plurals name="marketing_refresh_premium_features_included_guild_subscriptions_subheading_numFreeGuildSubscriptions">
+-        <item quantity="one">{#} serverboost</item>
+         <item quantity="other">{#} serverboosts</item>
++        <item quantity="one">{#} serverboost</item>
+     </plurals>
+     <plurals name="marketing_refresh_premium_tier_1_cta_description_perks_info_label_numFreeGuildSubscriptions">
+-        <item quantity="one">{#} serverboost</item>
+         <item quantity="other">{#} serverboosts</item>
++        <item quantity="one">{#} serverboost</item>
+     </plurals>
+     <plurals name="marketing_refresh_premium_tier_1_cta_description_perks_info_no_premium_guild_subscriptions_numFreeGuildSubscriptions">
+-        <item quantity="one">{#} serverboost</item>
+         <item quantity="other">{#} serverboosts</item>
++        <item quantity="one">{#} serverboost</item>
+     </plurals>
+     <plurals name="max_uses_description_mobile_maxUses">
+-        <item quantity="one">1 gebruik</item>
+         <item quantity="other">{maxUses} gebruiken</item>
++        <item quantity="one">1 gebruik</item>
+     </plurals>
+     <plurals name="max_uses_maxUses">
+-        <item quantity="one">1 gebruik</item>
+         <item quantity="other">{maxUses} gebruiken</item>
++        <item quantity="one">1 gebruik</item>
+     </plurals>
+     <plurals name="member_verification_num_emojis_emojis">
+-        <item quantity="one">{emojis} serveremoji</item>
+         <item quantity="other">{emojis} serveremoji&apos;s</item>
++        <item quantity="one">{emojis} serveremoji</item>
+     </plurals>
+     <plurals name="members_header_members">
+-        <item quantity="one">1 lid</item>
+         <item quantity="other">{members} leden</item>
++        <item quantity="one">1 lid</item>
+     </plurals>
+     <plurals name="mtrl_badge_content_description">
+-        <item quantity="one">%d nieuwe melding</item>
+         <item quantity="other">%d nieuwe meldingen</item>
++        <item quantity="one">%d nieuwe melding</item>
+     </plurals>
+     <plurals name="n_days_days">
+-        <item quantity="one">1 dag</item>
+         <item quantity="other">{days} dagen</item>
++        <item quantity="one">1 dag</item>
+     </plurals>
+     <plurals name="new_messages_count">
+-        <item quantity="one">1 nieuw bericht</item>
+         <item quantity="other">{count} nieuwe berichten</item>
++        <item quantity="one">1 nieuw bericht</item>
+     </plurals>
+     <plurals name="new_messages_with_date_count">
+-        <item quantity="one">1 nieuw bericht</item>
+         <item quantity="other">{count} nieuwe berichten</item>
++        <item quantity="one">1 nieuw bericht</item>
+     </plurals>
+     <plurals name="notice_premium_grandfathered_ending_numDays">
+-        <item quantity="one">een dag</item>
+         <item quantity="other">{numDays} dagen</item>
++        <item quantity="one">een dag</item>
+     </plurals>
+     <plurals name="notice_premium_tier_2_trial_ending_days_days">
+-        <item quantity="one">{#} dag</item>
+         <item quantity="other">{#} dagen</item>
++        <item quantity="one">{#} dag</item>
+     </plurals>
+     <plurals name="notice_premium_tier_2_trial_ending_hours_hours">
+-        <item quantity="one">{#} uur</item>
+         <item quantity="other">{#} uur</item>
++        <item quantity="one">{#} uur</item>
+     </plurals>
+     <plurals name="notice_premium_tier_2_trial_ending_minutes_minutes">
+-        <item quantity="one">{#} minuut</item>
+         <item quantity="other">{#} minuten</item>
++        <item quantity="one">{#} minuut</item>
+     </plurals>
+     <plurals name="num_channels_num">
+-        <item quantity="one">{num} kanaal</item>
+         <item quantity="other">{num} kanalen</item>
++        <item quantity="one">{num} kanaal</item>
+     </plurals>
+     <plurals name="num_members_subscribers">
+-        <item quantity="one">**1** lid</item>
+         <item quantity="other">**{subscribers}** leden</item>
++        <item quantity="one">**1** lid</item>
+     </plurals>
+     <plurals name="num_subscribers_subscribers">
+-        <item quantity="one">**1** abonnee</item>
+         <item quantity="other">**{subscribers}** abonnees</item>
++        <item quantity="one">**1** abonnee</item>
+     </plurals>
+     <plurals name="num_users_num">
+-        <item quantity="one">1 gebruiker</item>
+         <item quantity="other">{num} gebruikers</item>
++        <item quantity="one">1 gebruiker</item>
+     </plurals>
+     <plurals name="only_you_can_see_and_delete_these_count">
+-        <item quantity="one">dit</item>
+         <item quantity="other">deze</item>
++        <item quantity="one">dit</item>
+     </plurals>
+     <plurals name="only_you_can_see_and_delete_these_countMessages">
+-        <item quantity="one">bericht</item>
+         <item quantity="other">berichten</item>
++        <item quantity="one">bericht</item>
+     </plurals>
+     <plurals name="partial_outage_a11y_count">
+-        <item quantity="one">1 server is niet beschikbaar vanwege een tijdelijke storing.</item>
+         <item quantity="other">{count} servers zijn niet beschikbaar vanwege een tijdelijke storing.</item>
++        <item quantity="one">1 server is niet beschikbaar vanwege een tijdelijke storing.</item>
+     </plurals>
+     <plurals name="partial_outage_count">
+-        <item quantity="one">**1** andere server is niet beschikbaar vanwege een tijdelijke storing.</item>
+         <item quantity="other">**{count}** andere servers zijn niet beschikbaar vanwege een tijdelijke storing.</item>
++        <item quantity="one">**1** andere server is niet beschikbaar vanwege een tijdelijke storing.</item>
+     </plurals>
+     <plurals name="premium_cancel_what_you_lose_boosts_applied_boostCount">
+-        <item quantity="one">{#} boost toegepast</item>
+         <item quantity="other">{#} boosts toegepast</item>
++        <item quantity="one">{#} boost toegepast</item>
+     </plurals>
+     <plurals name="premium_chat_perks_description_premium_guild_included_numFreeGuildSubscriptions">
+-        <item quantity="one">{#} boost</item>
+         <item quantity="other">{#} boosts</item>
++        <item quantity="one">{#} boost</item>
+     </plurals>
+     <plurals name="premium_guild_features_upsell_banner_subscribe_numFreeGuildSubscriptions">
+-        <item quantity="one">{#} boost</item>
+         <item quantity="other">{#} boosts</item>
++        <item quantity="one">{#} boost</item>
+     </plurals>
+     <plurals name="premium_guild_grace_period_cooldown_numPremiumSubscriptions">
+-        <item quantity="one">{#} boost</item>
+         <item quantity="other">{#} boosts</item>
++        <item quantity="one">{#} boost</item>
+     </plurals>
+     <plurals name="premium_guild_grace_period_cooldown_soon_numPremiumSubscriptions">
+-        <item quantity="one">{#} boost</item>
+         <item quantity="other">{#} boosts</item>
++        <item quantity="one">{#} boost</item>
+     </plurals>
+     <plurals name="premium_guild_num_month_guild_subscriptions_num">
+-        <item quantity="one">serverboost</item>
+         <item quantity="other">serverboosts</item>
++        <item quantity="one">serverboost</item>
+     </plurals>
+     <plurals name="premium_guild_num_month_guild_subscriptions_unformatted_num">
+-        <item quantity="one">serverboost</item>
+         <item quantity="other">serverboosts</item>
++        <item quantity="one">serverboost</item>
+     </plurals>
+     <plurals name="premium_guild_num_year_guild_subscriptions_num">
+-        <item quantity="one">serverboost</item>
+         <item quantity="other">serverboosts</item>
++        <item quantity="one">serverboost</item>
+     </plurals>
+     <plurals name="premium_guild_num_year_guild_subscriptions_unformatted_num">
+-        <item quantity="one">serverboost</item>
+         <item quantity="other">serverboosts</item>
++        <item quantity="one">serverboost</item>
+     </plurals>
+     <plurals name="premium_guild_perks_modal_header_subscription_count_subscriptions">
+-        <item quantity="one">{#} boost</item>
+         <item quantity="other">{#} boosts</item>
++        <item quantity="one">{#} boost</item>
+     </plurals>
+     <plurals name="premium_guild_perks_modal_header_user_subscription_count_numSubscriptions">
+-        <item quantity="one">{#} keer</item>
+         <item quantity="other">{#} keer</item>
++        <item quantity="one">{#} keer</item>
+     </plurals>
+     <plurals name="premium_guild_perks_modal_protip_mobile_numFreeGuildSubscriptions">
+-        <item quantity="one">{#} boost</item>
+         <item quantity="other">{#} boosts</item>
++        <item quantity="one">{#} boost</item>
+     </plurals>
+     <plurals name="premium_guild_perks_modal_protip_numFreeGuildSubscriptions">
+-        <item quantity="one">{#} boost</item>
+         <item quantity="other">{#} boosts</item>
++        <item quantity="one">{#} boost</item>
+     </plurals>
+     <plurals name="premium_guild_settings_members_subscribed_needed_number">
+-        <item quantity="one">{#} boost</item>
+         <item quantity="other">{#} boosts</item>
++        <item quantity="one">{#} boost</item>
+     </plurals>
+     <plurals name="premium_guild_settings_x_of_y_subscriptions_numRequired">
+-        <item quantity="one">{#} boost</item>
+         <item quantity="other">{#} boosts</item>
++        <item quantity="one">{#} boost</item>
+     </plurals>
+     <plurals name="premium_guild_subscribe_confirm_cancel_warning_canceledCount">
+-        <item quantity="one">Deze boost wacht</item>
+         <item quantity="other">{#} Deze boosts wachten</item>
++        <item quantity="one">Deze boost wacht</item>
+     </plurals>
+     <plurals name="premium_guild_subscribe_confirm_confirmation_label_slotCount">
+-        <item quantity="one">boost</item>
+         <item quantity="other">boosts</item>
++        <item quantity="one">boost</item>
+     </plurals>
+     <plurals name="premium_guild_subscribe_confirm_confirmation_slotCount">
+-        <item quantity="one">Boost</item>
+         <item quantity="other">Boost {#} keer</item>
++        <item quantity="one">Boost</item>
+     </plurals>
+     <plurals name="premium_guild_subscribe_confirm_cooldown_warning_days">
+-        <item quantity="one">{#} dag</item>
+         <item quantity="other">{#} dagen</item>
++        <item quantity="one">{#} dag</item>
+     </plurals>
+     <plurals name="premium_guild_subscribe_confirm_cooldown_warning_slotCount">
+-        <item quantity="one">deze boost</item>
+         <item quantity="other">deze boosts</item>
++        <item quantity="one">deze boost</item>
+     </plurals>
+     <plurals name="premium_guild_subscribe_confirm_transfer_blurb_guildCount">
+-        <item quantity="one">huidige server</item>
+         <item quantity="other">huidige servers</item>
++        <item quantity="one">huidige server</item>
+     </plurals>
+     <plurals name="premium_guild_subscribe_confirm_transfer_blurb_slotCount">
+-        <item quantity="one">deze serverboost</item>
+         <item quantity="other">deze serverboosts</item>
++        <item quantity="one">deze serverboost</item>
+     </plurals>
+     <plurals name="premium_guild_subscribe_confirm_transfer_from_guild_guildCount">
+-        <item quantity="one">server</item>
+         <item quantity="other">servers</item>
++        <item quantity="one">server</item>
+     </plurals>
+     <plurals name="premium_guild_subscribe_confirm_transfer_to_guild_slotCount">
+-        <item quantity="one">Boost</item>
+         <item quantity="other">Boosts</item>
++        <item quantity="one">Boost</item>
+     </plurals>
+     <plurals name="premium_guild_subscribe_transfer_confirm_confirmation_label_slotCount">
+-        <item quantity="one">boost</item>
+         <item quantity="other">boosts</item>
++        <item quantity="one">boost</item>
+     </plurals>
+     <plurals name="premium_guild_subscribe_transfer_confirm_confirmation_slotCount">
+-        <item quantity="one">boost</item>
+         <item quantity="other">boosts</item>
++        <item quantity="one">boost</item>
+     </plurals>
+     <plurals name="premium_guild_subscription_available_numSubscriptions">
+-        <item quantity="one">{#} boost</item>
+         <item quantity="other">{#} boosts</item>
++        <item quantity="one">{#} boost</item>
+     </plurals>
+     <plurals name="premium_guild_subscription_cancel_invoice_subscription_cancelled_subscriptionCount">
+-        <item quantity="one">serverboost</item>
+         <item quantity="other">serverboosts</item>
++        <item quantity="one">serverboost</item>
+     </plurals>
+     <plurals name="premium_guild_subscription_duration_months">
+-        <item quantity="one">{#} maand</item>
+         <item quantity="other">{#} maanden</item>
++        <item quantity="one">{#} maand</item>
+     </plurals>
+     <plurals name="premium_guild_subscription_error_rate_limit_days_days">
+-        <item quantity="one">{#} dag</item>
+         <item quantity="other">{#} dagen</item>
++        <item quantity="one">{#} dag</item>
+     </plurals>
+     <plurals name="premium_guild_subscription_error_rate_limit_days_hours">
+-        <item quantity="one">{#} uur</item>
+         <item quantity="other">{#} uur</item>
++        <item quantity="one">{#} uur</item>
+     </plurals>
+     <plurals name="premium_guild_subscription_error_rate_limit_hours_hours">
+-        <item quantity="one">{#} uur</item>
+         <item quantity="other">{#} uur</item>
++        <item quantity="one">{#} uur</item>
+     </plurals>
+     <plurals name="premium_guild_subscription_error_rate_limit_hours_minutes">
+-        <item quantity="one">{#} minuut</item>
+         <item quantity="other">{#} minuten</item>
++        <item quantity="one">{#} minuut</item>
+     </plurals>
+     <plurals name="premium_guild_subscription_error_rate_limit_minutes_minutes">
+-        <item quantity="one">{#} minuut</item>
+         <item quantity="other">{#} minuten</item>
++        <item quantity="one">{#} minuut</item>
+     </plurals>
+     <plurals name="premium_guild_subscription_guild_subsription_subtitle_numSubscriptions">
+-        <item quantity="one">{#} keer</item>
+         <item quantity="other">{#} keer</item>
++        <item quantity="one">{#} keer</item>
+     </plurals>
+     <plurals name="premium_guild_subscription_num_subscriptions_numSubscriptions">
+-        <item quantity="one">{#} boost</item>
+         <item quantity="other">{#} boosts</item>
++        <item quantity="one">{#} boost</item>
+     </plurals>
+     <plurals name="premium_guild_subscription_subscriber_count_tooltip_subscriberCount">
+-        <item quantity="one">{#} boost</item>
+         <item quantity="other">{#} boosts</item>
++        <item quantity="one">{#} boost</item>
+     </plurals>
+     <plurals name="premium_guild_subscriptions_renewal_info_account_hold_no_price_quantity">
+-        <item quantity="one">serverboost</item>
+         <item quantity="other">serverboosts</item>
++        <item quantity="one">serverboost</item>
+     </plurals>
+     <plurals name="premium_guild_subscriptions_renewal_info_account_hold_quantity">
+-        <item quantity="one">serverboost</item>
+         <item quantity="other">serverboosts</item>
++        <item quantity="one">serverboost</item>
+     </plurals>
+     <plurals name="premium_guild_subscriptions_renewal_info_android_quantity">
+-        <item quantity="one">serverboost</item>
+         <item quantity="other">serverboosts</item>
++        <item quantity="one">serverboost</item>
+     </plurals>
+     <plurals name="premium_guild_subscriptions_renewal_info_no_price_quantity">
+-        <item quantity="one">serverboost</item>
+         <item quantity="other">serverboosts</item>
++        <item quantity="one">serverboost</item>
+     </plurals>
+     <plurals name="premium_guild_subscriptions_renewal_info_pending_cancelation_android_quantity">
+-        <item quantity="one">serverboost</item>
+         <item quantity="other">serverboosts</item>
++        <item quantity="one">serverboost</item>
+     </plurals>
+     <plurals name="premium_guild_subscriptions_renewal_info_pending_cancelation_no_price_quantity">
+-        <item quantity="one">serverboost</item>
+         <item quantity="other">serverboosts</item>
++        <item quantity="one">serverboost</item>
+     </plurals>
+     <plurals name="premium_guild_subscriptions_renewal_info_pending_cancelation_quantity">
+-        <item quantity="one">serverboost</item>
+         <item quantity="other">serverboosts</item>
++        <item quantity="one">serverboost</item>
+     </plurals>
+     <plurals name="premium_guild_subscriptions_renewal_info_quantity">
+-        <item quantity="one">serverboost</item>
+         <item quantity="other">serverboosts</item>
++        <item quantity="one">serverboost</item>
+     </plurals>
+     <plurals name="premium_guild_unsubscribe_confirm_cooldown_warning_days_days">
+-        <item quantity="one">{#} dag</item>
+         <item quantity="other">{#} dagen</item>
++        <item quantity="one">{#} dag</item>
+     </plurals>
+     <plurals name="premium_guild_unsubscribe_confirm_cooldown_warning_days_hours">
+-        <item quantity="one">{#} uur</item>
+         <item quantity="other">{#} uur</item>
++        <item quantity="one">{#} uur</item>
+     </plurals>
+     <plurals name="premium_guild_unsubscribe_confirm_cooldown_warning_hours_hours">
+-        <item quantity="one">{#} uur</item>
+         <item quantity="other">{#} uur</item>
++        <item quantity="one">{#} uur</item>
+     </plurals>
+     <plurals name="premium_guild_unsubscribe_confirm_cooldown_warning_hours_minutes">
+-        <item quantity="one">{#} minuut</item>
+         <item quantity="other">{#} minuten</item>
++        <item quantity="one">{#} minuut</item>
+     </plurals>
+     <plurals name="premium_guild_unsubscribe_confirm_cooldown_warning_minutes_minutes">
+-        <item quantity="one">{#} minuut</item>
+         <item quantity="other">{#} minuten</item>
++        <item quantity="one">{#} minuut</item>
+     </plurals>
+     <plurals name="premium_marketing_feature_premium_guild_description_numFreeGuildSubscriptions">
+-        <item quantity="one">{#} serverboost</item>
+         <item quantity="other">{#} serverboosts</item>
++        <item quantity="one">{#} serverboost</item>
+     </plurals>
+     <plurals name="premium_plan_month_tier_2_trial_months">
+-        <item quantity="one">maand</item>
+         <item quantity="other">maanden</item>
++        <item quantity="one">maand</item>
+     </plurals>
+     <plurals name="premium_plan_year_tier_2_trial_months">
+-        <item quantity="one">maand</item>
+         <item quantity="other">maanden</item>
++        <item quantity="one">maand</item>
+     </plurals>
+     <plurals name="premium_subscription_credit_count_months_count">
+-        <item quantity="one">{#} maand</item>
+         <item quantity="other">{#} maanden</item>
++        <item quantity="one">{#} maand</item>
+     </plurals>
+     <plurals name="premium_subscription_ending_missing_payment_notice_text_daysLeft">
+-        <item quantity="one">over {#} dag</item>
+         <item quantity="other">over {#} dagen</item>
++        <item quantity="one">over {#} dag</item>
+     </plurals>
+     <plurals name="premium_subscription_ending_notice_text_daysLeft">
+-        <item quantity="one">{#} dag</item>
+         <item quantity="other">{#} dagen</item>
++        <item quantity="one">{#} dag</item>
+     </plurals>
+     <plurals name="premium_subscription_ending_what_you_lose_title_daysLeft">
+-        <item quantity="one">{#} dag</item>
+         <item quantity="other">{#} dagen</item>
++        <item quantity="one">{#} dag</item>
+     </plurals>
+     <plurals name="premium_subscription_renewal_footer_trial_days">
+-        <item quantity="one">1 dag</item>
+         <item quantity="other">{days} dagen</item>
++        <item quantity="one">1 dag</item>
+     </plurals>
+     <plurals name="premium_trial_cta_description_expiring_days_days">
+-        <item quantity="one">{#} dag</item>
+         <item quantity="other">{#} dagen</item>
++        <item quantity="one">{#} dag</item>
+     </plurals>
+     <plurals name="premium_trial_cta_description_expiring_hours_hours">
+-        <item quantity="one">{#} uur</item>
+         <item quantity="other">{#} uur</item>
++        <item quantity="one">{#} uur</item>
+     </plurals>
+     <plurals name="premium_trial_cta_description_expiring_minutes_minutes">
+-        <item quantity="one">{#} minuut</item>
+         <item quantity="other">{#} minuten</item>
++        <item quantity="one">{#} minuut</item>
+     </plurals>
+     <plurals name="premium_upsell_feature_free_guild_subscription_numFreeGuildSubscriptions">
+-        <item quantity="one">{#} serverboost</item>
+         <item quantity="other">{#} serverboosts</item>
++        <item quantity="one">{#} serverboost</item>
+     </plurals>
+     <plurals name="preview_lines_left_lines">
+-        <item quantity="one">{#} regel</item>
+         <item quantity="other">{#} regels</item>
++        <item quantity="one">{#} regel</item>
+     </plurals>
+     <plurals name="preview_num_lines_at_least_lines">
+-        <item quantity="one">{#} regel</item>
+         <item quantity="other">{#} regels</item>
++        <item quantity="one">{#} regel</item>
+     </plurals>
+     <plurals name="preview_num_lines_lines">
+-        <item quantity="one">{#} regel</item>
+         <item quantity="other">{#} regels</item>
++        <item quantity="one">{#} regel</item>
+     </plurals>
+     <plurals name="private_channel_access_info_members_count">
+-        <item quantity="one">{count} lid</item>
+         <item quantity="other">{count} leden</item>
++        <item quantity="one">{count} lid</item>
+     </plurals>
+     <plurals name="private_channel_access_info_roles_count">
+-        <item quantity="one">{count} rol</item>
+         <item quantity="other">{count} rollen</item>
++        <item quantity="one">{count} rol</item>
+     </plurals>
+     <plurals name="private_channel_members_added_toast_msg_count">
+-        <item quantity="one">{count} lid</item>
+         <item quantity="other">{count} leden</item>
++        <item quantity="one">{count} lid</item>
+     </plurals>
+     <plurals name="private_channel_roles_added_toast_msg_count">
+-        <item quantity="one">{count} rol</item>
+         <item quantity="other">{count} rollen</item>
++        <item quantity="one">{count} rol</item>
+     </plurals>
+     <plurals name="promotion_confirm_upgrade_line_item_quantity">
+-        <item quantity="one" />
+         <item quantity="other">{#}x</item>
++        <item quantity="one" />
+     </plurals>
+     <plurals name="promotion_confirm_upgrade_terms_trialMonths">
+-        <item quantity="one">{#} maand</item>
+         <item quantity="other">{#} maanden</item>
++        <item quantity="one">{#} maand</item>
+     </plurals>
+     <plurals name="promotion_existing_subscriber_body_months">
+-        <item quantity="one">{#} maand</item>
+         <item quantity="other">{#} maanden</item>
++        <item quantity="one">{#} maand</item>
+     </plurals>
+     <plurals name="promotion_previous_subscriber_body_months">
+-        <item quantity="one">{#} maand</item>
+         <item quantity="other">{#} maanden</item>
++        <item quantity="one">{#} maand</item>
+     </plurals>
+     <plurals name="promotion_redeem_body_months">
+-        <item quantity="one">{#} maand</item>
+         <item quantity="other">{#} maanden</item>
++        <item quantity="one">{#} maand</item>
+     </plurals>
+     <plurals name="publish_followed_news_body_reach_numGuildsFollowing">
+-        <item quantity="one">{#} server</item>
+         <item quantity="other">{#} servers</item>
++        <item quantity="one">{#} server</item>
+     </plurals>
+     <plurals name="publish_followed_news_fail_body_retryAfter">
+-        <item quantity="one">1 minuut</item>
+         <item quantity="other">{retryAfter} minuten</item>
++        <item quantity="one">1 minuut</item>
+     </plurals>
+     <plurals name="quick_switcher_results_group_dm_unread_label_mentions">
+-        <item quantity="one">, {#} ongelezen bericht</item>
+         <item quantity="other">, {#} ongelezen berichten</item>
++        <item quantity="one">, {#} ongelezen bericht</item>
+     </plurals>
+     <plurals name="quick_switcher_results_user_unread_label_mentions">
+-        <item quantity="one">, {#} ongelezen bericht</item>
+         <item quantity="other">, {#} ongelezen berichten</item>
++        <item quantity="one">, {#} ongelezen bericht</item>
+     </plurals>
+     <plurals name="quick_switcher_unread_badge_label_mentions">
+-        <item quantity="one">, {#} ongelezen bericht</item>
+         <item quantity="other">, {#} ongelezen berichten</item>
++        <item quantity="one">, {#} ongelezen bericht</item>
+     </plurals>
+     <plurals name="reaction_tooltip_1_n_n">
+-        <item quantity="one">1 andere</item>
+         <item quantity="other">{n} anderen</item>
++        <item quantity="one">1 andere</item>
+     </plurals>
+     <plurals name="reaction_tooltip_2_n_n">
+-        <item quantity="one">1 andere</item>
+         <item quantity="other">{n} anderen</item>
++        <item quantity="one">1 andere</item>
+     </plurals>
+     <plurals name="reaction_tooltip_3_n_n">
+-        <item quantity="one">1 andere</item>
+         <item quantity="other">{n} anderen</item>
++        <item quantity="one">1 andere</item>
+     </plurals>
+     <plurals name="reaction_tooltip_n_n">
+-        <item quantity="one">1 persoon</item>
+         <item quantity="other">{n} personen</item>
++        <item quantity="one">1 persoon</item>
+     </plurals>
+     <plurals name="role_member_count_count">
+-        <item quantity="one">{count} lid</item>
+         <item quantity="other">{count} leden</item>
++        <item quantity="one">{count} lid</item>
+     </plurals>
+     <plurals name="role_row_description_count">
+-        <item quantity="one">{count} lid</item>
+         <item quantity="other">{count} leden</item>
++        <item quantity="one">{count} lid</item>
+     </plurals>
+     <plurals name="role_row_view_members_count">
+-        <item quantity="one">{count} lid</item>
+         <item quantity="other">{count} leden</item>
++        <item quantity="one">{count} lid</item>
+     </plurals>
+     <plurals name="roles_list_numRoles">
+-        <item quantity="one">Rol</item>
+         <item quantity="other">Rollen</item>
++        <item quantity="one">Rol</item>
+     </plurals>
+     <plurals name="search_hide_blocked_messages_count">
+-        <item quantity="one">{count} bericht</item>
+         <item quantity="other">{count} berichten</item>
++        <item quantity="one">{count} bericht</item>
+     </plurals>
+     <plurals name="search_num_results_blocked_not_shown_count">
+-        <item quantity="one">{count} resultaat</item>
+         <item quantity="other">{count} resultaten</item>
++        <item quantity="one">{count} resultaat</item>
+     </plurals>
+     <plurals name="search_still_indexing_hint_count">
+-        <item quantity="one">{count} resultaat</item>
+         <item quantity="other">{count} resultaten</item>
++        <item quantity="one">{count} resultaat</item>
+     </plurals>
+     <plurals name="speaking_count_count">
+         <item quantity="other">{count} mensen zijn aan het praten</item>
+     </plurals>
+     <plurals name="spotify_listen_along_title_host_count">
+-        <item quantity="one">Luisteraar</item>
+         <item quantity="other">Luisteraars</item>
++        <item quantity="one">Luisteraar</item>
+     </plurals>
+     <plurals name="stage_audience_waiting_many_numOthers">
+-        <item quantity="one">{#} andere</item>
+         <item quantity="other">{#} anderen</item>
++        <item quantity="one">{#} andere</item>
+     </plurals>
+     <plurals name="stage_blocked_users_body_number">
+-        <item quantity="one">{#} account dat je hebt geblokkeerd is</item>
+         <item quantity="other">{#}accounts die je hebt geblokkeerd zijn</item>
++        <item quantity="one">{#} account dat je hebt geblokkeerd is</item>
+     </plurals>
+     <plurals name="stage_blocked_users_description_count_number">
+-        <item quantity="one">{#} account dat je hebt geblokkeerd is</item>
+         <item quantity="other">{#}accounts die je hebt geblokkeerd zijn</item>
++        <item quantity="one">{#} account dat je hebt geblokkeerd is</item>
+     </plurals>
+     <plurals name="stage_blocked_users_title_plural_number">
+-        <item quantity="one">account</item>
+         <item quantity="other">accounts</item>
++        <item quantity="one">account</item>
+     </plurals>
+     <plurals name="stage_channel_people_count_count">
+-        <item quantity="one">1 persoon</item>
+         <item quantity="other">{count} mensen</item>
++        <item quantity="one">1 persoon</item>
+     </plurals>
+     <plurals name="stage_channel_people_count_speakerCount">
+-        <item quantity="one">1 spreker</item>
+         <item quantity="other">{speakerCount} sprekers</item>
++        <item quantity="one">1 spreker</item>
+     </plurals>
+     <plurals name="stage_channel_users_are_speaking_count">
+-        <item quantity="one">iemand is</item>
+         <item quantity="other">mensen zijn</item>
++        <item quantity="one">iemand is</item>
+     </plurals>
+     <plurals name="stage_discovery_card_speaker_text_number">
+-        <item quantity="one">{#} praat met {userNick}</item>
+         <item quantity="other">{userNick} is aan het praten</item>
++        <item quantity="one">{#} praat met {userNick}</item>
+     </plurals>
+     <plurals name="stage_discovery_card_speaker_text_overflow_count">
+         <item quantity="other">+{count} zijn aan het praten</item>
+     </plurals>
+     <plurals name="stage_discovery_live_stage_tile_friends_guilds_context_audience_3_n_n">
+-        <item quantity="one">nog 1 iemand</item>
+         <item quantity="other">{n} anderen</item>
++        <item quantity="one">nog 1 iemand</item>
+     </plurals>
+     <plurals name="stage_discovery_live_stage_tile_speaker_summary_overflow_count">
+-        <item quantity="one">+{count} spreker</item>
+         <item quantity="other">+{count} sprekers</item>
++        <item quantity="one">+{count} spreker</item>
+     </plurals>
+     <plurals name="stage_invite_speaker_count_count">
+-        <item quantity="one">1 spreker</item>
+         <item quantity="other">{count} sprekers</item>
++        <item quantity="one">1 spreker</item>
+     </plurals>
+     <plurals name="stage_is_speaking_hook_count">
+-        <item quantity="one">en één ander persoon](usernameHook) is aan het praten…</item>
+         <item quantity="other">en {count} andere mensen](usernameHook) zijn aan het praten…</item>
++        <item quantity="one">en één ander persoon](usernameHook) is aan het praten…</item>
+     </plurals>
+     <plurals name="stage_speak_invite_blocked_users_number">
+-        <item quantity="one">{#} geblokkeerde gebruiker</item>
+         <item quantity="other">{#} geblokkeerde gebruikers</item>
++        <item quantity="one">{#} geblokkeerde gebruiker</item>
+     </plurals>
+     <plurals name="stage_speak_invite_header_blocked_users_number">
+-        <item quantity="one">{#} geblokkeerde gebruiker</item>
+         <item quantity="other">{#} geblokkeerde gebruikers</item>
++        <item quantity="one">{#} geblokkeerde gebruiker</item>
+     </plurals>
+     <plurals name="sticker_pack_sticker_count_numStickers">
+-        <item quantity="one">{#} sticker</item>
+         <item quantity="other">{#} stickers</item>
++        <item quantity="one">{#} sticker</item>
+     </plurals>
+     <plurals name="sticker_premium_tier_2_upsell_alert_perks_guild_subscriptions_numFreeGuildSubscriptions">
+-        <item quantity="one">{#} serverboost</item>
+         <item quantity="other">{#} serverboosts</item>
++        <item quantity="one">{#} serverboost</item>
+     </plurals>
+     <plurals name="stickers_gift_inventory_title_month_intervalCount">
+-        <item quantity="one">{#} maand</item>
+         <item quantity="other">{#} maanden</item>
++        <item quantity="one">{#} maand</item>
+     </plurals>
+     <plurals name="stickers_gift_inventory_title_year_intervalCount">
+-        <item quantity="one">{#} jaar</item>
+         <item quantity="other">{#} jaar</item>
++        <item quantity="one">{#} jaar</item>
+     </plurals>
+     <plurals name="thread_message_count_count">
+-        <item quantity="one">1 bericht ›</item>
+         <item quantity="other">{count} berichten ›</item>
++        <item quantity="one">1 bericht ›</item>
+     </plurals>
+     <plurals name="thread_reply_suggestion_count">
+-        <item quantity="one">{#} antwoord</item>
+         <item quantity="other">{#} antwoorden</item>
++        <item quantity="one">{#} antwoord</item>
+     </plurals>
+     <plurals name="total_results_count">
+-        <item quantity="one">{count} resultaat</item>
+         <item quantity="other">{count} resultaten</item>
++        <item quantity="one">{count} resultaat</item>
+     </plurals>
+     <plurals name="uploading_files_count">
+-        <item quantity="one">Bezig met uploaden van 1 bestand</item>
+         <item quantity="other">Bezig met uploaden van {count} bestanden</item>
++        <item quantity="one">Bezig met uploaden van 1 bestand</item>
+     </plurals>
+     <plurals name="uploading_files_failed_count">
+-        <item quantity="one">1 bestandsupload mislukt</item>
+         <item quantity="other">{count} bestandsuploads mislukt</item>
++        <item quantity="one">1 bestandsupload mislukt</item>
+     </plurals>
+     <plurals name="user_activity_timestamp_end_hours">
+         <item quantity="other">{hours}:</item>
+@@ -1397,43 +1397,43 @@
+         <item quantity="other">{seconds}</item>
+     </plurals>
+     <plurals name="user_activity_user_playing_for_days_time">
+-        <item quantity="one">dag</item>
+         <item quantity="other">dagen</item>
++        <item quantity="one">dag</item>
+     </plurals>
+     <plurals name="user_activity_user_playing_for_hours_time">
+-        <item quantity="one">uur</item>
+         <item quantity="other">uren</item>
++        <item quantity="one">uur</item>
+     </plurals>
+     <plurals name="user_activity_user_playing_for_minutes_time">
+-        <item quantity="one">minuut</item>
+         <item quantity="other">minuten</item>
++        <item quantity="one">minuut</item>
+     </plurals>
+     <plurals name="user_profile_mutual_friends_count">
+-        <item quantity="one">1 gemeenschappelijke vriend</item>
+         <item quantity="other">{count} gemeenschappelijke vrienden</item>
++        <item quantity="one">1 gemeenschappelijke vriend</item>
+     </plurals>
+     <plurals name="user_profile_mutual_guilds_count">
+-        <item quantity="one">1 gemeenschappelijke server</item>
+         <item quantity="other">{count} gemeenschappelijke servers</item>
++        <item quantity="one">1 gemeenschappelijke server</item>
+     </plurals>
+     <plurals name="user_summary_with_others_count">
+-        <item quantity="one">1 andere persoon</item>
+         <item quantity="other">{count} anderen</item>
++        <item quantity="one">1 andere persoon</item>
+     </plurals>
+     <plurals name="vanity_url_header_uses_uses">
+-        <item quantity="one">1 keer gebruikt</item>
+         <item quantity="other">{uses} keer gebruikt</item>
++        <item quantity="one">1 keer gebruikt</item>
+     </plurals>
+     <plurals name="vanity_url_uses_uses">
+-        <item quantity="one">1 gebruik</item>
+         <item quantity="other">{uses} gebruiken</item>
++        <item quantity="one">1 gebruik</item>
+     </plurals>
+     <plurals name="viewing_as_roles_numRoles">
+-        <item quantity="one">1 rol</item>
+         <item quantity="other">{numRoles} rollen</item>
++        <item quantity="one">1 rol</item>
+     </plurals>
+     <plurals name="voice_call_member_list_title_count">
+-        <item quantity="one">{#} persoon</item>
+         <item quantity="other">{#} mensen</item>
++        <item quantity="one">{#} persoon</item>
+     </plurals>
+ </resources>

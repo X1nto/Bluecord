@@ -1,0 +1,75 @@
+--- ./discord_94011/src/main/java/okhttp3/Response.java	2021-12-24 01:10:16.617023900 +0400
++++ ./bluecord/src/main/java/okhttp3/Response.java	2021-12-24 01:08:37.025261200 +0400
+@@ -24,7 +24,7 @@ public final class Response implements C
+     public final Response r;
+ 
+     /* renamed from: s  reason: collision with root package name */
+-    public final long f2956s;
++    public final long f2958s;
+     public final long t;
+     public final c u;
+ 
+@@ -43,7 +43,7 @@ public final class Response implements C
+         this.p = response;
+         this.q = response2;
+         this.r = response3;
+-        this.f2956s = j2;
++        this.f2958s = j2;
+         this.t = j3;
+         this.u = cVar;
+     }
+@@ -93,7 +93,7 @@ public final class Response implements C
+         public y b;
+ 
+         /* renamed from: c  reason: collision with root package name */
+-        public int f2957c;
++        public int f2959c;
+         public String d;
+         public v e;
+         public Headers.a f;
+@@ -106,12 +106,12 @@ public final class Response implements C
+         public c m;
+ 
+         public a() {
+-            this.f2957c = -1;
++            this.f2959c = -1;
+             this.f = new Headers.a();
+         }
+ 
+         public Response a() {
+-            int i2 = this.f2957c;
++            int i2 = this.f2959c;
+             if (i2 >= 0) {
+                 Request request = this.a;
+                 if (request != null) {
+@@ -128,7 +128,7 @@ public final class Response implements C
+                 throw new IllegalStateException("request == null".toString());
+             }
+             StringBuilder P = c.d.b.a.a.P("code < 0: ");
+-            P.append(this.f2957c);
++            P.append(this.f2959c);
+             throw new IllegalStateException(P.toString().toString());
+         }
+ 
+@@ -186,10 +186,10 @@ public final class Response implements C
+ 
+         public a(Response response) {
+             m.checkParameterIsNotNull(response, "response");
+-            this.f2957c = -1;
++            this.f2959c = -1;
+             this.a = response.i;
+             this.b = response.j;
+-            this.f2957c = response.l;
++            this.f2959c = response.l;
+             this.d = response.k;
+             this.e = response.m;
+             this.f = response.n.e();
+@@ -197,7 +197,7 @@ public final class Response implements C
+             this.h = response.p;
+             this.i = response.q;
+             this.j = response.r;
+-            this.k = response.f2956s;
++            this.k = response.f2958s;
+             this.l = response.t;
+             this.m = response.u;
+         }

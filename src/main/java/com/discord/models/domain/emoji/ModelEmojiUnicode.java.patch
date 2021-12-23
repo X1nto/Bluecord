@@ -1,0 +1,14 @@
+--- ./discord_94011/src/main/java/com/discord/models/domain/emoji/ModelEmojiUnicode.java	2021-12-24 01:10:12.639024300 +0400
++++ ./bluecord/src/main/java/com/discord/models/domain/emoji/ModelEmojiUnicode.java	2021-12-24 01:08:33.134261900 +0400
+@@ -359,6 +359,11 @@ public class ModelEmojiUnicode implement
+     }
+ 
+     @Override // com.discord.models.domain.emoji.Emoji
++    public boolean isActuallyAvailable() {
++        return true;
++    }
++
++    @Override // com.discord.models.domain.emoji.Emoji
+     public boolean isAvailable() {
+         return true;
+     }

@@ -1,0 +1,11 @@
+--- ./discord_94011/src/main/java/s/a/h1.java	2021-12-24 01:10:16.735022900 +0400
++++ ./bluecord/src/main/java/s/a/h1.java	2021-12-24 01:08:37.120262200 +0400
+@@ -8,7 +8,7 @@ public final class h1 {
+     public static final t b = new t("COMPLETING_WAITING_CHILDREN");
+ 
+     /* renamed from: c  reason: collision with root package name */
+-    public static final t f2973c = new t("COMPLETING_RETRY");
++    public static final t f2975c = new t("COMPLETING_RETRY");
+     public static final t d = new t("TOO_LATE_TO_CANCEL");
+     public static final t e = new t("SEALED");
+     public static final o0 f = new o0(false);

@@ -1,0 +1,46 @@
+--- ./discord_94011/src/main/java/com/discord/stores/StoreGuildJoinRequest.java	2021-12-24 01:10:12.826025500 +0400
++++ ./bluecord/src/main/java/com/discord/stores/StoreGuildJoinRequest.java	2021-12-24 01:08:33.324262000 +0400
+@@ -9,11 +9,8 @@ import d0.z.d.m;
+ import java.util.HashMap;
+ import java.util.List;
+ import java.util.Map;
+-import kotlin.Metadata;
+ import rx.Observable;
+ 
+-@Metadata(bv = {1, 0, 3}, d1 = {"\u0000d\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0010$\n\u0002\u0010\t\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0006\n\u0002\u0010\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\t\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0005\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\b\u0005\u0018\u00002\u00020\u0001B'\u0012\u0006\u0010+\u001a\u00020*\u0012\u0006\u0010\u001e\u001a\u00020\u001d\u0012\u0006\u0010/\u001a\u00020.\u0012\u0006\u0010%\u001a\u00020$¢\u0006\u0004\b1\u00102J#\u0010\u0007\u001a\u0018\u0012\u0014\u0012\u0012\u0012\b\u0012\u00060\u0004j\u0002`\u0005\u0012\u0004\u0012\u00020\u00060\u00030\u0002¢\u0006\u0004\b\u0007\u0010\bJ#\u0010\n\u001a\u0018\u0012\u0014\u0012\u0012\u0012\b\u0012\u00060\u0004j\u0002`\u0005\u0012\u0004\u0012\u00020\t0\u00030\u0002¢\u0006\u0004\b\n\u0010\bJ!\u0010\f\u001a\n\u0012\u0006\u0012\u0004\u0018\u00010\t0\u00022\n\u0010\u000b\u001a\u00060\u0004j\u0002`\u0005¢\u0006\u0004\b\f\u0010\rJ\u001b\u0010\u000e\u001a\u0004\u0018\u00010\t2\n\u0010\u000b\u001a\u00060\u0004j\u0002`\u0005¢\u0006\u0004\b\u000e\u0010\u000fJ\r\u0010\u0011\u001a\u00020\u0010¢\u0006\u0004\b\u0011\u0010\u0012J\u0017\u0010\u0015\u001a\u00020\u00102\u0006\u0010\u0014\u001a\u00020\u0013H\u0007¢\u0006\u0004\b\u0015\u0010\u0016J\u001b\u0010\u0017\u001a\u00020\u00102\n\u0010\u000b\u001a\u00060\u0004j\u0002`\u0005H\u0007¢\u0006\u0004\b\u0017\u0010\u0018J#\u0010\u001a\u001a\u00020\u00102\n\u0010\u000b\u001a\u00060\u0004j\u0002`\u00052\u0006\u0010\u0019\u001a\u00020\tH\u0007¢\u0006\u0004\b\u001a\u0010\u001bJ\u000f\u0010\u001c\u001a\u00020\u0010H\u0017¢\u0006\u0004\b\u001c\u0010\u0012R\u0016\u0010\u001e\u001a\u00020\u001d8\u0002@\u0002X\u0004¢\u0006\u0006\n\u0004\b\u001e\u0010\u001fR:\u0010\"\u001a&\u0012\b\u0012\u00060\u0004j\u0002`\u0005\u0012\u0004\u0012\u00020\t0 j\u0012\u0012\b\u0012\u00060\u0004j\u0002`\u0005\u0012\u0004\u0012\u00020\t`!8\u0002@\u0002X\u0004¢\u0006\u0006\n\u0004\b\"\u0010#R\u0016\u0010%\u001a\u00020$8\u0002@\u0002X\u0004¢\u0006\u0006\n\u0004\b%\u0010&R&\u0010'\u001a\u0012\u0012\b\u0012\u00060\u0004j\u0002`\u0005\u0012\u0004\u0012\u00020\t0\u00038\u0002@\u0002X\u000e¢\u0006\u0006\n\u0004\b'\u0010(R&\u0010)\u001a\u0012\u0012\b\u0012\u00060\u0004j\u0002`\u0005\u0012\u0004\u0012\u00020\u00060\u00038\u0002@\u0002X\u000e¢\u0006\u0006\n\u0004\b)\u0010(R\u0016\u0010+\u001a\u00020*8\u0002@\u0002X\u0004¢\u0006\u0006\n\u0004\b+\u0010,R:\u0010-\u001a&\u0012\b\u0012\u00060\u0004j\u0002`\u0005\u0012\u0004\u0012\u00020\u00060 j\u0012\u0012\b\u0012\u00060\u0004j\u0002`\u0005\u0012\u0004\u0012\u00020\u0006`!8\u0002@\u0002X\u000e¢\u0006\u0006\n\u0004\b-\u0010#R\u0016\u0010/\u001a\u00020.8\u0002@\u0002X\u0004¢\u0006\u0006\n\u0004\b/\u00100¨\u00063"}, d2 = {"Lcom/discord/stores/StoreGuildJoinRequest;", "Lcom/discord/stores/StoreV2;", "Lrx/Observable;", "", "", "Lcom/discord/primitives/GuildId;", "Lcom/discord/models/guild/Guild;", "observePendingGuilds", "()Lrx/Observable;", "Lcom/discord/api/guildjoinrequest/GuildJoinRequest;", "observeGuildJoinRequests", "guildId", "observeGuildJoinRequest", "(J)Lrx/Observable;", "getGuildJoinRequest", "(J)Lcom/discord/api/guildjoinrequest/GuildJoinRequest;", "", "fetchPendingGuilds", "()V", "Lcom/discord/models/domain/ModelPayload;", "payload", "handleConnectionOpen", "(Lcom/discord/models/domain/ModelPayload;)V", "handleGuildRemove", "(J)V", "request", "handleGuildJoinRequestCreateOrUpdate", "(JLcom/discord/api/guildjoinrequest/GuildJoinRequest;)V", "snapshotData", "Lcom/discord/stores/StoreGuilds;", "guildsStore", "Lcom/discord/stores/StoreGuilds;", "Ljava/util/HashMap;", "Lkotlin/collections/HashMap;", "guildJoinRequests", "Ljava/util/HashMap;", "Lcom/discord/stores/updates/ObservationDeck;", "observationDeck", "Lcom/discord/stores/updates/ObservationDeck;", "guildJoinRequestsSnapshot", "Ljava/util/Map;", "pendingGuildsSnapshot", "Lcom/discord/stores/StoreUser;", "userStore", "Lcom/discord/stores/StoreUser;", "pendingGuilds", "Lcom/discord/stores/Dispatcher;", "dispatcher", "Lcom/discord/stores/Dispatcher;", "<init>", "(Lcom/discord/stores/StoreUser;Lcom/discord/stores/StoreGuilds;Lcom/discord/stores/Dispatcher;Lcom/discord/stores/updates/ObservationDeck;)V", "app_productionGoogleRelease"}, k = 1, mv = {1, 4, 2})
+-/* compiled from: StoreGuildJoinRequest.kt */
+ public final class StoreGuildJoinRequest extends StoreV2 {
+     private final Dispatcher dispatcher;
+     private final HashMap<Long, GuildJoinRequest> guildJoinRequests = new HashMap<>();
+@@ -43,7 +40,6 @@ public final class StoreGuildJoinRequest
+         return this.guildJoinRequestsSnapshot.get(Long.valueOf(j));
+     }
+ 
+-    @StoreThread
+     public final void handleConnectionOpen(ModelPayload modelPayload) {
+         m.checkNotNullParameter(modelPayload, "payload");
+         List<GuildJoinRequest> guildJoinRequests2 = modelPayload.getGuildJoinRequests();
+@@ -58,7 +54,6 @@ public final class StoreGuildJoinRequest
+         markChanged();
+     }
+ 
+-    @StoreThread
+     public final void handleGuildJoinRequestCreateOrUpdate(long j, GuildJoinRequest guildJoinRequest) {
+         m.checkNotNullParameter(guildJoinRequest, "request");
+         if (guildJoinRequest.c() == this.userStore.getMe().getId()) {
+@@ -67,7 +62,6 @@ public final class StoreGuildJoinRequest
+         }
+     }
+ 
+-    @StoreThread
+     public final void handleGuildRemove(long j) {
+         if (this.guildJoinRequests.remove(Long.valueOf(j)) != null) {
+             markChanged();
+@@ -93,7 +87,6 @@ public final class StoreGuildJoinRequest
+     }
+ 
+     @Override // com.discord.stores.StoreV2
+-    @StoreThread
+     public void snapshotData() {
+         super.snapshotData();
+         this.guildJoinRequestsSnapshot = new HashMap(this.guildJoinRequests);

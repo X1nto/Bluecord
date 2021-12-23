@@ -1,0 +1,130 @@
+--- ./discord_94011/src/main/java/com/discord/stores/StoreMessageReactions.java	2021-12-24 01:10:12.900025400 +0400
++++ ./bluecord/src/main/java/com/discord/stores/StoreMessageReactions.java	2021-12-24 01:08:33.422261900 +0400
+@@ -15,14 +15,11 @@ import java.util.HashMap;
+ import java.util.LinkedHashMap;
+ import java.util.List;
+ import java.util.Map;
+-import kotlin.Metadata;
+ import kotlin.jvm.functions.Function0;
+ import kotlin.jvm.functions.Function1;
+ import kotlin.jvm.internal.DefaultConstructorMarker;
+ import rx.Observable;
+ 
+-@Metadata(bv = {1, 0, 3}, d1 = {"\u0000\u0001\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0010\t\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010 \n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0002\n\u0002\b\u0005\n\u0002\u0010\u000e\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0004\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\b\u0005\n\u0002\u0018\u0002\n\u0002\b\u0007\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010$\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010%\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0006\u0018\u00002\u00020\u0001:\u0001=B!\u0012\u0006\u0010,\u001a\u00020+\u0012\u0006\u00109\u001a\u000208\u0012\b\b\u0002\u00103\u001a\u000202¢\u0006\u0004\b;\u0010<J=\u0010\r\u001a\u00020\f2\n\u0010\u0004\u001a\u00060\u0002j\u0002`\u00032\n\u0010\u0006\u001a\u00060\u0002j\u0002`\u00052\u0006\u0010\b\u001a\u00020\u00072\f\u0010\u000b\u001a\b\u0012\u0004\u0012\u00020\n0\tH\u0003¢\u0006\u0004\b\r\u0010\u000eJ/\u0010\u000f\u001a\u00020\f2\n\u0010\u0004\u001a\u00060\u0002j\u0002`\u00032\n\u0010\u0006\u001a\u00060\u0002j\u0002`\u00052\u0006\u0010\b\u001a\u00020\u0007H\u0003¢\u0006\u0004\b\u000f\u0010\u0010J/\u0010\u0011\u001a\u00020\f2\n\u0010\u0004\u001a\u00060\u0002j\u0002`\u00032\n\u0010\u0006\u001a\u00060\u0002j\u0002`\u00052\u0006\u0010\b\u001a\u00020\u0007H\u0003¢\u0006\u0004\b\u0011\u0010\u0010J'\u0010\u0015\u001a\u00020\u00142\n\u0010\u0006\u001a\u00060\u0002j\u0002`\u00052\n\u0010\b\u001a\u00060\u0012j\u0002`\u0013H\u0003¢\u0006\u0004\b\u0015\u0010\u0016J\u0017\u0010\u0017\u001a\u00020\u00122\u0006\u0010\b\u001a\u00020\u0007H\u0002¢\u0006\u0004\b\u0017\u0010\u0018J3\u0010\u001a\u001a\b\u0012\u0004\u0012\u00020\u00140\u00192\n\u0010\u0004\u001a\u00060\u0002j\u0002`\u00032\n\u0010\u0006\u001a\u00060\u0002j\u0002`\u00052\u0006\u0010\b\u001a\u00020\u0007¢\u0006\u0004\b\u001a\u0010\u001bJ-\u0010\u001c\u001a\u00020\f2\n\u0010\u0004\u001a\u00060\u0002j\u0002`\u00032\n\u0010\u0006\u001a\u00060\u0002j\u0002`\u00052\u0006\u0010\b\u001a\u00020\u0007¢\u0006\u0004\b\u001c\u0010\u0010J9\u0010\u001f\u001a\u00020\f2\n\u0010\u0004\u001a\u00060\u0002j\u0002`\u00032\n\u0010\u0006\u001a\u00060\u0002j\u0002`\u00052\u0006\u0010\b\u001a\u00020\u00072\n\u0010\u001e\u001a\u00060\u0002j\u0002`\u001d¢\u0006\u0004\b\u001f\u0010 J\u000f\u0010!\u001a\u00020\fH\u0007¢\u0006\u0004\b!\u0010\"J\u0017\u0010%\u001a\u00020\f2\u0006\u0010$\u001a\u00020#H\u0007¢\u0006\u0004\b%\u0010&J\u0017\u0010'\u001a\u00020\f2\u0006\u0010$\u001a\u00020#H\u0007¢\u0006\u0004\b'\u0010&J\u0017\u0010(\u001a\u00020\f2\u0006\u0010$\u001a\u00020#H\u0007¢\u0006\u0004\b(\u0010&J\u0017\u0010)\u001a\u00020\f2\u0006\u0010$\u001a\u00020#H\u0007¢\u0006\u0004\b)\u0010&J\u000f\u0010*\u001a\u00020\fH\u0017¢\u0006\u0004\b*\u0010\"R\u0016\u0010,\u001a\u00020+8\u0002@\u0002X\u0004¢\u0006\u0006\n\u0004\b,\u0010-R:\u00100\u001a&\u0012\b\u0012\u00060\u0002j\u0002`\u0005\u0012\u0014\u0012\u0012\u0012\b\u0012\u00060\u0012j\u0002`\u0013\u0012\u0004\u0012\u00020\u00140.0.j\u0002`/8\u0002@\u0002X\u000e¢\u0006\u0006\n\u0004\b0\u00101R\u0016\u00103\u001a\u0002028\u0002@\u0002X\u0004¢\u0006\u0006\n\u0004\b3\u00104R:\u00107\u001a&\u0012\b\u0012\u00060\u0002j\u0002`\u0005\u0012\u0014\u0012\u0012\u0012\b\u0012\u00060\u0012j\u0002`\u0013\u0012\u0004\u0012\u00020\u00140505j\u0002`68\u0002@\u0002X\u0004¢\u0006\u0006\n\u0004\b7\u00101R\u0016\u00109\u001a\u0002088\u0002@\u0002X\u0004¢\u0006\u0006\n\u0004\b9\u0010:¨\u0006>"}, d2 = {"Lcom/discord/stores/StoreMessageReactions;", "Lcom/discord/stores/StoreV2;", "", "Lcom/discord/primitives/ChannelId;", "channelId", "Lcom/discord/primitives/MessageId;", "messageId", "Lcom/discord/api/message/reaction/MessageReactionEmoji;", "emoji", "", "Lcom/discord/models/user/User;", "reactionUsers", "", "handleReactionUsers", "(JJLcom/discord/api/message/reaction/MessageReactionEmoji;Ljava/util/List;)V", "handleLoadReactionUsersFailure", "(JJLcom/discord/api/message/reaction/MessageReactionEmoji;)V", "fetchReactions", "", "Lcom/discord/stores/EmojiKey;", "Lcom/discord/stores/StoreMessageReactions$EmojiResults;", "ensureReactionResults", "(JLjava/lang/String;)Lcom/discord/stores/StoreMessageReactions$EmojiResults;", "getReactionEmojiRequestParam", "(Lcom/discord/api/message/reaction/MessageReactionEmoji;)Ljava/lang/String;", "Lrx/Observable;", "observeMessageReactions", "(JJLcom/discord/api/message/reaction/MessageReactionEmoji;)Lrx/Observable;", "forceRetryFetchReactions", "Lcom/discord/primitives/UserId;", "userId", "deleteEmoji", "(JJLcom/discord/api/message/reaction/MessageReactionEmoji;J)V", "handleConnectionOpen", "()V", "Lcom/discord/api/message/reaction/MessageReactionUpdate;", "update", "handleReactionAdd", "(Lcom/discord/api/message/reaction/MessageReactionUpdate;)V", "handleReactionRemove", "handleReactionRemoveEmoji", "handleReactionRemoveAll", "snapshotData", "Lcom/discord/stores/Dispatcher;", "dispatcher", "Lcom/discord/stores/Dispatcher;", "", "Lcom/discord/stores/ReactionsMap;", "reactionsSnapshot", "Ljava/util/Map;", "Lcom/discord/stores/updates/ObservationDeck;", "observationDeck", "Lcom/discord/stores/updates/ObservationDeck;", "", "Lcom/discord/stores/MutableReactionsMap;", "reactions", "Lcom/discord/stores/StoreUser;", "userStore", "Lcom/discord/stores/StoreUser;", "<init>", "(Lcom/discord/stores/Dispatcher;Lcom/discord/stores/StoreUser;Lcom/discord/stores/updates/ObservationDeck;)V", "EmojiResults", "app_productionGoogleRelease"}, k = 1, mv = {1, 4, 2})
+-/* compiled from: StoreMessageReactions.kt */
+ public final class StoreMessageReactions extends StoreV2 {
+     private final Dispatcher dispatcher;
+     private final ObservationDeck observationDeck;
+@@ -30,12 +27,8 @@ public final class StoreMessageReactions
+     private Map<Long, ? extends Map<String, ? extends EmojiResults>> reactionsSnapshot;
+     private final StoreUser userStore;
+ 
+-    @Metadata(bv = {1, 0, 3}, d1 = {"\u0000\u001a\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\b\u0005\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\b6\u0018\u00002\u00020\u0001:\u0003\u0004\u0005\u0006B\t\b\u0002¢\u0006\u0004\b\u0002\u0010\u0003\u0001\u0003\u0007\b\t¨\u0006\n"}, d2 = {"Lcom/discord/stores/StoreMessageReactions$EmojiResults;", "", "<init>", "()V", "Failure", "Loading", "Users", "Lcom/discord/stores/StoreMessageReactions$EmojiResults$Users;", "Lcom/discord/stores/StoreMessageReactions$EmojiResults$Failure;", "Lcom/discord/stores/StoreMessageReactions$EmojiResults$Loading;", "app_productionGoogleRelease"}, k = 1, mv = {1, 4, 2})
+-    /* compiled from: StoreMessageReactions.kt */
+     public static abstract class EmojiResults {
+ 
+-        @Metadata(bv = {1, 0, 3}, d1 = {"\u0000@\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0010\t\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0007\n\u0002\u0010\u000e\n\u0002\b\u0002\n\u0002\u0010\b\n\u0002\b\u0002\n\u0002\u0010\u0000\n\u0000\n\u0002\u0010\u000b\n\u0002\b\n\b\b\u0018\u00002\u00020\u0001B'\u0012\n\u0010\u000b\u001a\u00060\u0002j\u0002`\u0003\u0012\n\u0010\f\u001a\u00060\u0002j\u0002`\u0006\u0012\u0006\u0010\r\u001a\u00020\b¢\u0006\u0004\b \u0010!J\u0014\u0010\u0004\u001a\u00060\u0002j\u0002`\u0003HÆ\u0003¢\u0006\u0004\b\u0004\u0010\u0005J\u0014\u0010\u0007\u001a\u00060\u0002j\u0002`\u0006HÆ\u0003¢\u0006\u0004\b\u0007\u0010\u0005J\u0010\u0010\t\u001a\u00020\bHÆ\u0003¢\u0006\u0004\b\t\u0010\nJ6\u0010\u000e\u001a\u00020\u00002\f\b\u0002\u0010\u000b\u001a\u00060\u0002j\u0002`\u00032\f\b\u0002\u0010\f\u001a\u00060\u0002j\u0002`\u00062\b\b\u0002\u0010\r\u001a\u00020\bHÆ\u0001¢\u0006\u0004\b\u000e\u0010\u000fJ\u0010\u0010\u0011\u001a\u00020\u0010HÖ\u0001¢\u0006\u0004\b\u0011\u0010\u0012J\u0010\u0010\u0014\u001a\u00020\u0013HÖ\u0001¢\u0006\u0004\b\u0014\u0010\u0015J\u001a\u0010\u0019\u001a\u00020\u00182\b\u0010\u0017\u001a\u0004\u0018\u00010\u0016HÖ\u0003¢\u0006\u0004\b\u0019\u0010\u001aR\u0019\u0010\r\u001a\u00020\b8\u0006@\u0006¢\u0006\f\n\u0004\b\r\u0010\u001b\u001a\u0004\b\u001c\u0010\nR\u001d\u0010\u000b\u001a\u00060\u0002j\u0002`\u00038\u0006@\u0006¢\u0006\f\n\u0004\b\u000b\u0010\u001d\u001a\u0004\b\u001e\u0010\u0005R\u001d\u0010\f\u001a\u00060\u0002j\u0002`\u00068\u0006@\u0006¢\u0006\f\n\u0004\b\f\u0010\u001d\u001a\u0004\b\u001f\u0010\u0005¨\u0006\""}, d2 = {"Lcom/discord/stores/StoreMessageReactions$EmojiResults$Failure;", "Lcom/discord/stores/StoreMessageReactions$EmojiResults;", "", "Lcom/discord/primitives/ChannelId;", "component1", "()J", "Lcom/discord/primitives/MessageId;", "component2", "Lcom/discord/api/message/reaction/MessageReactionEmoji;", "component3", "()Lcom/discord/api/message/reaction/MessageReactionEmoji;", "channelId", "messageId", "emoji", "copy", "(JJLcom/discord/api/message/reaction/MessageReactionEmoji;)Lcom/discord/stores/StoreMessageReactions$EmojiResults$Failure;", "", "toString", "()Ljava/lang/String;", "", "hashCode", "()I", "", "other", "", "equals", "(Ljava/lang/Object;)Z", "Lcom/discord/api/message/reaction/MessageReactionEmoji;", "getEmoji", "J", "getChannelId", "getMessageId", "<init>", "(JJLcom/discord/api/message/reaction/MessageReactionEmoji;)V", "app_productionGoogleRelease"}, k = 1, mv = {1, 4, 2})
+-        /* compiled from: StoreMessageReactions.kt */
+         public static final class Failure extends EmojiResults {
+             private final long channelId;
+             private final MessageReactionEmoji emoji;
+@@ -121,8 +114,6 @@ public final class StoreMessageReactions
+             }
+         }
+ 
+-        @Metadata(bv = {1, 0, 3}, d1 = {"\u0000\f\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0003\bÆ\u0002\u0018\u00002\u00020\u0001B\t\b\u0002¢\u0006\u0004\b\u0002\u0010\u0003¨\u0006\u0004"}, d2 = {"Lcom/discord/stores/StoreMessageReactions$EmojiResults$Loading;", "Lcom/discord/stores/StoreMessageReactions$EmojiResults;", "<init>", "()V", "app_productionGoogleRelease"}, k = 1, mv = {1, 4, 2})
+-        /* compiled from: StoreMessageReactions.kt */
+         public static final class Loading extends EmojiResults {
+             public static final Loading INSTANCE = new Loading();
+ 
+@@ -131,8 +122,6 @@ public final class StoreMessageReactions
+             }
+         }
+ 
+-        @Metadata(bv = {1, 0, 3}, d1 = {"\u0000X\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\u0010\t\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\b\n\u0002\u0010\u000e\n\u0002\b\u0002\n\u0002\u0010\b\n\u0002\b\u0002\n\u0002\u0010\u0000\n\u0000\n\u0002\u0010\u000b\n\u0002\b\f\b\b\u0018\u00002\u00020\u0001BS\u0012*\u0010\u0013\u001a&\u0012\b\u0012\u00060\u0005j\u0002`\u0006\u0012\u0004\u0012\u00020\u00070\u0004j\u0012\u0012\b\u0012\u00060\u0005j\u0002`\u0006\u0012\u0004\u0012\u00020\u0007`\b\u0012\n\u0010\u0014\u001a\u00060\u0005j\u0002`\u000b\u0012\n\u0010\u0015\u001a\u00060\u0005j\u0002`\u000e\u0012\u0006\u0010\u0016\u001a\u00020\u0010¢\u0006\u0004\b+\u0010,J\r\u0010\u0002\u001a\u00020\u0000¢\u0006\u0004\b\u0002\u0010\u0003J4\u0010\t\u001a&\u0012\b\u0012\u00060\u0005j\u0002`\u0006\u0012\u0004\u0012\u00020\u00070\u0004j\u0012\u0012\b\u0012\u00060\u0005j\u0002`\u0006\u0012\u0004\u0012\u00020\u0007`\bHÆ\u0003¢\u0006\u0004\b\t\u0010\nJ\u0014\u0010\f\u001a\u00060\u0005j\u0002`\u000bHÆ\u0003¢\u0006\u0004\b\f\u0010\rJ\u0014\u0010\u000f\u001a\u00060\u0005j\u0002`\u000eHÆ\u0003¢\u0006\u0004\b\u000f\u0010\rJ\u0010\u0010\u0011\u001a\u00020\u0010HÆ\u0003¢\u0006\u0004\b\u0011\u0010\u0012Jd\u0010\u0017\u001a\u00020\u00002,\b\u0002\u0010\u0013\u001a&\u0012\b\u0012\u00060\u0005j\u0002`\u0006\u0012\u0004\u0012\u00020\u00070\u0004j\u0012\u0012\b\u0012\u00060\u0005j\u0002`\u0006\u0012\u0004\u0012\u00020\u0007`\b2\f\b\u0002\u0010\u0014\u001a\u00060\u0005j\u0002`\u000b2\f\b\u0002\u0010\u0015\u001a\u00060\u0005j\u0002`\u000e2\b\b\u0002\u0010\u0016\u001a\u00020\u0010HÆ\u0001¢\u0006\u0004\b\u0017\u0010\u0018J\u0010\u0010\u001a\u001a\u00020\u0019HÖ\u0001¢\u0006\u0004\b\u001a\u0010\u001bJ\u0010\u0010\u001d\u001a\u00020\u001cHÖ\u0001¢\u0006\u0004\b\u001d\u0010\u001eJ\u001a\u0010\"\u001a\u00020!2\b\u0010 \u001a\u0004\u0018\u00010\u001fHÖ\u0003¢\u0006\u0004\b\"\u0010#R\u0019\u0010\u0016\u001a\u00020\u00108\u0006@\u0006¢\u0006\f\n\u0004\b\u0016\u0010$\u001a\u0004\b%\u0010\u0012R\u001d\u0010\u0014\u001a\u00060\u0005j\u0002`\u000b8\u0006@\u0006¢\u0006\f\n\u0004\b\u0014\u0010&\u001a\u0004\b'\u0010\rR\u001d\u0010\u0015\u001a\u00060\u0005j\u0002`\u000e8\u0006@\u0006¢\u0006\f\n\u0004\b\u0015\u0010&\u001a\u0004\b(\u0010\rR=\u0010\u0013\u001a&\u0012\b\u0012\u00060\u0005j\u0002`\u0006\u0012\u0004\u0012\u00020\u00070\u0004j\u0012\u0012\b\u0012\u00060\u0005j\u0002`\u0006\u0012\u0004\u0012\u00020\u0007`\b8\u0006@\u0006¢\u0006\f\n\u0004\b\u0013\u0010)\u001a\u0004\b*\u0010\n¨\u0006-"}, d2 = {"Lcom/discord/stores/StoreMessageReactions$EmojiResults$Users;", "Lcom/discord/stores/StoreMessageReactions$EmojiResults;", "deepCopy", "()Lcom/discord/stores/StoreMessageReactions$EmojiResults$Users;", "Ljava/util/LinkedHashMap;", "", "Lcom/discord/primitives/UserId;", "Lcom/discord/models/user/User;", "Lkotlin/collections/LinkedHashMap;", "component1", "()Ljava/util/LinkedHashMap;", "Lcom/discord/primitives/ChannelId;", "component2", "()J", "Lcom/discord/primitives/MessageId;", "component3", "Lcom/discord/api/message/reaction/MessageReactionEmoji;", "component4", "()Lcom/discord/api/message/reaction/MessageReactionEmoji;", "users", "channelId", "messageId", "emoji", "copy", "(Ljava/util/LinkedHashMap;JJLcom/discord/api/message/reaction/MessageReactionEmoji;)Lcom/discord/stores/StoreMessageReactions$EmojiResults$Users;", "", "toString", "()Ljava/lang/String;", "", "hashCode", "()I", "", "other", "", "equals", "(Ljava/lang/Object;)Z", "Lcom/discord/api/message/reaction/MessageReactionEmoji;", "getEmoji", "J", "getChannelId", "getMessageId", "Ljava/util/LinkedHashMap;", "getUsers", "<init>", "(Ljava/util/LinkedHashMap;JJLcom/discord/api/message/reaction/MessageReactionEmoji;)V", "app_productionGoogleRelease"}, k = 1, mv = {1, 4, 2})
+-        /* compiled from: StoreMessageReactions.kt */
+         public static final class Users extends EmojiResults {
+             private final long channelId;
+             private final MessageReactionEmoji emoji;
+@@ -260,7 +249,6 @@ public final class StoreMessageReactions
+         this(dispatcher2, storeUser, (i & 4) != 0 ? ObservationDeckProvider.get() : observationDeck2);
+     }
+ 
+-    @StoreThread
+     private final EmojiResults ensureReactionResults(long j, String str) {
+         Map<String, EmojiResults> map = this.reactions.get(Long.valueOf(j));
+         if (map == null) {
+@@ -275,8 +263,6 @@ public final class StoreMessageReactions
+         return emojiResults;
+     }
+ 
+-    /* access modifiers changed from: private */
+-    @StoreThread
+     public final void fetchReactions(long j, long j2, MessageReactionEmoji messageReactionEmoji) {
+         EmojiResults ensureReactionResults = ensureReactionResults(j2, messageReactionEmoji.c());
+         if (!(ensureReactionResults instanceof EmojiResults.Users) || !(!((EmojiResults.Users) ensureReactionResults).getUsers().isEmpty())) {
+@@ -297,8 +283,6 @@ public final class StoreMessageReactions
+         return d != null ? d : "";
+     }
+ 
+-    /* access modifiers changed from: private */
+-    @StoreThread
+     public final void handleLoadReactionUsersFailure(long j, long j2, MessageReactionEmoji messageReactionEmoji) {
+         ensureReactionResults(j2, messageReactionEmoji.c());
+         Map<String, EmojiResults> map = this.reactions.get(Long.valueOf(j2));
+@@ -308,8 +292,6 @@ public final class StoreMessageReactions
+         markChanged();
+     }
+ 
+-    /* access modifiers changed from: private */
+-    @StoreThread
+     public final void handleReactionUsers(long j, long j2, MessageReactionEmoji messageReactionEmoji, List<? extends User> list) {
+         ensureReactionResults(j2, messageReactionEmoji.c());
+         LinkedHashMap linkedHashMap = new LinkedHashMap();
+@@ -333,7 +315,6 @@ public final class StoreMessageReactions
+         this.dispatcher.schedule(new StoreMessageReactions$forceRetryFetchReactions$1(this, j2, messageReactionEmoji, j));
+     }
+ 
+-    @StoreThread
+     public final void handleConnectionOpen() {
+         if (!this.reactions.isEmpty()) {
+             this.reactions.clear();
+@@ -341,7 +322,6 @@ public final class StoreMessageReactions
+         }
+     }
+ 
+-    @StoreThread
+     public final void handleReactionAdd(MessageReactionUpdate messageReactionUpdate) {
+         m.checkNotNullParameter(messageReactionUpdate, "update");
+         User user = this.userStore.getUsersInternal$app_productionGoogleRelease().get(Long.valueOf(messageReactionUpdate.d()));
+@@ -358,7 +338,6 @@ public final class StoreMessageReactions
+         }
+     }
+ 
+-    @StoreThread
+     public final void handleReactionRemove(MessageReactionUpdate messageReactionUpdate) {
+         m.checkNotNullParameter(messageReactionUpdate, "update");
+         EmojiResults ensureReactionResults = ensureReactionResults(messageReactionUpdate.c(), messageReactionUpdate.b().c());
+@@ -372,14 +351,12 @@ public final class StoreMessageReactions
+         }
+     }
+ 
+-    @StoreThread
+     public final void handleReactionRemoveAll(MessageReactionUpdate messageReactionUpdate) {
+         m.checkNotNullParameter(messageReactionUpdate, "update");
+         this.reactions.remove(Long.valueOf(messageReactionUpdate.c()));
+         markChanged();
+     }
+ 
+-    @StoreThread
+     public final void handleReactionRemoveEmoji(MessageReactionUpdate messageReactionUpdate) {
+         m.checkNotNullParameter(messageReactionUpdate, "update");
+         long c2 = messageReactionUpdate.c();
+@@ -401,7 +378,6 @@ public final class StoreMessageReactions
+     }
+ 
+     @Override // com.discord.stores.StoreV2
+-    @StoreThread
+     public void snapshotData() {
+         super.snapshotData();
+         HashMap hashMap = new HashMap(this.reactions);

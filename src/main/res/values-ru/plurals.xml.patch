@@ -1,0 +1,2018 @@
+--- ./discord_94011/src/main/res/values-ru/plurals.xml	2021-12-24 01:10:11.020027200 +0400
++++ ./bluecord/src/main/res/values-ru/plurals.xml	2021-12-24 01:08:30.868263300 +0400
+@@ -1,1611 +1,1611 @@
+ <?xml version="1.0" encoding="utf-8"?>
+ <resources>
+     <plurals name="activity_feed_now_playing_header_two_known_extras">
+-        <item quantity="one">{extras}</item>
+         <item quantity="other">{extras}</item>
++        <item quantity="one">{extras}</item>
+     </plurals>
+     <plurals name="activity_feed_single_member_list_header_memberCount">
+-        <item quantity="one">{memberCount} человек</item>
+         <item quantity="other">{memberCount} чел.</item>
++        <item quantity="one">{memberCount} человек</item>
+     </plurals>
+     <plurals name="activity_feed_user_played_days_ago_time">
++        <item quantity="other">дней</item>
+         <item quantity="one">день</item>
+         <item quantity="few">дня</item>
+-        <item quantity="other">дней</item>
+     </plurals>
+     <plurals name="activity_feed_user_played_hours_ago_time">
++        <item quantity="other">часов</item>
+         <item quantity="one">час</item>
+         <item quantity="few">часа</item>
+-        <item quantity="other">часов</item>
+     </plurals>
+     <plurals name="activity_feed_user_played_minutes_ago_time">
++        <item quantity="other">минут</item>
+         <item quantity="one">минуту</item>
+         <item quantity="few">минуты</item>
+-        <item quantity="other">минут</item>
+     </plurals>
+     <plurals name="activity_feed_user_played_seconds_ago_time">
++        <item quantity="other">секунд</item>
+         <item quantity="one">секунду</item>
+         <item quantity="few">секунды</item>
+-        <item quantity="other">секунд</item>
+     </plurals>
+     <plurals name="age_gate_confirm_header_age">
++        <item quantity="other">{age} лет</item>
+         <item quantity="one">1 год</item>
+         <item quantity="few">{age} года</item>
+-        <item quantity="other">{age} лет</item>
+     </plurals>
+     <plurals name="age_gate_underage_existing_body_deletion_with_days_days">
++        <item quantity="other">{days} дней</item>
+         <item quantity="one">1 день</item>
+         <item quantity="few">{days} дня</item>
+-        <item quantity="other">{days} дней</item>
+     </plurals>
+     <plurals name="announcement_edit_rate_limit_retryAfterMinutes">
++        <item quantity="other">{retryAfterMinutes} минут</item>
+         <item quantity="one">1 минуту</item>
+         <item quantity="few">{retryAfterMinutes} минуты</item>
+-        <item quantity="other">{retryAfterMinutes} минут</item>
+     </plurals>
+     <plurals name="application_progress_indicator_installing_hours_timeRemaining">
+-        <item quantity="one">{#} час</item>
+         <item quantity="other">{#} ч.</item>
++        <item quantity="one">{#} час</item>
+     </plurals>
+     <plurals name="application_progress_indicator_installing_minutes_timeRemaining">
+-        <item quantity="one">{#} минута</item>
+         <item quantity="other">{#} мин.</item>
++        <item quantity="one">{#} минута</item>
+     </plurals>
+     <plurals name="application_progress_indicator_installing_seconds_timeRemaining">
+-        <item quantity="one">заканчиваем</item>
+         <item quantity="other">{#} сек. осталось</item>
++        <item quantity="one">заканчиваем</item>
+     </plurals>
+     <plurals name="application_progress_indicator_updating_hours_timeRemaining">
+-        <item quantity="one">{#} час</item>
+         <item quantity="other">{#} ч.</item>
++        <item quantity="one">{#} час</item>
+     </plurals>
+     <plurals name="application_progress_indicator_updating_minutes_timeRemaining">
+-        <item quantity="one">{#} минута</item>
+         <item quantity="other">{#} мин.</item>
++        <item quantity="one">{#} минута</item>
+     </plurals>
+     <plurals name="application_progress_indicator_updating_seconds_timeRemaining">
+-        <item quantity="one">заканчиваем</item>
+         <item quantity="other">{#} сек. осталось</item>
++        <item quantity="one">заканчиваем</item>
+     </plurals>
+     <plurals name="application_store_gift_purchase_confirm_monthly_mobile_intervalCount">
++        <item quantity="other">{#} месяцев</item>
+         <item quantity="one">{#} месяц</item>
+         <item quantity="few">{#} месяца</item>
+-        <item quantity="other">{#} месяцев</item>
+     </plurals>
+     <plurals name="application_store_gift_purchase_confirm_subscription_monthly_intervalCount">
++        <item quantity="other">{#} месяцев</item>
+         <item quantity="one">{#} месяц</item>
+         <item quantity="few">{#} месяца</item>
+-        <item quantity="other">{#} месяцев</item>
+     </plurals>
+     <plurals name="application_store_gift_purchase_confirm_subscription_yearly_intervalCount">
++        <item quantity="other">{#} лет</item>
+         <item quantity="one">{#} год</item>
+         <item quantity="few">{#} года</item>
+-        <item quantity="other">{#} лет</item>
+     </plurals>
+     <plurals name="application_store_gift_purchase_confirm_yearly_mobile_intervalCount">
++        <item quantity="other">{#} лет</item>
+         <item quantity="one">{#} год</item>
+         <item quantity="few">{#} года</item>
+-        <item quantity="other">{#} лет</item>
+     </plurals>
+     <plurals name="application_store_recommendation_ever_played_other_count">
++        <item quantity="other">{count} чел. из ваших знакомых играли</item>
+         <item quantity="one">1 человек из ваших знакомых играл</item>
+         <item quantity="few">{count} человека из ваших знакомых играли</item>
+-        <item quantity="other">{count} чел. из ваших знакомых играли</item>
+     </plurals>
+     <plurals name="application_store_recommendation_now_playing_other_count">
++        <item quantity="other">{count} чел. из ваших знакомых</item>
+         <item quantity="one">1 человек из ваших знакомых</item>
+         <item quantity="few">{count} человека из ваших знакомых</item>
+-        <item quantity="other">{count} чел. из ваших знакомых</item>
+     </plurals>
+     <plurals name="application_store_recommendation_recently_played_other_count">
++        <item quantity="other">{count} чел. из ваших знакомых играли</item>
+         <item quantity="one">1 человек из ваших знакомых играл</item>
+         <item quantity="few">{count} человека из ваших знакомых играли</item>
+-        <item quantity="other">{count} чел. из ваших знакомых играли</item>
+     </plurals>
+     <plurals name="attach_payment_source_optional_with_entitlements_warning_months">
++        <item quantity="other">{#} месяцев</item>
+         <item quantity="one">{#} месяц</item>
+         <item quantity="few">{#} месяца</item>
+-        <item quantity="other">{#} месяцев</item>
+     </plurals>
+     <plurals name="autocomplete_emoji_upsell_count">
+-        <item quantity="one">{#} подходящий эмодзи</item>
+         <item quantity="other">{#} подходящих эмодзи</item>
++        <item quantity="one">{#} подходящий эмодзи</item>
+     </plurals>
+     <plurals name="bans_header_bans">
++        <item quantity="other">{bans} банов</item>
+         <item quantity="one">{bans} бан</item>
+         <item quantity="few">{bans} бана</item>
+-        <item quantity="other">{bans} банов</item>
+     </plurals>
+     <plurals name="billing_plan_select_description_premium_tier_1_premium_guild_bundle_num">
++        <item quantity="other">{#} бустов</item>
+         <item quantity="one">{#} буст</item>
+         <item quantity="few">{#} буста</item>
+-        <item quantity="other">{#} бустов</item>
+     </plurals>
+     <plurals name="billing_plan_select_description_premium_tier_2_premium_guild_bundle_num">
++        <item quantity="other">{#} бустов</item>
+         <item quantity="one">{#} буст</item>
+         <item quantity="few">{#} буста</item>
+-        <item quantity="other">{#} бустов</item>
+     </plurals>
+     <plurals name="billing_plan_select_includes_boosts_num">
++        <item quantity="other">{#} бустов</item>
+         <item quantity="one">{#} буст</item>
+         <item quantity="few">{#} буста</item>
+-        <item quantity="other">{#} бустов</item>
+     </plurals>
+     <plurals name="billing_price_per_year_months_free_numFreeMonths">
++        <item quantity="other">{#} месяцев</item>
+         <item quantity="one">{#} месяц</item>
+         <item quantity="few">{#} месяца</item>
+-        <item quantity="other">{#} месяцев</item>
+     </plurals>
+     <plurals name="billing_refund_purchase_date_daysSincePurchase">
+-        <item quantity="one">{daysSincePurchase} дн. назад</item>
+         <item quantity="other">{daysSincePurchase} дн. назад</item>
++        <item quantity="one">{daysSincePurchase} дн. назад</item>
+     </plurals>
+     <plurals name="billing_switch_plan_confirm_upgrade_tier_2_year_numFreeGuildSubscriptions">
++        <item quantity="other">{#} бустов</item>
+         <item quantity="one">{#} буст</item>
+         <item quantity="few">{#} буста</item>
+-        <item quantity="other">{#} бустов</item>
+     </plurals>
+     <plurals name="billing_switch_plan_tier_2_description_numFreeGuildSubscriptions">
++        <item quantity="other">{#} бустов</item>
+         <item quantity="one">{#} буст</item>
+         <item quantity="few">{#} буста</item>
+-        <item quantity="other">{#} бустов</item>
+     </plurals>
+     <plurals name="billing_switch_plan_upgrade_body_tier_2_year_numFreeGuildSubscriptions">
++        <item quantity="other">{#} бустов</item>
+         <item quantity="one">{#} буст</item>
+         <item quantity="few">{#} буста</item>
+-        <item quantity="other">{#} бустов</item>
+     </plurals>
+     <plurals name="blocked_message_count_count">
++        <item quantity="other">{count} заблокированных сообщений</item>
+         <item quantity="one">{count} заблокированное сообщение</item>
+         <item quantity="few">{count} заблокированных сообщения</item>
+-        <item quantity="other">{count} заблокированных сообщений</item>
+     </plurals>
+     <plurals name="blocked_messages_count">
++        <item quantity="other">{count} заблокированных сообщений</item>
+         <item quantity="one">1 заблокированное сообщение</item>
+         <item quantity="few">{count} заблокированных сообщения</item>
+-        <item quantity="other">{count} заблокированных сообщений</item>
+     </plurals>
+     <plurals name="blocked_messages_hide_count">
+-        <item quantity="one">Свернуть сообщение</item>
+         <item quantity="other">Свернуть сообщения</item>
++        <item quantity="one">Свернуть сообщение</item>
+     </plurals>
+     <plurals name="blocked_messages_show_count">
+-        <item quantity="one">Показать сообщение</item>
+         <item quantity="other">Показать сообщения</item>
++        <item quantity="one">Показать сообщение</item>
+     </plurals>
+     <plurals name="camera_disabled_limit_reached_limit">
+-        <item quantity="one">{#} участнике</item>
+         <item quantity="other">{#} участниках</item>
++        <item quantity="one">{#} участнике</item>
+     </plurals>
+     <plurals name="camera_preview_video_background_upload_max_tooltip_maxCustomBackgrounds">
++        <item quantity="other">{#} фонов</item>
+         <item quantity="one">{#} фон</item>
+         <item quantity="few">{#} фона</item>
+-        <item quantity="other">{#} фонов</item>
+     </plurals>
+     <plurals name="change_identity_nickname_too_short_minLength">
+-        <item quantity="one">{#} символа</item>
+         <item quantity="other">{#} символов</item>
++        <item quantity="one">{#} символа</item>
+     </plurals>
+     <plurals name="channel_members_a11y_label_count">
++        <item quantity="other">{#} участников</item>
+         <item quantity="one">{#} участник</item>
+         <item quantity="few">{#} участника</item>
+-        <item quantity="other">{#} участников</item>
+     </plurals>
+     <plurals name="channel_mention_badge_a11y_label_mentionCount">
++        <item quantity="other">{#} упоминаний</item>
+         <item quantity="one">{#} упоминание</item>
+         <item quantity="few">{#} упоминания</item>
+-        <item quantity="other">{#} упоминаний</item>
+     </plurals>
+     <plurals name="channel_slowmode_cooldown_seconds">
+-        <item quantity="one">1 сек.</item>
+         <item quantity="other">{seconds} сек</item>
++        <item quantity="one">1 сек.</item>
+     </plurals>
+     <plurals name="channel_slowmode_desc_hours_hours">
+-        <item quantity="one">1 ч.</item>
+         <item quantity="other">{hours} ч.</item>
++        <item quantity="one">1 ч.</item>
+     </plurals>
+     <plurals name="channel_slowmode_desc_hours_minutes">
+-        <item quantity="one">1 мин.</item>
+         <item quantity="other">{minutes} мин.</item>
++        <item quantity="one">1 мин.</item>
+     </plurals>
+     <plurals name="channel_slowmode_desc_hours_seconds">
+-        <item quantity="one">1 сек.</item>
+         <item quantity="other">{seconds} сек.</item>
++        <item quantity="one">1 сек.</item>
+     </plurals>
+     <plurals name="channel_slowmode_desc_minutes_minutes">
+-        <item quantity="one">1 мин.</item>
+         <item quantity="other">{minutes} мин.</item>
++        <item quantity="one">1 мин.</item>
+     </plurals>
+     <plurals name="channel_slowmode_desc_minutes_seconds">
+-        <item quantity="one">1 сек.</item>
+         <item quantity="other">{seconds} сек.</item>
++        <item quantity="one">1 сек.</item>
+     </plurals>
+     <plurals name="channel_slowmode_desc_seconds">
+-        <item quantity="one">1 сек.</item>
+         <item quantity="other">{seconds} сек</item>
++        <item quantity="one">1 сек.</item>
+     </plurals>
+     <plurals name="create_stage_instance_speakers_label_speakerCount">
++        <item quantity="other">Добавлено {speakerCount} ораторов</item>
+         <item quantity="one">Добавлен 1 оратор</item>
+         <item quantity="few">Добавлено {speakerCount} оратора</item>
+-        <item quantity="other">Добавлено {speakerCount} ораторов</item>
+     </plurals>
+     <plurals name="custom_status_clear_in_hours_hours">
+-        <item quantity="one">{#} ч.</item>
+         <item quantity="other">{#} ч.</item>
++        <item quantity="one">{#} ч.</item>
+     </plurals>
+     <plurals name="custom_status_clear_in_minutes_minutes">
+-        <item quantity="one">{#} мин.</item>
+         <item quantity="other">{#} мин.</item>
++        <item quantity="one">{#} мин.</item>
+     </plurals>
+     <plurals name="custom_status_hours_hours">
+-        <item quantity="one">{#} ч.</item>
+         <item quantity="other">{#} ч.</item>
++        <item quantity="one">{#} ч.</item>
+     </plurals>
+     <plurals name="custom_status_minutes_minutes">
+-        <item quantity="one">{#} мин.</item>
+         <item quantity="other">{#} мин.</item>
++        <item quantity="one">{#} мин.</item>
+     </plurals>
+     <plurals name="directory_search_results_header_numResults">
++        <item quantity="other">**{numResults}** сообществ</item>
+         <item quantity="one">**1** сообщество</item>
+         <item quantity="few">**{numResults}** сообщества</item>
+-        <item quantity="other">**{numResults}** сообществ</item>
+     </plurals>
+     <plurals name="discovery_speaker_count_speakersCount">
++        <item quantity="other">+{count} ораторов</item>
+         <item quantity="one">+{count} оратор</item>
+         <item quantity="few">+{count} оратора</item>
+-        <item quantity="other">+{count} ораторов</item>
+     </plurals>
+     <plurals name="dm_tooltip_a11y_label_mentions">
++        <item quantity="other">, {#} непрочитанных сообщений</item>
+         <item quantity="one">, {#} непрочитанное сообщение</item>
+         <item quantity="few">, {#} непрочитанных сообщения</item>
+-        <item quantity="other">, {#} непрочитанных сообщений</item>
+     </plurals>
+     <plurals name="duration_days_days">
++        <item quantity="other">{days} дней</item>
+         <item quantity="one">1 день</item>
+         <item quantity="few">{days} дня</item>
+-        <item quantity="other">{days} дней</item>
+     </plurals>
+     <plurals name="duration_days_short_days">
+-        <item quantity="one">1 д.</item>
+         <item quantity="other">{days} д.</item>
++        <item quantity="one">1 д.</item>
+     </plurals>
+     <plurals name="duration_hours_hours">
++        <item quantity="other">{hours} часов</item>
+         <item quantity="one">{hours} час</item>
+         <item quantity="few">{hours} часа</item>
+-        <item quantity="other">{hours} часов</item>
+     </plurals>
+     <plurals name="duration_hours_short_hours">
+-        <item quantity="one">1 ч.</item>
+         <item quantity="other">{hours} ч.</item>
++        <item quantity="one">1 ч.</item>
+     </plurals>
+     <plurals name="duration_mins_mins">
+         <item quantity="other">{mins}</item>
+     </plurals>
+     <plurals name="duration_minutes_minutes">
++        <item quantity="other">{minutes} минут</item>
+         <item quantity="one">1 минуту</item>
+         <item quantity="few">{minutes} минуты</item>
+-        <item quantity="other">{minutes} минут</item>
+     </plurals>
+     <plurals name="duration_minutes_short_minutes">
+-        <item quantity="one">1 мин.</item>
+         <item quantity="other">{minutes} мин.</item>
++        <item quantity="one">1 мин.</item>
+     </plurals>
+     <plurals name="duration_seconds_seconds">
++        <item quantity="other">{seconds} секунд</item>
+         <item quantity="one">1 секунда</item>
+         <item quantity="few">{seconds} секунды</item>
+-        <item quantity="other">{seconds} секунд</item>
+     </plurals>
+     <plurals name="duration_seconds_short_seconds">
+-        <item quantity="one">1 сек.</item>
+         <item quantity="other">{seconds} сек.</item>
++        <item quantity="one">1 сек.</item>
+     </plurals>
+     <plurals name="embedded_activities_are_participating_count">
+-        <item quantity="one">{#}</item>
+         <item quantity="other">{#}</item>
++        <item quantity="one">{#}</item>
+     </plurals>
+     <plurals name="embedded_activities_are_playing_count">
+-        <item quantity="one">{#}</item>
+         <item quantity="other">{#}</item>
++        <item quantity="one">{#}</item>
+     </plurals>
+     <plurals name="embedded_activities_are_watching_count">
+-        <item quantity="one">{#}</item>
+         <item quantity="other">{#}</item>
++        <item quantity="one">{#}</item>
+     </plurals>
+     <plurals name="emoji_slots_available_count">
++        <item quantity="other">{count} слотов свободны</item>
+         <item quantity="one">{count} слот свободен</item>
+         <item quantity="few">{count} слота свободны</item>
+-        <item quantity="other">{count} слотов свободны</item>
+     </plurals>
+     <plurals name="emojis_title_count">
+-        <item quantity="one">{count} эмодзи</item>
+         <item quantity="other">{count} эмодзи</item>
++        <item quantity="one">{count} эмодзи</item>
+     </plurals>
+     <plurals name="exo_controls_fastforward_by_amount_description">
++        <item quantity="other">Перемотать на %d секунды вперед</item>
+         <item quantity="one">Перемотать на %d секунду вперед</item>
+         <item quantity="few">Перемотать на %d секунды вперед</item>
+         <item quantity="many">Перемотать на %d секунд вперед</item>
+-        <item quantity="other">Перемотать на %d секунды вперед</item>
+     </plurals>
+     <plurals name="exo_controls_rewind_by_amount_description">
++        <item quantity="other">Перемотать на %d секунды назад</item>
+         <item quantity="one">Перемотать на %d секунду назад</item>
+         <item quantity="few">Перемотать на %d секунды назад</item>
+         <item quantity="many">Перемотать на %d секунд назад</item>
+-        <item quantity="other">Перемотать на %d секунды назад</item>
+     </plurals>
+     <plurals name="form_help_last_seen_days">
++        <item quantity="other">{days} дней</item>
+         <item quantity="one">1 день</item>
+         <item quantity="few">{days} дня</item>
+-        <item quantity="other">{days} дней</item>
+     </plurals>
+     <plurals name="form_help_last_seen_members">
+-        <item quantity="one">1 человека, который не появлялся</item>
+         <item quantity="other">{members} чел., которые не появлялись</item>
++        <item quantity="one">1 человека, который не появлялся</item>
+     </plurals>
+     <plurals name="form_help_last_seen_with_roles_days">
++        <item quantity="other">дней</item>
+         <item quantity="one">1 день</item>
+         <item quantity="few">{days} дня</item>
+-        <item quantity="other">дней</item>
+     </plurals>
+     <plurals name="form_help_last_seen_with_roles_members">
+-        <item quantity="one">1 человека, который не появлялся</item>
+         <item quantity="other">{members} чел., которые не появлялись</item>
++        <item quantity="one">1 человека, который не появлялся</item>
+     </plurals>
+     <plurals name="game_feed_unknown_players_count">
++        <item quantity="other">{#} неизвестных игроков</item>
+         <item quantity="one">{#} неизвестный игрок</item>
+         <item quantity="few">{#} неизвестных игрока</item>
+-        <item quantity="other">{#} неизвестных игроков</item>
+     </plurals>
+     <plurals name="game_feed_user_played_days_ago_time">
++        <item quantity="other">дней</item>
+         <item quantity="one">день</item>
+         <item quantity="few">дня</item>
+-        <item quantity="other">дней</item>
+     </plurals>
+     <plurals name="game_feed_user_played_hours_ago_time">
++        <item quantity="other">часов</item>
+         <item quantity="one">час</item>
+         <item quantity="few">часа</item>
+-        <item quantity="other">часов</item>
+     </plurals>
+     <plurals name="game_feed_user_played_minutes_ago_time">
++        <item quantity="other">минут</item>
+         <item quantity="one">минуту</item>
+         <item quantity="few">минуты</item>
+-        <item quantity="other">минут</item>
+     </plurals>
+     <plurals name="game_feed_user_played_months_ago_time">
+-        <item quantity="one">месяц</item>
+         <item quantity="other">мес.</item>
++        <item quantity="one">месяц</item>
+     </plurals>
+     <plurals name="game_feed_user_played_weeks_ago_time">
+-        <item quantity="one">неделя</item>
+         <item quantity="other">нед.</item>
++        <item quantity="one">неделя</item>
+     </plurals>
+     <plurals name="game_feed_user_played_years_ago_time">
+-        <item quantity="one">год</item>
+         <item quantity="other">года</item>
++        <item quantity="one">год</item>
+     </plurals>
+     <plurals name="game_feed_user_playing_for_days_time">
++        <item quantity="other">дней</item>
+         <item quantity="one">день</item>
+         <item quantity="few">дня</item>
+-        <item quantity="other">дней</item>
+     </plurals>
+     <plurals name="game_feed_user_playing_for_hours_time">
++        <item quantity="other">часов</item>
+         <item quantity="one">час</item>
+         <item quantity="few">часа</item>
+-        <item quantity="other">часов</item>
+     </plurals>
+     <plurals name="game_feed_user_playing_for_minutes_time">
++        <item quantity="other">минут</item>
+         <item quantity="one">минуту</item>
+         <item quantity="few">минуты</item>
+-        <item quantity="other">минут</item>
+     </plurals>
+     <plurals name="game_library_last_played_days_time">
+-        <item quantity="one">вчера</item>
+         <item quantity="other">{#} дн. назад</item>
++        <item quantity="one">вчера</item>
+     </plurals>
+     <plurals name="game_library_last_played_hours_time">
+-        <item quantity="one">{#} ч.</item>
+         <item quantity="other">{#} ч.</item>
++        <item quantity="one">{#} ч.</item>
+     </plurals>
+     <plurals name="game_library_last_played_minutes_time">
+-        <item quantity="one">{#} мин.</item>
+         <item quantity="other">{#} мин.</item>
++        <item quantity="one">{#} мин.</item>
+     </plurals>
+     <plurals name="game_library_last_played_months_time">
+-        <item quantity="one">в прошлом месяце</item>
+         <item quantity="other">{#} мес. назад</item>
++        <item quantity="one">в прошлом месяце</item>
+     </plurals>
+     <plurals name="game_library_last_played_weeks_time">
+-        <item quantity="one">на прошлой неделе</item>
+         <item quantity="other">{#} нед. назад</item>
++        <item quantity="one">на прошлой неделе</item>
+     </plurals>
+     <plurals name="game_library_last_played_years_time">
+-        <item quantity="one">в прошлом году</item>
+         <item quantity="other">{#} года назад</item>
++        <item quantity="one">в прошлом году</item>
+     </plurals>
+     <plurals name="game_library_time_played_hours_time">
+-        <item quantity="one">ч.</item>
+         <item quantity="other">ч.</item>
++        <item quantity="one">ч.</item>
+     </plurals>
+     <plurals name="game_library_time_played_minutes_time">
+-        <item quantity="one">мин.</item>
+         <item quantity="other">мин.</item>
++        <item quantity="one">мин.</item>
+     </plurals>
+     <plurals name="game_library_time_played_seconds_time">
+-        <item quantity="one">сек.</item>
+         <item quantity="other">сек.</item>
++        <item quantity="one">сек.</item>
+     </plurals>
+     <plurals name="game_library_updates_installing_hours_timeRemaining">
+-        <item quantity="one">1 час</item>
+         <item quantity="other">{#} часов</item>
++        <item quantity="one">1 час</item>
+     </plurals>
+     <plurals name="game_library_updates_installing_minutes_timeRemaining">
+-        <item quantity="one">1 минута</item>
+         <item quantity="other">{#} минут</item>
++        <item quantity="one">1 минута</item>
+     </plurals>
+     <plurals name="game_library_updates_installing_seconds_timeRemaining">
+-        <item quantity="one">заканчиваем</item>
+         <item quantity="other">{#} ещё секунд</item>
++        <item quantity="one">заканчиваем</item>
+     </plurals>
+     <plurals name="game_library_updates_updating_updating_hours_timeRemaining">
+-        <item quantity="one">1 час</item>
+         <item quantity="other">{#} ч.</item>
++        <item quantity="one">1 час</item>
+     </plurals>
+     <plurals name="game_library_updates_updating_updating_minutes_timeRemaining">
+-        <item quantity="one">1 минута</item>
+         <item quantity="other">{#} мин.</item>
++        <item quantity="one">1 минута</item>
+     </plurals>
+     <plurals name="game_library_updates_updating_updating_seconds_timeRemaining">
+-        <item quantity="one">заканчиваем</item>
+         <item quantity="other">{#} сек. осталось</item>
++        <item quantity="one">заканчиваем</item>
+     </plurals>
+     <plurals name="gift_code_auth_gifted_subscription_monthly_intervalCount">
++        <item quantity="other">{#} месяцев</item>
+         <item quantity="one">{#} месяц</item>
+         <item quantity="few">{#} месяца</item>
+-        <item quantity="other">{#} месяцев</item>
+     </plurals>
+     <plurals name="gift_code_auth_gifted_subscription_yearly_intervalCount">
++        <item quantity="other">{#} лет</item>
+         <item quantity="one">{#} год</item>
+         <item quantity="few">{#} года</item>
+-        <item quantity="other">{#} лет</item>
+     </plurals>
+     <plurals name="gift_confirmation_body_subscription_monthly_confirm_intervalCount">
++        <item quantity="other">{#} месяцев</item>
+         <item quantity="one">{#} месяц</item>
+         <item quantity="few">{#} месяца</item>
+-        <item quantity="other">{#} месяцев</item>
+     </plurals>
+     <plurals name="gift_confirmation_body_subscription_yearly_confirm_intervalCount">
++        <item quantity="other">{#} лет</item>
+         <item quantity="one">{#} год</item>
+         <item quantity="few">{#} года</item>
+-        <item quantity="other">{#} лет</item>
+     </plurals>
+     <plurals name="gift_confirmation_body_success_generic_subscription_monthly_intervalCount">
++        <item quantity="other">{#} месяцев</item>
+         <item quantity="one">{#} месяц</item>
+         <item quantity="few">{#} месяца</item>
+-        <item quantity="other">{#} месяцев</item>
+     </plurals>
+     <plurals name="gift_confirmation_body_success_generic_subscription_yearly_intervalCount">
++        <item quantity="other">{#} лет</item>
+         <item quantity="one">{#} год</item>
+         <item quantity="few">{#} года</item>
+-        <item quantity="other">{#} лет</item>
+     </plurals>
+     <plurals name="gift_confirmation_body_success_premium_tier_1_monthly_intervalCount">
++        <item quantity="other">{#} месяцев</item>
+         <item quantity="one">{#} месяц</item>
+         <item quantity="few">{#} месяца</item>
+-        <item quantity="other">{#} месяцев</item>
+     </plurals>
+     <plurals name="gift_confirmation_body_success_premium_tier_1_yearly_intervalCount">
++        <item quantity="other">{#} лет</item>
+         <item quantity="one">{#} год</item>
+         <item quantity="few">{#} года</item>
+-        <item quantity="other">{#} лет</item>
+     </plurals>
+     <plurals name="gift_confirmation_body_success_premium_tier_2_monthly_intervalCount">
++        <item quantity="other">{#} месяцев</item>
+         <item quantity="one">{#} месяц</item>
+         <item quantity="few">{#} месяца</item>
+-        <item quantity="other">{#} месяцев</item>
+     </plurals>
+     <plurals name="gift_confirmation_body_success_premium_tier_2_yearly_intervalCount">
++        <item quantity="other">{#} лет</item>
+         <item quantity="one">{#} год</item>
+         <item quantity="few">{#} года</item>
+-        <item quantity="other">{#} лет</item>
+     </plurals>
+     <plurals name="gift_confirmation_nitro_time_frame_months_time">
++        <item quantity="other">{#} месяцев</item>
+         <item quantity="one">{#} месяц</item>
+         <item quantity="few">{#} месяца</item>
+-        <item quantity="other">{#} месяцев</item>
+     </plurals>
+     <plurals name="gift_confirmation_nitro_time_frame_years_time">
++        <item quantity="other">{#} лет</item>
+         <item quantity="one">{#} год</item>
+         <item quantity="few">{#} года</item>
+-        <item quantity="other">{#} лет</item>
+     </plurals>
+     <plurals name="gift_embed_body_subscription_default_months_intervalCount">
++        <item quantity="other">{#} месяцев</item>
+         <item quantity="one">{#} месяц</item>
+         <item quantity="few">{#} месяца</item>
+-        <item quantity="other">{#} месяцев</item>
+     </plurals>
+     <plurals name="gift_embed_body_subscription_default_years_intervalCount">
++        <item quantity="other">{#} лет</item>
+         <item quantity="one">{#} год</item>
+         <item quantity="few">{#} года</item>
+-        <item quantity="other">{#} лет</item>
+     </plurals>
+     <plurals name="gift_embed_body_subscription_no_user_default_months_intervalCount">
++        <item quantity="other">{#} месяцев</item>
+         <item quantity="one">{#} месяц</item>
+         <item quantity="few">{#} месяца</item>
+-        <item quantity="other">{#} месяцев</item>
+     </plurals>
+     <plurals name="gift_embed_body_subscription_no_user_default_years_intervalCount">
++        <item quantity="other">{#} лет</item>
+         <item quantity="one">{#} год</item>
+         <item quantity="few">{#} года</item>
+-        <item quantity="other">{#} лет</item>
+     </plurals>
+     <plurals name="gift_embed_expiration_hours">
+-        <item quantity="one">{#} ч.</item>
+         <item quantity="other">{#} ч.</item>
++        <item quantity="one">{#} ч.</item>
+     </plurals>
+     <plurals name="gift_inventory_copies_copies">
++        <item quantity="other">{#} копий</item>
+         <item quantity="one">{#} копия</item>
+         <item quantity="few">{#} копии</item>
+-        <item quantity="other">{#} копий</item>
+     </plurals>
+     <plurals name="gift_inventory_expires_in_hours">
+-        <item quantity="one">{#} ч.</item>
+         <item quantity="other">{#} ч.</item>
++        <item quantity="one">{#} ч.</item>
+     </plurals>
+     <plurals name="gift_inventory_expires_in_mobile_hours">
+-        <item quantity="one">{#} ч.</item>
+         <item quantity="other">{#} ч.</item>
++        <item quantity="one">{#} ч.</item>
+     </plurals>
+     <plurals name="gift_inventory_subscription_months_intervalCount">
++        <item quantity="other">{#} месяцев</item>
+         <item quantity="one">{#} месяц</item>
+         <item quantity="few">{#} месяца</item>
+-        <item quantity="other">{#} месяцев</item>
+     </plurals>
+     <plurals name="gift_inventory_subscription_years_intervalCount">
++        <item quantity="other">{#} лет</item>
+         <item quantity="one">{#} год</item>
+         <item quantity="few">{#} года</item>
+-        <item quantity="other">{#} лет</item>
+     </plurals>
+     <plurals name="group_dm_invite_remaining_number">
+-        <item quantity="one">1 друга</item>
+         <item quantity="other">{number} друзей</item>
++        <item quantity="one">1 друга</item>
+     </plurals>
+     <plurals name="group_dm_invite_unselect_users_number">
+-        <item quantity="one">1 друга</item>
+         <item quantity="other">{number} друзей</item>
++        <item quantity="one">1 друга</item>
+     </plurals>
+     <plurals name="guild_discovery_header_search_results_count">
++        <item quantity="other">найдено {count} результатов</item>
+         <item quantity="one">найден 1 результат</item>
+         <item quantity="few">найдено {count} результата</item>
+-        <item quantity="other">найдено {count} результатов</item>
+     </plurals>
+     <plurals name="guild_discovery_search_results_category_header_count">
++        <item quantity="other">{count} сообществ (**{category}**)</item>
+         <item quantity="one">1 сообщество (**{category}**)</item>
+         <item quantity="few">{count} сообщества (**{category}**)</item>
+-        <item quantity="other">{count} сообществ (**{category}**)</item>
+     </plurals>
+     <plurals name="guild_discovery_search_results_header_count">
++        <item quantity="other">{count} сообществ</item>
+         <item quantity="one">1 сообщество</item>
+         <item quantity="few">{count} сообщества</item>
+-        <item quantity="other">{count} сообществ</item>
+     </plurals>
+     <plurals name="guild_event_interested_count_count">
++        <item quantity="other">{#} человек интересуются</item>
+         <item quantity="one">{#} человек интересуется</item>
+         <item quantity="few">{#} человека интересуются</item>
+-        <item quantity="other">{#} человек интересуются</item>
+     </plurals>
+     <plurals name="guild_events_list_action_sheet_header_count">
++        <item quantity="other">{count} событий</item>
+         <item quantity="one">1 событие</item>
+         <item quantity="few">{count} события</item>
+-        <item quantity="other">{count} событий</item>
+     </plurals>
+     <plurals name="guild_events_plural_number">
++        <item quantity="other">{#} событий</item>
+         <item quantity="one">{#} событие</item>
+         <item quantity="few">{#} события</item>
+-        <item quantity="other">{#} событий</item>
+     </plurals>
+     <plurals name="guild_folder_tooltip_a11y_label_mentions">
++        <item quantity="other">, {#} непрочитанных упоминаний</item>
+         <item quantity="one">, {#} непрочитанное упоминание</item>
+         <item quantity="few">, {#} непрочитанных упоминания</item>
+-        <item quantity="other">, {#} непрочитанных упоминаний</item>
+     </plurals>
+     <plurals name="guild_folder_tooltip_a11y_label_with_expanded_state_mentions">
++        <item quantity="other">, {#} непрочитанных упоминаний</item>
+         <item quantity="one">, {#} непрочитанное упоминание</item>
+         <item quantity="few">, {#} непрочитанных упоминания</item>
+-        <item quantity="other">, {#} непрочитанных упоминаний</item>
+     </plurals>
+     <plurals name="guild_settings_audit_log_channel_default_auto_archive_duration_change_newValue">
++        <item quantity="other">Установлен период архивации по умолчанию: **{#} минут**</item>
+         <item quantity="one">Установлен период архивации по умолчанию: **{#} минута**</item>
+         <item quantity="few">Установлен период архивации по умолчанию: **{#} минуты**</item>
+-        <item quantity="other">Установлен период архивации по умолчанию: **{#} минут**</item>
+     </plurals>
+     <plurals name="guild_settings_audit_log_channel_default_auto_archive_duration_create_newValue">
++        <item quantity="other">Установлен период архивации по умолчанию: **{#} минут**</item>
+         <item quantity="one">Установлен период архивации по умолчанию: **{#} минута**</item>
+         <item quantity="few">Установлен период архивации по умолчанию: **{#} минуты**</item>
+-        <item quantity="other">Установлен период архивации по умолчанию: **{#} минут**</item>
+     </plurals>
+     <plurals name="guild_settings_audit_log_channel_permission_overrides_denied_count">
+-        <item quantity="one">право</item>
+         <item quantity="other">права</item>
++        <item quantity="one">право</item>
+     </plurals>
+     <plurals name="guild_settings_audit_log_channel_permission_overrides_granted_count">
+-        <item quantity="one">право</item>
+         <item quantity="other">права</item>
++        <item quantity="one">право</item>
+     </plurals>
+     <plurals name="guild_settings_audit_log_channel_permission_overrides_reset_count">
+-        <item quantity="one">право</item>
+         <item quantity="other">права</item>
++        <item quantity="one">право</item>
+     </plurals>
+     <plurals name="guild_settings_audit_log_channel_rate_limit_per_user_change_newValue">
+-        <item quantity="one">Устанавливает интервал между сообщениями в **{#} сек.**</item>
+         <item quantity="other">Устанавливает интервал между сообщениями в **{#} сек.**</item>
++        <item quantity="one">Устанавливает интервал между сообщениями в **{#} сек.**</item>
+     </plurals>
+     <plurals name="guild_settings_audit_log_channel_rate_limit_per_user_create_newValue">
+-        <item quantity="one">Устанавливает интервал между сообщениями в **{#} сек.**</item>
+         <item quantity="other">Устанавливает интервал между сообщениями в **{#} сек.**</item>
++        <item quantity="one">Устанавливает интервал между сообщениями в **{#} сек.**</item>
+     </plurals>
+     <plurals name="guild_settings_audit_log_integration_expire_grace_period_newValue">
++        <item quantity="other">{#} дней</item>
+         <item quantity="one">1 день</item>
+         <item quantity="few">{#} дня</item>
+-        <item quantity="other">{#} дней</item>
+     </plurals>
+     <plurals name="guild_settings_audit_log_member_disconnect_count">
+-        <item quantity="one">**пользователя**</item>
+         <item quantity="other">**!!{count}!! пользователей**</item>
++        <item quantity="one">**пользователя**</item>
+     </plurals>
+     <plurals name="guild_settings_audit_log_member_move_count">
+-        <item quantity="one">**пользователя**</item>
+         <item quantity="other">**!!{count}!! пользователей**</item>
++        <item quantity="one">**пользователя**</item>
+     </plurals>
+     <plurals name="guild_settings_audit_log_member_prune_count">
+-        <item quantity="one">**неактивного участника**</item>
+         <item quantity="other">**!!{count}!! неактивных участников**</item>
++        <item quantity="one">**неактивного участника**</item>
+     </plurals>
+     <plurals name="guild_settings_audit_log_member_prune_delete_days_newValue">
++        <item quantity="other">{newValue} дней</item>
+         <item quantity="one">день</item>
+         <item quantity="few">{newValue} дня</item>
+-        <item quantity="other">{newValue} дней</item>
+     </plurals>
+     <plurals name="guild_settings_audit_log_member_roles_add_count">
+-        <item quantity="one">роль</item>
+         <item quantity="other">несколько ролей</item>
++        <item quantity="one">роль</item>
+     </plurals>
+     <plurals name="guild_settings_audit_log_member_roles_remove_count">
+-        <item quantity="one">роль</item>
+         <item quantity="other">несколько ролей</item>
++        <item quantity="one">роль</item>
+     </plurals>
+     <plurals name="guild_settings_audit_log_message_bulk_delete_count">
++        <item quantity="other">**!!{count}!! сообщений**</item>
+         <item quantity="one">**сообщение**</item>
+         <item quantity="few">**!!{count}!! сообщения**</item>
+-        <item quantity="other">**!!{count}!! сообщений**</item>
+     </plurals>
+     <plurals name="guild_settings_audit_log_message_delete_count">
++        <item quantity="other">**!!{count}!! сообщений**</item>
+         <item quantity="one">**сообщение**</item>
+         <item quantity="few">**!!{count}!! сообщения**</item>
+-        <item quantity="other">**!!{count}!! сообщений**</item>
+     </plurals>
+     <plurals name="guild_settings_audit_log_role_permissions_denied_count">
+-        <item quantity="one">право</item>
+         <item quantity="other">права</item>
++        <item quantity="one">право</item>
+     </plurals>
+     <plurals name="guild_settings_audit_log_role_permissions_granted_count">
+-        <item quantity="one">право</item>
+         <item quantity="other">права</item>
++        <item quantity="one">право</item>
+     </plurals>
+     <plurals name="guild_settings_audit_log_thread_auto_archive_duration_change_newValue">
++        <item quantity="other">Меняет период автоматической архивации на: **{#} минут**</item>
+         <item quantity="one">Меняет период автоматической архивации на: **{#} минуту**</item>
+         <item quantity="few">Меняет период автоматической архивации на: **{#} минуты**</item>
+-        <item quantity="other">Меняет период автоматической архивации на: **{#} минут**</item>
+     </plurals>
+     <plurals name="guild_settings_audit_log_thread_auto_archive_duration_create_newValue">
++        <item quantity="other">Устанавливает период автоматической архивации: {#} минут</item>
+         <item quantity="one">Устанавливает период автоматической архивации: **{#} минута**</item>
+         <item quantity="few">Устанавливает период автоматической архивации: **{#} минуты**</item>
+-        <item quantity="other">Устанавливает период автоматической архивации: {#} минут</item>
+     </plurals>
+     <plurals name="guild_settings_discovery_checklist_age_description_failing_minimumGuildAge">
+-        <item quantity="one">1 недели</item>
+         <item quantity="other">{minimumGuildAge} недель</item>
++        <item quantity="one">1 недели</item>
+     </plurals>
+     <plurals name="guild_settings_discovery_checklist_age_description_minimumGuildAge">
+-        <item quantity="one">1 недели</item>
+         <item quantity="other">{minimumGuildAge} недель</item>
++        <item quantity="one">1 недели</item>
+     </plurals>
+     <plurals name="guild_settings_member_verification_review_pending_applications_count">
++        <item quantity="other">{count} заявок на рассмотрении</item>
+         <item quantity="one">Заявка на рассмотрении</item>
+         <item quantity="few">{count} заявки на рассмотрении</item>
+-        <item quantity="other">{count} заявок на рассмотрении</item>
+     </plurals>
+     <plurals name="guild_settings_overview_boost_unlock_boosts">
++        <item quantity="other">{#} бустов</item>
+         <item quantity="one">{#} буст</item>
+         <item quantity="few">{#} буста</item>
+-        <item quantity="other">{#} бустов</item>
+     </plurals>
+     <plurals name="guild_settings_partner_checklist_age_description_failing_minimumGuildAge">
+-        <item quantity="one">1 недели</item>
+         <item quantity="other">{minimumGuildAge} недель</item>
++        <item quantity="one">1 недели</item>
+     </plurals>
+     <plurals name="guild_settings_partner_checklist_age_description_minimumGuildAge">
+-        <item quantity="one">1 недели</item>
+         <item quantity="other">{minimumGuildAge} недель</item>
++        <item quantity="one">1 недели</item>
+     </plurals>
+     <plurals name="guild_settings_premium_guild_close_hint_numLeft">
++        <item quantity="other">{#} бустов</item>
+         <item quantity="one">{#} буст</item>
+         <item quantity="few">{#} буста</item>
+-        <item quantity="other">{#} бустов</item>
+     </plurals>
+     <plurals name="guild_settings_premium_guild_count_subscribers_count">
++        <item quantity="other">{#} очень крутых пользователей дали буст</item>
+         <item quantity="one">{#} очень крутой пользователь дал буст</item>
+         <item quantity="few">{#} очень крутых пользователя дали буст</item>
+-        <item quantity="other">{#} очень крутых пользователей дали буст</item>
+     </plurals>
+     <plurals name="guild_settings_premium_guild_tier_requirement_required">
++        <item quantity="other">{#} бустов</item>
+         <item quantity="one">{#} буст</item>
+         <item quantity="few">{#} буста</item>
+-        <item quantity="other">{#} бустов</item>
+     </plurals>
+     <plurals name="guild_settings_premium_upsell_body_perk_no_free_guild_subscriptions_numFreeGuildSubscriptions">
++        <item quantity="other">{#} бустов</item>
+         <item quantity="one">{#} буст</item>
+         <item quantity="few">{#} буста</item>
+-        <item quantity="other">{#} бустов</item>
+     </plurals>
+     <plurals name="guild_settings_premium_upsell_body_perk_num_guild_subscriptions_numFreeGuildSubscriptions">
++        <item quantity="other">{#} бустов</item>
+         <item quantity="one">{#} буст</item>
+         <item quantity="few">{#} буста</item>
+-        <item quantity="other">{#} бустов</item>
+     </plurals>
+     <plurals name="guild_settings_premium_upsell_heading_tertiary_premium_user_numFreeGuildSubscriptions">
++        <item quantity="other">{#} бустов сервера</item>
+         <item quantity="one">{#} буст сервера</item>
+         <item quantity="few">{#} буста сервера</item>
+-        <item quantity="other">{#} бустов сервера</item>
+     </plurals>
+     <plurals name="guild_sidebar_announcement_channel_a11y_label_with_mentions_mentionCount">
++        <item quantity="other">{#} упоминаний</item>
+         <item quantity="one">{#} упоминание</item>
+         <item quantity="few">{#} упоминания</item>
+-        <item quantity="other">{#} упоминаний</item>
+     </plurals>
+     <plurals name="guild_sidebar_default_channel_a11y_label_with_mentions_mentionCount">
++        <item quantity="other">{#} упоминаний</item>
+         <item quantity="one">{#} упоминание</item>
+         <item quantity="few">{#} упоминания</item>
+-        <item quantity="other">{#} упоминаний</item>
+     </plurals>
+     <plurals name="guild_sidebar_stage_channel_a11y_label_with_users_userCount">
++        <item quantity="other">{#} пользователей</item>
+         <item quantity="one">1 пользователь</item>
+         <item quantity="few">{#} пользователя</item>
+-        <item quantity="other">{#} пользователей</item>
+     </plurals>
+     <plurals name="guild_sidebar_thread_a11y_label_with_mentions_mentionCount">
++        <item quantity="other">{#} упоминаний</item>
+         <item quantity="one">{#} упоминание</item>
+         <item quantity="few">{#} упоминания</item>
+-        <item quantity="other">{#} упоминаний</item>
+     </plurals>
+     <plurals name="guild_sidebar_voice_channel_a11y_label_with_users_userCount">
++        <item quantity="other">{#} пользователей</item>
+         <item quantity="one">1 пользователь</item>
+         <item quantity="few">{#} пользователя</item>
+-        <item quantity="other">{#} пользователей</item>
+     </plurals>
+     <plurals name="guild_sticker_settings_additional_slots_numAdditional">
++        <item quantity="other">{numAdditional} слотов для стикеров</item>
+         <item quantity="one">{numAdditional} слот для стикеров</item>
+         <item quantity="few">{numAdditional} слота для стикеров</item>
+-        <item quantity="other">{numAdditional} слотов для стикеров</item>
+     </plurals>
+     <plurals name="guild_sticker_settings_additional_slots_without_total_numAdditional">
++        <item quantity="other">{numAdditional} слотов для стикеров</item>
+         <item quantity="one">{numAdditional} слот для стикеров</item>
+         <item quantity="few">{numAdditional} слота для стикеров</item>
+-        <item quantity="other">{numAdditional} слотов для стикеров</item>
+     </plurals>
+     <plurals name="guild_sticker_settings_remaining_slots_available_numTotal">
+-        <item quantity="one">{numTotal} свободного слота</item>
+         <item quantity="other">{numTotal} свободных слотов</item>
++        <item quantity="one">{numTotal} свободного слота</item>
+     </plurals>
+     <plurals name="guild_subscription_purchase_modal_activated_description_generic_guild_guildSubscriptionQuantity">
++        <item quantity="other">{#} бустов</item>
+         <item quantity="one">{#} буст</item>
+         <item quantity="few">{#} буста</item>
+-        <item quantity="other">{#} бустов</item>
+     </plurals>
+     <plurals name="guild_subscription_purchase_modal_activated_description_guildSubscriptionQuantity">
++        <item quantity="other">{#} бустов</item>
+         <item quantity="one">{#} буст</item>
+         <item quantity="few">{#} буста</item>
+-        <item quantity="other">{#} бустов</item>
+     </plurals>
+     <plurals name="guild_subscription_purchase_modal_activated_description_mobile2_guildSubscriptionQuantity">
++        <item quantity="other">{#} бустов</item>
+         <item quantity="one">{#} буст</item>
+         <item quantity="few">{#} буста</item>
+-        <item quantity="other">{#} бустов</item>
+     </plurals>
+     <plurals name="guild_subscription_purchase_modal_activated_description_no_application_guildSubscriptionQuantity">
++        <item quantity="other">{#} бустов</item>
+         <item quantity="one">{#} буст</item>
+         <item quantity="few">{#} буста</item>
+-        <item quantity="other">{#} бустов</item>
+     </plurals>
+     <plurals name="guild_subscription_purchase_modal_transferred_description_mobile2_guildSubscriptionQuantity">
++        <item quantity="other">{#} бустов</item>
+         <item quantity="one">{#} буст</item>
+         <item quantity="few">{#} буста</item>
+-        <item quantity="other">{#} бустов</item>
+     </plurals>
+     <plurals name="guild_subscription_purchase_modal_unused_slot_notice_slotCount">
++        <item quantity="other">{#} неиспользованных бустов</item>
+         <item quantity="one">неиспользованный буст</item>
+         <item quantity="few">{#} неиспользованных буста</item>
+-        <item quantity="other">{#} неиспользованных бустов</item>
+     </plurals>
+     <plurals name="guild_template_usages_by_creator2_usageCount">
++        <item quantity="other">Этот шаблон от $[**!!{creator}!!**](creatorHook) использовали **{usageCount}** пользователей</item>
+         <item quantity="one">Этот шаблон от $[**!!{creator}!!**](creatorHook) использовал **1** пользователь</item>
+         <item quantity="few">Этот шаблон от $[**!!{creator}!!**](creatorHook) использовали **{usageCount}** пользователя</item>
+-        <item quantity="other">Этот шаблон от $[**!!{creator}!!**](creatorHook) использовали **{usageCount}** пользователей</item>
+     </plurals>
+     <plurals name="guild_template_usages_no_bold_usageCount">
++        <item quantity="other">Этот шаблон использовали **{usageCount}** пользователей</item>
+         <item quantity="one">Этот шаблон использовал 1 пользователь</item>
+         <item quantity="few">Этот шаблон использовали {usageCount} пользователя</item>
+-        <item quantity="other">Этот шаблон использовали **{usageCount}** пользователей</item>
+     </plurals>
+     <plurals name="guild_template_usages_usageCount">
++        <item quantity="other">Этот шаблон использовали **{usageCount}** пользователей</item>
+         <item quantity="one">Этот шаблон использовал **1** пользователь</item>
+         <item quantity="few">Этот шаблон использовали **{usageCount}** пользователя</item>
+-        <item quantity="other">Этот шаблон использовали **{usageCount}** пользователей</item>
+     </plurals>
+     <plurals name="guild_tooltip_a11y_label_mentions">
++        <item quantity="other">{#} упоминаний,</item>
+         <item quantity="one">{#} упоминание,</item>
+         <item quantity="few">{#} упоминания,</item>
+-        <item quantity="other">{#} упоминаний,</item>
+     </plurals>
+     <plurals name="hub_email_connection_invite_header_count">
+-        <item quantity="one">{count} другу</item>
+         <item quantity="other">{count} друзьям</item>
++        <item quantity="one">{count} другу</item>
+     </plurals>
+     <plurals name="humanize_duration_days_time">
++        <item quantity="other">{#} дней</item>
+         <item quantity="one">1 день</item>
+         <item quantity="few">{#} дня</item>
+-        <item quantity="other">{#} дней</item>
+     </plurals>
+     <plurals name="humanize_duration_hours_time">
++        <item quantity="other">{#} часов</item>
+         <item quantity="one">1 час</item>
+         <item quantity="few">{#} часа</item>
+-        <item quantity="other">{#} часов</item>
+     </plurals>
+     <plurals name="humanize_duration_minutes_time">
++        <item quantity="other">{#} минут</item>
+         <item quantity="one">1 минута</item>
+         <item quantity="few">{#} минуты</item>
+-        <item quantity="other">{#} минут</item>
+     </plurals>
+     <plurals name="humanize_duration_seconds_time">
++        <item quantity="other">{#} секунд</item>
+         <item quantity="one">1 секунда</item>
+         <item quantity="few">{#} секунды</item>
+-        <item quantity="other">{#} секунд</item>
+     </plurals>
+     <plurals name="instant_invite_guild_members_total_count">
++        <item quantity="other">{count} участников</item>
+         <item quantity="one">1 участник</item>
+         <item quantity="few">{count} участника</item>
+-        <item quantity="other">{count} участников</item>
+     </plurals>
+     <plurals name="integrations_channel_following_summary_count">
++        <item quantity="other">{count} каналов</item>
+         <item quantity="one">1 канал</item>
+         <item quantity="few">{count} канала</item>
+-        <item quantity="other">{count} каналов</item>
+     </plurals>
+     <plurals name="integrations_twitch_summary_count">
++        <item quantity="other">{count} подключённых учётных записей</item>
+         <item quantity="one">1 подключённая учётная запись</item>
+         <item quantity="few">{count} подключённых учётных записи</item>
+-        <item quantity="other">{count} подключённых учётных записей</item>
+     </plurals>
+     <plurals name="integrations_webhooks_count_count">
++        <item quantity="other">{count} вебхуков</item>
+         <item quantity="one">1 вебхук</item>
+         <item quantity="few">{count} вебхука</item>
+-        <item quantity="other">{count} вебхуков</item>
+     </plurals>
+     <plurals name="integrations_webhooks_summary_count">
++        <item quantity="other">{count} вебхуков</item>
+         <item quantity="one">1 вебхук</item>
+         <item quantity="few">{count} вебхука</item>
+-        <item quantity="other">{count} вебхуков</item>
+     </plurals>
+     <plurals name="integrations_youtube_summary_count">
++        <item quantity="other">{count} подключённых учётных записей</item>
+         <item quantity="one">1 подключённая учётная запись</item>
+         <item quantity="few">{count} подключённых учётных записи</item>
+-        <item quantity="other">{count} подключённых учётных записей</item>
+     </plurals>
+     <plurals name="invite_embed_num_open_slots_number">
++        <item quantity="other">открытых слотов</item>
+         <item quantity="one">открытый слот</item>
+         <item quantity="few">открытых слота</item>
+-        <item quantity="other">открытых слотов</item>
+     </plurals>
+     <plurals name="invite_expires_days_or_uses_plural_numDays">
++        <item quantity="other">{numDays} дней</item>
+         <item quantity="one">{numDays} день</item>
+         <item quantity="few">{numDays} дня</item>
+-        <item quantity="other">{numDays} дней</item>
+     </plurals>
+     <plurals name="invite_expires_days_or_uses_plural_numUses">
+-        <item quantity="one">{numUses} использования</item>
+         <item quantity="other">{numUses} использований</item>
++        <item quantity="one">{numUses} использования</item>
+     </plurals>
+     <plurals name="invite_expires_days_plural_numDays">
++        <item quantity="other">{numDays} дней</item>
+         <item quantity="one">{numDays} день</item>
+         <item quantity="few">{numDays} дня</item>
+-        <item quantity="other">{numDays} дней</item>
+     </plurals>
+     <plurals name="invite_expires_hours_numHours">
+-        <item quantity="one">{numHours} ч.</item>
+         <item quantity="other">{numHours} ч.</item>
++        <item quantity="one">{numHours} ч.</item>
+     </plurals>
+     <plurals name="invite_expires_hours_or_uses_numHours">
+-        <item quantity="one">{numHours} ч.</item>
+         <item quantity="other">{numHours} ч.</item>
++        <item quantity="one">{numHours} ч.</item>
+     </plurals>
+     <plurals name="invite_expires_hours_or_uses_numUses">
+-        <item quantity="one">{numUses} использования</item>
+         <item quantity="other">{numUses} использований</item>
++        <item quantity="one">{numUses} использования</item>
+     </plurals>
+     <plurals name="invite_expires_minutes_or_uses_numUses">
+-        <item quantity="one">{numUses} использования</item>
+         <item quantity="other">{numUses} использований</item>
++        <item quantity="one">{numUses} использования</item>
+     </plurals>
+     <plurals name="invite_expires_uses_numUses">
+-        <item quantity="one">{numUses} использования</item>
+         <item quantity="other">{numUses} использований</item>
++        <item quantity="one">{numUses} использования</item>
+     </plurals>
+     <plurals name="last_seen_days">
+-        <item quantity="one">1 день</item>
+         <item quantity="other">{days} дней</item>
++        <item quantity="one">1 день</item>
+     </plurals>
+     <plurals name="live_viewers_viewers">
++        <item quantity="other">зрителей</item>
+         <item quantity="one">зритель</item>
+         <item quantity="few">зрителя</item>
+-        <item quantity="other">зрителей</item>
+     </plurals>
+     <plurals name="marketing_refresh_premium_features_included_guild_subscriptions_subheading_numFreeGuildSubscriptions">
++        <item quantity="other">{#} бустов сервера</item>
+         <item quantity="one">{#} буст сервера</item>
+         <item quantity="few">{#} буста сервера</item>
+-        <item quantity="other">{#} бустов сервера</item>
+     </plurals>
+     <plurals name="marketing_refresh_premium_tier_1_cta_description_perks_info_label_numFreeGuildSubscriptions">
++        <item quantity="other">{#} бустов сервера</item>
+         <item quantity="one">{#} буст сервера</item>
+         <item quantity="few">{#} буста сервера</item>
+-        <item quantity="other">{#} бустов сервера</item>
+     </plurals>
+     <plurals name="marketing_refresh_premium_tier_1_cta_description_perks_info_no_premium_guild_subscriptions_numFreeGuildSubscriptions">
++        <item quantity="other">{#} бустов сервера</item>
+         <item quantity="one">{#} буст сервера</item>
+         <item quantity="few">{#} буста сервера</item>
+-        <item quantity="other">{#} бустов сервера</item>
+     </plurals>
+     <plurals name="max_uses_description_mobile_maxUses">
++        <item quantity="other">{maxUses} раз</item>
+         <item quantity="one">1 раз</item>
+         <item quantity="few">{maxUses} раза</item>
+-        <item quantity="other">{maxUses} раз</item>
+     </plurals>
+     <plurals name="max_uses_maxUses">
++        <item quantity="other">{maxUses} раз</item>
+         <item quantity="one">1 раз</item>
+         <item quantity="few">{maxUses} раза</item>
+-        <item quantity="other">{maxUses} раз</item>
+     </plurals>
+     <plurals name="member_verification_num_emojis_emojis">
+-        <item quantity="one">{emojis} эмодзи сервера</item>
+         <item quantity="other">{emojis} эмодзи сервера</item>
++        <item quantity="one">{emojis} эмодзи сервера</item>
+     </plurals>
+     <plurals name="members_header_members">
++        <item quantity="other">{members} участников</item>
+         <item quantity="one">1 участник</item>
+         <item quantity="few">{members} участника</item>
+-        <item quantity="other">{members} участников</item>
+     </plurals>
+     <plurals name="mtrl_badge_content_description">
++        <item quantity="other">%d нового уведомления</item>
+         <item quantity="one">%d новое уведомление</item>
+         <item quantity="few">%d новых уведомления</item>
+         <item quantity="many">%d новых уведомлений</item>
+-        <item quantity="other">%d нового уведомления</item>
+     </plurals>
+     <plurals name="n_days_days">
++        <item quantity="other">{days} дней</item>
+         <item quantity="one">1 день</item>
+         <item quantity="few">{days} дня</item>
+-        <item quantity="other">{days} дней</item>
+     </plurals>
+     <plurals name="new_messages_count">
++        <item quantity="other">{count} новых сообщений</item>
+         <item quantity="one">1 новое сообщение</item>
+         <item quantity="few">{count} новых сообщения</item>
+-        <item quantity="other">{count} новых сообщений</item>
+     </plurals>
+     <plurals name="new_messages_with_date_count">
++        <item quantity="other">{count} новых сообщений</item>
+         <item quantity="one">1 новое сообщение</item>
+         <item quantity="few">{count} новых сообщения</item>
+-        <item quantity="other">{count} новых сообщений</item>
+     </plurals>
+     <plurals name="notice_premium_grandfathered_ending_numDays">
+-        <item quantity="one">один день</item>
+         <item quantity="other">{numDays} дн.</item>
++        <item quantity="one">один день</item>
+     </plurals>
+     <plurals name="notice_premium_tier_2_trial_ending_days_days">
++        <item quantity="other">осталось {#} дней</item>
+         <item quantity="one">остался {#} день</item>
+         <item quantity="few">осталось {#} дня</item>
+-        <item quantity="other">осталось {#} дней</item>
+     </plurals>
+     <plurals name="notice_premium_tier_2_trial_ending_hours_hours">
+-        <item quantity="one">остался {#} ч.</item>
+         <item quantity="other">осталось {#} ч.</item>
++        <item quantity="one">остался {#} ч.</item>
+     </plurals>
+     <plurals name="notice_premium_tier_2_trial_ending_minutes_minutes">
+-        <item quantity="one">осталась {#} мин.</item>
+         <item quantity="other">осталось {#} мин.</item>
++        <item quantity="one">осталась {#} мин.</item>
+     </plurals>
+     <plurals name="num_channels_num">
++        <item quantity="other">{num} каналов</item>
+         <item quantity="one">{num} канал</item>
+         <item quantity="few">{num} канала</item>
+-        <item quantity="other">{num} каналов</item>
+     </plurals>
+     <plurals name="num_members_subscribers">
++        <item quantity="other">**{subscribers}** участников</item>
+         <item quantity="one">**1** участник</item>
+         <item quantity="few">**{subscribers}** участника</item>
+-        <item quantity="other">**{subscribers}** участников</item>
+     </plurals>
+     <plurals name="num_subscribers_subscribers">
++        <item quantity="other">**{subscribers}** подписчиков</item>
+         <item quantity="one">**1** подписчик</item>
+         <item quantity="few">**{subscribers}** подписчика</item>
+-        <item quantity="other">**{subscribers}** подписчиков</item>
+     </plurals>
+     <plurals name="num_users_num">
++        <item quantity="other">{num} пользователей</item>
+         <item quantity="one">{num} пользователь</item>
+         <item quantity="few">{num} пользователя</item>
+-        <item quantity="other">{num} пользователей</item>
+     </plurals>
+     <plurals name="only_you_can_see_and_delete_these_count">
+-        <item quantity="one">это сообщение</item>
+         <item quantity="other">эти сообщения</item>
++        <item quantity="one">это сообщение</item>
+     </plurals>
+     <plurals name="only_you_can_see_and_delete_these_countMessages">
+-        <item quantity="one">его</item>
+         <item quantity="other">их</item>
++        <item quantity="one">его</item>
+     </plurals>
+     <plurals name="partial_outage_a11y_count">
++        <item quantity="other">{count} серверов недоступно из-за временного отключения</item>
+         <item quantity="one">1 сервер недоступен из-за временного отключения</item>
+         <item quantity="few">{count} сервера недоступны из-за временного отключения</item>
+-        <item quantity="other">{count} серверов недоступно из-за временного отключения</item>
+     </plurals>
+     <plurals name="partial_outage_count">
++        <item quantity="other">**{count}** других серверов недоступны из-за временного отключения.</item>
+         <item quantity="one">**1** другой сервер недоступен из-за временного отключения.</item>
+         <item quantity="few">**{count}** других сервера недоступны из-за временного отключения.</item>
+-        <item quantity="other">**{count}** других серверов недоступны из-за временного отключения.</item>
+     </plurals>
+     <plurals name="premium_cancel_what_you_lose_boosts_applied_boostCount">
++        <item quantity="other">{#} активированных бустов</item>
+         <item quantity="one">{#} активированный буст</item>
+         <item quantity="few">{#} активированных буста</item>
+-        <item quantity="other">{#} активированных бустов</item>
+     </plurals>
+     <plurals name="premium_chat_perks_description_premium_guild_included_numFreeGuildSubscriptions">
++        <item quantity="other">{#} бустов</item>
+         <item quantity="one">{#} буст</item>
+         <item quantity="few">{#} буста</item>
+-        <item quantity="other">{#} бустов</item>
+     </plurals>
+     <plurals name="premium_guild_features_upsell_banner_subscribe_numFreeGuildSubscriptions">
++        <item quantity="other">{#} бустов</item>
+         <item quantity="one">{#} буст</item>
+         <item quantity="few">{#} буста</item>
+-        <item quantity="other">{#} бустов</item>
+     </plurals>
+     <plurals name="premium_guild_grace_period_cooldown_numPremiumSubscriptions">
++        <item quantity="other">нужно {#} бустов</item>
+         <item quantity="one">нужен {#} буст</item>
+         <item quantity="few">нужно {#} буста</item>
+-        <item quantity="other">нужно {#} бустов</item>
+     </plurals>
+     <plurals name="premium_guild_grace_period_cooldown_soon_numPremiumSubscriptions">
++        <item quantity="other">нужно {#} бустов</item>
+         <item quantity="one">нужен {#} буст</item>
+         <item quantity="few">нужно {#} буста</item>
+-        <item quantity="other">нужно {#} бустов</item>
+     </plurals>
+     <plurals name="premium_guild_num_month_guild_subscriptions_num">
++        <item quantity="other">{#} бустов сервера</item>
+         <item quantity="one">{#} буст сервера</item>
+         <item quantity="few">{#} буста сервера</item>
+-        <item quantity="other">{#} бустов сервера</item>
+     </plurals>
+     <plurals name="premium_guild_num_month_guild_subscriptions_unformatted_num">
++        <item quantity="other">бустов сервера</item>
+         <item quantity="one">буст сервера</item>
+         <item quantity="few">буста сервера</item>
+-        <item quantity="other">бустов сервера</item>
+     </plurals>
+     <plurals name="premium_guild_num_year_guild_subscriptions_num">
++        <item quantity="other">{#} бустов сервера</item>
+         <item quantity="one">{#} буст сервера</item>
+         <item quantity="few">{#} буста сервера</item>
+-        <item quantity="other">{#} бустов сервера</item>
+     </plurals>
+     <plurals name="premium_guild_num_year_guild_subscriptions_unformatted_num">
++        <item quantity="other">бустов сервера</item>
+         <item quantity="one">буст сервера</item>
+         <item quantity="few">буста сервера</item>
+-        <item quantity="other">бустов сервера</item>
+     </plurals>
+     <plurals name="premium_guild_perks_modal_header_subscription_count_subscriptions">
++        <item quantity="other">{#} бустов</item>
+         <item quantity="one">{#} буст</item>
+         <item quantity="few">{#} буста</item>
+-        <item quantity="other">{#} бустов</item>
+     </plurals>
+     <plurals name="premium_guild_perks_modal_header_user_subscription_count_numSubscriptions">
++        <item quantity="other">{#} раз</item>
+         <item quantity="one">{#} раз</item>
+         <item quantity="few">{#} раза</item>
+-        <item quantity="other">{#} раз</item>
+     </plurals>
+     <plurals name="premium_guild_perks_modal_protip_mobile_numFreeGuildSubscriptions">
++        <item quantity="other">{#} бустов</item>
+         <item quantity="one">{#} буст</item>
+         <item quantity="few">{#} буста</item>
+-        <item quantity="other">{#} бустов</item>
+     </plurals>
+     <plurals name="premium_guild_perks_modal_protip_numFreeGuildSubscriptions">
++        <item quantity="other">{#} бустов</item>
+         <item quantity="one">{#} буст</item>
+         <item quantity="few">{#} буста</item>
+-        <item quantity="other">{#} бустов</item>
+     </plurals>
+     <plurals name="premium_guild_settings_members_subscribed_needed_number">
++        <item quantity="other">{#} бустов</item>
+         <item quantity="one">{#} буст</item>
+         <item quantity="few">{#} буста</item>
+-        <item quantity="other">{#} бустов</item>
+     </plurals>
+     <plurals name="premium_guild_settings_x_of_y_subscriptions_numRequired">
++        <item quantity="other">{#} бустов</item>
+         <item quantity="one">{#} буст</item>
+         <item quantity="few">{#} буста</item>
+-        <item quantity="other">{#} бустов</item>
+     </plurals>
+     <plurals name="premium_guild_subscribe_confirm_cancel_warning_canceledCount">
++        <item quantity="other">{#} бустов ожидают отмены и будут автоматически удалены</item>
+         <item quantity="one">Этот буст ожидает отмены и будет автоматически удалён</item>
+         <item quantity="few">{#} буста ожидают отмены и будут автоматически удалены</item>
+-        <item quantity="other">{#} бустов ожидают отмены и будут автоматически удалены</item>
+     </plurals>
+     <plurals name="premium_guild_subscribe_confirm_confirmation_label_slotCount">
+-        <item quantity="one">Буст вступит</item>
+         <item quantity="other">Бусты вступят</item>
++        <item quantity="one">Буст вступит</item>
+     </plurals>
+     <plurals name="premium_guild_subscribe_confirm_confirmation_slotCount">
++        <item quantity="other">{#} бустов</item>
+         <item quantity="one">буст</item>
+         <item quantity="few">{#} буста</item>
+-        <item quantity="other">{#} бустов</item>
+     </plurals>
+     <plurals name="premium_guild_subscribe_confirm_cooldown_warning_days">
++        <item quantity="other">{#} дней</item>
+         <item quantity="one">{#} день</item>
+         <item quantity="few">{#} дня</item>
+-        <item quantity="other">{#} дней</item>
+     </plurals>
+     <plurals name="premium_guild_subscribe_confirm_cooldown_warning_slotCount">
+-        <item quantity="one">этот буст</item>
+         <item quantity="other">эти бусты</item>
++        <item quantity="one">этот буст</item>
+     </plurals>
+     <plurals name="premium_guild_subscribe_confirm_transfer_blurb_guildCount">
+-        <item quantity="one">текущий сервер потеряет</item>
+         <item quantity="other">текущие сервера потеряют</item>
++        <item quantity="one">текущий сервер потеряет</item>
+     </plurals>
+     <plurals name="premium_guild_subscribe_confirm_transfer_blurb_slotCount">
+-        <item quantity="one">этот буст сервера</item>
+         <item quantity="other">эти бусты сервера</item>
++        <item quantity="one">этот буст сервера</item>
+     </plurals>
+     <plurals name="premium_guild_subscribe_confirm_transfer_from_guild_guildCount">
+-        <item quantity="one">Текущий сервер</item>
+         <item quantity="other">Текущие серверы</item>
++        <item quantity="one">Текущий сервер</item>
+     </plurals>
+     <plurals name="premium_guild_subscribe_confirm_transfer_to_guild_slotCount">
+-        <item quantity="one">буст</item>
+         <item quantity="other">бусты</item>
++        <item quantity="one">буст</item>
+     </plurals>
+     <plurals name="premium_guild_subscribe_transfer_confirm_confirmation_label_slotCount">
++        <item quantity="other">{#} бустов</item>
+         <item quantity="one">буст</item>
+         <item quantity="few">{#} буста</item>
+-        <item quantity="other">{#} бустов</item>
+     </plurals>
+     <plurals name="premium_guild_subscribe_transfer_confirm_confirmation_slotCount">
+-        <item quantity="one">буст</item>
+         <item quantity="other">бусты</item>
++        <item quantity="one">буст</item>
+     </plurals>
+     <plurals name="premium_guild_subscription_available_numSubscriptions">
++        <item quantity="other">{#} бустов</item>
+         <item quantity="one">{#} буст</item>
+         <item quantity="few">{#} буста</item>
+-        <item quantity="other">{#} бустов</item>
+     </plurals>
+     <plurals name="premium_guild_subscription_cancel_invoice_subscription_cancelled_subscriptionCount">
++        <item quantity="other">{#} бустов сервера отменено</item>
+         <item quantity="one">{#} буст сервера отменен</item>
+         <item quantity="few">{#} буста сервера отменено</item>
+-        <item quantity="other">{#} бустов сервера отменено</item>
+     </plurals>
+     <plurals name="premium_guild_subscription_duration_months">
++        <item quantity="other">{#} месяцев</item>
+         <item quantity="one">{#} месяц</item>
+         <item quantity="few">{#} месяца</item>
+-        <item quantity="other">{#} месяцев</item>
+     </plurals>
+     <plurals name="premium_guild_subscription_error_rate_limit_days_days">
++        <item quantity="other">{#} дней</item>
+         <item quantity="one">{#} день</item>
+         <item quantity="few">{#} дня</item>
+-        <item quantity="other">{#} дней</item>
+     </plurals>
+     <plurals name="premium_guild_subscription_error_rate_limit_days_hours">
+-        <item quantity="one">{#} ч.</item>
+         <item quantity="other">{#} ч.</item>
++        <item quantity="one">{#} ч.</item>
+     </plurals>
+     <plurals name="premium_guild_subscription_error_rate_limit_hours_hours">
+-        <item quantity="one">{#} ч.</item>
+         <item quantity="other">{#} ч.</item>
++        <item quantity="one">{#} ч.</item>
+     </plurals>
+     <plurals name="premium_guild_subscription_error_rate_limit_hours_minutes">
+-        <item quantity="one">{#} мин.</item>
+         <item quantity="other">{#} мин.</item>
++        <item quantity="one">{#} мин.</item>
+     </plurals>
+     <plurals name="premium_guild_subscription_error_rate_limit_minutes_minutes">
+-        <item quantity="one">{#} мин.</item>
+         <item quantity="other">{#} мин.</item>
++        <item quantity="one">{#} мин.</item>
+     </plurals>
+     <plurals name="premium_guild_subscription_guild_subsription_subtitle_numSubscriptions">
++        <item quantity="other">{#} бустов</item>
+         <item quantity="one">{#} буст</item>
+         <item quantity="few">{#} буста</item>
+-        <item quantity="other">{#} бустов</item>
+     </plurals>
+     <plurals name="premium_guild_subscription_num_subscriptions_numSubscriptions">
++        <item quantity="other">{#} бустов</item>
+         <item quantity="one">{#} буст</item>
+         <item quantity="few">{#} буста</item>
+-        <item quantity="other">{#} бустов</item>
+     </plurals>
+     <plurals name="premium_guild_subscription_subscriber_count_tooltip_subscriberCount">
++        <item quantity="other">{#} бустов</item>
+         <item quantity="one">{#} буст</item>
+         <item quantity="few">{#} буста</item>
+-        <item quantity="other">{#} бустов</item>
+     </plurals>
+     <plurals name="premium_guild_subscriptions_renewal_info_account_hold_no_price_quantity">
++        <item quantity="other">бустов сервера</item>
+         <item quantity="one">буст сервера</item>
+         <item quantity="few">буста сервера</item>
+-        <item quantity="other">бустов сервера</item>
+     </plurals>
+     <plurals name="premium_guild_subscriptions_renewal_info_account_hold_quantity">
++        <item quantity="other">{#} бустов сервера</item>
+         <item quantity="one">{#} буст сервера</item>
+         <item quantity="few">{#} буста сервера</item>
+-        <item quantity="other">{#} бустов сервера</item>
+     </plurals>
+     <plurals name="premium_guild_subscriptions_renewal_info_android_quantity">
++        <item quantity="other">{#} бустов сервера</item>
+         <item quantity="one">{#} буст сервера</item>
+         <item quantity="few">{#} буста сервера</item>
+-        <item quantity="other">{#} бустов сервера</item>
+     </plurals>
+     <plurals name="premium_guild_subscriptions_renewal_info_no_price_quantity">
++        <item quantity="other">{#} бустов сервера</item>
+         <item quantity="one">{#} буст сервера</item>
+         <item quantity="few">{#} буста сервера</item>
+-        <item quantity="other">{#} бустов сервера</item>
+     </plurals>
+     <plurals name="premium_guild_subscriptions_renewal_info_pending_cancelation_android_quantity">
++        <item quantity="other">{#} бустов сервера</item>
+         <item quantity="one">{#} буст сервера</item>
+         <item quantity="few">{#} буста сервера</item>
+-        <item quantity="other">{#} бустов сервера</item>
+     </plurals>
+     <plurals name="premium_guild_subscriptions_renewal_info_pending_cancelation_no_price_quantity">
++        <item quantity="other">{#} бустов сервера</item>
+         <item quantity="one">{#} буст сервера</item>
+         <item quantity="few">{#} буста сервера</item>
+-        <item quantity="other">{#} бустов сервера</item>
+     </plurals>
+     <plurals name="premium_guild_subscriptions_renewal_info_pending_cancelation_quantity">
++        <item quantity="other">{#} бустов сервера</item>
+         <item quantity="one">{#} буст сервера</item>
+         <item quantity="few">{#} буста сервера</item>
+-        <item quantity="other">{#} бустов сервера</item>
+     </plurals>
+     <plurals name="premium_guild_subscriptions_renewal_info_quantity">
++        <item quantity="other">{#} бустов сервера</item>
+         <item quantity="one">{#} буст сервера</item>
+         <item quantity="few">{#} буста сервера</item>
+-        <item quantity="other">{#} бустов сервера</item>
+     </plurals>
+     <plurals name="premium_guild_unsubscribe_confirm_cooldown_warning_days_days">
++        <item quantity="other">{#} дней</item>
+         <item quantity="one">{#} день</item>
+         <item quantity="few">{#} дня</item>
+-        <item quantity="other">{#} дней</item>
+     </plurals>
+     <plurals name="premium_guild_unsubscribe_confirm_cooldown_warning_days_hours">
+-        <item quantity="one">{#} ч.</item>
+         <item quantity="other">{#} ч.</item>
++        <item quantity="one">{#} ч.</item>
+     </plurals>
+     <plurals name="premium_guild_unsubscribe_confirm_cooldown_warning_hours_hours">
+-        <item quantity="one">{#} ч.</item>
+         <item quantity="other">{#} ч.</item>
++        <item quantity="one">{#} ч.</item>
+     </plurals>
+     <plurals name="premium_guild_unsubscribe_confirm_cooldown_warning_hours_minutes">
+-        <item quantity="one">{#} мин.</item>
+         <item quantity="other">{#} мин.</item>
++        <item quantity="one">{#} мин.</item>
+     </plurals>
+     <plurals name="premium_guild_unsubscribe_confirm_cooldown_warning_minutes_minutes">
+-        <item quantity="one">{#} мин.</item>
+         <item quantity="other">{#} мин.</item>
++        <item quantity="one">{#} мин.</item>
+     </plurals>
+     <plurals name="premium_marketing_feature_premium_guild_description_numFreeGuildSubscriptions">
++        <item quantity="other">{#} бустов сервера</item>
+         <item quantity="one">{#} буст сервера</item>
+         <item quantity="few">{#} буста сервера</item>
+-        <item quantity="other">{#} бустов сервера</item>
+     </plurals>
+     <plurals name="premium_plan_month_tier_2_trial_months">
++        <item quantity="other">месяцев</item>
+         <item quantity="one">месяц</item>
+         <item quantity="few">месяца</item>
+-        <item quantity="other">месяцев</item>
+     </plurals>
+     <plurals name="premium_plan_year_tier_2_trial_months">
++        <item quantity="other">месяцев</item>
+         <item quantity="one">месяц</item>
+         <item quantity="few">месяца</item>
+-        <item quantity="other">месяцев</item>
+     </plurals>
+     <plurals name="premium_subscription_credit_count_months_count">
++        <item quantity="other">{#} месяцев</item>
+         <item quantity="one">{#} месяц</item>
+         <item quantity="few">{#} месяца</item>
+-        <item quantity="other">{#} месяцев</item>
+     </plurals>
+     <plurals name="premium_subscription_ending_missing_payment_notice_text_daysLeft">
++        <item quantity="other">через {#} дней</item>
+         <item quantity="one">через {#} день</item>
+         <item quantity="few">через {#} дня</item>
+-        <item quantity="other">через {#} дней</item>
+     </plurals>
+     <plurals name="premium_subscription_ending_notice_text_daysLeft">
++        <item quantity="other">{#} дней</item>
+         <item quantity="one">{#} день</item>
+         <item quantity="few">{#} дня</item>
+-        <item quantity="other">{#} дней</item>
+     </plurals>
+     <plurals name="premium_subscription_ending_what_you_lose_title_daysLeft">
++        <item quantity="other">{#} дней</item>
+         <item quantity="one">{#} день</item>
+         <item quantity="few">{#} дня</item>
+-        <item quantity="other">{#} дней</item>
+     </plurals>
+     <plurals name="premium_subscription_renewal_footer_trial_days">
++        <item quantity="other">{days} дней</item>
+         <item quantity="one">1 день</item>
+         <item quantity="few">{days} дня</item>
+-        <item quantity="other">{days} дней</item>
+     </plurals>
+     <plurals name="premium_trial_cta_description_expiring_days_days">
++        <item quantity="other">{#} дней</item>
+         <item quantity="one">{#} день</item>
+         <item quantity="few">{#} дня</item>
+-        <item quantity="other">{#} дней</item>
+     </plurals>
+     <plurals name="premium_trial_cta_description_expiring_hours_hours">
+-        <item quantity="one">{#} ч.</item>
+         <item quantity="other">{#} ч.</item>
++        <item quantity="one">{#} ч.</item>
+     </plurals>
+     <plurals name="premium_trial_cta_description_expiring_minutes_minutes">
+-        <item quantity="one">{#} мин.</item>
+         <item quantity="other">{#} мин.</item>
++        <item quantity="one">{#} мин.</item>
+     </plurals>
+     <plurals name="premium_upsell_feature_free_guild_subscription_numFreeGuildSubscriptions">
++        <item quantity="other">{#} бустов сервера</item>
+         <item quantity="one">{#} буст сервера</item>
+         <item quantity="few">{#} буста сервера</item>
+-        <item quantity="other">{#} бустов сервера</item>
+     </plurals>
+     <plurals name="preview_lines_left_lines">
++        <item quantity="other">{#} строк</item>
+         <item quantity="one">{#} строка</item>
+         <item quantity="few">{#} строки</item>
+-        <item quantity="other">{#} строк</item>
+     </plurals>
+     <plurals name="preview_num_lines_at_least_lines">
+-        <item quantity="one">{#} строки</item>
+         <item quantity="other">{#} строк</item>
++        <item quantity="one">{#} строки</item>
+     </plurals>
+     <plurals name="preview_num_lines_lines">
++        <item quantity="other">{#} строк</item>
+         <item quantity="one">{#} строка</item>
+         <item quantity="few">{#} строки</item>
+-        <item quantity="other">{#} строк</item>
+     </plurals>
+     <plurals name="private_channel_access_info_members_count">
++        <item quantity="other">{count} участников</item>
+         <item quantity="one">{count} участник</item>
+         <item quantity="few">{count} участника</item>
+-        <item quantity="other">{count} участников</item>
+     </plurals>
+     <plurals name="private_channel_access_info_roles_count">
++        <item quantity="other">{count} ролей</item>
+         <item quantity="one">{count} роль</item>
+         <item quantity="few">{count} роли</item>
+-        <item quantity="other">{count} ролей</item>
+     </plurals>
+     <plurals name="private_channel_members_added_toast_msg_count">
++        <item quantity="other">Добавлено {count} участников</item>
+         <item quantity="one">Добавлен {count} участник</item>
+         <item quantity="few">Добавлено {count} участника</item>
+-        <item quantity="other">Добавлено {count} участников</item>
+     </plurals>
+     <plurals name="private_channel_roles_added_toast_msg_count">
++        <item quantity="other">Добавлено {count} ролей</item>
+         <item quantity="one">Добавлена {count} роль</item>
+         <item quantity="few">Добавлено {count} роли</item>
+-        <item quantity="other">Добавлено {count} ролей</item>
+     </plurals>
+     <plurals name="promotion_confirm_upgrade_line_item_quantity">
+-        <item quantity="one" />
+         <item quantity="other">{#}x</item>
++        <item quantity="one" />
+     </plurals>
+     <plurals name="promotion_confirm_upgrade_terms_trialMonths">
++        <item quantity="other">{#} месяцев</item>
+         <item quantity="one">{#} месяц</item>
+         <item quantity="few">{#} месяца</item>
+-        <item quantity="other">{#} месяцев</item>
+     </plurals>
+     <plurals name="promotion_existing_subscriber_body_months">
++        <item quantity="other">{#} месяцев</item>
+         <item quantity="one">{#} месяц</item>
+         <item quantity="few">{#} месяца</item>
+-        <item quantity="other">{#} месяцев</item>
+     </plurals>
+     <plurals name="promotion_previous_subscriber_body_months">
++        <item quantity="other">{#} месяцев</item>
+         <item quantity="one">{#} месяц</item>
+         <item quantity="few">{#} месяца</item>
+-        <item quantity="other">{#} месяцев</item>
+     </plurals>
+     <plurals name="promotion_redeem_body_months">
++        <item quantity="other">{#} месяцев</item>
+         <item quantity="one">{#} месяц</item>
+         <item quantity="few">{#} месяца</item>
+-        <item quantity="other">{#} месяцев</item>
+     </plurals>
+     <plurals name="publish_followed_news_body_reach_numGuildsFollowing">
++        <item quantity="other">{#} серверов, подписанных</item>
+         <item quantity="one">{#} сервер, подписанный</item>
+         <item quantity="few">{#} сервера, подписанных</item>
+-        <item quantity="other">{#} серверов, подписанных</item>
+     </plurals>
+     <plurals name="publish_followed_news_fail_body_retryAfter">
++        <item quantity="other">{retryAfter} минут</item>
+         <item quantity="one">1 минуту</item>
+         <item quantity="few">{retryAfter} минуты</item>
+-        <item quantity="other">{retryAfter} минут</item>
+     </plurals>
+     <plurals name="quick_switcher_results_group_dm_unread_label_mentions">
++        <item quantity="other">, {#} непрочитанных сообщений</item>
+         <item quantity="one">, {#} непрочитанное сообщение</item>
+         <item quantity="few">, {#} непрочитанных сообщения</item>
+-        <item quantity="other">, {#} непрочитанных сообщений</item>
+     </plurals>
+     <plurals name="quick_switcher_results_user_unread_label_mentions">
++        <item quantity="other">, {#} непрочитанных сообщений</item>
+         <item quantity="one">, {#} непрочитанное сообщение</item>
+         <item quantity="few">, {#} непрочитанных сообщения</item>
+-        <item quantity="other">, {#} непрочитанных сообщений</item>
+     </plurals>
+     <plurals name="quick_switcher_unread_badge_label_mentions">
++        <item quantity="other">, {#} непрочитанных сообщений</item>
+         <item quantity="one">, {#} непрочитанное сообщение</item>
+         <item quantity="few">, {#} непрочитанных сообщения</item>
+-        <item quantity="other">, {#} непрочитанных сообщений</item>
+     </plurals>
+     <plurals name="reaction_tooltip_1_n_n">
++        <item quantity="other">{n} человек поставили</item>
+         <item quantity="one">1 человек поставили</item>
+         <item quantity="few">{n} человека поставили</item>
+-        <item quantity="other">{n} человек поставили</item>
+     </plurals>
+     <plurals name="reaction_tooltip_2_n_n">
++        <item quantity="other">{n} человек поставили</item>
+         <item quantity="one">1 человек поставили</item>
+         <item quantity="few">{n} человека поставили</item>
+-        <item quantity="other">{n} человек поставили</item>
+     </plurals>
+     <plurals name="reaction_tooltip_3_n_n">
++        <item quantity="other">{n} человек поставили</item>
+         <item quantity="one">1 человек поставили</item>
+         <item quantity="few">{n} человека поставили</item>
+-        <item quantity="other">{n} человек поставили</item>
+     </plurals>
+     <plurals name="reaction_tooltip_n_n">
++        <item quantity="other">{n} человек поставили</item>
+         <item quantity="one">1 человек поставил</item>
+         <item quantity="few">{n} человека поставили</item>
+-        <item quantity="other">{n} человек поставили</item>
+     </plurals>
+     <plurals name="role_member_count_count">
++        <item quantity="other">{count} участников</item>
+         <item quantity="one">{count} участник</item>
+         <item quantity="few">{count} участника</item>
+-        <item quantity="other">{count} участников</item>
+     </plurals>
+     <plurals name="role_row_description_count">
++        <item quantity="other">{count} участников</item>
+         <item quantity="one">{count} участник</item>
+         <item quantity="few">{count} участника</item>
+-        <item quantity="other">{count} участников</item>
+     </plurals>
+     <plurals name="role_row_view_members_count">
+-        <item quantity="one">{count} участника</item>
+         <item quantity="other">{count} участников</item>
++        <item quantity="one">{count} участника</item>
+     </plurals>
+     <plurals name="roles_list_numRoles">
++        <item quantity="other">Роли</item>
+         <item quantity="one">Роли</item>
+         <item quantity="few">Роли</item>
+-        <item quantity="other">Роли</item>
+     </plurals>
+     <plurals name="search_hide_blocked_messages_count">
++        <item quantity="other">{count} сообщений</item>
+         <item quantity="one">{count} сообщение</item>
+         <item quantity="few">{count} сообщения</item>
+-        <item quantity="other">{count} сообщений</item>
+     </plurals>
+     <plurals name="search_num_results_blocked_not_shown_count">
++        <item quantity="other">{count} результатов</item>
+         <item quantity="one">{count} результат</item>
+         <item quantity="few">{count} результата</item>
+-        <item quantity="other">{count} результатов</item>
+     </plurals>
+     <plurals name="search_still_indexing_hint_count">
++        <item quantity="other">Найдено {count} результатов</item>
+         <item quantity="one">Найден {count} результат</item>
+         <item quantity="few">Найдено {count} результата</item>
+-        <item quantity="other">Найдено {count} результатов</item>
+     </plurals>
+     <plurals name="speaking_count_count">
+         <item quantity="other">{count} говорят</item>
+     </plurals>
+     <plurals name="spotify_listen_along_title_host_count">
++        <item quantity="other">слушателей</item>
+         <item quantity="one">слушатель</item>
+         <item quantity="few">слушателя</item>
+-        <item quantity="other">слушателей</item>
+     </plurals>
+     <plurals name="stage_audience_waiting_many_numOthers">
+-        <item quantity="one">ещё {#}</item>
+         <item quantity="other">ещё {#}</item>
++        <item quantity="one">ещё {#}</item>
+     </plurals>
+     <plurals name="stage_blocked_users_body_number">
++        <item quantity="other">находится {#} заблокированных вами пользователей</item>
+         <item quantity="one">находится {#} заблокированный вами пользователь</item>
+         <item quantity="few">находятся {#} заблокированных вами пользователя</item>
+-        <item quantity="other">находится {#} заблокированных вами пользователей</item>
+     </plurals>
+     <plurals name="stage_blocked_users_description_count_number">
++        <item quantity="other">находится {#} заблокированных вами пользователей</item>
+         <item quantity="one">находится {#} заблокированный вами пользователь</item>
+         <item quantity="few">находятся {#} заблокированных вами пользователя</item>
+-        <item quantity="other">находится {#} заблокированных вами пользователей</item>
+     </plurals>
+     <plurals name="stage_blocked_users_title_plural_number">
+-        <item quantity="one">Присутствует заблокированная учётная запись</item>
+         <item quantity="other">Присутствуют заблокированные учётные записи</item>
++        <item quantity="one">Присутствует заблокированная учётная запись</item>
+     </plurals>
+     <plurals name="stage_channel_people_count_count">
++        <item quantity="other">{count} человек</item>
+         <item quantity="one">1 человек</item>
+         <item quantity="few">{count} человека</item>
+-        <item quantity="other">{count} человек</item>
+     </plurals>
+     <plurals name="stage_channel_people_count_speakerCount">
++        <item quantity="other">{speakerCount} ораторов</item>
+         <item quantity="one">1 оратор</item>
+         <item quantity="few">{speakerCount} оратора</item>
+-        <item quantity="other">{speakerCount} ораторов</item>
+     </plurals>
+     <plurals name="stage_channel_users_are_speaking_count">
+-        <item quantity="one">говорит</item>
+         <item quantity="other">говорят</item>
++        <item quantity="one">говорит</item>
+     </plurals>
+     <plurals name="stage_discovery_card_speaker_text_number">
+-        <item quantity="one">{#} говорит с {userNick}</item>
+         <item quantity="other">{userNick} говорит</item>
++        <item quantity="one">{#} говорит с {userNick}</item>
+     </plurals>
+     <plurals name="stage_discovery_card_speaker_text_overflow_count">
+         <item quantity="other">+{count} говорят</item>
+     </plurals>
+     <plurals name="stage_discovery_live_stage_tile_friends_guilds_context_audience_3_n_n">
++        <item quantity="other">{n} человек</item>
+         <item quantity="one">1 человек</item>
+         <item quantity="few">{n} человека</item>
+-        <item quantity="other">{n} человек</item>
+     </plurals>
+     <plurals name="stage_discovery_live_stage_tile_speaker_summary_overflow_count">
++        <item quantity="other">+{count} ораторов</item>
+         <item quantity="one">+{count} оратор</item>
+         <item quantity="few">+{count} оратора</item>
+-        <item quantity="other">+{count} ораторов</item>
+     </plurals>
+     <plurals name="stage_invite_speaker_count_count">
++        <item quantity="other">{count} ораторов</item>
+         <item quantity="one">1 оратор</item>
+         <item quantity="few">{count} оратора</item>
+-        <item quantity="other">{count} ораторов</item>
+     </plurals>
+     <plurals name="stage_is_speaking_hook_count">
++        <item quantity="other">и ещё {count} участников](usernameHook) сейчас говорят…</item>
+         <item quantity="one">и ещё один участник](usernameHook) сейчас говорят…</item>
+         <item quantity="few">и ещё {count} участника](usernameHook) сейчас говорят…</item>
+-        <item quantity="other">и ещё {count} участников](usernameHook) сейчас говорят…</item>
+     </plurals>
+     <plurals name="stage_speak_invite_blocked_users_number">
++        <item quantity="other">{#} заблокированных пользователей</item>
+         <item quantity="one">{#} заблокированный пользователь</item>
+         <item quantity="few">{#} заблокированных пользователя</item>
+-        <item quantity="other">{#} заблокированных пользователей</item>
+     </plurals>
+     <plurals name="stage_speak_invite_header_blocked_users_number">
++        <item quantity="other">{#} заблокированных пользователей</item>
+         <item quantity="one">{#} заблокированный пользователь</item>
+         <item quantity="few">{#} заблокированных пользователя</item>
+-        <item quantity="other">{#} заблокированных пользователей</item>
+     </plurals>
+     <plurals name="sticker_pack_sticker_count_numStickers">
++        <item quantity="other">{#} стикеров</item>
+         <item quantity="one">{#} стикер</item>
+         <item quantity="few">{#} стикера</item>
+-        <item quantity="other">{#} стикеров</item>
+     </plurals>
+     <plurals name="sticker_premium_tier_2_upsell_alert_perks_guild_subscriptions_numFreeGuildSubscriptions">
++        <item quantity="other">{#} бустов сервера</item>
+         <item quantity="one">{#} буст сервера</item>
+         <item quantity="few">{#} буста сервера</item>
+-        <item quantity="other">{#} бустов сервера</item>
+     </plurals>
+     <plurals name="stickers_gift_inventory_title_month_intervalCount">
++        <item quantity="other">{#} месяцев</item>
+         <item quantity="one">{#} месяц</item>
+         <item quantity="few">{#}месяца</item>
+-        <item quantity="other">{#} месяцев</item>
+     </plurals>
+     <plurals name="stickers_gift_inventory_title_year_intervalCount">
++        <item quantity="other">{#} лет</item>
+         <item quantity="one">{#} год</item>
+         <item quantity="few">{#} года</item>
+-        <item quantity="other">{#} лет</item>
+     </plurals>
+     <plurals name="thread_message_count_count">
++        <item quantity="other">{count} сообщений ›</item>
+         <item quantity="one">1 сообщение ›</item>
+         <item quantity="few">{count} сообщения ›</item>
+-        <item quantity="other">{count} сообщений ›</item>
+     </plurals>
+     <plurals name="thread_reply_suggestion_count">
+-        <item quantity="one">{#} ответа</item>
+         <item quantity="other">{#} ответов</item>
++        <item quantity="one">{#} ответа</item>
+     </plurals>
+     <plurals name="total_results_count">
++        <item quantity="other">{count} результатов</item>
+         <item quantity="one">{count} результат</item>
+         <item quantity="few">{count} результата</item>
+-        <item quantity="other">{count} результатов</item>
+     </plurals>
+     <plurals name="uploading_files_count">
+-        <item quantity="one">Выгрузка 1 файла</item>
+         <item quantity="other">Выгрузка {count} файлов</item>
++        <item quantity="one">Выгрузка 1 файла</item>
+     </plurals>
+     <plurals name="uploading_files_failed_count">
++        <item quantity="other">Не удалось загрузить {count} файлов</item>
+         <item quantity="one">Не удалось загрузить 1 файл</item>
+         <item quantity="few">Не удалось загрузить {count} файла</item>
+-        <item quantity="other">Не удалось загрузить {count} файлов</item>
+     </plurals>
+     <plurals name="user_activity_timestamp_end_hours">
+         <item quantity="other">{hours}:</item>
+@@ -1626,51 +1626,51 @@
+         <item quantity="other">{seconds}</item>
+     </plurals>
+     <plurals name="user_activity_user_playing_for_days_time">
++        <item quantity="other">дней</item>
+         <item quantity="one">день</item>
+         <item quantity="few">дня</item>
+-        <item quantity="other">дней</item>
+     </plurals>
+     <plurals name="user_activity_user_playing_for_hours_time">
++        <item quantity="other">часов</item>
+         <item quantity="one">час</item>
+         <item quantity="few">часа</item>
+-        <item quantity="other">часов</item>
+     </plurals>
+     <plurals name="user_activity_user_playing_for_minutes_time">
++        <item quantity="other">минут</item>
+         <item quantity="one">минуту</item>
+         <item quantity="few">минуты</item>
+-        <item quantity="other">минут</item>
+     </plurals>
+     <plurals name="user_profile_mutual_friends_count">
++        <item quantity="other">{count} общих друзей</item>
+         <item quantity="one">1 общий друг</item>
+         <item quantity="few">{count} общих друга</item>
+-        <item quantity="other">{count} общих друзей</item>
+     </plurals>
+     <plurals name="user_profile_mutual_guilds_count">
++        <item quantity="other">{count} общих серверов</item>
+         <item quantity="one">1 общий сервер</item>
+         <item quantity="few">{count} общих сервера</item>
+-        <item quantity="other">{count} общих серверов</item>
+     </plurals>
+     <plurals name="user_summary_with_others_count">
+-        <item quantity="one">1</item>
+         <item quantity="other">{count}</item>
++        <item quantity="one">1</item>
+     </plurals>
+     <plurals name="vanity_url_header_uses_uses">
++        <item quantity="other">{uses} использований</item>
+         <item quantity="one">1 использование</item>
+         <item quantity="few">{uses} использования</item>
+-        <item quantity="other">{uses} использований</item>
+     </plurals>
+     <plurals name="vanity_url_uses_uses">
++        <item quantity="other">{uses} использований</item>
+         <item quantity="one">1 использование</item>
+         <item quantity="few">{uses} использования</item>
+-        <item quantity="other">{uses} использований</item>
+     </plurals>
+     <plurals name="viewing_as_roles_numRoles">
+-        <item quantity="one">1 роли</item>
+         <item quantity="other">{numRoles} ролей</item>
++        <item quantity="one">1 роли</item>
+     </plurals>
+     <plurals name="voice_call_member_list_title_count">
++        <item quantity="other">{#} человек</item>
+         <item quantity="one">{#} человек</item>
+         <item quantity="few">{#} человека</item>
+-        <item quantity="other">{#} человек</item>
+     </plurals>
+ </resources>

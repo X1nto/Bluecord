@@ -1,0 +1,20 @@
+--- ./discord_94011/src/main/res/values-no/strings.xml	2021-12-24 01:10:10.970026200 +0400
++++ ./bluecord/src/main/res/values-no/strings.xml	2021-12-24 01:08:30.811262300 +0400
+@@ -5502,7 +5502,7 @@
+     <string name="notification_reply_failed">Kunne ikke svare på {recipient}</string>
+     <string name="notification_reply_success">Svarte på {recipient}</string>
+     <string name="notification_settings">Varslingsinnstillinger</string>
+-    <string name="notification_title_discord">Discord</string>
++    <string name="notification_title_discord">Bluecord</string>
+     <string name="notification_title_start_game">Noen spiller</string>
+     <string name="notifications">Varsler</string>
+     <string name="notifications_muted">Varslinger er dempet</string>
+@@ -8117,7 +8117,7 @@
+     <string name="tip_voice_conversations_title3">Gjør deg selv hørt</string>
+     <string name="tip_whos_online_body3">Her ser du alle kanalens medlemmer. Se hvem som er pålogget og hva de driver med, som å spille eller høre på musikk.</string>
+     <string name="tip_whos_online_title3">Hva gjør alle sammen?</string>
+-    <string name="tip_writing_messages_body3">Nå som du har blitt med {serverName}, gi deg til kjenne og **si hei**! ��</string>
++    <string name="tip_writing_messages_body3" />
+     <string name="tip_writing_messages_title3">Ha en samtale</string>
+     <string name="title">Tittel</string>
+     <string name="title_bar_close_window">Lukk</string>

@@ -1,0 +1,16 @@
+--- ./discord_94011/src/main/java/com/discord/widgets/settings/premium/SettingsPremiumViewModel.java	2021-12-24 01:10:15.198026000 +0400
++++ ./bluecord/src/main/java/com/discord/widgets/settings/premium/SettingsPremiumViewModel.java	2021-12-24 01:08:35.692261100 +0400
+@@ -52,12 +52,8 @@ public final class SettingsPremiumViewMo
+         private Companion() {
+         }
+ 
+-        public static final /* synthetic */ Observable access$getSubscriptionsAndInvoicePreview(Companion companion, RestAPI restAPI, StoreSubscriptions.SubscriptionsState subscriptionsState, boolean z2) {
+-            return companion.getSubscriptionsAndInvoicePreview(restAPI, subscriptionsState, z2);
+-        }
+-
+         /* JADX DEBUG: Type inference failed for r8v1. Raw type applied. Possible types: rx.Observable<java.lang.Object>, java.lang.Object, rx.Observable<com.discord.widgets.settings.premium.SettingsPremiumViewModel$SubscriptionAndInvoice> */
+-        private final Observable<SubscriptionAndInvoice> getSubscriptionsAndInvoicePreview(RestAPI restAPI, StoreSubscriptions.SubscriptionsState subscriptionsState, boolean z2) {
++        public final Observable<SubscriptionAndInvoice> getSubscriptionsAndInvoicePreview(RestAPI restAPI, StoreSubscriptions.SubscriptionsState subscriptionsState, boolean z2) {
+             T t;
+             String id2;
+             boolean z3;

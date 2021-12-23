@@ -1,0 +1,21 @@
+--- ./discord_94011/src/main/res/values-sq/plurals.xml	2021-12-24 01:10:11.047026700 +0400
++++ ./bluecord/src/main/res/values-sq/plurals.xml	2021-12-24 01:08:30.907262500 +0400
+@@ -1,15 +1,15 @@
+ <?xml version="1.0" encoding="utf-8"?>
+ <resources>
+     <plurals name="exo_controls_fastforward_by_amount_description">
+-        <item quantity="one">Shpejt përpara %d sekondë</item>
+         <item quantity="other">Shpejt përpara %d sekonda</item>
++        <item quantity="one">Shpejt përpara %d sekondë</item>
+     </plurals>
+     <plurals name="exo_controls_rewind_by_amount_description">
+-        <item quantity="one">Shko prapa %d sekondë</item>
+         <item quantity="other">Shko prapa %d sekonda</item>
++        <item quantity="one">Shko prapa %d sekondë</item>
+     </plurals>
+     <plurals name="mtrl_badge_content_description">
+-        <item quantity="one">%d njoftim i ri</item>
+         <item quantity="other">%d njoftime të reja</item>
++        <item quantity="one">%d njoftim i ri</item>
+     </plurals>
+ </resources>

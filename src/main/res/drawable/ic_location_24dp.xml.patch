@@ -1,0 +1,10 @@
+--- ./discord_94011/src/main/res/drawable/ic_location_24dp.xml	2021-12-24 01:10:01.540027700 +0400
++++ ./bluecord/src/main/res/drawable/ic_location_24dp.xml	2021-12-24 01:08:17.158264200 +0400
+@@ -1,5 +1,5 @@
+ <?xml version="1.0" encoding="utf-8"?>
+ <vector xmlns:android="http://schemas.android.com/apk/res/android" android:height="24dp" android:width="24dp" android:viewportWidth="24" android:viewportHeight="24">
+-    <path android:fillColor="#b9bbbe" android:pathData="M17 15.54V17.44C18.828 17.807 20 18.368 20 19C20 20.106 16.419 21 12 21C7.58103 21 4.00003 20.106 4.00003 19C4.00003 18.368 5.17303 17.807 7.00003 17.44V15.54C4.01403 16.231 2.00003 17.52 2.00003 19C2.00003 21.21 6.47703 23 12 23C17.523 23 22 21.21 22 19C22 17.52 19.986 16.231 17 15.54Z"/>
+-    <path android:fillColor="#b9bbbe" android:pathData="M18 9C18 5.687 15.314 3 12 3C8.686 3 6 5.687 6 9C6 13 12 20 12 20C12 20 18 13 18 9ZM10 9C10 7.896 10.896 7 12 7C13.104 7 14 7.896 14 9C14 10.104 13.104 11 12 11C10.896 11 10 10.104 10 9Z"/>
++    <path android:fillColor="#ffb9bbbe" android:pathData="M17 15.54V17.44C18.828 17.807 20 18.368 20 19C20 20.106 16.419 21 12 21C7.58103 21 4.00003 20.106 4.00003 19C4.00003 18.368 5.17303 17.807 7.00003 17.44V15.54C4.01403 16.231 2.00003 17.52 2.00003 19C2.00003 21.21 6.47703 23 12 23C17.523 23 22 21.21 22 19C22 17.52 19.986 16.231 17 15.54Z"/>
++    <path android:fillColor="#ffb9bbbe" android:pathData="M18 9C18 5.687 15.314 3 12 3C8.686 3 6 5.687 6 9C6 13 12 20 12 20C12 20 18 13 18 9ZM10 9C10 7.896 10.896 7 12 7C13.104 7 14 7.896 14 9C14 10.104 13.104 11 12 11C10.896 11 10 10.104 10 9Z"/>
+ </vector>

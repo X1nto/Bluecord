@@ -1,0 +1,20 @@
+--- ./discord_94011/src/main/java/s/a/a/m.java	2021-12-24 01:10:16.718024300 +0400
++++ ./bluecord/src/main/java/s/a/a/m.java	2021-12-24 01:08:37.102263700 +0400
+@@ -11,7 +11,7 @@ public final class m<E> {
+     public static final AtomicLongFieldUpdater b = AtomicLongFieldUpdater.newUpdater(m.class, "_state");
+ 
+     /* renamed from: c  reason: collision with root package name */
+-    public static final t f2968c = new t("REMOVE_FROZEN");
++    public static final t f2970c = new t("REMOVE_FROZEN");
+     public static final a d = new a(null);
+     public volatile Object _next = null;
+     public volatile long _state = 0;
+@@ -157,7 +157,7 @@ public final class m<E> {
+         while (true) {
+             long j = this._state;
+             if ((j & 1152921504606846976L) != 0) {
+-                return f2968c;
++                return f2970c;
+             }
+             int i = (int) ((j & 1073741823) >> 0);
+             int i2 = this.e;

@@ -1,0 +1,16 @@
+--- ./discord_94011/src/main/java/com/discord/stores/StoreChat$toggleBlockedMessageGroup$1.java	2021-12-24 01:10:12.761023800 +0400
++++ ./bluecord/src/main/java/com/discord/stores/StoreChat$toggleBlockedMessageGroup$1.java	2021-12-24 01:08:33.257262800 +0400
+@@ -20,10 +20,10 @@ public final class StoreChat$toggleBlock
+ 
+     @Override // kotlin.jvm.functions.Function0
+     public final void invoke() {
+-        if (this.this$0.expandedBlockedMessageGroups.contains(Long.valueOf(this.$messageId))) {
+-            this.this$0.expandedBlockedMessageGroups.remove(Long.valueOf(this.$messageId));
++        if (StoreChat.access$getExpandedBlockedMessageGroups$p(this.this$0).contains(Long.valueOf(this.$messageId))) {
++            StoreChat.access$getExpandedBlockedMessageGroups$p(this.this$0).remove(Long.valueOf(this.$messageId));
+         } else {
+-            this.this$0.expandedBlockedMessageGroups.add(Long.valueOf(this.$messageId));
++            StoreChat.access$getExpandedBlockedMessageGroups$p(this.this$0).add(Long.valueOf(this.$messageId));
+         }
+         this.this$0.markChanged();
+     }

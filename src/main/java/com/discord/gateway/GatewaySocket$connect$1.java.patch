@@ -1,0 +1,13 @@
+--- ./discord_94011/src/main/java/com/discord/gateway/GatewaySocket$connect$1.java	2021-12-24 01:10:12.577025000 +0400
++++ ./bluecord/src/main/java/com/discord/gateway/GatewaySocket$connect$1.java	2021-12-24 01:08:33.074262500 +0400
+@@ -18,8 +18,8 @@ public final class GatewaySocket$connect
+ 
+     @Override // kotlin.jvm.functions.Function0
+     public final void invoke() {
+-        if (GatewaySocket.access$getConnectionState$p(this.this$0) == 0) {
+-            GatewaySocket.access$setConnectionState$p(this.this$0, 1);
++        if (this.this$0.connectionState == 0) {
++            this.this$0.connectionState = 1;
+             this.this$0.discover();
+         }
+     }

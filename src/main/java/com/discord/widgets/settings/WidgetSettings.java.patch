@@ -1,0 +1,39 @@
+--- ./discord_94011/src/main/java/com/discord/widgets/settings/WidgetSettings.java	2021-12-24 01:10:15.054024600 +0400
++++ ./bluecord/src/main/java/com/discord/widgets/settings/WidgetSettings.java	2021-12-24 01:08:35.513262200 +0400
+@@ -45,6 +45,9 @@ import kotlin.jvm.functions.Function0;
+ import kotlin.jvm.functions.Function1;
+ import kotlin.jvm.internal.DefaultConstructorMarker;
+ import kotlin.reflect.KProperty;
++import mods.ThemingTools;
++import mods.activity.BlueSettingsActivity;
++import mods.utils.DebugUtils;
+ import rx.Observable;
+ import rx.functions.Func4;
+ 
+@@ -218,7 +221,7 @@ public final class WidgetSettings extend
+     public final void configureUI(Model model) {
+         MeUser meUser = model.getMeUser();
+         UserUtils userUtils = UserUtils.INSTANCE;
+-        boolean z2 = userUtils.isStaff(meUser);
++        boolean z2 = DebugUtils.showDebugMenu(userUtils.isStaff(meUser));
+         boolean isVerified = meUser.isVerified();
+         boolean hasSubscription = userUtils.getHasSubscription(meUser);
+         WidgetSettingsBinding binding = getBinding();
+@@ -309,8 +312,7 @@ public final class WidgetSettings extend
+         binding.J.setOnBannerPress(new WidgetSettings$onViewBound$$inlined$with$lambda$2(this));
+         TextView textView = binding.f;
+         m.checkNotNullExpressionValue(textView, "appInfoHeader");
+-        String string = getString(2131886374);
+-        textView.setText(string + " - 94.11 - Stable (94011)");
++        textView.setText(ThemingTools.getCredits());
+         binding.A.setOnClickListener(new WidgetSettings$onViewBound$$inlined$with$lambda$3(this));
+         binding.u.setOnClickListener(WidgetSettings$onViewBound$1$5.INSTANCE);
+         binding.q.setOnClickListener(WidgetSettings$onViewBound$1$6.INSTANCE);
+@@ -338,6 +340,7 @@ public final class WidgetSettings extend
+             m.checkNotNullExpressionValue(textView2, "header");
+             accessibilityUtils.setViewIsHeading(textView2);
+         }
++        BlueSettingsActivity.init(this);
+     }
+ 
+     @Override // com.discord.app.AppFragment

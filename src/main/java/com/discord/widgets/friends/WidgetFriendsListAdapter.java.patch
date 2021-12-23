@@ -1,0 +1,21 @@
+--- ./discord_94011/src/main/java/com/discord/widgets/friends/WidgetFriendsListAdapter.java	2021-12-24 01:10:14.308025700 +0400
++++ ./bluecord/src/main/java/com/discord/widgets/friends/WidgetFriendsListAdapter.java	2021-12-24 01:08:34.896262200 +0400
+@@ -38,6 +38,7 @@ import kotlin.Unit;
+ import kotlin.jvm.functions.Function0;
+ import kotlin.jvm.functions.Function1;
+ import kotlin.jvm.functions.Function2;
++import mods.anti.AntiButtons;
+ 
+ public final class WidgetFriendsListAdapter extends MGRecyclerAdapterSimple<FriendsListViewModel.Item> {
+     private Function1<? super User, Unit> onClickAcceptFriend = WidgetFriendsListAdapter$onClickAcceptFriend$1.INSTANCE;
+@@ -426,7 +427,9 @@ public final class WidgetFriendsListAdap
+             SimpleDraweeView simpleDraweeView = this.binding.f1836c;
+             m.checkNotNullExpressionValue(simpleDraweeView, "binding.friendsListItemAvatar");
+             IconUtils.setIcon$default(simpleDraweeView, friend.getUser(), 2131165299, null, null, null, 56, null);
+-            this.binding.d.setOnClickListener(new WidgetFriendsListAdapter$ItemUser$onConfigure$2(this, friend));
++            AppCompatImageView appCompatImageView = this.binding.d;
++            appCompatImageView.setOnClickListener(new WidgetFriendsListAdapter$ItemUser$onConfigure$2(this, friend));
++            AntiButtons.hideCallButton(appCompatImageView);
+             this.binding.e.setOnClickListener(new WidgetFriendsListAdapter$ItemUser$onConfigure$3(this, friend));
+         }
+     }

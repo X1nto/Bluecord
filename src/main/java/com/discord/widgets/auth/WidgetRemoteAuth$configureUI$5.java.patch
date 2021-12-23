@@ -1,0 +1,10 @@
+--- ./discord_94011/src/main/java/com/discord/widgets/auth/WidgetRemoteAuth$configureUI$5.java	2021-12-24 01:10:13.679023700 +0400
++++ ./bluecord/src/main/java/com/discord/widgets/auth/WidgetRemoteAuth$configureUI$5.java	2021-12-24 01:08:34.062261000 +0400
+@@ -13,6 +13,6 @@ public final class WidgetRemoteAuth$conf
+     }
+ 
+     public final void onCheckedChanged(CompoundButton compoundButton, boolean z2) {
+-        WidgetRemoteAuth.access$getViewModel$p(this.this$0).toggleTemporary(!z2);
++        this.this$0.getViewModel().toggleTemporary(!z2);
+     }
+ }

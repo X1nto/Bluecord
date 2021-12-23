@@ -1,0 +1,11 @@
+--- ./discord_94011/src/main/java/s/a/z1/c.java	2021-12-24 01:10:16.752025500 +0400
++++ ./bluecord/src/main/java/s/a/z1/c.java	2021-12-24 01:08:37.138264000 +0400
+@@ -100,7 +100,7 @@ public abstract class c<E> implements l<
+         if (e2 == b.b) {
+             return true;
+         }
+-        if (e2 == b.f2976c) {
++        if (e2 == b.f2978c) {
+             f<?> b2 = b();
+             if (b2 == null) {
+                 return false;

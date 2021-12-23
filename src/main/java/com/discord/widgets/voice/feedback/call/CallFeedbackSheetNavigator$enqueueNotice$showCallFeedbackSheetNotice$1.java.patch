@@ -1,0 +1,15 @@
+--- ./discord_94011/src/main/java/com/discord/widgets/voice/feedback/call/CallFeedbackSheetNavigator$enqueueNotice$showCallFeedbackSheetNotice$1.java	2021-12-24 01:10:15.633027000 +0400
++++ ./bluecord/src/main/java/com/discord/widgets/voice/feedback/call/CallFeedbackSheetNavigator$enqueueNotice$showCallFeedbackSheetNotice$1.java	2021-12-24 01:08:36.038262600 +0400
+@@ -41,10 +41,10 @@ public final class CallFeedbackSheetNavi
+     public final boolean invoke(FragmentActivity fragmentActivity) {
+         m.checkNotNullParameter(fragmentActivity, "fragmentActivity");
+         CallFeedbackSheetNavigator callFeedbackSheetNavigator = CallFeedbackSheetNavigator.INSTANCE;
+-        if (CallFeedbackSheetNavigator.access$getClock$p(callFeedbackSheetNavigator).currentTimeMillis() - this.$requestedShowTimestamp < 3000) {
++        if (CallFeedbackSheetNavigator.clock.currentTimeMillis() - this.$requestedShowTimestamp < 3000) {
+             FragmentManager supportFragmentManager = fragmentActivity.getSupportFragmentManager();
+             m.checkNotNullExpressionValue(supportFragmentManager, "fragmentActivity.supportFragmentManager");
+-            CallFeedbackSheetNavigator.access$show(callFeedbackSheetNavigator, supportFragmentManager, this.$channelId, this.$rtcConnectionId, this.$mediaSessionId, this.$callDurationMs);
++            callFeedbackSheetNavigator.show(supportFragmentManager, this.$channelId, this.$rtcConnectionId, this.$mediaSessionId, this.$callDurationMs);
+         }
+         StoreNotices.markSeen$default(this.$storeNotices, this.$noticeName, 0, 2, null);
+         return true;

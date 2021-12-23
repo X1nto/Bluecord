@@ -1,0 +1,1772 @@
+--- ./discord_94011/src/main/res/values-vi/plurals.xml	2021-12-24 01:10:11.146025300 +0400
++++ ./bluecord/src/main/res/values-vi/plurals.xml	2021-12-24 01:08:31.015261700 +0400
+@@ -1,1374 +1,1374 @@
+ <?xml version="1.0" encoding="utf-8"?>
+ <resources>
+     <plurals name="activity_feed_now_playing_header_two_known_extras">
+-        <item quantity="one">{extras} khác</item>
+         <item quantity="other">{extras} khác</item>
++        <item quantity="one">{extras} khác</item>
+     </plurals>
+     <plurals name="activity_feed_single_member_list_header_memberCount">
+-        <item quantity="one">{memberCount} Người</item>
+         <item quantity="other">{memberCount} Người</item>
++        <item quantity="one">{memberCount} Người</item>
+     </plurals>
+     <plurals name="activity_feed_user_played_days_ago_time">
+-        <item quantity="one">ngày</item>
+         <item quantity="other">ngày</item>
++        <item quantity="one">ngày</item>
+     </plurals>
+     <plurals name="activity_feed_user_played_hours_ago_time">
+-        <item quantity="one">giờ</item>
+         <item quantity="other">giờ</item>
++        <item quantity="one">giờ</item>
+     </plurals>
+     <plurals name="activity_feed_user_played_minutes_ago_time">
+-        <item quantity="one">phút</item>
+         <item quantity="other">phút</item>
++        <item quantity="one">phút</item>
+     </plurals>
+     <plurals name="activity_feed_user_played_seconds_ago_time">
+-        <item quantity="one">giây</item>
+         <item quantity="other">giây</item>
++        <item quantity="one">giây</item>
+     </plurals>
+     <plurals name="age_gate_confirm_header_age">
+-        <item quantity="one">1 tuổi</item>
+         <item quantity="other">{age} tuổi</item>
++        <item quantity="one">1 tuổi</item>
+     </plurals>
+     <plurals name="age_gate_underage_existing_body_deletion_with_days_days">
+-        <item quantity="one">1 ngày</item>
+         <item quantity="other">{days} ngày</item>
++        <item quantity="one">1 ngày</item>
+     </plurals>
+     <plurals name="announcement_edit_rate_limit_retryAfterMinutes">
+-        <item quantity="one">1 phút</item>
+         <item quantity="other">{retryAfterMinutes} phút</item>
++        <item quantity="one">1 phút</item>
+     </plurals>
+     <plurals name="application_progress_indicator_installing_hours_timeRemaining">
+-        <item quantity="one">{#} giờ</item>
+         <item quantity="other">{#} giờ</item>
++        <item quantity="one">{#} giờ</item>
+     </plurals>
+     <plurals name="application_progress_indicator_installing_minutes_timeRemaining">
+-        <item quantity="one">{#} phút</item>
+         <item quantity="other">{#} phút</item>
++        <item quantity="one">{#} phút</item>
+     </plurals>
+     <plurals name="application_progress_indicator_installing_seconds_timeRemaining">
+-        <item quantity="one">đang hoàn tất</item>
+         <item quantity="other">còn {#} giây</item>
++        <item quantity="one">đang hoàn tất</item>
+     </plurals>
+     <plurals name="application_progress_indicator_updating_hours_timeRemaining">
+-        <item quantity="one">{#} giờ</item>
+         <item quantity="other">{#} giờ</item>
++        <item quantity="one">{#} giờ</item>
+     </plurals>
+     <plurals name="application_progress_indicator_updating_minutes_timeRemaining">
+-        <item quantity="one">{#} phút</item>
+         <item quantity="other">{#} phút</item>
++        <item quantity="one">{#} phút</item>
+     </plurals>
+     <plurals name="application_progress_indicator_updating_seconds_timeRemaining">
+-        <item quantity="one">đang hoàn tất</item>
+         <item quantity="other">còn {#} giây</item>
++        <item quantity="one">đang hoàn tất</item>
+     </plurals>
+     <plurals name="application_store_gift_purchase_confirm_monthly_mobile_intervalCount">
+-        <item quantity="one">{#} tháng</item>
+         <item quantity="other">{#} tháng</item>
++        <item quantity="one">{#} tháng</item>
+     </plurals>
+     <plurals name="application_store_gift_purchase_confirm_subscription_monthly_intervalCount">
+-        <item quantity="one">{#} tháng</item>
+         <item quantity="other">{#} tháng</item>
++        <item quantity="one">{#} tháng</item>
+     </plurals>
+     <plurals name="application_store_gift_purchase_confirm_subscription_yearly_intervalCount">
+-        <item quantity="one">{#} năm</item>
+         <item quantity="other">{#} năm</item>
++        <item quantity="one">{#} năm</item>
+     </plurals>
+     <plurals name="application_store_gift_purchase_confirm_yearly_mobile_intervalCount">
+-        <item quantity="one">{#} năm</item>
+         <item quantity="other">{#} năm</item>
++        <item quantity="one">{#} năm</item>
+     </plurals>
+     <plurals name="application_store_recommendation_ever_played_other_count">
+-        <item quantity="one">1 người</item>
+         <item quantity="other">{count} người</item>
++        <item quantity="one">1 người</item>
+     </plurals>
+     <plurals name="application_store_recommendation_now_playing_other_count">
+-        <item quantity="one">1 người</item>
+         <item quantity="other">{count} người</item>
++        <item quantity="one">1 người</item>
+     </plurals>
+     <plurals name="application_store_recommendation_recently_played_other_count">
+-        <item quantity="one">1 người</item>
+         <item quantity="other">{count} người</item>
++        <item quantity="one">1 người</item>
+     </plurals>
+     <plurals name="attach_payment_source_optional_with_entitlements_warning_months">
+-        <item quantity="one">{#} tháng</item>
+         <item quantity="other">{#} tháng</item>
++        <item quantity="one">{#} tháng</item>
+     </plurals>
+     <plurals name="autocomplete_emoji_upsell_count">
+-        <item quantity="one">{#} emoji phù hợp hơn</item>
+         <item quantity="other">{#} emoji phù hợp hơn</item>
++        <item quantity="one">{#} emoji phù hợp hơn</item>
+     </plurals>
+     <plurals name="bans_header_bans">
+-        <item quantity="one">1 bị chặn</item>
+         <item quantity="other">{bans} bị chặn</item>
++        <item quantity="one">1 bị chặn</item>
+     </plurals>
+     <plurals name="billing_plan_select_description_premium_tier_1_premium_guild_bundle_num">
+-        <item quantity="one">{#} Nâng cấp</item>
+         <item quantity="other">{#} Nâng cấp</item>
++        <item quantity="one">{#} Nâng cấp</item>
+     </plurals>
+     <plurals name="billing_plan_select_description_premium_tier_2_premium_guild_bundle_num">
+-        <item quantity="one">{#} Nâng Cấp</item>
+         <item quantity="other">{#} Nâng Cấp</item>
++        <item quantity="one">{#} Nâng Cấp</item>
+     </plurals>
+     <plurals name="billing_plan_select_includes_boosts_num">
+-        <item quantity="one">{#} Nâng Cấp</item>
+         <item quantity="other">{#} Nâng Cấp</item>
++        <item quantity="one">{#} Nâng Cấp</item>
+     </plurals>
+     <plurals name="billing_price_per_year_months_free_numFreeMonths">
+-        <item quantity="one">{#} tháng</item>
+         <item quantity="other">{#} tháng</item>
++        <item quantity="one">{#} tháng</item>
+     </plurals>
+     <plurals name="billing_refund_purchase_date_daysSincePurchase">
+-        <item quantity="one">{daysSincePurchase} ngày trước</item>
+         <item quantity="other">{daysSincePurchase} nhiều ngày trước</item>
++        <item quantity="one">{daysSincePurchase} ngày trước</item>
+     </plurals>
+     <plurals name="billing_switch_plan_confirm_upgrade_tier_2_year_numFreeGuildSubscriptions">
+-        <item quantity="one">{#} Nâng Cấp Máy Chủ</item>
+         <item quantity="other">{#} Nâng Cấp Máy Chủ</item>
++        <item quantity="one">{#} Nâng Cấp Máy Chủ</item>
+     </plurals>
+     <plurals name="billing_switch_plan_tier_2_description_numFreeGuildSubscriptions">
+-        <item quantity="one">{#} Nâng Cấp Máy Chủ</item>
+         <item quantity="other">{#} Nâng Cấp Máy Chủ</item>
++        <item quantity="one">{#} Nâng Cấp Máy Chủ</item>
+     </plurals>
+     <plurals name="billing_switch_plan_upgrade_body_tier_2_year_numFreeGuildSubscriptions">
+-        <item quantity="one">{#} Nâng Cấp Máy Chủ</item>
+         <item quantity="other">{#} Nâng Cấp Máy Chủ</item>
++        <item quantity="one">{#} Nâng Cấp Máy Chủ</item>
+     </plurals>
+     <plurals name="blocked_message_count_count">
+-        <item quantity="one">{count} tin nhắn bị chặn</item>
+         <item quantity="other">{count} tin nhắn bị chặn</item>
++        <item quantity="one">{count} tin nhắn bị chặn</item>
+     </plurals>
+     <plurals name="blocked_messages_count">
+-        <item quantity="one">1 Tin Nhắn Bị Chặn</item>
+         <item quantity="other">{count} Tin Nhắn Bị Chặn</item>
++        <item quantity="one">1 Tin Nhắn Bị Chặn</item>
+     </plurals>
+     <plurals name="blocked_messages_hide_count">
+-        <item quantity="one">Thu gọn tin nhắn</item>
+         <item quantity="other">Thu gọn tin nhắn</item>
++        <item quantity="one">Thu gọn tin nhắn</item>
+     </plurals>
+     <plurals name="blocked_messages_show_count">
+-        <item quantity="one">Hiện tin nhắn</item>
+         <item quantity="other">Hiện tin nhắn</item>
++        <item quantity="one">Hiện tin nhắn</item>
+     </plurals>
+     <plurals name="camera_disabled_limit_reached_limit">
+-        <item quantity="one">{#} người dùng</item>
+         <item quantity="other">{#} người dùng</item>
++        <item quantity="one">{#} người dùng</item>
+     </plurals>
+     <plurals name="camera_preview_video_background_upload_max_tooltip_maxCustomBackgrounds">
+-        <item quantity="one">{#} nền</item>
+         <item quantity="other">{#} nền</item>
++        <item quantity="one">{#} nền</item>
+     </plurals>
+     <plurals name="channel_members_a11y_label_count">
+-        <item quantity="one">{#} thành viên</item>
+         <item quantity="other">{#} thành viên</item>
++        <item quantity="one">{#} thành viên</item>
+     </plurals>
+     <plurals name="channel_mention_badge_a11y_label_mentionCount">
+-        <item quantity="one">{#} đề cập</item>
+         <item quantity="other">{#} đề cập</item>
++        <item quantity="one">{#} đề cập</item>
+     </plurals>
+     <plurals name="channel_slowmode_cooldown_seconds">
+-        <item quantity="one">1 giây</item>
+         <item quantity="other">{seconds} giây</item>
++        <item quantity="one">1 giây</item>
+     </plurals>
+     <plurals name="channel_slowmode_desc_hours_hours">
+-        <item quantity="one">1 giờ</item>
+         <item quantity="other">{hours} giờ</item>
++        <item quantity="one">1 giờ</item>
+     </plurals>
+     <plurals name="channel_slowmode_desc_hours_minutes">
+-        <item quantity="one">1 phút</item>
+         <item quantity="other">{minutes} phút</item>
++        <item quantity="one">1 phút</item>
+     </plurals>
+     <plurals name="channel_slowmode_desc_hours_seconds">
+-        <item quantity="one">1 giây</item>
+         <item quantity="other">{seconds} giây</item>
++        <item quantity="one">1 giây</item>
+     </plurals>
+     <plurals name="channel_slowmode_desc_minutes_minutes">
+-        <item quantity="one">1 phút</item>
+         <item quantity="other">{minutes} phút</item>
++        <item quantity="one">1 phút</item>
+     </plurals>
+     <plurals name="channel_slowmode_desc_minutes_seconds">
+-        <item quantity="one">1 giây</item>
+         <item quantity="other">{seconds} giây</item>
++        <item quantity="one">1 giây</item>
+     </plurals>
+     <plurals name="channel_slowmode_desc_seconds">
+-        <item quantity="one">1 giây</item>
+         <item quantity="other">{seconds} giây</item>
++        <item quantity="one">1 giây</item>
+     </plurals>
+     <plurals name="create_stage_instance_speakers_label_speakerCount">
+-        <item quantity="one">1 Người Nói</item>
+         <item quantity="other">{speakerCount} Người Nói</item>
++        <item quantity="one">1 Người Nói</item>
+     </plurals>
+     <plurals name="custom_status_clear_in_hours_hours">
+-        <item quantity="one">{#} giờ</item>
+         <item quantity="other">{#} giờ</item>
++        <item quantity="one">{#} giờ</item>
+     </plurals>
+     <plurals name="custom_status_clear_in_minutes_minutes">
+-        <item quantity="one">{#} phút</item>
+         <item quantity="other">{#} phút</item>
++        <item quantity="one">{#} phút</item>
+     </plurals>
+     <plurals name="custom_status_hours_hours">
+-        <item quantity="one">{#} giờ</item>
+         <item quantity="other">{#} giờ</item>
++        <item quantity="one">{#} giờ</item>
+     </plurals>
+     <plurals name="custom_status_minutes_minutes">
+-        <item quantity="one">{#} phút</item>
+         <item quantity="other">{#} phút</item>
++        <item quantity="one">{#} phút</item>
+     </plurals>
+     <plurals name="directory_search_results_header_numResults">
+-        <item quantity="one">**1** cộng đồng</item>
+         <item quantity="other">**{numResults}** cộng đồng</item>
++        <item quantity="one">**1** cộng đồng</item>
+     </plurals>
+     <plurals name="discovery_speaker_count_speakersCount">
+-        <item quantity="one">+{count} Người Nói</item>
+         <item quantity="other">+{count} Người Nói</item>
++        <item quantity="one">+{count} Người Nói</item>
+     </plurals>
+     <plurals name="dm_tooltip_a11y_label_mentions">
+-        <item quantity="one">, {#} tin nhắn chưa đọc</item>
+         <item quantity="other">, {#} tin nhắn chưa đọc</item>
++        <item quantity="one">, {#} tin nhắn chưa đọc</item>
+     </plurals>
+     <plurals name="duration_days_days">
+-        <item quantity="one">1 ngày</item>
+         <item quantity="other">{days} ngày</item>
++        <item quantity="one">1 ngày</item>
+     </plurals>
+     <plurals name="duration_days_short_days">
+-        <item quantity="one">1 ngày</item>
+         <item quantity="other">{days}ngày</item>
++        <item quantity="one">1 ngày</item>
+     </plurals>
+     <plurals name="duration_hours_hours">
+-        <item quantity="one">1 giờ</item>
+         <item quantity="other">{hours} giờ</item>
++        <item quantity="one">1 giờ</item>
+     </plurals>
+     <plurals name="duration_hours_short_hours">
+-        <item quantity="one">1 giờ</item>
+         <item quantity="other">{hours} giờ</item>
++        <item quantity="one">1 giờ</item>
+     </plurals>
+     <plurals name="duration_mins_mins">
+-        <item quantity="one">1 phút</item>
+         <item quantity="other">{mins} phút</item>
++        <item quantity="one">1 phút</item>
+     </plurals>
+     <plurals name="duration_minutes_minutes">
+-        <item quantity="one">1 phút</item>
+         <item quantity="other">{minutes} phút</item>
++        <item quantity="one">1 phút</item>
+     </plurals>
+     <plurals name="duration_minutes_short_minutes">
+-        <item quantity="one">1 phút</item>
+         <item quantity="other">{minutes} phút</item>
++        <item quantity="one">1 phút</item>
+     </plurals>
+     <plurals name="duration_seconds_seconds">
+-        <item quantity="one">1 giây</item>
+         <item quantity="other">{seconds} giây</item>
++        <item quantity="one">1 giây</item>
+     </plurals>
+     <plurals name="duration_seconds_short_seconds">
+-        <item quantity="one">1 giây</item>
+         <item quantity="other">{seconds} giây</item>
++        <item quantity="one">1 giây</item>
+     </plurals>
+     <plurals name="embedded_activities_are_participating_count">
+-        <item quantity="one">{#} người khác</item>
+         <item quantity="other">{#} người khác</item>
++        <item quantity="one">{#} người khác</item>
+     </plurals>
+     <plurals name="embedded_activities_are_playing_count">
+-        <item quantity="one">{#} người khác</item>
+         <item quantity="other">{#} người khác</item>
++        <item quantity="one">{#} người khác</item>
+     </plurals>
+     <plurals name="embedded_activities_are_watching_count">
+-        <item quantity="one">{#} người khác</item>
+         <item quantity="other">{#} người khác</item>
++        <item quantity="one">{#} người khác</item>
+     </plurals>
+     <plurals name="emoji_slots_available_count">
+-        <item quantity="one">{count} chỗ trống</item>
+         <item quantity="other">{count} chỗ trống</item>
++        <item quantity="one">{count} chỗ trống</item>
+     </plurals>
+     <plurals name="emojis_title_count">
+-        <item quantity="one">{count} emoji</item>
+         <item quantity="other">{count} emoji</item>
++        <item quantity="one">{count} emoji</item>
+     </plurals>
+     <plurals name="exo_controls_fastforward_by_amount_description">
+-        <item quantity="one">Tua nhanh %d giây</item>
+         <item quantity="other">Tua nhanh %d giây</item>
++        <item quantity="one">Tua nhanh %d giây</item>
+     </plurals>
+     <plurals name="exo_controls_rewind_by_amount_description">
+-        <item quantity="one">Tua lại %d giây</item>
+         <item quantity="other">Tua lại %d giây</item>
++        <item quantity="one">Tua lại %d giây</item>
+     </plurals>
+     <plurals name="form_help_last_seen_days">
+-        <item quantity="one">1 ngày</item>
+         <item quantity="other">{days} ngày</item>
++        <item quantity="one">1 ngày</item>
+     </plurals>
+     <plurals name="form_help_last_seen_members">
+-        <item quantity="one">1 thành viên</item>
+         <item quantity="other">{members} thành viên</item>
++        <item quantity="one">1 thành viên</item>
+     </plurals>
+     <plurals name="form_help_last_seen_with_roles_days">
+-        <item quantity="one">1 ngày</item>
+         <item quantity="other">{days} ngày</item>
++        <item quantity="one">1 ngày</item>
+     </plurals>
+     <plurals name="form_help_last_seen_with_roles_members">
+-        <item quantity="one">1 thành viên</item>
+         <item quantity="other">{members} thành viên</item>
++        <item quantity="one">1 thành viên</item>
+     </plurals>
+     <plurals name="game_feed_unknown_players_count">
+-        <item quantity="one">{#} Người Chơi Không Xác Định</item>
+         <item quantity="other">{#} Người Chơi Không Xác Định</item>
++        <item quantity="one">{#} Người Chơi Không Xác Định</item>
+     </plurals>
+     <plurals name="game_feed_user_played_days_ago_time">
+-        <item quantity="one">ngày</item>
+         <item quantity="other">ngày</item>
++        <item quantity="one">ngày</item>
+     </plurals>
+     <plurals name="game_feed_user_played_hours_ago_time">
+-        <item quantity="one">giờ</item>
+         <item quantity="other">giờ</item>
++        <item quantity="one">giờ</item>
+     </plurals>
+     <plurals name="game_feed_user_played_minutes_ago_time">
+-        <item quantity="one">phút</item>
+         <item quantity="other">phút</item>
++        <item quantity="one">phút</item>
+     </plurals>
+     <plurals name="game_feed_user_played_months_ago_time">
+-        <item quantity="one">tháng</item>
+         <item quantity="other">tháng</item>
++        <item quantity="one">tháng</item>
+     </plurals>
+     <plurals name="game_feed_user_played_weeks_ago_time">
+-        <item quantity="one">tuần</item>
+         <item quantity="other">tuần</item>
++        <item quantity="one">tuần</item>
+     </plurals>
+     <plurals name="game_feed_user_played_years_ago_time">
+-        <item quantity="one">năm</item>
+         <item quantity="other">năm</item>
++        <item quantity="one">năm</item>
+     </plurals>
+     <plurals name="game_feed_user_playing_for_days_time">
+-        <item quantity="one">ngày</item>
+         <item quantity="other">ngày</item>
++        <item quantity="one">ngày</item>
+     </plurals>
+     <plurals name="game_feed_user_playing_for_hours_time">
+-        <item quantity="one">giờ</item>
+         <item quantity="other">giờ</item>
++        <item quantity="one">giờ</item>
+     </plurals>
+     <plurals name="game_feed_user_playing_for_minutes_time">
+-        <item quantity="one">phút</item>
+         <item quantity="other">phút</item>
++        <item quantity="one">phút</item>
+     </plurals>
+     <plurals name="game_library_last_played_days_time">
+-        <item quantity="one">hôm qua</item>
+         <item quantity="other">{#} ngày trước đó</item>
++        <item quantity="one">hôm qua</item>
+     </plurals>
+     <plurals name="game_library_last_played_hours_time">
+-        <item quantity="one">{#} giờ</item>
+         <item quantity="other">{#} giờ</item>
++        <item quantity="one">{#} giờ</item>
+     </plurals>
+     <plurals name="game_library_last_played_minutes_time">
+-        <item quantity="one">{#} phút</item>
+         <item quantity="other">{#} phút</item>
++        <item quantity="one">{#} phút</item>
+     </plurals>
+     <plurals name="game_library_last_played_months_time">
+-        <item quantity="one">tháng trước</item>
+         <item quantity="other">{#} tháng trước đó</item>
++        <item quantity="one">tháng trước</item>
+     </plurals>
+     <plurals name="game_library_last_played_weeks_time">
+-        <item quantity="one">tuần trước</item>
+         <item quantity="other">{#} tuần trước đó</item>
++        <item quantity="one">tuần trước</item>
+     </plurals>
+     <plurals name="game_library_last_played_years_time">
+-        <item quantity="one">năm trước</item>
+         <item quantity="other">{#} năm trước đó</item>
++        <item quantity="one">năm trước</item>
+     </plurals>
+     <plurals name="game_library_time_played_hours_time">
+-        <item quantity="one">giờ</item>
+         <item quantity="other">giờ</item>
++        <item quantity="one">giờ</item>
+     </plurals>
+     <plurals name="game_library_time_played_minutes_time">
+-        <item quantity="one">phút</item>
+         <item quantity="other">phút</item>
++        <item quantity="one">phút</item>
+     </plurals>
+     <plurals name="game_library_time_played_seconds_time">
+-        <item quantity="one">giây</item>
+         <item quantity="other">giây</item>
++        <item quantity="one">giây</item>
+     </plurals>
+     <plurals name="game_library_updates_installing_hours_timeRemaining">
+-        <item quantity="one">1 giờ</item>
+         <item quantity="other">{#} giờ</item>
++        <item quantity="one">1 giờ</item>
+     </plurals>
+     <plurals name="game_library_updates_installing_minutes_timeRemaining">
+-        <item quantity="one">1 phút</item>
+         <item quantity="other">{#} phút</item>
++        <item quantity="one">1 phút</item>
+     </plurals>
+     <plurals name="game_library_updates_installing_seconds_timeRemaining">
+-        <item quantity="one">đang gộp lại</item>
+         <item quantity="other">{#} giây còn lại</item>
++        <item quantity="one">đang gộp lại</item>
+     </plurals>
+     <plurals name="game_library_updates_updating_updating_hours_timeRemaining">
+-        <item quantity="one">1 giờ</item>
+         <item quantity="other">{#} giờ</item>
++        <item quantity="one">1 giờ</item>
+     </plurals>
+     <plurals name="game_library_updates_updating_updating_minutes_timeRemaining">
+-        <item quantity="one">1 phút</item>
+         <item quantity="other">{#} phút</item>
++        <item quantity="one">1 phút</item>
+     </plurals>
+     <plurals name="game_library_updates_updating_updating_seconds_timeRemaining">
+-        <item quantity="one">đang gộp lại</item>
+         <item quantity="other">{#} giây còn lại</item>
++        <item quantity="one">đang gộp lại</item>
+     </plurals>
+     <plurals name="gift_code_auth_gifted_subscription_monthly_intervalCount">
+-        <item quantity="one">{#} tháng</item>
+         <item quantity="other">{#} tháng</item>
++        <item quantity="one">{#} tháng</item>
+     </plurals>
+     <plurals name="gift_code_auth_gifted_subscription_yearly_intervalCount">
+-        <item quantity="one">{#} năm</item>
+         <item quantity="other">{#} năm</item>
++        <item quantity="one">{#} năm</item>
+     </plurals>
+     <plurals name="gift_confirmation_body_subscription_monthly_confirm_intervalCount">
+-        <item quantity="one">{#} tháng</item>
+         <item quantity="other">{#} tháng</item>
++        <item quantity="one">{#} tháng</item>
+     </plurals>
+     <plurals name="gift_confirmation_body_subscription_yearly_confirm_intervalCount">
+-        <item quantity="one">{#} năm</item>
+         <item quantity="other">{#} năm</item>
++        <item quantity="one">{#} năm</item>
+     </plurals>
+     <plurals name="gift_confirmation_body_success_generic_subscription_monthly_intervalCount">
+-        <item quantity="one">{#} tháng</item>
+         <item quantity="other">{#} tháng</item>
++        <item quantity="one">{#} tháng</item>
+     </plurals>
+     <plurals name="gift_confirmation_body_success_generic_subscription_yearly_intervalCount">
+-        <item quantity="one">{#} năm</item>
+         <item quantity="other">{#} năm</item>
++        <item quantity="one">{#} năm</item>
+     </plurals>
+     <plurals name="gift_confirmation_body_success_premium_tier_1_monthly_intervalCount">
+-        <item quantity="one">{#} tháng</item>
+         <item quantity="other">{#} tháng</item>
++        <item quantity="one">{#} tháng</item>
+     </plurals>
+     <plurals name="gift_confirmation_body_success_premium_tier_1_yearly_intervalCount">
+-        <item quantity="one">{#} năm</item>
+         <item quantity="other">{#} năm</item>
++        <item quantity="one">{#} năm</item>
+     </plurals>
+     <plurals name="gift_confirmation_body_success_premium_tier_2_monthly_intervalCount">
+-        <item quantity="one">{#} tháng</item>
+         <item quantity="other">{#} tháng</item>
++        <item quantity="one">{#} tháng</item>
+     </plurals>
+     <plurals name="gift_confirmation_body_success_premium_tier_2_yearly_intervalCount">
+-        <item quantity="one">{#} năm</item>
+         <item quantity="other">{#} năm</item>
++        <item quantity="one">{#} năm</item>
+     </plurals>
+     <plurals name="gift_confirmation_nitro_time_frame_months_time">
+-        <item quantity="one">{#} tháng</item>
+         <item quantity="other">{#} tháng</item>
++        <item quantity="one">{#} tháng</item>
+     </plurals>
+     <plurals name="gift_confirmation_nitro_time_frame_years_time">
+-        <item quantity="one">{#} năm</item>
+         <item quantity="other">{#} năm</item>
++        <item quantity="one">{#} năm</item>
+     </plurals>
+     <plurals name="gift_embed_body_subscription_default_months_intervalCount">
+-        <item quantity="one">{#} tháng</item>
+         <item quantity="other">{#} tháng</item>
++        <item quantity="one">{#} tháng</item>
+     </plurals>
+     <plurals name="gift_embed_body_subscription_default_years_intervalCount">
+-        <item quantity="one">{#} năm</item>
+         <item quantity="other">{#} năm</item>
++        <item quantity="one">{#} năm</item>
+     </plurals>
+     <plurals name="gift_embed_body_subscription_no_user_default_months_intervalCount">
+-        <item quantity="one">{#} tháng</item>
+         <item quantity="other">{#} tháng</item>
++        <item quantity="one">{#} tháng</item>
+     </plurals>
+     <plurals name="gift_embed_body_subscription_no_user_default_years_intervalCount">
+-        <item quantity="one">{#} năm</item>
+         <item quantity="other">{#} năm</item>
++        <item quantity="one">{#} năm</item>
+     </plurals>
+     <plurals name="gift_embed_expiration_hours">
+-        <item quantity="one">{#} giờ</item>
+         <item quantity="other">{#} giờ</item>
++        <item quantity="one">{#} giờ</item>
+     </plurals>
+     <plurals name="gift_inventory_copies_copies">
+-        <item quantity="one">{#} bản</item>
+         <item quantity="other">{#} bản</item>
++        <item quantity="one">{#} bản</item>
+     </plurals>
+     <plurals name="gift_inventory_expires_in_hours">
+-        <item quantity="one">{#} giờ</item>
+         <item quantity="other">{#} giờ</item>
++        <item quantity="one">{#} giờ</item>
+     </plurals>
+     <plurals name="gift_inventory_expires_in_mobile_hours">
+-        <item quantity="one">{#} giờ</item>
+         <item quantity="other">{#} giờ</item>
++        <item quantity="one">{#} giờ</item>
+     </plurals>
+     <plurals name="gift_inventory_subscription_months_intervalCount">
+-        <item quantity="one">{#} tháng</item>
+         <item quantity="other">{#} tháng</item>
++        <item quantity="one">{#} tháng</item>
+     </plurals>
+     <plurals name="gift_inventory_subscription_years_intervalCount">
+-        <item quantity="one">{#} năm</item>
+         <item quantity="other">{#} năm</item>
++        <item quantity="one">{#} năm</item>
+     </plurals>
+     <plurals name="group_dm_invite_remaining_number">
+-        <item quantity="one">Bạn có thể thêm 1 người bạn nữa.</item>
+         <item quantity="other">Bạn có thể thêm {number} người bạn nữa.</item>
++        <item quantity="one">Bạn có thể thêm 1 người bạn nữa.</item>
+     </plurals>
+     <plurals name="group_dm_invite_unselect_users_number">
+-        <item quantity="one">Bạn phải bỏ chọn 1 người bạn.</item>
+         <item quantity="other">Bạn phải bỏ chọn {number} người bạn.</item>
++        <item quantity="one">Bạn phải bỏ chọn 1 người bạn.</item>
+     </plurals>
+     <plurals name="guild_discovery_header_search_results_count">
+-        <item quantity="one">1 kết quả</item>
+         <item quantity="other">{count} kết quả</item>
++        <item quantity="one">1 kết quả</item>
+     </plurals>
+     <plurals name="guild_discovery_search_results_category_header_count">
+-        <item quantity="one">1 **{category}** cộng đồng</item>
+         <item quantity="other">{count} **{category}** cộng đồng</item>
++        <item quantity="one">1 **{category}** cộng đồng</item>
+     </plurals>
+     <plurals name="guild_discovery_search_results_header_count">
+-        <item quantity="one">1 cộng đồng</item>
+         <item quantity="other">{count} cộng đồng</item>
++        <item quantity="one">1 cộng đồng</item>
+     </plurals>
+     <plurals name="guild_event_interested_count_count">
+-        <item quantity="one">{#} người đang</item>
+         <item quantity="other">{#} người đang</item>
++        <item quantity="one">{#} người đang</item>
+     </plurals>
+     <plurals name="guild_events_list_action_sheet_header_count">
+-        <item quantity="one">1 Sự Kiện</item>
+         <item quantity="other">{count} Sự Kiện</item>
++        <item quantity="one">1 Sự Kiện</item>
+     </plurals>
+     <plurals name="guild_events_plural_number">
+-        <item quantity="one">{#} Sự kiện</item>
+         <item quantity="other">{#} Sự kiện</item>
++        <item quantity="one">{#} Sự kiện</item>
+     </plurals>
+     <plurals name="guild_folder_tooltip_a11y_label_mentions">
+-        <item quantity="one">, {#} đề cập chưa đọc</item>
+         <item quantity="other">, {#} đề cập chưa đọc</item>
++        <item quantity="one">, {#} đề cập chưa đọc</item>
+     </plurals>
+     <plurals name="guild_folder_tooltip_a11y_label_with_expanded_state_mentions">
+-        <item quantity="one">, {#} đề cập chưa đọc</item>
+         <item quantity="other">, {#} đề cập chưa đọc</item>
++        <item quantity="one">, {#} đề cập chưa đọc</item>
+     </plurals>
+     <plurals name="guild_settings_audit_log_channel_default_auto_archive_duration_change_newValue">
+-        <item quantity="one">Đã thay đổi thời lượng lưu trữ mặc định thành **{#} phút**</item>
+         <item quantity="other">Đã thay đổi thời lượng lưu trữ mặc định thành **{#} phút**</item>
++        <item quantity="one">Đã thay đổi thời lượng lưu trữ mặc định thành **{#} phút**</item>
+     </plurals>
+     <plurals name="guild_settings_audit_log_channel_default_auto_archive_duration_create_newValue">
+-        <item quantity="one">Thiết lập thời lượng lưu trữ mặc định thành **{#} phút**</item>
+         <item quantity="other">Thiết lập thời lượng lưu trữ mặc định thành **{#} phút**</item>
++        <item quantity="one">Thiết lập thời lượng lưu trữ mặc định thành **{#} phút**</item>
+     </plurals>
+     <plurals name="guild_settings_audit_log_channel_permission_overrides_denied_count">
+-        <item quantity="one">quyền</item>
+         <item quantity="other">các quyền</item>
++        <item quantity="one">quyền</item>
+     </plurals>
+     <plurals name="guild_settings_audit_log_channel_permission_overrides_granted_count">
+-        <item quantity="one">quyền</item>
+         <item quantity="other">các quyền</item>
++        <item quantity="one">quyền</item>
+     </plurals>
+     <plurals name="guild_settings_audit_log_channel_permission_overrides_reset_count">
+-        <item quantity="one">quyền</item>
+         <item quantity="other">các quyền</item>
++        <item quantity="one">quyền</item>
+     </plurals>
+     <plurals name="guild_settings_audit_log_channel_rate_limit_per_user_change_newValue">
+-        <item quantity="one">Đặt chế độ chậm trong **{#} giây**</item>
+         <item quantity="other">Đặt chế độ chậm trong **{#} giây**</item>
++        <item quantity="one">Đặt chế độ chậm trong **{#} giây**</item>
+     </plurals>
+     <plurals name="guild_settings_audit_log_channel_rate_limit_per_user_create_newValue">
+-        <item quantity="one">Đặt chế độ chậm trong **{#} giây**</item>
+         <item quantity="other">Đặt chế độ chậm trong **{#} giây**</item>
++        <item quantity="one">Đặt chế độ chậm trong **{#} giây**</item>
+     </plurals>
+     <plurals name="guild_settings_audit_log_integration_expire_grace_period_newValue">
+-        <item quantity="one">một ngày</item>
+         <item quantity="other">{#} ngày</item>
++        <item quantity="one">một ngày</item>
+     </plurals>
+     <plurals name="guild_settings_audit_log_member_disconnect_count">
+-        <item quantity="one">**một người dùng**</item>
+         <item quantity="other">**!!{count}!! người dùng**</item>
++        <item quantity="one">**một người dùng**</item>
+     </plurals>
+     <plurals name="guild_settings_audit_log_member_move_count">
+-        <item quantity="one">**một người dùng**</item>
+         <item quantity="other">**!!{count}!! nhiều người dùng**</item>
++        <item quantity="one">**một người dùng**</item>
+     </plurals>
+     <plurals name="guild_settings_audit_log_member_prune_count">
+-        <item quantity="one">**một thành viên**</item>
+         <item quantity="other">**!!{count}!! các thành viên**</item>
++        <item quantity="one">**một thành viên**</item>
+     </plurals>
+     <plurals name="guild_settings_audit_log_member_prune_delete_days_newValue">
+-        <item quantity="one">một ngày</item>
+         <item quantity="other">{newValue} các ngày</item>
++        <item quantity="one">một ngày</item>
+     </plurals>
+     <plurals name="guild_settings_audit_log_member_roles_add_count">
+-        <item quantity="one">một vai trò</item>
+         <item quantity="other">vài vai trò</item>
++        <item quantity="one">một vai trò</item>
+     </plurals>
+     <plurals name="guild_settings_audit_log_member_roles_remove_count">
+-        <item quantity="one">một vai trò</item>
+         <item quantity="other">vài vai trò</item>
++        <item quantity="one">một vai trò</item>
+     </plurals>
+     <plurals name="guild_settings_audit_log_message_bulk_delete_count">
+-        <item quantity="one">**một tin nhắn**</item>
+         <item quantity="other">**!!{count}!! nhiều tin nhắn**</item>
++        <item quantity="one">**một tin nhắn**</item>
+     </plurals>
+     <plurals name="guild_settings_audit_log_message_delete_count">
+-        <item quantity="one">**một tin nhắn**</item>
+         <item quantity="other">**!!{count}!! tin nhắn**</item>
++        <item quantity="one">**một tin nhắn**</item>
+     </plurals>
+     <plurals name="guild_settings_audit_log_role_permissions_denied_count">
+-        <item quantity="one">quyền</item>
+         <item quantity="other">các quyền</item>
++        <item quantity="one">quyền</item>
+     </plurals>
+     <plurals name="guild_settings_audit_log_role_permissions_granted_count">
+-        <item quantity="one">quyền</item>
+         <item quantity="other">các quyền</item>
++        <item quantity="one">quyền</item>
+     </plurals>
+     <plurals name="guild_settings_audit_log_thread_auto_archive_duration_change_newValue">
+-        <item quantity="one">Đã thay đổi thời lượng lưu trữ tự động **{#} phút**</item>
+         <item quantity="other">Đã thay đổi thời lượng lưu trữ tự động thành **{#} phút**</item>
++        <item quantity="one">Đã thay đổi thời lượng lưu trữ tự động **{#} phút**</item>
+     </plurals>
+     <plurals name="guild_settings_audit_log_thread_auto_archive_duration_create_newValue">
+-        <item quantity="one">Đã đặt thời lượng lưu trữ tự động thành **{#} phút**</item>
+         <item quantity="other">Đã đặt thời lượng lưu trữ tự động thành **{#} phút**</item>
++        <item quantity="one">Đã đặt thời lượng lưu trữ tự động thành **{#} phút**</item>
+     </plurals>
+     <plurals name="guild_settings_discovery_checklist_age_description_failing_minimumGuildAge">
+-        <item quantity="one">1 tuần</item>
+         <item quantity="other">{minimumGuildAge} tuần</item>
++        <item quantity="one">1 tuần</item>
+     </plurals>
+     <plurals name="guild_settings_discovery_checklist_age_description_minimumGuildAge">
+-        <item quantity="one">1 tuần</item>
+         <item quantity="other">{minimumGuildAge} tuần</item>
++        <item quantity="one">1 tuần</item>
+     </plurals>
+     <plurals name="guild_settings_member_verification_review_pending_applications_count">
+-        <item quantity="one">Đơn Đăng Ký Đang Chờ Xử Lý</item>
+         <item quantity="other">{count} Đơn Đăng Ký Đang Chờ Xử Lý</item>
++        <item quantity="one">Đơn Đăng Ký Đang Chờ Xử Lý</item>
+     </plurals>
+     <plurals name="guild_settings_overview_boost_unlock_boosts">
+-        <item quantity="one">{#} tăng tốc</item>
+         <item quantity="other">{#} tăng tốc</item>
++        <item quantity="one">{#} tăng tốc</item>
+     </plurals>
+     <plurals name="guild_settings_partner_checklist_age_description_failing_minimumGuildAge">
+-        <item quantity="one">1 tuần</item>
+         <item quantity="other">{minimumGuildAge} tuần</item>
++        <item quantity="one">1 tuần</item>
+     </plurals>
+     <plurals name="guild_settings_partner_checklist_age_description_minimumGuildAge">
+-        <item quantity="one">1 tuần</item>
+         <item quantity="other">{minimumGuildAge} tuần</item>
++        <item quantity="one">1 tuần</item>
+     </plurals>
+     <plurals name="guild_settings_premium_guild_close_hint_numLeft">
+-        <item quantity="one">{#} tăng cường nữa</item>
+         <item quantity="other">{#} tăng cường nữa</item>
++        <item quantity="one">{#} tăng cường nữa</item>
+     </plurals>
+     <plurals name="guild_settings_premium_guild_count_subscribers_count">
+-        <item quantity="one">{#} người cực kì cool ngầu đã</item>
+         <item quantity="other">{#} người cực kì cool ngầu đã</item>
++        <item quantity="one">{#} người cực kì cool ngầu đã</item>
+     </plurals>
+     <plurals name="guild_settings_premium_guild_tier_requirement_required">
+-        <item quantity="one">{#} Tăng Cường</item>
+         <item quantity="other">{#} Tăng Cường</item>
++        <item quantity="one">{#} Tăng Cường</item>
+     </plurals>
+     <plurals name="guild_settings_premium_upsell_body_perk_no_free_guild_subscriptions_numFreeGuildSubscriptions">
+-        <item quantity="one">{#} Nâng Cấp</item>
+         <item quantity="other">{#} Nâng Cấp</item>
++        <item quantity="one">{#} Nâng Cấp</item>
+     </plurals>
+     <plurals name="guild_settings_premium_upsell_body_perk_num_guild_subscriptions_numFreeGuildSubscriptions">
+-        <item quantity="one">{#} Nâng Cấp</item>
+         <item quantity="other">{#} Nâng Cấp</item>
++        <item quantity="one">{#} Nâng Cấp</item>
+     </plurals>
+     <plurals name="guild_settings_premium_upsell_heading_tertiary_premium_user_numFreeGuildSubscriptions">
+-        <item quantity="one">{#} Nâng Cấp Máy Chủ</item>
+         <item quantity="other">{#} Nâng Cấp Máy Chủ</item>
++        <item quantity="one">{#} Nâng Cấp Máy Chủ</item>
+     </plurals>
+     <plurals name="guild_sidebar_announcement_channel_a11y_label_with_mentions_mentionCount">
+-        <item quantity="one">{#} đề cập</item>
+         <item quantity="other">{#} đề cập</item>
++        <item quantity="one">{#} đề cập</item>
+     </plurals>
+     <plurals name="guild_sidebar_default_channel_a11y_label_with_mentions_mentionCount">
+-        <item quantity="one">{#} đề cập</item>
+         <item quantity="other">{#} đề cập</item>
++        <item quantity="one">{#} đề cập</item>
+     </plurals>
+     <plurals name="guild_sidebar_stage_channel_a11y_label_with_users_userCount">
+-        <item quantity="one">1 người dùng</item>
+         <item quantity="other">{#} người dùng</item>
++        <item quantity="one">1 người dùng</item>
+     </plurals>
+     <plurals name="guild_sidebar_thread_a11y_label_with_mentions_mentionCount">
+-        <item quantity="one">{#} đề cập</item>
+         <item quantity="other">{#} đề cập</item>
++        <item quantity="one">{#} đề cập</item>
+     </plurals>
+     <plurals name="guild_sidebar_voice_channel_a11y_label_with_users_userCount">
+-        <item quantity="one">1 người dùng</item>
+         <item quantity="other">{#} người dùng</item>
++        <item quantity="one">1 người dùng</item>
+     </plurals>
+     <plurals name="guild_sticker_settings_additional_slots_numAdditional">
+-        <item quantity="one">{numAdditional} Ô Sticker</item>
+         <item quantity="other">{numAdditional} Ô Sticker</item>
++        <item quantity="one">{numAdditional} Ô Sticker</item>
+     </plurals>
+     <plurals name="guild_sticker_settings_additional_slots_without_total_numAdditional">
+-        <item quantity="one">{numAdditional} Ô Sticker</item>
+         <item quantity="other">{numAdditional} Ô Sticker</item>
++        <item quantity="one">{numAdditional} Ô Sticker</item>
+     </plurals>
+     <plurals name="guild_sticker_settings_remaining_slots_available_numTotal">
+-        <item quantity="one">{numTotal} ô</item>
+         <item quantity="other">{numTotal} ô</item>
++        <item quantity="one">{numTotal} ô</item>
+     </plurals>
+     <plurals name="guild_subscription_purchase_modal_activated_description_generic_guild_guildSubscriptionQuantity">
+-        <item quantity="one">{#} lần</item>
+         <item quantity="other">{#} lần</item>
++        <item quantity="one">{#} lần</item>
+     </plurals>
+     <plurals name="guild_subscription_purchase_modal_activated_description_guildSubscriptionQuantity">
+-        <item quantity="one">{#} lần</item>
+         <item quantity="other">{#} lần</item>
++        <item quantity="one">{#} lần</item>
+     </plurals>
+     <plurals name="guild_subscription_purchase_modal_activated_description_mobile2_guildSubscriptionQuantity">
+-        <item quantity="one">{#} lần</item>
+         <item quantity="other">{#} lần</item>
++        <item quantity="one">{#} lần</item>
+     </plurals>
+     <plurals name="guild_subscription_purchase_modal_activated_description_no_application_guildSubscriptionQuantity">
+-        <item quantity="one">{#} Nâng Cấp Máy Chủ</item>
+         <item quantity="other">{#} Nâng Cấp Máy Chủ</item>
++        <item quantity="one">{#} Nâng Cấp Máy Chủ</item>
+     </plurals>
+     <plurals name="guild_subscription_purchase_modal_transferred_description_mobile2_guildSubscriptionQuantity">
+-        <item quantity="one">{#} lần</item>
+         <item quantity="other">{#} lần</item>
++        <item quantity="one">{#} lần</item>
+     </plurals>
+     <plurals name="guild_subscription_purchase_modal_unused_slot_notice_slotCount">
+-        <item quantity="one">{#} Nâng Cấp chưa sử dụng</item>
+         <item quantity="other">{#} Nâng Cấp chưa sử dụng</item>
++        <item quantity="one">{#} Nâng Cấp chưa sử dụng</item>
+     </plurals>
+     <plurals name="guild_template_usages_by_creator2_usageCount">
+-        <item quantity="one">**1** người đã dùng mẫu này của $[**!!{creator}!!**](creatorHook)</item>
+         <item quantity="other">**{usageCount}** người đã dùng mẫu này của $[**!!{creator}!!**](creatorHook)</item>
++        <item quantity="one">**1** người đã dùng mẫu này của $[**!!{creator}!!**](creatorHook)</item>
+     </plurals>
+     <plurals name="guild_template_usages_no_bold_usageCount">
+-        <item quantity="one">1 người đã dùng mẫu này</item>
+         <item quantity="other">{usageCount} người đã dùng mẫu này</item>
++        <item quantity="one">1 người đã dùng mẫu này</item>
+     </plurals>
+     <plurals name="guild_template_usages_usageCount">
+-        <item quantity="one">**1** người đã dùng mẫu này</item>
+         <item quantity="other">**{usageCount}** người đã dùng mẫu này</item>
++        <item quantity="one">**1** người đã dùng mẫu này</item>
+     </plurals>
+     <plurals name="guild_tooltip_a11y_label_mentions">
+-        <item quantity="one">{#} đề cập,</item>
+         <item quantity="other">{#} đề cập,</item>
++        <item quantity="one">{#} đề cập,</item>
+     </plurals>
+     <plurals name="hub_email_connection_invite_header_count">
+-        <item quantity="one">{count} other bạn khác</item>
+         <item quantity="other">{count} other bạn khác</item>
++        <item quantity="one">{count} other bạn khác</item>
+     </plurals>
+     <plurals name="humanize_duration_days_time">
+-        <item quantity="one">1 ngày</item>
+         <item quantity="other">{#} ngày</item>
++        <item quantity="one">1 ngày</item>
+     </plurals>
+     <plurals name="humanize_duration_hours_time">
+-        <item quantity="one">1 giờ</item>
+         <item quantity="other">{#} giờ</item>
++        <item quantity="one">1 giờ</item>
+     </plurals>
+     <plurals name="humanize_duration_minutes_time">
+-        <item quantity="one">1 phút</item>
+         <item quantity="other">{#} phút</item>
++        <item quantity="one">1 phút</item>
+     </plurals>
+     <plurals name="humanize_duration_seconds_time">
+-        <item quantity="one">1 giây</item>
+         <item quantity="other">{#} giây</item>
++        <item quantity="one">1 giây</item>
+     </plurals>
+     <plurals name="instant_invite_guild_members_total_count">
+-        <item quantity="one">1 thành viên</item>
+         <item quantity="other">{count} thành viên</item>
++        <item quantity="one">1 thành viên</item>
+     </plurals>
+     <plurals name="integrations_channel_following_summary_count">
+-        <item quantity="one">1 kênh</item>
+         <item quantity="other">{count} kênh</item>
++        <item quantity="one">1 kênh</item>
+     </plurals>
+     <plurals name="integrations_twitch_summary_count">
+-        <item quantity="one">1 tài khoản đã kết nối</item>
+         <item quantity="other">{count} tài khoản đã kết nối</item>
++        <item quantity="one">1 tài khoản đã kết nối</item>
+     </plurals>
+     <plurals name="integrations_webhooks_count_count">
+-        <item quantity="one">1 Webhook</item>
+         <item quantity="other">{count} Webhook</item>
++        <item quantity="one">1 Webhook</item>
+     </plurals>
+     <plurals name="integrations_webhooks_summary_count">
+-        <item quantity="one">1 webhook</item>
+         <item quantity="other">{count} webhook</item>
++        <item quantity="one">1 webhook</item>
+     </plurals>
+     <plurals name="integrations_youtube_summary_count">
+-        <item quantity="one">1 tài khoản đã kết nối</item>
+         <item quantity="other">{count} tài khoản đã kết nối</item>
++        <item quantity="one">1 tài khoản đã kết nối</item>
+     </plurals>
+     <plurals name="invite_embed_num_open_slots_number">
+-        <item quantity="one">vị trí</item>
+         <item quantity="other">vị trí</item>
++        <item quantity="one">vị trí</item>
+     </plurals>
+     <plurals name="invite_expires_days_or_uses_plural_numDays">
+-        <item quantity="one">{numDays} ngày</item>
+         <item quantity="other">{numDays} ngày</item>
++        <item quantity="one">{numDays} ngày</item>
+     </plurals>
+     <plurals name="invite_expires_days_or_uses_plural_numUses">
+-        <item quantity="one">{numUses} lần dùng</item>
+         <item quantity="other">{numUses} lần dùng</item>
++        <item quantity="one">{numUses} lần dùng</item>
+     </plurals>
+     <plurals name="invite_expires_days_plural_numDays">
+-        <item quantity="one">{numDays} ngày</item>
+         <item quantity="other">{numDays} ngày</item>
++        <item quantity="one">{numDays} ngày</item>
+     </plurals>
+     <plurals name="invite_expires_hours_numHours">
+-        <item quantity="one">{numHours} tiếng</item>
+         <item quantity="other">{numHours} tiếng</item>
++        <item quantity="one">{numHours} tiếng</item>
+     </plurals>
+     <plurals name="invite_expires_hours_or_uses_numHours">
+-        <item quantity="one">{numHours} tiếng</item>
+         <item quantity="other">{numHours} tiếng</item>
++        <item quantity="one">{numHours} tiếng</item>
+     </plurals>
+     <plurals name="invite_expires_hours_or_uses_numUses">
+-        <item quantity="one">{numUses} lần dùng</item>
+         <item quantity="other">{numUses} lần dùng</item>
++        <item quantity="one">{numUses} lần dùng</item>
+     </plurals>
+     <plurals name="invite_expires_minutes_or_uses_numUses">
+-        <item quantity="one">{numUses} lần sử dụng</item>
+         <item quantity="other">{numUses} lần sử dụng</item>
++        <item quantity="one">{numUses} lần sử dụng</item>
+     </plurals>
+     <plurals name="invite_expires_uses_numUses">
+-        <item quantity="one">{numUses} lần sử dụng</item>
+         <item quantity="other">{numUses} lần sử dụng</item>
++        <item quantity="one">{numUses} lần sử dụng</item>
+     </plurals>
+     <plurals name="last_seen_days">
+-        <item quantity="one">1 ngày</item>
+         <item quantity="other">{days} ngày</item>
++        <item quantity="one">1 ngày</item>
+     </plurals>
+     <plurals name="live_viewers_viewers">
+-        <item quantity="one">người xem</item>
+         <item quantity="other">người xem</item>
++        <item quantity="one">người xem</item>
+     </plurals>
+     <plurals name="marketing_refresh_premium_features_included_guild_subscriptions_subheading_numFreeGuildSubscriptions">
+-        <item quantity="one">{#} Nâng Cấp Máy Chủ</item>
+         <item quantity="other">{#} Nâng Cấp Máy Chủ</item>
++        <item quantity="one">{#} Nâng Cấp Máy Chủ</item>
+     </plurals>
+     <plurals name="marketing_refresh_premium_tier_1_cta_description_perks_info_label_numFreeGuildSubscriptions">
+-        <item quantity="one">{#} Nâng Cấp Máy Chủ</item>
+         <item quantity="other">{#} Nâng Cấp Máy Chủ</item>
++        <item quantity="one">{#} Nâng Cấp Máy Chủ</item>
+     </plurals>
+     <plurals name="marketing_refresh_premium_tier_1_cta_description_perks_info_no_premium_guild_subscriptions_numFreeGuildSubscriptions">
+-        <item quantity="one">{#} Nâng Cấp Máy Chủ</item>
+         <item quantity="other">{#} Nâng Cấp Máy Chủ</item>
++        <item quantity="one">{#} Nâng Cấp Máy Chủ</item>
+     </plurals>
+     <plurals name="max_uses_description_mobile_maxUses">
+-        <item quantity="one">1 lần dùng</item>
+         <item quantity="other">{maxUses} lần dùng</item>
++        <item quantity="one">1 lần dùng</item>
+     </plurals>
+     <plurals name="max_uses_maxUses">
+-        <item quantity="one">1 lần dùng</item>
+         <item quantity="other">{maxUses} lần dùng</item>
++        <item quantity="one">1 lần dùng</item>
+     </plurals>
+     <plurals name="member_verification_num_emojis_emojis">
+-        <item quantity="one">{emojis} emoji máy chủ</item>
+         <item quantity="other">{emojis} emoji máy chủ</item>
++        <item quantity="one">{emojis} emoji máy chủ</item>
+     </plurals>
+     <plurals name="members_header_members">
+-        <item quantity="one">1 Thành viên</item>
+         <item quantity="other">{members} Thành viên</item>
++        <item quantity="one">1 Thành viên</item>
+     </plurals>
+     <plurals name="mtrl_badge_content_description">
+-        <item quantity="one">%d thông báo mới</item>
+         <item quantity="other">%d thông báo mới</item>
++        <item quantity="one">%d thông báo mới</item>
+     </plurals>
+     <plurals name="n_days_days">
+-        <item quantity="one">1 ngày</item>
+         <item quantity="other">{days} ngày</item>
++        <item quantity="one">1 ngày</item>
+     </plurals>
+     <plurals name="new_messages_count">
+-        <item quantity="one">1 tin nhắn mới</item>
+         <item quantity="other">{count} tin nhắn mới</item>
++        <item quantity="one">1 tin nhắn mới</item>
+     </plurals>
+     <plurals name="new_messages_with_date_count">
+-        <item quantity="one">1 tin nhắn mới</item>
+         <item quantity="other">{count} tin nhắn mới</item>
++        <item quantity="one">1 tin nhắn mới</item>
+     </plurals>
+     <plurals name="notice_premium_grandfathered_ending_numDays">
+-        <item quantity="one">một ngày</item>
+         <item quantity="other">{numDays} ngày</item>
++        <item quantity="one">một ngày</item>
+     </plurals>
+     <plurals name="notice_premium_tier_2_trial_ending_days_days">
+-        <item quantity="one">{#} ngày</item>
+         <item quantity="other">{#} ngày</item>
++        <item quantity="one">{#} ngày</item>
+     </plurals>
+     <plurals name="notice_premium_tier_2_trial_ending_hours_hours">
+-        <item quantity="one">{#} giờ</item>
+         <item quantity="other">{#} giờ</item>
++        <item quantity="one">{#} giờ</item>
+     </plurals>
+     <plurals name="notice_premium_tier_2_trial_ending_minutes_minutes">
+-        <item quantity="one">{#} phút</item>
+         <item quantity="other">{#} phút</item>
++        <item quantity="one">{#} phút</item>
+     </plurals>
+     <plurals name="num_channels_num">
+-        <item quantity="one">{num} kênh</item>
+         <item quantity="other">{num} kênh</item>
++        <item quantity="one">{num} kênh</item>
+     </plurals>
+     <plurals name="num_members_subscribers">
+-        <item quantity="one">**1** thành viên</item>
+         <item quantity="other">**{subscribers}** thành viên</item>
++        <item quantity="one">**1** thành viên</item>
+     </plurals>
+     <plurals name="num_subscribers_subscribers">
+-        <item quantity="one">**1** người theo dõi</item>
+         <item quantity="other">**{subscribers}** người theo dõi</item>
++        <item quantity="one">**1** người theo dõi</item>
+     </plurals>
+     <plurals name="num_users_num">
+-        <item quantity="one">1 người dùng</item>
+         <item quantity="other">{num} người dùng</item>
++        <item quantity="one">1 người dùng</item>
+     </plurals>
+     <plurals name="only_you_can_see_and_delete_these_count">
+-        <item quantity="one">điều này</item>
+         <item quantity="other">những điều này</item>
++        <item quantity="one">điều này</item>
+     </plurals>
+     <plurals name="only_you_can_see_and_delete_these_countMessages">
+-        <item quantity="one">tin nhắn</item>
+         <item quantity="other">tin nhắn</item>
++        <item quantity="one">tin nhắn</item>
+     </plurals>
+     <plurals name="partial_outage_a11y_count">
+-        <item quantity="one">1 máy chủ không khả dụng do đang tạm ngừng hoạt động.</item>
+         <item quantity="other">{count} máy chủ không khả dụng do đang tạm ngừng hoạt động.</item>
++        <item quantity="one">1 máy chủ không khả dụng do đang tạm ngừng hoạt động.</item>
+     </plurals>
+     <plurals name="partial_outage_count">
+-        <item quantity="one">**1** máy chủ khác không truy cập được do đang tạm dừng hoạt động.</item>
+         <item quantity="other">**{count}** máy chủ khác không truy cập được do đang tạm dừng hoạt động.</item>
++        <item quantity="one">**1** máy chủ khác không truy cập được do đang tạm dừng hoạt động.</item>
+     </plurals>
+     <plurals name="premium_cancel_what_you_lose_boosts_applied_boostCount">
+-        <item quantity="one">Đã áp dụng {#}Nâng cấp</item>
+         <item quantity="other">Đã áp dụng {#}Nâng cấp</item>
++        <item quantity="one">Đã áp dụng {#}Nâng cấp</item>
+     </plurals>
+     <plurals name="premium_chat_perks_description_premium_guild_included_numFreeGuildSubscriptions">
+-        <item quantity="one">{#} Nâng Cấp</item>
+         <item quantity="other">{#} Nâng Cấp</item>
++        <item quantity="one">{#} Nâng Cấp</item>
+     </plurals>
+     <plurals name="premium_guild_features_upsell_banner_subscribe_numFreeGuildSubscriptions">
+-        <item quantity="one">{#} Nâng Cấp</item>
+         <item quantity="other">{#} Nâng Cấp</item>
++        <item quantity="one">{#} Nâng Cấp</item>
+     </plurals>
+     <plurals name="premium_guild_grace_period_cooldown_numPremiumSubscriptions">
+-        <item quantity="one">{#} Nâng Cấp</item>
+         <item quantity="other">{#} Nâng Cấp</item>
++        <item quantity="one">{#} Nâng Cấp</item>
+     </plurals>
+     <plurals name="premium_guild_grace_period_cooldown_soon_numPremiumSubscriptions">
+-        <item quantity="one">{#} Nâng Cấp</item>
+         <item quantity="other">{#} Nâng Cấp</item>
++        <item quantity="one">{#} Nâng Cấp</item>
+     </plurals>
+     <plurals name="premium_guild_num_month_guild_subscriptions_num">
+-        <item quantity="one">Nâng Cấp Máy Chủ</item>
+         <item quantity="other">Nâng Cấp Máy Chủ</item>
++        <item quantity="one">Nâng Cấp Máy Chủ</item>
+     </plurals>
+     <plurals name="premium_guild_num_month_guild_subscriptions_unformatted_num">
+-        <item quantity="one">Nâng Cấp Máy Chủ</item>
+         <item quantity="other">Nâng Cấp Máy Chủ</item>
++        <item quantity="one">Nâng Cấp Máy Chủ</item>
+     </plurals>
+     <plurals name="premium_guild_num_year_guild_subscriptions_num">
+-        <item quantity="one">Nâng Cấp Máy Chủ</item>
+         <item quantity="other">Nâng Cấp Máy Chủ</item>
++        <item quantity="one">Nâng Cấp Máy Chủ</item>
+     </plurals>
+     <plurals name="premium_guild_num_year_guild_subscriptions_unformatted_num">
+-        <item quantity="one">Nâng Cấp Máy Chủ</item>
+         <item quantity="other">Nâng Cấp Máy Chủ</item>
++        <item quantity="one">Nâng Cấp Máy Chủ</item>
+     </plurals>
+     <plurals name="premium_guild_perks_modal_header_subscription_count_subscriptions">
+-        <item quantity="one">{#} Nâng Cấp</item>
+         <item quantity="other">{#} Nâng Cấp</item>
++        <item quantity="one">{#} Nâng Cấp</item>
+     </plurals>
+     <plurals name="premium_guild_perks_modal_header_user_subscription_count_numSubscriptions">
+-        <item quantity="one">{#} lần</item>
+         <item quantity="other">{#} lần!</item>
++        <item quantity="one">{#} lần</item>
+     </plurals>
+     <plurals name="premium_guild_perks_modal_protip_mobile_numFreeGuildSubscriptions">
+-        <item quantity="one">{#} Nâng Cấp</item>
+         <item quantity="other">{#} Nâng Cấp</item>
++        <item quantity="one">{#} Nâng Cấp</item>
+     </plurals>
+     <plurals name="premium_guild_perks_modal_protip_numFreeGuildSubscriptions">
+-        <item quantity="one">{#} Nâng Cấp</item>
+         <item quantity="other">{#} Nâng Cấp</item>
++        <item quantity="one">{#} Nâng Cấp</item>
+     </plurals>
+     <plurals name="premium_guild_settings_members_subscribed_needed_number">
+-        <item quantity="one">{#} lần Tăng Cường nữa</item>
+         <item quantity="other">{#} lần Tăng Cường nữa</item>
++        <item quantity="one">{#} lần Tăng Cường nữa</item>
+     </plurals>
+     <plurals name="premium_guild_settings_x_of_y_subscriptions_numRequired">
+-        <item quantity="one">{#} Tăng Cường</item>
+         <item quantity="other">{#} Tăng Cường</item>
++        <item quantity="one">{#} Tăng Cường</item>
+     </plurals>
+     <plurals name="premium_guild_subscribe_confirm_cancel_warning_canceledCount">
+-        <item quantity="one">Nâng Cấp</item>
+         <item quantity="other">{#} Các Nâng Cấp</item>
++        <item quantity="one">Nâng Cấp</item>
+     </plurals>
+     <plurals name="premium_guild_subscribe_confirm_confirmation_label_slotCount">
+-        <item quantity="one">Nâng Cấp</item>
+         <item quantity="other">Nâng Cấp</item>
++        <item quantity="one">Nâng Cấp</item>
+     </plurals>
+     <plurals name="premium_guild_subscribe_confirm_confirmation_slotCount">
+-        <item quantity="one">Nâng Cấp</item>
+         <item quantity="other">Nâng Cấp {#} lần</item>
++        <item quantity="one">Nâng Cấp</item>
+     </plurals>
+     <plurals name="premium_guild_subscribe_confirm_cooldown_warning_days">
+-        <item quantity="one">{#} ngày</item>
+         <item quantity="other">{#} ngày</item>
++        <item quantity="one">{#} ngày</item>
+     </plurals>
+     <plurals name="premium_guild_subscribe_confirm_cooldown_warning_slotCount">
+-        <item quantity="one">Nâng Cấp này</item>
+         <item quantity="other">Nâng Cấp này</item>
++        <item quantity="one">Nâng Cấp này</item>
+     </plurals>
+     <plurals name="premium_guild_subscribe_confirm_transfer_blurb_guildCount">
+-        <item quantity="one">Máy chủ hiện tại</item>
+         <item quantity="other">Máy chủ hiện tại</item>
++        <item quantity="one">Máy chủ hiện tại</item>
+     </plurals>
+     <plurals name="premium_guild_subscribe_confirm_transfer_blurb_slotCount">
+-        <item quantity="one">Nâng Cấp Máy Chủ này</item>
+         <item quantity="other">Nâng Cấp Máy Chủ này</item>
++        <item quantity="one">Nâng Cấp Máy Chủ này</item>
+     </plurals>
+     <plurals name="premium_guild_subscribe_confirm_transfer_from_guild_guildCount">
+-        <item quantity="one">Máy chủ</item>
+         <item quantity="other">Máy chủ</item>
++        <item quantity="one">Máy chủ</item>
+     </plurals>
+     <plurals name="premium_guild_subscribe_confirm_transfer_to_guild_slotCount">
+-        <item quantity="one">nâng cấp</item>
+         <item quantity="other">nâng cấp</item>
++        <item quantity="one">nâng cấp</item>
+     </plurals>
+     <plurals name="premium_guild_subscribe_transfer_confirm_confirmation_label_slotCount">
+-        <item quantity="one">Nâng Cấp</item>
+         <item quantity="other">Nâng Cấp</item>
++        <item quantity="one">Nâng Cấp</item>
+     </plurals>
+     <plurals name="premium_guild_subscribe_transfer_confirm_confirmation_slotCount">
+-        <item quantity="one">Nâng Cấp</item>
+         <item quantity="other">Nâng Cấp</item>
++        <item quantity="one">Nâng Cấp</item>
+     </plurals>
+     <plurals name="premium_guild_subscription_available_numSubscriptions">
+-        <item quantity="one">{#} Nâng Cấp</item>
+         <item quantity="other">{#} Nâng Cấp</item>
++        <item quantity="one">{#} Nâng Cấp</item>
+     </plurals>
+     <plurals name="premium_guild_subscription_cancel_invoice_subscription_cancelled_subscriptionCount">
+-        <item quantity="one">Nâng Cấp Máy Chủ</item>
+         <item quantity="other">Nâng Cấp Máy Chủ</item>
++        <item quantity="one">Nâng Cấp Máy Chủ</item>
+     </plurals>
+     <plurals name="premium_guild_subscription_duration_months">
+-        <item quantity="one">{#} Tháng</item>
+         <item quantity="other">{#} Tháng</item>
++        <item quantity="one">{#} Tháng</item>
+     </plurals>
+     <plurals name="premium_guild_subscription_error_rate_limit_days_days">
+-        <item quantity="one">{#} ngày</item>
+         <item quantity="other">{#} ngày</item>
++        <item quantity="one">{#} ngày</item>
+     </plurals>
+     <plurals name="premium_guild_subscription_error_rate_limit_days_hours">
+-        <item quantity="one">{#} giờ</item>
+         <item quantity="other">{#} giờ</item>
++        <item quantity="one">{#} giờ</item>
+     </plurals>
+     <plurals name="premium_guild_subscription_error_rate_limit_hours_hours">
+-        <item quantity="one">{#} giờ</item>
+         <item quantity="other">{#} giờ</item>
++        <item quantity="one">{#} giờ</item>
+     </plurals>
+     <plurals name="premium_guild_subscription_error_rate_limit_hours_minutes">
+-        <item quantity="one">{#} phút</item>
+         <item quantity="other">{#} phút</item>
++        <item quantity="one">{#} phút</item>
+     </plurals>
+     <plurals name="premium_guild_subscription_error_rate_limit_minutes_minutes">
+-        <item quantity="one">{#} phút</item>
+         <item quantity="other">{#} phút</item>
++        <item quantity="one">{#} phút</item>
+     </plurals>
+     <plurals name="premium_guild_subscription_guild_subsription_subtitle_numSubscriptions">
+-        <item quantity="one">{#} lần</item>
+         <item quantity="other">{#} lần</item>
++        <item quantity="one">{#} lần</item>
+     </plurals>
+     <plurals name="premium_guild_subscription_num_subscriptions_numSubscriptions">
+-        <item quantity="one">{#} Nâng Cấp</item>
+         <item quantity="other">{#} Nâng Cấp</item>
++        <item quantity="one">{#} Nâng Cấp</item>
+     </plurals>
+     <plurals name="premium_guild_subscription_subscriber_count_tooltip_subscriberCount">
+-        <item quantity="one">{#} Nâng Cấp</item>
+         <item quantity="other">{#} Nâng Cấp</item>
++        <item quantity="one">{#} Nâng Cấp</item>
+     </plurals>
+     <plurals name="premium_guild_subscriptions_renewal_info_account_hold_no_price_quantity">
+-        <item quantity="one">Nâng Cấp Máy Chủ</item>
+         <item quantity="other">Nâng Cấp Máy Chủ</item>
++        <item quantity="one">Nâng Cấp Máy Chủ</item>
+     </plurals>
+     <plurals name="premium_guild_subscriptions_renewal_info_account_hold_quantity">
+-        <item quantity="one">Nâng Cấp Máy Chủ</item>
+         <item quantity="other">Nâng Cấp Máy Chủ</item>
++        <item quantity="one">Nâng Cấp Máy Chủ</item>
+     </plurals>
+     <plurals name="premium_guild_subscriptions_renewal_info_android_quantity">
+-        <item quantity="one">Nâng Cấp Máy Chủ</item>
+         <item quantity="other">Nâng Cấp Máy Chủ</item>
++        <item quantity="one">Nâng Cấp Máy Chủ</item>
+     </plurals>
+     <plurals name="premium_guild_subscriptions_renewal_info_no_price_quantity">
+-        <item quantity="one">Nâng Cấp Máy Chủ</item>
+         <item quantity="other">Nâng Cấp Máy Chủ</item>
++        <item quantity="one">Nâng Cấp Máy Chủ</item>
+     </plurals>
+     <plurals name="premium_guild_subscriptions_renewal_info_pending_cancelation_android_quantity">
+-        <item quantity="one">Nâng Cấp Máy Chủ</item>
+         <item quantity="other">Nâng Cấp Máy Chủ</item>
++        <item quantity="one">Nâng Cấp Máy Chủ</item>
+     </plurals>
+     <plurals name="premium_guild_subscriptions_renewal_info_pending_cancelation_no_price_quantity">
+-        <item quantity="one">Nâng Cấp Máy Chủ</item>
+         <item quantity="other">Nâng Cấp Máy Chủ</item>
++        <item quantity="one">Nâng Cấp Máy Chủ</item>
+     </plurals>
+     <plurals name="premium_guild_subscriptions_renewal_info_pending_cancelation_quantity">
+-        <item quantity="one">Nâng Cấp Máy Chủ</item>
+         <item quantity="other">Nâng Cấp Máy Chủ</item>
++        <item quantity="one">Nâng Cấp Máy Chủ</item>
+     </plurals>
+     <plurals name="premium_guild_subscriptions_renewal_info_quantity">
+-        <item quantity="one">Nâng Cấp Máy Chủ</item>
+         <item quantity="other">Nâng Cấp Máy Chủ</item>
++        <item quantity="one">Nâng Cấp Máy Chủ</item>
+     </plurals>
+     <plurals name="premium_guild_unsubscribe_confirm_cooldown_warning_days_days">
+-        <item quantity="one">{#} ngày</item>
+         <item quantity="other">{#} ngày</item>
++        <item quantity="one">{#} ngày</item>
+     </plurals>
+     <plurals name="premium_guild_unsubscribe_confirm_cooldown_warning_days_hours">
+-        <item quantity="one">{#} giờ</item>
+         <item quantity="other">{#} giờ</item>
++        <item quantity="one">{#} giờ</item>
+     </plurals>
+     <plurals name="premium_guild_unsubscribe_confirm_cooldown_warning_hours_hours">
+-        <item quantity="one">{#} giờ</item>
+         <item quantity="other">{#} giờ</item>
++        <item quantity="one">{#} giờ</item>
+     </plurals>
+     <plurals name="premium_guild_unsubscribe_confirm_cooldown_warning_hours_minutes">
+-        <item quantity="one">{#} phút</item>
+         <item quantity="other">{#} phút</item>
++        <item quantity="one">{#} phút</item>
+     </plurals>
+     <plurals name="premium_guild_unsubscribe_confirm_cooldown_warning_minutes_minutes">
+-        <item quantity="one">{#} phút</item>
+         <item quantity="other">{#} phút</item>
++        <item quantity="one">{#} phút</item>
+     </plurals>
+     <plurals name="premium_marketing_feature_premium_guild_description_numFreeGuildSubscriptions">
+-        <item quantity="one">{#} Nâng Cấp Máy Chủ</item>
+         <item quantity="other">{#} Nâng Cấp Máy Chủ</item>
++        <item quantity="one">{#} Nâng Cấp Máy Chủ</item>
+     </plurals>
+     <plurals name="premium_plan_month_tier_2_trial_months">
+-        <item quantity="one">tháng</item>
+         <item quantity="other">tháng</item>
++        <item quantity="one">tháng</item>
+     </plurals>
+     <plurals name="premium_plan_year_tier_2_trial_months">
+-        <item quantity="one">tháng</item>
+         <item quantity="other">tháng</item>
++        <item quantity="one">tháng</item>
+     </plurals>
+     <plurals name="premium_subscription_credit_count_months_count">
+-        <item quantity="one">{#} Tháng</item>
+         <item quantity="other">{#} Tháng</item>
++        <item quantity="one">{#} Tháng</item>
+     </plurals>
+     <plurals name="premium_subscription_ending_missing_payment_notice_text_daysLeft">
+-        <item quantity="one">trong {#} ngày</item>
+         <item quantity="other">trong {#} ngày</item>
++        <item quantity="one">trong {#} ngày</item>
+     </plurals>
+     <plurals name="premium_subscription_ending_what_you_lose_title_daysLeft">
+-        <item quantity="one">{#} ngày</item>
+         <item quantity="other">{#} ngày</item>
++        <item quantity="one">{#} ngày</item>
+     </plurals>
+     <plurals name="premium_subscription_renewal_footer_trial_days">
+-        <item quantity="one">1 ngày</item>
+         <item quantity="other">{days} ngày</item>
++        <item quantity="one">1 ngày</item>
+     </plurals>
+     <plurals name="premium_trial_cta_description_expiring_days_days">
+-        <item quantity="one">{#} ngày</item>
+         <item quantity="other">{#} ngày</item>
++        <item quantity="one">{#} ngày</item>
+     </plurals>
+     <plurals name="premium_trial_cta_description_expiring_hours_hours">
+-        <item quantity="one">{#} giờ</item>
+         <item quantity="other">{#} giờ</item>
++        <item quantity="one">{#} giờ</item>
+     </plurals>
+     <plurals name="premium_trial_cta_description_expiring_minutes_minutes">
+-        <item quantity="one">{#} phút</item>
+         <item quantity="other">{#} phút</item>
++        <item quantity="one">{#} phút</item>
+     </plurals>
+     <plurals name="premium_upsell_feature_free_guild_subscription_numFreeGuildSubscriptions">
+-        <item quantity="one">{#} Nâng Cấp Máy Chủ</item>
+         <item quantity="other">{#} Nâng Cấp Máy Chủ</item>
++        <item quantity="one">{#} Nâng Cấp Máy Chủ</item>
+     </plurals>
+     <plurals name="preview_lines_left_lines">
+-        <item quantity="one">{#} dòng</item>
+         <item quantity="other">{#} dòng</item>
++        <item quantity="one">{#} dòng</item>
+     </plurals>
+     <plurals name="preview_num_lines_at_least_lines">
+-        <item quantity="one">{#} dòng</item>
+         <item quantity="other">{#} dòng</item>
++        <item quantity="one">{#} dòng</item>
+     </plurals>
+     <plurals name="preview_num_lines_lines">
+-        <item quantity="one">{#} dòng</item>
+         <item quantity="other">{#} dòng</item>
++        <item quantity="one">{#} dòng</item>
+     </plurals>
+     <plurals name="private_channel_access_info_members_count">
+-        <item quantity="one">{count} Thành Viên</item>
+         <item quantity="other">{count} Thành Viên</item>
++        <item quantity="one">{count} Thành Viên</item>
+     </plurals>
+     <plurals name="private_channel_access_info_roles_count">
+-        <item quantity="one">{count} Vai Trò</item>
+         <item quantity="other">{count} Vai Trò</item>
++        <item quantity="one">{count} Vai Trò</item>
+     </plurals>
+     <plurals name="private_channel_members_added_toast_msg_count">
+-        <item quantity="one">{count} thành viên</item>
+         <item quantity="other">{count} thành viên</item>
++        <item quantity="one">{count} thành viên</item>
+     </plurals>
+     <plurals name="private_channel_roles_added_toast_msg_count">
+-        <item quantity="one">{count} vai trò</item>
+         <item quantity="other">{count} vai trò</item>
++        <item quantity="one">{count} vai trò</item>
+     </plurals>
+     <plurals name="promotion_confirm_upgrade_line_item_quantity">
+-        <item quantity="one" />
+         <item quantity="other">{#}x</item>
++        <item quantity="one" />
+     </plurals>
+     <plurals name="promotion_confirm_upgrade_terms_trialMonths">
+-        <item quantity="one">{#} tháng</item>
+         <item quantity="other">{#} tháng</item>
++        <item quantity="one">{#} tháng</item>
+     </plurals>
+     <plurals name="promotion_existing_subscriber_body_months">
+-        <item quantity="one">{#} tháng</item>
+         <item quantity="other">{#} tháng</item>
++        <item quantity="one">{#} tháng</item>
+     </plurals>
+     <plurals name="promotion_previous_subscriber_body_months">
+-        <item quantity="one">{#} tháng</item>
+         <item quantity="other">{#} tháng</item>
++        <item quantity="one">{#} tháng</item>
+     </plurals>
+     <plurals name="promotion_redeem_body_months">
+-        <item quantity="one">{#} tháng</item>
+         <item quantity="other">{#} tháng</item>
++        <item quantity="one">{#} tháng</item>
+     </plurals>
+     <plurals name="publish_followed_news_body_reach_numGuildsFollowing">
+-        <item quantity="one">{#} máy chủ</item>
+         <item quantity="other">{#} máy chủ</item>
++        <item quantity="one">{#} máy chủ</item>
+     </plurals>
+     <plurals name="publish_followed_news_fail_body_retryAfter">
+-        <item quantity="one">1 phút</item>
+         <item quantity="other">{retryAfter} phút</item>
++        <item quantity="one">1 phút</item>
+     </plurals>
+     <plurals name="quick_switcher_results_group_dm_unread_label_mentions">
+-        <item quantity="one">, {#} tin nhắn chưa đọc</item>
+         <item quantity="other">, {#} tin nhắn chưa đọc</item>
++        <item quantity="one">, {#} tin nhắn chưa đọc</item>
+     </plurals>
+     <plurals name="quick_switcher_results_user_unread_label_mentions">
+-        <item quantity="one">, {#} tin nhắn chưa đọc</item>
+         <item quantity="other">, {#} tin nhắn chưa đọc</item>
++        <item quantity="one">, {#} tin nhắn chưa đọc</item>
+     </plurals>
+     <plurals name="quick_switcher_unread_badge_label_mentions">
+-        <item quantity="one">, {#} tin nhắn chưa đọc</item>
+         <item quantity="other">, {#} tin nhắn chưa đọc</item>
++        <item quantity="one">, {#} tin nhắn chưa đọc</item>
+     </plurals>
+     <plurals name="reaction_tooltip_1_n_n">
+-        <item quantity="one">1 người khác</item>
+         <item quantity="other">{n} người khác</item>
++        <item quantity="one">1 người khác</item>
+     </plurals>
+     <plurals name="reaction_tooltip_2_n_n">
+-        <item quantity="one">1 người khác</item>
+         <item quantity="other">{n} những người khác</item>
++        <item quantity="one">1 người khác</item>
+     </plurals>
+     <plurals name="reaction_tooltip_3_n_n">
+-        <item quantity="one">1 người khác</item>
+         <item quantity="other">{n} những người khác</item>
++        <item quantity="one">1 người khác</item>
+     </plurals>
+     <plurals name="reaction_tooltip_n_n">
+-        <item quantity="one">1 người</item>
+         <item quantity="other">{n} người</item>
++        <item quantity="one">1 người</item>
+     </plurals>
+     <plurals name="role_member_count_count">
+-        <item quantity="one">{count} Thành Viên</item>
+         <item quantity="other">{count} Thành Viên</item>
++        <item quantity="one">{count} Thành Viên</item>
+     </plurals>
+     <plurals name="role_row_description_count">
+-        <item quantity="one">{count} thành viên</item>
+         <item quantity="other">{count} thành viên</item>
++        <item quantity="one">{count} thành viên</item>
+     </plurals>
+     <plurals name="role_row_view_members_count">
+-        <item quantity="one">{count} thành viên</item>
+         <item quantity="other">{count} thành viên</item>
++        <item quantity="one">{count} thành viên</item>
+     </plurals>
+     <plurals name="roles_list_numRoles">
+-        <item quantity="one">Vai trò</item>
+         <item quantity="other">Vai trò</item>
++        <item quantity="one">Vai trò</item>
+     </plurals>
+     <plurals name="search_hide_blocked_messages_count">
+-        <item quantity="one">{count} tin nhắn</item>
+         <item quantity="other">{count} tin nhắn</item>
++        <item quantity="one">{count} tin nhắn</item>
+     </plurals>
+     <plurals name="search_num_results_blocked_not_shown_count">
+-        <item quantity="one">{count} kết quả</item>
+         <item quantity="other">{count} kết quả</item>
++        <item quantity="one">{count} kết quả</item>
+     </plurals>
+     <plurals name="search_still_indexing_hint_count">
+-        <item quantity="one">{count} kết quả</item>
+         <item quantity="other">{count} kết quả</item>
++        <item quantity="one">{count} kết quả</item>
+     </plurals>
+     <plurals name="speaking_count_count">
+         <item quantity="other">{count} đang nói</item>
+     </plurals>
+     <plurals name="spotify_listen_along_title_host_count">
+-        <item quantity="one">Người nghe</item>
+         <item quantity="other">Người nghe</item>
++        <item quantity="one">Người nghe</item>
+     </plurals>
+     <plurals name="stage_audience_waiting_many_numOthers">
+-        <item quantity="one">{#} người khác</item>
+         <item quantity="other">{#} người khác</item>
++        <item quantity="one">{#} người khác</item>
+     </plurals>
+     <plurals name="stage_blocked_users_body_number">
+-        <item quantity="one">{#} tài khoản bạn đã chặn</item>
+         <item quantity="other">{#} tài khoản bạn đã chặn</item>
++        <item quantity="one">{#} tài khoản bạn đã chặn</item>
+     </plurals>
+     <plurals name="stage_blocked_users_description_count_number">
+-        <item quantity="one">{#} tài khoản bạn đã chặn</item>
+         <item quantity="other">{#} tài khoản bạn đã chặn</item>
++        <item quantity="one">{#} tài khoản bạn đã chặn</item>
+     </plurals>
+     <plurals name="stage_blocked_users_title_plural_number">
+-        <item quantity="one">tài khoản</item>
+         <item quantity="other">tài khoản</item>
++        <item quantity="one">tài khoản</item>
+     </plurals>
+     <plurals name="stage_channel_people_count_count">
+-        <item quantity="one">1 người</item>
+         <item quantity="other">{count} người</item>
++        <item quantity="one">1 người</item>
+     </plurals>
+     <plurals name="stage_channel_people_count_speakerCount">
+-        <item quantity="one">1 đang nói</item>
+         <item quantity="other">{speakerCount} đang nói</item>
++        <item quantity="one">1 đang nói</item>
+     </plurals>
+     <plurals name="stage_channel_users_are_speaking_count">
+-        <item quantity="one">đang</item>
+         <item quantity="other">đang</item>
++        <item quantity="one">đang</item>
+     </plurals>
+     <plurals name="stage_discovery_card_speaker_text_number">
+-        <item quantity="one">{#} đang nói với {userNick}</item>
+         <item quantity="other">{userNick} đang nói</item>
++        <item quantity="one">{#} đang nói với {userNick}</item>
+     </plurals>
+     <plurals name="stage_discovery_card_speaker_text_overflow_count">
+         <item quantity="other">+{count} đang nói</item>
+     </plurals>
+     <plurals name="stage_discovery_live_stage_tile_friends_guilds_context_audience_3_n_n">
+-        <item quantity="one">1 người khác</item>
+         <item quantity="other">{n} những người khác</item>
++        <item quantity="one">1 người khác</item>
+     </plurals>
+     <plurals name="stage_discovery_live_stage_tile_speaker_summary_overflow_count">
+-        <item quantity="one">+{count} Người Nói</item>
+         <item quantity="other">+{count} Người Nói</item>
++        <item quantity="one">+{count} Người Nói</item>
+     </plurals>
+     <plurals name="stage_invite_speaker_count_count">
+-        <item quantity="one">1 Người nói</item>
+         <item quantity="other">{count} Người nói</item>
++        <item quantity="one">1 Người nói</item>
+     </plurals>
+     <plurals name="stage_is_speaking_hook_count">
+-        <item quantity="one">và một người](usernameHook) đang nói…</item>
+         <item quantity="other">và {count} người khác](usernameHook) đang nói…</item>
++        <item quantity="one">và một người](usernameHook) đang nói…</item>
+     </plurals>
+     <plurals name="stage_speak_invite_blocked_users_number">
+-        <item quantity="one">{#} người dùng bị chặn</item>
+         <item quantity="other">{#} người dùng bị chặn</item>
++        <item quantity="one">{#} người dùng bị chặn</item>
+     </plurals>
+     <plurals name="stage_speak_invite_header_blocked_users_number">
+-        <item quantity="one">{#} người dùng bị chặn</item>
+         <item quantity="other">{#} người dùng bị chặn</item>
++        <item quantity="one">{#} người dùng bị chặn</item>
+     </plurals>
+     <plurals name="sticker_pack_sticker_count_numStickers">
+-        <item quantity="one">{#} sticker</item>
+         <item quantity="other">{#} sticker</item>
++        <item quantity="one">{#} sticker</item>
+     </plurals>
+     <plurals name="sticker_premium_tier_2_upsell_alert_perks_guild_subscriptions_numFreeGuildSubscriptions">
+-        <item quantity="one">{#} Nâng Cấp Máy Chủ</item>
+         <item quantity="other">{#} Nâng Cấp Máy Chủ</item>
++        <item quantity="one">{#} Nâng Cấp Máy Chủ</item>
+     </plurals>
+     <plurals name="stickers_gift_inventory_title_month_intervalCount">
+-        <item quantity="one">{#} tháng</item>
+         <item quantity="other">{#} tháng</item>
++        <item quantity="one">{#} tháng</item>
+     </plurals>
+     <plurals name="stickers_gift_inventory_title_year_intervalCount">
+-        <item quantity="one">{#} năm</item>
+         <item quantity="other">{#} năm</item>
++        <item quantity="one">{#} năm</item>
+     </plurals>
+     <plurals name="thread_message_count_count">
+-        <item quantity="one">1 Tin Nhắn ›</item>
+         <item quantity="other">{count} Tin Nhắn ›</item>
++        <item quantity="one">1 Tin Nhắn ›</item>
+     </plurals>
+     <plurals name="thread_reply_suggestion_count">
+-        <item quantity="one">{#} câu trả lời</item>
+         <item quantity="other">{#} câu trả lời</item>
++        <item quantity="one">{#} câu trả lời</item>
+     </plurals>
+     <plurals name="total_results_count">
+-        <item quantity="one">{count} kết quả</item>
+         <item quantity="other">{count} kết quả</item>
++        <item quantity="one">{count} kết quả</item>
+     </plurals>
+     <plurals name="uploading_files_count">
+-        <item quantity="one">Đang tải lên 1 Tệp</item>
+         <item quantity="other">Đang tải lên {count} Tệp</item>
++        <item quantity="one">Đang tải lên 1 Tệp</item>
+     </plurals>
+     <plurals name="uploading_files_failed_count">
+-        <item quantity="one">1 Tệp Tải Lên Thất Bại</item>
+         <item quantity="other">{count} Tệp Tải Lên Thất Bại</item>
++        <item quantity="one">1 Tệp Tải Lên Thất Bại</item>
+     </plurals>
+     <plurals name="user_activity_timestamp_end_hours">
+         <item quantity="other">{hours}:</item>
+@@ -1389,43 +1389,43 @@
+         <item quantity="other">{seconds}</item>
+     </plurals>
+     <plurals name="user_activity_user_playing_for_days_time">
+-        <item quantity="one">ngày</item>
+         <item quantity="other">ngày</item>
++        <item quantity="one">ngày</item>
+     </plurals>
+     <plurals name="user_activity_user_playing_for_hours_time">
+-        <item quantity="one">giờ</item>
+         <item quantity="other">giờ</item>
++        <item quantity="one">giờ</item>
+     </plurals>
+     <plurals name="user_activity_user_playing_for_minutes_time">
+-        <item quantity="one">phút</item>
+         <item quantity="other">phút</item>
++        <item quantity="one">phút</item>
+     </plurals>
+     <plurals name="user_profile_mutual_friends_count">
+-        <item quantity="one">1 Bạn Chung</item>
+         <item quantity="other">{count} Bạn Chung</item>
++        <item quantity="one">1 Bạn Chung</item>
+     </plurals>
+     <plurals name="user_profile_mutual_guilds_count">
+-        <item quantity="one">1 Máy Chủ Chung</item>
+         <item quantity="other">{count} Máy Chủ Chung</item>
++        <item quantity="one">1 Máy Chủ Chung</item>
+     </plurals>
+     <plurals name="user_summary_with_others_count">
+-        <item quantity="one">1 người khác</item>
+         <item quantity="other">{count} người khác</item>
++        <item quantity="one">1 người khác</item>
+     </plurals>
+     <plurals name="vanity_url_header_uses_uses">
+-        <item quantity="one">1 lượt dùng</item>
+         <item quantity="other">{uses} lượt dùng</item>
++        <item quantity="one">1 lượt dùng</item>
+     </plurals>
+     <plurals name="vanity_url_uses_uses">
+-        <item quantity="one">1 lượt dùng</item>
+         <item quantity="other">{uses} nhiều lượt dùng</item>
++        <item quantity="one">1 lượt dùng</item>
+     </plurals>
+     <plurals name="viewing_as_roles_numRoles">
+-        <item quantity="one">1 vai trò</item>
+         <item quantity="other">{numRoles} vai trò</item>
++        <item quantity="one">1 vai trò</item>
+     </plurals>
+     <plurals name="voice_call_member_list_title_count">
+-        <item quantity="one">{#} Cá nhân</item>
+         <item quantity="other">{#} Mọi người</item>
++        <item quantity="one">{#} Cá nhân</item>
+     </plurals>
+ </resources>

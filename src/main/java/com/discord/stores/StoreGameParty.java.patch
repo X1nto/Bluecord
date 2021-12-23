@@ -1,0 +1,103 @@
+--- ./discord_94011/src/main/java/com/discord/stores/StoreGameParty.java	2021-12-24 01:10:12.797027500 +0400
++++ ./bluecord/src/main/java/com/discord/stores/StoreGameParty.java	2021-12-24 01:08:33.294261800 +0400
+@@ -20,11 +20,8 @@ import java.util.HashSet;
+ import java.util.Iterator;
+ import java.util.List;
+ import java.util.Map;
+-import kotlin.Metadata;
+ import rx.Observable;
+ 
+-@Metadata(bv = {1, 0, 3}, d1 = {"\u0000\u0001\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0010 \n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0002\n\u0002\b\u0002\n\u0002\u0010\t\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0010\u000e\n\u0002\u0018\u0002\n\u0002\b\u0006\n\u0002\u0018\u0002\n\u0002\u0010$\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\b\u0005\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\b\u0005\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\b\u0005\n\u0002\u0018\u0002\n\u0002\b\u0004\n\u0002\u0018\u0002\n\u0002\b\u0007\u0018\u00002\u00020\u0001B\u001f\u0012\u0006\u0010>\u001a\u00020=\u0012\u0006\u00108\u001a\u000207\u0012\u0006\u0010C\u001a\u00020B¢\u0006\u0004\bG\u0010HJ\u001d\u0010\u0006\u001a\u00020\u00052\f\u0010\u0004\u001a\b\u0012\u0004\u0012\u00020\u00030\u0002H\u0003¢\u0006\u0004\b\u0006\u0010\u0007J'\u0010\r\u001a\u00020\u00052\n\u0010\n\u001a\u00060\bj\u0002`\t2\n\u0010\f\u001a\u00060\bj\u0002`\u000bH\u0003¢\u0006\u0004\b\r\u0010\u000eJ7\u0010\u0012\u001a\u00020\u00052\n\u0010\n\u001a\u00060\bj\u0002`\t2\n\u0010\f\u001a\u00060\bj\u0002`\u000b2\u000e\u0010\u0011\u001a\n\u0018\u00010\u000fj\u0004\u0018\u0001`\u0010H\u0003¢\u0006\u0004\b\u0012\u0010\u0013J#\u0010\u0015\u001a\u00020\u00052\u0006\u0010\u0014\u001a\u00020\u00032\n\u0010\f\u001a\u00060\bj\u0002`\u000bH\u0003¢\u0006\u0004\b\u0015\u0010\u0016J3\u0010\u001a\u001a\u0018\u0012\u0014\u0012\u0012\u0012\b\u0012\u00060\bj\u0002`\t\u0012\u0004\u0012\u00020\u00190\u00180\u00172\u000e\u0010\u0011\u001a\n\u0018\u00010\u000fj\u0004\u0018\u0001`\u0010¢\u0006\u0004\b\u001a\u0010\u001bJ\u0017\u0010\u001e\u001a\u00020\u00052\u0006\u0010\u001d\u001a\u00020\u001cH\u0007¢\u0006\u0004\b\u001e\u0010\u001fJ\u0017\u0010\"\u001a\u00020\u00052\u0006\u0010!\u001a\u00020 H\u0007¢\u0006\u0004\b\"\u0010#J%\u0010$\u001a\u00020\u00052\u0006\u0010\u0014\u001a\u00020\u00032\f\b\u0002\u0010\f\u001a\u00060\bj\u0002`\u000bH\u0007¢\u0006\u0004\b$\u0010\u0016J\u001d\u0010%\u001a\u00020\u00052\f\u0010\u0004\u001a\b\u0012\u0004\u0012\u00020\u00030\u0002H\u0007¢\u0006\u0004\b%\u0010\u0007J\u0017\u0010(\u001a\u00020\u00052\u0006\u0010'\u001a\u00020&H\u0007¢\u0006\u0004\b(\u0010)J\u0017\u0010,\u001a\u00020\u00052\u0006\u0010+\u001a\u00020*H\u0007¢\u0006\u0004\b,\u0010-J\u000f\u0010.\u001a\u00020\u0005H\u0017¢\u0006\u0004\b.\u0010/Rj\u00104\u001aV\u0012\b\u0012\u00060\u000fj\u0002`\u0010\u0012\u001c\u0012\u001a\u0012\b\u0012\u00060\bj\u0002`\t01j\f\u0012\b\u0012\u00060\bj\u0002`\t`200j*\u0012\b\u0012\u00060\u000fj\u0002`\u0010\u0012\u001c\u0012\u001a\u0012\b\u0012\u00060\bj\u0002`\t01j\f\u0012\b\u0012\u00060\bj\u0002`\t`2`38\u0002@\u0002X\u0004¢\u0006\u0006\n\u0004\b4\u00105R\u0001\u00106\u001a~\u0012\b\u0012\u00060\bj\u0002`\t\u00120\u0012.\u0012\b\u0012\u00060\bj\u0002`\u000b\u0012\b\u0012\u00060\u000fj\u0002`\u001000j\u0016\u0012\b\u0012\u00060\bj\u0002`\u000b\u0012\b\u0012\u00060\u000fj\u0002`\u0010`300j>\u0012\b\u0012\u00060\bj\u0002`\t\u00120\u0012.\u0012\b\u0012\u00060\bj\u0002`\u000b\u0012\b\u0012\u00060\u000fj\u0002`\u001000j\u0016\u0012\b\u0012\u00060\bj\u0002`\u000b\u0012\b\u0012\u00060\u000fj\u0002`\u0010`3`38\u0002@\u0002X\u0004¢\u0006\u0006\n\u0004\b6\u00105R\u0019\u00108\u001a\u0002078\u0006@\u0006¢\u0006\f\n\u0004\b8\u00109\u001a\u0004\b:\u0010;Rj\u0010<\u001aV\u0012\b\u0012\u00060\u000fj\u0002`\u0010\u0012\u001c\u0012\u001a\u0012\b\u0012\u00060\bj\u0002`\t01j\f\u0012\b\u0012\u00060\bj\u0002`\t`200j*\u0012\b\u0012\u00060\u000fj\u0002`\u0010\u0012\u001c\u0012\u001a\u0012\b\u0012\u00060\bj\u0002`\t01j\f\u0012\b\u0012\u00060\bj\u0002`\t`2`38\u0002@\u0002X\u000e¢\u0006\u0006\n\u0004\b<\u00105R\u0019\u0010>\u001a\u00020=8\u0006@\u0006¢\u0006\f\n\u0004\b>\u0010?\u001a\u0004\b@\u0010AR\u0019\u0010C\u001a\u00020B8\u0006@\u0006¢\u0006\f\n\u0004\bC\u0010D\u001a\u0004\bE\u0010F¨\u0006I"}, d2 = {"Lcom/discord/stores/StoreGameParty;", "Lcom/discord/stores/StoreV2;", "", "Lcom/discord/api/presence/Presence;", "presences", "", "handlePresences", "(Ljava/util/List;)V", "", "Lcom/discord/primitives/UserId;", "userId", "Lcom/discord/primitives/GuildId;", "guildId", "removeUserFromParty", "(JJ)V", "", "Lcom/discord/primitives/ActivityPartyId;", "partyId", "addUserToParty", "(JJLjava/lang/String;)V", "presence", "updateParty", "(Lcom/discord/api/presence/Presence;J)V", "Lrx/Observable;", "", "Lcom/discord/models/user/User;", "observeUsersForPartyId", "(Ljava/lang/String;)Lrx/Observable;", "Lcom/discord/models/domain/ModelPayload;", "payload", "handleConnectionOpen", "(Lcom/discord/models/domain/ModelPayload;)V", "Lcom/discord/api/guild/Guild;", "guild", "handleGuildCreateOrSync", "(Lcom/discord/api/guild/Guild;)V", "handlePresenceUpdate", "handlePresenceReplace", "Lcom/discord/api/thread/ThreadMemberListUpdate;", "threadMemberListUpdate", "handleThreadMemberListUpdate", "(Lcom/discord/api/thread/ThreadMemberListUpdate;)V", "Lcom/discord/api/thread/ThreadMembersUpdate;", "threadMembersUpdate", "handleThreadMembersUpdate", "(Lcom/discord/api/thread/ThreadMembersUpdate;)V", "snapshotData", "()V", "Ljava/util/HashMap;", "Ljava/util/HashSet;", "Lkotlin/collections/HashSet;", "Lkotlin/collections/HashMap;", "parties", "Ljava/util/HashMap;", "userParties", "Lcom/discord/stores/StoreUserPresence;", "storeUserPresence", "Lcom/discord/stores/StoreUserPresence;", "getStoreUserPresence", "()Lcom/discord/stores/StoreUserPresence;", "partiesSnapshot", "Lcom/discord/stores/updates/ObservationDeck;", "observationDeck", "Lcom/discord/stores/updates/ObservationDeck;", "getObservationDeck", "()Lcom/discord/stores/updates/ObservationDeck;", "Lcom/discord/stores/StoreUser;", "storeUser", "Lcom/discord/stores/StoreUser;", "getStoreUser", "()Lcom/discord/stores/StoreUser;", "<init>", "(Lcom/discord/stores/updates/ObservationDeck;Lcom/discord/stores/StoreUserPresence;Lcom/discord/stores/StoreUser;)V", "app_productionGoogleRelease"}, k = 1, mv = {1, 4, 2})
+-/* compiled from: StoreGameParty.kt */
+ public final class StoreGameParty extends StoreV2 {
+     private final ObservationDeck observationDeck;
+     private final HashMap<String, HashSet<Long>> parties = new HashMap<>();
+@@ -42,7 +39,6 @@ public final class StoreGameParty extend
+         this.storeUser = storeUser2;
+     }
+ 
+-    @StoreThread
+     private final void addUserToParty(long j, long j2, String str) {
+         HashSet<Long> hashSet;
+         if (str != null) {
+@@ -73,7 +69,6 @@ public final class StoreGameParty extend
+         storeGameParty.handlePresenceUpdate(presence, j);
+     }
+ 
+-    @StoreThread
+     private final void handlePresences(List<Presence> list) {
+         for (T t : list) {
+             Long d = t.d();
+@@ -81,7 +76,6 @@ public final class StoreGameParty extend
+         }
+     }
+ 
+-    @StoreThread
+     private final void removeUserFromParty(long j, long j2) {
+         String remove;
+         HashMap<Long, String> hashMap = this.userParties.get(Long.valueOf(j));
+@@ -102,7 +96,6 @@ public final class StoreGameParty extend
+         }
+     }
+ 
+-    @StoreThread
+     private final void updateParty(Presence presence, long j) {
+         List<Activity> list;
+         boolean z2;
+@@ -170,7 +163,6 @@ public final class StoreGameParty extend
+         return this.storeUserPresence;
+     }
+ 
+-    @StoreThread
+     public final void handleConnectionOpen(ModelPayload modelPayload) {
+         m.checkNotNullParameter(modelPayload, "payload");
+         List<Presence> presences = modelPayload.getPresences();
+@@ -185,7 +177,6 @@ public final class StoreGameParty extend
+         }
+     }
+ 
+-    @StoreThread
+     public final void handleGuildCreateOrSync(Guild guild) {
+         m.checkNotNullParameter(guild, "guild");
+         List<Presence> B = guild.B();
+@@ -194,24 +185,20 @@ public final class StoreGameParty extend
+         }
+     }
+ 
+-    @StoreThread
+     public final void handlePresenceReplace(List<Presence> list) {
+         m.checkNotNullParameter(list, "presences");
+         handlePresences(list);
+     }
+ 
+-    @StoreThread
+     public final void handlePresenceUpdate(Presence presence) {
+         handlePresenceUpdate$default(this, presence, 0, 2, null);
+     }
+ 
+-    @StoreThread
+     public final void handlePresenceUpdate(Presence presence, long j) {
+         m.checkNotNullParameter(presence, "presence");
+         updateParty(presence, j);
+     }
+ 
+-    @StoreThread
+     public final void handleThreadMemberListUpdate(ThreadMemberListUpdate threadMemberListUpdate) {
+         m.checkNotNullParameter(threadMemberListUpdate, "threadMemberListUpdate");
+         List<ThreadListMember> b = threadMemberListUpdate.b();
+@@ -230,7 +217,6 @@ public final class StoreGameParty extend
+         }
+     }
+ 
+-    @StoreThread
+     public final void handleThreadMembersUpdate(ThreadMembersUpdate threadMembersUpdate) {
+         m.checkNotNullParameter(threadMembersUpdate, "threadMembersUpdate");
+         List<AugmentedThreadMember> a = threadMembersUpdate.a();
+@@ -256,7 +242,6 @@ public final class StoreGameParty extend
+     }
+ 
+     @Override // com.discord.stores.StoreV2
+-    @StoreThread
+     public void snapshotData() {
+         super.snapshotData();
+         this.partiesSnapshot = new HashMap<>();

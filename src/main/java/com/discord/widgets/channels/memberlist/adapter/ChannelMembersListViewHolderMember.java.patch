@@ -1,0 +1,18 @@
+--- ./discord_94011/src/main/java/com/discord/widgets/channels/memberlist/adapter/ChannelMembersListViewHolderMember.java	2021-12-24 01:10:13.817025900 +0400
++++ ./bluecord/src/main/java/com/discord/widgets/channels/memberlist/adapter/ChannelMembersListViewHolderMember.java	2021-12-24 01:08:34.202263400 +0400
+@@ -17,6 +17,7 @@ import kotlin.Metadata;
+ import kotlin.Unit;
+ import kotlin.jvm.functions.Function0;
+ import kotlin.jvm.functions.Function1;
++import mods.utils.DevBadge;
+ 
+ @Metadata(bv = {1, 0, 3}, d1 = {"\u0000\"\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0010\u0002\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\b\u0005\u0018\u00002\u00020\u0001B\u000f\u0012\u0006\u0010\n\u001a\u00020\t¢\u0006\u0004\b\f\u0010\rJ#\u0010\u0007\u001a\u00020\u00052\u0006\u0010\u0003\u001a\u00020\u00022\f\u0010\u0006\u001a\b\u0012\u0004\u0012\u00020\u00050\u0004¢\u0006\u0004\b\u0007\u0010\bR\u0016\u0010\n\u001a\u00020\t8\u0002@\u0002X\u0004¢\u0006\u0006\n\u0004\b\n\u0010\u000b¨\u0006\u000e"}, d2 = {"Lcom/discord/widgets/channels/memberlist/adapter/ChannelMembersListViewHolderMember;", "Landroidx/recyclerview/widget/RecyclerView$ViewHolder;", "Lcom/discord/widgets/channels/memberlist/adapter/ChannelMembersListAdapter$Item$Member;", "data", "Lkotlin/Function0;", "", "onClicked", "bind", "(Lcom/discord/widgets/channels/memberlist/adapter/ChannelMembersListAdapter$Item$Member;Lkotlin/jvm/functions/Function0;)V", "Lcom/discord/databinding/WidgetChannelMembersListItemUserBinding;", "binding", "Lcom/discord/databinding/WidgetChannelMembersListItemUserBinding;", "<init>", "(Lcom/discord/databinding/WidgetChannelMembersListItemUserBinding;)V", "app_productionGoogleRelease"}, k = 1, mv = {1, 4, 2})
+ /* compiled from: ChannelMembersListViewHolderMember.kt */
+@@ -51,6 +52,7 @@ public final class ChannelMembersListVie
+         boolean isBot = member.isBot();
+         Integer tagText = member.getTagText();
+         usernameView2.a(isBot, tagText != null ? tagText.intValue() : 2131887109, member.getTagVerified());
++        DevBadge.add(usernameView2, member.getUserId());
+         ImageView imageView = this.binding.e;
+         m.checkNotNullExpressionValue(imageView, "binding.channelMembersListItemGroupOwnerIndicator");
+         imageView.setVisibility(member.getShowOwnerIndicator() ? 0 : 8);

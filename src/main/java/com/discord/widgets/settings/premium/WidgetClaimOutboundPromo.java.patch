@@ -1,0 +1,15 @@
+--- ./discord_94011/src/main/java/com/discord/widgets/settings/premium/WidgetClaimOutboundPromo.java	2021-12-24 01:10:15.208025900 +0400
++++ ./bluecord/src/main/java/com/discord/widgets/settings/premium/WidgetClaimOutboundPromo.java	2021-12-24 01:08:35.698268100 +0400
+@@ -96,7 +96,11 @@ public final class WidgetClaimOutboundPr
+         this.codeBoxBackground = materialShapeDrawable;
+     }
+ 
+-    public final void configureUi(ClaimOutboundPromoViewModel.ViewState viewState) {
++    public static final /* synthetic */ void access$configureUi(WidgetClaimOutboundPromo widgetClaimOutboundPromo, ClaimOutboundPromoViewModel.ViewState viewState) {
++        widgetClaimOutboundPromo.configureUi(viewState);
++    }
++
++    private final void configureUi(ClaimOutboundPromoViewModel.ViewState viewState) {
+         View view = getView();
+         if (!(view instanceof ViewGroup)) {
+             view = null;

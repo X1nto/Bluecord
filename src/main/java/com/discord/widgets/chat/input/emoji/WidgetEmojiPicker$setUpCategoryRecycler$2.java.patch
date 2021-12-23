@@ -1,0 +1,10 @@
+--- ./discord_94011/src/main/java/com/discord/widgets/chat/input/emoji/WidgetEmojiPicker$setUpCategoryRecycler$2.java	2021-12-24 01:10:13.995028000 +0400
++++ ./bluecord/src/main/java/com/discord/widgets/chat/input/emoji/WidgetEmojiPicker$setUpCategoryRecycler$2.java	2021-12-24 01:08:34.399261200 +0400
+@@ -21,6 +21,6 @@ public final /* synthetic */ class Widge
+     }
+ 
+     public final void invoke(int i) {
+-        ((WidgetEmojiPicker) this.receiver).onSelectedCategoryAdapterPositionUpdated(i);
++        WidgetEmojiPicker.access$onSelectedCategoryAdapterPositionUpdated((WidgetEmojiPicker) this.receiver, i);
+     }
+ }

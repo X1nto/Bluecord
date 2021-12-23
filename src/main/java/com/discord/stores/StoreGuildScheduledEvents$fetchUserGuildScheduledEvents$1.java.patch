@@ -1,0 +1,22 @@
+--- ./discord_94011/src/main/java/com/discord/stores/StoreGuildScheduledEvents$fetchUserGuildScheduledEvents$1.java	2021-12-24 01:10:12.836028100 +0400
++++ ./bluecord/src/main/java/com/discord/stores/StoreGuildScheduledEvents$fetchUserGuildScheduledEvents$1.java	2021-12-24 01:08:33.335262800 +0400
+@@ -34,7 +34,7 @@ public final class StoreGuildScheduledEv
+ 
+     public final void invoke(final List<GuildScheduledEventUser> list) {
+         m.checkNotNullParameter(list, "eventUsers");
+-        this.this$0.dispatcher.schedule(new Function0<Unit>(this) {
++        StoreGuildScheduledEvents.access$getDispatcher$p(this.this$0).schedule(new Function0<Unit>(this) {
+             /* class com.discord.stores.StoreGuildScheduledEvents$fetchUserGuildScheduledEvents$1.AnonymousClass1 */
+             public final /* synthetic */ StoreGuildScheduledEvents$fetchUserGuildScheduledEvents$1 this$0;
+ 
+@@ -49,8 +49,8 @@ public final class StoreGuildScheduledEv
+                 for (GuildScheduledEventUser guildScheduledEventUser : list) {
+                     arrayList.add(Long.valueOf(guildScheduledEventUser.a()));
+                 }
+-                this.this$0.this$0.userGuildScheduledEventIds.put(Long.valueOf(this.this$0.$guildId), u.toMutableSet(arrayList));
+-                this.this$0.this$0.userGuildScheduledEventsFetches.add(Long.valueOf(this.this$0.$guildId));
++                StoreGuildScheduledEvents.access$getUserGuildScheduledEventIds$p(this.this$0.this$0).put(Long.valueOf(this.this$0.$guildId), u.toMutableSet(arrayList));
++                StoreGuildScheduledEvents.access$getUserGuildScheduledEventsFetches$p(this.this$0.this$0).add(Long.valueOf(this.this$0.$guildId));
+                 this.this$0.this$0.markChanged();
+             }
+         });

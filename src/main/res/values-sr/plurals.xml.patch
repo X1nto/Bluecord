@@ -1,0 +1,24 @@
+--- ./discord_94011/src/main/res/values-sr/plurals.xml	2021-12-24 01:10:11.050026300 +0400
++++ ./bluecord/src/main/res/values-sr/plurals.xml	2021-12-24 01:08:30.910263400 +0400
+@@ -1,18 +1,18 @@
+ <?xml version="1.0" encoding="utf-8"?>
+ <resources>
+     <plurals name="exo_controls_fastforward_by_amount_description">
++        <item quantity="other">Премотајте %d секунди унапред</item>
+         <item quantity="one">Премотајте %d секунду унапред</item>
+         <item quantity="few">Премотајте %d секунде унапред</item>
+-        <item quantity="other">Премотајте %d секунди унапред</item>
+     </plurals>
+     <plurals name="exo_controls_rewind_by_amount_description">
++        <item quantity="other">Премотајте %d секунди уназад</item>
+         <item quantity="one">Премотајте %d секунду уназад</item>
+         <item quantity="few">Премотајте %d секунде уназад</item>
+-        <item quantity="other">Премотајте %d секунди уназад</item>
+     </plurals>
+     <plurals name="mtrl_badge_content_description">
++        <item quantity="other">%d нових обавештења</item>
+         <item quantity="one">%d ново обавештење</item>
+         <item quantity="few">%d нова обавештења</item>
+-        <item quantity="other">%d нових обавештења</item>
+     </plurals>
+ </resources>

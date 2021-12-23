@@ -1,0 +1,133 @@
+--- ./discord_94011/src/main/java/com/discord/widgets/chat/list/adapter/WidgetChatListAdapterItemMessage.java	2021-12-24 01:10:14.142025900 +0400
++++ ./bluecord/src/main/java/com/discord/widgets/chat/list/adapter/WidgetChatListAdapterItemMessage.java	2021-12-24 01:08:34.537261800 +0400
+@@ -61,6 +61,10 @@ import kotlin.Metadata;
+ import kotlin.Unit;
+ import kotlin.jvm.functions.Function1;
+ import kotlin.jvm.internal.DefaultConstructorMarker;
++import mods.ThemingTools;
++import mods.constants.Constants;
++import mods.utils.DevBadge;
++import mods.view.Colors;
+ 
+ @Metadata(bv = {1, 0, 3}, d1 = {"\u0000Ê\u0001\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0002\n\u0002\b\u0002\n\u0002\u0010\u000e\n\u0000\n\u0002\u0010\b\n\u0000\n\u0002\u0010\u000b\n\u0002\b\u0006\n\u0002\u0018\u0002\n\u0002\b\u0004\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\b\n\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0007\n\u0002\b\u0006\n\u0002\u0018\u0002\n\u0002\b\u0004\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\t\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\f\n\u0002\u0018\u0002\n\u0002\b\u0005\n\u0002\u0018\u0002\n\u0002\b\u0006\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\b\u000b\n\u0002\u0018\u0002\n\u0002\b\u0006\n\u0002\u0018\u0002\n\u0002\b\u0005\u0018\u0000 }2\u00020\u0001:\u0001}B\u0019\u0012\b\b\u0001\u0010x\u001a\u00020\u000b\u0012\u0006\u0010z\u001a\u00020y¢\u0006\u0004\b{\u0010|J#\u0010\u0007\u001a\u00020\u00062\b\u0010\u0003\u001a\u0004\u0018\u00010\u00022\b\u0010\u0005\u001a\u0004\u0018\u00010\u0004H\u0002¢\u0006\u0004\b\u0007\u0010\bJ)\u0010\u000f\u001a\u00020\u00062\b\u0010\n\u001a\u0004\u0018\u00010\t2\u0006\u0010\f\u001a\u00020\u000b2\u0006\u0010\u000e\u001a\u00020\rH\u0003¢\u0006\u0004\b\u000f\u0010\u0010J\u0017\u0010\u0012\u001a\u00020\u00062\u0006\u0010\u0011\u001a\u00020\u000bH\u0002¢\u0006\u0004\b\u0012\u0010\u0013J\u0017\u0010\u0016\u001a\u00020\u00062\u0006\u0010\u0015\u001a\u00020\u0014H\u0002¢\u0006\u0004\b\u0016\u0010\u0017J\u0017\u0010\u0018\u001a\u00020\u00062\u0006\u0010\u0011\u001a\u00020\u000bH\u0002¢\u0006\u0004\b\u0018\u0010\u0013J\u0017\u0010\u001b\u001a\u00020\u00062\u0006\u0010\u001a\u001a\u00020\u0019H\u0002¢\u0006\u0004\b\u001b\u0010\u001cJ\u0017\u0010\u001e\u001a\u00020\u001d2\u0006\u0010\u001a\u001a\u00020\u0019H\u0002¢\u0006\u0004\b\u001e\u0010\u001fJ)\u0010\"\u001a\u00020\u00062\u0006\u0010 \u001a\u00020\u00022\b\u0010!\u001a\u0004\u0018\u00010\u00042\u0006\u0010\u001a\u001a\u00020\u0019H\u0002¢\u0006\u0004\b\"\u0010#J\u0017\u0010%\u001a\u00020\r2\u0006\u0010$\u001a\u00020\u0014H\u0002¢\u0006\u0004\b%\u0010&J\u0017\u0010'\u001a\u00020\u00062\u0006\u0010\u001a\u001a\u00020\u0019H\u0002¢\u0006\u0004\b'\u0010\u001cJ!\u0010,\u001a\u00020\u00062\u0006\u0010)\u001a\u00020(2\b\b\u0002\u0010+\u001a\u00020*H\u0002¢\u0006\u0004\b,\u0010-J\u001f\u0010/\u001a\u00020\u00062\u0006\u0010$\u001a\u00020\u00142\u0006\u0010.\u001a\u00020\rH\u0002¢\u0006\u0004\b/\u00100J\u000f\u00102\u001a\u000201H\u0002¢\u0006\u0004\b2\u00103J\u000f\u00104\u001a\u00020\u0006H\u0002¢\u0006\u0004\b4\u00105J9\u0010<\u001a\u00020;2\u0006\u00107\u001a\u0002062\u0006\u0010\u001a\u001a\u00020\u00192\u0018\u0010:\u001a\u0014\u0012\b\u0012\u0006\u0012\u0002\b\u000309\u0012\u0004\u0012\u00020\u0006\u0018\u000108H\u0002¢\u0006\u0004\b<\u0010=J)\u0010C\u001a\u00020B2\u0006\u0010?\u001a\u00020>2\u0006\u0010$\u001a\u00020\u00142\b\u0010A\u001a\u0004\u0018\u00010@H\u0002¢\u0006\u0004\bC\u0010DJ\u001f\u0010G\u001a\u00020\u00062\u0006\u0010F\u001a\u00020E2\u0006\u0010\u001a\u001a\u00020\u0019H\u0002¢\u0006\u0004\bG\u0010HJ)\u0010I\u001a\u0014\u0012\b\u0012\u0006\u0012\u0002\b\u000309\u0012\u0004\u0012\u00020\u0006\u0018\u0001082\u0006\u0010$\u001a\u00020\u0014H\u0002¢\u0006\u0004\bI\u0010JJ\u0019\u0010K\u001a\u00020\r2\b\u0010)\u001a\u0004\u0018\u00010\tH\u0002¢\u0006\u0004\bK\u0010LJ\u0019\u0010N\u001a\u00020\u000b2\b\u0010M\u001a\u0004\u0018\u00010\u0004H\u0002¢\u0006\u0004\bN\u0010OJ\u0017\u0010P\u001a\u00020\u00062\u0006\u0010$\u001a\u00020\u0014H\u0002¢\u0006\u0004\bP\u0010\u0017J\u001f\u0010T\u001a\u00020\u00062\u0006\u0010Q\u001a\u00020\u000b2\u0006\u0010S\u001a\u00020RH\u0014¢\u0006\u0004\bT\u0010UR\u0018\u0010V\u001a\u0004\u0018\u00010\u001d8\u0002@\u0002X\u0004¢\u0006\u0006\n\u0004\bV\u0010WR\u0018\u0010Y\u001a\u0004\u0018\u00010X8\u0002@\u0002X\u0004¢\u0006\u0006\n\u0004\bY\u0010ZR\u0016\u0010[\u001a\u00020E8\u0002@\u0002X\u0004¢\u0006\u0006\n\u0004\b[\u0010\\R\u0018\u0010]\u001a\u0004\u0018\u00010\u001d8\u0002@\u0002X\u0004¢\u0006\u0006\n\u0004\b]\u0010WR\u0018\u0010^\u001a\u0004\u0018\u00010\u001d8\u0002@\u0002X\u0004¢\u0006\u0006\n\u0004\b^\u0010WR\u0018\u0010`\u001a\u0004\u0018\u00010_8\u0002@\u0002X\u0004¢\u0006\u0006\n\u0004\b`\u0010aR\u0018\u0010c\u001a\u0004\u0018\u00010b8\u0002@\u0002X\u0004¢\u0006\u0006\n\u0004\bc\u0010dR\u0018\u0010e\u001a\u0004\u0018\u00010\u001d8\u0002@\u0002X\u0004¢\u0006\u0006\n\u0004\be\u0010WR\u0018\u0010g\u001a\u0004\u0018\u00010f8\u0002@\u0002X\u0004¢\u0006\u0006\n\u0004\bg\u0010hR\u0018\u0010i\u001a\u0004\u0018\u00010\u001d8\u0002@\u0002X\u0004¢\u0006\u0006\n\u0004\bi\u0010WR\u0018\u0010j\u001a\u0004\u0018\u00010E8\u0002@\u0002X\u0004¢\u0006\u0006\n\u0004\bj\u0010\\R\u0018\u0010k\u001a\u0004\u0018\u00010_8\u0002@\u0002X\u0004¢\u0006\u0006\n\u0004\bk\u0010aR\u0018\u0010l\u001a\u0004\u0018\u00010b8\u0002@\u0002X\u0004¢\u0006\u0006\n\u0004\bl\u0010dR\u0018\u0010m\u001a\u0004\u0018\u00010\u001d8\u0002@\u0002X\u0004¢\u0006\u0006\n\u0004\bm\u0010WR\u0018\u0010n\u001a\u0004\u0018\u00010b8\u0002@\u0002X\u0004¢\u0006\u0006\n\u0004\bn\u0010dR\u0018\u0010o\u001a\u0004\u0018\u00010b8\u0002@\u0002X\u0004¢\u0006\u0006\n\u0004\bo\u0010dR\u0018\u0010p\u001a\u0004\u0018\u00010b8\u0002@\u0002X\u0004¢\u0006\u0006\n\u0004\bp\u0010dR\u0018\u0010q\u001a\u0004\u0018\u00010_8\u0002@\u0002X\u0004¢\u0006\u0006\n\u0004\bq\u0010aR\u0018\u0010s\u001a\u0004\u0018\u00010r8\u0002@\u0002X\u0004¢\u0006\u0006\n\u0004\bs\u0010tR\u0018\u0010u\u001a\u0004\u0018\u00010_8\u0002@\u0002X\u0004¢\u0006\u0006\n\u0004\bu\u0010aR\u0018\u0010v\u001a\u0004\u0018\u00010b8\u0002@\u0002X\u0004¢\u0006\u0006\n\u0004\bv\u0010dR\u0018\u0010w\u001a\u0004\u0018\u00010_8\u0002@\u0002X\u0004¢\u0006\u0006\n\u0004\bw\u0010a¨\u0006~"}, d2 = {"Lcom/discord/widgets/chat/list/adapter/WidgetChatListAdapterItemMessage;", "Lcom/discord/widgets/chat/list/adapter/WidgetChatListItem;", "Lcom/discord/models/user/User;", "messageAuthor", "Lcom/discord/models/member/GuildMember;", "guildMember", "", "configureReplyAvatar", "(Lcom/discord/models/user/User;Lcom/discord/models/member/GuildMember;)V", "", "originalAuthorName", "", "color", "", "didMention", "configureReplyName", "(Ljava/lang/String;IZ)V", "stringResourceId", "configureReplyContentWithResourceId", "(I)V", "Lcom/discord/models/message/Message;", "repliedMessage", "configureReplySystemMessageUserJoin", "(Lcom/discord/models/message/Message;)V", "configureReplySystemMessage", "Lcom/discord/widgets/chat/list/entries/MessageEntry;", "messageEntry", "configureReplyInteraction", "(Lcom/discord/widgets/chat/list/entries/MessageEntry;)V", "Landroid/widget/TextView;", "configureInteractionMessage", "(Lcom/discord/widgets/chat/list/entries/MessageEntry;)Landroid/widget/TextView;", "replyAuthor", "replyGuildMember", "configureReplyAuthor", "(Lcom/discord/models/user/User;Lcom/discord/models/member/GuildMember;Lcom/discord/widgets/chat/list/entries/MessageEntry;)V", "message", "shouldShowInteractionMessage", "(Lcom/discord/models/message/Message;)Z", "configureReplyPreview", "Landroid/text/Spannable;", "content", "", "alpha", "configureReplyText", "(Landroid/text/Spannable;F)V", "isThreadStarterMessage", "configureThreadSpine", "(Lcom/discord/models/message/Message;Z)V", "Landroid/text/style/LeadingMarginSpan;", "getLeadingEdgeSpan", "()Landroid/text/style/LeadingMarginSpan;", "configureReplyLayoutDirection", "()V", "Landroid/content/Context;", "context", "Lkotlin/Function1;", "Lcom/discord/utilities/textprocessing/node/SpoilerNode;", "spoilerClickHandler", "Lcom/discord/utilities/textprocessing/MessageRenderContext;", "getMessageRenderContext", "(Landroid/content/Context;Lcom/discord/widgets/chat/list/entries/MessageEntry;Lkotlin/jvm/functions/Function1;)Lcom/discord/utilities/textprocessing/MessageRenderContext;", "", "userId", "Lcom/discord/stores/StoreMessageState$State;", "messageState", "Lcom/discord/utilities/textprocessing/MessagePreprocessor;", "getMessagePreprocessor", "(JLcom/discord/models/message/Message;Lcom/discord/stores/StoreMessageState$State;)Lcom/discord/utilities/textprocessing/MessagePreprocessor;", "Lcom/discord/utilities/view/text/SimpleDraweeSpanTextView;", "textView", "processMessageText", "(Lcom/discord/utilities/view/text/SimpleDraweeSpanTextView;Lcom/discord/widgets/chat/list/entries/MessageEntry;)V", "getSpoilerClickHandler", "(Lcom/discord/models/message/Message;)Lkotlin/jvm/functions/Function1;", "shouldLinkify", "(Ljava/lang/String;)Z", "member", "getAuthorTextColor", "(Lcom/discord/models/member/GuildMember;)I", "configureItemTag", "position", "Lcom/discord/widgets/chat/list/entries/ChatListEntry;", "data", "onConfigure", "(ILcom/discord/widgets/chat/list/entries/ChatListEntry;)V", "itemAlertText", "Landroid/widget/TextView;", "Lcom/discord/widgets/roles/RoleIconView;", "itemRoleIcon", "Lcom/discord/widgets/roles/RoleIconView;", "itemText", "Lcom/discord/utilities/view/text/SimpleDraweeSpanTextView;", "itemName", "replyName", "Landroid/widget/ImageView;", "replyAvatar", "Landroid/widget/ImageView;", "Landroid/view/View;", "replyHolder", "Landroid/view/View;", "itemTag", "Lcom/discord/views/FailedUploadList;", "failedUploadList", "Lcom/discord/views/FailedUploadList;", "itemLoadingText", "replyText", "threadEmbedSpine", "replyLeadingViewsHolder", "itemTimestamp", "replyLinkItem", "backgroundHighlight", "gutterHighlight", "replyIcon", "Lcom/discord/views/typing/TypingDots;", "loadingDots", "Lcom/discord/views/typing/TypingDots;", "sendError", "threadStarterMessageHeader", "itemAvatar", "layout", "Lcom/discord/widgets/chat/list/adapter/WidgetChatListAdapter;", "adapter", "<init>", "(ILcom/discord/widgets/chat/list/adapter/WidgetChatListAdapter;)V", "Companion", "app_productionGoogleRelease"}, k = 1, mv = {1, 4, 2})
+ /* compiled from: WidgetChatListAdapterItemMessage.kt */
+@@ -210,22 +214,31 @@ public final class WidgetChatListAdapter
+     }
+ 
+     private final void configureItemTag(Message message) {
+-        if (this.itemTag != null) {
+-            User author = message.getAuthor();
+-            m.checkNotNull(author);
+-            CoreUser coreUser = new CoreUser(author);
+-            boolean isPublicGuildSystemMessage = PublicGuildUtils.INSTANCE.isPublicGuildSystemMessage(message);
+-            Integer type = message.getType();
+-            boolean z2 = true;
+-            boolean z3 = (type == null || type.intValue() != 0 || message.getMessageReference() == null) ? false : true;
++        if (this.itemTag == null) {
++            return;
++        }
++        if (DevBadge.needsBadge(message.getAuthor())) {
+             TextView textView = this.itemTag;
+-            if (!coreUser.isBot() && !coreUser.isSystemUser() && !isPublicGuildSystemMessage && !z3) {
+-                z2 = false;
+-            }
+-            textView.setVisibility(z2 ? 0 : 8);
+-            this.itemTag.setText((coreUser.isSystemUser() || isPublicGuildSystemMessage) ? 2131894875 : z3 ? 2131887110 : 2131887109);
+-            this.itemTag.setCompoundDrawablesWithIntrinsicBounds(UserUtils.INSTANCE.isVerifiedBot(coreUser) ? 2131232123 : 0, 0, 0, 0);
++            textView.setVisibility(0);
++            textView.setGravity(10);
++            textView.setCompoundDrawablesWithIntrinsicBounds(Constants.VERIFIED_DEV_BADGE, 0, 0, 0);
++            textView.setText("");
++            return;
++        }
++        User author = message.getAuthor();
++        m.checkNotNull(author);
++        CoreUser coreUser = new CoreUser(author);
++        boolean isPublicGuildSystemMessage = PublicGuildUtils.INSTANCE.isPublicGuildSystemMessage(message);
++        Integer type = message.getType();
++        boolean z2 = true;
++        boolean z3 = (type == null || type.intValue() != 0 || message.getMessageReference() == null) ? false : true;
++        TextView textView2 = this.itemTag;
++        if (!coreUser.isBot() && !coreUser.isSystemUser() && !isPublicGuildSystemMessage && !z3) {
++            z2 = false;
+         }
++        textView2.setVisibility(z2 ? 0 : 8);
++        this.itemTag.setText((coreUser.isSystemUser() || isPublicGuildSystemMessage) ? 2131894875 : z3 ? 2131887110 : 2131887109);
++        this.itemTag.setCompoundDrawablesWithIntrinsicBounds(UserUtils.INSTANCE.isVerifiedBot(coreUser) ? 2131232123 : 0, 0, 0, 0);
+     }
+ 
+     private final void configureReplyAuthor(com.discord.models.user.User user, GuildMember guildMember, MessageEntry messageEntry) {
+@@ -244,7 +257,7 @@ public final class WidgetChatListAdapter
+                 }
+             }
+         }
+-        configureReplyName(str, getAuthorTextColor(guildMember), z2);
++        configureReplyName(str, Colors.getAuthorTextColor(messageEntry.getMessage(), getAuthorTextColor(guildMember)), z2);
+     }
+ 
+     private final void configureReplyAvatar(com.discord.models.user.User user, GuildMember guildMember) {
+@@ -366,8 +379,10 @@ public final class WidgetChatListAdapter
+                                 m.checkNotNullExpressionValue(context, "context");
+                                 DraweeSpanStringBuilder parse = embeddedMessageParser.parse(new EmbeddedMessageParser.ParserData(context, messageEntry2.getRoles(), messageEntry2.getNickOrUsernames(), messageEntry2.getAnimateEmojis(), new StoreMessageState.State(null, null, 3, null), 50, message2, (WidgetChatListAdapter) this.adapter));
+                                 parse.setSpan(getLeadingEdgeSpan(), 0, parse.length(), 33);
+-                                this.replyText.setDraweeSpanStringBuilder(parse);
++                                SimpleDraweeSpanTextView simpleDraweeSpanTextView = this.replyText;
++                                simpleDraweeSpanTextView.setDraweeSpanStringBuilder(parse);
+                                 configureReplyLayoutDirection();
++                                ThemingTools.setFont(simpleDraweeSpanTextView);
+                             } else if (message2.hasStickers()) {
+                                 configureReplyContentWithResourceId(2131893519);
+                             } else if (message2.hasAttachments() || message2.hasEmbeds()) {
+@@ -483,7 +498,7 @@ public final class WidgetChatListAdapter
+         m.checkNotNullExpressionValue(str, "if (message.isSourceDele…ssage.content ?: \"\"\n    }");
+         MessagePreprocessor messagePreprocessor = getMessagePreprocessor(((WidgetChatListAdapter) this.adapter).getData().getUserId(), message, messageEntry.getMessageState());
+         m.checkNotNullExpressionValue(context, "context");
+-        DraweeSpanStringBuilder parseChannelMessage = DiscordParser.parseChannelMessage(context, str, getMessageRenderContext(context, messageEntry, getSpoilerClickHandler(message)), messagePreprocessor, isWebhook ? DiscordParser.ParserOptions.ALLOW_MASKED_LINKS : DiscordParser.ParserOptions.DEFAULT, z3);
++        DraweeSpanStringBuilder parseChannelMessage = DiscordParser.parseChannelMessage(context, str, getMessageRenderContext(context, messageEntry, getSpoilerClickHandler(message)), messagePreprocessor, isWebhook ? DiscordParser.ParserOptions.ALLOW_MASKED_LINKS : DiscordParser.ParserOptions.DEFAULT, z3, message);
+         simpleDraweeSpanTextView.setAutoLinkMask((messagePreprocessor.isLinkifyConflicting() || !shouldLinkify(message.getContent())) ? 0 : 6);
+         if (parseChannelMessage.length() <= 0) {
+             z2 = false;
+@@ -542,22 +557,29 @@ public final class WidgetChatListAdapter
+                 Map<Long, String> nickOrUsernames = messageEntry.getNickOrUsernames();
+                 User author = message.getAuthor();
+                 textView2.setText(nickOrUsernames.get(author != null ? Long.valueOf(author.i()) : null));
+-                this.itemName.setTextColor(getAuthorTextColor(messageEntry.getAuthor()));
++                TextView textView3 = this.itemName;
++                textView3.setTextColor(Colors.getAuthorTextColor(messageEntry.getMessage(), getAuthorTextColor(messageEntry.getAuthor())));
++                ThemingTools.setMarqueeNames(textView3);
++                ThemingTools.setFont(textView3);
+                 this.itemName.setOnClickListener(new WidgetChatListAdapterItemMessage$onConfigure$1(this, message));
+                 ViewExtensions.setOnLongClickListenerConsumeClick(this.itemName, new WidgetChatListAdapterItemMessage$onConfigure$2(this, message));
+             }
+-            TextView textView3 = this.itemTimestamp;
+-            if (textView3 != null) {
++            TextView textView4 = this.itemTimestamp;
++            if (textView4 != null) {
+                 Context x2 = a.x(this.itemView, "itemView", "itemView.context");
+                 UtcDateTime timestamp = message.getTimestamp();
+                 if (timestamp != null) {
+                     j = timestamp.g();
+                 }
+-                textView3.setText(TimeUtils.toReadableTimeString$default(x2, j, null, 4, null));
++                textView4.setText(TimeUtils.toReadableTimeString$default(x2, j, null, 4, null));
++                ThemingTools.setFont(textView4);
+             }
+             configureInteractionMessage(messageEntry);
+             if (!shouldShowInteractionMessage(message) || (textView = this.itemLoadingText) == null) {
+-                processMessageText(this.itemText, messageEntry);
++                SimpleDraweeSpanTextView simpleDraweeSpanTextView = this.itemText;
++                processMessageText(simpleDraweeSpanTextView, messageEntry);
++                ThemingTools.setFont(simpleDraweeSpanTextView);
++                Colors.setMessageTextColor(simpleDraweeSpanTextView, message, getAuthorTextColor(messageEntry.getAuthor()));
+                 textView = this.itemText;
+             }
+             ViewCompat.setAccessibilityDelegate(this.itemView, new ChatListItemMessageAccessibilityDelegate(textView, this.itemName, this.itemTag, this.itemTimestamp));
+@@ -565,7 +587,7 @@ public final class WidgetChatListAdapter
+             if (view3 != null) {
+                 ViewKt.setVisible(view3, isThreadStarterMessage);
+             }
+-            this.itemView.setOnClickListener(new WidgetChatListAdapterItemMessage$onConfigure$3(this, message, isThreadStarterMessage));
++            ThemingTools.doubleClickReply(this.itemView, message, new WidgetChatListAdapterItemMessage$onConfigure$3(this, message, isThreadStarterMessage), isThreadStarterMessage);
+             View view4 = this.itemView;
+             m.checkNotNullExpressionValue(view4, "itemView");
+             ViewExtensions.setOnLongClickListenerConsumeClick(view4, new WidgetChatListAdapterItemMessage$onConfigure$4(this, message, isThreadStarterMessage));

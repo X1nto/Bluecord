@@ -1,0 +1,76 @@
+--- ./discord_94011/src/main/java/com/discord/widgets/guilds/profile/WidgetGuildProfileSheet.java	2021-12-24 01:10:14.612026100 +0400
++++ ./bluecord/src/main/java/com/discord/widgets/guilds/profile/WidgetGuildProfileSheet.java	2021-12-24 01:08:35.120262700 +0400
+@@ -61,6 +61,7 @@ import kotlin.jvm.functions.Function0;
+ import kotlin.jvm.functions.Function1;
+ import kotlin.jvm.internal.DefaultConstructorMarker;
+ import kotlin.reflect.KProperty;
++import mods.view.SheetConfig;
+ 
+ public final class WidgetGuildProfileSheet extends AppBottomSheet {
+     public static final /* synthetic */ KProperty[] $$delegatedProperties = {a.a0(WidgetGuildProfileSheet.class, "binding", "getBinding()Lcom/discord/databinding/WidgetGuildProfileSheetBinding;", 0)};
+@@ -75,7 +76,9 @@ public final class WidgetGuildProfileShe
+     private final WidgetGuildProfileSheetEmojisAdapter emojisAdapter;
+     private final Lazy fromGuildEventUpsell$delegate;
+     private WidgetGuildProfileActionsBinding guildActionBinding;
++    private String guildBannerUrl;
+     private WidgetGuildHubProfileActionsBinding guildHubActionBinding;
++    private String guildIconUrl;
+     private final Lazy viewModel$delegate;
+ 
+     public static final class Companion {
+@@ -394,8 +397,10 @@ public final class WidgetGuildProfileShe
+             int ordinal = banner.getType().ordinal();
+             if (ordinal == 0) {
+                 str = IconUtils.INSTANCE.getBannerForGuild(Long.valueOf(banner.getGuildId()), banner.getHash(), Integer.valueOf(getResources().getDimensionPixelSize(2131165689)));
++                this.guildBannerUrl = str;
+             } else if (ordinal == 1) {
+                 str = IconUtils.INSTANCE.getGuildSplashUrl(banner.getGuildId(), banner.getHash(), Integer.valueOf(getResources().getDimensionPixelSize(2131165689)));
++                this.guildBannerUrl = str;
+             } else {
+                 throw new NoWhenBranchMatchedException();
+             }
+@@ -494,6 +499,7 @@ public final class WidgetGuildProfileShe
+     private final void configureGuildIcon(long j, String str, String str2) {
+         String forGuild$default = IconUtils.getForGuild$default(Long.valueOf(j), str, null, true, Integer.valueOf(IconUtils.getMediaProxySize(getResources().getDimensionPixelSize(2131165301))), 4, null);
+         if (forGuild$default != null) {
++            this.guildIconUrl = forGuild$default;
+             TextView textView = getBinding().k;
+             m.checkNotNullExpressionValue(textView, "binding.guildProfileSheetIconName");
+             textView.setVisibility(8);
+@@ -597,8 +603,8 @@ public final class WidgetGuildProfileShe
+         m.checkNotNullExpressionValue(materialButton4, "binding.guildProfileShee…Invite(guildId) }\n      }");
+     }
+ 
+-    /* JADX WARNING: Removed duplicated region for block: B:122:0x0336  */
+-    /* JADX WARNING: Removed duplicated region for block: B:123:0x0347  */
++    /* JADX WARNING: Removed duplicated region for block: B:122:0x0338  */
++    /* JADX WARNING: Removed duplicated region for block: B:123:0x0349  */
+     private final void configureUI(WidgetGuildProfileSheetViewModel.ViewState.Loaded loaded) {
+         WidgetGuildProfileSheetViewModel.Actions actions;
+         WidgetGuildProfileSheetViewModel.TabItems tabItems;
+@@ -709,12 +715,12 @@ public final class WidgetGuildProfileShe
+                                                                                                                                     configureTabItems(component1, tabItems, component14);
+                                                                                                                                     if (!component14) {
+                                                                                                                                         configureGuildHubActions(component1, component16.getId(), actions, loaded.getInPerGuildAvatarExperiment());
+-                                                                                                                                        return;
++                                                                                                                                    } else {
++                                                                                                                                        configureGuildActions(component1, component16.getId(), actions, loaded.getInPerGuildAvatarExperiment());
++                                                                                                                                        configureEmojis(component12);
++                                                                                                                                        configureBottomActions(component1, this.channelId, component13);
+                                                                                                                                     }
+-                                                                                                                                    configureGuildActions(component1, component16.getId(), actions, loaded.getInPerGuildAvatarExperiment());
+-                                                                                                                                    configureEmojis(component12);
+-                                                                                                                                    configureBottomActions(component1, this.channelId, component13);
+-                                                                                                                                    return;
++                                                                                                                                    SheetConfig.configureGuildSheet(this, loaded, getBinding().getRoot(), this.guildIconUrl, this.guildBannerUrl);
+                                                                                                                                 }
+                                                                                                                             } else {
+                                                                                                                                 i = 2131363603;
+@@ -843,6 +849,7 @@ public final class WidgetGuildProfileShe
+         configureTabItems(component1, tabItems, component14);
+         if (!component14) {
+         }
++        SheetConfig.configureGuildSheet(this, loaded, getBinding().getRoot(), this.guildIconUrl, this.guildBannerUrl);
+     }
+ 
+     private final void constrainIconToBanner() {

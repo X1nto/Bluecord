@@ -1,0 +1,20 @@
+--- ./discord_94011/src/main/java/f0/e0/h/e.java	2021-12-24 01:10:16.431025400 +0400
++++ ./bluecord/src/main/java/f0/e0/h/e.java	2021-12-24 01:08:36.803264100 +0400
+@@ -36,7 +36,7 @@ public final class e {
+ 
+     public static final boolean a(Response response) {
+         m.checkParameterIsNotNull(response, "$this$promisesBody");
+-        if (m.areEqual(response.i.f2953c, "HEAD")) {
++        if (m.areEqual(response.i.f2955c, "HEAD")) {
+             return false;
+         }
+         int i = response.l;
+@@ -161,7 +161,7 @@ public final class e {
+         if (r5.b(r0, r8) == false) goto L_0x0225;
+      */
+     /* JADX WARNING: Code restructure failed: missing block: B:110:0x0223, code lost:
+-        if (okhttp3.internal.publicsuffix.PublicSuffixDatabase.f2958c.a(r8) == null) goto L_0x0225;
++        if (okhttp3.internal.publicsuffix.PublicSuffixDatabase.f2960c.a(r8) == null) goto L_0x0225;
+      */
+     /* JADX WARNING: Removed duplicated region for block: B:129:0x0277  */
+     /* JADX WARNING: Removed duplicated region for block: B:150:0x0282 A[SYNTHETIC] */

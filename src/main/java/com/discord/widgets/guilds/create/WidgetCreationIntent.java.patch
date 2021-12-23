@@ -1,0 +1,60 @@
+--- ./discord_94011/src/main/java/com/discord/widgets/guilds/create/WidgetCreationIntent.java	2021-12-24 01:10:14.416025200 +0400
++++ ./bluecord/src/main/java/com/discord/widgets/guilds/create/WidgetCreationIntent.java	2021-12-24 01:08:35.022262800 +0400
+@@ -3,7 +3,6 @@ package com.discord.widgets.guilds.creat
+ import android.graphics.drawable.Drawable;
+ import android.view.View;
+ import android.widget.TextView;
+-import androidx.annotation.LayoutRes;
+ import androidx.core.content.ContextCompat;
+ import androidx.fragment.app.Fragment;
+ import c.a.d.j;
+@@ -21,12 +20,9 @@ import com.google.android.material.card.
+ import d0.g;
+ import d0.z.d.m;
+ import kotlin.Lazy;
+-import kotlin.Metadata;
+ import kotlin.jvm.internal.DefaultConstructorMarker;
+ import kotlin.reflect.KProperty;
+ 
+-@Metadata(bv = {1, 0, 3}, d1 = {"\u0000<\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0002\n\u0002\b\u0003\n\u0002\u0010\u000b\n\u0002\b\u0006\n\u0002\u0018\u0002\n\u0002\b\u0005\n\u0002\u0018\u0002\n\u0002\b\u0005\n\u0002\u0010\b\n\u0002\b\u0005\u0018\u0000 !2\u00020\u0001:\u0001!B\u0011\u0012\b\b\u0003\u0010\u001e\u001a\u00020\u001d¢\u0006\u0004\b\u001f\u0010 J\u001f\u0010\u0007\u001a\u00020\u00062\u0006\u0010\u0003\u001a\u00020\u00022\u0006\u0010\u0005\u001a\u00020\u0004H\u0002¢\u0006\u0004\b\u0007\u0010\bJ\u001f\u0010\t\u001a\u00020\u00062\u0006\u0010\u0003\u001a\u00020\u00022\u0006\u0010\u0005\u001a\u00020\u0004H\u0002¢\u0006\u0004\b\t\u0010\bJ\u0019\u0010\f\u001a\u00020\u00062\b\u0010\u000b\u001a\u0004\u0018\u00010\nH\u0002¢\u0006\u0004\b\f\u0010\rJ\u0017\u0010\u000f\u001a\u00020\u00062\u0006\u0010\u000e\u001a\u00020\u0002H\u0016¢\u0006\u0004\b\u000f\u0010\u0010R\u001d\u0010\u0016\u001a\u00020\u00118F@\u0006X\u0002¢\u0006\f\n\u0004\b\u0012\u0010\u0013\u001a\u0004\b\u0014\u0010\u0015R\u001d\u0010\u001c\u001a\u00020\u00178B@\u0002X\u0002¢\u0006\f\n\u0004\b\u0018\u0010\u0019\u001a\u0004\b\u001a\u0010\u001b¨\u0006\""}, d2 = {"Lcom/discord/widgets/guilds/create/WidgetCreationIntent;", "Lcom/discord/app/AppFragment;", "Landroid/view/View;", "container", "Landroid/widget/TextView;", "textView", "", "configureFriendsButton", "(Landroid/view/View;Landroid/widget/TextView;)V", "configureCommunityButton", "", "isCommunity", "onSelectionPressed", "(Ljava/lang/Boolean;)V", "view", "onViewBound", "(Landroid/view/View;)V", "Lcom/discord/widgets/guilds/create/CreationIntentArgs;", "args$delegate", "Lkotlin/Lazy;", "getArgs", "()Lcom/discord/widgets/guilds/create/CreationIntentArgs;", "args", "Lcom/discord/databinding/WidgetCreationIntentBinding;", "binding$delegate", "Lcom/discord/utilities/viewbinding/FragmentViewBindingDelegate;", "getBinding", "()Lcom/discord/databinding/WidgetCreationIntentBinding;", "binding", "", "contentResId", "<init>", "(I)V", "Companion", "app_productionGoogleRelease"}, k = 1, mv = {1, 4, 2})
+-/* compiled from: WidgetCreationIntent.kt */
+ public final class WidgetCreationIntent extends AppFragment {
+     public static final /* synthetic */ KProperty[] $$delegatedProperties = {a.a0(WidgetCreationIntent.class, "binding", "getBinding()Lcom/discord/databinding/WidgetCreationIntentBinding;", 0)};
+     public static final Companion Companion = new Companion(null);
+@@ -34,8 +30,6 @@ public final class WidgetCreationIntent
+     private final Lazy args$delegate;
+     private final FragmentViewBindingDelegate binding$delegate;
+ 
+-    @Metadata(bv = {1, 0, 3}, d1 = {"\u0000*\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0002\n\u0002\b\u0002\n\u0002\u0010\u000b\n\u0002\b\u0005\b\u0003\u0018\u00002\u00020\u0001B\t\b\u0002¢\u0006\u0004\b\u000e\u0010\u000fJ%\u0010\t\u001a\u00020\b2\u0006\u0010\u0003\u001a\u00020\u00022\u0006\u0010\u0005\u001a\u00020\u00042\u0006\u0010\u0007\u001a\u00020\u0006¢\u0006\u0004\b\t\u0010\nR\u0016\u0010\f\u001a\u00020\u000b8\u0002@\u0002X\u0004¢\u0006\u0006\n\u0004\b\f\u0010\r¨\u0006\u0010"}, d2 = {"Lcom/discord/widgets/guilds/create/WidgetCreationIntent$Companion;", "", "Lcom/discord/app/AppFragment;", "fragment", "Lcom/discord/widgets/guilds/create/CreateGuildTrigger;", "trigger", "Lcom/discord/widgets/guilds/create/WidgetGuildCreate$Options;", "createGuildOptions", "", "show", "(Lcom/discord/app/AppFragment;Lcom/discord/widgets/guilds/create/CreateGuildTrigger;Lcom/discord/widgets/guilds/create/WidgetGuildCreate$Options;)V", "", "IS_FRIENDS_FIRST", "Z", "<init>", "()V", "app_productionGoogleRelease"}, k = 1, mv = {1, 4, 2})
+-    /* compiled from: WidgetCreationIntent.kt */
+     public static final class Companion {
+         private Companion() {
+         }
+@@ -64,12 +58,16 @@ public final class WidgetCreationIntent
+         this(0, 1, null);
+     }
+ 
+-    public WidgetCreationIntent(@LayoutRes int i) {
++    public WidgetCreationIntent(int i) {
+         super(i);
+         this.args$delegate = g.lazy(new WidgetCreationIntent$$special$$inlined$args$1(this, "intent_args_key"));
+         this.binding$delegate = FragmentViewBindingDelegateKt.viewBinding$default(this, WidgetCreationIntent$binding$2.INSTANCE, null, 2, null);
+     }
+ 
++    public static final /* synthetic */ void access$onSelectionPressed(WidgetCreationIntent widgetCreationIntent, Boolean bool) {
++        widgetCreationIntent.onSelectionPressed(bool);
++    }
++
+     private final void configureCommunityButton(View view, TextView textView) {
+         textView.setText(getString(2131888066));
+         textView.setCompoundDrawablesWithIntrinsicBounds(ContextCompat.getDrawable(requireContext(), 2131231167), (Drawable) null, ContextCompat.getDrawable(requireContext(), 2131232151), (Drawable) null);
+@@ -86,8 +84,7 @@ public final class WidgetCreationIntent
+         return (WidgetCreationIntentBinding) this.binding$delegate.getValue((Fragment) this, $$delegatedProperties[0]);
+     }
+ 
+-    /* access modifiers changed from: private */
+-    public final void onSelectionPressed(Boolean bool) {
++    private final void onSelectionPressed(Boolean bool) {
+         AnalyticsTracker.INSTANCE.guildCreationIntentSelected(bool);
+         if (getArgs().getTrigger() == CreateGuildTrigger.NUF) {
+             GuildTemplateAnalytics.INSTANCE.postRegistrationTransition$app_productionGoogleRelease("Server Intent Discovery", "Guild Create");

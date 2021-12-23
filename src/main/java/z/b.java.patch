@@ -1,0 +1,26 @@
+--- ./discord_94011/src/main/java/z/b.java	2021-12-24 01:10:16.768024400 +0400
++++ ./bluecord/src/main/java/z/b.java	2021-12-24 01:08:37.153263100 +0400
+@@ -14,7 +14,7 @@ public final class b {
+     public final ExecutorService b;
+ 
+     /* renamed from: c  reason: collision with root package name */
+-    public final Executor f2979c;
++    public final Executor f2981c;
+ 
+     /* renamed from: z.b$b  reason: collision with other inner class name */
+     /* compiled from: BoltsExecutors */
+@@ -72,12 +72,12 @@ public final class b {
+             threadPoolExecutor = Executors.newCachedThreadPool();
+         } else {
+             a aVar = a.a;
+-            ThreadPoolExecutor threadPoolExecutor2 = new ThreadPoolExecutor(a.f2978c, a.d, 1, TimeUnit.SECONDS, new LinkedBlockingQueue());
++            ThreadPoolExecutor threadPoolExecutor2 = new ThreadPoolExecutor(a.f2980c, a.d, 1, TimeUnit.SECONDS, new LinkedBlockingQueue());
+             threadPoolExecutor2.allowCoreThreadTimeOut(true);
+             threadPoolExecutor = threadPoolExecutor2;
+         }
+         this.b = threadPoolExecutor;
+         Executors.newSingleThreadScheduledExecutor();
+-        this.f2979c = new ExecutorC0360b(null);
++        this.f2981c = new ExecutorC0360b(null);
+     }
+ }

@@ -1,0 +1,11 @@
+--- ./discord_94011/src/main/java/com/discord/widgets/chat/list/adapter/WidgetChatListItem$1$tapGestureDetector$1.java	2021-12-24 01:10:14.172025900 +0400
++++ ./bluecord/src/main/java/com/discord/widgets/chat/list/adapter/WidgetChatListItem$1$tapGestureDetector$1.java	2021-12-24 01:08:34.668265900 +0400
+@@ -15,7 +15,7 @@ public final class WidgetChatListItem$1$
+     }
+ 
+     public boolean onSingleTapUp(MotionEvent motionEvent) {
+-        r4.getEventHandler().onListClicked();
++        widgetChatListAdapter.getEventHandler().onListClicked();
+         return super.onSingleTapUp(motionEvent);
+     }
+ }

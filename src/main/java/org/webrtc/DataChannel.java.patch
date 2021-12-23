@@ -1,0 +1,20 @@
+--- ./discord_94011/src/main/java/org/webrtc/DataChannel.java	2021-12-24 01:10:16.632027700 +0400
++++ ./bluecord/src/main/java/org/webrtc/DataChannel.java	2021-12-24 01:08:37.039262800 +0400
+@@ -20,7 +20,7 @@ public class DataChannel {
+     public static class Init {
+ 
+         /* renamed from: id  reason: collision with root package name */
+-        public int f2959id = -1;
++        public int f2961id = -1;
+         public int maxRetransmitTimeMs = -1;
+         public int maxRetransmits = -1;
+         public boolean negotiated;
+@@ -29,7 +29,7 @@ public class DataChannel {
+ 
+         @CalledByNative("Init")
+         public int getId() {
+-            return this.f2959id;
++            return this.f2961id;
+         }
+ 
+         @CalledByNative("Init")

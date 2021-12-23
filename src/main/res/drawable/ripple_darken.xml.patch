@@ -1,0 +1,11 @@
+--- ./discord_94011/src/main/res/drawable/ripple_darken.xml	2021-12-24 01:09:59.958025800 +0400
++++ ./bluecord/src/main/res/drawable/ripple_darken.xml	2021-12-24 01:08:17.711266000 +0400
+@@ -2,7 +2,7 @@
+ <ripple xmlns:android="http://schemas.android.com/apk/res/android" android:color="@color/color_clicked_darker">
+     <item android:id="@android:id/mask">
+         <shape android:shape="rectangle">
+-            <solid android:color="#ffffff"/>
++            <solid android:color="#ffffffff"/>
+         </shape>
+     </item>
+ </ripple>

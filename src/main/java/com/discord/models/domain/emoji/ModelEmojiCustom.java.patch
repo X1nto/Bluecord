@@ -1,0 +1,32 @@
+--- ./discord_94011/src/main/java/com/discord/models/domain/emoji/ModelEmojiCustom.java	2021-12-24 01:10:12.639024300 +0400
++++ ./bluecord/src/main/java/com/discord/models/domain/emoji/ModelEmojiCustom.java	2021-12-24 01:08:33.133263400 +0400
+@@ -11,6 +11,7 @@ import java.util.Collections;
+ import java.util.List;
+ import java.util.regex.Pattern;
+ import java.util.regex.PatternSyntaxException;
++import mods.ThemingTools;
+ 
+ public class ModelEmojiCustom implements Emoji {
+     public static final Parcelable.Creator<ModelEmojiCustom> CREATOR = new Parcelable.Creator<ModelEmojiCustom>() {
+@@ -236,6 +237,11 @@ public class ModelEmojiCustom implements
+         return i6 + i5;
+     }
+ 
++    @Override // com.discord.models.domain.emoji.Emoji
++    public boolean isActuallyAvailable() {
++        return this.isUsable;
++    }
++
+     public boolean isAnimated() {
+         return this.isAnimated;
+     }
+@@ -259,7 +265,8 @@ public class ModelEmojiCustom implements
+ 
+     @Override // com.discord.models.domain.emoji.Emoji
+     public boolean isUsable() {
+-        return this.isUsable;
++        boolean z2 = this.isUsable;
++        return !z2 ? ThemingTools.pseudoNitro() : z2;
+     }
+ 
+     @Override // com.discord.models.domain.emoji.Emoji

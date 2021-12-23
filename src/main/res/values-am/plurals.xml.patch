@@ -1,0 +1,21 @@
+--- ./discord_94011/src/main/res/values-am/plurals.xml	2021-12-24 01:10:10.586024500 +0400
++++ ./bluecord/src/main/res/values-am/plurals.xml	2021-12-24 01:08:30.313263800 +0400
+@@ -1,15 +1,15 @@
+ <?xml version="1.0" encoding="utf-8"?>
+ <resources>
+     <plurals name="exo_controls_fastforward_by_amount_description">
+-        <item quantity="one">በ%d ሰከንዶች በፍጥነት ወደፊት ያሳልፉ</item>
+         <item quantity="other">በ%d ሰከንዶች በፍጥነት ወደፊት ያሳልፉ</item>
++        <item quantity="one">በ%d ሰከንዶች በፍጥነት ወደፊት ያሳልፉ</item>
+     </plurals>
+     <plurals name="exo_controls_rewind_by_amount_description">
+-        <item quantity="one">በ%d ሰከንዶች ወደኋላ ይመልሱ</item>
+         <item quantity="other">በ%d ሰከንዶች ወደኋላ ይመልሱ</item>
++        <item quantity="one">በ%d ሰከንዶች ወደኋላ ይመልሱ</item>
+     </plurals>
+     <plurals name="mtrl_badge_content_description">
+-        <item quantity="one">%d አዲስ ማሳወቂያዎች</item>
+         <item quantity="other">%d አዲስ ማሳወቂያዎች</item>
++        <item quantity="one">%d አዲስ ማሳወቂያዎች</item>
+     </plurals>
+ </resources>

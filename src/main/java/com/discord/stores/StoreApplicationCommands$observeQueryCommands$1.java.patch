@@ -1,0 +1,11 @@
+--- ./discord_94011/src/main/java/com/discord/stores/StoreApplicationCommands$observeQueryCommands$1.java	2021-12-24 01:10:12.714028600 +0400
++++ ./bluecord/src/main/java/com/discord/stores/StoreApplicationCommands$observeQueryCommands$1.java	2021-12-24 01:08:33.208265100 +0400
+@@ -23,7 +23,7 @@ public final class StoreApplicationComma
+     /* Return type fixed from 'java.util.List<com.discord.models.commands.ApplicationCommand>' to match base method */
+     @Override // kotlin.jvm.functions.Function0
+     public final List<? extends ApplicationCommand> invoke() {
+-        if (StoreApplicationCommands.access$shouldReturnApplicationCommands(this.this$0, StoreApplicationCommands.access$getStorePermissions$p(this.this$0).getPermissionsByChannel().get(Long.valueOf(this.$channelId)))) {
++        if (this.this$0.shouldReturnApplicationCommands(this.this$0.storePermissions.getPermissionsByChannel().get(Long.valueOf(this.$channelId)))) {
+             return this.this$0.getQueryCommands();
+         }
+         List<ApplicationCommand> queryCommands = this.this$0.getQueryCommands();

@@ -1,0 +1,11 @@
+--- ./discord_94011/src/main/java/com/discord/stores/StoreEntitlements$fetchMyGiftEntitlements$3.java	2021-12-24 01:10:12.786025600 +0400
++++ ./bluecord/src/main/java/com/discord/stores/StoreEntitlements$fetchMyGiftEntitlements$3.java	2021-12-24 01:08:33.281264300 +0400
+@@ -30,7 +30,7 @@ public final class StoreEntitlements$fet
+ 
+     public final void invoke(final List<ModelEntitlement> list) {
+         m.checkNotNullParameter(list, "entitlements");
+-        this.this$0.dispatcher.schedule(new Function0<Unit>(this) {
++        StoreEntitlements.access$getDispatcher$p(this.this$0).schedule(new Function0<Unit>(this) {
+             /* class com.discord.stores.StoreEntitlements$fetchMyGiftEntitlements$3.AnonymousClass1 */
+             public final /* synthetic */ StoreEntitlements$fetchMyGiftEntitlements$3 this$0;
+ 

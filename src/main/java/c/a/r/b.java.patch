@@ -1,0 +1,11 @@
+--- ./discord_94011/src/main/java/c/a/r/b.java	2021-12-24 01:10:09.647025300 +0400
++++ ./bluecord/src/main/java/c/a/r/b.java	2021-12-24 01:08:30.671265600 +0400
+@@ -75,7 +75,7 @@ public final class b extends k implement
+             }
+             String joinToString$default = u.joinToString$default(arrayList, "&", null, null, 0, null, null, 62, null);
+             RequestBody.Companion companion = RequestBody.Companion;
+-            MediaType.a aVar = MediaType.f2950c;
++            MediaType.a aVar = MediaType.f2952c;
+             RequestBody a = companion.a(joinToString$default, MediaType.a.a("application/x-www-form-urlencoded"));
+             Request.a aVar2 = new Request.a();
+             m.checkParameterIsNotNull(a, "body");

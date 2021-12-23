@@ -1,0 +1,20 @@
+--- ./discord_94011/src/main/res/values-zh-rTW/strings.xml	2021-12-24 01:10:11.201026600 +0400
++++ ./bluecord/src/main/res/values-zh-rTW/strings.xml	2021-12-24 01:08:31.069262900 +0400
+@@ -5664,7 +5664,7 @@
+     <string name="notification_reply_failed">未回覆給 {recipient}</string>
+     <string name="notification_reply_success">已回覆給 {recipient}</string>
+     <string name="notification_settings">通知設定</string>
+-    <string name="notification_title_discord">Discord</string>
++    <string name="notification_title_discord">Bluecord</string>
+     <string name="notification_title_start_game">有人在玩喔</string>
+     <string name="notifications">通知</string>
+     <string name="notifications_muted">已將通知設為靜音</string>
+@@ -8285,7 +8285,7 @@
+     <string name="tip_voice_conversations_title3">讓自己受到傾聽</string>
+     <string name="tip_whos_online_body3">您可以在這裡檢視頻道中的所有成員。看看誰在線上，還有他們是在玩遊戲還是聽音樂。</string>
+     <string name="tip_whos_online_title3">大家都在做些什麼？</string>
+-    <string name="tip_writing_messages_body3">既然已經加入了 {serverName}，就讓大家知道你的存在，**打聲招呼**吧！��</string>
++    <string name="tip_writing_messages_body3" />
+     <string name="tip_writing_messages_title3">進行對話</string>
+     <string name="title">標題</string>
+     <string name="title_bar_close_window">關閉</string>

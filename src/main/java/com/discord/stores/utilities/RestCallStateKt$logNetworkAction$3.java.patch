@@ -1,0 +1,11 @@
+--- ./discord_94011/src/main/java/com/discord/stores/utilities/RestCallStateKt$logNetworkAction$3.java	2021-12-24 01:10:13.096025300 +0400
++++ ./bluecord/src/main/java/com/discord/stores/utilities/RestCallStateKt$logNetworkAction$3.java	2021-12-24 01:08:33.621260900 +0400
+@@ -35,7 +35,7 @@ public final class RestCallStateKt$logNe
+                 Response<?> response = httpException.i;
+                 if (!(response == null || (request = RestCallStateKt.getRequest(response)) == null)) {
+                     String str = request.b.l;
+-                    String str2 = request.f2953c;
++                    String str2 = request.f2955c;
+                     Response<?> response2 = httpException.i;
+                     Long valueOf = response2 != null ? Long.valueOf((long) response2.a.l) : null;
+                     Response<?> response3 = httpException.i;

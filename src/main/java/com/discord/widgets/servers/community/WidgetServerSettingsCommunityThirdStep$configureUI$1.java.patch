@@ -1,0 +1,27 @@
+--- ./discord_94011/src/main/java/com/discord/widgets/servers/community/WidgetServerSettingsCommunityThirdStep$configureUI$1.java	2021-12-24 01:10:14.958024600 +0400
++++ ./bluecord/src/main/java/com/discord/widgets/servers/community/WidgetServerSettingsCommunityThirdStep$configureUI$1.java	2021-12-24 01:08:35.432263800 +0400
+@@ -22,7 +22,7 @@ public final class WidgetServerSettingsC
+ 
+     public final void onClick(View view) {
+         if (!this.$viewState.getCommunityGuildConfig().getDefaultMessageNotifications() || !this.$guildDefaultMessageNotifications) {
+-            this.this$0.getViewModel().modifyGuildConfig(new Function1<WidgetServerSettingsEnableCommunityViewModel.CommunityGuildConfig, WidgetServerSettingsEnableCommunityViewModel.CommunityGuildConfig>(this) {
++            WidgetServerSettingsCommunityThirdStep.access$getViewModel$p(this.this$0).modifyGuildConfig(new Function1<WidgetServerSettingsEnableCommunityViewModel.CommunityGuildConfig, WidgetServerSettingsEnableCommunityViewModel.CommunityGuildConfig>(this) {
+                 /* class com.discord.widgets.servers.community.WidgetServerSettingsCommunityThirdStep$configureUI$1.AnonymousClass1 */
+                 public final /* synthetic */ WidgetServerSettingsCommunityThirdStep$configureUI$1 this$0;
+ 
+@@ -32,13 +32,13 @@ public final class WidgetServerSettingsC
+ 
+                 public final WidgetServerSettingsEnableCommunityViewModel.CommunityGuildConfig invoke(WidgetServerSettingsEnableCommunityViewModel.CommunityGuildConfig communityGuildConfig) {
+                     m.checkNotNullParameter(communityGuildConfig, "it");
+-                    CheckedSetting checkedSetting = this.this$0.this$0.getBinding().e;
++                    CheckedSetting checkedSetting = WidgetServerSettingsCommunityThirdStep.access$getBinding$p(this.this$0.this$0).e;
+                     m.checkNotNullExpressionValue(checkedSetting, "binding.communitySetting…ficationsToMentionsSwitch");
+                     return WidgetServerSettingsEnableCommunityViewModel.CommunityGuildConfig.copy$default(communityGuildConfig, null, null, null, null, false, !checkedSetting.isChecked(), false, false, null, false, null, null, 4063, null);
+                 }
+             });
+         } else {
+-            c.a.d.m.d(this.this$0.getContext(), 2131888482, 0, this.this$0.toastManager);
++            c.a.d.m.d(this.this$0.getContext(), 2131888482, 0, WidgetServerSettingsCommunityThirdStep.access$getToastManager$p(this.this$0));
+         }
+     }
+ }

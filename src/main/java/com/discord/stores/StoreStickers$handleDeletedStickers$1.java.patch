@@ -1,0 +1,13 @@
+--- ./discord_94011/src/main/java/com/discord/stores/StoreStickers$handleDeletedStickers$1.java	2021-12-24 01:10:12.993025800 +0400
++++ ./bluecord/src/main/java/com/discord/stores/StoreStickers$handleDeletedStickers$1.java	2021-12-24 01:08:33.511261600 +0400
+@@ -22,8 +22,8 @@ public final class StoreStickers$handleD
+     @Override // kotlin.jvm.functions.Function0
+     public final void invoke() {
+         for (Number number : this.$stickerIds) {
+-            this.this$0.frecency.removeEntry(String.valueOf(number.longValue()));
++            StoreStickers.access$getFrecency$p(this.this$0).removeEntry(String.valueOf(number.longValue()));
+         }
+-        this.this$0.frecencyCache.set(this.this$0.frecency, true);
++        StoreStickers.access$getFrecencyCache$p(this.this$0).set(StoreStickers.access$getFrecency$p(this.this$0), true);
+     }
+ }

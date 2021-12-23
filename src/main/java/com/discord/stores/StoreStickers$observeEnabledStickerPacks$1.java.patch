@@ -1,0 +1,10 @@
+--- ./discord_94011/src/main/java/com/discord/stores/StoreStickers$observeEnabledStickerPacks$1.java	2021-12-24 01:10:12.994024800 +0400
++++ ./bluecord/src/main/java/com/discord/stores/StoreStickers$observeEnabledStickerPacks$1.java	2021-12-24 01:08:33.512262200 +0400
+@@ -20,6 +20,6 @@ public final class StoreStickers$observe
+     /* Return type fixed from 'java.util.List<com.discord.models.sticker.dto.ModelStickerPack>' to match base method */
+     @Override // kotlin.jvm.functions.Function0
+     public final List<? extends ModelStickerPack> invoke() {
+-        return this.this$0.enabledStickerPacksSnapshot;
++        return StoreStickers.access$getEnabledStickerPacksSnapshot$p(this.this$0);
+     }
+ }

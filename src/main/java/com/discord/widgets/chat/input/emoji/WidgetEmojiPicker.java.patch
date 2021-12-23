@@ -1,0 +1,31 @@
+--- ./discord_94011/src/main/java/com/discord/widgets/chat/input/emoji/WidgetEmojiPicker.java	2021-12-24 01:10:13.989025700 +0400
++++ ./bluecord/src/main/java/com/discord/widgets/chat/input/emoji/WidgetEmojiPicker.java	2021-12-24 01:08:34.394261100 +0400
+@@ -97,8 +97,8 @@ public final class WidgetEmojiPicker ext
+         super(2131559051);
+     }
+ 
+-    public static final /* synthetic */ void access$configureUI(WidgetEmojiPicker widgetEmojiPicker, EmojiPickerViewModel.ViewState viewState) {
+-        widgetEmojiPicker.configureUI(viewState);
++    public static final /* synthetic */ void access$onSelectedCategoryAdapterPositionUpdated(WidgetEmojiPicker widgetEmojiPicker, int i) {
++        widgetEmojiPicker.onSelectedCategoryAdapterPositionUpdated(i);
+     }
+ 
+     public final void checkUpsellHeaderVisibility(RecyclerView recyclerView) {
+@@ -134,7 +134,7 @@ public final class WidgetEmojiPicker ext
+         }
+     }
+ 
+-    private final void configureUI(EmojiPickerViewModel.ViewState viewState) {
++    public final void configureUI(EmojiPickerViewModel.ViewState viewState) {
+         Unit unit;
+         String searchQuery = viewState != null ? viewState.getSearchQuery() : null;
+         if (!this.restoredSearchQueryFromViewModel && searchQuery != null) {
+@@ -409,7 +409,7 @@ public final class WidgetEmojiPicker ext
+         WidgetSettingsPremium.Companion.launch$default(WidgetSettingsPremium.Companion, requireContext(), null, null, 6, null);
+     }
+ 
+-    public final void onSelectedCategoryAdapterPositionUpdated(int i) {
++    private final void onSelectedCategoryAdapterPositionUpdated(int i) {
+         LinearLayoutManager linearLayoutManager = this.categoryLayoutManager;
+         if (linearLayoutManager == null) {
+             m.throwUninitializedPropertyAccessException("categoryLayoutManager");

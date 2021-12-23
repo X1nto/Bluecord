@@ -1,0 +1,51 @@
+--- ./discord_94011/src/main/java/com/discord/stores/StoreFriendSuggestions.java	2021-12-24 01:10:12.796026100 +0400
++++ ./bluecord/src/main/java/com/discord/stores/StoreFriendSuggestions.java	2021-12-24 01:08:33.293262100 +0400
+@@ -12,10 +12,7 @@ import d0.z.d.m;
+ import java.util.HashMap;
+ import java.util.List;
+ import java.util.Map;
+-import kotlin.Metadata;
+ 
+-@Metadata(bv = {1, 0, 3}, d1 = {"\u0000d\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010$\n\u0002\u0010\t\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0002\n\u0002\b\u0002\n\u0002\u0010 \n\u0002\b\u0006\n\u0002\u0018\u0002\n\u0002\b\b\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0004\n\u0002\u0010%\n\u0002\u0018\u0002\n\u0002\b\u0007\u0018\u00002\u00020\u0001B\u001f\u0012\u0006\u0010#\u001a\u00020\"\u0012\u0006\u0010&\u001a\u00020%\u0012\u0006\u0010,\u001a\u00020+¢\u0006\u0004\b0\u00101J\u001b\u0010\u0006\u001a\u00020\u00052\n\u0010\u0004\u001a\u00060\u0002j\u0002`\u0003H\u0002¢\u0006\u0004\b\u0006\u0010\u0007J\u001d\u0010\u000b\u001a\u0012\u0012\b\u0012\u00060\tj\u0002`\n\u0012\u0004\u0012\u00020\u00050\b¢\u0006\u0004\b\u000b\u0010\fJ\u0017\u0010\u0010\u001a\u00020\u000f2\u0006\u0010\u000e\u001a\u00020\rH\u0007¢\u0006\u0004\b\u0010\u0010\u0011J\u001f\u0010\u0014\u001a\u00020\u000f2\u0010\u0010\u0013\u001a\f\u0012\b\u0012\u00060\u0002j\u0002`\u00030\u0012¢\u0006\u0004\b\u0014\u0010\u0015J\u001b\u0010\u0017\u001a\u00020\u000f2\n\u0010\u0016\u001a\u00060\u0002j\u0002`\u0003H\u0007¢\u0006\u0004\b\u0017\u0010\u0018J\u0017\u0010\u001b\u001a\u00020\u000f2\u0006\u0010\u001a\u001a\u00020\u0019H\u0007¢\u0006\u0004\b\u001b\u0010\u001cJ!\u0010\u001e\u001a\u00020\u000f2\u0010\u0010\u001d\u001a\f\u0012\b\u0012\u00060\u0002j\u0002`\u00030\u0012H\u0007¢\u0006\u0004\b\u001e\u0010\u0015J\u000f\u0010\u001f\u001a\u00020\u000fH\u0007¢\u0006\u0004\b\u001f\u0010 J\u000f\u0010!\u001a\u00020\u000fH\u0016¢\u0006\u0004\b!\u0010 R\u0016\u0010#\u001a\u00020\"8\u0002@\u0002X\u0004¢\u0006\u0006\n\u0004\b#\u0010$R\u0016\u0010&\u001a\u00020%8\u0002@\u0002X\u0004¢\u0006\u0006\n\u0004\b&\u0010'R&\u0010(\u001a\u0012\u0012\b\u0012\u00060\tj\u0002`\n\u0012\u0004\u0012\u00020\u00050\b8\u0002@\u0002X\u000e¢\u0006\u0006\n\u0004\b(\u0010)R&\u0010\u0013\u001a\u0012\u0012\b\u0012\u00060\tj\u0002`\n\u0012\u0004\u0012\u00020\u00050*8\u0002@\u0002X\u0004¢\u0006\u0006\n\u0004\b\u0013\u0010)R\u0019\u0010,\u001a\u00020+8\u0006@\u0006¢\u0006\f\n\u0004\b,\u0010-\u001a\u0004\b.\u0010/¨\u00062"}, d2 = {"Lcom/discord/stores/StoreFriendSuggestions;", "Lcom/discord/stores/StoreV2;", "Lcom/discord/api/friendsuggestions/FriendSuggestion;", "Lcom/discord/stores/ApiFriendSuggestion;", "apiFriendSuggestion", "Lcom/discord/models/friendsuggestions/FriendSuggestion;", "convertApiFriendSuggestion", "(Lcom/discord/api/friendsuggestions/FriendSuggestion;)Lcom/discord/models/friendsuggestions/FriendSuggestion;", "", "", "Lcom/discord/primitives/UserId;", "getFriendSuggestions", "()Ljava/util/Map;", "Lcom/discord/models/domain/ModelPayload;", "readyPayload", "", "handleConnectionOpen", "(Lcom/discord/models/domain/ModelPayload;)V", "", "suggestions", "updateFriendSuggestions", "(Ljava/util/List;)V", "friendSuggestionCreate", "handleFriendSuggestionCreate", "(Lcom/discord/api/friendsuggestions/FriendSuggestion;)V", "Lcom/discord/api/friendsuggestions/FriendSuggestionDelete;", "friendSuggestionDelete", "handleFriendSuggestionDelete", "(Lcom/discord/api/friendsuggestions/FriendSuggestionDelete;)V", "loadedSuggestions", "handleFriendSuggestionsLoaded", "handleFriendSuggestionsLoadFailure", "()V", "snapshotData", "Lcom/discord/stores/StoreStream;", "storeStream", "Lcom/discord/stores/StoreStream;", "Lcom/discord/stores/Dispatcher;", "dispatcher", "Lcom/discord/stores/Dispatcher;", "suggestionsSnapshot", "Ljava/util/Map;", "", "Lcom/discord/utilities/friendsuggestions/FriendSuggestionsFetcher;", "friendSuggestionsFetcher", "Lcom/discord/utilities/friendsuggestions/FriendSuggestionsFetcher;", "getFriendSuggestionsFetcher", "()Lcom/discord/utilities/friendsuggestions/FriendSuggestionsFetcher;", "<init>", "(Lcom/discord/stores/StoreStream;Lcom/discord/stores/Dispatcher;Lcom/discord/utilities/friendsuggestions/FriendSuggestionsFetcher;)V", "app_productionGoogleRelease"}, k = 1, mv = {1, 4, 2})
+-/* compiled from: StoreFriendSuggestions.kt */
+ public final class StoreFriendSuggestions extends StoreV2 {
+     private final Dispatcher dispatcher;
+     private final FriendSuggestionsFetcher friendSuggestionsFetcher;
+@@ -46,7 +43,6 @@ public final class StoreFriendSuggestion
+         return this.friendSuggestionsFetcher;
+     }
+ 
+-    @StoreThread
+     public final void handleConnectionOpen(ModelPayload modelPayload) {
+         m.checkNotNullParameter(modelPayload, "readyPayload");
+         this.suggestions.clear();
+@@ -56,7 +52,6 @@ public final class StoreFriendSuggestion
+         markChanged();
+     }
+ 
+-    @StoreThread
+     public final void handleFriendSuggestionCreate(com.discord.api.friendsuggestions.FriendSuggestion friendSuggestion) {
+         m.checkNotNullParameter(friendSuggestion, "friendSuggestionCreate");
+         CoreUser coreUser = new CoreUser(friendSuggestion.b());
+@@ -66,7 +61,6 @@ public final class StoreFriendSuggestion
+         markChanged();
+     }
+ 
+-    @StoreThread
+     public final void handleFriendSuggestionDelete(FriendSuggestionDelete friendSuggestionDelete) {
+         m.checkNotNullParameter(friendSuggestionDelete, "friendSuggestionDelete");
+         if (this.suggestions.remove(Long.valueOf(friendSuggestionDelete.a())) != null) {
+@@ -74,13 +68,11 @@ public final class StoreFriendSuggestion
+         }
+     }
+ 
+-    @StoreThread
+     public final void handleFriendSuggestionsLoadFailure() {
+         this.suggestions.clear();
+         markChanged();
+     }
+ 
+-    @StoreThread
+     public final void handleFriendSuggestionsLoaded(List<com.discord.api.friendsuggestions.FriendSuggestion> list) {
+         m.checkNotNullParameter(list, "loadedSuggestions");
+         this.suggestions.clear();

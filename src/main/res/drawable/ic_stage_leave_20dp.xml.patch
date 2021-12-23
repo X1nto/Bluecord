@@ -1,0 +1,8 @@
+--- ./discord_94011/src/main/res/drawable/ic_stage_leave_20dp.xml	2021-12-24 01:10:06.583026500 +0400
++++ ./bluecord/src/main/res/drawable/ic_stage_leave_20dp.xml	2021-12-24 01:08:17.413264700 +0400
+@@ -1,4 +1,4 @@
+ <?xml version="1.0" encoding="utf-8"?>
+ <vector xmlns:android="http://schemas.android.com/apk/res/android" android:height="20dp" android:width="20dp" android:viewportWidth="20" android:viewportHeight="20">
+-    <path android:fillColor="#ffffff" android:pathData="M11.5605,9L9.2646,6.706L10.6842,5.294L15.4023,10.009L10.6822,14.708L9.2656,13.292L11.5685,11H0C0.5043,16.045 4.7842,20 9.9744,20C15.5025,20 20,15.513 20,10C20,4.487 15.5025,0 9.9744,0C4.7842,0 0.5043,3.954 0,9H11.5605Z"/>
++    <path android:fillColor="#ffffffff" android:pathData="M11.5605,9L9.2646,6.706L10.6842,5.294L15.4023,10.009L10.6822,14.708L9.2656,13.292L11.5685,11H0C0.5043,16.045 4.7842,20 9.9744,20C15.5025,20 20,15.513 20,10C20,4.487 15.5025,0 9.9744,0C4.7842,0 0.5043,3.954 0,9H11.5605Z"/>
+ </vector>

@@ -1,0 +1,10 @@
+--- ./discord_94011/src/main/java/com/discord/stores/StoreConnectivity$init$1.java	2021-12-24 01:10:12.766028000 +0400
++++ ./bluecord/src/main/java/com/discord/stores/StoreConnectivity$init$1.java	2021-12-24 01:08:33.263263000 +0400
+@@ -24,6 +24,6 @@ public final /* synthetic */ class Store
+ 
+     public final void invoke(NetworkMonitor.State state) {
+         m.checkNotNullParameter(state, "p1");
+-        StoreConnectivity.access$handleDeviceNetworkStateUpdated((StoreConnectivity) this.receiver, state);
++        ((StoreConnectivity) this.receiver).handleDeviceNetworkStateUpdated(state);
+     }
+ }

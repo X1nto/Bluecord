@@ -1,0 +1,20 @@
+--- ./discord_94011/src/main/res/values-fi/strings.xml	2021-12-24 01:10:10.749024000 +0400
++++ ./bluecord/src/main/res/values-fi/strings.xml	2021-12-24 01:08:30.573265200 +0400
+@@ -5655,7 +5655,7 @@
+     <string name="notification_reply_failed">Vastaaminen käyttäjälle {recipient} epäonnistui</string>
+     <string name="notification_reply_success">Vastattu käyttäjälle {recipient}</string>
+     <string name="notification_settings">Ilmoitusasetukset</string>
+-    <string name="notification_title_discord">Discord</string>
++    <string name="notification_title_discord">Bluecord</string>
+     <string name="notification_title_start_game">Joku pelailee</string>
+     <string name="notifications">Ilmoitukset</string>
+     <string name="notifications_muted">Ilmoitukset mykistetty</string>
+@@ -8275,7 +8275,7 @@
+     <string name="tip_voice_conversations_title3">Anna itsesi kuulua</string>
+     <string name="tip_whos_online_body3">Tästä näet kaikki tämän kanavan jäsenet. Näet, ketkä ovat paikalla ja mitä he tekevät (kuten pelaavatko he vaikkapa peliä vai kuuntelevat musiikkia).</string>
+     <string name="tip_whos_online_title3">Mitä kukin tekee?</string>
+-    <string name="tip_writing_messages_body3">Nyt kun olet liittynyt palvelimelle {serverName}, ilmoita itsestäsi ja **sano vaikka heippa**! ��</string>
++    <string name="tip_writing_messages_body3" />
+     <string name="tip_writing_messages_title3">Aloita keskustelu</string>
+     <string name="title">Otsikko</string>
+     <string name="title_bar_close_window">Sulje</string>

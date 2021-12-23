@@ -1,0 +1,8 @@
+--- ./discord_94011/src/main/res/drawable/ic_text_image_24dp.xml	2021-12-24 01:10:04.411027700 +0400
++++ ./bluecord/src/main/res/drawable/ic_text_image_24dp.xml	2021-12-24 01:08:17.445266800 +0400
+@@ -1,4 +1,4 @@
+ <?xml version="1.0" encoding="utf-8"?>
+ <vector xmlns:android="http://schemas.android.com/apk/res/android" android:height="24dp" android:width="24dp" android:viewportWidth="24" android:viewportHeight="24">
+-    <path android:fillColor="#ffffff" android:pathData="M5,14L8.5,9.5L11,12.5L14.5,8L19,14L5,14ZM20,2L4,2C2.895,2 2,2.895 2,4L2,22L6,18L20,18C21.105,18 22,17.105 22,16L22,4C22,2.89 21.1,2 20,2Z"/>
++    <path android:fillColor="#ffffffff" android:pathData="M5,14L8.5,9.5L11,12.5L14.5,8L19,14L5,14ZM20,2L4,2C2.895,2 2,2.895 2,4L2,22L6,18L20,18C21.105,18 22,17.105 22,16L22,4C22,2.89 21.1,2 20,2Z"/>
+ </vector>

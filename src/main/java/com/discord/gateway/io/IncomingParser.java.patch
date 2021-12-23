@@ -1,0 +1,426 @@
+--- ./discord_94011/src/main/java/com/discord/gateway/io/IncomingParser.java	2021-12-24 01:10:12.589023900 +0400
++++ ./bluecord/src/main/java/com/discord/gateway/io/IncomingParser.java	2021-12-24 01:08:33.084263200 +0400
+@@ -44,6 +44,7 @@ import java.io.IOException;
+ import kotlin.Metadata;
+ import kotlin.Unit;
+ import kotlin.jvm.functions.Function1;
++import mods.parser.MessageParser;
+ 
+ @Metadata(bv = {1, 0, 3}, d1 = {"\u0000F\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0002\n\u0002\b\u0002\n\u0002\u0010\u000e\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\b\n\u0002\b\u0002\n\u0002\u0010\u0000\n\u0002\b\u0005\b\u0000\u0018\u00002\u00020\u0001B\u001b\u0012\u0012\u0010\u0011\u001a\u000e\u0012\u0004\u0012\u00020\n\u0012\u0004\u0012\u00020\u00070\u0010¢\u0006\u0004\b\u0019\u0010\u001aJ\r\u0010\u0003\u001a\u00020\u0002¢\u0006\u0004\b\u0003\u0010\u0004J\u0017\u0010\b\u001a\u00020\u00072\u0006\u0010\u0006\u001a\u00020\u0005H\u0016¢\u0006\u0004\b\b\u0010\tR\u0018\u0010\u000b\u001a\u0004\u0018\u00010\n8\u0002@\u0002X\u000e¢\u0006\u0006\n\u0004\b\u000b\u0010\fR\u0016\u0010\u000e\u001a\u00020\r8\u0002@\u0002X.¢\u0006\u0006\n\u0004\b\u000e\u0010\u000fR\"\u0010\u0011\u001a\u000e\u0012\u0004\u0012\u00020\n\u0012\u0004\u0012\u00020\u00070\u00108\u0002@\u0002X\u0004¢\u0006\u0006\n\u0004\b\u0011\u0010\u0012R\u0018\u0010\u0014\u001a\u0004\u0018\u00010\u00138\u0002@\u0002X\u000e¢\u0006\u0006\n\u0004\b\u0014\u0010\u0015R\u0018\u0010\u0017\u001a\u0004\u0018\u00010\u00168\u0002@\u0002X\u000e¢\u0006\u0006\n\u0004\b\u0017\u0010\u0018¨\u0006\u001b"}, d2 = {"Lcom/discord/gateway/io/IncomingParser;", "Lcom/discord/models/domain/Model;", "Lcom/discord/gateway/io/Incoming;", "build", "()Lcom/discord/gateway/io/Incoming;", "Lcom/discord/models/domain/Model$JsonReader;", "reader", "", "assignField", "(Lcom/discord/models/domain/Model$JsonReader;)V", "", "type", "Ljava/lang/String;", "Lcom/discord/gateway/opcodes/Opcode;", "opcode", "Lcom/discord/gateway/opcodes/Opcode;", "Lkotlin/Function1;", "log", "Lkotlin/jvm/functions/Function1;", "", "seq", "Ljava/lang/Integer;", "", "data", "Ljava/lang/Object;", "<init>", "(Lkotlin/jvm/functions/Function1;)V", "gateway_release"}, k = 1, mv = {1, 4, 2})
+ /* compiled from: Incoming.kt */
+@@ -75,6 +76,7 @@ public final class IncomingParser implem
+         this.log = function1;
+     }
+ 
++    /* JADX INFO: Can't fix incorrect switch cases order, some code will duplicate */
+     /* JADX WARNING: Code restructure failed: missing block: B:101:0x0226, code lost:
+         if (r3.equals("INTERACTION_SUCCESS") != false) goto L_0x03f7;
+      */
+@@ -196,51 +198,6 @@ public final class IncomingParser implem
+     /* JADX WARNING: Code restructure failed: missing block: B:247:0x05a3, code lost:
+         r6.data = com.discord.models.deserialization.gson.InboundGatewayGsonParser.fromJson(r7, com.discord.api.message.reaction.MessageReactionUpdate.class);
+      */
+-    /* JADX WARNING: Code restructure failed: missing block: B:270:?, code lost:
+-        return;
+-     */
+-    /* JADX WARNING: Code restructure failed: missing block: B:271:?, code lost:
+-        return;
+-     */
+-    /* JADX WARNING: Code restructure failed: missing block: B:278:?, code lost:
+-        return;
+-     */
+-    /* JADX WARNING: Code restructure failed: missing block: B:281:?, code lost:
+-        return;
+-     */
+-    /* JADX WARNING: Code restructure failed: missing block: B:282:?, code lost:
+-        return;
+-     */
+-    /* JADX WARNING: Code restructure failed: missing block: B:284:?, code lost:
+-        return;
+-     */
+-    /* JADX WARNING: Code restructure failed: missing block: B:285:?, code lost:
+-        return;
+-     */
+-    /* JADX WARNING: Code restructure failed: missing block: B:289:?, code lost:
+-        return;
+-     */
+-    /* JADX WARNING: Code restructure failed: missing block: B:293:?, code lost:
+-        return;
+-     */
+-    /* JADX WARNING: Code restructure failed: missing block: B:294:?, code lost:
+-        return;
+-     */
+-    /* JADX WARNING: Code restructure failed: missing block: B:295:?, code lost:
+-        return;
+-     */
+-    /* JADX WARNING: Code restructure failed: missing block: B:296:?, code lost:
+-        return;
+-     */
+-    /* JADX WARNING: Code restructure failed: missing block: B:303:?, code lost:
+-        return;
+-     */
+-    /* JADX WARNING: Code restructure failed: missing block: B:310:?, code lost:
+-        return;
+-     */
+-    /* JADX WARNING: Code restructure failed: missing block: B:311:?, code lost:
+-        return;
+-     */
+     /* JADX WARNING: Code restructure failed: missing block: B:50:0x0103, code lost:
+         if (r3.equals("THREAD_UPDATE") != false) goto L_0x01e8;
+      */
+@@ -291,15 +248,15 @@ public final class IncomingParser implem
+                     if (hashCode != 115) {
+                         if (hashCode == 116 && nextName.equals("t")) {
+                             this.type = jsonReader.nextString(this.type);
+-                            return;
++                            MessageParser.handleIncoming(this.data);
+                         }
+                     } else if (nextName.equals("s")) {
+                         this.seq = jsonReader.nextIntOrNull();
+-                        return;
++                        MessageParser.handleIncoming(this.data);
+                     }
+                 } else if (nextName.equals("op")) {
+                     this.opcode = Opcode.Companion.fromApiInt(jsonReader.nextInt(-1));
+-                    return;
++                    MessageParser.handleIncoming(this.data);
+                 }
+             } else if (nextName.equals("d")) {
+                 Opcode opcode2 = this.opcode;
+@@ -318,37 +275,37 @@ public final class IncomingParser implem
+                             case -2026522382:
+                                 if (str.equals("SESSIONS_REPLACE")) {
+                                     this.data = jsonReader.nextList(new IncomingParser$assignField$2(jsonReader));
+-                                    return;
++                                    break;
+                                 }
+                                 break;
+                             case -2002723137:
+                                 if (str.equals("GUILD_SCHEDULED_EVENT_CREATE")) {
+                                     this.data = InboundGatewayGsonParser.fromJson(jsonReader, GuildScheduledEvent.class);
+-                                    return;
++                                    break;
+                                 }
+                                 break;
+                             case -1985887378:
+                                 if (str.equals("GUILD_SCHEDULED_EVENT_DELETE")) {
+                                     this.data = InboundGatewayGsonParser.fromJson(jsonReader, GuildScheduledEvent.class);
+-                                    return;
++                                    break;
+                                 }
+                                 break;
+                             case -1967037287:
+                                 if (str.equals("THREAD_MEMBER_UPDATE")) {
+                                     this.data = InboundGatewayGsonParser.fromJson(jsonReader, ThreadMemberUpdate.class);
+-                                    return;
++                                    break;
+                                 }
+                                 break;
+                             case -1921449515:
+                                 if (str.equals("APPLICATION_COMMAND_AUTOCOMPLETE_RESPONSE")) {
+                                     this.data = InboundGatewayGsonParser.fromJson(jsonReader, ApplicationCommandAutocompleteResult.class);
+-                                    return;
++                                    break;
+                                 }
+                                 break;
+                             case -1902625779:
+                                 if (str.equals("GUILD_SCHEDULED_EVENT_USER_CREATE")) {
+                                     this.data = InboundGatewayGsonParser.fromJson(jsonReader, GuildScheduledEventUserUpdate.class);
+-                                    return;
++                                    break;
+                                 }
+                                 break;
+                             case -1893369777:
+@@ -356,19 +313,19 @@ public final class IncomingParser implem
+                             case -1885790020:
+                                 if (str.equals("GUILD_SCHEDULED_EVENT_USER_DELETE")) {
+                                     this.data = InboundGatewayGsonParser.fromJson(jsonReader, GuildScheduledEventUserUpdate.class);
+-                                    return;
++                                    break;
+                                 }
+                                 break;
+                             case -1862771270:
+                                 if (str.equals("THREAD_MEMBER_LIST_UPDATE")) {
+                                     this.data = InboundGatewayGsonParser.fromJson(jsonReader, ThreadMemberListUpdate.class);
+-                                    return;
++                                    break;
+                                 }
+                                 break;
+                             case -1825641445:
+                                 if (str.equals("GUILD_MEMBERS_CHUNK")) {
+                                     this.data = InboundGatewayGsonParser.fromJson(jsonReader, GuildMembersChunk.class);
+-                                    return;
++                                    break;
+                                 }
+                                 break;
+                             case -1553569310:
+@@ -378,19 +335,19 @@ public final class IncomingParser implem
+                             case -1489275252:
+                                 if (str.equals("GUILD_SCHEDULED_EVENT_UPDATE")) {
+                                     this.data = InboundGatewayGsonParser.fromJson(jsonReader, GuildScheduledEvent.class);
+-                                    return;
++                                    break;
+                                 }
+                                 break;
+                             case -1467383482:
+                                 if (str.equals("USER_REQUIRED_ACTION_UPDATE")) {
+                                     this.data = InboundGatewayGsonParser.fromJson(jsonReader, UserRequiredActionUpdate.class);
+-                                    return;
++                                    break;
+                                 }
+                                 break;
+                             case -1446088218:
+                                 if (str.equals("GUILD_STICKERS_UPDATE")) {
+                                     this.data = InboundGatewayGsonParser.fromJson(jsonReader, GuildStickersUpdate.class);
+-                                    return;
++                                    break;
+                                 }
+                                 break;
+                             case -1327124998:
+@@ -408,19 +365,19 @@ public final class IncomingParser implem
+                             case -1201943215:
+                                 if (str.equals("GUILD_MEMBER_LIST_UPDATE")) {
+                                     this.data = ModelGuildMemberListUpdate.Parser.INSTANCE.parse(jsonReader);
+-                                    return;
++                                    break;
+                                 }
+                                 break;
+                             case -960563390:
+                                 if (str.equals("USER_NOTE_UPDATE")) {
+                                     this.data = ModelUserNote.Update.Parser.INSTANCE.parse(jsonReader);
+-                                    return;
++                                    break;
+                                 }
+                                 break;
+                             case -903406451:
+                                 if (str.equals("PRESENCE_UPDATE")) {
+                                     this.data = InboundGatewayGsonParser.fromJson(jsonReader, Presence.class);
+-                                    return;
++                                    break;
+                                 }
+                                 break;
+                             case -850953239:
+@@ -428,19 +385,19 @@ public final class IncomingParser implem
+                             case -843352707:
+                                 if (str.equals("GUILD_INTEGRATIONS_UPDATE")) {
+                                     this.data = jsonReader.parse(new ModelGuildIntegration.Update());
+-                                    return;
++                                    break;
+                                 }
+                                 break;
+                             case -778017807:
+                                 if (str.equals("USER_SETTINGS_UPDATE")) {
+                                     this.data = jsonReader.parse(new ModelUserSettings());
+-                                    return;
++                                    break;
+                                 }
+                                 break;
+                             case -767350043:
+                                 if (str.equals("GUILD_APPLICATION_COMMANDS_UPDATE")) {
+                                     this.data = InboundGatewayGsonParser.fromJson(jsonReader, GuildApplicationCommands.class);
+-                                    return;
++                                    break;
+                                 }
+                                 break;
+                             case -749868974:
+@@ -456,7 +413,7 @@ public final class IncomingParser implem
+                             case -510741638:
+                                 if (str.equals("TYPING_START")) {
+                                     this.data = InboundGatewayGsonParser.fromJson(jsonReader, TypingUser.class);
+-                                    return;
++                                    break;
+                                 }
+                                 break;
+                             case -273749272:
+@@ -470,7 +427,7 @@ public final class IncomingParser implem
+                             case -207118083:
+                                 if (str.equals("CHANNEL_UNREAD_UPDATE")) {
+                                     this.data = ModelChannelUnreadUpdate.Parser.INSTANCE.parse(jsonReader);
+-                                    return;
++                                    break;
+                                 }
+                                 break;
+                             case -161616987:
+@@ -478,7 +435,7 @@ public final class IncomingParser implem
+                             case -135720355:
+                                 if (str.equals("GUILD_MEMBER_REMOVE")) {
+                                     this.data = InboundGatewayGsonParser.fromJson(jsonReader, GuildMemberRemove.class);
+-                                    return;
++                                    break;
+                                 }
+                                 break;
+                             case -107601202:
+@@ -486,7 +443,7 @@ public final class IncomingParser implem
+                             case -45642698:
+                                 if (str.equals("FRIEND_SUGGESTION_CREATE")) {
+                                     this.data = InboundGatewayGsonParser.fromJson(jsonReader, FriendSuggestion.class);
+-                                    return;
++                                    break;
+                                 }
+                                 break;
+                             case -39955806:
+@@ -494,7 +451,7 @@ public final class IncomingParser implem
+                             case -28806939:
+                                 if (str.equals("FRIEND_SUGGESTION_DELETE")) {
+                                     this.data = InboundGatewayGsonParser.fromJson(jsonReader, FriendSuggestionDelete.class);
+-                                    return;
++                                    break;
+                                 }
+                                 break;
+                             case 77848963:
+@@ -507,19 +464,19 @@ public final class IncomingParser implem
+                                     P.append(ClockFactory.get().currentTimeMillis() - currentTimeMillis);
+                                     P.append(" ms.");
+                                     function1.invoke(P.toString());
+-                                    return;
++                                    break;
+                                 }
+                                 break;
+                             case 85547718:
+                                 if (str.equals("STREAM_SERVER_UPDATE")) {
+                                     this.data = StreamServerUpdate.Parser.INSTANCE.parse(jsonReader);
+-                                    return;
++                                    break;
+                                 }
+                                 break;
+                             case 151900580:
+                                 if (str.equals("THREAD_MEMBERS_UPDATE")) {
+                                     this.data = InboundGatewayGsonParser.fromJson(jsonReader, ThreadMembersUpdate.class);
+-                                    return;
++                                    break;
+                                 }
+                                 break;
+                             case 239698613:
+@@ -529,7 +486,7 @@ public final class IncomingParser implem
+                             case 391412669:
+                                 if (str.equals("USER_UPDATE")) {
+                                     this.data = InboundGatewayGsonParser.fromJson(jsonReader, User.class);
+-                                    return;
++                                    break;
+                                 }
+                                 break;
+                             case 789496470:
+@@ -547,13 +504,13 @@ public final class IncomingParser implem
+                             case 1276846319:
+                                 if (str.equals("GUILD_EMOJIS_UPDATE")) {
+                                     this.data = InboundGatewayGsonParser.fromJson(jsonReader, GuildEmojisUpdate.class);
+-                                    return;
++                                    break;
+                                 }
+                                 break;
+                             case 1281125393:
+                                 if (str.equals("MESSAGE_ACK")) {
+                                     this.data = ModelReadState.Parser.INSTANCE.parse(jsonReader);
+-                                    return;
++                                    break;
+                                 }
+                                 break;
+                             case 1285223808:
+@@ -561,13 +518,13 @@ public final class IncomingParser implem
+                             case 1389895301:
+                                 if (str.equals("USER_GUILD_SETTINGS_UPDATE")) {
+                                     this.data = jsonReader.parse(new ModelNotificationSettings());
+-                                    return;
++                                    break;
+                                 }
+                                 break;
+                             case 1476675193:
+                                 if (str.equals("GUILD_ROLE_CREATE")) {
+                                     this.data = InboundGatewayGsonParser.fromJson(jsonReader, GuildRoleCreate.class);
+-                                    return;
++                                    break;
+                                 }
+                                 break;
+                             case 1478484999:
+@@ -575,7 +532,7 @@ public final class IncomingParser implem
+                             case 1493510952:
+                                 if (str.equals("GUILD_ROLE_DELETE")) {
+                                     this.data = InboundGatewayGsonParser.fromJson(jsonReader, GuildRoleDelete.class);
+-                                    return;
++                                    break;
+                                 }
+                                 break;
+                             case 1511636001:
+@@ -585,7 +542,7 @@ public final class IncomingParser implem
+                             case 1616207515:
+                                 if (str.equals("STREAM_CREATE")) {
+                                     this.data = StreamCreateOrUpdate.Parser.INSTANCE.parse(jsonReader);
+-                                    return;
++                                    break;
+                                 }
+                                 break;
+                             case 1622830784:
+@@ -593,19 +550,19 @@ public final class IncomingParser implem
+                             case 1633043274:
+                                 if (str.equals("STREAM_DELETE")) {
+                                     this.data = StreamDelete.Parser.INSTANCE.parse(jsonReader);
+-                                    return;
++                                    break;
+                                 }
+                                 break;
+                             case 1689894925:
+                                 if (str.equals("PRESENCES_REPLACE")) {
+                                     this.data = jsonReader.nextList(new IncomingParser$assignField$1(jsonReader));
+-                                    return;
++                                    break;
+                                 }
+                                 break;
+                             case 1699412580:
+                                 if (str.equals("VOICE_STATE_UPDATE")) {
+                                     this.data = InboundGatewayGsonParser.fromJson(jsonReader, VoiceState.class);
+-                                    return;
++                                    break;
+                                 }
+                                 break;
+                             case 1781835934:
+@@ -613,44 +570,42 @@ public final class IncomingParser implem
+                             case 1882183896:
+                                 if (str.equals("VOICE_SERVER_UPDATE")) {
+                                     this.data = InboundGatewayGsonParser.fromJson(jsonReader, VoiceServer.class);
+-                                    return;
++                                    break;
+                                 }
+                                 break;
+                             case 1928220071:
+                                 if (str.equals("THREAD_LIST_SYNC")) {
+                                     this.data = ModelThreadListSync.Parser.INSTANCE.parse(jsonReader);
+-                                    return;
++                                    break;
+                                 }
+                                 break;
+                             case 1990123078:
+                                 if (str.equals("GUILD_ROLE_UPDATE")) {
+                                     this.data = InboundGatewayGsonParser.fromJson(jsonReader, GuildRoleUpdate.class);
+-                                    return;
++                                    break;
+                                 }
+                                 break;
+                             case 2129655400:
+                                 if (str.equals("STREAM_UPDATE")) {
+                                     this.data = StreamCreateOrUpdate.Parser.INSTANCE.parse(jsonReader);
+-                                    return;
++                                    break;
+                                 }
+                                 break;
+                         }
+                     }
+                     jsonReader.skipValue();
+-                    return;
+                 } else if (ordinal == 10) {
+                     this.data = Boolean.valueOf(jsonReader.nextBoolean(false));
+-                    return;
+                 } else if (ordinal != 11) {
+                     jsonReader.skipValue();
+-                    return;
+                 } else {
+                     this.data = jsonReader.parse(new ModelPayload.Hello());
+-                    return;
+                 }
++                MessageParser.handleIncoming(this.data);
+             }
+         }
+         jsonReader.skipValue();
++        MessageParser.handleIncoming(this.data);
+     }
+ 
+     public final Incoming build() {

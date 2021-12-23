@@ -1,0 +1,18 @@
+--- ./discord_94011/src/main/java/com/discord/app/App.java	2021-12-24 01:10:12.284027400 +0400
++++ ./bluecord/src/main/java/com/discord/app/App.java	2021-12-24 01:08:32.825263500 +0400
+@@ -47,6 +47,7 @@ import kotlin.jvm.internal.DefaultConstr
+ @Metadata(bv = {1, 0, 3}, d1 = {"\u0000\u0018\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0010\u0002\n\u0002\b\u0002\n\u0002\u0010\b\n\u0002\b\u0007\b\u0016\u0018\u0000 \n2\u00020\u0001:\u0001\u000bB\u0007¢\u0006\u0004\b\t\u0010\u0004J\u000f\u0010\u0003\u001a\u00020\u0002H\u0016¢\u0006\u0004\b\u0003\u0010\u0004J\u0017\u0010\u0007\u001a\u00020\u00022\u0006\u0010\u0006\u001a\u00020\u0005H\u0016¢\u0006\u0004\b\u0007\u0010\b¨\u0006\f"}, d2 = {"Lcom/discord/app/App;", "Landroid/app/Application;", "", "onCreate", "()V", "", "level", "onTrimMemory", "(I)V", "<init>", "j", "a", "app_productionGoogleRelease"}, k = 1, mv = {1, 4, 2})
+ /* compiled from: App.kt */
+ public class App extends Application {
++    public static Application app;
+     public static final boolean i = w.contains$default((CharSequence) "productionGoogle", (CharSequence) "local", false, 2, (Object) null);
+     public static final a j = new a(null);
+ 
+@@ -160,6 +161,7 @@ public class App extends Application {
+ 
+     public void onCreate() {
+         super.onCreate();
++        app = this;
+         SharedPreferencesProvider.INSTANCE.init(this);
+         ApplicationProvider.INSTANCE.init(this);
+         ActivityProvider.Companion.init(this);

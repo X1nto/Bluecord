@@ -1,0 +1,14 @@
+--- ./discord_94011/src/main/res/drawable-anydpi-v24/ic_creditcard_mastercard.xml	2021-12-24 01:09:59.651028400 +0400
++++ ./bluecord/src/main/res/drawable-anydpi-v24/ic_creditcard_mastercard.xml	2021-12-24 01:08:18.094263100 +0400
+@@ -1,7 +1,7 @@
+ <?xml version="1.0" encoding="utf-8"?>
+ <vector xmlns:android="http://schemas.android.com/apk/res/android" android:height="22dp" android:width="32dp" android:viewportWidth="32" android:viewportHeight="22">
+-    <path android:fillColor="#5883ed" android:pathData="M2,0L30,0A2,2 0,0 1,32 2L32,20A2,2 0,0 1,30 22L2,22A2,2 0,0 1,0 20L0,2A2,2 0,0 1,2 0z" android:fillType="1"/>
+-    <path android:fillColor="#ffb44f" android:pathData="M20,11m-5,0a5,5 0,1 1,10 0a5,5 0,1 1,-10 0" android:fillType="1"/>
+-    <path android:fillColor="#ce4747" android:pathData="M12,11m-5,0a5,5 0,1 1,10 0a5,5 0,1 1,-10 0" android:fillType="1"/>
+-    <path android:fillColor="#d6765f" android:pathData="M16,7.9995C15.3721,8.8353 15,9.8742 15,11s0.3721,2.1647 1,3.0005c0.6279,-0.8357 1,-1.8747 1,-3.0005 0,-1.1258 -0.3721,-2.1647 -1,-3.0005z" android:fillType="1"/>
++    <path android:fillColor="#ff5883ed" android:pathData="M2,0L30,0A2,2 0,0 1,32 2L32,20A2,2 0,0 1,30 22L2,22A2,2 0,0 1,0 20L0,2A2,2 0,0 1,2 0z" android:fillType="1"/>
++    <path android:fillColor="#ffffb44f" android:pathData="M20,11m-5,0a5,5 0,1 1,10 0a5,5 0,1 1,-10 0" android:fillType="1"/>
++    <path android:fillColor="#ffce4747" android:pathData="M12,11m-5,0a5,5 0,1 1,10 0a5,5 0,1 1,-10 0" android:fillType="1"/>
++    <path android:fillColor="#ffd6765f" android:pathData="M16,7.9995C15.3721,8.8353 15,9.8742 15,11s0.3721,2.1647 1,3.0005c0.6279,-0.8357 1,-1.8747 1,-3.0005 0,-1.1258 -0.3721,-2.1647 -1,-3.0005z" android:fillType="1"/>
+ </vector>

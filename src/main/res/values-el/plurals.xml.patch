@@ -1,0 +1,1777 @@
+--- ./discord_94011/src/main/res/values-el/plurals.xml	2021-12-24 01:10:10.684025700 +0400
++++ ./bluecord/src/main/res/values-el/plurals.xml	2021-12-24 01:08:30.456265800 +0400
+@@ -1,1378 +1,1378 @@
+ <?xml version="1.0" encoding="utf-8"?>
+ <resources>
+     <plurals name="activity_feed_now_playing_header_two_known_extras">
+-        <item quantity="one">{extras} άλλα</item>
+         <item quantity="other">{extras} άλλοι</item>
++        <item quantity="one">{extras} άλλα</item>
+     </plurals>
+     <plurals name="activity_feed_single_member_list_header_memberCount">
+-        <item quantity="one">{memberCount} Άτομο</item>
+         <item quantity="other">{memberCount} Άτομα</item>
++        <item quantity="one">{memberCount} Άτομο</item>
+     </plurals>
+     <plurals name="activity_feed_user_played_days_ago_time">
+-        <item quantity="one">ημέρα</item>
+         <item quantity="other">ημέρες</item>
++        <item quantity="one">ημέρα</item>
+     </plurals>
+     <plurals name="activity_feed_user_played_hours_ago_time">
+-        <item quantity="one">ώρα</item>
+         <item quantity="other">ώρες</item>
++        <item quantity="one">ώρα</item>
+     </plurals>
+     <plurals name="activity_feed_user_played_minutes_ago_time">
+-        <item quantity="one">λεπτό</item>
+         <item quantity="other">λεπτά</item>
++        <item quantity="one">λεπτό</item>
+     </plurals>
+     <plurals name="activity_feed_user_played_seconds_ago_time">
+-        <item quantity="one">δευτερόλεπτο</item>
+         <item quantity="other">δευτερόλεπτα</item>
++        <item quantity="one">δευτερόλεπτο</item>
+     </plurals>
+     <plurals name="age_gate_confirm_header_age">
+-        <item quantity="one">1 έτους</item>
+         <item quantity="other">{age} ετών</item>
++        <item quantity="one">1 έτους</item>
+     </plurals>
+     <plurals name="age_gate_underage_existing_body_deletion_with_days_days">
+-        <item quantity="one">1 ημέρα</item>
+         <item quantity="other">{days} ημέρες</item>
++        <item quantity="one">1 ημέρα</item>
+     </plurals>
+     <plurals name="announcement_edit_rate_limit_retryAfterMinutes">
+-        <item quantity="one">1 λεπτό</item>
+         <item quantity="other">{retryAfterMinutes} λεπτά</item>
++        <item quantity="one">1 λεπτό</item>
+     </plurals>
+     <plurals name="application_progress_indicator_installing_hours_timeRemaining">
+-        <item quantity="one">{#} ώρα</item>
+         <item quantity="other">{#} ώρες</item>
++        <item quantity="one">{#} ώρα</item>
+     </plurals>
+     <plurals name="application_progress_indicator_installing_minutes_timeRemaining">
+-        <item quantity="one">{#} λεπτό</item>
+         <item quantity="other">{#} λεπτά</item>
++        <item quantity="one">{#} λεπτό</item>
+     </plurals>
+     <plurals name="application_progress_indicator_installing_seconds_timeRemaining">
+-        <item quantity="one">ολοκλήρωση</item>
+         <item quantity="other">{#} δευτερόλεπτα απομένουν</item>
++        <item quantity="one">ολοκλήρωση</item>
+     </plurals>
+     <plurals name="application_progress_indicator_updating_hours_timeRemaining">
+-        <item quantity="one">{#} ώρα</item>
+         <item quantity="other">{#} ώρες</item>
++        <item quantity="one">{#} ώρα</item>
+     </plurals>
+     <plurals name="application_progress_indicator_updating_minutes_timeRemaining">
+-        <item quantity="one">{#} λεπτό</item>
+         <item quantity="other">{#} λεπτά</item>
++        <item quantity="one">{#} λεπτό</item>
+     </plurals>
+     <plurals name="application_progress_indicator_updating_seconds_timeRemaining">
+-        <item quantity="one">ολοκλήρωση</item>
+         <item quantity="other">{#} δευτερόλεπτα απομένουν</item>
++        <item quantity="one">ολοκλήρωση</item>
+     </plurals>
+     <plurals name="application_store_gift_purchase_confirm_monthly_mobile_intervalCount">
+-        <item quantity="one">{#} μήνα</item>
+         <item quantity="other">{#} μήνες</item>
++        <item quantity="one">{#} μήνα</item>
+     </plurals>
+     <plurals name="application_store_gift_purchase_confirm_subscription_monthly_intervalCount">
+-        <item quantity="one">{#} μήνα</item>
+         <item quantity="other">{#} μήνες</item>
++        <item quantity="one">{#} μήνα</item>
+     </plurals>
+     <plurals name="application_store_gift_purchase_confirm_subscription_yearly_intervalCount">
+-        <item quantity="one">{#} χρόνο</item>
+         <item quantity="other">{#} χρόνια</item>
++        <item quantity="one">{#} χρόνο</item>
+     </plurals>
+     <plurals name="application_store_gift_purchase_confirm_yearly_mobile_intervalCount">
+-        <item quantity="one">{#} χρόνο</item>
+         <item quantity="other">{#} χρόνια</item>
++        <item quantity="one">{#} χρόνο</item>
+     </plurals>
+     <plurals name="application_store_recommendation_ever_played_other_count">
+-        <item quantity="one">1 άτομο</item>
+         <item quantity="other">{count} άτομα</item>
++        <item quantity="one">1 άτομο</item>
+     </plurals>
+     <plurals name="application_store_recommendation_now_playing_other_count">
+-        <item quantity="one">1 άτομο</item>
+         <item quantity="other">{count} άτομα</item>
++        <item quantity="one">1 άτομο</item>
+     </plurals>
+     <plurals name="application_store_recommendation_recently_played_other_count">
+-        <item quantity="one">1 άτομο</item>
+         <item quantity="other">{count} άτομα</item>
++        <item quantity="one">1 άτομο</item>
+     </plurals>
+     <plurals name="attach_payment_source_optional_with_entitlements_warning_months">
+-        <item quantity="one">{#} μήνα</item>
+         <item quantity="other">{#} μήνες</item>
++        <item quantity="one">{#} μήνα</item>
+     </plurals>
+     <plurals name="autocomplete_emoji_upsell_count">
+-        <item quantity="one">{#} ακόμα ταιριαστό emoji</item>
+         <item quantity="other">{#} ακόμα ταιριαστά emoji</item>
++        <item quantity="one">{#} ακόμα ταιριαστό emoji</item>
+     </plurals>
+     <plurals name="bans_header_bans">
+-        <item quantity="one">1 αποκλεισμός</item>
+         <item quantity="other">{bans} αποκλεισμοί</item>
++        <item quantity="one">1 αποκλεισμός</item>
+     </plurals>
+     <plurals name="billing_plan_select_description_premium_tier_1_premium_guild_bundle_num">
+-        <item quantity="one">{#} Ενίσχυση</item>
+         <item quantity="other">{#} Ενισχύσεις</item>
++        <item quantity="one">{#} Ενίσχυση</item>
+     </plurals>
+     <plurals name="billing_plan_select_description_premium_tier_2_premium_guild_bundle_num">
+-        <item quantity="one">{#} Ενίσχυση</item>
+         <item quantity="other">{#} Ενισχύσεις</item>
++        <item quantity="one">{#} Ενίσχυση</item>
+     </plurals>
+     <plurals name="billing_plan_select_includes_boosts_num">
+-        <item quantity="one">{#} Ενίσχυση</item>
+         <item quantity="other">{#} Ενισχύσεις</item>
++        <item quantity="one">{#} Ενίσχυση</item>
+     </plurals>
+     <plurals name="billing_price_per_year_months_free_numFreeMonths">
+-        <item quantity="one">{#} Μήνας</item>
+         <item quantity="other">{#} Μήνες</item>
++        <item quantity="one">{#} Μήνας</item>
+     </plurals>
+     <plurals name="billing_refund_purchase_date_daysSincePurchase">
+-        <item quantity="one">{daysSincePurchase} ημέρα πριν</item>
+         <item quantity="other">{daysSincePurchase} ημέρες πριν</item>
++        <item quantity="one">{daysSincePurchase} ημέρα πριν</item>
+     </plurals>
+     <plurals name="billing_switch_plan_confirm_upgrade_tier_2_year_numFreeGuildSubscriptions">
+-        <item quantity="one">{#} Ενίσχυση διακομιστή</item>
+         <item quantity="other">{#} Ενισχύσεις διακομιστή</item>
++        <item quantity="one">{#} Ενίσχυση διακομιστή</item>
+     </plurals>
+     <plurals name="billing_switch_plan_tier_2_description_numFreeGuildSubscriptions">
+-        <item quantity="one">{#} Ενίσχυση διακομιστή</item>
+         <item quantity="other">{#} Ενισχύσεις διακομιστή</item>
++        <item quantity="one">{#} Ενίσχυση διακομιστή</item>
+     </plurals>
+     <plurals name="billing_switch_plan_upgrade_body_tier_2_year_numFreeGuildSubscriptions">
+-        <item quantity="one">{#} Ενίσχυση διακομιστή</item>
+         <item quantity="other">{#} Ενισχύσεις διακομιστή</item>
++        <item quantity="one">{#} Ενίσχυση διακομιστή</item>
+     </plurals>
+     <plurals name="blocked_message_count_count">
+-        <item quantity="one">{count} μπλοκαρισμένο μήνυμα</item>
+         <item quantity="other">{count} μπλοκαρισμένα μηνύματα</item>
++        <item quantity="one">{count} μπλοκαρισμένο μήνυμα</item>
+     </plurals>
+     <plurals name="blocked_messages_count">
+-        <item quantity="one">1 μπλοκαρισμένο μήνυμα</item>
+         <item quantity="other">{count} μπλοκαρισμένα μηνύματα</item>
++        <item quantity="one">1 μπλοκαρισμένο μήνυμα</item>
+     </plurals>
+     <plurals name="blocked_messages_hide_count">
+-        <item quantity="one">Σύμπτυξη μηνύματος</item>
+         <item quantity="other">Σύμπτυξη μηνυμάτων</item>
++        <item quantity="one">Σύμπτυξη μηνύματος</item>
+     </plurals>
+     <plurals name="blocked_messages_show_count">
+-        <item quantity="one">Εμφάνιση μηνύματος</item>
+         <item quantity="other">Εμφάνιση μηνυμάτων</item>
++        <item quantity="one">Εμφάνιση μηνύματος</item>
+     </plurals>
+     <plurals name="camera_disabled_limit_reached_limit">
+-        <item quantity="one">{#} χρήστη</item>
+         <item quantity="other">{#} χρήστες</item>
++        <item quantity="one">{#} χρήστη</item>
+     </plurals>
+     <plurals name="camera_preview_video_background_upload_max_tooltip_maxCustomBackgrounds">
+-        <item quantity="one">{#} φόντου</item>
+         <item quantity="other">{#} φόντων</item>
++        <item quantity="one">{#} φόντου</item>
+     </plurals>
+     <plurals name="channel_members_a11y_label_count">
+-        <item quantity="one">{#} μέλος</item>
+         <item quantity="other">{#} μέλη</item>
++        <item quantity="one">{#} μέλος</item>
+     </plurals>
+     <plurals name="channel_mention_badge_a11y_label_mentionCount">
+-        <item quantity="one">{#} αναφορά</item>
+         <item quantity="other">{#} αναφορές</item>
++        <item quantity="one">{#} αναφορά</item>
+     </plurals>
+     <plurals name="channel_slowmode_cooldown_seconds">
+-        <item quantity="one">1 δευτερόλεπτο</item>
+         <item quantity="other">{seconds} δευτερόλεπτα</item>
++        <item quantity="one">1 δευτερόλεπτο</item>
+     </plurals>
+     <plurals name="channel_slowmode_desc_hours_hours">
+-        <item quantity="one">1 ώρα</item>
+         <item quantity="other">{hours} ώρες</item>
++        <item quantity="one">1 ώρα</item>
+     </plurals>
+     <plurals name="channel_slowmode_desc_hours_minutes">
+-        <item quantity="one">1 λεπτό</item>
+         <item quantity="other">{minutes} λεπτά</item>
++        <item quantity="one">1 λεπτό</item>
+     </plurals>
+     <plurals name="channel_slowmode_desc_hours_seconds">
+-        <item quantity="one">1 δευτερόλεπτο</item>
+         <item quantity="other">{seconds} δευτερόλεπτα</item>
++        <item quantity="one">1 δευτερόλεπτο</item>
+     </plurals>
+     <plurals name="channel_slowmode_desc_minutes_minutes">
+-        <item quantity="one">1 λεπτό</item>
+         <item quantity="other">{minutes} λεπτά</item>
++        <item quantity="one">1 λεπτό</item>
+     </plurals>
+     <plurals name="channel_slowmode_desc_minutes_seconds">
+-        <item quantity="one">1 δευτερόλεπτο</item>
+         <item quantity="other">{seconds} δευτερόλεπτα</item>
++        <item quantity="one">1 δευτερόλεπτο</item>
+     </plurals>
+     <plurals name="channel_slowmode_desc_seconds">
+-        <item quantity="one">1 δευτερόλεπτο</item>
+         <item quantity="other">{seconds} δευτερόλεπτα</item>
++        <item quantity="one">1 δευτερόλεπτο</item>
+     </plurals>
+     <plurals name="create_stage_instance_speakers_label_speakerCount">
+-        <item quantity="one">1 Ομιλητή</item>
+         <item quantity="other">{speakerCount} Ομιλητών</item>
++        <item quantity="one">1 Ομιλητή</item>
+     </plurals>
+     <plurals name="custom_status_clear_in_hours_hours">
+-        <item quantity="one">{#} ώρα</item>
+         <item quantity="other">{#} ώρες</item>
++        <item quantity="one">{#} ώρα</item>
+     </plurals>
+     <plurals name="custom_status_clear_in_minutes_minutes">
+-        <item quantity="one">{#} λεπτό</item>
+         <item quantity="other">{#} λεπτά</item>
++        <item quantity="one">{#} λεπτό</item>
+     </plurals>
+     <plurals name="custom_status_hours_hours">
+-        <item quantity="one">{#} ώρα</item>
+         <item quantity="other">{#} ώρες</item>
++        <item quantity="one">{#} ώρα</item>
+     </plurals>
+     <plurals name="custom_status_minutes_minutes">
+-        <item quantity="one">{#} λεπτό</item>
+         <item quantity="other">{#} λεπτά</item>
++        <item quantity="one">{#} λεπτό</item>
+     </plurals>
+     <plurals name="directory_search_results_header_numResults">
+-        <item quantity="one">**1** κοινότητα</item>
+         <item quantity="other">**{numResults}** κοινότητες</item>
++        <item quantity="one">**1** κοινότητα</item>
+     </plurals>
+     <plurals name="discovery_speaker_count_speakersCount">
+-        <item quantity="one">+{count} Ομιλητής</item>
+         <item quantity="other">+{count} Ομιλητές</item>
++        <item quantity="one">+{count} Ομιλητής</item>
+     </plurals>
+     <plurals name="dm_tooltip_a11y_label_mentions">
+-        <item quantity="one">, {#} μη αναγνωσμένο μήνυμα</item>
+         <item quantity="other">, {#} μη αναγνωσμένα μηνύματα</item>
++        <item quantity="one">, {#} μη αναγνωσμένο μήνυμα</item>
+     </plurals>
+     <plurals name="duration_days_days">
+-        <item quantity="one">1 ημέρα</item>
+         <item quantity="other">{days} ημέρες</item>
++        <item quantity="one">1 ημέρα</item>
+     </plurals>
+     <plurals name="duration_days_short_days">
+-        <item quantity="one">1η</item>
+         <item quantity="other">{days}η</item>
++        <item quantity="one">1η</item>
+     </plurals>
+     <plurals name="duration_hours_hours">
+-        <item quantity="one">1 ώρα</item>
+         <item quantity="other">{hours} ώρες</item>
++        <item quantity="one">1 ώρα</item>
+     </plurals>
+     <plurals name="duration_hours_short_hours">
+-        <item quantity="one">1ω</item>
+         <item quantity="other">{hours}ω</item>
++        <item quantity="one">1ω</item>
+     </plurals>
+     <plurals name="duration_mins_mins">
+-        <item quantity="one">1 λεπτό</item>
+         <item quantity="other">{mins} λεπτά</item>
++        <item quantity="one">1 λεπτό</item>
+     </plurals>
+     <plurals name="duration_minutes_minutes">
+-        <item quantity="one">1 λεπτό</item>
+         <item quantity="other">{minutes} λεπτά</item>
++        <item quantity="one">1 λεπτό</item>
+     </plurals>
+     <plurals name="duration_minutes_short_minutes">
+-        <item quantity="one">1λ</item>
+         <item quantity="other">{minutes}λ</item>
++        <item quantity="one">1λ</item>
+     </plurals>
+     <plurals name="duration_seconds_seconds">
+-        <item quantity="one">1 δευτερόλεπτο</item>
+         <item quantity="other">{seconds} δευτερόλεπτα</item>
++        <item quantity="one">1 δευτερόλεπτο</item>
+     </plurals>
+     <plurals name="duration_seconds_short_seconds">
+-        <item quantity="one">1δ</item>
+         <item quantity="other">{seconds}δε</item>
++        <item quantity="one">1δ</item>
+     </plurals>
+     <plurals name="embedded_activities_are_participating_count">
+-        <item quantity="one">{#} άλλος</item>
+         <item quantity="other">{#} άλλοι</item>
++        <item quantity="one">{#} άλλος</item>
+     </plurals>
+     <plurals name="embedded_activities_are_playing_count">
+-        <item quantity="one">{#} άλλος</item>
+         <item quantity="other">{#} άλλοι</item>
++        <item quantity="one">{#} άλλος</item>
+     </plurals>
+     <plurals name="embedded_activities_are_watching_count">
+-        <item quantity="one">{#} άλλος</item>
+         <item quantity="other">{#} άλλοι</item>
++        <item quantity="one">{#} άλλος</item>
+     </plurals>
+     <plurals name="emoji_slots_available_count">
+-        <item quantity="one">{count} θέση</item>
+         <item quantity="other">{count} θέσεις</item>
++        <item quantity="one">{count} θέση</item>
+     </plurals>
+     <plurals name="emojis_title_count">
+-        <item quantity="one">{count} emoji</item>
+         <item quantity="other">{count} emoji</item>
++        <item quantity="one">{count} emoji</item>
+     </plurals>
+     <plurals name="exo_controls_fastforward_by_amount_description">
+-        <item quantity="one">Γρήγορη προώθηση κατά %d δευτερόλεπτο</item>
+         <item quantity="other">Γρήγορη προώθηση κατά %d δευτερόλεπτα</item>
++        <item quantity="one">Γρήγορη προώθηση κατά %d δευτερόλεπτο</item>
+     </plurals>
+     <plurals name="exo_controls_rewind_by_amount_description">
+-        <item quantity="one">Μετάβαση προς τα πίσω κατά %d δευτερόλεπτο</item>
+         <item quantity="other">Μετάβαση προς τα πίσω κατά %d δευτερόλεπτα</item>
++        <item quantity="one">Μετάβαση προς τα πίσω κατά %d δευτερόλεπτο</item>
+     </plurals>
+     <plurals name="form_help_last_seen_days">
+-        <item quantity="one">1 ημέρα</item>
+         <item quantity="other">{days} ημέρες</item>
++        <item quantity="one">1 ημέρα</item>
+     </plurals>
+     <plurals name="form_help_last_seen_members">
+-        <item quantity="one">1 μέλος</item>
+         <item quantity="other">{members} μέλη</item>
++        <item quantity="one">1 μέλος</item>
+     </plurals>
+     <plurals name="form_help_last_seen_with_roles_days">
+-        <item quantity="one">1 ημέρα</item>
+         <item quantity="other">{days} ημέρες</item>
++        <item quantity="one">1 ημέρα</item>
+     </plurals>
+     <plurals name="form_help_last_seen_with_roles_members">
+-        <item quantity="one">1 μέλος</item>
+         <item quantity="other">{members} μέλη</item>
++        <item quantity="one">1 μέλος</item>
+     </plurals>
+     <plurals name="game_feed_unknown_players_count">
+-        <item quantity="one">{#} Άγνωστος παίκτης</item>
+         <item quantity="other">{#} Άγνωστοι παίκτες</item>
++        <item quantity="one">{#} Άγνωστος παίκτης</item>
+     </plurals>
+     <plurals name="game_feed_user_played_days_ago_time">
+-        <item quantity="one">ημέρα</item>
+         <item quantity="other">ημέρες</item>
++        <item quantity="one">ημέρα</item>
+     </plurals>
+     <plurals name="game_feed_user_played_hours_ago_time">
+-        <item quantity="one">ώρα</item>
+         <item quantity="other">ώρες</item>
++        <item quantity="one">ώρα</item>
+     </plurals>
+     <plurals name="game_feed_user_played_minutes_ago_time">
+-        <item quantity="one">λεπτό</item>
+         <item quantity="other">λεπτά</item>
++        <item quantity="one">λεπτό</item>
+     </plurals>
+     <plurals name="game_feed_user_played_months_ago_time">
+-        <item quantity="one">μήνα</item>
+         <item quantity="other">μήνες</item>
++        <item quantity="one">μήνα</item>
+     </plurals>
+     <plurals name="game_feed_user_played_weeks_ago_time">
+-        <item quantity="one">εβδομάδα</item>
+         <item quantity="other">εβδομάδες</item>
++        <item quantity="one">εβδομάδα</item>
+     </plurals>
+     <plurals name="game_feed_user_played_years_ago_time">
+-        <item quantity="one">χρόνο</item>
+         <item quantity="other">χρόνια</item>
++        <item quantity="one">χρόνο</item>
+     </plurals>
+     <plurals name="game_feed_user_playing_for_days_time">
+-        <item quantity="one">ημέρα</item>
+         <item quantity="other">ημέρες</item>
++        <item quantity="one">ημέρα</item>
+     </plurals>
+     <plurals name="game_feed_user_playing_for_hours_time">
+-        <item quantity="one">ώρα</item>
+         <item quantity="other">ώρες</item>
++        <item quantity="one">ώρα</item>
+     </plurals>
+     <plurals name="game_feed_user_playing_for_minutes_time">
+-        <item quantity="one">λεπτό</item>
+         <item quantity="other">λεπτά</item>
++        <item quantity="one">λεπτό</item>
+     </plurals>
+     <plurals name="game_library_last_played_days_time">
+-        <item quantity="one">χθες</item>
+         <item quantity="other">{#} ημέρες πριν</item>
++        <item quantity="one">χθες</item>
+     </plurals>
+     <plurals name="game_library_last_played_hours_time">
+-        <item quantity="one">{#} ώρα</item>
+         <item quantity="other">{#} ώρες</item>
++        <item quantity="one">{#} ώρα</item>
+     </plurals>
+     <plurals name="game_library_last_played_minutes_time">
+-        <item quantity="one">{#} λεπτό</item>
+         <item quantity="other">{#} λεπτά</item>
++        <item quantity="one">{#} λεπτό</item>
+     </plurals>
+     <plurals name="game_library_last_played_months_time">
+-        <item quantity="one">τελευταίος μήνας</item>
+         <item quantity="other">{#} μήνες πριν</item>
++        <item quantity="one">τελευταίος μήνας</item>
+     </plurals>
+     <plurals name="game_library_last_played_weeks_time">
+-        <item quantity="one">τελευταία εβδομάδα</item>
+         <item quantity="other">{#} εβδομάδες πριν</item>
++        <item quantity="one">τελευταία εβδομάδα</item>
+     </plurals>
+     <plurals name="game_library_last_played_years_time">
+-        <item quantity="one">τελευταίο έτος</item>
+         <item quantity="other">{#} έτη πριν</item>
++        <item quantity="one">τελευταίο έτος</item>
+     </plurals>
+     <plurals name="game_library_time_played_hours_time">
+-        <item quantity="one">ώρα</item>
+         <item quantity="other">ώρες</item>
++        <item quantity="one">ώρα</item>
+     </plurals>
+     <plurals name="game_library_time_played_minutes_time">
+-        <item quantity="one">λεπτό</item>
+         <item quantity="other">λεπτά</item>
++        <item quantity="one">λεπτό</item>
+     </plurals>
+     <plurals name="game_library_time_played_seconds_time">
+-        <item quantity="one">δευτερόλεπτο</item>
+         <item quantity="other">δευτερόλεπτα</item>
++        <item quantity="one">δευτερόλεπτο</item>
+     </plurals>
+     <plurals name="game_library_updates_installing_hours_timeRemaining">
+-        <item quantity="one">1 ώρα</item>
+         <item quantity="other">{#} ώρες</item>
++        <item quantity="one">1 ώρα</item>
+     </plurals>
+     <plurals name="game_library_updates_installing_minutes_timeRemaining">
+-        <item quantity="one">1 λεπτό</item>
+         <item quantity="other">{#} λεπτά</item>
++        <item quantity="one">1 λεπτό</item>
+     </plurals>
+     <plurals name="game_library_updates_installing_seconds_timeRemaining">
+-        <item quantity="one">ολοκλήρωση</item>
+         <item quantity="other">{#} δευτερόλεπτα απομένουν</item>
++        <item quantity="one">ολοκλήρωση</item>
+     </plurals>
+     <plurals name="game_library_updates_updating_updating_hours_timeRemaining">
+-        <item quantity="one">1 ώρα</item>
+         <item quantity="other">{#} ώρες</item>
++        <item quantity="one">1 ώρα</item>
+     </plurals>
+     <plurals name="game_library_updates_updating_updating_minutes_timeRemaining">
+-        <item quantity="one">1 λεπτό</item>
+         <item quantity="other">{#} λεπτά</item>
++        <item quantity="one">1 λεπτό</item>
+     </plurals>
+     <plurals name="game_library_updates_updating_updating_seconds_timeRemaining">
+-        <item quantity="one">ολοκλήρωση</item>
+         <item quantity="other">{#} δευτερόλεπτα απομένουν</item>
++        <item quantity="one">ολοκλήρωση</item>
+     </plurals>
+     <plurals name="gift_code_auth_gifted_subscription_monthly_intervalCount">
+-        <item quantity="one">{#} μήνα</item>
+         <item quantity="other">{#} μήνες</item>
++        <item quantity="one">{#} μήνα</item>
+     </plurals>
+     <plurals name="gift_code_auth_gifted_subscription_yearly_intervalCount">
+-        <item quantity="one">{#} χρόνο</item>
+         <item quantity="other">{#} χρόνια</item>
++        <item quantity="one">{#} χρόνο</item>
+     </plurals>
+     <plurals name="gift_confirmation_body_subscription_monthly_confirm_intervalCount">
+-        <item quantity="one">{#} μήνα</item>
+         <item quantity="other">{#} μήνες</item>
++        <item quantity="one">{#} μήνα</item>
+     </plurals>
+     <plurals name="gift_confirmation_body_subscription_yearly_confirm_intervalCount">
+-        <item quantity="one">{#} χρόνο</item>
+         <item quantity="other">{#} χρόνια</item>
++        <item quantity="one">{#} χρόνο</item>
+     </plurals>
+     <plurals name="gift_confirmation_body_success_generic_subscription_monthly_intervalCount">
+-        <item quantity="one">{#} μήνα</item>
+         <item quantity="other">{#} μήνες</item>
++        <item quantity="one">{#} μήνα</item>
+     </plurals>
+     <plurals name="gift_confirmation_body_success_generic_subscription_yearly_intervalCount">
+-        <item quantity="one">{#} χρόνο</item>
+         <item quantity="other">{#} χρόνια</item>
++        <item quantity="one">{#} χρόνο</item>
+     </plurals>
+     <plurals name="gift_confirmation_body_success_premium_tier_1_monthly_intervalCount">
+-        <item quantity="one">{#} μήνα</item>
+         <item quantity="other">{#} μήνες</item>
++        <item quantity="one">{#} μήνα</item>
+     </plurals>
+     <plurals name="gift_confirmation_body_success_premium_tier_1_yearly_intervalCount">
+-        <item quantity="one">{#} χρόνο</item>
+         <item quantity="other">{#} χρόνια</item>
++        <item quantity="one">{#} χρόνο</item>
+     </plurals>
+     <plurals name="gift_confirmation_body_success_premium_tier_2_monthly_intervalCount">
+-        <item quantity="one">{#} μήνα</item>
+         <item quantity="other">{#} μήνες</item>
++        <item quantity="one">{#} μήνα</item>
+     </plurals>
+     <plurals name="gift_confirmation_body_success_premium_tier_2_yearly_intervalCount">
+-        <item quantity="one">{#} χρόνο</item>
+         <item quantity="other">{#} χρόνια</item>
++        <item quantity="one">{#} χρόνο</item>
+     </plurals>
+     <plurals name="gift_confirmation_nitro_time_frame_months_time">
+-        <item quantity="one">{#} μήνας</item>
+         <item quantity="other">{#} μήνες</item>
++        <item quantity="one">{#} μήνας</item>
+     </plurals>
+     <plurals name="gift_confirmation_nitro_time_frame_years_time">
+-        <item quantity="one">{#} έτος</item>
+         <item quantity="other">{#} έτη</item>
++        <item quantity="one">{#} έτος</item>
+     </plurals>
+     <plurals name="gift_embed_body_subscription_default_months_intervalCount">
+-        <item quantity="one">{#} μήνα</item>
+         <item quantity="other">{#} μήνες</item>
++        <item quantity="one">{#} μήνα</item>
+     </plurals>
+     <plurals name="gift_embed_body_subscription_default_years_intervalCount">
+-        <item quantity="one">{#} χρόνο</item>
+         <item quantity="other">{#} χρόνια</item>
++        <item quantity="one">{#} χρόνο</item>
+     </plurals>
+     <plurals name="gift_embed_body_subscription_no_user_default_months_intervalCount">
+-        <item quantity="one">{#} μήνα</item>
+         <item quantity="other">{#} μήνες</item>
++        <item quantity="one">{#} μήνα</item>
+     </plurals>
+     <plurals name="gift_embed_body_subscription_no_user_default_years_intervalCount">
+-        <item quantity="one">{#} χρόνο</item>
+         <item quantity="other">{#} χρόνια</item>
++        <item quantity="one">{#} χρόνο</item>
+     </plurals>
+     <plurals name="gift_embed_expiration_hours">
+-        <item quantity="one">{#} ώρα</item>
+         <item quantity="other">{#} ώρες</item>
++        <item quantity="one">{#} ώρα</item>
+     </plurals>
+     <plurals name="gift_inventory_copies_copies">
+-        <item quantity="one">{#} αντίγραφο</item>
+         <item quantity="other">{#} αντίγραφα</item>
++        <item quantity="one">{#} αντίγραφο</item>
+     </plurals>
+     <plurals name="gift_inventory_expires_in_hours">
+-        <item quantity="one">{#} ώρα</item>
+         <item quantity="other">{#} ώρες</item>
++        <item quantity="one">{#} ώρα</item>
+     </plurals>
+     <plurals name="gift_inventory_expires_in_mobile_hours">
+-        <item quantity="one">{#} ώρα</item>
+         <item quantity="other">{#} ώρες</item>
++        <item quantity="one">{#} ώρα</item>
+     </plurals>
+     <plurals name="gift_inventory_subscription_months_intervalCount">
+-        <item quantity="one">{#} μήνας</item>
+         <item quantity="other">{#} μήνες</item>
++        <item quantity="one">{#} μήνας</item>
+     </plurals>
+     <plurals name="gift_inventory_subscription_years_intervalCount">
+-        <item quantity="one">{#} χρόνος</item>
+         <item quantity="other">{#} χρόνια</item>
++        <item quantity="one">{#} χρόνος</item>
+     </plurals>
+     <plurals name="group_dm_invite_remaining_number">
+-        <item quantity="one">Μπορείς να προσθέσεις ακόμα 1 φίλο.</item>
+         <item quantity="other">Μπορείς να προσθέσεις ακόμα {number} φίλους.</item>
++        <item quantity="one">Μπορείς να προσθέσεις ακόμα 1 φίλο.</item>
+     </plurals>
+     <plurals name="group_dm_invite_unselect_users_number">
+-        <item quantity="one">Πρέπει να αποεπιλέξεις 1 φίλο.</item>
+         <item quantity="other">Πρέπει να αποεπιλέξεις {number} φίλους.</item>
++        <item quantity="one">Πρέπει να αποεπιλέξεις 1 φίλο.</item>
+     </plurals>
+     <plurals name="guild_discovery_header_search_results_count">
+-        <item quantity="one">1 αποτέλεσμα</item>
+         <item quantity="other">{count} αποτελέσματα</item>
++        <item quantity="one">1 αποτέλεσμα</item>
+     </plurals>
+     <plurals name="guild_discovery_search_results_category_header_count">
+-        <item quantity="one">1 **{category}** κοινότητα</item>
+         <item quantity="other">{count} **{category}** κοινότητες</item>
++        <item quantity="one">1 **{category}** κοινότητα</item>
+     </plurals>
+     <plurals name="guild_discovery_search_results_header_count">
+-        <item quantity="one">1 κοινότητα</item>
+         <item quantity="other">{count} κοινότητες</item>
++        <item quantity="one">1 κοινότητα</item>
+     </plurals>
+     <plurals name="guild_event_interested_count_count">
+-        <item quantity="one">{#} άτομο ενδιαφέρεται</item>
+         <item quantity="other">{#} άτομα ενδιαφέρονται</item>
++        <item quantity="one">{#} άτομο ενδιαφέρεται</item>
+     </plurals>
+     <plurals name="guild_events_list_action_sheet_header_count">
+-        <item quantity="one">1 Εκδήλωση</item>
+         <item quantity="other">{count} Εκδηλώσεις</item>
++        <item quantity="one">1 Εκδήλωση</item>
+     </plurals>
+     <plurals name="guild_events_plural_number">
+-        <item quantity="one">{#} Εκδήλωση</item>
+         <item quantity="other">{#} Εκδηλώσεις</item>
++        <item quantity="one">{#} Εκδήλωση</item>
+     </plurals>
+     <plurals name="guild_folder_tooltip_a11y_label_mentions">
+-        <item quantity="one">, {#} μη αναγνωσμένη αναφορά</item>
+         <item quantity="other">, {#} μη αναγνωσμένες αναφορές</item>
++        <item quantity="one">, {#} μη αναγνωσμένη αναφορά</item>
+     </plurals>
+     <plurals name="guild_folder_tooltip_a11y_label_with_expanded_state_mentions">
+-        <item quantity="one">, {#} μη αναγνωσμένη αναφορά</item>
+         <item quantity="other">, {#} μη αναγνωσμένες αναφορές</item>
++        <item quantity="one">, {#} μη αναγνωσμένη αναφορά</item>
+     </plurals>
+     <plurals name="guild_settings_audit_log_channel_default_auto_archive_duration_change_newValue">
+-        <item quantity="one">Άλλαξε την προεπιλεγμένη διάρκεια αρχειοθέτησης σε **{#} λεπτό**</item>
+         <item quantity="other">Άλλαξε την προεπιλεγμένη διάρκεια αρχειοθέτησης σε **{#} λεπτά**</item>
++        <item quantity="one">Άλλαξε την προεπιλεγμένη διάρκεια αρχειοθέτησης σε **{#} λεπτό**</item>
+     </plurals>
+     <plurals name="guild_settings_audit_log_channel_default_auto_archive_duration_create_newValue">
+-        <item quantity="one">Ορισμός προεπιλεγμένης διάρκειας αρχειοθέτησης σε **{#} λεπτό**</item>
+         <item quantity="other">Ορισμός προεπιλεγμένης διάρκειας αρχειοθέτησης σε **{#} λεπτά**</item>
++        <item quantity="one">Ορισμός προεπιλεγμένης διάρκειας αρχειοθέτησης σε **{#} λεπτό**</item>
+     </plurals>
+     <plurals name="guild_settings_audit_log_channel_permission_overrides_denied_count">
+-        <item quantity="one">μια άδεια</item>
+         <item quantity="other">άδειες</item>
++        <item quantity="one">μια άδεια</item>
+     </plurals>
+     <plurals name="guild_settings_audit_log_channel_permission_overrides_granted_count">
+-        <item quantity="one">μια άδεια</item>
+         <item quantity="other">άδειες</item>
++        <item quantity="one">μια άδεια</item>
+     </plurals>
+     <plurals name="guild_settings_audit_log_channel_permission_overrides_reset_count">
+-        <item quantity="one">μια άδεια</item>
+         <item quantity="other">άδειες</item>
++        <item quantity="one">μια άδεια</item>
+     </plurals>
+     <plurals name="guild_settings_audit_log_channel_rate_limit_per_user_change_newValue">
+-        <item quantity="one">Ορισμός αργής λειτουργίας σε **{#} δευτερόλεπτο**</item>
+         <item quantity="other">Ορισμός αργής λειτουργίας σε **{#} δευτερόλεπτα**</item>
++        <item quantity="one">Ορισμός αργής λειτουργίας σε **{#} δευτερόλεπτο**</item>
+     </plurals>
+     <plurals name="guild_settings_audit_log_channel_rate_limit_per_user_create_newValue">
+-        <item quantity="one">Ορισμός αργής λειτουργίας σε **{#} δευτερόλεπτο**</item>
+         <item quantity="other">Ορισμός αργής λειτουργίας σε **{#} δευτερόλεπτα**</item>
++        <item quantity="one">Ορισμός αργής λειτουργίας σε **{#} δευτερόλεπτο**</item>
+     </plurals>
+     <plurals name="guild_settings_audit_log_integration_expire_grace_period_newValue">
+-        <item quantity="one">μία ημέρα</item>
+         <item quantity="other">{#} ημέρες</item>
++        <item quantity="one">μία ημέρα</item>
+     </plurals>
+     <plurals name="guild_settings_audit_log_member_disconnect_count">
+-        <item quantity="one">**έναν χρήστη**</item>
+         <item quantity="other">**!!{count}!! χρήστες**</item>
++        <item quantity="one">**έναν χρήστη**</item>
+     </plurals>
+     <plurals name="guild_settings_audit_log_member_move_count">
+-        <item quantity="one">**έναν χρήστη**</item>
+         <item quantity="other">**!!{count}!! χρήστες**</item>
++        <item quantity="one">**έναν χρήστη**</item>
+     </plurals>
+     <plurals name="guild_settings_audit_log_member_prune_count">
+-        <item quantity="one">**ένα μέλος**</item>
+         <item quantity="other">**!!{count}!! μέλη**</item>
++        <item quantity="one">**ένα μέλος**</item>
+     </plurals>
+     <plurals name="guild_settings_audit_log_member_prune_delete_days_newValue">
+-        <item quantity="one">μία μέρα</item>
+         <item quantity="other">{newValue} μέρες</item>
++        <item quantity="one">μία μέρα</item>
+     </plurals>
+     <plurals name="guild_settings_audit_log_member_roles_add_count">
+-        <item quantity="one">ενός ρόλου</item>
+         <item quantity="other">μερικών ρόλων</item>
++        <item quantity="one">ενός ρόλου</item>
+     </plurals>
+     <plurals name="guild_settings_audit_log_member_roles_remove_count">
+-        <item quantity="one">ενός ρόλου</item>
+         <item quantity="other">μερικών ρόλων</item>
++        <item quantity="one">ενός ρόλου</item>
+     </plurals>
+     <plurals name="guild_settings_audit_log_message_bulk_delete_count">
+-        <item quantity="one">**ένα μήνυμα**</item>
+         <item quantity="other">**!!{count}!! μηνύματα**</item>
++        <item quantity="one">**ένα μήνυμα**</item>
+     </plurals>
+     <plurals name="guild_settings_audit_log_message_delete_count">
+-        <item quantity="one">**ένα μήνυμα**</item>
+         <item quantity="other">**!!{count}!! μηνύματα**</item>
++        <item quantity="one">**ένα μήνυμα**</item>
+     </plurals>
+     <plurals name="guild_settings_audit_log_role_permissions_denied_count">
+-        <item quantity="one">άδειας</item>
+         <item quantity="other">αδειών</item>
++        <item quantity="one">άδειας</item>
+     </plurals>
+     <plurals name="guild_settings_audit_log_role_permissions_granted_count">
+-        <item quantity="one">άδειας</item>
+         <item quantity="other">αδειών</item>
++        <item quantity="one">άδειας</item>
+     </plurals>
+     <plurals name="guild_settings_audit_log_thread_auto_archive_duration_change_newValue">
+-        <item quantity="one">Άλλαξε την αυτόματη διάρκεια αρχειοθέτησης σε **{#} λεπτό**</item>
+         <item quantity="other">Άλλαξε την αυτόματη διάρκεια αρχειοθέτησης σε **{#} λεπτά**</item>
++        <item quantity="one">Άλλαξε την αυτόματη διάρκεια αρχειοθέτησης σε **{#} λεπτό**</item>
+     </plurals>
+     <plurals name="guild_settings_audit_log_thread_auto_archive_duration_create_newValue">
+-        <item quantity="one">Όρισε την αυτόματη διάρκεια αρχειοθέτησης σε **{#} λεπτό**</item>
+         <item quantity="other">Όρισε την αυτόματη διάρκεια αρχειοθέτησης σε **{#} λεπτά**</item>
++        <item quantity="one">Όρισε την αυτόματη διάρκεια αρχειοθέτησης σε **{#} λεπτό**</item>
+     </plurals>
+     <plurals name="guild_settings_discovery_checklist_age_description_failing_minimumGuildAge">
+-        <item quantity="one">1 εβδομάδα</item>
+         <item quantity="other">{minimumGuildAge} εβδομάδες</item>
++        <item quantity="one">1 εβδομάδα</item>
+     </plurals>
+     <plurals name="guild_settings_discovery_checklist_age_description_minimumGuildAge">
+-        <item quantity="one">1 εβδομάδα</item>
+         <item quantity="other">{minimumGuildAge} εβδομάδες</item>
++        <item quantity="one">1 εβδομάδα</item>
+     </plurals>
+     <plurals name="guild_settings_member_verification_review_pending_applications_count">
+-        <item quantity="one">Αίτηση σε εκκρεμότητα</item>
+         <item quantity="other">{count} Αιτήσεις σε εκκρεμότητα</item>
++        <item quantity="one">Αίτηση σε εκκρεμότητα</item>
+     </plurals>
+     <plurals name="guild_settings_overview_boost_unlock_boosts">
+-        <item quantity="one">{#} ενίσχυση</item>
+         <item quantity="other">{#} ενισχύσεις</item>
++        <item quantity="one">{#} ενίσχυση</item>
+     </plurals>
+     <plurals name="guild_settings_partner_checklist_age_description_failing_minimumGuildAge">
+-        <item quantity="one">1 εβδομάδα</item>
+         <item quantity="other">{minimumGuildAge} εβδομάδες</item>
++        <item quantity="one">1 εβδομάδα</item>
+     </plurals>
+     <plurals name="guild_settings_partner_checklist_age_description_minimumGuildAge">
+-        <item quantity="one">1 εβδομάδα</item>
+         <item quantity="other">{minimumGuildAge} εβδομάδες</item>
++        <item quantity="one">1 εβδομάδα</item>
+     </plurals>
+     <plurals name="guild_settings_premium_guild_close_hint_numLeft">
+-        <item quantity="one">{#} ακόμα ενίσχυση</item>
+         <item quantity="other">{#} ακόμα ενισχύσεις</item>
++        <item quantity="one">{#} ακόμα ενίσχυση</item>
+     </plurals>
+     <plurals name="guild_settings_premium_guild_count_subscribers_count">
+-        <item quantity="one">{#} εξαιρετικά απίθανο άτομο έχει</item>
+         <item quantity="other">{#} εξαιρετικά απίθανα άτομα έχουν</item>
++        <item quantity="one">{#} εξαιρετικά απίθανο άτομο έχει</item>
+     </plurals>
+     <plurals name="guild_settings_premium_guild_tier_requirement_required">
+-        <item quantity="one">{#} Ενίσχυση</item>
+         <item quantity="other">{#} Ενισχύσεις</item>
++        <item quantity="one">{#} Ενίσχυση</item>
+     </plurals>
+     <plurals name="guild_settings_premium_upsell_body_perk_no_free_guild_subscriptions_numFreeGuildSubscriptions">
+-        <item quantity="one">{#} ενίσχυση</item>
+         <item quantity="other">{#} ενισχύσεις</item>
++        <item quantity="one">{#} ενίσχυση</item>
+     </plurals>
+     <plurals name="guild_settings_premium_upsell_body_perk_num_guild_subscriptions_numFreeGuildSubscriptions">
+-        <item quantity="one">{#} ενίσχυση</item>
+         <item quantity="other">{#} ενισχύσεις</item>
++        <item quantity="one">{#} ενίσχυση</item>
+     </plurals>
+     <plurals name="guild_settings_premium_upsell_heading_tertiary_premium_user_numFreeGuildSubscriptions">
+-        <item quantity="one">{#} ενίσχυση διακομιστή</item>
+         <item quantity="other">{#} ενισχύσεις διακομιστή</item>
++        <item quantity="one">{#} ενίσχυση διακομιστή</item>
+     </plurals>
+     <plurals name="guild_sidebar_announcement_channel_a11y_label_with_mentions_mentionCount">
+-        <item quantity="one">{#} αναφορά,</item>
+         <item quantity="other">{#} αναφορές</item>
++        <item quantity="one">{#} αναφορά,</item>
+     </plurals>
+     <plurals name="guild_sidebar_default_channel_a11y_label_with_mentions_mentionCount">
+-        <item quantity="one">{#} αναφορά,</item>
+         <item quantity="other">{#} αναφορές</item>
++        <item quantity="one">{#} αναφορά,</item>
+     </plurals>
+     <plurals name="guild_sidebar_stage_channel_a11y_label_with_users_userCount">
+-        <item quantity="one">1 χρήστης</item>
+         <item quantity="other">{#} χρήστες</item>
++        <item quantity="one">1 χρήστης</item>
+     </plurals>
+     <plurals name="guild_sidebar_thread_a11y_label_with_mentions_mentionCount">
+-        <item quantity="one">{#} αναφορά</item>
+         <item quantity="other">{#} αναφορές</item>
++        <item quantity="one">{#} αναφορά</item>
+     </plurals>
+     <plurals name="guild_sidebar_voice_channel_a11y_label_with_users_userCount">
+-        <item quantity="one">1 χρήστης</item>
+         <item quantity="other">{#} χρήστες</item>
++        <item quantity="one">1 χρήστης</item>
+     </plurals>
+     <plurals name="guild_sticker_settings_additional_slots_numAdditional">
+-        <item quantity="one">{numAdditional} Θέση αυτοκόλλητου</item>
+         <item quantity="other">{numAdditional} Θέσεις αυτοκόλλητων</item>
++        <item quantity="one">{numAdditional} Θέση αυτοκόλλητου</item>
+     </plurals>
+     <plurals name="guild_sticker_settings_additional_slots_without_total_numAdditional">
+-        <item quantity="one">{numAdditional} Θέση αυτοκόλλητου</item>
+         <item quantity="other">{numAdditional} Θέσεις αυτοκόλλητων</item>
++        <item quantity="one">{numAdditional} Θέση αυτοκόλλητου</item>
+     </plurals>
+     <plurals name="guild_sticker_settings_remaining_slots_available_numTotal">
+-        <item quantity="one">{numTotal} θέση διαθέσιμη</item>
+         <item quantity="other">{numTotal} θέσεις διαθέσιμες</item>
++        <item quantity="one">{numTotal} θέση διαθέσιμη</item>
+     </plurals>
+     <plurals name="guild_subscription_purchase_modal_activated_description_generic_guild_guildSubscriptionQuantity">
+-        <item quantity="one">{#} φορά</item>
+         <item quantity="other">{#} φορές</item>
++        <item quantity="one">{#} φορά</item>
+     </plurals>
+     <plurals name="guild_subscription_purchase_modal_activated_description_guildSubscriptionQuantity">
+-        <item quantity="one">{#} φορά</item>
+         <item quantity="other">{#} φορές</item>
++        <item quantity="one">{#} φορά</item>
+     </plurals>
+     <plurals name="guild_subscription_purchase_modal_activated_description_mobile2_guildSubscriptionQuantity">
+-        <item quantity="one">{#} φορά</item>
+         <item quantity="other">{#} φορές</item>
++        <item quantity="one">{#} φορά</item>
+     </plurals>
+     <plurals name="guild_subscription_purchase_modal_activated_description_no_application_guildSubscriptionQuantity">
+-        <item quantity="one">{#} Ενίσχυση διακομιστή</item>
+         <item quantity="other">{#} Ενισχύσεις διακομιστή</item>
++        <item quantity="one">{#} Ενίσχυση διακομιστή</item>
+     </plurals>
+     <plurals name="guild_subscription_purchase_modal_transferred_description_mobile2_guildSubscriptionQuantity">
+-        <item quantity="one">{#} φορά</item>
+         <item quantity="other">{#} φορές</item>
++        <item quantity="one">{#} φορά</item>
+     </plurals>
+     <plurals name="guild_subscription_purchase_modal_unused_slot_notice_slotCount">
+-        <item quantity="one">{#} αχρησιμοποίητη Ενίσχυση</item>
+         <item quantity="other">{#} αχρησιμοποίητες Ενισχύσεις</item>
++        <item quantity="one">{#} αχρησιμοποίητη Ενίσχυση</item>
+     </plurals>
+     <plurals name="guild_template_usages_by_creator2_usageCount">
+-        <item quantity="one">**1** άτομο χρησιμοποίησε αυτό το πρότυπο του δημιουργού **](creatorHook)</item>
+         <item quantity="other">**{usageCount}** άτομα χρησιμοποίησαν αυτό το πρότυπο του δημιουργού $[**!!{creator}!!**](creatorHook)</item>
++        <item quantity="one">**1** άτομο χρησιμοποίησε αυτό το πρότυπο του δημιουργού **](creatorHook)</item>
+     </plurals>
+     <plurals name="guild_template_usages_no_bold_usageCount">
+-        <item quantity="one">1 άτομο χρησιμοποίησε αυτό το πρότυπο</item>
+         <item quantity="other">{usageCount} άτομα χρησιμοποίησαν αυτό το πρότυπο</item>
++        <item quantity="one">1 άτομο χρησιμοποίησε αυτό το πρότυπο</item>
+     </plurals>
+     <plurals name="guild_template_usages_usageCount">
+-        <item quantity="one">**1** άτομο χρησιμοποίησε αυτό το πρότυπο</item>
+         <item quantity="other">**{usageCount}** άτομα χρησιμοποίησαν αυτό το πρότυπο</item>
++        <item quantity="one">**1** άτομο χρησιμοποίησε αυτό το πρότυπο</item>
+     </plurals>
+     <plurals name="guild_tooltip_a11y_label_mentions">
+-        <item quantity="one">{#} αναφορά,</item>
+         <item quantity="other">{#} αναφορές,</item>
++        <item quantity="one">{#} αναφορά,</item>
+     </plurals>
+     <plurals name="hub_email_connection_invite_header_count">
+-        <item quantity="one">{count} άλλο φίλο</item>
+         <item quantity="other">{count} άλλους φίλους</item>
++        <item quantity="one">{count} άλλο φίλο</item>
+     </plurals>
+     <plurals name="humanize_duration_days_time">
+-        <item quantity="one">1 ημέρα</item>
+         <item quantity="other">{#} ημέρες</item>
++        <item quantity="one">1 ημέρα</item>
+     </plurals>
+     <plurals name="humanize_duration_hours_time">
+-        <item quantity="one">1 ώρα</item>
+         <item quantity="other">{#} ώρες</item>
++        <item quantity="one">1 ώρα</item>
+     </plurals>
+     <plurals name="humanize_duration_minutes_time">
+-        <item quantity="one">1 λεπτό</item>
+         <item quantity="other">{#} λεπτά</item>
++        <item quantity="one">1 λεπτό</item>
+     </plurals>
+     <plurals name="humanize_duration_seconds_time">
+-        <item quantity="one">1 δευτερόλεπτο</item>
+         <item quantity="other">{#} δευτερόλεπτα</item>
++        <item quantity="one">1 δευτερόλεπτο</item>
+     </plurals>
+     <plurals name="instant_invite_guild_members_total_count">
+-        <item quantity="one">1 Μέλος</item>
+         <item quantity="other">{count} Μέλη</item>
++        <item quantity="one">1 Μέλος</item>
+     </plurals>
+     <plurals name="integrations_channel_following_summary_count">
+-        <item quantity="one">1 κανάλι</item>
+         <item quantity="other">{count} κανάλια</item>
++        <item quantity="one">1 κανάλι</item>
+     </plurals>
+     <plurals name="integrations_twitch_summary_count">
+-        <item quantity="one">1 συνδεδεμένος λογαριασμός</item>
+         <item quantity="other">{count} συνδεδεμένοι λογαριασμοί</item>
++        <item quantity="one">1 συνδεδεμένος λογαριασμός</item>
+     </plurals>
+     <plurals name="integrations_webhooks_count_count">
+-        <item quantity="one">1 Webhook</item>
+         <item quantity="other">{count} Webhooks</item>
++        <item quantity="one">1 Webhook</item>
+     </plurals>
+     <plurals name="integrations_webhooks_summary_count">
+-        <item quantity="one">1 webhook</item>
+         <item quantity="other">{count} webhooks</item>
++        <item quantity="one">1 webhook</item>
+     </plurals>
+     <plurals name="integrations_youtube_summary_count">
+-        <item quantity="one">1 συνδεδεμένος λογαριασμός</item>
+         <item quantity="other">{count} συνδεδεμένοι λογαριασμοί</item>
++        <item quantity="one">1 συνδεδεμένος λογαριασμός</item>
+     </plurals>
+     <plurals name="invite_embed_num_open_slots_number">
+-        <item quantity="one">ανοιχτή θέση</item>
+         <item quantity="other">ανοιχτές θέσεις</item>
++        <item quantity="one">ανοιχτή θέση</item>
+     </plurals>
+     <plurals name="invite_expires_days_or_uses_plural_numDays">
+-        <item quantity="one">{numDays} ημέρα</item>
+         <item quantity="other">{numDays} ημέρες</item>
++        <item quantity="one">{numDays} ημέρα</item>
+     </plurals>
+     <plurals name="invite_expires_days_or_uses_plural_numUses">
+-        <item quantity="one">{numUses} χρήση</item>
+         <item quantity="other">{numUses} χρήσεις</item>
++        <item quantity="one">{numUses} χρήση</item>
+     </plurals>
+     <plurals name="invite_expires_days_plural_numDays">
+-        <item quantity="one">{numDays} ημέρα</item>
+         <item quantity="other">{numDays} ημέρες</item>
++        <item quantity="one">{numDays} ημέρα</item>
+     </plurals>
+     <plurals name="invite_expires_hours_numHours">
+-        <item quantity="one">{numHours} ώρα</item>
+         <item quantity="other">{numHours} ώρες</item>
++        <item quantity="one">{numHours} ώρα</item>
+     </plurals>
+     <plurals name="invite_expires_hours_or_uses_numHours">
+-        <item quantity="one">{numHours} ώρα</item>
+         <item quantity="other">{numHours} ώρες</item>
++        <item quantity="one">{numHours} ώρα</item>
+     </plurals>
+     <plurals name="invite_expires_hours_or_uses_numUses">
+-        <item quantity="one">{numUses} χρήση</item>
+         <item quantity="other">{numUses} χρήσεις</item>
++        <item quantity="one">{numUses} χρήση</item>
+     </plurals>
+     <plurals name="invite_expires_minutes_or_uses_numUses">
+-        <item quantity="one">{numUses} χρήση</item>
+         <item quantity="other">{numUses} χρήσεις</item>
++        <item quantity="one">{numUses} χρήση</item>
+     </plurals>
+     <plurals name="invite_expires_uses_numUses">
+-        <item quantity="one">{numUses} χρήση</item>
+         <item quantity="other">{numUses} χρήσεις</item>
++        <item quantity="one">{numUses} χρήση</item>
+     </plurals>
+     <plurals name="last_seen_days">
+-        <item quantity="one">1 ημέρα</item>
+         <item quantity="other">{days} ημέρες</item>
++        <item quantity="one">1 ημέρα</item>
+     </plurals>
+     <plurals name="live_viewers_viewers">
+-        <item quantity="one">θεατής</item>
+         <item quantity="other">θεατές</item>
++        <item quantity="one">θεατής</item>
+     </plurals>
+     <plurals name="marketing_refresh_premium_features_included_guild_subscriptions_subheading_numFreeGuildSubscriptions">
+-        <item quantity="one">{#} ενίσχυση διακομιστή</item>
+         <item quantity="other">{#} ενισχύσεις διακομιστή</item>
++        <item quantity="one">{#} ενίσχυση διακομιστή</item>
+     </plurals>
+     <plurals name="marketing_refresh_premium_tier_1_cta_description_perks_info_label_numFreeGuildSubscriptions">
+-        <item quantity="one">{#} ενίσχυση διακομιστή</item>
+         <item quantity="other">{#} ενισχύσεις διακομιστή</item>
++        <item quantity="one">{#} ενίσχυση διακομιστή</item>
+     </plurals>
+     <plurals name="marketing_refresh_premium_tier_1_cta_description_perks_info_no_premium_guild_subscriptions_numFreeGuildSubscriptions">
+-        <item quantity="one">{#} ενίσχυση διακομιστή</item>
+         <item quantity="other">{#} ενισχύσεις διακομιστή</item>
++        <item quantity="one">{#} ενίσχυση διακομιστή</item>
+     </plurals>
+     <plurals name="max_uses_description_mobile_maxUses">
+-        <item quantity="one">1 χρήση</item>
+         <item quantity="other">{maxUses} χρήσεις</item>
++        <item quantity="one">1 χρήση</item>
+     </plurals>
+     <plurals name="max_uses_maxUses">
+-        <item quantity="one">1 χρήση</item>
+         <item quantity="other">{maxUses} χρήσεις</item>
++        <item quantity="one">1 χρήση</item>
+     </plurals>
+     <plurals name="member_verification_num_emojis_emojis">
+-        <item quantity="one">{emojis} emoji διακομιστή</item>
+         <item quantity="other">{emojis} emoji διακομιστή</item>
++        <item quantity="one">{emojis} emoji διακομιστή</item>
+     </plurals>
+     <plurals name="members_header_members">
+-        <item quantity="one">1 μέλος</item>
+         <item quantity="other">{members} μέλη</item>
++        <item quantity="one">1 μέλος</item>
+     </plurals>
+     <plurals name="mtrl_badge_content_description">
+-        <item quantity="one">%d νέα ειδοποίηση</item>
+         <item quantity="other">%d νέες ειδοποιήσεις</item>
++        <item quantity="one">%d νέα ειδοποίηση</item>
+     </plurals>
+     <plurals name="n_days_days">
+-        <item quantity="one">1 ημέρα</item>
+         <item quantity="other">{days} ημέρες</item>
++        <item quantity="one">1 ημέρα</item>
+     </plurals>
+     <plurals name="new_messages_count">
+-        <item quantity="one">1 νέο μήνυμα</item>
+         <item quantity="other">{count} νέα μηνύματα</item>
++        <item quantity="one">1 νέο μήνυμα</item>
+     </plurals>
+     <plurals name="new_messages_with_date_count">
+-        <item quantity="one">1 νέο μήνυμα</item>
+         <item quantity="other">{count} νέα μηνύματα</item>
++        <item quantity="one">1 νέο μήνυμα</item>
+     </plurals>
+     <plurals name="notice_premium_grandfathered_ending_numDays">
+-        <item quantity="one">μία ημέρα</item>
+         <item quantity="other">{numDays} ημέρες</item>
++        <item quantity="one">μία ημέρα</item>
+     </plurals>
+     <plurals name="notice_premium_tier_2_trial_ending_days_days">
+-        <item quantity="one">{#} ημέρα</item>
+         <item quantity="other">{#} ημέρες</item>
++        <item quantity="one">{#} ημέρα</item>
+     </plurals>
+     <plurals name="notice_premium_tier_2_trial_ending_hours_hours">
+-        <item quantity="one">{#} ώρα</item>
+         <item quantity="other">{#} ώρες</item>
++        <item quantity="one">{#} ώρα</item>
+     </plurals>
+     <plurals name="notice_premium_tier_2_trial_ending_minutes_minutes">
+-        <item quantity="one">{#} λεπτό</item>
+         <item quantity="other">{#} λεπτά</item>
++        <item quantity="one">{#} λεπτό</item>
+     </plurals>
+     <plurals name="num_channels_num">
+-        <item quantity="one">{num} κανάλι</item>
+         <item quantity="other">{num} κανάλια</item>
++        <item quantity="one">{num} κανάλι</item>
+     </plurals>
+     <plurals name="num_members_subscribers">
+-        <item quantity="one">**1** μέλος</item>
+         <item quantity="other">**{subscribers}** μέλη</item>
++        <item quantity="one">**1** μέλος</item>
+     </plurals>
+     <plurals name="num_subscribers_subscribers">
+-        <item quantity="one">**1** συνδρομητής</item>
+         <item quantity="other">**{subscribers}** συνδρομητές</item>
++        <item quantity="one">**1** συνδρομητής</item>
+     </plurals>
+     <plurals name="num_users_num">
+-        <item quantity="one">1 χρήστης</item>
+         <item quantity="other">{num} χρήστες</item>
++        <item quantity="one">1 χρήστης</item>
+     </plurals>
+     <plurals name="only_you_can_see_and_delete_these_count">
+-        <item quantity="one">αυτό</item>
+         <item quantity="other">αυτά</item>
++        <item quantity="one">αυτό</item>
+     </plurals>
+     <plurals name="only_you_can_see_and_delete_these_countMessages">
+-        <item quantity="one">μήνυμα</item>
+         <item quantity="other">μηνύματα</item>
++        <item quantity="one">μήνυμα</item>
+     </plurals>
+     <plurals name="partial_outage_a11y_count">
+-        <item quantity="one">1 διακομιστής δεν είναι διαθέσιμος λόγω προσωρινής διακοπής λειτουργίας.</item>
+         <item quantity="other">{count} διακομιστές δεν είναι διαθέσιμοι λόγω προσωρινής διακοπής λειτουργίας.</item>
++        <item quantity="one">1 διακομιστής δεν είναι διαθέσιμος λόγω προσωρινής διακοπής λειτουργίας.</item>
+     </plurals>
+     <plurals name="partial_outage_count">
+-        <item quantity="one">**1** διακομιστής δεν είναι διαθέσιμος λόγω προσωρινής διακοπής λειτουργίας.</item>
+         <item quantity="other">**{count}** διακομιστές δεν είναι διαθέσιμοι λόγω προσωρινής διακοπής λειτουργίας.</item>
++        <item quantity="one">**1** διακομιστής δεν είναι διαθέσιμος λόγω προσωρινής διακοπής λειτουργίας.</item>
+     </plurals>
+     <plurals name="premium_cancel_what_you_lose_boosts_applied_boostCount">
+-        <item quantity="one">{#} Ενίσχυση που εφαρμόστηκε</item>
+         <item quantity="other">{#} Ενισχύσεις που εφαρμόστηκαν</item>
++        <item quantity="one">{#} Ενίσχυση που εφαρμόστηκε</item>
+     </plurals>
+     <plurals name="premium_chat_perks_description_premium_guild_included_numFreeGuildSubscriptions">
+-        <item quantity="one">{#} Ενίσχυση</item>
+         <item quantity="other">{#} Ενισχύσεις</item>
++        <item quantity="one">{#} Ενίσχυση</item>
+     </plurals>
+     <plurals name="premium_guild_features_upsell_banner_subscribe_numFreeGuildSubscriptions">
+-        <item quantity="one">{#} Ενίσχυση</item>
+         <item quantity="other">{#} Ενισχύσεις</item>
++        <item quantity="one">{#} Ενίσχυση</item>
+     </plurals>
+     <plurals name="premium_guild_grace_period_cooldown_numPremiumSubscriptions">
+-        <item quantity="one">{#} Ενίσχυση</item>
+         <item quantity="other">{#} Ενισχύσεις</item>
++        <item quantity="one">{#} Ενίσχυση</item>
+     </plurals>
+     <plurals name="premium_guild_grace_period_cooldown_soon_numPremiumSubscriptions">
+-        <item quantity="one">{#} Ενίσχυση</item>
+         <item quantity="other">{#} Ενισχύσεις</item>
++        <item quantity="one">{#} Ενίσχυση</item>
+     </plurals>
+     <plurals name="premium_guild_num_month_guild_subscriptions_num">
+-        <item quantity="one">Ενίσχυση διακομιστή</item>
+         <item quantity="other">Ενισχύσεις διακομιστή</item>
++        <item quantity="one">Ενίσχυση διακομιστή</item>
+     </plurals>
+     <plurals name="premium_guild_num_month_guild_subscriptions_unformatted_num">
+-        <item quantity="one">Ενίσχυση διακομιστή</item>
+         <item quantity="other">Ενισχύσεις διακομιστή</item>
++        <item quantity="one">Ενίσχυση διακομιστή</item>
+     </plurals>
+     <plurals name="premium_guild_num_year_guild_subscriptions_num">
+-        <item quantity="one">Ενίσχυση διακομιστή</item>
+         <item quantity="other">Ενισχύσεις διακομιστή</item>
++        <item quantity="one">Ενίσχυση διακομιστή</item>
+     </plurals>
+     <plurals name="premium_guild_num_year_guild_subscriptions_unformatted_num">
+-        <item quantity="one">Ενίσχυση διακομιστή</item>
+         <item quantity="other">Ενισχύσεις διακομιστή</item>
++        <item quantity="one">Ενίσχυση διακομιστή</item>
+     </plurals>
+     <plurals name="premium_guild_perks_modal_header_subscription_count_subscriptions">
+-        <item quantity="one">Ενίσχυση</item>
+         <item quantity="other">{#} Ενισχύσεις</item>
++        <item quantity="one">Ενίσχυση</item>
+     </plurals>
+     <plurals name="premium_guild_perks_modal_header_user_subscription_count_numSubscriptions">
+-        <item quantity="one">{#} φορά</item>
+         <item quantity="other">{#} φορές!</item>
++        <item quantity="one">{#} φορά</item>
+     </plurals>
+     <plurals name="premium_guild_perks_modal_protip_mobile_numFreeGuildSubscriptions">
+-        <item quantity="one">Ενίσχυση</item>
+         <item quantity="other">{#} Ενισχύσεις</item>
++        <item quantity="one">Ενίσχυση</item>
+     </plurals>
+     <plurals name="premium_guild_perks_modal_protip_numFreeGuildSubscriptions">
+-        <item quantity="one">Ενίσχυση</item>
+         <item quantity="other">{#} Ενισχύσεις</item>
++        <item quantity="one">Ενίσχυση</item>
+     </plurals>
+     <plurals name="premium_guild_settings_members_subscribed_needed_number">
+-        <item quantity="one">{#} επιπλέον Ενίσχυση</item>
+         <item quantity="other">{#} επιπλέον Ενισχύσεις</item>
++        <item quantity="one">{#} επιπλέον Ενίσχυση</item>
+     </plurals>
+     <plurals name="premium_guild_settings_x_of_y_subscriptions_numRequired">
+-        <item quantity="one">{#} Ενίσχυση</item>
+         <item quantity="other">{#} Ενισχύσεις</item>
++        <item quantity="one">{#} Ενίσχυση</item>
+     </plurals>
+     <plurals name="premium_guild_subscribe_confirm_cancel_warning_canceledCount">
+-        <item quantity="one">αυτής της Ενίσχυσης</item>
+         <item quantity="other">{#} Ενισχύσεων</item>
++        <item quantity="one">αυτής της Ενίσχυσης</item>
+     </plurals>
+     <plurals name="premium_guild_subscribe_confirm_confirmation_label_slotCount">
+-        <item quantity="one">η Ενίσχυσή</item>
+         <item quantity="other">οι Ενισχύσεις</item>
++        <item quantity="one">η Ενίσχυσή</item>
+     </plurals>
+     <plurals name="premium_guild_subscribe_confirm_confirmation_slotCount">
+-        <item quantity="one">Ενίσχυση</item>
+         <item quantity="other">Ενίσχυση {#} φορές</item>
++        <item quantity="one">Ενίσχυση</item>
+     </plurals>
+     <plurals name="premium_guild_subscribe_confirm_cooldown_warning_days">
+-        <item quantity="one">{#} μέρα</item>
+         <item quantity="other">{#} μέρες</item>
++        <item quantity="one">{#} μέρα</item>
+     </plurals>
+     <plurals name="premium_guild_subscribe_confirm_cooldown_warning_slotCount">
+-        <item quantity="one">αυτής της ενίσχυσης</item>
+         <item quantity="other">αυτών των ενισχύσεων</item>
++        <item quantity="one">αυτής της ενίσχυσης</item>
+     </plurals>
+     <plurals name="premium_guild_subscribe_confirm_transfer_blurb_guildCount">
+-        <item quantity="one">Ο τρέχων διακομιστής θα χάσει την πρόοδό του</item>
+         <item quantity="other">Οι τρέχοντες διακομιστές θα χάσουν την πρόοδό τους</item>
++        <item quantity="one">Ο τρέχων διακομιστής θα χάσει την πρόοδό του</item>
+     </plurals>
+     <plurals name="premium_guild_subscribe_confirm_transfer_blurb_slotCount">
+-        <item quantity="one">αυτή την Ενίσχυση διακομιστή</item>
+         <item quantity="other">αυτές τις Ενισχύσεις διακομιστή</item>
++        <item quantity="one">αυτή την Ενίσχυση διακομιστή</item>
+     </plurals>
+     <plurals name="premium_guild_subscribe_confirm_transfer_from_guild_guildCount">
+-        <item quantity="one">διακομιστής</item>
+         <item quantity="other">τρέχοντες διακομιστές</item>
++        <item quantity="one">διακομιστής</item>
+     </plurals>
+     <plurals name="premium_guild_subscribe_confirm_transfer_to_guild_slotCount">
+-        <item quantity="one">ενίσχυσης</item>
+         <item quantity="other">ενισχύσεων</item>
++        <item quantity="one">ενίσχυσης</item>
+     </plurals>
+     <plurals name="premium_guild_subscribe_transfer_confirm_confirmation_label_slotCount">
+-        <item quantity="one">Ενίσχυσης</item>
+         <item quantity="other">Ενισχύσεων</item>
++        <item quantity="one">Ενίσχυσης</item>
+     </plurals>
+     <plurals name="premium_guild_subscribe_transfer_confirm_confirmation_slotCount">
+-        <item quantity="one">Ενίσχυσης</item>
+         <item quantity="other">Ενισχύσεων</item>
++        <item quantity="one">Ενίσχυσης</item>
+     </plurals>
+     <plurals name="premium_guild_subscription_available_numSubscriptions">
+-        <item quantity="one">{#} Ενίσχυση</item>
+         <item quantity="other">{#} Ενισχύσεις</item>
++        <item quantity="one">{#} Ενίσχυση</item>
+     </plurals>
+     <plurals name="premium_guild_subscription_cancel_invoice_subscription_cancelled_subscriptionCount">
+-        <item quantity="one">Ενίσχυση διακομιστή</item>
+         <item quantity="other">Ενισχύσεις διακομιστή</item>
++        <item quantity="one">Ενίσχυση διακομιστή</item>
+     </plurals>
+     <plurals name="premium_guild_subscription_duration_months">
+-        <item quantity="one">{#} μήνα</item>
+         <item quantity="other">{#} μήνες</item>
++        <item quantity="one">{#} μήνα</item>
+     </plurals>
+     <plurals name="premium_guild_subscription_error_rate_limit_days_days">
+-        <item quantity="one">{#} μέρα</item>
+         <item quantity="other">{#} μέρες</item>
++        <item quantity="one">{#} μέρα</item>
+     </plurals>
+     <plurals name="premium_guild_subscription_error_rate_limit_days_hours">
+-        <item quantity="one">{#} ώρα</item>
+         <item quantity="other">{#} ώρες</item>
++        <item quantity="one">{#} ώρα</item>
+     </plurals>
+     <plurals name="premium_guild_subscription_error_rate_limit_hours_hours">
+-        <item quantity="one">{#} ώρα</item>
+         <item quantity="other">{#} ώρες</item>
++        <item quantity="one">{#} ώρα</item>
+     </plurals>
+     <plurals name="premium_guild_subscription_error_rate_limit_hours_minutes">
+-        <item quantity="one">{#} λεπτό</item>
+         <item quantity="other">{#} λεπτά</item>
++        <item quantity="one">{#} λεπτό</item>
+     </plurals>
+     <plurals name="premium_guild_subscription_error_rate_limit_minutes_minutes">
+-        <item quantity="one">{#} λεπτό</item>
+         <item quantity="other">{#} λεπτά</item>
++        <item quantity="one">{#} λεπτό</item>
+     </plurals>
+     <plurals name="premium_guild_subscription_guild_subsription_subtitle_numSubscriptions">
+-        <item quantity="one">{#} φορά</item>
+         <item quantity="other">{#} φορές</item>
++        <item quantity="one">{#} φορά</item>
+     </plurals>
+     <plurals name="premium_guild_subscription_num_subscriptions_numSubscriptions">
+-        <item quantity="one">{#} Ενίσχυση</item>
+         <item quantity="other">{#} Ενισχύσεις</item>
++        <item quantity="one">{#} Ενίσχυση</item>
+     </plurals>
+     <plurals name="premium_guild_subscription_subscriber_count_tooltip_subscriberCount">
+-        <item quantity="one">{#} Ενίσχυση</item>
+         <item quantity="other">{#} Ενισχύσεις</item>
++        <item quantity="one">{#} Ενίσχυση</item>
+     </plurals>
+     <plurals name="premium_guild_subscriptions_renewal_info_account_hold_no_price_quantity">
+-        <item quantity="one">Ενίσχυση διακομιστή</item>
+         <item quantity="other">Ενισχύσεις διακομιστή</item>
++        <item quantity="one">Ενίσχυση διακομιστή</item>
+     </plurals>
+     <plurals name="premium_guild_subscriptions_renewal_info_account_hold_quantity">
+-        <item quantity="one">Ενίσχυση διακομιστή</item>
+         <item quantity="other">Ενισχύσεις διακομιστή</item>
++        <item quantity="one">Ενίσχυση διακομιστή</item>
+     </plurals>
+     <plurals name="premium_guild_subscriptions_renewal_info_android_quantity">
+-        <item quantity="one">Ενίσχυση διακομιστή</item>
+         <item quantity="other">Ενισχύσεις Διακομιστή</item>
++        <item quantity="one">Ενίσχυση διακομιστή</item>
+     </plurals>
+     <plurals name="premium_guild_subscriptions_renewal_info_no_price_quantity">
+-        <item quantity="one">Ενίσχυση διακομιστή</item>
+         <item quantity="other">Ενισχύσεις Διακομιστή</item>
++        <item quantity="one">Ενίσχυση διακομιστή</item>
+     </plurals>
+     <plurals name="premium_guild_subscriptions_renewal_info_pending_cancelation_android_quantity">
+-        <item quantity="one">Ενίσχυση διακομιστή</item>
+         <item quantity="other">Ενισχύσεις Διακομιστή</item>
++        <item quantity="one">Ενίσχυση διακομιστή</item>
+     </plurals>
+     <plurals name="premium_guild_subscriptions_renewal_info_pending_cancelation_no_price_quantity">
+-        <item quantity="one">Ενίσχυση διακομιστή</item>
+         <item quantity="other">Ενισχύσεις Διακομιστή</item>
++        <item quantity="one">Ενίσχυση διακομιστή</item>
+     </plurals>
+     <plurals name="premium_guild_subscriptions_renewal_info_pending_cancelation_quantity">
+-        <item quantity="one">Ενίσχυση διακομιστή</item>
+         <item quantity="other">Ενισχύσεις Διακομιστή</item>
++        <item quantity="one">Ενίσχυση διακομιστή</item>
+     </plurals>
+     <plurals name="premium_guild_subscriptions_renewal_info_quantity">
+-        <item quantity="one">Ενίσχυση διακομιστή</item>
+         <item quantity="other">Ενισχύσεις Διακομιστή</item>
++        <item quantity="one">Ενίσχυση διακομιστή</item>
+     </plurals>
+     <plurals name="premium_guild_unsubscribe_confirm_cooldown_warning_days_days">
+-        <item quantity="one">{#} μέρα</item>
+         <item quantity="other">{#} μέρες</item>
++        <item quantity="one">{#} μέρα</item>
+     </plurals>
+     <plurals name="premium_guild_unsubscribe_confirm_cooldown_warning_days_hours">
+-        <item quantity="one">{#} ώρα</item>
+         <item quantity="other">{#} ώρες</item>
++        <item quantity="one">{#} ώρα</item>
+     </plurals>
+     <plurals name="premium_guild_unsubscribe_confirm_cooldown_warning_hours_hours">
+-        <item quantity="one">{#} ώρα</item>
+         <item quantity="other">{#} ώρες</item>
++        <item quantity="one">{#} ώρα</item>
+     </plurals>
+     <plurals name="premium_guild_unsubscribe_confirm_cooldown_warning_hours_minutes">
+-        <item quantity="one">{#} λεπτό</item>
+         <item quantity="other">{#} λεπτά</item>
++        <item quantity="one">{#} λεπτό</item>
+     </plurals>
+     <plurals name="premium_guild_unsubscribe_confirm_cooldown_warning_minutes_minutes">
+-        <item quantity="one">{#} λεπτό</item>
+         <item quantity="other">{#} λεπτά</item>
++        <item quantity="one">{#} λεπτό</item>
+     </plurals>
+     <plurals name="premium_marketing_feature_premium_guild_description_numFreeGuildSubscriptions">
+-        <item quantity="one">{#} Ενίσχυση διακομιστή</item>
+         <item quantity="other">{#} Ενισχύσεις διακομιστή</item>
++        <item quantity="one">{#} Ενίσχυση διακομιστή</item>
+     </plurals>
+     <plurals name="premium_plan_month_tier_2_trial_months">
+-        <item quantity="one">μήνα</item>
+         <item quantity="other">μήνες</item>
++        <item quantity="one">μήνα</item>
+     </plurals>
+     <plurals name="premium_plan_year_tier_2_trial_months">
+-        <item quantity="one">μήνα</item>
+         <item quantity="other">μήνες</item>
++        <item quantity="one">μήνα</item>
+     </plurals>
+     <plurals name="premium_subscription_credit_count_months_count">
+-        <item quantity="one">{#} Μήνας</item>
+         <item quantity="other">{#} Μήνες</item>
++        <item quantity="one">{#} Μήνας</item>
+     </plurals>
+     <plurals name="premium_subscription_ending_missing_payment_notice_text_daysLeft">
+-        <item quantity="one">σε {#} μέρα</item>
+         <item quantity="other">σε {#} μέρες</item>
++        <item quantity="one">σε {#} μέρα</item>
+     </plurals>
+     <plurals name="premium_subscription_ending_notice_text_daysLeft">
+-        <item quantity="one">{#} μέρα</item>
+         <item quantity="other">{#} μέρες</item>
++        <item quantity="one">{#} μέρα</item>
+     </plurals>
+     <plurals name="premium_subscription_ending_what_you_lose_title_daysLeft">
+-        <item quantity="one">{#} μέρα</item>
+         <item quantity="other">{#} μέρες</item>
++        <item quantity="one">{#} μέρα</item>
+     </plurals>
+     <plurals name="premium_subscription_renewal_footer_trial_days">
+-        <item quantity="one">1 ημέρα</item>
+         <item quantity="other">{days} ημέρες</item>
++        <item quantity="one">1 ημέρα</item>
+     </plurals>
+     <plurals name="premium_trial_cta_description_expiring_days_days">
+-        <item quantity="one">{#} ημέρα</item>
+         <item quantity="other">{#} ημέρες</item>
++        <item quantity="one">{#} ημέρα</item>
+     </plurals>
+     <plurals name="premium_trial_cta_description_expiring_hours_hours">
+-        <item quantity="one">{#} ώρα</item>
+         <item quantity="other">{#} ώρες</item>
++        <item quantity="one">{#} ώρα</item>
+     </plurals>
+     <plurals name="premium_trial_cta_description_expiring_minutes_minutes">
+-        <item quantity="one">{#} λεπτό</item>
+         <item quantity="other">{#} λεπτά</item>
++        <item quantity="one">{#} λεπτό</item>
+     </plurals>
+     <plurals name="premium_upsell_feature_free_guild_subscription_numFreeGuildSubscriptions">
+-        <item quantity="one">{#} Ενίσχυση διακομιστή</item>
+         <item quantity="other">{#} Ενισχύσεις διακομιστή</item>
++        <item quantity="one">{#} Ενίσχυση διακομιστή</item>
+     </plurals>
+     <plurals name="preview_lines_left_lines">
+-        <item quantity="one">{#} γραμμή</item>
+         <item quantity="other">{#} γραμμές</item>
++        <item quantity="one">{#} γραμμή</item>
+     </plurals>
+     <plurals name="preview_num_lines_at_least_lines">
+-        <item quantity="one">{#} γραμμή</item>
+         <item quantity="other">{#} γραμμές</item>
++        <item quantity="one">{#} γραμμή</item>
+     </plurals>
+     <plurals name="preview_num_lines_lines">
+-        <item quantity="one">{#} γραμμή</item>
+         <item quantity="other">{#} γραμμές</item>
++        <item quantity="one">{#} γραμμή</item>
+     </plurals>
+     <plurals name="private_channel_access_info_members_count">
+-        <item quantity="one">{count} Μέλος</item>
+         <item quantity="other">{count} Μέλη</item>
++        <item quantity="one">{count} Μέλος</item>
+     </plurals>
+     <plurals name="private_channel_access_info_roles_count">
+-        <item quantity="one">{count} Ρόλος</item>
+         <item quantity="other">{count} Ρόλοι</item>
++        <item quantity="one">{count} Ρόλος</item>
+     </plurals>
+     <plurals name="private_channel_members_added_toast_msg_count">
+-        <item quantity="one">{count} μέλος προστέθηκε</item>
+         <item quantity="other">{count} μέλη προστέθηκαν</item>
++        <item quantity="one">{count} μέλος προστέθηκε</item>
+     </plurals>
+     <plurals name="private_channel_roles_added_toast_msg_count">
+-        <item quantity="one">{count} ρόλος προστέθηκε</item>
+         <item quantity="other">{count} ρόλοι προστέθηκαν</item>
++        <item quantity="one">{count} ρόλος προστέθηκε</item>
+     </plurals>
+     <plurals name="promotion_confirm_upgrade_line_item_quantity">
+-        <item quantity="one" />
+         <item quantity="other">{#}x</item>
++        <item quantity="one" />
+     </plurals>
+     <plurals name="promotion_confirm_upgrade_terms_trialMonths">
+-        <item quantity="one">{#} μήνα</item>
+         <item quantity="other">{#} μήνες</item>
++        <item quantity="one">{#} μήνα</item>
+     </plurals>
+     <plurals name="promotion_existing_subscriber_body_months">
+-        <item quantity="one">{#} μήνα</item>
+         <item quantity="other">{#} μήνες</item>
++        <item quantity="one">{#} μήνα</item>
+     </plurals>
+     <plurals name="promotion_previous_subscriber_body_months">
+-        <item quantity="one">{#} μήνα</item>
+         <item quantity="other">{#} μήνες</item>
++        <item quantity="one">{#} μήνα</item>
+     </plurals>
+     <plurals name="promotion_redeem_body_months">
+-        <item quantity="one">{#} μήνα</item>
+         <item quantity="other">{#} μήνες</item>
++        <item quantity="one">{#} μήνα</item>
+     </plurals>
+     <plurals name="publish_followed_news_body_reach_numGuildsFollowing">
+-        <item quantity="one">{#} διακομιστή</item>
+         <item quantity="other">{#} διακομιστές</item>
++        <item quantity="one">{#} διακομιστή</item>
+     </plurals>
+     <plurals name="publish_followed_news_fail_body_retryAfter">
+-        <item quantity="one">1 λεπτό</item>
+         <item quantity="other">{retryAfter} λεπτά</item>
++        <item quantity="one">1 λεπτό</item>
+     </plurals>
+     <plurals name="quick_switcher_results_group_dm_unread_label_mentions">
+-        <item quantity="one">, {#} μη αναγνωσμένο μήνυμα</item>
+         <item quantity="other">, {#} μη αναγνωσμένα μηνύματα</item>
++        <item quantity="one">, {#} μη αναγνωσμένο μήνυμα</item>
+     </plurals>
+     <plurals name="quick_switcher_results_user_unread_label_mentions">
+-        <item quantity="one">, {#} μη αναγνωσμένο μήνυμα</item>
+         <item quantity="other">, {#} μη αναγνωσμένα μηνύματα</item>
++        <item quantity="one">, {#} μη αναγνωσμένο μήνυμα</item>
+     </plurals>
+     <plurals name="quick_switcher_unread_badge_label_mentions">
+-        <item quantity="one">, {#} μη αναγνωσμένο μήνυμα</item>
+         <item quantity="other">, {#} μη αναγνωσμένα μηνύματα</item>
++        <item quantity="one">, {#} μη αναγνωσμένο μήνυμα</item>
+     </plurals>
+     <plurals name="reaction_tooltip_1_n_n">
+-        <item quantity="one">1 ακόμα</item>
+         <item quantity="other">{n} ακόμα</item>
++        <item quantity="one">1 ακόμα</item>
+     </plurals>
+     <plurals name="reaction_tooltip_2_n_n">
+-        <item quantity="one">1 ακόμα</item>
+         <item quantity="other">{n} ακόμα</item>
++        <item quantity="one">1 ακόμα</item>
+     </plurals>
+     <plurals name="reaction_tooltip_3_n_n">
+-        <item quantity="one">1 ακόμα</item>
+         <item quantity="other">{n} ακόμα</item>
++        <item quantity="one">1 ακόμα</item>
+     </plurals>
+     <plurals name="reaction_tooltip_n_n">
+-        <item quantity="one">1 χρήστης</item>
+         <item quantity="other">{n} χρήστες</item>
++        <item quantity="one">1 χρήστης</item>
+     </plurals>
+     <plurals name="role_member_count_count">
+-        <item quantity="one">{count} Μέλος</item>
+         <item quantity="other">{count} Μέλη</item>
++        <item quantity="one">{count} Μέλος</item>
+     </plurals>
+     <plurals name="role_row_description_count">
+-        <item quantity="one">{count} μέλος</item>
+         <item quantity="other">{count} μέλη</item>
++        <item quantity="one">{count} μέλος</item>
+     </plurals>
+     <plurals name="role_row_view_members_count">
+-        <item quantity="one">{count} Μέλους</item>
+         <item quantity="other">{count} Μελών</item>
++        <item quantity="one">{count} Μέλους</item>
+     </plurals>
+     <plurals name="roles_list_numRoles">
+-        <item quantity="one">Ρόλος</item>
+         <item quantity="other">Ρόλοι</item>
++        <item quantity="one">Ρόλος</item>
+     </plurals>
+     <plurals name="search_hide_blocked_messages_count">
+-        <item quantity="one">{count} μηνύματος</item>
+         <item quantity="other">{count} μηνυμάτων</item>
++        <item quantity="one">{count} μηνύματος</item>
+     </plurals>
+     <plurals name="search_num_results_blocked_not_shown_count">
+-        <item quantity="one">{count} αποτέλεσμα</item>
+         <item quantity="other">{count} αποτελέσματα</item>
++        <item quantity="one">{count} αποτέλεσμα</item>
+     </plurals>
+     <plurals name="search_still_indexing_hint_count">
+-        <item quantity="one">{count} αποτέλεσμα</item>
+         <item quantity="other">{count} αποτελέσματα</item>
++        <item quantity="one">{count} αποτέλεσμα</item>
+     </plurals>
+     <plurals name="speaking_count_count">
+         <item quantity="other">{count} μιλάνε</item>
+     </plurals>
+     <plurals name="spotify_listen_along_title_host_count">
+-        <item quantity="one">ακροατής</item>
+         <item quantity="other">ακροατές</item>
++        <item quantity="one">ακροατής</item>
+     </plurals>
+     <plurals name="stage_audience_waiting_many_numOthers">
+-        <item quantity="one">{#} άλλος</item>
+         <item quantity="other">{#} άλλοι</item>
++        <item quantity="one">{#} άλλος</item>
+     </plurals>
+     <plurals name="stage_blocked_users_body_number">
+-        <item quantity="one">{#} λογαριασμός που απέκλεισες είναι</item>
+         <item quantity="other">{#} λογαριασμοί που απέκλεισες είναι</item>
++        <item quantity="one">{#} λογαριασμός που απέκλεισες είναι</item>
+     </plurals>
+     <plurals name="stage_blocked_users_description_count_number">
+-        <item quantity="one">{#} λογαριασμός που απέκλεισες είναι</item>
+         <item quantity="other">{#} λογαριασμοί που απέκλεισες είναι</item>
++        <item quantity="one">{#} λογαριασμός που απέκλεισες είναι</item>
+     </plurals>
+     <plurals name="stage_blocked_users_title_plural_number">
+-        <item quantity="one">Υπάρχει αποκλεισμένος λογαριασμός</item>
+         <item quantity="other">Υπάρχουν αποκλεισμένοι λογαριασμοί</item>
++        <item quantity="one">Υπάρχει αποκλεισμένος λογαριασμός</item>
+     </plurals>
+     <plurals name="stage_channel_people_count_count">
+-        <item quantity="one">1 άτομο</item>
+         <item quantity="other">{count} άτομα</item>
++        <item quantity="one">1 άτομο</item>
+     </plurals>
+     <plurals name="stage_channel_people_count_speakerCount">
+-        <item quantity="one">1 μιλάει</item>
+         <item quantity="other">{speakerCount} μιλάνε</item>
++        <item quantity="one">1 μιλάει</item>
+     </plurals>
+     <plurals name="stage_channel_users_are_speaking_count">
+-        <item quantity="one">μιλάει</item>
+         <item quantity="other">μιλάνε</item>
++        <item quantity="one">μιλάει</item>
+     </plurals>
+     <plurals name="stage_discovery_card_speaker_text_number">
+-        <item quantity="one">{#} μιλάνε με {userNick}</item>
+         <item quantity="other">{userNick} μιλάει</item>
++        <item quantity="one">{#} μιλάνε με {userNick}</item>
+     </plurals>
+     <plurals name="stage_discovery_card_speaker_text_overflow_count">
+         <item quantity="other">+{count} μιλάνε</item>
+     </plurals>
+     <plurals name="stage_discovery_live_stage_tile_friends_guilds_context_audience_3_n_n">
+-        <item quantity="one">1 ακόμα</item>
+         <item quantity="other">{n} ακόμα</item>
++        <item quantity="one">1 ακόμα</item>
+     </plurals>
+     <plurals name="stage_discovery_live_stage_tile_speaker_summary_overflow_count">
+-        <item quantity="one">+{count} Ομιλητής</item>
+         <item quantity="other">+{count} Ομιλητές</item>
++        <item quantity="one">+{count} Ομιλητής</item>
+     </plurals>
+     <plurals name="stage_invite_speaker_count_count">
+-        <item quantity="one">1 Ομιλητής</item>
+         <item quantity="other">{count} Ομιλητές</item>
++        <item quantity="one">1 Ομιλητής</item>
+     </plurals>
+     <plurals name="stage_is_speaking_hook_count">
+-        <item quantity="one">και ένας ακόμα](usernameHook) μιλάνε…</item>
+         <item quantity="other">και {count} άλλοι](usernameHook) μιλάνε…</item>
++        <item quantity="one">και ένας ακόμα](usernameHook) μιλάνε…</item>
+     </plurals>
+     <plurals name="stage_speak_invite_blocked_users_number">
+-        <item quantity="one">{#} αποκλεισμένος χρήστης</item>
+         <item quantity="other">{#} αποκλεισμένοι χρήστες</item>
++        <item quantity="one">{#} αποκλεισμένος χρήστης</item>
+     </plurals>
+     <plurals name="stage_speak_invite_header_blocked_users_number">
+-        <item quantity="one">{#} αποκλεισμένος χρήστης είναι παρών</item>
+         <item quantity="other">{#} αποκλεισμένοι χρήστες είναι παρόντες</item>
++        <item quantity="one">{#} αποκλεισμένος χρήστης είναι παρών</item>
+     </plurals>
+     <plurals name="sticker_pack_sticker_count_numStickers">
+-        <item quantity="one">{#} αυτοκόλλητο</item>
+         <item quantity="other">{#} αυτοκόλλητα</item>
++        <item quantity="one">{#} αυτοκόλλητο</item>
+     </plurals>
+     <plurals name="sticker_premium_tier_2_upsell_alert_perks_guild_subscriptions_numFreeGuildSubscriptions">
+-        <item quantity="one">{#} Ενίσχυση Διακομιστή</item>
+         <item quantity="other">{#} Ενισχύσεις διακομιστή</item>
++        <item quantity="one">{#} Ενίσχυση Διακομιστή</item>
+     </plurals>
+     <plurals name="stickers_gift_inventory_title_month_intervalCount">
+-        <item quantity="one">{#} μήνα</item>
+         <item quantity="other">{#} μήνες</item>
++        <item quantity="one">{#} μήνα</item>
+     </plurals>
+     <plurals name="stickers_gift_inventory_title_year_intervalCount">
+-        <item quantity="one">{#} έτος</item>
+         <item quantity="other">{#} έτη</item>
++        <item quantity="one">{#} έτος</item>
+     </plurals>
+     <plurals name="thread_message_count_count">
+-        <item quantity="one">1 Μήνυμα ›</item>
+         <item quantity="other">{count} Μηνύματα ›</item>
++        <item quantity="one">1 Μήνυμα ›</item>
+     </plurals>
+     <plurals name="thread_reply_suggestion_count">
+-        <item quantity="one">{#} απάντησης</item>
+         <item quantity="other">{#} απαντήσεων</item>
++        <item quantity="one">{#} απάντησης</item>
+     </plurals>
+     <plurals name="total_results_count">
+-        <item quantity="one">{count} αποτέλεσμα</item>
+         <item quantity="other">{count} αποτελέσματα</item>
++        <item quantity="one">{count} αποτέλεσμα</item>
+     </plurals>
+     <plurals name="uploading_files_count">
+-        <item quantity="one">Μεταφόρτωση 1 αρχείου</item>
+         <item quantity="other">Μεταφόρτωση {count} αρχείων</item>
++        <item quantity="one">Μεταφόρτωση 1 αρχείου</item>
+     </plurals>
+     <plurals name="uploading_files_failed_count">
+-        <item quantity="one">1 μεταφόρτωση αρχείου απέτυχε</item>
+         <item quantity="other">{count} μεταφορτώσεις αρχείων απέτυχαν</item>
++        <item quantity="one">1 μεταφόρτωση αρχείου απέτυχε</item>
+     </plurals>
+     <plurals name="user_activity_timestamp_end_hours">
+         <item quantity="other">{hours}:</item>
+@@ -1393,43 +1393,43 @@
+         <item quantity="other">{seconds}</item>
+     </plurals>
+     <plurals name="user_activity_user_playing_for_days_time">
+-        <item quantity="one">ημέρα</item>
+         <item quantity="other">ημέρες</item>
++        <item quantity="one">ημέρα</item>
+     </plurals>
+     <plurals name="user_activity_user_playing_for_hours_time">
+-        <item quantity="one">ώρα</item>
+         <item quantity="other">ώρες</item>
++        <item quantity="one">ώρα</item>
+     </plurals>
+     <plurals name="user_activity_user_playing_for_minutes_time">
+-        <item quantity="one">λεπτό</item>
+         <item quantity="other">λεπτά</item>
++        <item quantity="one">λεπτό</item>
+     </plurals>
+     <plurals name="user_profile_mutual_friends_count">
+-        <item quantity="one">1 Κοινός Φίλος</item>
+         <item quantity="other">{count} Κοινοί Φίλοι</item>
++        <item quantity="one">1 Κοινός Φίλος</item>
+     </plurals>
+     <plurals name="user_profile_mutual_guilds_count">
+-        <item quantity="one">1 Κοινός Διακομιστής</item>
+         <item quantity="other">{count} Κοινοί Διακομιστές</item>
++        <item quantity="one">1 Κοινός Διακομιστής</item>
+     </plurals>
+     <plurals name="user_summary_with_others_count">
+-        <item quantity="one">1 άλλος</item>
+         <item quantity="other">{count} άλλοι</item>
++        <item quantity="one">1 άλλος</item>
+     </plurals>
+     <plurals name="vanity_url_header_uses_uses">
+-        <item quantity="one">1 χρήση</item>
+         <item quantity="other">{uses} χρήσεις</item>
++        <item quantity="one">1 χρήση</item>
+     </plurals>
+     <plurals name="vanity_url_uses_uses">
+-        <item quantity="one">1 χρήση</item>
+         <item quantity="other">{uses} χρήσεις</item>
++        <item quantity="one">1 χρήση</item>
+     </plurals>
+     <plurals name="viewing_as_roles_numRoles">
+-        <item quantity="one">1 ρόλος</item>
+         <item quantity="other">{numRoles} ρόλοι</item>
++        <item quantity="one">1 ρόλος</item>
+     </plurals>
+     <plurals name="voice_call_member_list_title_count">
+-        <item quantity="one">{#} Ατόμου</item>
+         <item quantity="other">{#} Ατόμων</item>
++        <item quantity="one">{#} Ατόμου</item>
+     </plurals>
+ </resources>

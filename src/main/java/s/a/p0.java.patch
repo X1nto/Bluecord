@@ -1,0 +1,33 @@
+--- ./discord_94011/src/main/java/s/a/p0.java	2021-12-24 01:10:16.742024900 +0400
++++ ./bluecord/src/main/java/s/a/p0.java	2021-12-24 01:08:37.127262400 +0400
+@@ -30,10 +30,10 @@ public abstract class p0 extends Corouti
+             this.k = bVar;
+         }
+         Object[] objArr = bVar.a;
+-        int i2 = bVar.f2966c;
++        int i2 = bVar.f2968c;
+         objArr[i2] = i0Var;
+         int length = (objArr.length - 1) & (i2 + 1);
+-        bVar.f2966c = length;
++        bVar.f2968c = length;
+         int i3 = bVar.b;
+         if (length == i3) {
+             int length2 = objArr.length;
+@@ -45,7 +45,7 @@ public abstract class p0 extends Corouti
+             j.copyInto$default(objArr3, objArr2, length3 - i4, 0, i4, 4, (Object) null);
+             bVar.a = objArr2;
+             bVar.b = 0;
+-            bVar.f2966c = length2;
++            bVar.f2968c = length2;
+         }
+     }
+ 
+@@ -69,7 +69,7 @@ public abstract class p0 extends Corouti
+         if (bVar != null) {
+             int i2 = bVar.b;
+             i0 i0Var = null;
+-            if (i2 != bVar.f2966c) {
++            if (i2 != bVar.f2968c) {
+                 ?? r3 = bVar.a;
+                 ?? r6 = r3[i2];
+                 r3[i2] = 0;

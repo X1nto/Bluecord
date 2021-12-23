@@ -1,0 +1,43 @@
+--- ./discord_94011/src/main/java/okhttp3/RequestBody.java	2021-12-24 01:10:16.617023900 +0400
++++ ./bluecord/src/main/java/okhttp3/RequestBody.java	2021-12-24 01:08:37.024260800 +0400
+@@ -24,19 +24,19 @@ public abstract class RequestBody {
+             public final /* synthetic */ MediaType b;
+ 
+             /* renamed from: c */
+-            public final /* synthetic */ int f2955c;
++            public final /* synthetic */ int f2957c;
+             public final /* synthetic */ int d;
+ 
+             public a(byte[] bArr, MediaType mediaType, int i, int i2) {
+                 this.a = bArr;
+                 this.b = mediaType;
+-                this.f2955c = i;
++                this.f2957c = i;
+                 this.d = i2;
+             }
+ 
+             @Override // okhttp3.RequestBody
+             public long contentLength() {
+-                return (long) this.f2955c;
++                return (long) this.f2957c;
+             }
+ 
+             @Override // okhttp3.RequestBody
+@@ -47,7 +47,7 @@ public abstract class RequestBody {
+             @Override // okhttp3.RequestBody
+             public void writeTo(BufferedSink bufferedSink) {
+                 m.checkParameterIsNotNull(bufferedSink, "sink");
+-                bufferedSink.write(this.a, this.d, this.f2955c);
++                bufferedSink.write(this.a, this.d, this.f2957c);
+             }
+         }
+ 
+@@ -86,7 +86,7 @@ public abstract class RequestBody {
+                 Pattern pattern = MediaType.a;
+                 Charset a2 = mediaType.a(null);
+                 if (a2 == null) {
+-                    MediaType.a aVar = MediaType.f2950c;
++                    MediaType.a aVar = MediaType.f2952c;
+                     mediaType = MediaType.a.b(mediaType + "; charset=utf-8");
+                 } else {
+                     charset = a2;

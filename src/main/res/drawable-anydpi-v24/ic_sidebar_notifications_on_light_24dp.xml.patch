@@ -1,0 +1,8 @@
+--- ./discord_94011/src/main/res/drawable-anydpi-v24/ic_sidebar_notifications_on_light_24dp.xml	2021-12-24 01:10:07.240025800 +0400
++++ ./bluecord/src/main/res/drawable-anydpi-v24/ic_sidebar_notifications_on_light_24dp.xml	2021-12-24 01:08:18.203263900 +0400
+@@ -1,4 +1,4 @@
+ <?xml version="1.0" encoding="utf-8"?>
+ <vector xmlns:android="http://schemas.android.com/apk/res/android" android:height="24dp" android:width="24dp" android:viewportWidth="24" android:viewportHeight="24">
+-    <path android:fillColor="#4f5660" android:pathData="M18,9V14C18,15.657 19.344,17 21,17V18H3V17C4.656,17 6,15.657 6,14V9C6,5.686 8.686,3 12,3C15.314,3 18,5.686 18,9ZM11.9999,21C10.5239,21 9.2479,20.19 8.5549,19H15.4449C14.7519,20.19 13.4759,21 11.9999,21Z" android:fillType="1"/>
++    <path android:fillColor="#ff4f5660" android:pathData="M18,9V14C18,15.657 19.344,17 21,17V18H3V17C4.656,17 6,15.657 6,14V9C6,5.686 8.686,3 12,3C15.314,3 18,5.686 18,9ZM11.9999,21C10.5239,21 9.2479,20.19 8.5549,19H15.4449C14.7519,20.19 13.4759,21 11.9999,21Z" android:fillType="1"/>
+ </vector>

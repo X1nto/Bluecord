@@ -1,0 +1,10 @@
+--- ./discord_94011/src/main/res/drawable/premium_shine.xml	2021-12-24 01:10:02.525025100 +0400
++++ ./bluecord/src/main/res/drawable/premium_shine.xml	2021-12-24 01:08:17.705262400 +0400
+@@ -1,5 +1,5 @@
+ <?xml version="1.0" encoding="utf-8"?>
+ <vector xmlns:android="http://schemas.android.com/apk/res/android" android:height="32dp" android:width="44dp" android:viewportWidth="44" android:viewportHeight="32">
+-    <path android:fillColor="#ffffff" android:pathData="M25.0105,0H18.5263L0,32H6.4842L25.0105,0Z" android:strokeAlpha="0.15" android:fillAlpha="0.15"/>
+-    <path android:fillColor="#ffffff" android:pathData="M44,0H28.2526L9.7263,32H25.4737L44,0Z" android:strokeAlpha="0.15" android:fillAlpha="0.15"/>
++    <path android:fillColor="#ffffffff" android:pathData="M25.0105,0H18.5263L0,32H6.4842L25.0105,0Z" android:strokeAlpha="0.15" android:fillAlpha="0.15"/>
++    <path android:fillColor="#ffffffff" android:pathData="M44,0H28.2526L9.7263,32H25.4737L44,0Z" android:strokeAlpha="0.15" android:fillAlpha="0.15"/>
+ </vector>

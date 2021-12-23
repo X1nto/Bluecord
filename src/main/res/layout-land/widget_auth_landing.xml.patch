@@ -1,0 +1,26 @@
+--- ./discord_94011/src/main/res/layout-land/widget_auth_landing.xml	2021-12-24 01:09:59.315025800 +0400
++++ ./bluecord/src/main/res/layout-land/widget_auth_landing.xml	2021-12-24 01:08:23.279264000 +0400
+@@ -2,11 +2,11 @@
+ <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:background="?attr/auth_landing_ptrn" style="@style/UiKit.ViewGroup.Page">
+     <com.discord.app.AppViewFlipper android:id="@+id/auth_landing_switch_flipper" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="16dp" android:layout_above="@+id/auth_bottom_container" android:layout_marginStart="16dp" android:layout_marginEnd="16dp">
+         <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent">
+-            <ImageView android:id="@+id/auth_landing_logo" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="24dp" android:layout_marginBottom="24dp" android:src="?attr/auth_logo" android:scaleType="center" android:layout_alignParentTop="true" android:contentDescription="@string/discord" style="@style/UiKit.ImageView"/>
+-            <com.discord.views.ScreenTitleView android:id="@+id/auth_landing_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="24dp" android:layout_alignParentBottom="true" android:layout_centerInParent="true" android:layout_marginStart="16dp" android:layout_marginEnd="16dp" app:stv_subtitle="@string/nuf_body_refresh" app:stv_title="@string/nuf_title_mobile"/>
++            <ImageView android:id="@+id/auth_landing_logo" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="24dp" android:layout_marginBottom="24dp" android:src="@drawable/bluecord_logo_big" android:scaleType="center" android:layout_alignParentTop="true" android:contentDescription="@string/discord" style="@style/UiKit.ImageView"/>
++            <com.discord.views.ScreenTitleView android:id="@+id/auth_landing_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="24dp" android:layout_alignParentBottom="true" android:layout_centerInParent="true" android:layout_marginStart="16dp" android:layout_marginEnd="16dp" app:stv_subtitle="Version 2.0" app:stv_title="Welcome To Bluecord"/>
+         </RelativeLayout>
+         <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent">
+-            <ImageView android:layout_width="175dp" android:layout_height="wrap_content" android:layout_marginTop="16dp" android:src="?attr/auth_logo" android:layout_centerHorizontal="true" android:contentDescription="@string/discord" style="@style/UiKit.ImageView"/>
++            <ImageView android:layout_width="175dp" android:layout_height="wrap_content" android:layout_marginTop="16dp" android:src="@drawable/bluecord_logo_big" android:layout_centerHorizontal="true" android:contentDescription="@string/discord" style="@style/UiKit.ImageView"/>
+             <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_centerInParent="true">
+                 <com.discord.views.ScreenTitleView android:layout_gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="16dp" android:layout_marginStart="16dp" android:layout_marginEnd="16dp" app:stv_subtitle="@string/nuf_body_refresh" app:stv_title="@string/nuf_title_mobile"/>
+                 <com.discord.widgets.auth.AuthInviteInfoView android:id="@+id/auth_landing_invite_info" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+@@ -14,6 +14,8 @@
+         </RelativeLayout>
+     </com.discord.app.AppViewFlipper>
+     <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/auth_bottom_container" android:paddingBottom="16dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" android:paddingStart="16dp" android:paddingEnd="16dp">
++        <com.google.android.material.button.MaterialButton android:id="@android:id/secondaryProgress" android:text="Restore Account Backup" android:backgroundTint="?attr/colorButtonSecondary" style="@style/UiKit.AuthButton.Material"/>
++        <com.google.android.material.button.MaterialButton android:id="@android:id/primary" android:text="Login With Token" android:backgroundTint="?attr/colorButtonSecondary" style="@style/UiKit.AuthButton.Material"/>
+         <com.google.android.material.button.MaterialButton android:id="@+id/auth_landing_register" android:text="@string/register" style="@style/UiKit.AuthButton.Material"/>
+         <com.google.android.material.button.MaterialButton android:id="@+id/auth_landing_login" android:text="@string/login" android:backgroundTint="?attr/colorButtonSecondary" style="@style/UiKit.AuthButton.Material"/>
+     </LinearLayout>

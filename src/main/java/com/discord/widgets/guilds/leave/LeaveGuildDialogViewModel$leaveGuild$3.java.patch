@@ -1,0 +1,10 @@
+--- ./discord_94011/src/main/java/com/discord/widgets/guilds/leave/LeaveGuildDialogViewModel$leaveGuild$3.java	2021-12-24 01:10:14.487024400 +0400
++++ ./bluecord/src/main/java/com/discord/widgets/guilds/leave/LeaveGuildDialogViewModel$leaveGuild$3.java	2021-12-24 01:08:35.087263100 +0400
+@@ -25,6 +25,6 @@ public final class LeaveGuildDialogViewM
+     }
+ 
+     public final void invoke(Void r1) {
+-        this.this$0.onLeaveSucceeded();
++        LeaveGuildDialogViewModel.access$onLeaveSucceeded(this.this$0);
+     }
+ }

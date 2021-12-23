@@ -1,0 +1,23 @@
+--- ./discord_94011/src/main/java/com/discord/widgets/home/WidgetHomeHeaderManager$getOnConfigureAction$1.java	2021-12-24 01:10:14.705026200 +0400
++++ ./bluecord/src/main/java/com/discord/widgets/home/WidgetHomeHeaderManager$getOnConfigureAction$1.java	2021-12-24 01:08:35.205262100 +0400
+@@ -8,6 +8,7 @@ import com.discord.api.channel.Channel;
+ import com.discord.utilities.device.DeviceUtils;
+ import d0.z.d.m;
+ import kotlin.Metadata;
++import mods.anti.AntiButtons;
+ import rx.functions.Action1;
+ 
+ @Metadata(bv = {1, 0, 3}, d1 = {"\u0000\u0010\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\u0002\n\u0002\b\u0003\u0010\u0006\u001a\u00020\u00032\u000e\u0010\u0002\u001a\n \u0001*\u0004\u0018\u00010\u00000\u0000H\n¢\u0006\u0004\b\u0004\u0010\u0005"}, d2 = {"Landroid/view/Menu;", "kotlin.jvm.PlatformType", "menu", "", "call", "(Landroid/view/Menu;)V", "<anonymous>"}, k = 3, mv = {1, 4, 2})
+@@ -81,10 +82,10 @@ public final class WidgetHomeHeaderManag
+         boolean z5 = this.$this_getOnConfigureAction.getChannel() != null && AnimatableValueParser.t1(this.$this_getOnConfigureAction.getChannel());
+         MenuItem findItem15 = menu.findItem(2131364184);
+         m.checkNotNullExpressionValue(findItem15, "menu.findItem(R.id.menu_chat_start_call)");
+-        findItem15.setVisible(!this.$this_getOnConfigureAction.isCallConnected() && z5 && !z3);
++        findItem15.setVisible(AntiButtons.hideCallButton(!this.$this_getOnConfigureAction.isCallConnected() && z5 && !z3));
+         MenuItem findItem16 = menu.findItem(2131364186);
+         m.checkNotNullExpressionValue(findItem16, "menu.findItem(R.id.menu_chat_start_video_call)");
+-        findItem16.setVisible(!this.$this_getOnConfigureAction.isCallConnected() && z5 && !z3);
++        findItem16.setVisible(AntiButtons.hideCallButton(!this.$this_getOnConfigureAction.isCallConnected() && z5 && !z3));
+         MenuItem findItem17 = menu.findItem(2131364187);
+         m.checkNotNullExpressionValue(findItem17, "menu.findItem(R.id.menu_chat_stop_call)");
+         if (this.$this_getOnConfigureAction.isCallConnected() && !z3) {

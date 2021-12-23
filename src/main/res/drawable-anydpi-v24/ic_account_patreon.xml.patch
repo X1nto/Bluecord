@@ -1,0 +1,10 @@
+--- ./discord_94011/src/main/res/drawable-anydpi-v24/ic_account_patreon.xml	2021-12-24 01:10:07.238023800 +0400
++++ ./bluecord/src/main/res/drawable-anydpi-v24/ic_account_patreon.xml	2021-12-24 01:08:17.993264100 +0400
+@@ -1,5 +1,5 @@
+ <?xml version="1.0" encoding="utf-8"?>
+ <vector xmlns:android="http://schemas.android.com/apk/res/android" android:height="24dp" android:width="24dp" android:viewportWidth="80" android:viewportHeight="80">
+-    <path android:fillColor="#f96854" android:pathData="M49,11.75C37.1,11.72 27.43,21.35 27.4,33.25C27.37,45.15 37,54.82 48.9,54.85C60.8,54.88 70.47,45.25 70.5,33.35C70.48,21.47 60.88,11.83 49,11.75" android:fillType="0"/>
+-    <path android:fillColor="#052d49" android:pathData="M10.5,69.25l10.5,0l0,-57.5l-10.5,0z" android:fillType="0"/>
++    <path android:fillColor="#fff96854" android:pathData="M49,11.75C37.1,11.72 27.43,21.35 27.4,33.25C27.37,45.15 37,54.82 48.9,54.85C60.8,54.88 70.47,45.25 70.5,33.35C70.48,21.47 60.88,11.83 49,11.75" android:fillType="0"/>
++    <path android:fillColor="#ff052d49" android:pathData="M10.5,69.25l10.5,0l0,-57.5l-10.5,0z" android:fillType="0"/>
+ </vector>

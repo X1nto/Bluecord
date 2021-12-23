@@ -1,0 +1,14 @@
+--- ./discord_94011/src/main/res/drawable/ic_sidebar_notifications_off_light_24dp.xml	2021-12-24 01:10:03.010028400 +0400
++++ ./bluecord/src/main/res/drawable/ic_sidebar_notifications_off_light_24dp.xml	2021-12-24 01:08:17.388261800 +0400
+@@ -1,7 +1,7 @@
+ <?xml version="1.0" encoding="utf-8"?>
+ <vector xmlns:android="http://schemas.android.com/apk/res/android" android:height="24dp" android:width="24dp" android:viewportWidth="24" android:viewportHeight="24">
+-    <path android:fillColor="#ed4245" android:pathData="M21.178,1.707L22.592,3.121L4.121,21.593L2.707,20.178L21.178,1.707Z"/>
+-    <path android:fillColor="#4f5660" android:pathData="M18,10.5283L10.5287,18H21V17C19.344,17 18,15.657 18,14V10.5283Z"/>
+-    <path android:fillColor="#4f5660" android:pathData="M8.957,19.5718L9.5288,19H15.4449C14.7519,20.19 13.4759,21 11.9999,21C10.7748,21 9.6875,20.442 8.957,19.5718Z"/>
+-    <path android:fillColor="#4f5660" android:pathData="M12,3C13.417,3 14.71,3.5 15.734,4.321L5.9981,14.058C5.9981,14.0479 5.9986,14.038 5.9991,14.0283C5.9996,14.0188 6.0001,14.0094 6.0001,14V9C6.0001,5.686 8.6861,3 12,3Z"/>
++    <path android:fillColor="#ffed4245" android:pathData="M21.178,1.707L22.592,3.121L4.121,21.593L2.707,20.178L21.178,1.707Z"/>
++    <path android:fillColor="#ff4f5660" android:pathData="M18,10.5283L10.5287,18H21V17C19.344,17 18,15.657 18,14V10.5283Z"/>
++    <path android:fillColor="#ff4f5660" android:pathData="M8.957,19.5718L9.5288,19H15.4449C14.7519,20.19 13.4759,21 11.9999,21C10.7748,21 9.6875,20.442 8.957,19.5718Z"/>
++    <path android:fillColor="#ff4f5660" android:pathData="M12,3C13.417,3 14.71,3.5 15.734,4.321L5.9981,14.058C5.9981,14.0479 5.9986,14.038 5.9991,14.0283C5.9996,14.0188 6.0001,14.0094 6.0001,14V9C6.0001,5.686 8.6861,3 12,3Z"/>
+ </vector>

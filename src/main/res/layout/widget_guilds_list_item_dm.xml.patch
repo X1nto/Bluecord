@@ -1,0 +1,9 @@
+--- ./discord_94011/src/main/res/layout/widget_guilds_list_item_dm.xml	2021-12-24 01:10:03.625025500 +0400
++++ ./bluecord/src/main/res/layout/widget_guilds_list_item_dm.xml	2021-12-24 01:08:22.872262700 +0400
+@@ -1,5 +1,5 @@
+ <?xml version="1.0" encoding="utf-8"?>
+ <merge xmlns:android="http://schemas.android.com/apk/res/android">
+-    <com.facebook.drawee.view.SimpleDraweeView android:id="@+id/guilds_item_dm_avatar" android:background="?attr/selectableItemBackgroundBorderless" style="@style/UiKit.GuildsListIcon"/>
++    <com.facebook.drawee.view.SimpleDraweeView android:id="@+id/guilds_item_dm_avatar" android:background="?attr/selectableItemBackgroundBorderless" android:key="true" style="@style/UiKit.GuildsListIcon"/>
+     <TextView android:id="@+id/guilds_item_dm_count" android:layout_alignBottom="@+id/guilds_item_dm_avatar" android:layout_alignEnd="@+id/guilds_item_dm_avatar" style="@style/UiKit.GuildsListMentions"/>
+ </merge>

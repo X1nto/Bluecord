@@ -1,0 +1,13 @@
+--- ./discord_94011/src/main/java/androidx/core/content/pm/ShortcutManagerCompat.java	2021-12-24 01:10:08.921024700 +0400
++++ ./bluecord/src/main/java/androidx/core/content/pm/ShortcutManagerCompat.java	2021-12-24 01:08:29.668265400 +0400
+@@ -329,8 +329,8 @@ public class ShortcutManagerCompat {
+ 
+     /*  JADX ERROR: StackOverflowError in pass: MarkFinallyVisitor
+         java.lang.StackOverflowError
+-        	at jadx.core.dex.nodes.InsnNode.isSame(InsnNode.java:311)
+-        	at jadx.core.dex.instructions.IfNode.isSame(IfNode.java:122)
++        	at jadx.core.dex.nodes.InsnNode.isSame(InsnNode.java:303)
++        	at jadx.core.dex.instructions.InvokeNode.isSame(InvokeNode.java:77)
+         	at jadx.core.dex.visitors.MarkFinallyVisitor.sameInsns(MarkFinallyVisitor.java:451)
+         	at jadx.core.dex.visitors.MarkFinallyVisitor.compareBlocks(MarkFinallyVisitor.java:436)
+         	at jadx.core.dex.visitors.MarkFinallyVisitor.checkBlocksTree(MarkFinallyVisitor.java:408)

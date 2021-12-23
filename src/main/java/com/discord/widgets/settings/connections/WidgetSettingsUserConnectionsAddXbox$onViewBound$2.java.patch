@@ -1,0 +1,24 @@
+--- ./discord_94011/src/main/java/com/discord/widgets/settings/connections/WidgetSettingsUserConnectionsAddXbox$onViewBound$2.java	2021-12-24 01:10:15.180025300 +0400
++++ ./bluecord/src/main/java/com/discord/widgets/settings/connections/WidgetSettingsUserConnectionsAddXbox$onViewBound$2.java	2021-12-24 01:08:35.676260700 +0400
+@@ -34,7 +34,7 @@ public final class WidgetSettingsUserCon
+         if (str.length() == 6) {
+             WidgetSettingsUserConnectionsAddXbox widgetSettingsUserConnectionsAddXbox = this.this$0;
+             Platform platform = Platform.XBOX;
+-            DimmerView dimmerView = widgetSettingsUserConnectionsAddXbox.getBinding().d;
++            DimmerView dimmerView = WidgetSettingsUserConnectionsAddXbox.access$getBinding$p(widgetSettingsUserConnectionsAddXbox).d;
+             WidgetSettingsUserConnectionsAddXbox widgetSettingsUserConnectionsAddXbox2 = this.this$0;
+             widgetSettingsUserConnectionsAddXbox.submitPinCode(str, platform, dimmerView, widgetSettingsUserConnectionsAddXbox2, widgetSettingsUserConnectionsAddXbox2.getActivity(), new Action1<Error>(this) {
+                 /* class com.discord.widgets.settings.connections.WidgetSettingsUserConnectionsAddXbox$onViewBound$2.AnonymousClass1 */
+@@ -47,10 +47,10 @@ public final class WidgetSettingsUserCon
+                 public final void call(Error error) {
+                     WidgetSettingsUserConnectionsAddXbox widgetSettingsUserConnectionsAddXbox = this.this$0.this$0;
+                     m.checkNotNullExpressionValue(error, "error");
+-                    widgetSettingsUserConnectionsAddXbox.trackXboxLinkFailed(error);
++                    WidgetSettingsUserConnectionsAddXbox.access$trackXboxLinkFailed(widgetSettingsUserConnectionsAddXbox, error);
+                     if (error.getType() == Error.Type.DISCORD_REQUEST_ERROR) {
+                         error.setShowErrorToasts(false);
+-                        this.this$0.this$0.showPinError();
++                        WidgetSettingsUserConnectionsAddXbox.access$showPinError(this.this$0.this$0);
+                     }
+                 }
+             });

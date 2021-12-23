@@ -1,0 +1,44 @@
+--- ./discord_94011/src/main/java/com/discord/widgets/settings/premium/WidgetSettingsPremium$configureButtons$$inlined$forEach$lambda$2.java	2021-12-24 01:10:15.230026300 +0400
++++ ./bluecord/src/main/java/com/discord/widgets/settings/premium/WidgetSettingsPremium$configureButtons$$inlined$forEach$lambda$2.java	2021-12-24 01:08:35.717261200 +0400
+@@ -1,14 +1,10 @@
+ package com.discord.widgets.settings.premium;
+ 
+-import android.content.Context;
+ import android.view.View;
+ import com.discord.models.domain.ModelSubscription;
+-import com.discord.utilities.analytics.Traits;
+-import com.discord.utilities.billing.GooglePlaySku;
+-import com.discord.widgets.settings.premium.WidgetChoosePlan;
+ import com.google.android.material.button.MaterialButton;
+-import d0.z.d.m;
+ import kotlin.Metadata;
++import mods.utils.Alerts;
+ 
+ @Metadata(bv = {1, 0, 3}, d1 = {"\u0000\u0010\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\u0002\n\u0002\b\u0004\u0010\u0007\u001a\u00020\u00032\u000e\u0010\u0002\u001a\n \u0001*\u0004\u0018\u00010\u00000\u0000H\n¢\u0006\u0004\b\u0004\u0010\u0005¨\u0006\u0006"}, d2 = {"Landroid/view/View;", "kotlin.jvm.PlatformType", "it", "", "onClick", "(Landroid/view/View;)V", "com/discord/widgets/settings/premium/WidgetSettingsPremium$configureButtons$2$1", "<anonymous>"}, k = 3, mv = {1, 4, 2})
+ /* compiled from: WidgetSettingsPremium.kt */
+@@ -24,24 +20,6 @@ public final class WidgetSettingsPremium
+     }
+ 
+     public final void onClick(View view) {
+-        WidgetChoosePlan.ViewType viewType;
+-        String str;
+-        WidgetChoosePlan.Companion companion = WidgetChoosePlan.Companion;
+-        Context requireContext = this.this$0.requireContext();
+-        if (m.areEqual(this.$button, this.this$0.getBinding().f2025s.b)) {
+-            viewType = WidgetChoosePlan.ViewType.BUY_PREMIUM_TIER_1;
+-        } else {
+-            viewType = WidgetChoosePlan.ViewType.BUY_PREMIUM_TIER_2;
+-        }
+-        ModelSubscription modelSubscription = this.$premiumSubscription$inlined;
+-        String paymentGatewayPlanId = modelSubscription != null ? modelSubscription.getPaymentGatewayPlanId() : null;
+-        Traits.Location location = new Traits.Location("User Settings", this.this$0.getAnalyticsLocationSection(), "Button CTA", "buy", null, 16, null);
+-        Traits.Subscription.Companion companion2 = Traits.Subscription.Companion;
+-        if (m.areEqual(this.$button, this.this$0.getBinding().f2025s.b)) {
+-            str = GooglePlaySku.PREMIUM_TIER_1_MONTHLY.getSkuName();
+-        } else {
+-            str = GooglePlaySku.PREMIUM_TIER_2_MONTHLY.getSkuName();
+-        }
+-        WidgetChoosePlan.Companion.launch$default(companion, requireContext, null, viewType, paymentGatewayPlanId, location, companion2.withGatewayPlanId(str), 2, null);
++        Alerts.alertNitroClick(this.this$0.requireContext());
+     }
+ }

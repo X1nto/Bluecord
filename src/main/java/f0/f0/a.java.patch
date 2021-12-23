@@ -1,0 +1,58 @@
+--- ./discord_94011/src/main/java/f0/f0/a.java	2021-12-24 01:10:16.452024400 +0400
++++ ./bluecord/src/main/java/f0/f0/a.java	2021-12-24 01:08:36.823262200 +0400
+@@ -97,7 +97,7 @@ public final class a implements Intercep
+         RequestBody requestBody = request.e;
+         k b2 = gVar.b();
+         StringBuilder P = c.d.b.a.a.P("--> ");
+-        P.append(request.f2953c);
++        P.append(request.f2955c);
+         P.append(' ');
+         P.append(request.b);
+         if (b2 != null) {
+@@ -137,24 +137,24 @@ public final class a implements Intercep
+             if (!z2 || requestBody == null) {
+                 b bVar2 = this.d;
+                 StringBuilder P4 = c.d.b.a.a.P("--> END ");
+-                P4.append(request.f2953c);
++                P4.append(request.f2955c);
+                 bVar2.log(P4.toString());
+             } else if (a(request.d)) {
+                 b bVar3 = this.d;
+                 StringBuilder P5 = c.d.b.a.a.P("--> END ");
+-                P5.append(request.f2953c);
++                P5.append(request.f2955c);
+                 P5.append(" (encoded body omitted)");
+                 bVar3.log(P5.toString());
+             } else if (requestBody.isDuplex()) {
+                 b bVar4 = this.d;
+                 StringBuilder P6 = c.d.b.a.a.P("--> END ");
+-                P6.append(request.f2953c);
++                P6.append(request.f2955c);
+                 P6.append(" (duplex request body omitted)");
+                 bVar4.log(P6.toString());
+             } else if (requestBody.isOneShot()) {
+                 b bVar5 = this.d;
+                 StringBuilder P7 = c.d.b.a.a.P("--> END ");
+-                P7.append(request.f2953c);
++                P7.append(request.f2955c);
+                 P7.append(" (one-shot body omitted)");
+                 bVar5.log(P7.toString());
+             } else {
+@@ -170,7 +170,7 @@ public final class a implements Intercep
+                     this.d.log(eVar.L(charset2));
+                     b bVar6 = this.d;
+                     StringBuilder P8 = c.d.b.a.a.P("--> END ");
+-                    P8.append(request.f2953c);
++                    P8.append(request.f2955c);
+                     P8.append(" (");
+                     P8.append(requestBody.contentLength());
+                     P8.append("-byte body)");
+@@ -178,7 +178,7 @@ public final class a implements Intercep
+                 } else {
+                     b bVar7 = this.d;
+                     StringBuilder P9 = c.d.b.a.a.P("--> END ");
+-                    P9.append(request.f2953c);
++                    P9.append(request.f2955c);
+                     P9.append(" (binary ");
+                     P9.append(requestBody.contentLength());
+                     P9.append("-byte body omitted)");

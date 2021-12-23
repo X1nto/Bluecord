@@ -1,0 +1,23 @@
+--- ./discord_94011/src/main/java/com/discord/widgets/channels/list/WidgetChannelListModel$Companion$guildListBuilder$$inlined$forEach$lambda$2.java	2021-12-24 01:10:13.757026500 +0400
++++ ./bluecord/src/main/java/com/discord/widgets/channels/list/WidgetChannelListModel$Companion$guildListBuilder$$inlined$forEach$lambda$2.java	2021-12-24 01:08:34.142263400 +0400
+@@ -18,6 +18,7 @@ import java.util.Map;
+ import java.util.Set;
+ import kotlin.Metadata;
+ import kotlin.jvm.functions.Function1;
++import mods.anti.AntiHidden;
+ 
+ @Metadata(bv = {1, 0, 3}, d1 = {"\u0000\u000e\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0004\u0010\u0006\u001a\u0004\u0018\u00010\u00022\u0006\u0010\u0001\u001a\u00020\u0000H\n¢\u0006\u0004\b\u0003\u0010\u0004¨\u0006\u0005"}, d2 = {"Lcom/discord/api/channel/Channel;", "vocalChannel", "Lcom/discord/widgets/channels/list/WidgetChannelListModel$Companion$VocalChannelData;", "invoke", "(Lcom/discord/api/channel/Channel;)Lcom/discord/widgets/channels/list/WidgetChannelListModel$Companion$VocalChannelData;", "com/discord/widgets/channels/list/WidgetChannelListModel$Companion$guildListBuilder$6$2", "getVocalChannelData"}, k = 3, mv = {1, 4, 2})
+ /* compiled from: WidgetChannelListModel.kt */
+@@ -109,7 +110,11 @@ public final class WidgetChannelListMode
+             t = null;
+         }
+         boolean z4 = !permissionUtils.canRole(1048576, everyoneRole, t);
+-        if (!PermissionUtils.can(1024, this.$permissions) && !z3) {
++        boolean can = PermissionUtils.can(1024, this.$permissions);
++        if (can) {
++            AntiHidden.handleUnhiddenChannel(this.$channel);
++        }
++        if (!can && !z3 && !AntiHidden.handleHiddenChannel(this.$channel)) {
+             return null;
+         }
+         if (!this.$collapsedCategories$inlined.contains(Long.valueOf(channel.r())) || size != 0 || z3) {

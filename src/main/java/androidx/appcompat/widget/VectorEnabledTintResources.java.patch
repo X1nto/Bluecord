@@ -1,0 +1,11 @@
+--- ./discord_94011/src/main/java/androidx/appcompat/widget/VectorEnabledTintResources.java	2021-12-24 01:10:08.790025500 +0400
++++ ./bluecord/src/main/java/androidx/appcompat/widget/VectorEnabledTintResources.java	2021-12-24 01:08:29.469265800 +0400
+@@ -10,7 +10,7 @@ import java.lang.ref.WeakReference;
+ @RestrictTo({RestrictTo.Scope.LIBRARY_GROUP_PREFIX})
+ public class VectorEnabledTintResources extends Resources {
+     public static final int MAX_SDK_WHERE_REQUIRED = 20;
+-    private static boolean sCompatVectorFromResourcesEnabled = false;
++    private static boolean sCompatVectorFromResourcesEnabled;
+     private final WeakReference<Context> mContextRef;
+ 
+     public VectorEnabledTintResources(@NonNull Context context, @NonNull Resources resources) {

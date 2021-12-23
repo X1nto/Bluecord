@@ -1,0 +1,29 @@
+--- ./discord_94011/src/main/java/f0/e0/h/i.java	2021-12-24 01:10:16.432028400 +0400
++++ ./bluecord/src/main/java/f0/e0/h/i.java	2021-12-24 01:08:36.804260600 +0400
+@@ -56,7 +56,7 @@ public final class i implements Intercep
+         c0 c0Var = (cVar == null || (jVar = cVar.b) == null) ? null : jVar.q;
+         int i = response.l;
+         Request request = response.i;
+-        String str = request.f2953c;
++        String str = request.f2955c;
+         boolean z2 = false;
+         if (!(i == 307 || i == 308)) {
+             if (i == 401) {
+@@ -324,7 +324,7 @@ public final class i implements Intercep
+                                     responseBody = a.o;
+                                     response3 = a.p;
+                                     response4 = a.q;
+-                                    j = a.f2956s;
++                                    j = a.f2958s;
+                                     gVar = gVar3;
+                                     eVar3 = eVar4;
+                                 } catch (Throwable th5) {
+@@ -347,7 +347,7 @@ public final class i implements Intercep
+                                     Response response6 = response.p;
+                                     Response response7 = response.q;
+                                     Response response8 = response.r;
+-                                    long j3 = response.f2956s;
++                                    long j3 = response.f2958s;
+                                     long j4 = response.t;
+                                     c cVar2 = response.u;
+                                     if (!(i5 >= 0)) {

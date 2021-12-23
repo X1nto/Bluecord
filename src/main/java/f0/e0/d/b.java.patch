@@ -1,0 +1,20 @@
+--- ./discord_94011/src/main/java/f0/e0/d/b.java	2021-12-24 01:10:16.423027600 +0400
++++ ./bluecord/src/main/java/f0/e0/d/b.java	2021-12-24 01:08:36.795261600 +0400
+@@ -135,7 +135,7 @@ public final class b implements c {
+                             m.checkParameterIsNotNull(request, "request");
+                             new LinkedHashMap();
+                             wVar = request.b;
+-                            String str6 = request.f2953c;
++                            String str6 = request.f2955c;
+                             RequestBody requestBody = request.e;
+                             if (!request.f.isEmpty()) {
+                                 map = new LinkedHashMap();
+@@ -179,7 +179,7 @@ public final class b implements c {
+                         m.checkParameterIsNotNull(request, "request");
+                         new LinkedHashMap();
+                         wVar = request.b;
+-                        String str62 = request.f2953c;
++                        String str62 = request.f2955c;
+                         RequestBody requestBody2 = request.e;
+                         if (!request.f.isEmpty()) {
+                         }

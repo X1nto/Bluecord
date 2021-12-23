@@ -1,0 +1,59 @@
+--- ./discord_94011/src/main/java/com/discord/widgets/servers/community/WidgetServerSettingsCommunityThirdStep.java	2021-12-24 01:10:14.956026300 +0400
++++ ./bluecord/src/main/java/com/discord/widgets/servers/community/WidgetServerSettingsCommunityThirdStep.java	2021-12-24 01:08:35.430261800 +0400
+@@ -24,15 +24,12 @@ import d0.z.d.a0;
+ import d0.z.d.m;
+ import java.util.Map;
+ import kotlin.Lazy;
+-import kotlin.Metadata;
+ import kotlin.jvm.functions.Function0;
+ import kotlin.jvm.functions.Function1;
+ import kotlin.jvm.internal.DefaultConstructorMarker;
+ import kotlin.reflect.KProperty;
+ import rx.Observable;
+ 
+-@Metadata(bv = {1, 0, 3}, d1 = {"\u0000.\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0002\n\u0002\b\u0005\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0005\n\u0002\u0018\u0002\n\u0002\b\b\u0018\u0000 \u001a2\u00020\u0001:\u0001\u001aB\u0007¢\u0006\u0004\b\u0019\u0010\bJ\u0017\u0010\u0005\u001a\u00020\u00042\u0006\u0010\u0003\u001a\u00020\u0002H\u0002¢\u0006\u0004\b\u0005\u0010\u0006J\u000f\u0010\u0007\u001a\u00020\u0004H\u0016¢\u0006\u0004\b\u0007\u0010\bJ\u000f\u0010\t\u001a\u00020\u0004H\u0016¢\u0006\u0004\b\t\u0010\bR\u0016\u0010\u000b\u001a\u00020\n8\u0002@\u0002X\u000e¢\u0006\u0006\n\u0004\b\u000b\u0010\fR\u001d\u0010\u0012\u001a\u00020\r8B@\u0002X\u0002¢\u0006\f\n\u0004\b\u000e\u0010\u000f\u001a\u0004\b\u0010\u0010\u0011R\u001d\u0010\u0018\u001a\u00020\u00138B@\u0002X\u0002¢\u0006\f\n\u0004\b\u0014\u0010\u0015\u001a\u0004\b\u0016\u0010\u0017¨\u0006\u001b"}, d2 = {"Lcom/discord/widgets/servers/community/WidgetServerSettingsCommunityThirdStep;", "Lcom/discord/app/AppFragment;", "Lcom/discord/widgets/servers/community/WidgetServerSettingsEnableCommunityViewModel$ViewState$Loaded;", "viewState", "", "configureUI", "(Lcom/discord/widgets/servers/community/WidgetServerSettingsEnableCommunityViewModel$ViewState$Loaded;)V", "onViewBoundOrOnResume", "()V", "onDestroyView", "Lcom/discord/utilities/view/ToastManager;", "toastManager", "Lcom/discord/utilities/view/ToastManager;", "Lcom/discord/widgets/servers/community/WidgetServerSettingsEnableCommunityViewModel;", "viewModel$delegate", "Lkotlin/Lazy;", "getViewModel", "()Lcom/discord/widgets/servers/community/WidgetServerSettingsEnableCommunityViewModel;", "viewModel", "Lcom/discord/databinding/WidgetServerSettingsCommunitySetupThirdStepBinding;", "binding$delegate", "Lcom/discord/utilities/viewbinding/FragmentViewBindingDelegate;", "getBinding", "()Lcom/discord/databinding/WidgetServerSettingsCommunitySetupThirdStepBinding;", "binding", "<init>", "Companion", "app_productionGoogleRelease"}, k = 1, mv = {1, 4, 2})
+-/* compiled from: WidgetServerSettingsCommunityThirdStep.kt */
+ public final class WidgetServerSettingsCommunityThirdStep extends AppFragment {
+     public static final /* synthetic */ KProperty[] $$delegatedProperties = {a.a0(WidgetServerSettingsCommunityThirdStep.class, "binding", "getBinding()Lcom/discord/databinding/WidgetServerSettingsCommunitySetupThirdStepBinding;", 0)};
+     public static final Companion Companion = new Companion(null);
+@@ -40,8 +37,6 @@ public final class WidgetServerSettingsC
+     private ToastManager toastManager = new ToastManager();
+     private final Lazy viewModel$delegate = FragmentViewModelLazyKt.createViewModelLazy(this, a0.getOrCreateKotlinClass(WidgetServerSettingsEnableCommunityViewModel.class), new WidgetServerSettingsCommunityThirdStep$appActivityViewModels$$inlined$activityViewModels$1(this), new e0(WidgetServerSettingsCommunityThirdStep$viewModel$2.INSTANCE));
+ 
+-    @Metadata(bv = {1, 0, 3}, d1 = {"\u0000\u0016\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0002\n\u0002\b\u0005\b\u0003\u0018\u00002\u00020\u0001B\t\b\u0002¢\u0006\u0004\b\u0007\u0010\bJ\u0017\u0010\u0005\u001a\u00020\u00042\u0006\u0010\u0003\u001a\u00020\u0002H\u0007¢\u0006\u0004\b\u0005\u0010\u0006¨\u0006\t"}, d2 = {"Lcom/discord/widgets/servers/community/WidgetServerSettingsCommunityThirdStep$Companion;", "", "Landroid/content/Context;", "context", "", "create", "(Landroid/content/Context;)V", "<init>", "()V", "app_productionGoogleRelease"}, k = 1, mv = {1, 4, 2})
+-    /* compiled from: WidgetServerSettingsCommunityThirdStep.kt */
+     public static final class Companion {
+         private Companion() {
+         }
+@@ -60,7 +55,14 @@ public final class WidgetServerSettingsC
+         super(2131559247);
+     }
+ 
+-    /* access modifiers changed from: private */
++    public static final /* synthetic */ WidgetServerSettingsCommunitySetupThirdStepBinding access$getBinding$p(WidgetServerSettingsCommunityThirdStep widgetServerSettingsCommunityThirdStep) {
++        return widgetServerSettingsCommunityThirdStep.getBinding();
++    }
++
++    public static final /* synthetic */ WidgetServerSettingsEnableCommunityViewModel access$getViewModel$p(WidgetServerSettingsCommunityThirdStep widgetServerSettingsCommunityThirdStep) {
++        return widgetServerSettingsCommunityThirdStep.getViewModel();
++    }
++
+     /* JADX WARNING: Removed duplicated region for block: B:18:0x0095  */
+     public final void configureUI(WidgetServerSettingsEnableCommunityViewModel.ViewState.Loaded loaded) {
+         long j;
+@@ -115,13 +117,11 @@ public final class WidgetServerSettingsC
+         Companion.create(context);
+     }
+ 
+-    /* access modifiers changed from: private */
+-    public final WidgetServerSettingsCommunitySetupThirdStepBinding getBinding() {
++    private final WidgetServerSettingsCommunitySetupThirdStepBinding getBinding() {
+         return (WidgetServerSettingsCommunitySetupThirdStepBinding) this.binding$delegate.getValue((Fragment) this, $$delegatedProperties[0]);
+     }
+ 
+-    /* access modifiers changed from: private */
+-    public final WidgetServerSettingsEnableCommunityViewModel getViewModel() {
++    private final WidgetServerSettingsEnableCommunityViewModel getViewModel() {
+         return (WidgetServerSettingsEnableCommunityViewModel) this.viewModel$delegate.getValue();
+     }
+ 

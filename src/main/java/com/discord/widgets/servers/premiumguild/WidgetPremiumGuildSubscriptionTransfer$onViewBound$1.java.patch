@@ -1,0 +1,10 @@
+--- ./discord_94011/src/main/java/com/discord/widgets/servers/premiumguild/WidgetPremiumGuildSubscriptionTransfer$onViewBound$1.java	2021-12-24 01:10:15.027026300 +0400
++++ ./bluecord/src/main/java/com/discord/widgets/servers/premiumguild/WidgetPremiumGuildSubscriptionTransfer$onViewBound$1.java	2021-12-24 01:08:35.491261200 +0400
+@@ -13,6 +13,6 @@ public final class WidgetPremiumGuildSub
+     }
+ 
+     public final void onClick(View view) {
+-        WidgetPremiumGuildSubscriptionTransfer.access$getViewModel$p(this.this$0).transferPremiumGuildSubscription();
++        this.this$0.getViewModel().transferPremiumGuildSubscription();
+     }
+ }

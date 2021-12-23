@@ -1,0 +1,36 @@
+--- ./discord_94011/src/main/java/com/discord/widgets/settings/account/mfa/WidgetEnableMFAKey.java	2021-12-24 01:10:15.153025000 +0400
++++ ./bluecord/src/main/java/com/discord/widgets/settings/account/mfa/WidgetEnableMFAKey.java	2021-12-24 01:08:35.651261600 +0400
+@@ -20,19 +20,25 @@ import com.discord.utilities.viewbinding
+ import d0.z.d.a0;
+ import d0.z.d.m;
+ import kotlin.Lazy;
++import kotlin.Metadata;
+ import kotlin.jvm.internal.DefaultConstructorMarker;
+ import kotlin.reflect.KProperty;
+ 
++@Metadata(bv = {1, 0, 3}, d1 = {"\u00000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0010\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\b\u0005\n\u0002\u0018\u0002\n\u0002\b\b\u0018\u0000 \u001a2\u00020\u0001:\u0001\u001aB\u0007¢\u0006\u0004\b\u0019\u0010\u0004J\u000f\u0010\u0003\u001a\u00020\u0002H\u0002¢\u0006\u0004\b\u0003\u0010\u0004J\u0017\u0010\u0007\u001a\u00020\u00022\u0006\u0010\u0006\u001a\u00020\u0005H\u0002¢\u0006\u0004\b\u0007\u0010\bJ\u0017\u0010\u000b\u001a\u00020\u00022\u0006\u0010\n\u001a\u00020\tH\u0016¢\u0006\u0004\b\u000b\u0010\fR\u001d\u0010\u0012\u001a\u00020\r8B@\u0002X\u0002¢\u0006\f\n\u0004\b\u000e\u0010\u000f\u001a\u0004\b\u0010\u0010\u0011R\u001d\u0010\u0018\u001a\u00020\u00138B@\u0002X\u0002¢\u0006\f\n\u0004\b\u0014\u0010\u0015\u001a\u0004\b\u0016\u0010\u0017¨\u0006\u001b"}, d2 = {"Lcom/discord/widgets/settings/account/mfa/WidgetEnableMFAKey;", "Lcom/discord/app/AppFragment;", "", "showLaunchTexts", "()V", "Landroid/content/Context;", "context", "copyCodeToClipboard", "(Landroid/content/Context;)V", "Landroid/view/View;", "view", "onViewBound", "(Landroid/view/View;)V", "Lcom/discord/databinding/WidgetSettingsEnableMfaKeyBinding;", "binding$delegate", "Lcom/discord/utilities/viewbinding/FragmentViewBindingDelegate;", "getBinding", "()Lcom/discord/databinding/WidgetSettingsEnableMfaKeyBinding;", "binding", "Lcom/discord/widgets/settings/account/mfa/WidgetEnableMFAViewModel;", "viewModel$delegate", "Lkotlin/Lazy;", "getViewModel", "()Lcom/discord/widgets/settings/account/mfa/WidgetEnableMFAViewModel;", "viewModel", "<init>", "Companion", "app_productionGoogleRelease"}, k = 1, mv = {1, 4, 2})
++/* compiled from: WidgetEnableMFAKey.kt */
+ public final class WidgetEnableMFAKey extends AppFragment {
+     public static final /* synthetic */ KProperty[] $$delegatedProperties = {a.a0(WidgetEnableMFAKey.class, "binding", "getBinding()Lcom/discord/databinding/WidgetSettingsEnableMfaKeyBinding;", 0)};
+     public static final Companion Companion = new Companion(null);
+     private final FragmentViewBindingDelegate binding$delegate = FragmentViewBindingDelegateKt.viewBinding$default(this, WidgetEnableMFAKey$binding$2.INSTANCE, null, 2, null);
+     private final Lazy viewModel$delegate = FragmentViewModelLazyKt.createViewModelLazy(this, a0.getOrCreateKotlinClass(WidgetEnableMFAViewModel.class), new WidgetEnableMFAKey$appActivityViewModels$$inlined$activityViewModels$1(this), new e0(WidgetEnableMFAKey$viewModel$2.INSTANCE));
+ 
++    @Metadata(bv = {1, 0, 3}, d1 = {"\u0000\u001c\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\u0010\u000e\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u000b\n\u0002\b\u0005\b\u0003\u0018\u00002\u00020\u0001B\t\b\u0002¢\u0006\u0004\b\t\u0010\nJ\u001f\u0010\u0007\u001a\u00020\u00062\u0006\u0010\u0003\u001a\u00020\u00022\u0006\u0010\u0005\u001a\u00020\u0004H\u0002¢\u0006\u0004\b\u0007\u0010\b¨\u0006\u000b"}, d2 = {"Lcom/discord/widgets/settings/account/mfa/WidgetEnableMFAKey$Companion;", "", "", "packageName", "Landroid/content/pm/PackageManager;", "packageManager", "", "isPackageInstalled", "(Ljava/lang/String;Landroid/content/pm/PackageManager;)Z", "<init>", "()V", "app_productionGoogleRelease"}, k = 1, mv = {1, 4, 2})
++    /* compiled from: WidgetEnableMFAKey.kt */
+     public static final class Companion {
+         private Companion() {
+         }
+ 
++        /* access modifiers changed from: private */
+         public final boolean isPackageInstalled(String str, PackageManager packageManager) {
+             try {
+                 packageManager.getPackageInfo(str, 0);
+@@ -51,6 +57,7 @@ public final class WidgetEnableMFAKey ex
+         super(2131559298);
+     }
+ 
++    /* access modifiers changed from: private */
+     public final void copyCodeToClipboard(Context context) {
+         AuthUtils authUtils = AuthUtils.INSTANCE;
+         TextView textView = getBinding().b;

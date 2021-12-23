@@ -1,0 +1,19 @@
+--- ./discord_94011/src/main/java/com/discord/widgets/chat/list/adapter/WidgetChatListAdapterItemBlocked.java	2021-12-24 01:10:14.109026400 +0400
++++ ./bluecord/src/main/java/com/discord/widgets/chat/list/adapter/WidgetChatListAdapterItemBlocked.java	2021-12-24 01:08:34.510260100 +0400
+@@ -14,6 +14,7 @@ import com.discord.widgets.chat.list.ent
+ import com.discord.widgets.chat.list.entries.ChatListEntry;
+ import d0.z.d.m;
+ import kotlin.Metadata;
++import mods.ThemingTools;
+ 
+ @Metadata(bv = {1, 0, 3}, d1 = {"\u0000>\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\b\n\u0000\n\u0002\u0010\r\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0004\u0018\u00002\u00020\u0001B\u000f\u0012\u0006\u0010\u0014\u001a\u00020\u0013¢\u0006\u0004\b\u0015\u0010\u0016J#\u0010\b\u001a\u00020\u0007*\u00020\u00022\u0006\u0010\u0004\u001a\u00020\u00032\u0006\u0010\u0006\u001a\u00020\u0005H\u0002¢\u0006\u0004\b\b\u0010\tJ\u001f\u0010\u000e\u001a\u00020\r2\u0006\u0010\n\u001a\u00020\u00052\u0006\u0010\f\u001a\u00020\u000bH\u0014¢\u0006\u0004\b\u000e\u0010\u000fR\u0016\u0010\u0011\u001a\u00020\u00108\u0002@\u0002X\u0004¢\u0006\u0006\n\u0004\b\u0011\u0010\u0012¨\u0006\u0017"}, d2 = {"Lcom/discord/widgets/chat/list/adapter/WidgetChatListAdapterItemBlocked;", "Lcom/discord/widgets/chat/list/adapter/WidgetChatListItem;", "Landroid/content/res/Resources;", "Landroid/content/Context;", "context", "", "blockedCount", "", "getBlockedText", "(Landroid/content/res/Resources;Landroid/content/Context;I)Ljava/lang/CharSequence;", "position", "Lcom/discord/widgets/chat/list/entries/ChatListEntry;", "data", "", "onConfigure", "(ILcom/discord/widgets/chat/list/entries/ChatListEntry;)V", "Lcom/discord/databinding/WidgetChatListAdapterItemBlockedBinding;", "binding", "Lcom/discord/databinding/WidgetChatListAdapterItemBlockedBinding;", "Lcom/discord/widgets/chat/list/adapter/WidgetChatListAdapter;", "adapter", "<init>", "(Lcom/discord/widgets/chat/list/adapter/WidgetChatListAdapter;)V", "app_productionGoogleRelease"}, k = 1, mv = {1, 4, 2})
+ /* compiled from: WidgetChatListAdapterItemBlocked.kt */
+@@ -22,7 +23,7 @@ public final class WidgetChatListAdapter
+ 
+     /* JADX INFO: super call moved to the top of the method (can break code semantics) */
+     public WidgetChatListAdapterItemBlocked(WidgetChatListAdapter widgetChatListAdapter) {
+-        super(2131558975, widgetChatListAdapter);
++        super(ThemingTools.hideBlocked(), widgetChatListAdapter);
+         m.checkNotNullParameter(widgetChatListAdapter, "adapter");
+         View view = this.itemView;
+         TextView textView = (TextView) view.findViewById(2131362558);

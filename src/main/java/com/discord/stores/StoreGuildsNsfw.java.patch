@@ -1,0 +1,55 @@
+--- ./discord_94011/src/main/java/com/discord/stores/StoreGuildsNsfw.java	2021-12-24 01:10:12.856025000 +0400
++++ ./bluecord/src/main/java/com/discord/stores/StoreGuildsNsfw.java	2021-12-24 01:08:33.355262100 +0400
+@@ -13,18 +13,24 @@ import java.util.HashSet;
+ import java.util.Iterator;
+ import java.util.LinkedHashSet;
+ import java.util.Set;
++import kotlin.Metadata;
+ import kotlin.jvm.functions.Function0;
+ import kotlin.jvm.functions.Function1;
+ import kotlin.jvm.internal.DefaultConstructorMarker;
+ 
++@Metadata(bv = {1, 0, 3}, d1 = {"\u0000J\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0010\"\n\u0002\u0010\t\n\u0002\u0018\u0002\n\u0002\u0010\u000e\n\u0002\b\u0004\n\u0002\u0010\u000b\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0002\n\u0002\b\u0007\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010#\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\b\u0006\u0018\u0000 #2\u00020\u0001:\u0001#B\u0017\u0012\u0006\u0010\u001f\u001a\u00020\u001e\u0012\u0006\u0010\u0018\u001a\u00020\u0017¢\u0006\u0004\b!\u0010\"J#\u0010\u0006\u001a\b\u0012\u0004\u0012\u00020\u00050\u0002*\f\u0012\b\u0012\u00060\u0003j\u0002`\u00040\u0002H\u0002¢\u0006\u0004\b\u0006\u0010\u0007J#\u0010\b\u001a\f\u0012\b\u0012\u00060\u0003j\u0002`\u00040\u0002*\b\u0012\u0004\u0012\u00020\u00050\u0002H\u0002¢\u0006\u0004\b\b\u0010\u0007J\u0019\u0010\u000b\u001a\u00020\n2\n\u0010\t\u001a\u00060\u0003j\u0002`\u0004¢\u0006\u0004\b\u000b\u0010\fJ\u0017\u0010\u0010\u001a\u00020\u000f2\u0006\u0010\u000e\u001a\u00020\rH\u0017¢\u0006\u0004\b\u0010\u0010\u0011J\u0019\u0010\u0012\u001a\u00020\u000f2\n\u0010\t\u001a\u00060\u0003j\u0002`\u0004¢\u0006\u0004\b\u0012\u0010\u0013J\u0019\u0010\u0014\u001a\u00020\u000f2\n\u0010\t\u001a\u00060\u0003j\u0002`\u0004¢\u0006\u0004\b\u0014\u0010\u0013J\u000f\u0010\u0015\u001a\u00020\u000fH\u0017¢\u0006\u0004\b\u0015\u0010\u0016R\u0016\u0010\u0018\u001a\u00020\u00178\u0002@\u0002X\u0004¢\u0006\u0006\n\u0004\b\u0018\u0010\u0019R \u0010\u001b\u001a\f\u0012\b\u0012\u00060\u0003j\u0002`\u00040\u001a8\u0002@\u0002X\u0004¢\u0006\u0006\n\u0004\b\u001b\u0010\u001cR \u0010\u001d\u001a\f\u0012\b\u0012\u00060\u0003j\u0002`\u00040\u00028\u0002@\u0002X\u000e¢\u0006\u0006\n\u0004\b\u001d\u0010\u001cR\u0016\u0010\u001f\u001a\u00020\u001e8\u0002@\u0002X\u0004¢\u0006\u0006\n\u0004\b\u001f\u0010 ¨\u0006$"}, d2 = {"Lcom/discord/stores/StoreGuildsNsfw;", "Lcom/discord/stores/StoreV2;", "", "", "Lcom/discord/primitives/GuildId;", "", "toStringSet", "(Ljava/util/Set;)Ljava/util/Set;", "toGuildIdSet", "guildId", "", "isGuildNsfwGateAgreed", "(J)Z", "Landroid/content/Context;", "context", "", "init", "(Landroid/content/Context;)V", "allow", "(J)V", "deny", "snapshotData", "()V", "Lcom/discord/stores/StoreChannels;", "storeChannels", "Lcom/discord/stores/StoreChannels;", "", "guildIdsAllowed", "Ljava/util/Set;", "guildIdsAllowedSnapshot", "Lcom/discord/stores/Dispatcher;", "dispatcher", "Lcom/discord/stores/Dispatcher;", "<init>", "(Lcom/discord/stores/Dispatcher;Lcom/discord/stores/StoreChannels;)V", "Companion", "app_productionGoogleRelease"}, k = 1, mv = {1, 4, 2})
++/* compiled from: StoreGuildsNsfw.kt */
+ public final class StoreGuildsNsfw extends StoreV2 {
+     private static final Companion Companion = new Companion(null);
+-    private static final String GUILDS_ALLOWED_KEY;
++    @Deprecated
++    private static final String GUILDS_ALLOWED_KEY = "GUILDS_ALLOWED_KEY";
+     private final Dispatcher dispatcher;
+     private final Set<Long> guildIdsAllowed = new LinkedHashSet();
+     private Set<Long> guildIdsAllowedSnapshot = n0.emptySet();
+     private final StoreChannels storeChannels;
+ 
++    @Metadata(bv = {1, 0, 3}, d1 = {"\u0000\u0010\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\u0010\u000e\n\u0002\b\u0005\b\u0003\u0018\u00002\u00020\u0001B\t\b\u0002¢\u0006\u0004\b\u0005\u0010\u0006R\u0016\u0010\u0003\u001a\u00020\u00028\u0002@\u0002XT¢\u0006\u0006\n\u0004\b\u0003\u0010\u0004¨\u0006\u0007"}, d2 = {"Lcom/discord/stores/StoreGuildsNsfw$Companion;", "", "", "GUILDS_ALLOWED_KEY", "Ljava/lang/String;", "<init>", "()V", "app_productionGoogleRelease"}, k = 1, mv = {1, 4, 2})
++    /* compiled from: StoreGuildsNsfw.kt */
+     public static final class Companion {
+         private Companion() {
+         }
+@@ -41,6 +47,10 @@ public final class StoreGuildsNsfw exten
+         this.storeChannels = storeChannels2;
+     }
+ 
++    public static final /* synthetic */ Set access$getGuildIdsAllowed$p(StoreGuildsNsfw storeGuildsNsfw) {
++        return storeGuildsNsfw.guildIdsAllowed;
++    }
++
+     private final Set<Long> toGuildIdSet(Set<String> set) {
+         ArrayList arrayList = new ArrayList();
+         Iterator<T> it = set.iterator();
+@@ -71,6 +81,7 @@ public final class StoreGuildsNsfw exten
+     }
+ 
+     @Override // com.discord.stores.Store
++    @StoreThread
+     public void init(Context context) {
+         Set<Long> set;
+         m.checkNotNullParameter(context, "context");
+@@ -88,6 +99,7 @@ public final class StoreGuildsNsfw exten
+     }
+ 
+     @Override // com.discord.stores.StoreV2
++    @StoreThread
+     public void snapshotData() {
+         super.snapshotData();
+         this.guildIdsAllowedSnapshot = new HashSet(this.guildIdsAllowed);

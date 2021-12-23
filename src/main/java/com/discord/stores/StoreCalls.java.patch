@@ -1,0 +1,13 @@
+--- ./discord_94011/src/main/java/com/discord/stores/StoreCalls.java	2021-12-24 01:10:12.742025200 +0400
++++ ./bluecord/src/main/java/com/discord/stores/StoreCalls.java	2021-12-24 01:08:33.238262700 +0400
+@@ -31,6 +31,10 @@ public final class StoreCalls {
+         this.stream = storeStream;
+     }
+ 
++    public static final /* synthetic */ StoreStream access$getStream$p(StoreCalls storeCalls) {
++        return storeCalls.stream;
++    }
++
+     /* JADX DEBUG: Multi-variable search result rejected for r7v0, resolved type: com.discord.stores.StoreCalls */
+     /* JADX WARN: Multi-variable type inference failed */
+     public static /* synthetic */ void call$default(StoreCalls storeCalls, AppComponent appComponent, Context context, FragmentManager fragmentManager, long j, Function0 function0, int i, Object obj) {

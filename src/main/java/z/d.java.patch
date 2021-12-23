@@ -1,0 +1,26 @@
+--- ./discord_94011/src/main/java/z/d.java	2021-12-24 01:10:16.769028600 +0400
++++ ./bluecord/src/main/java/z/d.java	2021-12-24 01:08:37.153263100 +0400
+@@ -9,12 +9,12 @@ public class d implements c<TResult, Voi
+     public final /* synthetic */ c b;
+ 
+     /* renamed from: c  reason: collision with root package name */
+-    public final /* synthetic */ Executor f2980c;
++    public final /* synthetic */ Executor f2982c;
+ 
+     public d(g gVar, h hVar, c cVar, Executor executor) {
+         this.a = hVar;
+         this.b = cVar;
+-        this.f2980c = executor;
++        this.f2982c = executor;
+     }
+ 
+     /* Return type fixed from 'java.lang.Object' to match base method */
+@@ -23,7 +23,7 @@ public class d implements c<TResult, Voi
+         h hVar = this.a;
+         c cVar = this.b;
+         try {
+-            this.f2980c.execute(new e(hVar, cVar, gVar));
++            this.f2982c.execute(new e(hVar, cVar, gVar));
+             return null;
+         } catch (Exception e) {
+             hVar.b(new ExecutorException(e));

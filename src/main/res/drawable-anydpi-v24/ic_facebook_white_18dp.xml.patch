@@ -1,0 +1,8 @@
+--- ./discord_94011/src/main/res/drawable-anydpi-v24/ic_facebook_white_18dp.xml	2021-12-24 01:10:05.859027600 +0400
++++ ./bluecord/src/main/res/drawable-anydpi-v24/ic_facebook_white_18dp.xml	2021-12-24 01:08:18.112268000 +0400
+@@ -1,4 +1,4 @@
+ <?xml version="1.0" encoding="utf-8"?>
+ <vector xmlns:android="http://schemas.android.com/apk/res/android" android:height="18dp" android:width="18dp" android:viewportWidth="88" android:viewportHeight="88">
+-    <path android:fillColor="#ffffff" android:pathData="M4.86,0C2.17,0 0,2.17 0,4.86L0,83.14C0,85.83 2.17,88 4.86,88L47,88L47,53.92L35.54,53.92L35.54,40.64L47,40.64L47,30.85C47,19.48 53.95,13.29 64.09,13.29C68.94,13.29 73.12,13.65 74.33,13.81L74.33,25.69L67.3,25.7C61.79,25.7 60.72,28.32 60.72,32.16L60.72,40.64L73.87,40.64L72.16,53.92L60.72,53.92L60.72,88L83.14,88C85.83,88 88,85.83 88,83.14L88,4.86C88,2.17 85.83,0 83.14,0L4.86,0Z" android:strokeColor="#00000000" android:strokeWidth="1" android:fillType="1"/>
++    <path android:fillColor="#ffffffff" android:pathData="M4.86,0C2.17,0 0,2.17 0,4.86L0,83.14C0,85.83 2.17,88 4.86,88L47,88L47,53.92L35.54,53.92L35.54,40.64L47,40.64L47,30.85C47,19.48 53.95,13.29 64.09,13.29C68.94,13.29 73.12,13.65 74.33,13.81L74.33,25.69L67.3,25.7C61.79,25.7 60.72,28.32 60.72,32.16L60.72,40.64L73.87,40.64L72.16,53.92L60.72,53.92L60.72,88L83.14,88C85.83,88 88,85.83 88,83.14L88,4.86C88,2.17 85.83,0 83.14,0L4.86,0Z" android:strokeColor="#00000000" android:strokeWidth="1" android:fillType="1"/>
+ </vector>

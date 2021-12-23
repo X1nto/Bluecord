@@ -1,0 +1,16 @@
+--- ./discord_94011/src/main/java/com/discord/widgets/guilds/invite/InviteGenerator.java	2021-12-24 01:10:14.431025000 +0400
++++ ./bluecord/src/main/java/com/discord/widgets/guilds/invite/InviteGenerator.java	2021-12-24 01:08:35.036260700 +0400
+@@ -125,8 +125,11 @@ public final class InviteGenerator imple
+         this.generationState = r;
+     }
+ 
+-    /* access modifiers changed from: private */
+-    public final void handleGeneratedInvite(ModelInvite modelInvite) {
++    public static final /* synthetic */ void access$handleGeneratedInvite(InviteGenerator inviteGenerator, ModelInvite modelInvite) {
++        inviteGenerator.handleGeneratedInvite(modelInvite);
++    }
++
++    private final void handleGeneratedInvite(ModelInvite modelInvite) {
+         this.generationStateSubject.onNext(new InviteGenerationState(modelInvite, GenerationState.SUCCESS));
+     }
+ 

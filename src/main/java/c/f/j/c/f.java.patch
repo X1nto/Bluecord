@@ -1,0 +1,11 @@
+--- ./discord_94011/src/main/java/c/f/j/c/f.java	2021-12-24 01:10:09.908025800 +0400
++++ ./bluecord/src/main/java/c/f/j/c/f.java	2021-12-24 01:08:30.980264200 +0400
+@@ -156,7 +156,7 @@ public class f {
+         Objects.requireNonNull((z) this.g);
+         Executor executor = z.g.a;
+         if (eVar instanceof Boolean) {
+-            return ((Boolean) eVar).booleanValue() ? z.g.f2981c : z.g.d;
++            return ((Boolean) eVar).booleanValue() ? z.g.f2983c : z.g.d;
+         }
+         z.g<e> gVar = new z.g<>();
+         if (gVar.h(eVar)) {

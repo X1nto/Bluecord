@@ -1,0 +1,24 @@
+--- ./discord_94011/src/main/res/values-lv/plurals.xml	2021-12-24 01:10:10.919027000 +0400
++++ ./bluecord/src/main/res/values-lv/plurals.xml	2021-12-24 01:08:30.761262500 +0400
+@@ -1,18 +1,18 @@
+ <?xml version="1.0" encoding="utf-8"?>
+ <resources>
+     <plurals name="exo_controls_fastforward_by_amount_description">
++        <item quantity="other">Pārtīt uz priekšu par %d sekundēm</item>
+         <item quantity="zero">Pārtīt uz priekšu par %d sekundēm</item>
+         <item quantity="one">Pārtīt uz priekšu par %d sekundi</item>
+-        <item quantity="other">Pārtīt uz priekšu par %d sekundēm</item>
+     </plurals>
+     <plurals name="exo_controls_rewind_by_amount_description">
++        <item quantity="other">Attīt atpakaļ par %d sekundēm</item>
+         <item quantity="zero">Attīt atpakaļ par %d sekundēm</item>
+         <item quantity="one">Attīt atpakaļ par %d sekundi</item>
+-        <item quantity="other">Attīt atpakaļ par %d sekundēm</item>
+     </plurals>
+     <plurals name="mtrl_badge_content_description">
++        <item quantity="other">%d jauni paziņojumi</item>
+         <item quantity="zero">%d jaunu paziņojumu</item>
+         <item quantity="one">%d jauns paziņojums</item>
+-        <item quantity="other">%d jauni paziņojumi</item>
+     </plurals>
+ </resources>

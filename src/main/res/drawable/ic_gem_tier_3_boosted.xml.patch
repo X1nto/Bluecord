@@ -1,0 +1,12 @@
+--- ./discord_94011/src/main/res/drawable/ic_gem_tier_3_boosted.xml	2021-12-24 01:10:07.631024600 +0400
++++ ./bluecord/src/main/res/drawable/ic_gem_tier_3_boosted.xml	2021-12-24 01:08:17.072264400 +0400
+@@ -1,6 +1,6 @@
+ <?xml version="1.0" encoding="utf-8"?>
+ <vector xmlns:android="http://schemas.android.com/apk/res/android" android:height="20dp" android:width="20dp" android:viewportWidth="20" android:viewportHeight="20">
+-    <path android:fillColor="#fff" android:pathData="M10,3.75L6.25,7.5V12.5L10,16.25L13.75,12.5V7.5L10,3.75ZM12.5,12.025L10,14.525L7.5,12.025V8.025L10,5.525L12.5,8.025V12.025Z"/>
+-    <path android:fillColor="#fff" android:pathData="M10.95,8.2375L10,7.2875L8.75,8.5375V10.4375L10.95,8.2375Z"/>
+-    <path android:fillColor="#fff" android:pathData="M9.1,11.8625L10,12.7625L11.25,11.5125V9.7125L9.1,11.8625Z"/>
++    <path android:fillColor="#ffffffff" android:pathData="M10,3.75L6.25,7.5V12.5L10,16.25L13.75,12.5V7.5L10,3.75ZM12.5,12.025L10,14.525L7.5,12.025V8.025L10,5.525L12.5,8.025V12.025Z"/>
++    <path android:fillColor="#ffffffff" android:pathData="M10.95,8.2375L10,7.2875L8.75,8.5375V10.4375L10.95,8.2375Z"/>
++    <path android:fillColor="#ffffffff" android:pathData="M9.1,11.8625L10,12.7625L11.25,11.5125V9.7125L9.1,11.8625Z"/>
+ </vector>

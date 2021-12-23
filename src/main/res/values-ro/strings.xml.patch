@@ -1,0 +1,20 @@
+--- ./discord_94011/src/main/res/values-ro/strings.xml	2021-12-24 01:10:11.017027100 +0400
++++ ./bluecord/src/main/res/values-ro/strings.xml	2021-12-24 01:08:30.866264200 +0400
+@@ -5655,7 +5655,7 @@
+     <string name="notification_reply_failed">Nu s-a putut trimite un răspuns către {recipient}</string>
+     <string name="notification_reply_success">Răspuns trimis către {recipient}</string>
+     <string name="notification_settings">Setări de notificare</string>
+-    <string name="notification_title_discord">Discord</string>
++    <string name="notification_title_discord">Bluecord</string>
+     <string name="notification_title_start_game">Cineva se joacă</string>
+     <string name="notifications">Notificări</string>
+     <string name="notifications_muted">Notificări, amuțite</string>
+@@ -8275,7 +8275,7 @@
+     <string name="tip_voice_conversations_title3">Fă-te auzit</string>
+     <string name="tip_whos_online_body3">Aici poți vedea toți membrii acestui canal. Vezi cine e online și ce face fiecare, de exemplu ce jocuri joacă sau ce muzică ascultă.</string>
+     <string name="tip_whos_online_title3">Ce face toată lumea?</string>
+-    <string name="tip_writing_messages_body3">Acum că te-ai alăturat server-ului {serverName}, fă-ți cunoscută prezența și **salută-i pe ceilalți**! ��</string>
++    <string name="tip_writing_messages_body3" />
+     <string name="tip_writing_messages_title3">Începe o conversație</string>
+     <string name="title">Titlu</string>
+     <string name="title_bar_close_window">Închide</string>

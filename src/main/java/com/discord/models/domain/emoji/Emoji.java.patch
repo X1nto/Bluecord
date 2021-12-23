@@ -1,0 +1,11 @@
+--- ./discord_94011/src/main/java/com/discord/models/domain/emoji/Emoji.java	2021-12-24 01:10:12.638024400 +0400
++++ ./bluecord/src/main/java/com/discord/models/domain/emoji/Emoji.java	2021-12-24 01:08:33.132265500 +0400
+@@ -25,6 +25,8 @@ public interface Emoji extends Parcelabl
+ 
+     String getUniqueId();
+ 
++    boolean isActuallyAvailable();
++
+     boolean isAvailable();
+ 
+     boolean isUsable();

@@ -1,0 +1,6 @@
+--- ./discord_94011/src/main/res/drawable/bg_changelog_special_header.xml	2021-12-24 01:10:07.036023500 +0400
++++ ./bluecord/src/main/res/drawable/bg_changelog_special_header.xml	2021-12-24 01:08:16.335262900 +0400
+@@ -1,2 +1,2 @@
+ <?xml version="1.0" encoding="utf-8"?>
+-<shape xmlns:android="http://schemas.android.com/apk/res/android" android:tint="#4e81ff" android:shape="rectangle"/>
++<shape xmlns:android="http://schemas.android.com/apk/res/android" android:tint="#ff4e81ff" android:shape="rectangle"/>

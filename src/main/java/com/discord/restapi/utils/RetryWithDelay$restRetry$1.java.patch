@@ -1,0 +1,11 @@
+--- ./discord_94011/src/main/java/com/discord/restapi/utils/RetryWithDelay$restRetry$1.java	2021-12-24 01:10:12.675028000 +0400
++++ ./bluecord/src/main/java/com/discord/restapi/utils/RetryWithDelay$restRetry$1.java	2021-12-24 01:08:33.168263500 +0400
+@@ -35,7 +35,7 @@ public final class RetryWithDelay$restRe
+             HttpException httpException = (HttpException) th;
+             int a = httpException.a();
+             retrofit2.Response<?> response2 = httpException.i;
+-            if (!(response2 == null || (response = response2.a) == null || (request = response.i) == null || (str = request.f2953c) == null || !(!m.areEqual(str, "GET"))) || a == 401 || a == 429 || a == 503 || a == 403 || a == 404) {
++            if (!(response2 == null || (response = response2.a) == null || (request = response.i) == null || (str = request.f2955c) == null || !(!m.areEqual(str, "GET"))) || a == 401 || a == 429 || a == 503 || a == 403 || a == 404) {
+                 return false;
+             }
+         } else if (th instanceof TimeoutException) {

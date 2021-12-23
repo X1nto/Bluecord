@@ -1,0 +1,27 @@
+--- ./discord_94011/src/main/java/s/a/a/k.java	2021-12-24 01:10:16.718024300 +0400
++++ ./bluecord/src/main/java/s/a/a/k.java	2021-12-24 01:08:37.101261500 +0400
+@@ -18,10 +18,10 @@ public class k {
+         public k b;
+ 
+         /* renamed from: c  reason: collision with root package name */
+-        public final k f2967c;
++        public final k f2969c;
+ 
+         public a(k kVar) {
+-            this.f2967c = kVar;
++            this.f2969c = kVar;
+         }
+ 
+         /* JADX DEBUG: Method arguments types fixed to match base method, original types: [java.lang.Object, java.lang.Object] */
+@@ -29,9 +29,9 @@ public class k {
+         public void b(k kVar, Object obj) {
+             k kVar2 = kVar;
+             boolean z2 = obj == null;
+-            k kVar3 = z2 ? this.f2967c : this.b;
++            k kVar3 = z2 ? this.f2969c : this.b;
+             if (kVar3 != null && k.i.compareAndSet(kVar2, this, kVar3) && z2) {
+-                k kVar4 = this.f2967c;
++                k kVar4 = this.f2969c;
+                 k kVar5 = this.b;
+                 m.checkNotNull(kVar5);
+                 kVar4.g(kVar5);
