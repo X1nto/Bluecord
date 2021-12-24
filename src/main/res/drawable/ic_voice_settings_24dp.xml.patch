@@ -1,8 +1,0 @@
---- ./discord_94011/src/main/res/drawable/ic_voice_settings_24dp.xml	2021-12-24 01:10:00.849026000 +0400
-+++ ./bluecord/src/main/res/drawable/ic_voice_settings_24dp.xml	2021-12-24 01:08:17.518264900 +0400
-@@ -1,4 +1,4 @@
- <?xml version="1.0" encoding="utf-8"?>
- <vector xmlns:android="http://schemas.android.com/apk/res/android" android:height="24dp" android:width="24dp" android:viewportWidth="24" android:viewportHeight="24">
--    <path android:fillColor="#ffffff" android:pathData="M7,24L9,24L9,22L7,22L7,24ZM12,13C13.66,13 14.99,11.66 14.99,10L15,4C15,2.34 13.66,1 12,1C10.34,1 9,2.34 9,4L9,10C9,11.66 10.34,13 12,13ZM11,24L13,24L13,22L11,22L11,24ZM15,24L17,24L17,22L15,22L15,24ZM19,10L17.3,10C17.3,13 14.76,15.1 12,15.1C9.24,15.1 6.7,13 6.7,10L5,10C5,13.41 7.72,16.23 11,16.72L11,20L13,20L13,16.72C16.28,16.23 19,13.41 19,10Z"/>
-+    <path android:fillColor="#ffffffff" android:pathData="M7,24L9,24L9,22L7,22L7,24ZM12,13C13.66,13 14.99,11.66 14.99,10L15,4C15,2.34 13.66,1 12,1C10.34,1 9,2.34 9,4L9,10C9,11.66 10.34,13 12,13ZM11,24L13,24L13,22L11,22L11,24ZM15,24L17,24L17,22L15,22L15,24ZM19,10L17.3,10C17.3,13 14.76,15.1 12,15.1C9.24,15.1 6.7,13 6.7,10L5,10C5,13.41 7.72,16.23 11,16.72L11,20L13,20L13,16.72C16.28,16.23 19,13.41 19,10Z"/>
- </vector>

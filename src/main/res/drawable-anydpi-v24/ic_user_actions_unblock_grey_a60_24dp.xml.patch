@@ -1,8 +1,0 @@
---- ./discord_94011/src/main/res/drawable-anydpi-v24/ic_user_actions_unblock_grey_a60_24dp.xml	2021-12-24 01:10:01.599024300 +0400
-+++ ./bluecord/src/main/res/drawable-anydpi-v24/ic_user_actions_unblock_grey_a60_24dp.xml	2021-12-24 01:08:18.271264700 +0400
-@@ -1,4 +1,4 @@
- <?xml version="1.0" encoding="utf-8"?>
- <vector xmlns:android="http://schemas.android.com/apk/res/android" android:height="24dp" android:width="24dp" android:alpha="0.6" android:viewportWidth="24" android:viewportHeight="24">
--    <path android:fillColor="#4f545c" android:pathData="M23,2.27L21.73,1L19.5,3.23L17.27,1L16,2.27L18.23,4.5L16,6.73L17.27,8L19.5,5.77L21.73,8L23,6.73L20.77,4.5L23,2.27ZM13,2.002C13.255,2.002 13.4874,2.0972 13.6639,2.254C13.2396,3.0768 13,4.0104 13,5C13,8.3137 15.6863,11 19,11C19.7013,11 20.3744,10.8797 21,10.6586V17.002C21,17.554 20.553,18.002 20,18.002H9C8.596,18.002 8.23,17.759 8.076,17.385C7.922,17.011 8.007,16.581 8.293,16.295L10.586,14.002H5V22.002H3V3.002C3,2.45 3.447,2.002 4,2.002H13Z" android:fillType="1"/>
-+    <path android:fillColor="#ff4f545c" android:pathData="M23,2.27L21.73,1L19.5,3.23L17.27,1L16,2.27L18.23,4.5L16,6.73L17.27,8L19.5,5.77L21.73,8L23,6.73L20.77,4.5L23,2.27ZM13,2.002C13.255,2.002 13.4874,2.0972 13.6639,2.254C13.2396,3.0768 13,4.0104 13,5C13,8.3137 15.6863,11 19,11C19.7013,11 20.3744,10.8797 21,10.6586V17.002C21,17.554 20.553,18.002 20,18.002H9C8.596,18.002 8.23,17.759 8.076,17.385C7.922,17.011 8.007,16.581 8.293,16.295L10.586,14.002H5V22.002H3V3.002C3,2.45 3.447,2.002 4,2.002H13Z" android:fillType="1"/>
- </vector>

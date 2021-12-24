@@ -1,9 +1,0 @@
---- ./discord_94011/src/main/res/layout/widget_guilds_list_item_guild_new.xml	2021-12-24 01:10:00.590027800 +0400
-+++ ./bluecord/src/main/res/layout/widget_guilds_list_item_guild_new.xml	2021-12-24 01:08:22.876261800 +0400
-@@ -1,5 +1,5 @@
- <?xml version="1.0" encoding="utf-8"?>
- <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_gravity="center" android:layout_width="match_parent" android:layout_marginBottom="@dimen/guild_item_spacing" style="@style/UiKit.GuildsListIcon">
--    <com.facebook.drawee.view.SimpleDraweeView android:background="?attr/selectableItemBackgroundBorderless" android:layout_width="match_parent" android:layout_height="match_parent" app:placeholderImage="?attr/colorBackgroundSecondary" app:roundAsCircle="true"/>
-+    <com.facebook.drawee.view.SimpleDraweeView android:background="?attr/selectableItemBackgroundBorderless" android:layout_width="match_parent" android:layout_height="match_parent" android:key="true" app:placeholderImage="?attr/colorBackgroundSecondary" app:roundAsCircle="true"/>
-     <ImageView android:layout_gravity="center" android:id="@+id/guilds_item_profile_avatar" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_add_24dp" android:contentDescription="@string/create_server_button_cta_mobile" app:tint="@color/status_green_600"/>
- </FrameLayout>

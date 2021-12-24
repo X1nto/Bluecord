@@ -1,8 +1,0 @@
---- ./discord_94011/src/main/res/drawable/ic_navigate_next_grey_a60_24dp.xml	2021-12-24 01:10:03.240026400 +0400
-+++ ./bluecord/src/main/res/drawable/ic_navigate_next_grey_a60_24dp.xml	2021-12-24 01:08:17.218262300 +0400
-@@ -1,4 +1,4 @@
- <?xml version="1.0" encoding="utf-8"?>
- <vector xmlns:android="http://schemas.android.com/apk/res/android" android:height="24dp" android:width="24dp" android:alpha="0.6" android:viewportWidth="24" android:viewportHeight="24">
--    <path android:fillColor="#4f545c" android:pathData="M10,6L8.59,7.41 13.17,12l-4.58,4.59L10,18l6,-6z"/>
-+    <path android:fillColor="#ff4f545c" android:pathData="M10,6L8.59,7.41 13.17,12l-4.58,4.59L10,18l6,-6z"/>
- </vector>

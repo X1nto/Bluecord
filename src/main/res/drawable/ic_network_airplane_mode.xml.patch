@@ -1,8 +1,0 @@
---- ./discord_94011/src/main/res/drawable/ic_network_airplane_mode.xml	2021-12-24 01:09:59.422024000 +0400
-+++ ./bluecord/src/main/res/drawable/ic_network_airplane_mode.xml	2021-12-24 01:08:17.219263400 +0400
-@@ -1,4 +1,4 @@
- <?xml version="1.0" encoding="utf-8"?>
- <vector xmlns:android="http://schemas.android.com/apk/res/android" android:height="16dp" android:width="16dp" android:viewportWidth="16" android:viewportHeight="16">
--    <path android:fillColor="#b9bbbe" android:pathData="M5.3334,14.6667H6.6667L10,9H13.6667C14.22,9 14.6667,8.5533 14.6667,8C14.6667,7.4467 14.22,7 13.6667,7L10,7L6.6667,1.3333L5.3334,1.3333L7,7H3.3333L2.3333,5.3333H1.3333L2,8L1.3333,10.6667H2.3333L3.3333,9H7L5.3334,14.6667Z"/>
-+    <path android:fillColor="#ffb9bbbe" android:pathData="M5.3334,14.6667H6.6667L10,9H13.6667C14.22,9 14.6667,8.5533 14.6667,8C14.6667,7.4467 14.22,7 13.6667,7L10,7L6.6667,1.3333L5.3334,1.3333L7,7H3.3333L2.3333,5.3333H1.3333L2,8L1.3333,10.6667H2.3333L3.3333,9H7L5.3334,14.6667Z"/>
- </vector>

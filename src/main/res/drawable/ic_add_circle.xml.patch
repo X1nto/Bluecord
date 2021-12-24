@@ -1,8 +1,0 @@
---- ./discord_94011/src/main/res/drawable/ic_add_circle.xml	2021-12-24 01:10:02.713025000 +0400
-+++ ./bluecord/src/main/res/drawable/ic_add_circle.xml	2021-12-24 01:08:16.812265300 +0400
-@@ -1,4 +1,4 @@
- <?xml version="1.0" encoding="utf-8"?>
- <vector xmlns:android="http://schemas.android.com/apk/res/android" android:height="20dp" android:width="20dp" android:viewportWidth="20" android:viewportHeight="20">
--    <path android:fillColor="#b9bbbe" android:pathData="M10,0.001C4.486,0.001 0,4.487 0,10.001C0,15.515 4.486,20.001 10,20.001C15.514,20.001 20,15.515 20,10.001C20,4.487 15.514,0.001 10,0.001ZM15,11.001H11V15.001H9V11.001H5V9.001H9V5.001H11V9.001H15V11.001Z"/>
-+    <path android:fillColor="#ffb9bbbe" android:pathData="M10,0.001C4.486,0.001 0,4.487 0,10.001C0,15.515 4.486,20.001 10,20.001C15.514,20.001 20,15.515 20,10.001C20,4.487 15.514,0.001 10,0.001ZM15,11.001H11V15.001H9V11.001H5V9.001H9V5.001H11V9.001H15V11.001Z"/>
- </vector>

@@ -1,8 +1,0 @@
---- ./discord_94011/src/main/res/drawable/ic_guild_folder.xml	2021-12-24 01:10:03.071027600 +0400
-+++ ./bluecord/src/main/res/drawable/ic_guild_folder.xml	2021-12-24 01:08:17.085265600 +0400
-@@ -1,4 +1,4 @@
- <?xml version="1.0" encoding="utf-8"?>
- <vector xmlns:android="http://schemas.android.com/apk/res/android" android:height="17dp" android:width="20dp" android:viewportWidth="20" android:viewportHeight="17">
--    <path android:fillColor="#ffffff" android:pathData="M18,3H10L8.553,1.106C8.214,0.428 7.521,0 6.764,0H1C0.447,0 0,0.447 0,1V15C0,16.104 0.895,17 2,17H18C19.104,17 20,16.104 20,15V5C20,3.896 19.104,3 18,3Z"/>
-+    <path android:fillColor="#ffffffff" android:pathData="M18,3H10L8.553,1.106C8.214,0.428 7.521,0 6.764,0H1C0.447,0 0,0.447 0,1V15C0,16.104 0.895,17 2,17H18C19.104,17 20,16.104 20,15V5C20,3.896 19.104,3 18,3Z"/>
- </vector>

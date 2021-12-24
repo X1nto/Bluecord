@@ -1,8 +1,0 @@
---- ./discord_94011/src/main/res/drawable-anydpi-v24/ic_arrow_down_14dp.xml	2021-12-24 01:10:05.975026400 +0400
-+++ ./bluecord/src/main/res/drawable-anydpi-v24/ic_arrow_down_14dp.xml	2021-12-24 01:08:18.011264800 +0400
-@@ -1,4 +1,4 @@
- <?xml version="1.0" encoding="utf-8"?>
- <vector xmlns:android="http://schemas.android.com/apk/res/android" android:height="14dp" android:width="14dp" android:viewportWidth="14" android:viewportHeight="14">
--    <path android:fillColor="#000000" android:pathData="M9.6775,5.0107L7,7.6824L4.3225,5.0107L3.5,5.8332L7,9.3332L10.5,5.8332L9.6775,5.0107Z" android:fillType="1"/>
-+    <path android:fillColor="#ff000000" android:pathData="M9.6775,5.0107L7,7.6824L4.3225,5.0107L3.5,5.8332L7,9.3332L10.5,5.8332L9.6775,5.0107Z" android:fillType="1"/>
- </vector>

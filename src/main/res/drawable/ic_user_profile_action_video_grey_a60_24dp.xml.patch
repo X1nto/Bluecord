@@ -1,8 +1,0 @@
---- ./discord_94011/src/main/res/drawable/ic_user_profile_action_video_grey_a60_24dp.xml	2021-12-24 01:10:03.233024600 +0400
-+++ ./bluecord/src/main/res/drawable/ic_user_profile_action_video_grey_a60_24dp.xml	2021-12-24 01:08:17.496263600 +0400
-@@ -1,4 +1,4 @@
- <?xml version="1.0" encoding="utf-8"?>
- <vector xmlns:android="http://schemas.android.com/apk/res/android" android:height="24dp" android:width="24dp" android:alpha="0.6" android:viewportWidth="24" android:viewportHeight="24">
--    <path android:fillColor="#4f545c" android:pathData="M22.046,8.149C21.751,7.966 21.382,7.951 21.073,8.105L18.52,9.382V7C18.52,5.897 17.623,5 16.52,5H4.52C3.417,5 2.52,5.897 2.52,7V17C2.52,18.104 3.417,19 4.52,19H16.52C17.623,19 18.52,18.104 18.52,17V14.618L21.073,15.894C21.214,15.965 21.367,16 21.52,16C21.703,16 21.885,15.949 22.046,15.851C22.34,15.668 22.52,15.347 22.52,15V9C22.52,8.653 22.34,8.332 22.046,8.149Z"/>
-+    <path android:fillColor="#ff4f545c" android:pathData="M22.046,8.149C21.751,7.966 21.382,7.951 21.073,8.105L18.52,9.382V7C18.52,5.897 17.623,5 16.52,5H4.52C3.417,5 2.52,5.897 2.52,7V17C2.52,18.104 3.417,19 4.52,19H16.52C17.623,19 18.52,18.104 18.52,17V14.618L21.073,15.894C21.214,15.965 21.367,16 21.52,16C21.703,16 21.885,15.949 22.046,15.851C22.34,15.668 22.52,15.347 22.52,15V9C22.52,8.653 22.34,8.332 22.046,8.149Z"/>
- </vector>

@@ -1,9 +1,0 @@
---- ./discord_94011/src/main/res/drawable/app_toast_frame.xml	2021-12-24 01:10:03.080025300 +0400
-+++ ./bluecord/src/main/res/drawable/app_toast_frame.xml	2021-12-24 01:08:16.332263600 +0400
-@@ -1,5 +1,5 @@
- <?xml version="1.0" encoding="utf-8"?>
- <shape xmlns:android="http://schemas.android.com/apk/res/android" android:shape="rectangle">
--    <solid android:color="#4d4d4d"/>
-+    <solid android:color="#ff4d4d4d"/>
-     <corners android:radius="22dp"/>
- </shape>

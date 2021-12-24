@@ -1,8 +1,0 @@
---- ./discord_94011/src/main/res/drawable/ic_flash_off_24dp.xml	2021-12-24 01:09:59.955024400 +0400
-+++ ./bluecord/src/main/res/drawable/ic_flash_off_24dp.xml	2021-12-24 01:08:17.046264000 +0400
-@@ -1,4 +1,4 @@
- <?xml version="1.0" encoding="utf-8"?>
- <vector xmlns:android="http://schemas.android.com/apk/res/android" android:height="24dp" android:width="24dp" android:viewportWidth="24" android:viewportHeight="24">
--    <path android:fillColor="#fff" android:pathData="M3.27,3L2,4.27l5,5V13h3v9l3.58,-6.14L17.73,20 19,18.73 3.27,3zM17,10h-4l4,-8H7v2.18l8.46,8.46L17,10z"/>
-+    <path android:fillColor="#ffffffff" android:pathData="M3.27,3L2,4.27l5,5V13h3v9l3.58,-6.14L17.73,20 19,18.73 3.27,3zM17,10h-4l4,-8H7v2.18l8.46,8.46L17,10z"/>
- </vector>

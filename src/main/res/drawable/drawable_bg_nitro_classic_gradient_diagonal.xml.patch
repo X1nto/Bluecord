@@ -1,8 +1,0 @@
---- ./discord_94011/src/main/res/drawable/drawable_bg_nitro_classic_gradient_diagonal.xml	2021-12-24 01:09:59.720026700 +0400
-+++ ./bluecord/src/main/res/drawable/drawable_bg_nitro_classic_gradient_diagonal.xml	2021-12-24 01:08:16.526260100 +0400
-@@ -1,4 +1,4 @@
- <?xml version="1.0" encoding="utf-8"?>
- <shape xmlns:android="http://schemas.android.com/apk/res/android">
--    <gradient android:startColor="#738ef5" android:endColor="#b3aeff" android:angle="45" android:type="linear"/>
-+    <gradient android:startColor="#ff738ef5" android:endColor="#ffb3aeff" android:angle="45" android:type="linear"/>
- </shape>

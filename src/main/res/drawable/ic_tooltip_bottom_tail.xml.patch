@@ -1,8 +1,0 @@
---- ./discord_94011/src/main/res/drawable/ic_tooltip_bottom_tail.xml	2021-12-24 01:10:08.374027300 +0400
-+++ ./bluecord/src/main/res/drawable/ic_tooltip_bottom_tail.xml	2021-12-24 01:08:17.459264600 +0400
-@@ -1,4 +1,4 @@
- <?xml version="1.0" encoding="utf-8"?>
- <vector xmlns:android="http://schemas.android.com/apk/res/android" android:height="4dp" android:width="8dp" android:viewportWidth="8" android:viewportHeight="4">
--    <path android:fillColor="#ffffff" android:pathData="M4,4L0,0H8L4,4Z"/>
-+    <path android:fillColor="#ffffffff" android:pathData="M4,4L0,0H8L4,4Z"/>
- </vector>

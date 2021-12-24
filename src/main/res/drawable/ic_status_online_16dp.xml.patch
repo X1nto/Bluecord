@@ -1,9 +1,0 @@
---- ./discord_94011/src/main/res/drawable/ic_status_online_16dp.xml	2021-12-24 01:10:01.455025300 +0400
-+++ ./bluecord/src/main/res/drawable/ic_status_online_16dp.xml	2021-12-24 01:08:17.424263400 +0400
-@@ -1,5 +1,5 @@
- <?xml version="1.0" encoding="utf-8"?>
- <shape xmlns:android="http://schemas.android.com/apk/res/android" android:shape="oval">
--    <solid android:color="#3ba55c"/>
-+    <solid android:color="#ff3ba55c"/>
-     <size android:height="16dp" android:width="16dp"/>
- </shape>

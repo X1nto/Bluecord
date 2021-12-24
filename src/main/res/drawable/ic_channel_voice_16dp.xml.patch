@@ -1,8 +1,0 @@
---- ./discord_94011/src/main/res/drawable/ic_channel_voice_16dp.xml	2021-12-24 01:10:08.306027700 +0400
-+++ ./bluecord/src/main/res/drawable/ic_channel_voice_16dp.xml	2021-12-24 01:08:16.903263600 +0400
-@@ -1,4 +1,4 @@
- <?xml version="1.0" encoding="utf-8"?>
- <vector xmlns:android="http://schemas.android.com/apk/res/android" android:height="16dp" android:width="16dp" android:viewportWidth="16" android:viewportHeight="16">
--    <path android:fillColor="#7d8187" android:pathData="M9.333,2L9.333,3.373C11.26,3.947 12.667,5.733 12.667,7.847C12.667,9.96 11.26,11.74 9.333,12.313L9.333,13.693C12,13.087 14,10.7 14,7.847C14,4.993 12,2.607 9.333,2L9.333,2ZM11,7.847C11,6.667 10.333,5.653 9.333,5.16L9.333,10.513C10.333,10.04 11,9.02 11,7.847L11,7.847ZM2,5.847L2,9.847L4.667,9.847L8,13.18L8,2.513L4.667,5.847L2,5.847L2,5.847Z"/>
-+    <path android:fillColor="#ff7d8187" android:pathData="M9.333,2L9.333,3.373C11.26,3.947 12.667,5.733 12.667,7.847C12.667,9.96 11.26,11.74 9.333,12.313L9.333,13.693C12,13.087 14,10.7 14,7.847C14,4.993 12,2.607 9.333,2L9.333,2ZM11,7.847C11,6.667 10.333,5.653 9.333,5.16L9.333,10.513C10.333,10.04 11,9.02 11,7.847L11,7.847ZM2,5.847L2,9.847L4.667,9.847L8,13.18L8,2.513L4.667,5.847L2,5.847L2,5.847Z"/>
- </vector>
