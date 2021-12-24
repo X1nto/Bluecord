@@ -1,8 +1,0 @@
---- ./discord_94011/src/main/res/drawable/ic_expression_picker_item_placeholder_primary_100.xml	2021-12-24 01:10:01.231024200 +0400
-+++ ./bluecord/src/main/res/drawable/ic_expression_picker_item_placeholder_primary_100.xml	2021-12-24 01:08:17.012262700 +0400
-@@ -1,4 +1,4 @@
- <?xml version="1.0" encoding="utf-8"?>
- <vector xmlns:android="http://schemas.android.com/apk/res/android" android:height="24dp" android:width="24dp" android:viewportWidth="72" android:viewportHeight="72">
--    <path android:fillColor="#f6f6f7" android:pathData="M36,3L36,3A33,33 0,0 1,69 36L69,36A33,33 0,0 1,36 69L36,69A33,33 0,0 1,3 36L3,36A33,33 0,0 1,36 3z"/>
-+    <path android:fillColor="#fff6f6f7" android:pathData="M36,3L36,3A33,33 0,0 1,69 36L69,36A33,33 0,0 1,36 69L36,69A33,33 0,0 1,3 36L3,36A33,33 0,0 1,36 3z"/>
- </vector>

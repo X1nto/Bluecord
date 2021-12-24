@@ -1,9 +1,0 @@
---- ./discord_94011/src/main/res/layout/widget_home_panel_center_chat.xml	2021-12-24 01:10:02.241024900 +0400
-+++ ./bluecord/src/main/res/layout/widget_home_panel_center_chat.xml	2021-12-24 01:08:22.959263000 +0400
-@@ -1,5 +1,6 @@
- <?xml version="1.0" encoding="utf-8"?>
- <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/widget_home_panel_center_chat" style="@style/UiKit.ViewGroup.Page">
-+    <mods.view.BackgroundView android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="center"/>
-     <com.google.android.material.appbar.AppBarLayout android:id="@+id/action_bar_toolbar_layout" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0" app:layout_constraintVertical_bias="0" style="@style/AppTheme.AppBarLayout">
-         <androidx.appcompat.widget.Toolbar app:contentInsetStartWithNavigation="0dp" style="@style/AppTheme.Toolbar"/>
-     </com.google.android.material.appbar.AppBarLayout>

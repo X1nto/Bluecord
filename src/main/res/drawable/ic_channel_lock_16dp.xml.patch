@@ -1,8 +1,0 @@
---- ./discord_94011/src/main/res/drawable/ic_channel_lock_16dp.xml	2021-12-24 01:10:07.185025500 +0400
-+++ ./bluecord/src/main/res/drawable/ic_channel_lock_16dp.xml	2021-12-24 01:08:16.890263900 +0400
-@@ -1,4 +1,4 @@
- <?xml version="1.0" encoding="utf-8"?>
- <vector xmlns:android="http://schemas.android.com/apk/res/android" android:height="16dp" android:width="16dp" android:viewportWidth="16" android:viewportHeight="16">
--    <path android:fillColor="#7d8187" android:pathData="M10.8,7L10.8,5.5C10.8,4.1 9.4,3 8,3C6.6,3 5.2,4.1 5.2,5.5L5.2,7C4.6,7 4,7.6 4,8.2L4,11.7C4,12.4 4.6,13 5.2,13L10.7,13C11.4,13 12,12.4 12,11.8L12,8.3C12,7.6 11.4,7 10.8,7ZM9.5,7L6.5,7L6.5,5.5C6.5,4.7 7.2,4.2 8,4.2C8.8,4.2 9.5,4.7 9.5,5.5L9.5,7Z"/>
-+    <path android:fillColor="#ff7d8187" android:pathData="M10.8,7L10.8,5.5C10.8,4.1 9.4,3 8,3C6.6,3 5.2,4.1 5.2,5.5L5.2,7C4.6,7 4,7.6 4,8.2L4,11.7C4,12.4 4.6,13 5.2,13L10.7,13C11.4,13 12,12.4 12,11.8L12,8.3C12,7.6 11.4,7 10.8,7ZM9.5,7L6.5,7L6.5,5.5C6.5,4.7 7.2,4.2 8,4.2C8.8,4.2 9.5,4.7 9.5,5.5L9.5,7Z"/>
- </vector>

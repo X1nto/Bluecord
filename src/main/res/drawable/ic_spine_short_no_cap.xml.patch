@@ -1,8 +1,0 @@
---- ./discord_94011/src/main/res/drawable/ic_spine_short_no_cap.xml	2021-12-24 01:10:00.069023800 +0400
-+++ ./bluecord/src/main/res/drawable/ic_spine_short_no_cap.xml	2021-12-24 01:08:17.406262900 +0400
-@@ -1,4 +1,4 @@
- <?xml version="1.0" encoding="utf-8"?>
- <vector xmlns:android="http://schemas.android.com/apk/res/android" android:height="36dp" android:width="24dp" android:viewportWidth="24" android:viewportHeight="36">
--    <path android:fillColor="#4f545c" android:pathData="M1,0L0,0V14C0,16.2091 1.7909,18 4,18H11C11.5523,18 12,17.5523 12,17C12,16.4477 11.5523,16 11,16H4C2.8954,16 2,15.1046 2,14V0L1,0Z"/>
-+    <path android:fillColor="#ff4f545c" android:pathData="M1,0L0,0V14C0,16.2091 1.7909,18 4,18H11C11.5523,18 12,17.5523 12,17C12,16.4477 11.5523,16 11,16H4C2.8954,16 2,15.1046 2,14V0L1,0Z"/>
- </vector>

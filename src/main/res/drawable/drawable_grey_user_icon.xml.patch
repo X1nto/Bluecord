@@ -1,8 +1,0 @@
---- ./discord_94011/src/main/res/drawable/drawable_grey_user_icon.xml	2021-12-24 01:10:03.302026600 +0400
-+++ ./bluecord/src/main/res/drawable/drawable_grey_user_icon.xml	2021-12-24 01:08:16.641261900 +0400
-@@ -1,4 +1,4 @@
- <?xml version="1.0" encoding="utf-8"?>
- <shape xmlns:android="http://schemas.android.com/apk/res/android" android:shape="oval">
--    <solid android:color="#4f545c"/>
-+    <solid android:color="#ff4f545c"/>
- </shape>
