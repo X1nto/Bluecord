@@ -12,8 +12,9 @@ This is just a joke, if you want a normal discord mod that's open source - use [
 3. Decompile Discord using `java -jar apktool.jar d com.discord-94011.apk --no-dummy`
 4. `cd com.discord-94011` and apply patch using `patch --binary -p1 -i ../bluecord.patch`
 5. Copy `res` dir from this repo to decompiled Discord 
-6. Build apk using `java -jar apktool.jar b`
-7. Build custom Bluecord dex using `./gradlew Bluecord:make`
-8. Copy `Bluecord/build/Injector.dex` to built apk as `classes4.dex`
-9. Sign apk using apksigner
-10. Done
+6. Move `smali/z` to `smali_classes3/z`
+7. Build apk using `java -jar apktool.jar b`
+8. Build custom Bluecord dex using `./gradlew Bluecord:make`
+9. Copy `Bluecord/build/Injector.dex` to built apk as `classes4.dex`
+10. Sign apk using apksigner
+11. Done
