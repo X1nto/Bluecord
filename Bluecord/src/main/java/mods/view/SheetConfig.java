@@ -19,6 +19,7 @@ import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentActivity;
 import com.discord.api.channel.Channel;
 import com.discord.api.message.attachment.MessageAttachment;
+import com.discord.api.permission.Permission;
 import com.discord.app.AppBottomSheet;
 import com.discord.databinding.UserProfileHeaderViewBinding;
 import com.discord.databinding.WidgetChatListActionsBinding;
@@ -27,6 +28,7 @@ import com.discord.models.message.Message;
 import com.discord.models.presence.Presence;
 import com.discord.models.user.User;
 import com.discord.utilities.icon.IconUtils;
+import com.discord.utilities.premium.PremiumUtils;
 import com.discord.utilities.presence.PresenceUtils;
 import com.discord.widgets.chat.input.autocomplete.AutocompleteViewModel;
 import com.discord.widgets.chat.list.actions.WidgetChatListActions;
@@ -54,6 +56,7 @@ import mods.utils.StringUtils;
 import mods.utils.ToastUtil;
 import mods.utils.translate.Translate;
 
+@SuppressLint("ResourceType")
 public class SheetConfig {
     private static final String TAG = "SheetConfig";
 
@@ -97,14 +100,14 @@ public class SheetConfig {
             textView2.setVisibility(View.GONE);
             textView3.setVisibility(View.GONE);
         } else {
-            textView2.setOnClickListener(new $$Lambda$SheetConfig$PQbKU1tzt2M8mFhr0GgHTFnov0(channel, message, appBottomSheet));
-            textView3.setOnClickListener(new $$Lambda$SheetConfig$bKzrgZK4BQgyJEFcwoQWMWtQK0E(appBottomSheet, message));
+            textView2.setOnClickListener(new $$Lambda$SheetConfig$Y3uGp1UtFygk7uyhpNjlCCftKTg(channel, message, appBottomSheet));
+            textView3.setOnClickListener(new $$Lambda$SheetConfig$s3L7HTEsQ3iTnGUrtNpqz9n4Y7c(appBottomSheet, message));
         }
         if (textView.getVisibility() == View.GONE && !message.isLocalApplicationCommand()) {
             if (!StringUtils.isEmpty(content) || message.hasAttachments()) {
                 textView.setText("Copy attachment URLs");
                 textView.setVisibility(View.VISIBLE);
-                textView.setOnClickListener(new $$Lambda$SheetConfig$3NInVdzfbkuGpcmrhXirtWrO1Gc(content, message, appBottomSheet));
+                textView.setOnClickListener(new $$Lambda$SheetConfig$nPLk2Qa3rMa_7HgZswUwEGD1gcg(content, message, appBottomSheet));
             }
         }
     }
@@ -115,12 +118,11 @@ public class SheetConfig {
         String maxUrlResolution2 = maxUrlResolution(str2);
         openUrlAsAttachment(view.findViewById(Constants.ID_GUILD_PROFILE_SHEET_ICON), loaded.getGuildName(), maxUrlResolution);
         openUrlAsAttachment(view.findViewById(Constants.ID_GUILD_PROFILE_SHEET_BANNER), loaded.getGuildName(), maxUrlResolution2);
-        @SuppressLint("ResourceType") TextView textView = (TextView) view.findViewById(16908321);
+        TextView textView = (TextView) view.findViewById(16908321);
         textView.setVisibility(View.VISIBLE);
-        textView.setOnClickListener(new $$Lambda$SheetConfig$FS5lf0dtSLKBnvrcjfdHAS0gzmc(fragment, maxUrlResolution, maxUrlResolution2));
+        textView.setOnClickListener(new $$Lambda$SheetConfig$ii1rb4IjPIfshAiGS3assC9lRg(fragment, maxUrlResolution, maxUrlResolution2));
     }
 
-    @SuppressLint("ResourceType")
     public static void configureUserSheet(View view, User user, UserProfileHeaderView userProfileHeaderView) {
         UserProfileHeaderViewBinding access$getBinding$p = UserProfileHeaderView.access$getBinding$p(userProfileHeaderView);
         String maxUrlResolution = maxUrlResolution(IconUtils.getForUser(user, true, (int) view.getResources().getDimension(Constants.DIMEN_SMALL_AVATAR)));
@@ -130,15 +132,15 @@ public class SheetConfig {
             openUrlAsAttachment(access$getBinding$p.getRoot().findViewById(Constants.ID_AVATAR), lowerCase, maxUrlResolution);
             openUrlAsAttachment(access$getBinding$p.getRoot().findViewById(Constants.ID_BANNER), lowerCase, maxUrlResolution2);
         }
-        TextView textView = (TextView) view.findViewById(16908321);
-        textView.setVisibility(0);
-        textView.setOnClickListener(new $$Lambda$SheetConfig$xjrUh65EeaimPAjo_uSfP1GzmJQ(maxUrlResolution));
-        TextView textView2 = (TextView) view.findViewById(16908323);
-        textView2.setVisibility(0);
-        textView2.setOnClickListener(new $$Lambda$SheetConfig$c3vPGMnWdSUkENfip2oNxJ0S2Eo(maxUrlResolution2));
-        TextView textView3 = (TextView) view.findViewById(16908293);
-        textView3.setOnClickListener(new $$Lambda$SheetConfig$u0B5FrvhvP45TVMdkuZQAVgFwRE(user));
-        textView3.setVisibility(0);
+        TextView textView = view.findViewById(16908321);
+        textView.setVisibility(View.VISIBLE);
+        textView.setOnClickListener(new $$Lambda$SheetConfig$vVgXOjqWJGBioSKo2MtFZkKfwyc(maxUrlResolution));
+        TextView textView2 = view.findViewById(16908323);
+        textView2.setVisibility(View.VISIBLE);
+        textView2.setOnClickListener(new $$Lambda$SheetConfig$xjrUh65EeaimPAjo_uSfP1GzmJQ(maxUrlResolution2));
+        TextView textView3 = view.findViewById(16908293);
+        textView3.setOnClickListener(new $$Lambda$SheetConfig$xtsjctXjymNObe_HUaOPeuw_z8(user));
+        textView3.setVisibility(View.VISIBLE);
     }
 
     private static void download(String str, String str2) throws IOException {
@@ -200,7 +202,7 @@ public class SheetConfig {
         return uri.toString();
     }
 
-    static /* synthetic */ void lambda$configureChatList$1(Channel channel, Message message, AppBottomSheet appBottomSheet, View view) {
+    static /* synthetic */ void lambda$configureChatList$0(Channel channel, Message message, AppBottomSheet appBottomSheet, View view) {
         String quoteMessage = StringUtils.quoteMessage(channel, message);
         if (quoteMessage.isEmpty()) {
             ToastUtil.toast("You can't quote messages without text");
@@ -210,12 +212,12 @@ public class SheetConfig {
         appBottomSheet.dismiss();
     }
 
-    static /* synthetic */ void lambda$configureChatList$2(AppBottomSheet appBottomSheet, Message message, View view) {
+    static /* synthetic */ void lambda$configureChatList$1(AppBottomSheet appBottomSheet, Message message, View view) {
         Translate.showTranslateDialog(appBottomSheet.getActivity(), message);
         appBottomSheet.dismiss();
     }
 
-    static /* synthetic */ void lambda$configureChatList$3(String str, Message message, AppBottomSheet appBottomSheet, View view) {
+    static /* synthetic */ void lambda$configureChatList$2(String str, Message message, AppBottomSheet appBottomSheet, View view) {
         StringBuilder sb = new StringBuilder();
         if (!StringUtils.isEmpty(str)) {
             sb.append("Message text:\n");
@@ -234,7 +236,7 @@ public class SheetConfig {
         appBottomSheet.dismiss();
     }
 
-    static /* synthetic */ void lambda$configureGuildSheet$7(FragmentActivity fragmentActivity, String str, String str2) {
+    static /* synthetic */ void lambda$configureGuildSheet$6(FragmentActivity fragmentActivity, String str, String str2) {
         if (!PermissionUtils.hasStoragePermission(fragmentActivity)) {
             return;
         }
@@ -253,7 +255,7 @@ public class SheetConfig {
         }
     }
 
-    static /* synthetic */ void lambda$configureGuildSheet$8(String str, String str2, FragmentActivity fragmentActivity, DialogInterface dialogInterface, int i) {
+    static /* synthetic */ void lambda$configureGuildSheet$7(String str, String str2, FragmentActivity fragmentActivity, DialogInterface dialogInterface, int i) {
         if (i == 0) {
             StringBuilder sb = new StringBuilder();
             sb.append("Icon URL:\n");
@@ -268,15 +270,15 @@ public class SheetConfig {
             ToastUtil.toast("Copied to clipboard");
             return;
         }
-        new Thread(new $$Lambda$SheetConfig$68ngnLlKaxSUMOZJ77enWHUE8Lo(fragmentActivity, str, str2)).start();
+        new Thread(new $$Lambda$SheetConfig$u0DzA_ix2xBsQdgOrP6Jitqa_8(fragmentActivity, str, str2)).start();
     }
 
-    static /* synthetic */ void lambda$configureGuildSheet$9(Fragment fragment, String str, String str2, View view) {
+    static /* synthetic */ void lambda$configureGuildSheet$8(Fragment fragment, String str, String str2, View view) {
         FragmentActivity requireActivity = fragment.requireActivity();
-        DiscordTools.newBuilder(requireActivity).setTitle("Guild Icon / Banner").setItems(new String[]{"Copy to clipboard", "Download"}, new $$Lambda$SheetConfig$5esGISwmXWzBuzObccHNyywZho(str, str2, requireActivity)).setPositiveButton("Exit", (DialogInterface.OnClickListener) null).show();
+        DiscordTools.newBuilder(requireActivity).setTitle("Guild Icon / Banner").setItems(new String[]{"Copy to clipboard", "Download"}, new $$Lambda$SheetConfig$zWy0znaEdSPHsmkpE0MX28SnXBM(str, str2, requireActivity)).setPositiveButton("Exit", (DialogInterface.OnClickListener) null).show();
     }
 
-    static /* synthetic */ void lambda$configureUserSheet$4(String str, View view) {
+    static /* synthetic */ void lambda$configureUserSheet$3(String str, View view) {
         if (!StringUtils.isEmpty(str)) {
             DiscordTools.copyToClipboard(str);
             ToastUtil.toast("URL copied to clipboard");
@@ -285,7 +287,7 @@ public class SheetConfig {
         ToastUtil.toast("User does not have a profile picture or you're not connected to Discord");
     }
 
-    static /* synthetic */ void lambda$configureUserSheet$5(String str, View view) {
+    static /* synthetic */ void lambda$configureUserSheet$4(String str, View view) {
         if (!StringUtils.isEmpty(str)) {
             DiscordTools.copyToClipboard(str);
             ToastUtil.toast("Banner URL copied to clipboard");
@@ -294,32 +296,12 @@ public class SheetConfig {
         ToastUtil.toast("User does not have a banner picture or you're not connected to Discord");
     }
 
-    static /* synthetic */ void lambda$configureUserSheet$6(User user, View view) {
+    static /* synthetic */ void lambda$configureUserSheet$5(User user, View view) {
         DiscordTools.copyToClipboard(StringUtils.getUsernameWithDiscriminator(user));
         ToastUtil.toast("Name + Tag copied to clipboard");
     }
 
-    static /* synthetic */ void lambda$modifyStatusIndicator$0(int i, AppCompatImageView appCompatImageView) {
-        switch (i) {
-            case Constants.IC_STATUS_DND:
-                appCompatImageView.setImageResource(Constants.IC_SCREEN_14DP);
-                appCompatImageView.setColorFilter(Color.parseColor("#ed4245"), PorterDuff.Mode.SRC_ATOP);
-                return;
-            case Constants.IC_STATUS_IDLE:
-                appCompatImageView.setImageResource(Constants.IC_SCREEN_14DP);
-                appCompatImageView.setColorFilter(Color.parseColor("#faa61a"), PorterDuff.Mode.SRC_ATOP);
-                return;
-            case Constants.IC_STATUS_INVISIBLE:
-            default:
-                return;
-            case Constants.IC_STATUS_ONLINE:
-                appCompatImageView.setImageResource(Constants.IC_SCREEN_14DP);
-                appCompatImageView.setColorFilter(Color.parseColor("#3ba55c"), PorterDuff.Mode.SRC_ATOP);
-        }
-    }
-
-    /* JADX DEBUG: Can't convert new array creation: APUT found in different block: 0x0019: APUT  (r1v1 java.lang.Object[]), (1 ??[boolean, int, float, short, byte, char]), (r2v3 java.lang.String) */
-    static /* synthetic */ void lambda$openUrlAsAttachment$10(String str, String str2, View view, View view2) {
+    static /* synthetic */ void lambda$openUrlAsAttachment$9(String str, String str2, View view, View view2) {
         MessageAttachment messageAttachment = new MessageAttachment();
         Object[] objArr = new Object[2];
         objArr[0] = str;
@@ -359,22 +341,71 @@ public class SheetConfig {
         if (appCompatImageView == null) {
             return false;
         }
-        if (i != Constants.IC_STATUS_ONLINE && i != Constants.IC_STATUS_IDLE && i != Constants.IC_STATUS_DND) {
+        try {
+            if (i == Constants.IC_STATUS_ONLINE || i == Constants.IC_STATUS_IDLE || i == Constants.IC_STATUS_DND) {
+                if (QuickAccessPrefs.isBetterStatusIndicatorEnabled() && presence != null && presence.getClientStatuses() != null && PresenceUtils.INSTANCE.isWeb(presence.getClientStatuses())) {
+                    switch (i) {
+                        case Constants.IC_STATUS_DND:
+                            appCompatImageView.setImageResource(Constants.IC_SCREEN_14DP);
+                            appCompatImageView.setColorFilter(Color.parseColor("#ed4245"), PorterDuff.Mode.SRC_ATOP);
+                            return true;
+                        case Constants.IC_STATUS_IDLE:
+                            appCompatImageView.setImageResource(Constants.IC_SCREEN_14DP);
+                            appCompatImageView.setColorFilter(Color.parseColor("#faa61a"), PorterDuff.Mode.SRC_ATOP);
+                            return true;
+                        case Constants.IC_STATUS_ONLINE:
+                            appCompatImageView.setImageResource(Constants.IC_SCREEN_14DP);
+                            appCompatImageView.setColorFilter(Color.parseColor("#3ba55c"), PorterDuff.Mode.SRC_ATOP);
+                            return true;
+                        default:
+                            return true;
+                    }
+                }
+                if (appCompatImageView.getColorFilter() != null) {
+                    appCompatImageView.clearColorFilter();
+                }
+                return false;
+            }
             if (appCompatImageView.getColorFilter() != null) {
                 appCompatImageView.clearColorFilter();
             }
             return false;
-        } else if (!QuickAccessPrefs.isBetterStatusIndicatorEnabled() || presence == null || !PresenceUtils.INSTANCE.isWeb(presence.getClientStatuses())) {
+        } catch (Throwable th) {
+            Log.e(TAG, "modifyStatusIndicator() failed", th);
             return false;
-        } else {
-            appCompatImageView.post(new $$Lambda$SheetConfig$BH3aqRD3VEgg6EP9fzI7QkO3x0(i, appCompatImageView));
-            return true;
         }
     }
 
     private static void openUrlAsAttachment(View view, String str, String str2) {
         if (view != null && !StringUtils.isEmpty(str2)) {
-            view.setOnClickListener(new $$Lambda$SheetConfig$OCGuymwF5Kx87jBq3OmcbMXl7cU(str, str2, view));
+            view.setOnClickListener(new $$Lambda$SheetConfig$f0O28rl4NxGFUDM_X6RxV6gkao(str, str2, view));
+        }
+    }
+
+    public static void setFileSize(CharSequence charSequence, String str, TextView textView) {
+        if (str != null) {
+            try {
+                if (QuickAccessPrefs.isAttachmentFileSizeEnabled()) {
+                    long maxFileSizeMB = PremiumUtils.INSTANCE.getMaxFileSizeMB(StoreUtils.getSelf()) * Permission.CONNECT;
+                    long length = new File(str).length();
+                    String mb = StringUtils.toMB(length);
+                    String trim = (((Object) StringUtils.nullToEmpty(charSequence)) + "\n" + mb).trim();
+                    textView.getBackground().setAlpha(0x7f);
+                    textView.setVisibility(0);
+                    SpannableStringBuilder spannableStringBuilder = new SpannableStringBuilder(trim);
+                    if (length > maxFileSizeMB) {
+                        spannableStringBuilder.setSpan(new ForegroundColorSpan(Color.parseColor("#ffed4245")), trim.length() - mb.length(), trim.length(), 33);
+                    }
+                    textView.setText(spannableStringBuilder);
+                    return;
+                }
+            } catch (Throwable th) {
+                th.printStackTrace();
+                return;
+            }
+        }
+        if (charSequence != null) {
+            textView.setText(charSequence);
         }
     }
 }

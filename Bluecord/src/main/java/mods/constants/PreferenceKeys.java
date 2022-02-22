@@ -1,4 +1,5 @@
 package mods.constants;
+
 public final class PreferenceKeys {
     public static final String ALWAYS_SHOW_EMBED_LINKS = "always.show.embed.links";
     public static final String ANTI_DELETE_MODE = "anti.delete";
@@ -23,8 +24,8 @@ public final class PreferenceKeys {
     public static final String CUSTOM_FONT_PATH = "blue.fontpath";
     public static final String CUSTOM_FONT_TYPE = "blue.font";
     public static final String DAYS_ON_DISCORD = "discord.days.v2";
-    public static final String DEFAULT_TRANSLATE_FROM_KEY = "api_translate_from_key_v2";
-    public static final String DEFAULT_TRANSLATE_TO_KEY = "api_translate_to_key_v2";
+    public static final String DEFAULT_TRANSLATE_FROM_KEY = "api_translate_from_key_v3";
+    public static final String DEFAULT_TRANSLATE_TO_KEY = "api_translate_to_key_v3";
     public static final String DISABLE_REPLY_MENTIONS = "disable.reply.mentions";
     public static final String DISABLE_TYPING = "disable.typing";
     public static final String DO_NOT_ADD = "blue.dnd.v2";
@@ -48,6 +49,7 @@ public final class PreferenceKeys {
     public static final String RESIZE_ICONS = "resize.icons";
     public static final String REVEAL_HIDDEN_CHANNELS = "reveal.hidden";
     public static final String REVEAL_SPOILERS = "reveal.spoilers";
+    public static final String SHOW_FILE_SIZES = "blue.attachment.filesize";
     public static final String SHOW_TAG = "show.tag";
     public static final String SQUARE_PICTURES = "square.pics";
     public static final String TIMESTAMP_FORMAT = "timestamp.format";

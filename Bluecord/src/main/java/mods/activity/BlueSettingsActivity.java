@@ -103,6 +103,7 @@ public class BlueSettingsActivity extends AppCompatActivity implements SharedPre
                 Prefs.setString(PreferenceKeys.BACKGROUND_PATH, absolutePath);
                 Prefs.setBoolean(PreferenceKeys.BACKGROUND_UCROP_UPGRADED, true);
                 ToastUtil.customToast(this, "Background changed successfully");
+                DiscordTools.promptRestart(this);
                 return;
             } catch (Exception e) {
                 e.printStackTrace();

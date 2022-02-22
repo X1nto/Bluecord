@@ -30,7 +30,7 @@ public class Updater extends Preference {
 
     public Updater(Context context, AttributeSet attributeSet) {
         super(context, attributeSet);
-        setSummary("Current Version: 2.1" + (URLConstants.IS_BETA ? " (Beta)" : ""));
+        setSummary("Current Version: " + URLConstants.getVersionString());
         setOnPreferenceClickListener(new $$Lambda$Updater$OxaLdweWqQYog46KZzKCYsQZE8(context));
     }
 

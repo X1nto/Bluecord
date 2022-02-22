@@ -5,8 +5,8 @@ import com.discord.api.channel.Channel;
 import com.discord.api.user.User;
 import com.discord.models.domain.ModelInvite;
 import com.discord.models.message.Message;
-import java.util.Date;
-import java.util.Locale;
+
+import java.util.*;
 import java.util.concurrent.TimeUnit;
 import mods.DiscordTools;
 
@@ -83,6 +83,14 @@ public class StringUtils {
         return charSequence == null || charSequence.length() == 0;
     }
 
+    public static boolean isEmpty(Collection<?> collection) {
+        return collection == null || collection.size() == 0;
+    }
+
+    public static boolean isEmpty(Map<?, ?> map) {
+        return map == null || map.size() == 0;
+    }
+
     public static String mock(String str) {
         String lowerCase = str.trim().toLowerCase();
         StringBuilder sb = new StringBuilder();
@@ -100,6 +108,10 @@ public class StringUtils {
             sb.append(charAt);
         }
         return sb.toString();
+    }
+
+    public static CharSequence nullToEmpty(CharSequence charSequence) {
+        return charSequence == null ? "" : charSequence;
     }
 
     public static String plural(String str, long j) {
@@ -130,5 +142,9 @@ public class StringUtils {
             join = "```" + getUsernameWithDiscriminator(message.getAuthor()).replace("```", "`​``") + " | " + DiscordTools.formatDate(SnowflakeUtils.toTimestamp(message.getId())) + "```\n" + join;
         }
         return join + "\n\n";
+    }
+
+    public static String toMB(long j) {
+        return String.format(Locale.US, "%.2f MB", j / 1048576.0d);
     }
 }

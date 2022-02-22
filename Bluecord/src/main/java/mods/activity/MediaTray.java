@@ -53,10 +53,11 @@ public class MediaTray {
     private final int themedTextColor;
 
     /* renamed from: mods.activity.MediaTray$1  reason: invalid class name */
+    /* loaded from: classes4.dex */
     class AnonymousClass1 extends ArrayAdapter {
         final /* synthetic */ int val$size;
 
-        /* JADX INFO: super call moved to the top of the method (can break code semantics) */
+        /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
         AnonymousClass1(Context context, int i, int i2, List list, int i3) {
             super(context, i, i2, list);
             this.val$size = i3;
@@ -110,7 +111,7 @@ public class MediaTray {
         if (activity == null) {
             ToastUtil.toast("Something went wrong.");
         } else {
-            activity.runOnUiThread(new $$Lambda$MediaTray$izH_aZ6BE_ifAIWKDhujoGrH0JM(this, activity, str, str2));
+            activity.runOnUiThread(new $$Lambda$MediaTray$ZfxKJ4b1Qr9Ex54GaP4MEqD9B3A(this, activity, str, str2));
         }
     }
 
@@ -155,7 +156,7 @@ public class MediaTray {
         if (this.mFragment.getActivity() == null) {
             ToastUtil.toast("Something went wrong.");
         } else {
-            this.mFragment.getActivity().runOnUiThread(new $$Lambda$MediaTray$j2WdHXyyZNqXbr4usBhOYeJWqoo(this, charSequenceArr, zArr, size, sharedPreferences, array));
+            this.mFragment.getActivity().runOnUiThread(new $$Lambda$MediaTray$LWcJSamM6yve9UIRQc41B0rDPJI(this, charSequenceArr, zArr, size, sharedPreferences, array));
         }
     }
 
@@ -172,18 +173,22 @@ public class MediaTray {
 
     private boolean isBuiltInCommand(String str) {
         String ensurePrefix = ensurePrefix(str);
-        return ensurePrefix.startsWith(ensurePrefix("add")) || ensurePrefix.startsWith(ensurePrefix("delete")) || ensurePrefix.startsWith(ensurePrefix("prefix ")) || ensurePrefix.startsWith(ensurePrefix("spoiler ")) || ensurePrefix.startsWith(ensurePrefix("i ")) || ensurePrefix.startsWith(ensurePrefix("uwu ")) || ensurePrefix.startsWith(ensurePrefix("owo ")) || ensurePrefix.startsWith(ensurePrefix("lower ")) || ensurePrefix.startsWith(ensurePrefix("b ")) || ensurePrefix.startsWith(ensurePrefix("bold ")) || ensurePrefix.startsWith(ensurePrefix("s ")) || ensurePrefix.startsWith(ensurePrefix("u ")) || ensurePrefix.startsWith(ensurePrefix("tr ")) || ensurePrefix.equals(ensurePrefix("update")) || ensurePrefix.startsWith(ensurePrefix("ud ")) || ensurePrefix.equals(ensurePrefix("bluecord")) || ensurePrefix.startsWith(ensurePrefix("mock ")) || ensurePrefix.equals(ensurePrefix("upper ")) || ensurePrefix.equals(ensurePrefix("reverse ")) || ensurePrefix.equals(ensurePrefix("blank")) || isExistingCustomCommand(str);
+        return ensurePrefix.startsWith(ensurePrefix("add")) || ensurePrefix.startsWith(ensurePrefix("delete")) || ensurePrefix.startsWith(ensurePrefix("prefix ")) || ensurePrefix.startsWith(ensurePrefix("spoiler ")) || ensurePrefix.startsWith(ensurePrefix("i ")) || ensurePrefix.startsWith(ensurePrefix("uwu ")) || ensurePrefix.startsWith(ensurePrefix("owo ")) || ensurePrefix.startsWith(ensurePrefix("lower ")) || ensurePrefix.startsWith(ensurePrefix("b ")) || ensurePrefix.startsWith(ensurePrefix("bold ")) || ensurePrefix.startsWith(ensurePrefix("s ")) || ensurePrefix.startsWith(ensurePrefix("u ")) || ensurePrefix.startsWith(ensurePrefix("tr ")) || ensurePrefix.equals(ensurePrefix("testcrash")) || ensurePrefix.equals(ensurePrefix("update")) || ensurePrefix.startsWith(ensurePrefix("ud ")) || ensurePrefix.equals(ensurePrefix("bluecord")) || ensurePrefix.startsWith(ensurePrefix("mock ")) || ensurePrefix.equals(ensurePrefix("upper ")) || ensurePrefix.equals(ensurePrefix("reverse ")) || ensurePrefix.equals(ensurePrefix("blank")) || isExistingCustomCommand(str);
     }
 
     private boolean isExistingCustomCommand(String str) {
         return DiscordTools.getContext().getSharedPreferences("CustomCommands", 0).getString(removePrefix(str), null) != null;
     }
 
-    static /* synthetic */ void lambda$deleteCommand$4(boolean[] zArr, DialogInterface dialogInterface, int i, boolean z2) {
+    static /* synthetic */ void lambda$commands$1() {
+        throw new RuntimeException("Testing crash");
+    }
+
+    static /* synthetic */ void lambda$deleteCommand$7(boolean[] zArr, DialogInterface dialogInterface, int i, boolean z2) {
         zArr[i] = z2;
     }
 
-    static /* synthetic */ void lambda$deleteCommand$5(int i, boolean[] zArr, SharedPreferences sharedPreferences, Object[] objArr, DialogInterface dialogInterface, int i2) {
+    static /* synthetic */ void lambda$deleteCommand$8(int i, boolean[] zArr, SharedPreferences sharedPreferences, Object[] objArr, DialogInterface dialogInterface, int i2) {
         boolean z2 = false;
         for (int i3 = 0; i3 < i; i3++) {
             if (zArr[i3]) {
@@ -221,7 +226,6 @@ public class MediaTray {
     }
 
     public String commands(String str) {
-        String str2;
         AtomicBoolean atomicBoolean = shouldAddSpoiler;
         atomicBoolean.set(false);
         if (!str.startsWith(this.prefix)) {
@@ -230,14 +234,14 @@ public class MediaTray {
         String substring = str.substring(this.prefix.length());
         if (substring.startsWith("add")) {
             String trim = substring.substring(3).trim();
-            String str3 = trim;
-            String str4 = "";
+            String str2 = trim;
+            String str3 = "";
             int indexOf = trim.indexOf(32);
             if (indexOf != -1) {
-                str3 = trim.substring(0, indexOf).trim();
-                str4 = trim.substring(indexOf + 1).trim();
+                str2 = trim.substring(0, indexOf).trim();
+                str3 = trim.substring(indexOf + 1).trim();
             }
-            addCommand(ensurePrefix(str3), str4);
+            addCommand(ensurePrefix(str2), str3);
             substring = "";
         } else if (substring.startsWith("delete")) {
             deleteCommand();
@@ -248,12 +252,17 @@ public class MediaTray {
         } else if (substring.startsWith("tr ")) {
             Translate.showTranslateDialog(this.mFragment.getActivity(), substring.substring(3).trim());
             substring = "";
+        } else if (substring.startsWith("testcrash")) {
+            if (this.mFragment.getActivity() != null) {
+                this.mFragment.getActivity().runOnUiThread(new $$Lambda$MediaTray$7EFO6KrznMwZCm1YY6BFDyVNBQ(this));
+            }
+            substring = "";
         } else if (substring.startsWith("b ")) {
             substring = "```\n" + substring.substring(2) + "\n```";
         } else if (substring.startsWith("bold ")) {
             substring = "**" + substring.substring(2) + "**";
         } else if (substring.equals("blank")) {
-            substring = "​";
+            substring = "\u200b";
         } else if (substring.startsWith("i ")) {
             substring = "*" + substring.substring(2) + "*";
         } else if (substring.startsWith("u ")) {
@@ -275,18 +284,17 @@ public class MediaTray {
         } else if (substring.startsWith("spoiler")) {
             String trim2 = substring.substring(7).trim();
             if (StringUtils.isEmpty(trim2)) {
-                str2 = "";
+                substring = "";
             } else {
-                str2 = "||" + trim2 + "||";
+                substring = "||" + trim2 + "||";
             }
-            substring = str2;
             atomicBoolean.set(true);
         } else if (substring.equals("update")) {
             this.mFragment.requireActivity().startActivity(new Intent("android.intent.action.VIEW", Uri.parse(URLConstants.getBaseUrl())));
         } else if (substring.equals("bluecord")) {
             FragmentActivity activity = this.mFragment.getActivity();
             if (activity != null) {
-                activity.runOnUiThread(new $$Lambda$MediaTray$rCRhkKAdEIUsfkpBQyXTbBA_Q(this));
+                activity.runOnUiThread(new $$Lambda$MediaTray$80_SjYuCksXSfhz8KGKoQFyKDNs(this));
                 substring = "";
             }
         } else if (substring.startsWith("prefix ")) {
@@ -307,7 +315,7 @@ public class MediaTray {
         return substring.trim();
     }
 
-    public /* synthetic */ void lambda$addCommand$2$MediaTray(EditText editText, EditText editText2, DialogInterface dialogInterface, int i) {
+    public /* synthetic */ void lambda$addCommand$5$MediaTray(EditText editText, EditText editText2, DialogInterface dialogInterface, int i) {
         String removePrefix = removePrefix(editText.getText().toString().toLowerCase().trim());
         String trim = editText2.getText().toString().trim();
         if (StringUtils.isEmpty(removePrefix)) {
@@ -323,7 +331,7 @@ public class MediaTray {
         addCommand("", "");
     }
 
-    public /* synthetic */ void lambda$addCommand$3$MediaTray(FragmentActivity fragmentActivity, String str, String str2) {
+    public /* synthetic */ void lambda$addCommand$6$MediaTray(FragmentActivity fragmentActivity, String str, String str2) {
         ScrollView scrollView = new ScrollView(fragmentActivity);
         scrollView.setFillViewport(true);
         LinearLayout linearLayout = new LinearLayout(fragmentActivity);
@@ -363,19 +371,31 @@ public class MediaTray {
                 editText2.setText(str2);
             }
         }
-        DiscordTools.newBuilder(this.mFragment.getContext()).setView(scrollView).setTitle("Add Command").setPositiveButton("Add", new $$Lambda$MediaTray$4RiIDgPezfGvco4RT066JaifA88(this, editText, editText2)).setNegativeButton("Exit", (DialogInterface.OnClickListener) null).show();
+        DiscordTools.newBuilder(this.mFragment.getContext()).setView(scrollView).setTitle("Add Command").setPositiveButton("Add", new $$Lambda$MediaTray$jeyrW8ev6DJ_4Riv3Z_fAvysis(this, editText, editText2)).setNegativeButton("Exit", (DialogInterface.OnClickListener) null).show();
     }
 
-    public /* synthetic */ void lambda$commands$1$MediaTray() {
+    public /* synthetic */ void lambda$commands$2$MediaTray(DialogInterface dialogInterface, int i) {
+        this.mediaTrayView.post($$Lambda$MediaTray$nltswezTOuiQa4sAR2bNeyl78rI.INSTANCE);
+    }
+
+    public /* synthetic */ void lambda$commands$3$MediaTray() {
+        DiscordTools.newBuilder(this.mFragment.getContext())
+            .setTitle("Crash app?")
+            .setPositiveButton("Yes", new $$Lambda$MediaTray$5IY0bFamxLMKxwZ5GNFiWrE50Ww(this))
+            .setNeutralButton("Lol no", null)
+            .show();
+    }
+
+    public /* synthetic */ void lambda$commands$4$MediaTray() {
         DiscordTools.basicAlert(this.mFragment.requireActivity(), "Bluecord", "The reason I started this project was that there were no other Discord mods available for Android where you can customize all the mods to your liking with a settings UI. The goal of this mod is to bring you all the mods you like, but in a form factor that's customizable and easy to install and use with no coding or reversing required. Hope you enjoy!\n\n~Blue");
     }
 
-    public /* synthetic */ void lambda$deleteCommand$6$MediaTray(CharSequence[] charSequenceArr, boolean[] zArr, int i, SharedPreferences sharedPreferences, Object[] objArr) {
-        DiscordTools.newBuilder(this.mFragment.getContext()).setTitle("Delete Commands").setMultiChoiceItems(charSequenceArr, zArr, new $$Lambda$MediaTray$5F9XAXvOcvcRFsXJXbdys882hAc(zArr)).setNegativeButton("Exit", (DialogInterface.OnClickListener) null).setPositiveButton("Delete", new $$Lambda$MediaTray$gwleFxO9QudcpbtN8TY49P2_Kk(i, zArr, sharedPreferences, objArr)).show();
+    public /* synthetic */ void lambda$deleteCommand$9$MediaTray(CharSequence[] charSequenceArr, boolean[] zArr, int i, SharedPreferences sharedPreferences, Object[] objArr) {
+        DiscordTools.newBuilder(this.mFragment.getContext()).setTitle("Delete Commands").setMultiChoiceItems(charSequenceArr, zArr, new $$Lambda$MediaTray$4ZpHfccQ3zNFe66VGQjY3yRDTJg(zArr)).setNegativeButton("Exit", (DialogInterface.OnClickListener) null).setPositiveButton("Delete", new $$Lambda$MediaTray$mCL8HTEQv7blRxFEDMUn58iQ_A(i, zArr, sharedPreferences, objArr)).show();
     }
 
     public /* synthetic */ void lambda$onTextChanged$0$MediaTray(AdapterView adapterView, View view, int i, long j) {
-        EditText editText = (EditText) this.mediaTrayView.findViewById(Constants.TEXT_INPUT);
+        EditText editText = this.mediaTrayView.findViewById(Constants.TEXT_INPUT);
         editText.setText(ensurePrefix(this.commandsList.get(i)));
         editText.setSelection(editText.getText().length());
     }
@@ -422,7 +442,7 @@ public class MediaTray {
             this.mediaTrayView.setMinimumHeight(this.height * 2);
             ListView listView2 = (ListView) this.mediaTrayView.findViewById(16908298);
             this.mediaTrayList = listView2;
-            listView2.getLayoutParams().height = Math.min(400, Math.round((DiscordTools.getContext().getResources().getDisplayMetrics().xdpi / 160.0f) * ((float) this.commandsList.size()) * 100.0f));
+            listView2.getLayoutParams().height = Math.min(400, Math.round((DiscordTools.getContext().getResources().getDisplayMetrics().xdpi / 160.0f) * this.commandsList.size() * 100.0f));
             this.mediaTrayList.setAdapter((ListAdapter) r8);
             this.mediaTrayList.setVisibility(0);
             this.mediaTrayList.setDividerHeight(1);

@@ -32,7 +32,7 @@ public class Background extends Preference {
                 ToastUtil.customToast(BlueSettingsActivity.getPreferenceActivity(), "Enable toggle before choosing a background!");
                 return true;
             }
-            DiscordTools.newBuilder(getContext()).setTitle("[Chat background] Pick an action").setItems(new String[]{"Custom (pick from your files)", "Random (image from unsplash.com)"}, $$Lambda$Background$c2NPxK3D8ztd2Bs8YKzSLHpK9dY.INSTANCE).setPositiveButton("Exit", (DialogInterface.OnClickListener) null).show();
+            DiscordTools.newBuilder(getContext()).setTitle("Pick an action").setItems(new String[]{"Custom (pick from your files)", "Random (image from unsplash.com)"}, $$Lambda$Background$c2NPxK3D8ztd2Bs8YKzSLHpK9dY.INSTANCE).setPositiveButton("Exit", (DialogInterface.OnClickListener) null).show();
         }
         return true;
     }

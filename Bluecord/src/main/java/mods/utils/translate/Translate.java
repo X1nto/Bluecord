@@ -13,16 +13,15 @@ import android.widget.TextView;
 import com.discord.models.message.Message;
 import java.util.ArrayList;
 import java.util.LinkedHashMap;
-import java.util.Locale;
 import mods.DiscordTools;
 import mods.ThemingTools;
+import mods.constants.PreferenceKeys;
 import mods.preference.Prefs;
 import mods.utils.StringUtils;
 import mods.utils.ToastUtil;
 
 @SuppressLint("SetTextI18n")
 public class Translate {
-    public static final String DEFAULT_TRANSLATE_FROM_KEY = "blue.translate.choice.v2";
     private static final String TAG = "Translate";
     private static final LinkedHashMap<String, String> choices;
 
@@ -56,27 +55,21 @@ public class Translate {
     }
 
     static {
-        LinkedHashMap<String, String> linkedHashMap = new LinkedHashMap<>(16);
+        LinkedHashMap<String, String> linkedHashMap = new LinkedHashMap<>();
         choices = linkedHashMap;
-        try {
-            linkedHashMap.put("[Default] " + Locale.getDefault().getDisplayLanguage(), Locale.getDefault().getCountry());
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
-        LinkedHashMap<String, String> linkedHashMap2 = choices;
-        linkedHashMap2.put("English", "en");
-        linkedHashMap2.put("Spanish", "es");
-        linkedHashMap2.put("Arabic", "ar");
-        linkedHashMap2.put("Chinese", "zh");
-        linkedHashMap2.put("French", "fr");
-        linkedHashMap2.put("German", "de");
-        linkedHashMap2.put("Hindi", "hi");
-        linkedHashMap2.put("Irish", "ga");
-        linkedHashMap2.put("Italian", "it");
-        linkedHashMap2.put("Japanese", "ja");
-        linkedHashMap2.put("Korean", "ko");
-        linkedHashMap2.put("Portuguese", "pt");
-        linkedHashMap2.put("Russian", "ru");
+        linkedHashMap.put("English", "en");
+        linkedHashMap.put("Spanish", "es");
+        linkedHashMap.put("Arabic", "ar");
+        linkedHashMap.put("Chinese", "zh");
+        linkedHashMap.put("French", "fr");
+        linkedHashMap.put("German", "de");
+        linkedHashMap.put("Hindi", "hi");
+        linkedHashMap.put("Irish", "ga");
+        linkedHashMap.put("Italian", "it");
+        linkedHashMap.put("Japanese", "ja");
+        linkedHashMap.put("Korean", "ko");
+        linkedHashMap.put("Portuguese", "pt");
+        linkedHashMap.put("Russian", "ru");
     }
 
     static /* synthetic */ void lambda$showTranslateDialog$0(EditText editText, SimpleSpinner simpleSpinner, Activity activity, DialogInterface dialogInterface, int i) {
@@ -109,7 +102,7 @@ public class Translate {
         linearLayout.addView(textView);
         LinkedHashMap<String, String> linkedHashMap = choices;
         String str2 = (String) new ArrayList(linkedHashMap.keySet()).get(0);
-        SimpleSpinner createTranslateSpinner = SimpleSpinner.createTranslateSpinner(activity, linkedHashMap, Prefs.containsKey(DEFAULT_TRANSLATE_FROM_KEY) ? Prefs.getString(DEFAULT_TRANSLATE_FROM_KEY, str2) : str2);
+        SimpleSpinner createTranslateSpinner = SimpleSpinner.createTranslateSpinner(activity, linkedHashMap, Prefs.containsKey(PreferenceKeys.DEFAULT_TRANSLATE_FROM_KEY) ? Prefs.getString(PreferenceKeys.DEFAULT_TRANSLATE_FROM_KEY, str2) : str2);
         linearLayout.addView(createTranslateSpinner.getSpinner());
         EditText editText = new EditText(activity);
         editText.setHint("Text to translate");

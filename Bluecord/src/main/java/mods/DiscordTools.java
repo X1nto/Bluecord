@@ -100,6 +100,14 @@ public class DiscordTools {
         return dialog;
     }
 
+    public static void promptRestart(Context context) {
+        newBuilder(context)
+            .setMessage("Restart to apply changes?")
+            .setPositiveButton("Yes", (dialog, i) -> restartDiscord(context)) // $$Lambda$DiscordTools$b2FeP2T9xu7yfeMvVbeXECQK7uU
+            .setNegativeButton("No", null)
+            .show();
+    }
+
     @SuppressLint({ "WrongConstant", "UnspecifiedImmutableFlag" })
     public static void restartDiscord(Context context) {
         ((AlarmManager) context.getSystemService(Context.ALARM_SERVICE)).setExact(AlarmManager.ELAPSED_REALTIME, 1500, PendingIntent.getActivity(context, 0, new Intent(context, AppActivity.Main.class), 134217728));

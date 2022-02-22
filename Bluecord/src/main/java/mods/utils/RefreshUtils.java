@@ -11,9 +11,12 @@ import com.discord.widgets.chat.list.adapter.WidgetChatListAdapter;
 import com.discord.widgets.chat.list.entries.ChatListEntry;
 import com.discord.widgets.chat.list.entries.MessageEntry;
 import java.util.List;
+import java.util.concurrent.locks.ReentrantLock;
+
 public class RefreshUtils {
     private static final String TAG = "RefreshUtils";
     public static WidgetChatList WIDGET_CHAT_LIST = null;
+    private static final ReentrantLock lock = new ReentrantLock();
 
     public static void invalidateMessage(long j) {
         WidgetChatList widgetChatList = WIDGET_CHAT_LIST;
@@ -36,19 +39,27 @@ public class RefreshUtils {
     }
 
     static /* synthetic */ void lambda$refreshView$0() {
-        synchronized (RefreshUtils.class) {
+        ReentrantLock reentrantLock = lock;
+        if (reentrantLock.tryLock()) {
             try {
-                FragmentManager fragmentManager = WIDGET_CHAT_LIST.getFragmentManager();
-                FragmentTransaction beginTransaction = fragmentManager.beginTransaction();
-                if (Build.VERSION.SDK_INT >= 24) {
-                    beginTransaction.detach(WIDGET_CHAT_LIST).commitNow();
-                    fragmentManager.beginTransaction().attach(WIDGET_CHAT_LIST).commitNow();
-                } else {
-                    beginTransaction.detach(WIDGET_CHAT_LIST).attach(WIDGET_CHAT_LIST).commit();
+                try {
+                    FragmentManager fragmentManager = WIDGET_CHAT_LIST.getFragmentManager();
+                    FragmentTransaction beginTransaction = fragmentManager.beginTransaction();
+                    if (Build.VERSION.SDK_INT >= 24) {
+                        beginTransaction.detach(WIDGET_CHAT_LIST).commitNow();
+                        fragmentManager.beginTransaction().attach(WIDGET_CHAT_LIST).commitNow();
+                    } else {
+                        beginTransaction.detach(WIDGET_CHAT_LIST).attach(WIDGET_CHAT_LIST).commit();
+                    }
+                    Log.e(TAG, "refreshView() - success");
+                    reentrantLock.unlock();
+                } catch (Exception e) {
+                    Log.e(TAG, "refreshView() - failed", e);
+                    lock.unlock();
                 }
-                Log.e(TAG, "refreshView() - success");
-            } catch (Exception e) {
-                Log.e(TAG, "refreshView() - failed", e);
+            } catch (Throwable th) {
+                lock.unlock();
+                throw th;
             }
         }
     }

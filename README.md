@@ -3,7 +3,7 @@ Unofficial open source version of Bluecord, because Blue still haven't figured o
 
 ![](https://i.imgur.com/E25H08S.png)
 
-Version: 2.1 Beta 1 - based on Discord 113.9
+Version: 2.1 Beta 2 - based on Discord 113.9
 
 ### Disclaimer
 This is just a joke, if you want a normal discord mod that's open source - use [Aliucord](https://github.com/Aliucord/Aliucord).

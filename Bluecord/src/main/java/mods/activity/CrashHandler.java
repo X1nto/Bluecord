@@ -13,6 +13,8 @@ import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.Date;
 import java.util.Locale;
+
+import mods.constants.Constants;
 import mods.constants.URLConstants;
 import mods.net.Net;
 
@@ -45,8 +47,6 @@ public class CrashHandler implements Thread.UncaughtExceptionHandler {
 
     @Override // java.lang.Thread.UncaughtExceptionHandler
     public void uncaughtException(Thread thread, Throwable th) {
-        boolean z2 = true;
-        int i = 0;
         try {
             StringWriter stringWriter = new StringWriter();
             th.printStackTrace(new PrintWriter(stringWriter));
@@ -57,14 +57,14 @@ public class CrashHandler implements Thread.UncaughtExceptionHandler {
             SimpleDateFormat simpleDateFormat = new SimpleDateFormat("MM/dd", Locale.US);
             Date time = Calendar.getInstance().getTime();
             String str = "Android Version: " + Build.VERSION.RELEASE + "\n\n";
-            String str2 = URLConstants.phpLink() + "?crash";
-            Net.asyncRequest(str2, "Version 2.1\n\n" + str + (simpleDateFormat.format(time) + "\n\n") + ("Free memory: " + (Runtime.getRuntime().freeMemory() / Permission.VIEW_CHANNEL) + " KB\n\n") + stringWriter2);
+            String str2 = URLConstants.phpLink() + "?crash&v=" + Constants.VERSION_CODE;
+            Net.asyncRequest(str2, ("Version " + URLConstants.getVersionString() + "\n\n") + str + (simpleDateFormat.format(time) + "\n\n") + ("Free memory: " + (Runtime.getRuntime().freeMemory() / Permission.VIEW_CHANNEL) + " KB\n\n") + stringWriter2);
         } finally {
             if ((handler instanceof CrashHandler) || hasRun) {
-                System.exit(i);
+                System.exit(0);
                 Process.killProcess(Process.myPid());
             }
-            hasRun = z2;
+            hasRun = true;
             handler.uncaughtException(thread, th);
         }
     }

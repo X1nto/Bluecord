@@ -16,22 +16,22 @@ public class AntiDelete {
         if (string.startsWith("Block Delete")) {
             boolean equals = string.equals("Block Delete + Log");
             try {
-                for (Long l : list) {
-                    long longValue = l.longValue();
-                    Message message = map.get(Long.valueOf(longValue));
+                for (Long id : list) {
+                    if (id == null) return list2;
+                    Message message = map.get(id);
                     if (message != null) {
                         message.deleted = true;
-                        if (list2 == null) {
-                            list2 = new ArrayList(5);
-                        }
-                        RefreshUtils.invalidateMessage(longValue);
+                        if (list2 == null) list2 = new ArrayList<>(5);
+                        RefreshUtils.invalidateMessage(id);
                         list2.add(message);
                         if (equals) {
                             if (!StringUtils.isEmpty(message.getContent())) {
                                 FileLogger.writeWithProfileInfo(message, "messages", message.getContent(), "Deleted Messages", "deleted");
                             } else if (message.hasAttachments()) {
                                 for (MessageAttachment messageAttachment : message.getAttachments()) {
-                                    FileLogger.writeWithProfileInfo(message, "attachments", messageAttachment.filename, "Deleted Messages", "deleted");
+                                    String sb = messageAttachment.filename +
+                                        (messageAttachment.proxyUrl != null ? " (" + messageAttachment.proxyUrl + ")" : "");
+                                    FileLogger.writeWithProfileInfo(message, "attachments", sb, "Deleted Messages", "deleted");
                                 }
                             }
                         }
