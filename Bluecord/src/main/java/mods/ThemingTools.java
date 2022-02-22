@@ -5,16 +5,15 @@ import android.animation.ValueAnimator;
 import android.annotation.SuppressLint;
 import android.app.Activity;
 import android.content.pm.PackageInfo;
-import android.graphics.Color;
-import android.graphics.Typeface;
+import android.graphics.*;
 import android.text.TextUtils;
 import android.util.AttributeSet;
 import android.util.Log;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.TextView;
-import c.f.g.f.a;
-import c.f.g.f.c;
+import b.f.g.f.a;
+import b.f.g.f.c;
 import com.discord.api.channel.Channel;
 import com.discord.api.message.reaction.MessageReactionUpdate;
 import com.discord.models.domain.ModelUserSettings;
@@ -30,15 +29,16 @@ import com.discord.widgets.emoji.EmojiSheetViewModel;
 import java.util.Arrays;
 import mods.activity.CrashHandler;
 import mods.activity.Updater;
-import mods.constants.Constants;
-import mods.constants.PreferenceKeys;
+import mods.constants.*;
 import mods.preference.Prefs;
+import mods.preference.QuickAccessPrefs;
 import mods.utils.StoreUtils;
 import mods.utils.StringUtils;
 import mods.utils.ToastUtil;
 import mods.view.Colors;
 import mods.view.DoubleClick;
 import mods.view.DoubleClickListener;
+
 public class ThemingTools {
     private static Typeface typeface;
 
@@ -53,7 +53,7 @@ public class ThemingTools {
         @Override // mods.view.DoubleClickListener
         public void onDoubleClick(View view) {
             MeUser self = StoreUtils.getSelf();
-            if (self == null || self.getId() != message.getAuthor().i()) {
+            if (self == null || self.getId() != message.getAuthor().getId()) {
                 Channel channelById = StoreUtils.getChannelById(this.message.getChannelId());
                 if (channelById != null) {
                     WidgetChatListActions.access$replyMessage(new WidgetChatListActions(), this.message, channelById);
@@ -134,10 +134,10 @@ public class ThemingTools {
     public static String getCredits() {
         try {
             PackageInfo packageInfo = DiscordTools.getContext().getPackageManager().getPackageInfo(DiscordTools.getContext().getPackageName(), 0);
-            return String.format("Bluecord v2.0 - Based on Discord %s (%s)\n~Made with love by Blue~", packageInfo.versionName, Integer.valueOf(packageInfo.versionCode));
+            return String.format("Bluecord v2.1 - Based on Discord %s (%s)\n~Made with love by Blue~", packageInfo.versionName, packageInfo.versionCode);
         } catch (Exception e) {
             e.printStackTrace();
-            return "Bluecord v2.0\n~Made with love by Blue~";
+            return "Bluecord v2.1\n~Made with love by Blue~";
         }
     }
 
@@ -163,33 +163,24 @@ public class ThemingTools {
             String string = Prefs.getString(PreferenceKeys.EMOTE_MODE, "Off");
             if (string.startsWith("Nitro Spoof")) {
                 String uniqueId = emoji.getUniqueId();
-                int i = 64;
-                if (emoji.getMessageContentReplacement().startsWith("<a:")) {
-                    StringBuilder sb = new StringBuilder();
-                    sb.append("https://cdn.discordapp.com/emojis/");
-                    sb.append(uniqueId);
-                    sb.append(".gif?v=1&size=");
-                    if (!string.equalsIgnoreCase("Nitro Spoof (Bigger Emotes)")) {
-                        i = 40;
-                    }
-                    sb.append(i);
-                    return sb.toString();
-                }
-                StringBuilder sb2 = new StringBuilder();
-                sb2.append("https://cdn.discordapp.com/emojis/");
-                sb2.append(uniqueId);
-                sb2.append(".png?v=1&size=");
-                if (!string.equalsIgnoreCase("Nitro Spoof (Bigger Emotes)")) {
-                    i = 40;
-                }
-                sb2.append(i);
-                return sb2.toString();
+                boolean startsWith = emoji.getMessageContentReplacement().startsWith("<a:");
+                int i = string.equalsIgnoreCase("Nitro Spoof (Bigger Emotes)") ? 64 : 48;
+                String str = startsWith ? IconUtils.ANIMATED_IMAGE_EXTENSION : "png";
+                return "https://cdn.discordapp.com/emojis/" + uniqueId + "." + str + "?v=1&size=" + i + "&quality=lossless";
             } else if (string.equals("Old Nitro Spoof")) {
                 String messageContentReplacement = emoji.getMessageContentReplacement();
                 return messageContentReplacement.startsWith("<a:") ? messageContentReplacement.replace("<a:", "<​a:") : messageContentReplacement.replace("<:", "<​:");
             }
         }
         return emoji.getChatInputText();
+    }
+
+    public static RectF getViewBounds(View view) {
+        var location = new int[2];
+        view.getLocationOnScreen(location);
+        int i = location[0];
+        int i2 = location[1];
+        return new RectF((float) i, (float) i2, (float) (view.getWidth() + i), (float) (view.getHeight() + i2));
     }
 
     public static int hideBlocked() {
@@ -199,6 +190,7 @@ public class ThemingTools {
     public static void init(Activity activity, boolean z2) {
         CrashHandler.setup();
         Colors.init();
+        QuickAccessPrefs.reload();
         if (!z2) {
             Updater.checkFromLaunch(activity);
         }
@@ -236,28 +228,10 @@ public class ThemingTools {
             String string = Prefs.getString(PreferenceKeys.EMOTE_MODE, "Off");
             EmojiNode.EmojiIdAndType.Custom component1 = ((EmojiSheetViewModel.ViewState.EmojiCustom) obj).component1();
             long id2 = component1.getId();
-            int i = 64;
-            if (component1.isAnimated()) {
-                StringBuilder sb = new StringBuilder();
-                sb.append("https://cdn.discordapp.com/emojis/");
-                sb.append(id2);
-                sb.append(".gif?v=1&size=");
-                if (!string.equalsIgnoreCase("Nitro Spoof (Bigger Emotes)")) {
-                    i = 40;
-                }
-                sb.append(i);
-                DiscordTools.copyToClipboard(sb.toString());
-            } else {
-                StringBuilder sb2 = new StringBuilder();
-                sb2.append("https://cdn.discordapp.com/emojis/");
-                sb2.append(id2);
-                sb2.append(".png?v=1&size=");
-                if (!string.equalsIgnoreCase("Nitro Spoof (Bigger Emotes)")) {
-                    i = 40;
-                }
-                sb2.append(i);
-                DiscordTools.copyToClipboard(sb2.toString());
-            }
+            boolean isAnimated = component1.isAnimated();
+            int i = string.equalsIgnoreCase("Nitro Spoof (Bigger Emotes)") ? 64 : 48;
+            String str = isAnimated ? IconUtils.ANIMATED_IMAGE_EXTENSION : "png";
+            DiscordTools.copyToClipboard("https://cdn.discordapp.com/emojis/" + id2 + "." + str + "?v=1&size=" + i + "&quality=lossless");
             ToastUtil.toast("Copied to clipboard");
         } else if (obj instanceof EmojiSheetViewModel.ViewState.EmojiUnicode) {
             DiscordTools.copyToClipboard(((EmojiSheetViewModel.ViewState.EmojiUnicode) obj).getEmojiUnicode().getMessageContentReplacement());
@@ -286,6 +260,16 @@ public class ThemingTools {
 
     public static boolean revealSpoilers() {
         return Prefs.getBoolean(PreferenceKeys.REVEAL_SPOILERS, false);
+    }
+
+    public static CharSequence setBluecordVersion(CharSequence charSequence) {
+        if (charSequence == null || !"{BLUECORD_VERSION}".equalsIgnoreCase(charSequence.toString())) {
+            return charSequence;
+        }
+        StringBuilder sb = new StringBuilder();
+        sb.append("Version 2.1");
+        sb.append(URLConstants.IS_BETA ? " (Beta)" : "");
+        return sb.toString();
     }
 
     public static boolean setBoldFont(TextView textView) {

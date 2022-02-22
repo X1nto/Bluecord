@@ -3,10 +3,11 @@ buildscript {
         google()
         mavenCentral()
         maven("https://jitpack.io")
+        maven("https://maven.aliucord.com/snapshots")
     }
     dependencies {
         classpath("com.android.tools.build:gradle:7.0.4")
-        classpath("com.github.Aliucord:gradle:main-SNAPSHOT")
+        classpath("com.aliucord:gradle:main-SNAPSHOT")
     }
 }
 

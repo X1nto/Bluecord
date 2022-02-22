@@ -21,7 +21,6 @@ import mods.DiscordTools;
 import mods.ThemingTools;
 import mods.utils.StoreUtils;
 import mods.utils.ToastUtil;
-
 public class ChatPins {
     private static final List<Long> PINNED_IDS = new ArrayList<>();
     private static final String TAG = "ChatPins";

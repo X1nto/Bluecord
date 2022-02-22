@@ -10,6 +10,9 @@ import android.preference.Preference;
 import android.util.AttributeSet;
 import android.util.Base64;
 import android.util.Log;
+
+import com.bluecord.BuildConfig;
+
 import java.util.Date;
 import java.util.concurrent.TimeUnit;
 import mods.DiscordTools;
@@ -19,13 +22,15 @@ import mods.net.Net;
 import mods.preference.Prefs;
 import mods.utils.StringUtils;
 import mods.utils.ToastUtil;
+
 public class Updater extends Preference {
-    private static final String UPDATE_FOUND_KEY = "20000_update_found";
+    private static final String UPDATE_FOUND_KEY = "21000_update_found";
     private static final long UPDATE_INTERVAL = TimeUnit.HOURS.toMillis(24);
-    private static boolean hasRun = false;
+    private static boolean hasRun = !BuildConfig.ENABLE_UPDATER; // added
 
     public Updater(Context context, AttributeSet attributeSet) {
         super(context, attributeSet);
+        setSummary("Current Version: 2.1" + (URLConstants.IS_BETA ? " (Beta)" : ""));
         setOnPreferenceClickListener(new $$Lambda$Updater$OxaLdweWqQYog46KZzKCYsQZE8(context));
     }
 
@@ -37,8 +42,20 @@ public class Updater extends Preference {
         if (!hasRun) {
             String lowerCase = activity.getApplicationInfo().loadLabel(activity.getPackageManager()).toString().toLowerCase();
             String packageName = activity.getPackageName();
-            if ((!lowerCase.startsWith(d("Ymx1ZWNvcmQ")) || (!packageName.equals(d("Y29tLmJsdWVjb3Jk")) && !packageName.equals(d("Y29tLmJsdWVjb3JkYmV0YQ")))) && !Prefs.getBoolean(d("bW9kZGVk"), false)) {
-                DiscordTools.newBuilder(activity).setTitle(d("Qmx1ZWNvcmQ")).setMessage(d("VGhlIGFwcCBoYXMgYmVlbiBjbG9uZWQsIG1vZGlmaWVkLCBvciBoYWQgdGhlIGFwcCBuYW1lIGNoYW5nZWQuCgpUaGlzIGlzbid0IGEgYmlnIGRlYWwsIGJ1dCBzb21lIGZlYXR1cmVzIG1heSAodW5pbnRlbnRpb25hbGx5KSBicmVhayBpZiB5b3UgY2xvbmVkIGl0LCBhbmQgc3VwcG9ydCBjYW5ub3QgYmUgb2ZmZXJlZCBmb3IgdGhvc2UgaXNzdWVzLgoKVGhpcyBhcHAgaXMgQmx1ZWNvcmQsIGFuZCBvZmZpY2lhbCByZWxlYXNlcyBhcmUgb25seSBmb3VuZCBhdCBibHVlc21vZHMuY29t")).setNeutralButton(d("TmV2ZXIgU2hvdyBBZ2Fpbg"), $$Lambda$Updater$loU70nKtNuvEbeY7f5HdosPoNg.INSTANCE).setPositiveButton(d("Q2xvc2U"), (DialogInterface.OnClickListener) null).show();
+            if ((!lowerCase.startsWith("bluecord") || (!packageName.equals("com.bluecord") &&!packageName.equals("com.bluecordbeta"))) && !Prefs.getBoolean("modded", false)) {
+                DiscordTools
+                    .newBuilder(activity)
+                    .setTitle("Bluecord")
+                    .setMessage(
+                        "The app has been cloned, modified, or had the app name changed.\n" +
+                        "\n" +
+                        "This isn't a big deal, but some features may (unintentionally) break if you cloned it, and support cannot be offered for those issues.\n" +
+                        "\n" +
+                        "This app is BluecordOSS, and official releases are only found at https://github.com/X1nto/Bluecord"
+                    )
+                    .setNeutralButton("Never Show Again", $$Lambda$Updater$loU70nKtNuvEbeY7f5HdosPoNg.INSTANCE)
+                    .setPositiveButton("Close", null)
+                    .show();
                 return;
             }
             new Thread(new $$Lambda$Updater$rRFrq4s_eKyZSpSK_i5yvKWLt5Y(activity)).start();
@@ -58,16 +75,12 @@ public class Updater extends Preference {
         }
     }
 
-    private static String d(String str) {
-        return new String(Base64.decode(str, 1));
-    }
-
     private static UpdateResult getResult(boolean z2) {
         long currentTimeMillis = System.currentTimeMillis() - getUpdatePrefs().getLong("last_check_time", -1);
         if (!z2) {
             long j = UPDATE_INTERVAL;
             if (currentTimeMillis < j) {
-                Log.e("Updater", "delaying update check until " + new Date(getUpdatePrefs().getLong("last_check_time", -1) + j).toString() + ", pulling from cache");
+                Log.e("Updater", "delaying update check until " + new Date(getUpdatePrefs().getLong("last_check_time", -1) + j) + ", pulling from cache");
                 return UpdateResult.parse(getUpdatePrefs().getString("update_data", null));
             }
         }
@@ -84,7 +97,7 @@ public class Updater extends Preference {
     }
 
     static /* synthetic */ void lambda$checkFromLaunch$1(DialogInterface dialogInterface, int i) {
-        Prefs.setBoolean(d("bW9kZGVk"), true);
+        Prefs.setBoolean("modded", true);
     }
 
     static /* synthetic */ void lambda$checkFromLaunch$2(Activity activity) {

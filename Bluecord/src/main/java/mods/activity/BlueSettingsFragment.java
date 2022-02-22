@@ -7,11 +7,11 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
-import com.bluecord.R;
 
 import mods.constants.Constants;
 import mods.view.ActionBar;
 import mods.view.Colors;
+
 public class BlueSettingsFragment extends PreferenceFragment {
     public /* synthetic */ void lambda$onViewCreated$0$BlueSettingsFragment(View view) {
         getActivity().finish();

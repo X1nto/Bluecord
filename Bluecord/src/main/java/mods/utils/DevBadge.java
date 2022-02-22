@@ -11,7 +11,7 @@ public class DevBadge {
 
     public static void add(UsernameView usernameView, long j) {
         if (needsBadge(j)) {
-            TextView textView = usernameView.i.b;
+            TextView textView = usernameView.j.b;
             textView.setVisibility(View.VISIBLE);
             textView.setText("Bluecord Dev");
             textView.setCompoundDrawablesWithIntrinsicBounds(Constants.VERIFIED_DEV_BADGE, 0, 0, 0);

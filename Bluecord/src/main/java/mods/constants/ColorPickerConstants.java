@@ -1,49 +1,48 @@
 package mods.constants;
 
-import com.bluecord.R;
 public final class ColorPickerConstants {
 
     /* renamed from: ATTR_ALPHA_SLIDER */
-    public static final int blue_alphaSlider = 2130970368;
+    public static final int blue_alphaSlider = 0x7f040720;
 
     /* renamed from: ATTR_ALPHA_SLIDER_VIEW */
-    public static final int blue_alphaSliderView = 2130970375;
+    public static final int blue_alphaSliderView = 0x7f040727;
 
     /* renamed from: ATTR_BORDER */
-    public static final int blue_border = 2130970370;
+    public static final int blue_border = 0x7f040722;
 
     /* renamed from: ATTR_BUTTON_CANCEL */
-    public static final int blue_pickerButtonCancel = 2130970380;
+    public static final int blue_pickerButtonCancel = 0x7f04072c;
 
     /* renamed from: ATTR_BUTTON_OK */
-    public static final int blue_pickerButtonOk = 2130970379;
+    public static final int blue_pickerButtonOk = 0x7f04072b;
 
     /* renamed from: ATTR_DENSITY */
-    public static final int blue_density = 2130970371;
+    public static final int blue_density = 0x7f040723;
 
     /* renamed from: ATTR_INITIAL_COLOR */
-    public static final int blue_initialColor = 2130970372;
+    public static final int blue_initialColor = 0x7f040724;
 
     /* renamed from: ATTR_IN_VERTICAL_ORIENTATION */
-    public static final int blue_inVerticalOrientation = 2130970381;
+    public static final int blue_inVerticalOrientation = 0x7f04072d;
 
     /* renamed from: ATTR_LIGHTNESS_SLIDER */
-    public static final int blue_lightnessSlider = 2130970369;
+    public static final int blue_lightnessSlider = 0x7f040721;
 
     /* renamed from: ATTR_LIGHTNESS_SLIDER_VIEW */
-    public static final int blue_lightnessSliderView = 2130970374;
+    public static final int blue_lightnessSliderView = 0x7f040726;
 
     /* renamed from: ATTR_PICKER_COLOR_EDIT */
-    public static final int blue_pickerColorEdit = 2130970376;
+    public static final int blue_pickerColorEdit = 0x7f040728;
 
     /* renamed from: ATTR_PICKER_ET_COLOR */
-    public static final int blue_pickerColorEditTextColor = 2130970377;
+    public static final int blue_pickerColorEditTextColor = 0x7f040729;
 
     /* renamed from: ATTR_PICKER_TITLE */
-    public static final int blue_pickerTitle = 2130970378;
+    public static final int blue_pickerTitle = 0x7f04072a;
 
     /* renamed from: ATTR_WHEEL_TYPE */
-    public static final int blue_wheelType = 2130970373;
+    public static final int blue_wheelType = 0x7f040725;
 
     /* renamed from: LAYOUT_COLOR_EDIT */
     public static final int blue_color_edit = 2131559427;

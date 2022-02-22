@@ -3,7 +3,7 @@ package mods.constants;
 import mods.DiscordTools;
 public final class URLConstants {
     private static final String BASE_URL = "https://bluesmods.com";
-    private static final boolean IS_BETA = DiscordTools.getContext().getPackageName().toLowerCase().startsWith("com.bluecordbeta");
+    public static final boolean IS_BETA = DiscordTools.getContext().getPackageName().toLowerCase().startsWith("com.bluecordbeta");
 
     public static String getBaseUrl() {
         return BASE_URL;

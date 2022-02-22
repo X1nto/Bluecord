@@ -1,21 +1,21 @@
 package mods;
 
 import android.annotation.SuppressLint;
-import android.app.AlarmManager;
-import android.app.AlertDialog;
-import android.app.Application;
-import android.app.PendingIntent;
+import android.app.*;
 import android.content.ClipData;
 import android.content.ClipboardManager;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.content.pm.PackageManager;
 import android.os.Build;
 import android.os.Process;
 import android.util.Log;
 import androidx.fragment.app.Fragment;
 import com.discord.app.App;
 import com.discord.app.AppActivity;
+
+import java.io.*;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.Locale;
@@ -23,9 +23,19 @@ import java.util.Locale;
 import mods.constants.Constants;
 import mods.constants.PreferenceKeys;
 import mods.preference.Prefs;
+
 public class DiscordTools {
     public static void basicAlert(Context context, String str, String str2) {
         newBuilder(context).setTitle(str).setMessage(str2).setPositiveButton("Dismiss", (DialogInterface.OnClickListener) null).show();
+    }
+
+    public static void copyFile(String str, String str2) throws IOException {
+        if (str.equalsIgnoreCase(str2)) return;
+        var channel = new FileInputStream(str).getChannel();
+        var channel2 = new FileOutputStream(str2, false).getChannel();
+        channel.transferTo(0, channel.size(), channel2);
+        channel2.close();
+        channel.close();
     }
 
     public static void copyToClipboard(String str) {
@@ -56,6 +66,10 @@ public class DiscordTools {
         return new SimpleDateFormat(ThemingTools.getDateFormat()).format(new Date(j));
     }
 
+    public static String getAppDataDir() throws PackageManager.NameNotFoundException {
+        return getApplication().getPackageManager().getPackageInfo(getApplication().getPackageName(), 0).applicationInfo.dataDir;
+    }
+
     public static Application getApplication() {
         return App.app;
     }
@@ -68,8 +82,22 @@ public class DiscordTools {
         return Build.VERSION.SDK_INT >= 24 ? getContext().getResources().getConfiguration().getLocales().get(0) : getContext().getResources().getConfiguration().locale;
     }
 
+    public static int getOrientation() {
+        return getApplication().getResources().getConfiguration().orientation;
+    }
+
+    public static boolean isInPortrait() {
+        return getOrientation() == 1;
+    }
+
     public static AlertDialog.Builder newBuilder(Context context) {
         return new AlertDialog.Builder(context, 4).setIcon(Constants.bluecord_logo_big);
+    }
+
+    public static ProgressDialog newProgressDialog(Context context) {
+        var dialog = new ProgressDialog(context, 4);
+        dialog.setIcon(Constants.bluecord_logo_big);
+        return dialog;
     }
 
     @SuppressLint({ "WrongConstant", "UnspecifiedImmutableFlag" })

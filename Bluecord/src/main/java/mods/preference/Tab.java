@@ -29,7 +29,7 @@ public class Tab extends Preference {
                 prefIcon = Constants.PREFS_CHAT_ICON;
                 break;
             case "Update + Developer Info":
-                prefXml = Constants.prefs_info;
+                prefXml = Constants.PREFS_INFO;
                 prefIcon = Constants.bluecord_logo_big;
                 break;
             default:

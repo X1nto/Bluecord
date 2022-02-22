@@ -11,7 +11,7 @@ import java.util.List;
 public class DeletedMessageNode extends StyleNode {
     public DeletedMessageNode(Context context) {
         super(getRenderInstructions());
-        addChild(new c.a.t.b.a.a(" (DELETED)"));
+        addChild(new b.a.t.b.a.a(" (DELETED)"));
     }
 
     private static List<CharacterStyle> getRenderInstructions() {

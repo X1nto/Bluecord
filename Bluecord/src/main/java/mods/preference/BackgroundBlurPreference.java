@@ -61,7 +61,7 @@ public class BackgroundBlurPreference extends Preference {
 
     private void setVisible(View view, View view2, boolean z2) {
         int i = 0;
-        view.setVisibility(z2 ? 0 : 8);
+        view.setVisibility(z2 ? View.VISIBLE : View.GONE);
         if (!z2) {
             i = 8;
         }
@@ -75,7 +75,7 @@ public class BackgroundBlurPreference extends Preference {
 
     public /* synthetic */ boolean lambda$new$1$BackgroundBlurPreference(Preference preference) {
         if (PermissionUtils.hasStoragePermission()) {
-            if (!Prefs.getBoolean(PreferenceKeys.BACKGROUND_CUSTOM, false)) {
+            if (!Prefs.getBoolean(PreferenceKeys.BACKGROUND_ENABLED, false)) {
                 ToastUtil.customToast(BlueSettingsActivity.getPreferenceActivity(), "Please enable the custom background option first");
                 return true;
             }
@@ -83,7 +83,7 @@ public class BackgroundBlurPreference extends Preference {
             ScrollView scrollView = new ScrollView(context);
             scrollView.setFillViewport(true);
             LinearLayout linearLayout = new LinearLayout(context);
-            linearLayout.setOrientation(1);
+            linearLayout.setOrientation(LinearLayout.VERTICAL);
             TextView textView = new TextView(context);
             textView.setTextColor(Color.parseColor("#ff26beff"));
             textView.setTextSize(16.0f);

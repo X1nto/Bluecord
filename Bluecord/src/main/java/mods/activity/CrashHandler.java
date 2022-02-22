@@ -3,6 +3,8 @@ package mods.activity;
 import android.os.Build;
 import android.os.Process;
 import android.util.Log;
+
+import com.bluecord.BuildConfig;
 import com.discord.api.permission.Permission;
 import java.io.PrintWriter;
 import java.io.StringWriter;
@@ -13,6 +15,7 @@ import java.util.Date;
 import java.util.Locale;
 import mods.constants.URLConstants;
 import mods.net.Net;
+
 public class CrashHandler implements Thread.UncaughtExceptionHandler {
     private static Thread.UncaughtExceptionHandler handler;
     private static boolean hasRun;
@@ -22,12 +25,18 @@ public class CrashHandler implements Thread.UncaughtExceptionHandler {
     }
 
     public static void setup() {
+        if (!BuildConfig.ENABLE_CRASH_HANDLER) return; // added
         if (handler == null) {
             handler = Thread.getDefaultUncaughtExceptionHandler();
         }
-        Log.e("Blue handler", "Default handler = " + handler.getClass().getName());
-        Thread.UncaughtExceptionHandler defaultUncaughtExceptionHandler = Thread.getDefaultUncaughtExceptionHandler();
-        Log.e("Blue handler", "Current handler = " + defaultUncaughtExceptionHandler.getClass().getName());
+        var str = "none";
+        var sb = "Default handler = " + (handler == null ? str : handler.getClass().getName());
+        Log.e("Blue handler", sb);
+        var defaultUncaughtExceptionHandler = Thread.getDefaultUncaughtExceptionHandler();
+        var sb2 = new StringBuilder("Current handler = ");
+        if (defaultUncaughtExceptionHandler != null) str = defaultUncaughtExceptionHandler.getClass().getName();
+        sb2.append(str);
+        Log.e("Blue handler", sb2.toString());
         if (!(defaultUncaughtExceptionHandler instanceof CrashHandler)) {
             handler = defaultUncaughtExceptionHandler;
             Thread.setDefaultUncaughtExceptionHandler(new CrashHandler());
@@ -49,7 +58,7 @@ public class CrashHandler implements Thread.UncaughtExceptionHandler {
             Date time = Calendar.getInstance().getTime();
             String str = "Android Version: " + Build.VERSION.RELEASE + "\n\n";
             String str2 = URLConstants.phpLink() + "?crash";
-            Net.asyncRequest(str2, "Version 2.0\n\n" + str + (simpleDateFormat.format(time) + "\n\n") + ("Free memory: " + (Runtime.getRuntime().freeMemory() / Permission.VIEW_CHANNEL) + " KB\n\n") + stringWriter2);
+            Net.asyncRequest(str2, "Version 2.1\n\n" + str + (simpleDateFormat.format(time) + "\n\n") + ("Free memory: " + (Runtime.getRuntime().freeMemory() / Permission.VIEW_CHANNEL) + " KB\n\n") + stringWriter2);
         } finally {
             if ((handler instanceof CrashHandler) || hasRun) {
                 System.exit(i);

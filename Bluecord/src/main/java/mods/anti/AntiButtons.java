@@ -5,6 +5,7 @@ import android.view.ViewGroup;
 import com.discord.databinding.WidgetUserSheetBinding;
 import mods.constants.PreferenceKeys;
 import mods.preference.Prefs;
+
 public class AntiButtons {
     public static void hideCallButton(View view) {
         if (Prefs.getBoolean(PreferenceKeys.HIDE_CALL_BUTTONS, false)) {
@@ -14,8 +15,8 @@ public class AntiButtons {
 
     public static void hideCallButton(WidgetUserSheetBinding widgetUserSheetBinding) {
         if (Prefs.getBoolean(PreferenceKeys.HIDE_CALL_BUTTONS, false)) {
-            widgetUserSheetBinding.i.setVisibility(View.GONE);
-            widgetUserSheetBinding.L.setVisibility(View.GONE);
+            widgetUserSheetBinding.l.setVisibility(View.GONE);
+            widgetUserSheetBinding.Q.setVisibility(View.GONE);
         }
     }
 

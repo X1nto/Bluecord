@@ -20,6 +20,7 @@ import mods.utils.StringUtils;
 import mods.utils.ToastUtil;
 import org.json.JSONException;
 import org.json.JSONObject;
+
 public class AccountSwitcher extends Preference {
 
     static class AccountBackup {
@@ -39,7 +40,7 @@ public class AccountSwitcher extends Preference {
         }
 
         public static void clearBackups(Context context) {
-            getBackupPrefs(context).edit().clear().apply();
+            getBackupPrefs(context).edit().clear().commit();
         }
 
         private static SharedPreferences getBackupPrefs(Context context) {
@@ -49,7 +50,7 @@ public class AccountSwitcher extends Preference {
         public static ArrayList<AccountBackup> getBackups(Context context) {
             SharedPreferences backupPrefs = getBackupPrefs(context);
             ArrayList<AccountBackup> arrayList = new ArrayList<>();
-            for (var str : backupPrefs.getStringSet(VERSION_KEY, new HashSet())) {
+            for (Object str : backupPrefs.getStringSet(VERSION_KEY, new HashSet())) {
                 AccountBackup parse = parse((String) str);
                 if (parse != null) {
                     arrayList.add(parse);

@@ -9,6 +9,7 @@ import java.util.Date;
 import java.util.Locale;
 import java.util.concurrent.TimeUnit;
 import mods.DiscordTools;
+
 public class StringUtils {
     public static String convertToTimeBehind(Date date) {
         Date date2 = new Date(StoreUtils.getServerSyncedTime());
@@ -71,7 +72,7 @@ public class StringUtils {
     }
 
     public static String getUsernameWithDiscriminator(User user) {
-        return user.r() + "#" + user.f();
+        return user.getUsername() + "#" + user.f();
     }
 
     public static String getUsernameWithDiscriminator(com.discord.models.user.User user) {

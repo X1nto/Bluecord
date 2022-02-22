@@ -10,7 +10,7 @@ import java.util.List;
 public class PrependEditNode extends StyleNode {
     public PrependEditNode(Context context, String str) {
         super(getRenderInstructions());
-        addChild(new c.a.t.b.a.a(str));
+        addChild(new b.a.t.b.a.a(str));
     }
 
     private static List<CharacterStyle> getRenderInstructions() {

@@ -7,27 +7,30 @@ public final class Constants {
     /* renamed from: BLUE_BACK_ARROW */
     public static final int blue_back_arrow = 0x7F080701;
 
+    public static final int BLUE_ID_1 = 0x7f0a113d;
+    public static final int BLUE_ID_2 = 0x7f0a113e;
+    public static final int BLUE_ID_3 = 0x7f0a113f;
+    public static final int BLUE_ID_4 = 0x7f0a1140;
+    public static final int BLUE_ID_5 = 0x7f0a1141;
+
     /* renamed from: BLUE_STYLE_PREFS */
     public static final int PrefsTheme = 0x7F130500;
     public static final int BLUE_STYLE_PREFS_NO_REBRAND = 0x7F130505;
 
-    /* renamed from: DIMEN_SMALL_AVATAR */
-    public static final int avatar_size_profile_small = 0x7F07006E;
+    public static final int DIMEN_SMALL_AVATAR = 0x7f07006f;
+    public static final int GUILD_PROFILE_SHEET_NAME = 0x7f0a0763;
 
-    /* renamed from: GUILD_PROFILE_SHEET_NAME */
-    public static final int guild_profile_sheet_name = 0x7F0A0707;
+    public static final int IC_MOBILE = 0x7f080487;
+    public static final int IC_SCREEN_14DP = 0x7f080525;
+    public static final int IC_STATUS_DND = 0x7f080565;
+    public static final int IC_STATUS_IDLE = 0x7f080566;
+    public static final int IC_STATUS_INVISIBLE = 0x7f080567;
+    public static final int IC_STATUS_ONLINE = 0x7f080568;
 
-    /* renamed from: ID_AVATAR */
-    public static final int avatar = 0x7F0A0122;
-
-    /* renamed from: ID_BANNER */
-    public static final int banner = 0x7F0A0137;
-
-    /* renamed from: ID_GUILD_PROFILE_SHEET_BANNER */
-    public static final int guild_profile_sheet_banner = 0x7F0A06E4;
-
-    /* renamed from: ID_GUILD_PROFILE_SHEET_ICON */
-    public static final int guild_profile_sheet_icon = 0x7F0A06FC;
+    public static final int ID_AVATAR = 0x7f0a013b;
+    public static final int ID_BANNER = 0x7f0a0150;
+    public static final int ID_GUILD_PROFILE_SHEET_BANNER = 0x7f0a0740;
+    public static final int ID_GUILD_PROFILE_SHEET_ICON = 0x7f0a0758;
 
     /* renamed from: LAYOUT_EMPTY_PREFERENCE */
     public static final int blue_preference_layout_empty = 0x7F0D0400;
@@ -46,25 +49,31 @@ public final class Constants {
 
     /* renamed from: PREFS_CHAT */
     public static final int prefs_chat = 0x7F15000C;
-    public static final int PREFS_CHAT_ICON = 0x7F080548;
-
-    /* renamed from: PREFS_INFO */
-    public static final int prefs_info = 0x7F15000B;
+    public static final int PREFS_CHAT_ICON = 0x7f08057f;
+    public static final int PREFS_INFO = 0x7f15000b;
 
     /* renamed from: PREFS_THEME */
     public static final int prefs_theme = 0x7F15000D;
-    public static final int PREFS_THEME_ICON = 0x7F08054A;
-    public static final int STYLE_DARK = 0x7F130020;
-    public static final int STYLE_DARK_NO_REBRAND = 0x7F130504;
-    public static final int STYLE_EVIL = 0x7F130022;
-    public static final int STYLE_EVIL_NO_REBRAND = 0x7F130504;
-    public static final int STYLE_LIGHT = 0x7F130027;
-    public static final int STYLE_LIGHT_NO_REBRAND = 0x7F130502;
-    public static final int TEXT_INPUT = 0x7F0A0EED;
+    public static final int PREFS_THEME_ICON = 0x7f080583;
+
+    public static final int SPINNER_DROP_DOWN_LAYOUT = 0x7f0d0409;
+    public static final int SPINNER_LAYOUT = 0x7f0d0408;
+
+    public static final int STYLE_DARK = 0x7f130021;
+    public static final int STYLE_DARK_NO_REBRAND = 0x7f130503;
+    public static final int STYLE_EVIL = 0x7f130023;
+    public static final int STYLE_EVIL_NO_REBRAND = 0x7f130504;
+    public static final int STYLE_LIGHT = 0x7f130028;
+    public static final int STYLE_LIGHT_NO_REBRAND = 0x7f130502;
+    public static final int TEXT_INPUT = 0x7f0a0f48;
 
     /* renamed from: TOAST_LAYOUT */
     public static final int blue_toast_layout = 0x7F0D0407;
-    public static final int VERIFIED_DEV_BADGE = 0x7F08057B;
-    public static final int VERSION_CODE = 20000;
-    public static final String VERSION_NAME = "2.0";
+
+    public static final String VALID_UNICODE_EMOJI_PATTERN = "^<&?​?(a)?[:|\\.]([a-zA-Z_0-9]+)[:|\\.](\\d+)>";
+
+    public static final int VERIFIED_DEV_BADGE = 0x7f0805b3;
+
+    public static final int VERSION_CODE = 21000;
+    public static final String VERSION_NAME = "2.1";
 }

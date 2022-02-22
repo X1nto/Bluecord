@@ -6,6 +6,7 @@ import android.graphics.BitmapFactory;
 import android.os.Build;
 import android.util.AttributeSet;
 import android.util.TypedValue;
+import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
@@ -22,7 +23,7 @@ public class ActionBar extends LinearLayout {
         initBar(attributeSet.getAttributeValue("http://schemas.android.com/apk/res/android", "title"), null);
     }
 
-    public ActionBar(Context context, String str, OnClickListener onClickListener) {
+    public ActionBar(Context context, String str, View.OnClickListener onClickListener) {
         super(context);
         initBar(str, onClickListener);
     }
@@ -31,11 +32,11 @@ public class ActionBar extends LinearLayout {
         return Math.round(TypedValue.applyDimension(1, (float) i, getResources().getDisplayMetrics()));
     }
 
-    private void initBar(String str, OnClickListener onClickListener) {
+    private void initBar(String str, View.OnClickListener onClickListener) {
         this.backButton = new ImageView(getContext());
         this.backButton.setImageBitmap(Bitmap.createScaledBitmap(BitmapFactory.decodeResource(getResources(), Constants.blue_back_arrow), dpToPx(20), dpToPx(20), true));
         this.backButton.setScaleType(ImageView.ScaleType.CENTER);
-        this.backButton.setLayoutParams(new LayoutParams(dpToPx(56), dpToPx(56)));
+        this.backButton.setLayoutParams(new LinearLayout.LayoutParams(dpToPx(56), dpToPx(56)));
         if (onClickListener != null) {
             this.backButton.setOnClickListener(onClickListener);
         }
@@ -47,7 +48,9 @@ public class ActionBar extends LinearLayout {
         this.titleView.setGravity(16);
         this.titleView.setText(str);
         addView(this.titleView);
-        setElevation((float) dpToPx(4));
+        if (Build.VERSION.SDK_INT >= 21) {
+            setElevation((float) dpToPx(4));
+        }
     }
 
     public ImageView getBackButtonView() {

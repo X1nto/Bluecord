@@ -32,6 +32,6 @@ public class FileLogger {
     }
 
     public static void writeWithProfileInfo(Message message, String str, String str2, String str3, String str4) {
-        writeInformation(str, "[" + DiscordTools.formatDate(StoreUtils.getServerSyncedTime()) + "]: A " + str.substring(0, str.length() - 1) + " from " + message.getAuthor().r() + "#" + message.getAuthor().f() + " was " + str4 + " (" + str2 + ")", str3);
+        writeInformation(str, "[" + DiscordTools.formatDate(StoreUtils.getServerSyncedTime()) + "]: A " + str.substring(0, str.length() - 1) + " from " + message.getAuthor().getUsername() + "#" + message.getAuthor().f() + " was " + str4 + " (" + str2 + ")", str3);
     }
 }

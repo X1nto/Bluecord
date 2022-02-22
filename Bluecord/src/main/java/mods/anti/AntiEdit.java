@@ -2,7 +2,7 @@ package mods.anti;
 
 import android.content.Context;
 import android.util.Log;
-import c.a.t.b.a.a;
+import b.a.t.b.a.a;
 import com.discord.models.message.Message;
 import com.discord.utilities.textprocessing.node.EditedMessageNode;
 import java.util.ArrayList;
@@ -15,6 +15,7 @@ import mods.utils.FileLogger;
 import mods.utils.LRUCache;
 import mods.utils.StoreUtils;
 import mods.view.PrependEditNode;
+
 public class AntiEdit {
     private static final LRUCache<Long, List<String>> editedMessages = new LRUCache<>(250);
 
@@ -35,7 +36,7 @@ public class AntiEdit {
         if (map != null && StoreUtils.isMessageEdited(message)) {
             String string = Prefs.getString(PreferenceKeys.ANTI_EDIT_MODE, "Off");
             if (!"Off".equalsIgnoreCase(string)) {
-                Message message2 = map.get(Long.valueOf(message.o()));
+                Message message2 = map.get(message.o());
                 if (message2 == null) {
                     Log.e("AntiEdit", "edited message not found in cache:\n" + message.toString());
                     return;
@@ -45,11 +46,11 @@ public class AntiEdit {
                 Log.e("AntiEdit", "edited message found:\n" + content);
                 synchronized (AntiEdit.class) {
                     LRUCache<Long, List<String>> lRUCache = editedMessages;
-                    List<String> list = lRUCache.get(Long.valueOf(message.o()));
+                    List<String> list = lRUCache.get(message.o());
                     if (list == null) {
                         ArrayList arrayList = new ArrayList(5);
                         arrayList.add(content);
-                        lRUCache.put(Long.valueOf(message.o()), arrayList);
+                        lRUCache.put(message.o(), arrayList);
                     } else {
                         if (list.size() >= 5) {
                             list.remove(0);

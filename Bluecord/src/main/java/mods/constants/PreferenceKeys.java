@@ -3,10 +3,13 @@ public final class PreferenceKeys {
     public static final String ALWAYS_SHOW_EMBED_LINKS = "always.show.embed.links";
     public static final String ANTI_DELETE_MODE = "anti.delete";
     public static final String ANTI_EDIT_MODE = "anti.edit";
+    public static final String ANTI_SPAM = "anti.spam.v1";
     public static final String BACKGROUND_BLUR = "blue.bg.blur";
     public static final String BACKGROUND_BLUR_LEVEL = "blue.bg.blur.radius";
-    public static final String BACKGROUND_CUSTOM = "blue.BG";
+    public static final String BACKGROUND_ENABLED = "blue.BG";
     public static final String BACKGROUND_PATH = "blue.bgPath";
+    public static final String BACKGROUND_UCROP_UPGRADED = "blue.bg.ucrop.upgrade";
+    public static final String BETTER_STATUS_INDICATOR = "blue.better.status";
     public static final String COLOR_ANIMATE_MESSAGE = "rainbow.messages";
     public static final String COLOR_ANIMATE_TYPING = "rainbow.typing";
     public static final String COLOR_AUTHORS_ENABLE = "enable.author.colors";
@@ -20,8 +23,8 @@ public final class PreferenceKeys {
     public static final String CUSTOM_FONT_PATH = "blue.fontpath";
     public static final String CUSTOM_FONT_TYPE = "blue.font";
     public static final String DAYS_ON_DISCORD = "discord.days.v2";
-    public static final String DEFAULT_TRANSLATE_FROM_KEY = "api_translate_from_key";
-    public static final String DEFAULT_TRANSLATE_TO_KEY = "api_translate_to_key";
+    public static final String DEFAULT_TRANSLATE_FROM_KEY = "api_translate_from_key_v2";
+    public static final String DEFAULT_TRANSLATE_TO_KEY = "api_translate_to_key_v2";
     public static final String DISABLE_REPLY_MENTIONS = "disable.reply.mentions";
     public static final String DISABLE_TYPING = "disable.typing";
     public static final String DO_NOT_ADD = "blue.dnd.v2";
@@ -33,6 +36,8 @@ public final class PreferenceKeys {
     public static final String HIDE_REACTION_DELETE = "hide.reaction.delete";
     public static final String IMAGE_SPOILERS = "image.spoilers";
     public static final String MARQUEE_NAMES = "marquee.names";
+    public static final String OPTIMAL_CHAT_BG_HEIGHT = "optimal_chat_bg_h";
+    public static final String OPTIMAL_CHAT_BG_WIDTH = "optimal_chat_bg_w";
     public static final String PC_CLIENT_SPOOF = "pc.spoof";
     public static final String PERSIST_PREFS = "persist.prefs";
     public static final String RAINBOW_CYCLE_SPEED = "rainbow.cycle.speed";

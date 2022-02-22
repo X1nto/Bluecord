@@ -6,6 +6,10 @@ import mods.DiscordTools;
 public class Prefs {
     private static final SharedPreferences sp = PreferenceManager.getDefaultSharedPreferences(DiscordTools.getContext());
 
+    public static boolean containsKey(String str) {
+        return getPreferences().contains(str);
+    }
+
     public static boolean getBoolean(String str, boolean z2) {
         return getPreferences().getBoolean(str, z2);
     }

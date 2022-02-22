@@ -97,7 +97,7 @@ public class Colors {
 
     private static boolean isMessageOutgoing(Message message) {
         MeUser self = StoreUtils.getSelf();
-        return self != null && self.getId() == message.getAuthor().i();
+        return self != null && self.getId() == message.getAuthor().getId();
     }
 
     static /* synthetic */ void lambda$animateEditText$0(EditText editText, ValueAnimator valueAnimator) {

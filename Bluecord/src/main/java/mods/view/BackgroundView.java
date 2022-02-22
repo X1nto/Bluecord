@@ -10,16 +10,41 @@ import android.renderscript.RenderScript;
 import android.renderscript.ScriptIntrinsicBlur;
 import android.util.AttributeSet;
 import android.util.Log;
+import android.view.ViewTreeObserver;
 import android.widget.ImageView;
 import androidx.appcompat.widget.AppCompatImageView;
+import androidx.recyclerview.widget.RecyclerView;
 import com.discord.api.permission.Permission;
 import java.io.ByteArrayInputStream;
 import java.io.ByteArrayOutputStream;
 import java.io.File;
+import mods.DiscordTools;
 import mods.constants.PreferenceKeys;
 import mods.preference.Prefs;
 import mods.utils.ToastUtil;
 public class BackgroundView extends AppCompatImageView {
+
+    /* renamed from: mods.view.BackgroundView$1  reason: invalid class name */
+    static class AnonymousClass1 implements ViewTreeObserver.OnGlobalLayoutListener {
+        final /* synthetic */ RecyclerView val$view;
+
+        AnonymousClass1(RecyclerView recyclerView) {
+            this.val$view = recyclerView;
+        }
+
+        @Override // android.view.ViewTreeObserver.OnGlobalLayoutListener
+        public void onGlobalLayout() {
+            this.val$view.getViewTreeObserver().removeOnGlobalLayoutListener(this);
+            int width = this.val$view.getWidth();
+            int height = this.val$view.getHeight();
+            Log.e("BackgroundView", String.format("w = %s, h = %s, orientation = %s, location = RecyclerView", width, height, DiscordTools.getOrientation()));
+            if (width > 0 && height > 0 && height >= width) {
+                Prefs.setFloat(PreferenceKeys.OPTIMAL_CHAT_BG_WIDTH, (float) width);
+                Prefs.setFloat(PreferenceKeys.OPTIMAL_CHAT_BG_HEIGHT, (float) height);
+            }
+        }
+    }
+
     public BackgroundView(Context context) {
         super(context);
         init();
@@ -58,7 +83,7 @@ public class BackgroundView extends AppCompatImageView {
         return createBitmap;
     }
 
-    private Bitmap fileToBitmap(String str) {
+    private Bitmap fileToBitmapLegacy(String str) {
         try {
             int i = new File(str).length() > Permission.SPEAK ? 75 : 50;
             ByteArrayOutputStream byteArrayOutputStream = new ByteArrayOutputStream();
@@ -80,8 +105,13 @@ public class BackgroundView extends AppCompatImageView {
         }
     }
 
+    public static void grabViewBounds(RecyclerView recyclerView) {
+        recyclerView.getViewTreeObserver().addOnGlobalLayoutListener(new AnonymousClass1(recyclerView));
+    }
+
     private void init() {
-        setScaleType(ScaleType.FIT_XY);
+        setScaleType(Prefs.getBoolean(PreferenceKeys.BACKGROUND_UCROP_UPGRADED, false) ? ImageView.ScaleType.CENTER_CROP : ImageView.ScaleType.FIT_XY);
+        setAdjustViewBounds(false);
         setImage();
     }
 
@@ -95,12 +125,12 @@ public class BackgroundView extends AppCompatImageView {
 
     private void setImage() {
         String string;
-        if (Prefs.getBoolean(PreferenceKeys.BACKGROUND_CUSTOM, false) && (string = Prefs.getString(PreferenceKeys.BACKGROUND_PATH, null)) != null) {
+        if (Prefs.getBoolean(PreferenceKeys.BACKGROUND_ENABLED, false) && (string = Prefs.getString(PreferenceKeys.BACKGROUND_PATH, null)) != null) {
             try {
-                setImageDrawable(new BitmapDrawable(getResources(), fileToBitmap(string)));
+                setImageDrawable(new BitmapDrawable(getResources(), fileToBitmapLegacy(string)));
             } catch (Throwable th) {
                 th.printStackTrace();
-                Prefs.removeValues(PreferenceKeys.BACKGROUND_CUSTOM, PreferenceKeys.BACKGROUND_PATH);
+                Prefs.removeValues(PreferenceKeys.BACKGROUND_ENABLED, PreferenceKeys.BACKGROUND_PATH);
                 ToastUtil.toast("Failed to set background, custom background has been disabled.\n\nTry setting it again.");
             }
         }
