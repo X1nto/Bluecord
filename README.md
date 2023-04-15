@@ -1,3 +1,5 @@
+This repository has been deprecated in favor of [Blue's open-source Bluecord repository](https://github.com/bluemods/Bluecord)
+
 # Bluecord - Open Source Edition
 Unofficial open source version of Bluecord, because Blue still haven't figured out how to put code on github.
 
